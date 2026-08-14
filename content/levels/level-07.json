@@ -1,0 +1,175 @@
+{
+  "number": 7,
+  "title": "Pronouns — Alphabet Complete!",
+  "newLetters": ["nun", "ha_light", "waw", "ya"],
+  "newVocab": ["anti", "huwa", "hiya", "nahnu", "hum", "saeed", "saeeda"],
+  "newPatterns": ["i-am-adjective"],
+  "diacriticsLevel": "full",
+  "letters": [
+    {
+      "id": "nun",
+      "forms": { "isolated": "ن", "initial": "نـ", "medial": "ـنـ", "final": "ـن" },
+      "name": "Nūn",
+      "sound": "n, as in 'net'.",
+      "transliteration": "n",
+      "shapeFamily": "standalone",
+      "audio": { "id": "letter_nun", "text": "نُون" },
+      "introducedInLevel": 7
+    },
+    {
+      "id": "ha_light",
+      "forms": { "isolated": "ه", "initial": "هـ", "medial": "ـهـ", "final": "ـه" },
+      "name": "Hāʾ",
+      "sound": "h, as in 'hat' — lighter and further forward than ح.",
+      "transliteration": "h",
+      "shapeFamily": "standalone",
+      "audio": { "id": "letter_ha_light", "text": "هَاء" },
+      "introducedInLevel": 7
+    },
+    {
+      "id": "waw",
+      "forms": { "isolated": "و", "initial": "و", "medial": "ـو", "final": "ـو" },
+      "name": "Wāw",
+      "sound": "w, as in 'wet'; also the long vowel 'ū' as in 'boot'.",
+      "transliteration": "w / ū",
+      "shapeFamily": "standalone",
+      "audio": { "id": "letter_waw", "text": "وَاو" },
+      "introducedInLevel": 7
+    },
+    {
+      "id": "ya",
+      "forms": { "isolated": "ي", "initial": "يـ", "medial": "ـيـ", "final": "ـي" },
+      "name": "Yāʾ",
+      "sound": "y, as in 'yes'; also the long vowel 'ī' as in 'feet'.",
+      "transliteration": "y / ī",
+      "shapeFamily": "standalone",
+      "audio": { "id": "letter_ya", "text": "يَاء" },
+      "introducedInLevel": 7
+    }
+  ],
+  "vocab": [
+    {
+      "id": "anti",
+      "arabic": "أَنْتِ",
+      "arabicNoDiacritics": "أنت",
+      "transliteration": "anti",
+      "english": "you (fem.)",
+      "partOfSpeech": "pronoun",
+      "audio": { "id": "word_anti", "text": "أَنْتِ" },
+      "introducedInLevel": 7,
+      "tags": ["core", "pronoun"]
+    },
+    {
+      "id": "huwa",
+      "arabic": "هُوَ",
+      "arabicNoDiacritics": "هو",
+      "transliteration": "huwa",
+      "english": "he",
+      "partOfSpeech": "pronoun",
+      "audio": { "id": "word_huwa", "text": "هُوَ" },
+      "introducedInLevel": 7,
+      "tags": ["core", "pronoun"]
+    },
+    {
+      "id": "hiya",
+      "arabic": "هِيَ",
+      "arabicNoDiacritics": "هي",
+      "transliteration": "hiya",
+      "english": "she",
+      "partOfSpeech": "pronoun",
+      "audio": { "id": "word_hiya", "text": "هِيَ" },
+      "introducedInLevel": 7,
+      "tags": ["core", "pronoun"]
+    },
+    {
+      "id": "nahnu",
+      "arabic": "نَحْنُ",
+      "arabicNoDiacritics": "نحن",
+      "transliteration": "naḥnu",
+      "english": "we",
+      "partOfSpeech": "pronoun",
+      "audio": { "id": "word_nahnu", "text": "نَحْنُ" },
+      "introducedInLevel": 7,
+      "tags": ["core", "pronoun"]
+    },
+    {
+      "id": "hum",
+      "arabic": "هُمْ",
+      "arabicNoDiacritics": "هم",
+      "transliteration": "hum",
+      "english": "they (masc./mixed)",
+      "partOfSpeech": "pronoun",
+      "audio": { "id": "word_hum", "text": "هُمْ" },
+      "introducedInLevel": 7,
+      "tags": ["pronoun"]
+    },
+    {
+      "id": "saeed",
+      "arabic": "سَعِيد",
+      "arabicNoDiacritics": "سعيد",
+      "transliteration": "saʿīd",
+      "english": "happy (masc.)",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_saeed", "text": "سَعِيد" },
+      "introducedInLevel": 7,
+      "tags": ["adjective"]
+    },
+    {
+      "id": "saeeda",
+      "arabic": "سَعِيدَة",
+      "arabicNoDiacritics": "سعيدة",
+      "transliteration": "saʿīda",
+      "english": "happy (fem.)",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_saeeda", "text": "سَعِيدَة" },
+      "introducedInLevel": 7,
+      "tags": ["adjective"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "i-am-adjective",
+      "pattern": "[Pronoun] + [Adjective]",
+      "exampleArabic": "أَنَا سَعِيدٌ",
+      "exampleTransliteration": "anā saʿīdun",
+      "exampleEnglish": "I am happy. (spoken by a male)",
+      "grammarNote": "As with nouns, Arabic needs no separate word for 'am/is/are': a pronoun directly followed by an adjective is a full sentence. Adjectives must agree in gender with the subject — a woman says أَنَا سَعِيدَةٌ (anā saʿīdatun), adding ة (tāʾ marbūṭa) to the adjective.",
+      "audio": { "id": "phrase_ana_saeedun", "text": "أَنَا سَعِيدٌ" },
+      "introducedInLevel": 7
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l7-ex1",
+      "type": "letter-recognition",
+      "refIds": ["waw", "nun", "ha_light", "ya"],
+      "prompt": "Which letter is this? و",
+      "options": ["Nūn", "Hāʾ", "Wāw", "Yāʾ"],
+      "answer": "Wāw"
+    },
+    {
+      "id": "l7-ex2",
+      "type": "sentence-build",
+      "refIds": ["ana", "saeed", "i-am-adjective"],
+      "prompt": "Arrange the tiles to say 'I am happy.' (male speaker)",
+      "options": ["أَنَا", "سَعِيدٌ"],
+      "answer": "أَنَا سَعِيدٌ"
+    },
+    {
+      "id": "l7-ex3",
+      "type": "multiple-choice",
+      "refIds": ["hiya"],
+      "prompt": "What does 'هِيَ' mean?",
+      "options": ["she", "he", "we", "they"],
+      "answer": "she"
+    },
+    {
+      "id": "l7-ex4",
+      "type": "audio-recognition",
+      "refIds": ["nahnu", "huwa", "hum", "anti"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["نَحْنُ", "هُوَ", "هُمْ", "أَنْتِ"],
+      "answer": "نَحْنُ"
+    }
+  ]
+}

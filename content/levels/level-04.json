@@ -1,0 +1,152 @@
+{
+  "number": 4,
+  "title": "Descriptions",
+  "newLetters": ["sheen", "saad", "daad", "taa_emphatic"],
+  "newVocab": ["kabeer", "sagheer", "jameel", "jadeed", "taweel", "qaseer"],
+  "newPatterns": [],
+  "diacriticsLevel": "full",
+  "letters": [
+    {
+      "id": "sheen",
+      "forms": { "isolated": "ش", "initial": "شـ", "medial": "ـشـ", "final": "ـش" },
+      "name": "Shīn",
+      "sound": "sh, as in 'shoe'.",
+      "transliteration": "sh",
+      "shapeFamily": "seen-family",
+      "audio": { "id": "letter_sheen", "text": "شِين" },
+      "introducedInLevel": 4
+    },
+    {
+      "id": "saad",
+      "forms": { "isolated": "ص", "initial": "صـ", "medial": "ـصـ", "final": "ـص" },
+      "name": "Ṣād",
+      "sound": "Emphatic/heavy 's' — deeper and more forceful than English 's'.",
+      "transliteration": "ṣ",
+      "shapeFamily": "saad-family",
+      "audio": { "id": "letter_saad", "text": "صَاد" },
+      "introducedInLevel": 4
+    },
+    {
+      "id": "daad",
+      "forms": { "isolated": "ض", "initial": "ضـ", "medial": "ـضـ", "final": "ـض" },
+      "name": "Ḍād",
+      "sound": "Emphatic/heavy 'd' — a sound unique to Arabic.",
+      "transliteration": "ḍ",
+      "shapeFamily": "saad-family",
+      "audio": { "id": "letter_daad", "text": "ضَاد" },
+      "introducedInLevel": 4
+    },
+    {
+      "id": "taa_emphatic",
+      "forms": { "isolated": "ط", "initial": "طـ", "medial": "ـطـ", "final": "ـط" },
+      "name": "Ṭāʾ",
+      "sound": "Emphatic/heavy 't' — deeper than the plain ت.",
+      "transliteration": "ṭ",
+      "shapeFamily": "taa-family",
+      "audio": { "id": "letter_taa_emphatic", "text": "طَاء" },
+      "introducedInLevel": 4
+    }
+  ],
+  "vocab": [
+    {
+      "id": "kabeer",
+      "arabic": "كَبِير",
+      "arabicNoDiacritics": "كبير",
+      "transliteration": "kabīr",
+      "english": "big",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_kabeer", "text": "كَبِير" },
+      "introducedInLevel": 4,
+      "tags": ["core", "adjective"]
+    },
+    {
+      "id": "sagheer",
+      "arabic": "صَغِير",
+      "arabicNoDiacritics": "صغير",
+      "transliteration": "ṣaghīr",
+      "english": "small",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_sagheer", "text": "صَغِير" },
+      "introducedInLevel": 4,
+      "tags": ["core", "adjective"]
+    },
+    {
+      "id": "jameel",
+      "arabic": "جَمِيل",
+      "arabicNoDiacritics": "جميل",
+      "transliteration": "jamīl",
+      "english": "beautiful",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_jameel", "text": "جَمِيل" },
+      "introducedInLevel": 4,
+      "tags": ["adjective"]
+    },
+    {
+      "id": "jadeed",
+      "arabic": "جَدِيد",
+      "arabicNoDiacritics": "جديد",
+      "transliteration": "jadīd",
+      "english": "new",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_jadeed", "text": "جَدِيد" },
+      "introducedInLevel": 4,
+      "tags": ["adjective"]
+    },
+    {
+      "id": "taweel",
+      "arabic": "طَوِيل",
+      "arabicNoDiacritics": "طويل",
+      "transliteration": "ṭawīl",
+      "english": "tall / long",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_taweel", "text": "طَوِيل" },
+      "introducedInLevel": 4,
+      "tags": ["adjective"]
+    },
+    {
+      "id": "qaseer",
+      "arabic": "قَصِير",
+      "arabicNoDiacritics": "قصير",
+      "transliteration": "qaṣīr",
+      "english": "short",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_qaseer", "text": "قَصِير" },
+      "introducedInLevel": 4,
+      "tags": ["adjective"]
+    }
+  ],
+  "patterns": [],
+  "exercises": [
+    {
+      "id": "l4-ex1",
+      "type": "letter-recognition",
+      "refIds": ["saad", "sheen", "daad", "taa_emphatic"],
+      "prompt": "Which letter is this? ص",
+      "options": ["Shīn", "Ṣād", "Ḍād", "Ṭāʾ"],
+      "answer": "Ṣād"
+    },
+    {
+      "id": "l4-ex2",
+      "type": "matching",
+      "refIds": ["kabeer", "sagheer", "jameel", "jadeed"],
+      "prompt": "Match the opposite: كَبِير",
+      "options": ["صَغِير", "جَمِيل", "جَدِيد", "طَوِيل"],
+      "answer": "صَغِير"
+    },
+    {
+      "id": "l4-ex3",
+      "type": "audio-recognition",
+      "refIds": ["taweel", "qaseer", "jadeed", "jameel"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["طَوِيل", "قَصِير", "جَدِيد", "جَمِيل"],
+      "answer": "طَوِيل"
+    },
+    {
+      "id": "l4-ex4",
+      "type": "typing",
+      "refIds": ["jadeed"],
+      "prompt": "Type the Arabic word for 'new'.",
+      "answer": "جديد"
+    }
+  ]
+}

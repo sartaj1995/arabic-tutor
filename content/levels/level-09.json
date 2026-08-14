@@ -1,0 +1,122 @@
+{
+  "number": 9,
+  "title": "Possession — \"This is my...\"",
+  "newLetters": [],
+  "newVocab": ["baytii", "baytuka", "baytuki", "baytuhu", "baytuhaa", "kitaabii"],
+  "newPatterns": ["this-is-my-noun"],
+  "diacriticsLevel": "partial",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "baytii",
+      "arabic": "بَيْتِي",
+      "arabicNoDiacritics": "بيتي",
+      "transliteration": "baytī",
+      "english": "my house",
+      "partOfSpeech": "noun + suffix",
+      "audio": { "id": "word_baytii", "text": "بَيْتِي" },
+      "introducedInLevel": 9,
+      "tags": ["possession"]
+    },
+    {
+      "id": "baytuka",
+      "arabic": "بَيْتُكَ",
+      "arabicNoDiacritics": "بيتك",
+      "transliteration": "baytuka",
+      "english": "your house (masc.)",
+      "partOfSpeech": "noun + suffix",
+      "audio": { "id": "word_baytuka", "text": "بَيْتُكَ" },
+      "introducedInLevel": 9,
+      "tags": ["possession"]
+    },
+    {
+      "id": "baytuki",
+      "arabic": "بَيْتُكِ",
+      "arabicNoDiacritics": "بيتك",
+      "transliteration": "baytuki",
+      "english": "your house (fem.)",
+      "partOfSpeech": "noun + suffix",
+      "audio": { "id": "word_baytuki", "text": "بَيْتُكِ" },
+      "introducedInLevel": 9,
+      "tags": ["possession"]
+    },
+    {
+      "id": "baytuhu",
+      "arabic": "بَيْتُهُ",
+      "arabicNoDiacritics": "بيته",
+      "transliteration": "baytuhu",
+      "english": "his house",
+      "partOfSpeech": "noun + suffix",
+      "audio": { "id": "word_baytuhu", "text": "بَيْتُهُ" },
+      "introducedInLevel": 9,
+      "tags": ["possession"]
+    },
+    {
+      "id": "baytuhaa",
+      "arabic": "بَيْتُهَا",
+      "arabicNoDiacritics": "بيتها",
+      "transliteration": "baytuhā",
+      "english": "her house",
+      "partOfSpeech": "noun + suffix",
+      "audio": { "id": "word_baytuhaa", "text": "بَيْتُهَا" },
+      "introducedInLevel": 9,
+      "tags": ["possession"]
+    },
+    {
+      "id": "kitaabii",
+      "arabic": "كِتَابِي",
+      "arabicNoDiacritics": "كتابي",
+      "transliteration": "kitābī",
+      "english": "my book",
+      "partOfSpeech": "noun + suffix",
+      "audio": { "id": "word_kitaabii", "text": "كِتَابِي" },
+      "introducedInLevel": 9,
+      "tags": ["possession"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "this-is-my-noun",
+      "pattern": "[Demonstrative] + [Noun + Possessive Suffix]",
+      "exampleArabic": "هَذَا بَيْتِي",
+      "exampleTransliteration": "hādhā baytī",
+      "exampleEnglish": "This is my house.",
+      "grammarNote": "Possession is shown by attaching a suffix directly to the end of the noun, not with a separate word like English 'my'. Key suffixes: ـِي = my, ـُكَ = your (masc.), ـُكِ = your (fem.), ـُهُ = his, ـُهَا = her. A noun with a possessive suffix is definite, so it drops the indefinite tanwīn ending (بَيْتٌ → بَيْتِي, not بَيْتٌي).",
+      "audio": { "id": "phrase_haadhaa_baytii", "text": "هَذَا بَيْتِي" },
+      "introducedInLevel": 9
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l9-ex1",
+      "type": "multiple-choice",
+      "refIds": ["baytii"],
+      "prompt": "What does 'بَيْتِي' mean?",
+      "options": ["my house", "your house", "his house", "her house"],
+      "answer": "my house"
+    },
+    {
+      "id": "l9-ex2",
+      "type": "sentence-build",
+      "refIds": ["haadhaa", "baytii", "this-is-my-noun"],
+      "prompt": "Arrange the tiles to say 'This is my house.'",
+      "options": ["هَذَا", "بَيْتِي"],
+      "answer": "هَذَا بَيْتِي"
+    },
+    {
+      "id": "l9-ex3",
+      "type": "matching",
+      "refIds": ["baytuhu", "baytuhaa", "baytuka", "baytuki"],
+      "prompt": "Match the word to its meaning: بَيْتُهُ",
+      "options": ["his house", "her house", "your house (masc.)", "your house (fem.)"],
+      "answer": "his house"
+    },
+    {
+      "id": "l9-ex4",
+      "type": "typing",
+      "refIds": ["kitaabii"],
+      "prompt": "Type the Arabic word for 'my book'.",
+      "answer": "كتابي"
+    }
+  ]
+}

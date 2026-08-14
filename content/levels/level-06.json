@@ -1,0 +1,164 @@
+{
+  "number": 6,
+  "title": "Questions — \"What is this?\"",
+  "newLetters": ["qaf", "kaf", "lam", "meem"],
+  "newVocab": ["maa", "man", "ayna", "kayfa", "limaadhaa", "kam"],
+  "newPatterns": ["what-is-this"],
+  "diacriticsLevel": "full",
+  "letters": [
+    {
+      "id": "qaf",
+      "forms": { "isolated": "ق", "initial": "قـ", "medial": "ـقـ", "final": "ـق" },
+      "name": "Qāf",
+      "sound": "A 'k' produced further back in the throat (uvular), deeper than English 'k'.",
+      "transliteration": "q",
+      "shapeFamily": "standalone",
+      "audio": { "id": "letter_qaf", "text": "قَاف" },
+      "introducedInLevel": 6
+    },
+    {
+      "id": "kaf",
+      "forms": { "isolated": "ك", "initial": "كـ", "medial": "ـكـ", "final": "ـك" },
+      "name": "Kāf",
+      "sound": "k, as in 'kite'.",
+      "transliteration": "k",
+      "shapeFamily": "standalone",
+      "audio": { "id": "letter_kaf", "text": "كَاف" },
+      "introducedInLevel": 6
+    },
+    {
+      "id": "lam",
+      "forms": { "isolated": "ل", "initial": "لـ", "medial": "ـلـ", "final": "ـل" },
+      "name": "Lām",
+      "sound": "l, as in 'light'.",
+      "transliteration": "l",
+      "shapeFamily": "standalone",
+      "audio": { "id": "letter_lam", "text": "لَام" },
+      "introducedInLevel": 6
+    },
+    {
+      "id": "meem",
+      "forms": { "isolated": "م", "initial": "مـ", "medial": "ـمـ", "final": "ـم" },
+      "name": "Mīm",
+      "sound": "m, as in 'moon'.",
+      "transliteration": "m",
+      "shapeFamily": "standalone",
+      "audio": { "id": "letter_meem", "text": "مِيم" },
+      "introducedInLevel": 6
+    }
+  ],
+  "vocab": [
+    {
+      "id": "maa",
+      "arabic": "مَا",
+      "arabicNoDiacritics": "ما",
+      "transliteration": "mā",
+      "english": "what",
+      "partOfSpeech": "question word",
+      "audio": { "id": "word_maa", "text": "مَا" },
+      "introducedInLevel": 6,
+      "tags": ["core", "question"]
+    },
+    {
+      "id": "man",
+      "arabic": "مَنْ",
+      "arabicNoDiacritics": "من",
+      "transliteration": "man",
+      "english": "who",
+      "partOfSpeech": "question word",
+      "audio": { "id": "word_man", "text": "مَنْ" },
+      "introducedInLevel": 6,
+      "tags": ["core", "question"]
+    },
+    {
+      "id": "ayna",
+      "arabic": "أَيْنَ",
+      "arabicNoDiacritics": "أين",
+      "transliteration": "ayna",
+      "english": "where",
+      "partOfSpeech": "question word",
+      "audio": { "id": "word_ayna", "text": "أَيْنَ" },
+      "introducedInLevel": 6,
+      "tags": ["core", "question"]
+    },
+    {
+      "id": "kayfa",
+      "arabic": "كَيْفَ",
+      "arabicNoDiacritics": "كيف",
+      "transliteration": "kayfa",
+      "english": "how",
+      "partOfSpeech": "question word",
+      "audio": { "id": "word_kayfa", "text": "كَيْفَ" },
+      "introducedInLevel": 6,
+      "tags": ["core", "question"]
+    },
+    {
+      "id": "limaadhaa",
+      "arabic": "لِمَاذَا",
+      "arabicNoDiacritics": "لماذا",
+      "transliteration": "limādhā",
+      "english": "why",
+      "partOfSpeech": "question word",
+      "audio": { "id": "word_limaadhaa", "text": "لِمَاذَا" },
+      "introducedInLevel": 6,
+      "tags": ["question"]
+    },
+    {
+      "id": "kam",
+      "arabic": "كَمْ",
+      "arabicNoDiacritics": "كم",
+      "transliteration": "kam",
+      "english": "how many / how much",
+      "partOfSpeech": "question word",
+      "audio": { "id": "word_kam", "text": "كَمْ" },
+      "introducedInLevel": 6,
+      "tags": ["question"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "what-is-this",
+      "pattern": "مَا + [Demonstrative]؟",
+      "exampleArabic": "مَا هَذَا؟",
+      "exampleTransliteration": "mā hādhā؟",
+      "exampleEnglish": "What is this?",
+      "grammarNote": "Question words go at the very start of the sentence; the rest follows normal word order. There's no extra helper verb like English 'do/does' — مَا هَذَا؟ is literally 'what this?'.",
+      "audio": { "id": "phrase_maa_haadhaa", "text": "مَا هَذَا؟" },
+      "introducedInLevel": 6
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l6-ex1",
+      "type": "letter-recognition",
+      "refIds": ["qaf", "kaf", "lam", "meem"],
+      "prompt": "Which letter is this? ق",
+      "options": ["Qāf", "Kāf", "Lām", "Mīm"],
+      "answer": "Qāf"
+    },
+    {
+      "id": "l6-ex2",
+      "type": "sentence-build",
+      "refIds": ["maa", "haadhaa", "what-is-this"],
+      "prompt": "Arrange the tiles to ask 'What is this?'",
+      "options": ["مَا", "هَذَا؟"],
+      "answer": "مَا هَذَا؟"
+    },
+    {
+      "id": "l6-ex3",
+      "type": "multiple-choice",
+      "refIds": ["kayfa"],
+      "prompt": "What does 'كَيْفَ' mean?",
+      "options": ["how", "who", "where", "why"],
+      "answer": "how"
+    },
+    {
+      "id": "l6-ex4",
+      "type": "matching",
+      "refIds": ["man", "ayna", "maa", "kam"],
+      "prompt": "Match the question word to its meaning: أَيْنَ",
+      "options": ["where", "who", "what", "how many"],
+      "answer": "where"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "number": 1,
+  "title": "Greetings & Basics",
+  "newLetters": ["alif", "ba", "ta", "tha"],
+  "newVocab": ["ana", "anta", "naam", "la", "salaam", "shukran", "ab", "baab"],
+  "newPatterns": [],
+  "diacriticsLevel": "full",
+  "letters": [
+    {
+      "id": "alif",
+      "forms": { "isolated": "ا", "initial": "ا", "medial": "ـا", "final": "ـا" },
+      "name": "Alif",
+      "sound": "Long 'aa' as in 'father'; also the seat for the glottal-stop hamza.",
+      "transliteration": "ā / a",
+      "shapeFamily": "alif (unique)",
+      "audio": { "id": "letter_alif", "text": "أَلِف" },
+      "introducedInLevel": 1
+    },
+    {
+      "id": "ba",
+      "forms": { "isolated": "ب", "initial": "بـ", "medial": "ـبـ", "final": "ـب" },
+      "name": "Bāʾ",
+      "sound": "b, as in 'boy'.",
+      "transliteration": "b",
+      "shapeFamily": "ba-family",
+      "audio": { "id": "letter_ba", "text": "بَاء" },
+      "introducedInLevel": 1
+    },
+    {
+      "id": "ta",
+      "forms": { "isolated": "ت", "initial": "تـ", "medial": "ـتـ", "final": "ـت" },
+      "name": "Tāʾ",
+      "sound": "t, as in 'top'.",
+      "transliteration": "t",
+      "shapeFamily": "ba-family",
+      "audio": { "id": "letter_ta", "text": "تَاء" },
+      "introducedInLevel": 1
+    },
+    {
+      "id": "tha",
+      "forms": { "isolated": "ث", "initial": "ثـ", "medial": "ـثـ", "final": "ـث" },
+      "name": "Thāʾ",
+      "sound": "th, unvoiced, as in 'think'.",
+      "transliteration": "th",
+      "shapeFamily": "ba-family",
+      "audio": { "id": "letter_tha", "text": "ثَاء" },
+      "introducedInLevel": 1
+    }
+  ],
+  "vocab": [
+    {
+      "id": "ana",
+      "arabic": "أَنَا",
+      "arabicNoDiacritics": "أنا",
+      "transliteration": "anā",
+      "english": "I",
+      "partOfSpeech": "pronoun",
+      "audio": { "id": "word_ana", "text": "أَنَا" },
+      "introducedInLevel": 1,
+      "tags": ["core", "pronoun"]
+    },
+    {
+      "id": "anta",
+      "arabic": "أَنْتَ",
+      "arabicNoDiacritics": "أنت",
+      "transliteration": "anta",
+      "english": "you (masc.)",
+      "partOfSpeech": "pronoun",
+      "audio": { "id": "word_anta", "text": "أَنْتَ" },
+      "introducedInLevel": 1,
+      "tags": ["core", "pronoun"]
+    },
+    {
+      "id": "naam",
+      "arabic": "نَعَمْ",
+      "arabicNoDiacritics": "نعم",
+      "transliteration": "naʿam",
+      "english": "yes",
+      "partOfSpeech": "particle",
+      "audio": { "id": "word_naam", "text": "نَعَمْ" },
+      "introducedInLevel": 1,
+      "tags": ["core"]
+    },
+    {
+      "id": "la",
+      "arabic": "لَا",
+      "arabicNoDiacritics": "لا",
+      "transliteration": "lā",
+      "english": "no",
+      "partOfSpeech": "particle",
+      "audio": { "id": "word_la", "text": "لَا" },
+      "introducedInLevel": 1,
+      "tags": ["core"]
+    },
+    {
+      "id": "salaam",
+      "arabic": "السَّلَامُ عَلَيْكُمْ",
+      "arabicNoDiacritics": "السلام عليكم",
+      "transliteration": "as-salāmu ʿalaykum",
+      "english": "hello (lit. 'peace be upon you')",
+      "partOfSpeech": "phrase",
+      "audio": { "id": "phrase_salaam", "text": "السَّلَامُ عَلَيْكُمْ" },
+      "introducedInLevel": 1,
+      "tags": ["core", "greeting"]
+    },
+    {
+      "id": "shukran",
+      "arabic": "شُكْرًا",
+      "arabicNoDiacritics": "شكرا",
+      "transliteration": "shukran",
+      "english": "thank you",
+      "partOfSpeech": "phrase",
+      "audio": { "id": "word_shukran", "text": "شُكْرًا" },
+      "introducedInLevel": 1,
+      "tags": ["core", "greeting"]
+    },
+    {
+      "id": "ab",
+      "arabic": "أَب",
+      "arabicNoDiacritics": "أب",
+      "transliteration": "ab",
+      "english": "father",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_ab", "text": "أَب" },
+      "introducedInLevel": 1,
+      "tags": ["family"]
+    },
+    {
+      "id": "baab",
+      "arabic": "بَاب",
+      "arabicNoDiacritics": "باب",
+      "transliteration": "bāb",
+      "english": "door",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_baab", "text": "بَاب" },
+      "introducedInLevel": 1,
+      "tags": ["object"]
+    }
+  ],
+  "patterns": [],
+  "exercises": [
+    {
+      "id": "l1-ex1",
+      "type": "letter-recognition",
+      "refIds": ["ba", "ta", "tha", "alif"],
+      "prompt": "Which letter is this? ب",
+      "options": ["Alif", "Bāʾ", "Tāʾ", "Thāʾ"],
+      "answer": "Bāʾ"
+    },
+    {
+      "id": "l1-ex2",
+      "type": "audio-recognition",
+      "refIds": ["naam", "la", "shukran", "ab"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["نَعَمْ", "لَا", "شُكْرًا", "أَب"],
+      "answer": "نَعَمْ"
+    },
+    {
+      "id": "l1-ex3",
+      "type": "multiple-choice",
+      "refIds": ["ana"],
+      "prompt": "What does 'أَنَا' mean?",
+      "options": ["I", "you", "yes", "no"],
+      "answer": "I"
+    },
+    {
+      "id": "l1-ex4",
+      "type": "typing",
+      "refIds": ["baab"],
+      "prompt": "Type the Arabic word for 'door'.",
+      "answer": "باب"
+    }
+  ]
+}
