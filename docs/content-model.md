@@ -19,9 +19,21 @@ authoring new levels. The formal schema lives in
   pattern is tracked as an individual reviewable item (see
   `SRSItemState`), not just "level complete." Review items are pulled into
   each session at runtime — they are not baked into level JSON files.
-- **Audio: pre-generated TTS**, cached as static files, referenced by
-  `AudioRef.id` → `/audio/{id}.mp3`. Generation is a separate offline
-  pipeline, not a runtime dependency.
+- **Audio: live via the browser's Web Speech API**, not pre-generated files.
+  `PlayAudioButton` calls `speak(text)` (`src/lib/speech.ts`), which picks
+  an Arabic system/browser voice (preferring `ar-SA`) and speaks
+  `AudioRef.text` on click — no account, API key, or generation step
+  required, and it costs nothing. Chosen over cloud TTS specifically to
+  avoid the billing-account requirement most providers impose even for
+  free-tier usage. Trade-off: voice quality/availability depends on the
+  user's browser/OS (Chrome supplies Arabic voices remotely regardless of
+  what's installed locally; other browsers may have none, in which case
+  playback fails silently and `LevelList` shows a one-line notice). An
+  offline pre-generation pipeline for Google Cloud TTS
+  (`scripts/generate-audio.mjs`) still exists as a documented fallback if
+  downloadable/consistent audio is ever wanted instead — `AudioRef.id` is
+  kept in the schema for that path even though the live-speech path doesn't
+  use it.
 - **Exercises**: multiple-choice/matching, typed Arabic input (virtual
   keyboard + IME), and self-check speaking practice (record + compare to
   reference audio — no automated pronunciation scoring).
@@ -96,7 +108,9 @@ these levels.
 
 ## Exercises in the JSON files
 
-Each level file includes a handful of **illustrative sample exercises**,
-not an exhaustive bank — full exercise generation (many exercises per vocab
-item, drilling every letter form) is a later, largely mechanical step once
-the pacing here is validated.
+Each level file has a small hand-authored core set (the flagship
+sentence-build/matching/typing exercises that show off a level's grammar
+point) plus generated coverage exercises ensuring every letter and vocab
+word gets at least one dedicated question — see
+`scripts/generate-exercises.mjs`, an idempotent script safe to re-run after
+authoring new levels.

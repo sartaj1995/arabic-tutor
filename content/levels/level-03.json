@@ -147,6 +147,77 @@
       "refIds": ["qalam"],
       "prompt": "Type the Arabic word for 'pen'.",
       "answer": "قلم"
+    },
+    {
+      "id": "l3-ex5",
+      "type": "multiple-choice",
+      "refIds": ["saaa"],
+      "prompt": "What does 'سَاعَة' mean?",
+      "options": ["book", "mother", "car", "clock / watch / hour"],
+      "answer": "clock / watch / hour"
+    },
+    {
+      "id": "l3-ex6",
+      "type": "multiple-choice",
+      "refIds": ["saaa"],
+      "prompt": "Which word means 'clock / watch / hour'?",
+      "options": ["سَاعَة", "أَنْتَ", "قَلَم", "بَاب"],
+      "answer": "سَاعَة"
+    },
+    {
+      "id": "l3-ex7",
+      "type": "multiple-choice",
+      "refIds": ["zahra"],
+      "prompt": "What does 'زَهْرَة' mean?",
+      "options": ["brother", "hello (lit. 'peace be upon you')", "boy / son", "flower"],
+      "answer": "flower"
+    },
+    {
+      "id": "l3-ex8",
+      "type": "typing",
+      "refIds": ["zahra"],
+      "prompt": "Type the Arabic word for 'flower'.",
+      "answer": "زهرة"
+    },
+    {
+      "id": "l3-ex9",
+      "type": "multiple-choice",
+      "refIds": ["naafidha"],
+      "prompt": "What does 'نَافِذَة' mean?",
+      "options": ["girl / daughter", "window", "I", "car"],
+      "answer": "window"
+    },
+    {
+      "id": "l3-ex10",
+      "type": "multiple-choice",
+      "refIds": ["naafidha"],
+      "prompt": "Which word means 'window'?",
+      "options": ["نَافِذَة", "بِنْت", "أَنَا", "أَب"],
+      "answer": "نَافِذَة"
+    },
+    {
+      "id": "l3-ex11",
+      "type": "letter-recognition",
+      "refIds": ["dhal"],
+      "prompt": "Which letter is this? ذ",
+      "options": ["Alif", "Dhāl", "Khāʾ", "Tāʾ"],
+      "answer": "Dhāl"
+    },
+    {
+      "id": "l3-ex12",
+      "type": "letter-recognition",
+      "refIds": ["ra"],
+      "prompt": "Which letter is this? ر",
+      "options": ["Alif", "Khāʾ", "Rāʾ", "Tāʾ"],
+      "answer": "Rāʾ"
+    },
+    {
+      "id": "l3-ex13",
+      "type": "letter-recognition",
+      "refIds": ["zay"],
+      "prompt": "Which letter is this? ز",
+      "options": ["Dāl", "Zāy", "Dhāl", "Jīm"],
+      "answer": "Zāy"
     }
   ]
 }

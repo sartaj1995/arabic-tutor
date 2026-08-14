@@ -8,7 +8,8 @@
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "lint": "tsc --noEmit",
-    "generate-audio": "node --env-file-if-exists=.env scripts/generate-audio.mjs"
+    "generate-audio": "node --env-file-if-exists=.env scripts/generate-audio.mjs",
+    "generate-exercises": "node scripts/generate-exercises.mjs"
   },
   "dependencies": {
     "dexie": "^4.0.10",

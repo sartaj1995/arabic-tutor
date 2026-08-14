@@ -159,6 +159,92 @@
       "prompt": "Match the question word to its meaning: أَيْنَ",
       "options": ["where", "who", "what", "how many"],
       "answer": "where"
+    },
+    {
+      "id": "l6-ex5",
+      "type": "multiple-choice",
+      "refIds": ["maa"],
+      "prompt": "What does 'مَا' mean?",
+      "options": ["what", "sister", "why", "on"],
+      "answer": "what"
+    },
+    {
+      "id": "l6-ex6",
+      "type": "multiple-choice",
+      "refIds": ["maa"],
+      "prompt": "Which word means 'what'?",
+      "options": ["هَذَا", "بِنْت", "تِلْكَ", "مَا"],
+      "answer": "مَا"
+    },
+    {
+      "id": "l6-ex7",
+      "type": "multiple-choice",
+      "refIds": ["man"],
+      "prompt": "What does 'مَنْ' mean?",
+      "options": ["small", "who", "how many / how much", "hello (lit. 'peace be upon you')"],
+      "answer": "who"
+    },
+    {
+      "id": "l6-ex8",
+      "type": "typing",
+      "refIds": ["man"],
+      "prompt": "Type the Arabic word for 'who'.",
+      "answer": "من"
+    },
+    {
+      "id": "l6-ex9",
+      "type": "multiple-choice",
+      "refIds": ["limaadhaa"],
+      "prompt": "What does 'لِمَاذَا' mean?",
+      "options": ["what", "why", "how", "boy / son"],
+      "answer": "why"
+    },
+    {
+      "id": "l6-ex10",
+      "type": "multiple-choice",
+      "refIds": ["limaadhaa"],
+      "prompt": "Which word means 'why'?",
+      "options": ["مَنْ", "لِمَاذَا", "بِنْت", "طَوِيل"],
+      "answer": "لِمَاذَا"
+    },
+    {
+      "id": "l6-ex11",
+      "type": "multiple-choice",
+      "refIds": ["kam"],
+      "prompt": "What does 'كَمْ' mean?",
+      "options": ["who", "how", "small", "how many / how much"],
+      "answer": "how many / how much"
+    },
+    {
+      "id": "l6-ex12",
+      "type": "typing",
+      "refIds": ["kam"],
+      "prompt": "Type the Arabic word for 'how many / how much'.",
+      "answer": "كم"
+    },
+    {
+      "id": "l6-ex13",
+      "type": "letter-recognition",
+      "refIds": ["kaf"],
+      "prompt": "Which letter is this? ك",
+      "options": ["Rāʾ", "Ḥāʾ", "Kāf", "Lām"],
+      "answer": "Kāf"
+    },
+    {
+      "id": "l6-ex14",
+      "type": "letter-recognition",
+      "refIds": ["lam"],
+      "prompt": "Which letter is this? ل",
+      "options": ["Shīn", "Jīm", "Lām", "Ḍād"],
+      "answer": "Lām"
+    },
+    {
+      "id": "l6-ex15",
+      "type": "letter-recognition",
+      "refIds": ["meem"],
+      "prompt": "Which letter is this? م",
+      "options": ["Lām", "Ḍād", "Ṣād", "Mīm"],
+      "answer": "Mīm"
     }
   ]
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { getLevel } from "../lib/content";
+import { getLevel, scoreableExercises } from "../lib/content";
 import { db } from "../lib/db";
 import { seedLevelSRSItems } from "../lib/srs";
 import ArabicText from "../components/ArabicText";
@@ -26,8 +26,12 @@ export default function LevelDetail() {
       setSavedProgress(null);
       return;
     }
+    const currentTotal = scoreableExercises(level).length;
     db.levelProgress.get(level.number).then((record) => {
-      if (record?.completed && record.lastScoreTotal != null) {
+      // A saved score only means anything if it was earned against the same
+      // exercise set that exists now — content passes (like generating more
+      // exercises) can change the count after a record was saved.
+      if (record?.completed && record.lastScoreTotal === currentTotal) {
         setSavedProgress({ score: record.lastScore ?? 0, total: record.lastScoreTotal });
       } else {
         setSavedProgress(null);
@@ -36,7 +40,7 @@ export default function LevelDetail() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [level?.number]);
 
-  const scoreable = level?.exercises.filter((e) => e.type !== "speaking") ?? [];
+  const scoreable = level ? scoreableExercises(level) : [];
   const answeredScoreable = scoreable.filter(
     (e) => results[e.id] === "correct" || results[e.id] === "incorrect",
   );
@@ -66,10 +70,11 @@ export default function LevelDetail() {
     );
   }
 
-  const audioIndex: Record<string, string> = {};
-  for (const letter of level.letters) audioIndex[letter.id] = letter.audio.id;
-  for (const word of level.vocab) audioIndex[word.id] = word.audio.id;
-  for (const pattern of level.patterns) audioIndex[pattern.id] = pattern.audio.id;
+  // Maps a content item id to the Arabic text its audio button should speak.
+  const audioTextIndex: Record<string, string> = {};
+  for (const letter of level.letters) audioTextIndex[letter.id] = letter.audio.text;
+  for (const word of level.vocab) audioTextIndex[word.id] = word.audio.text;
+  for (const pattern of level.patterns) audioTextIndex[pattern.id] = pattern.audio.text;
 
   function handleAnswer(exerciseId: string, result: AnswerResult) {
     setResults((prev) => ({ ...prev, [exerciseId]: result }));
@@ -98,7 +103,7 @@ export default function LevelDetail() {
                 <ArabicText className="letter-glyph">{letter.forms.isolated}</ArabicText>
                 <div className="letter-name">{letter.name}</div>
                 <div className="letter-sound">{letter.sound}</div>
-                <PlayAudioButton audioId={letter.audio.id} label={`Play ${letter.name}`} />
+                <PlayAudioButton text={letter.audio.text} label={`Play ${letter.name}`} />
               </li>
             ))}
           </ul>
@@ -112,7 +117,7 @@ export default function LevelDetail() {
             {level.vocab.map((word) => (
               <li key={word.id} className="vocab-row">
                 <span className="vocab-arabic-cell">
-                  <PlayAudioButton audioId={word.audio.id} label={`Play ${word.transliteration}`} />
+                  <PlayAudioButton text={word.audio.text} label={`Play ${word.transliteration}`} />
                   <ArabicText className="vocab-arabic">{word.arabic}</ArabicText>
                 </span>
                 <span className="vocab-translit">{word.transliteration}</span>
@@ -130,7 +135,7 @@ export default function LevelDetail() {
             <div key={pattern.id} className="pattern-card">
               <span className="pattern-example-row">
                 <ArabicText className="pattern-example">{pattern.exampleArabic}</ArabicText>
-                <PlayAudioButton audioId={pattern.audio.id} label="Play example sentence" />
+                <PlayAudioButton text={pattern.audio.text} label="Play example sentence" />
               </span>
               <p className="pattern-translit">{pattern.exampleTransliteration}</p>
               <p className="pattern-english">{pattern.exampleEnglish}</p>
@@ -166,7 +171,7 @@ export default function LevelDetail() {
               <ExerciseCard
                 key={`${exercise.id}-${resetCount}`}
                 exercise={exercise}
-                audioIndex={audioIndex}
+                audioIndex={audioTextIndex}
                 onAnswer={(result) => handleAnswer(exercise.id, result)}
               />
             ))}

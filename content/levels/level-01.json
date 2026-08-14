@@ -169,6 +169,108 @@
       "refIds": ["baab"],
       "prompt": "Type the Arabic word for 'door'.",
       "answer": "باب"
+    },
+    {
+      "id": "l1-ex5",
+      "type": "multiple-choice",
+      "refIds": ["anta"],
+      "prompt": "What does 'أَنْتَ' mean?",
+      "options": ["door", "I", "thank you", "you (masc.)"],
+      "answer": "you (masc.)"
+    },
+    {
+      "id": "l1-ex6",
+      "type": "multiple-choice",
+      "refIds": ["anta"],
+      "prompt": "Which word means 'you (masc.)'?",
+      "options": ["لَا", "أَنَا", "نَعَمْ", "أَنْتَ"],
+      "answer": "أَنْتَ"
+    },
+    {
+      "id": "l1-ex7",
+      "type": "multiple-choice",
+      "refIds": ["la"],
+      "prompt": "What does 'لَا' mean?",
+      "options": ["father", "yes", "no", "you (masc.)"],
+      "answer": "no"
+    },
+    {
+      "id": "l1-ex8",
+      "type": "typing",
+      "refIds": ["la"],
+      "prompt": "Type the Arabic word for 'no'.",
+      "answer": "لا"
+    },
+    {
+      "id": "l1-ex9",
+      "type": "multiple-choice",
+      "refIds": ["salaam"],
+      "prompt": "What does 'السَّلَامُ عَلَيْكُمْ' mean?",
+      "options": ["door", "hello (lit. 'peace be upon you')", "father", "no"],
+      "answer": "hello (lit. 'peace be upon you')"
+    },
+    {
+      "id": "l1-ex10",
+      "type": "multiple-choice",
+      "refIds": ["salaam"],
+      "prompt": "Which word means 'hello'?",
+      "options": ["السَّلَامُ عَلَيْكُمْ", "أَب", "بَاب", "أَنْتَ"],
+      "answer": "السَّلَامُ عَلَيْكُمْ"
+    },
+    {
+      "id": "l1-ex11",
+      "type": "multiple-choice",
+      "refIds": ["shukran"],
+      "prompt": "What does 'شُكْرًا' mean?",
+      "options": ["you (masc.)", "thank you", "no", "yes"],
+      "answer": "thank you"
+    },
+    {
+      "id": "l1-ex12",
+      "type": "typing",
+      "refIds": ["shukran"],
+      "prompt": "Type the Arabic word for 'thank you'.",
+      "answer": "شكرا"
+    },
+    {
+      "id": "l1-ex13",
+      "type": "multiple-choice",
+      "refIds": ["ab"],
+      "prompt": "What does 'أَب' mean?",
+      "options": ["yes", "father", "hello (lit. 'peace be upon you')", "door"],
+      "answer": "father"
+    },
+    {
+      "id": "l1-ex14",
+      "type": "multiple-choice",
+      "refIds": ["ab"],
+      "prompt": "Which word means 'father'?",
+      "options": ["نَعَمْ", "لَا", "أَنْتَ", "أَب"],
+      "answer": "أَب"
+    },
+    {
+      "id": "l1-ex15",
+      "type": "letter-recognition",
+      "refIds": ["alif"],
+      "prompt": "Which letter is this? ا",
+      "options": ["Alif", "Thāʾ", "Tāʾ", "Bāʾ"],
+      "answer": "Alif"
+    },
+    {
+      "id": "l1-ex16",
+      "type": "letter-recognition",
+      "refIds": ["ta"],
+      "prompt": "Which letter is this? ت",
+      "options": ["Tāʾ", "Thāʾ", "Alif", "Bāʾ"],
+      "answer": "Tāʾ"
+    },
+    {
+      "id": "l1-ex17",
+      "type": "letter-recognition",
+      "refIds": ["tha"],
+      "prompt": "Which letter is this? ث",
+      "options": ["Thāʾ", "Tāʾ", "Alif", "Bāʾ"],
+      "answer": "Thāʾ"
     }
   ]
 }

@@ -4,13 +4,16 @@ A web app for English speakers to learn Modern Standard Arabic (MSA) —
 script, vocabulary, and sentence-building — across 100 levels.
 
 **Status: app shell with interactive exercises, an on-screen Arabic
-keyboard, and spaced-repetition review.** The first 10 levels of curriculum
-content exist as structured JSON, a React/Vite app loads and displays them
-with clickable/typeable exercises and live scoring, and finishing a level
-feeds its letters/vocab/patterns into a spaced-repetition queue you work
-through at `/review`. An offline TTS pipeline (Google Cloud Text-to-Speech)
-is built but **not yet run** — no audio files exist yet, on hold pending a
-GCP API key. See Next steps for what's still missing.
+keyboard, spaced-repetition review, real exercise depth, and live audio.**
+The first 10 levels of curriculum content exist as structured JSON — 133
+exercises across them, generated so every letter and vocab word gets at
+least one dedicated question, not just the illustrative few each level
+started with. A React/Vite app loads and displays them with
+clickable/typeable exercises and live scoring, finishing a level feeds its
+letters/vocab/patterns into a spaced-repetition queue you work through at
+`/review`, and 🔊 buttons speak Arabic text aloud using the browser's
+built-in Web Speech API — free, no account, no API key, no pre-generated
+files. See Next steps for what's still missing.
 
 ## Running it
 
@@ -22,23 +25,41 @@ npm run dev
 Then open the printed `localhost` URL. `npm run build` produces a static
 `dist/` you can deploy anywhere (Vercel, Netlify, GitHub Pages, ...).
 
-### Generating audio (on hold — not run yet)
+### Audio
 
-Requires a Google Cloud API key with the Text-to-Speech API enabled, which
-requires a billing account (card on file) even for free-tier usage — that's
-the reason this is paused, not cost (total usage here is a few hundred
-characters).
+🔊 buttons speak Arabic text live via the browser's Web Speech API
+(`src/lib/speech.ts`) — nothing to set up, nothing to generate. Voice
+quality/availability depends on your browser and OS:
+
+- **Chrome** supplies Arabic voices remotely regardless of what's installed
+  locally — this is the most reliable option.
+- Other browsers rely on voices installed at the OS level; if none are
+  found, `LevelList` shows a small notice and 🔊 buttons no-op silently
+  rather than erroring.
+
+An offline pre-generation pipeline for Google Cloud TTS
+(`scripts/generate-audio.mjs`) still exists as a documented fallback if you
+ever want downloadable/offline-consistent MP3s instead — it was shelved
+because Google Cloud requires a billing account (card on file) even for
+free-tier usage, which was more setup friction than the Web Speech API for
+no real quality gain. To use it: `cp .env.example .env`, fill in
+`GOOGLE_TTS_API_KEY`, then `npm run generate-audio` (supports `--dry-run`
+and `--force`). `PlayAudioButton` would need a small change to prefer a
+static file when one exists, since it currently always calls
+`speak()`.
+
+### Generating exercises
 
 ```bash
-cp .env.example .env   # then fill in GOOGLE_TTS_API_KEY (see comments in the file)
-npm run generate-audio                 # generate anything missing
-npm run generate-audio -- --dry-run    # preview what would be generated, no API calls
-npm run generate-audio -- --force      # regenerate everything
+npm run generate-exercises              # write changes to content/levels/*.json
+npm run generate-exercises -- --dry-run # preview counts, no writes
 ```
 
-MP3s land in `public/audio/{audioId}.mp3` and are served at `/audio/{audioId}.mp3`.
-The script is idempotent — safe to re-run after adding new levels, since it
-skips any id that already has a file.
+Scans each level for vocab/letters not yet tested by their own dedicated
+exercise and generates what's missing (meaning + recall/typing for vocab,
+recognition for letters), spliced into the level JSON alongside the
+hand-authored ones. Idempotent — safe to re-run after authoring new levels,
+since already-covered items are skipped.
 
 ## Design at a glance
 
@@ -55,12 +76,14 @@ skips any id that already has a file.
   on the level list.
 - **Platform**: static client-side app, no accounts — progress lives in the
   browser. No backend required.
-- **Audio**: pre-generated via Google Cloud Text-to-Speech (`ar-XA-Wavenet-B`,
-  a male MSA voice) and cached as static MP3s, not synthesized at runtime.
-  Pipeline built, not yet run (see "Generating audio" above).
+- **Audio**: live via the browser's Web Speech API (`src/lib/speech.ts`) —
+  free, no account, no pre-generation step. See "Audio" above for the
+  cloud-TTS fallback path if that's ever needed instead.
 - **Exercises**: multiple-choice/matching, typed Arabic input (with an
   on-screen Arabic keyboard), and self-check speaking practice (record
-  yourself vs. reference audio).
+  yourself vs. reference audio). Every letter and vocab word gets at least
+  one dedicated exercise per `scripts/generate-exercises.mjs` — see
+  "Generating exercises" above.
 
 Full rationale for these decisions — including why letters are taught in
 shape families instead of dictionary order, and why vocabulary isn't
@@ -77,16 +100,18 @@ src/lib/db.ts             Dexie (IndexedDB) schema for progress/SRS
 src/lib/arabic.ts         Diacritics-stripping normalization for grading
 src/lib/srs.ts            Spaced-repetition scheduling (lightweight SM-2)
 src/lib/reviewExercise.ts Turns a due SRS item into a synthetic quiz question
+src/lib/speech.ts         Web Speech API wrapper (speak, voice detection)
 src/pages/                LevelList, LevelDetail, Review
 src/components/           ArabicText, ExerciseCard, PlayAudioButton, ArabicKeyboard
 content/levels/*.json     Authored level content (levels 1–10 so far)
-scripts/generate-audio.mjs   Offline TTS pipeline (Google Cloud TTS) — not yet run
-public/audio/*.mp3        Generated audio clips, served at /audio/{id}.mp3 (none yet)
+scripts/generate-audio.mjs      Offline Google Cloud TTS pipeline — fallback, unused
+scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 ```
 
 Each `content/levels/level-XX.json` follows the `Level` type in
-`src/types/content.ts`: new letters, new vocab, new sentence patterns,
-a diacritics-display setting, and a handful of sample exercises.
+`src/types/content.ts`: new letters, new vocab, new sentence patterns, a
+diacritics-display setting, and exercises (a hand-authored core set plus
+generated coverage exercises — 133 total across the 10 levels).
 
 ## First 10 levels
 
@@ -122,23 +147,36 @@ a diacritics-display setting, and a handful of sample exercises.
     Verified end-to-end: completing a level seeds the right item count,
     correct/incorrect answers reschedule items exactly per the algorithm,
     and the level-list due-count banner tracks it live.
-3. **Stand up the audio pipeline — built, on hold.** `scripts/generate-audio.mjs`
-   is ready (see "Generating audio" above) but hasn't been run — needs a
-   Google Cloud API key, deferred for now due to GCP's billing-account
-   requirement. Letter audio already uses the letter's full diacritized
-   *name* (e.g. "بَاء" bāʾ), not the bare undiacritized glyph, since TTS
-   can't meaningfully pronounce a lone unvoweled consonant. Play buttons
-   (🔊) are wired into letters, vocab, sentence patterns, and
-   audio-recognition exercises, and fail silently until audio exists.
-4. **Generate exercises at scale (current priority).** Level files currently
-   hold a few illustrative sample exercises per level; a full pass needs
-   several exercises per vocab/letter item for real practice depth.
-5. **Give speaking exercises real feedback**, once audio exists — reference
-   audio to compare against, not just a self-check toggle.
+3. ~~Get audio working.~~ Done, via a different route than originally
+   planned — the Google Cloud TTS pipeline needed a billing account even
+   for free usage, so switched to the browser's built-in Web Speech API
+   instead: zero setup, zero account, zero cost (see "Audio" above).
+   `PlayAudioButton` now takes the Arabic `text` to speak directly rather
+   than a pre-generated file id. Letter audio still uses the letter's full
+   diacritized *name* (e.g. "بَاء" bāʾ) rather than the bare glyph, since
+   speech synthesis can't meaningfully pronounce a lone unvoweled consonant
+   — that fix was provider-agnostic and carried over. `LevelList` shows a
+   notice if no Arabic voice is detected in the browser. The Google Cloud
+   pipeline is kept as a documented, unused fallback.
+4. ~~Generate exercises at scale.~~ Done — `scripts/generate-exercises.mjs`
+   (see "Generating exercises" above) took the 10 levels from 42 hand-authored
+   sample exercises to 133, ensuring every letter and vocab word has at
+   least one dedicated question. Verified in the browser: answered all 17
+   of level 1's exercises via a scripted click-through, got a clean 17/17,
+   and confirmed SRS seeding still counts by unique content item (not
+   exercise count), so this didn't perturb the review-queue math.
+5. **Give speaking exercises real feedback (current priority).** Audio
+   infrastructure exists now, but `SpeakingExercise` (`ExerciseCard.tsx`)
+   isn't wired to it yet — still just a "mark as practiced" toggle. Play the
+   target word/phrase via `speak()` so the learner has a reference to
+   compare their own pronunciation against; true automated pronunciation
+   scoring is a much bigger separate feature, out of scope for this step.
 6. **Add a progress dashboard** beyond the per-level score badges — e.g.
    review load over time, words learned, streaks.
 7. **Author levels 11–100** once the first 10 are validated, continuing the
    interleaved letters → orthography → vocabulary → grammar progression.
+   `generate-exercises.mjs` is idempotent, so re-run it after each new batch
+   of levels to fill in coverage automatically.
 8. **Author a `letter-writing` exercise.** The type exists in the schema
    (`src/types/content.ts`) and `ExerciseCard` already handles it, but no
    level uses it yet — only recognition, no tracing/handwriting practice.

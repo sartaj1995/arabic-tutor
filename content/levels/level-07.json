@@ -170,6 +170,108 @@
       "prompt": "Listen and select the word you hear.",
       "options": ["نَحْنُ", "هُوَ", "هُمْ", "أَنْتِ"],
       "answer": "نَحْنُ"
+    },
+    {
+      "id": "l7-ex5",
+      "type": "multiple-choice",
+      "refIds": ["anti"],
+      "prompt": "What does 'أَنْتِ' mean?",
+      "options": ["house", "you (fem.)", "who", "clock / watch / hour"],
+      "answer": "you (fem.)"
+    },
+    {
+      "id": "l7-ex6",
+      "type": "multiple-choice",
+      "refIds": ["anti"],
+      "prompt": "Which word means 'you (fem.)'?",
+      "options": ["بِنْت", "مَنْ", "عَلَى", "أَنْتِ"],
+      "answer": "أَنْتِ"
+    },
+    {
+      "id": "l7-ex7",
+      "type": "multiple-choice",
+      "refIds": ["huwa"],
+      "prompt": "What does 'هُوَ' mean?",
+      "options": ["car", "he", "how many / how much", "boy / son"],
+      "answer": "he"
+    },
+    {
+      "id": "l7-ex8",
+      "type": "typing",
+      "refIds": ["huwa"],
+      "prompt": "Type the Arabic word for 'he'.",
+      "answer": "هو"
+    },
+    {
+      "id": "l7-ex9",
+      "type": "multiple-choice",
+      "refIds": ["hum"],
+      "prompt": "What does 'هُمْ' mean?",
+      "options": ["they (masc./mixed)", "in", "short", "that (fem.)"],
+      "answer": "they (masc./mixed)"
+    },
+    {
+      "id": "l7-ex10",
+      "type": "multiple-choice",
+      "refIds": ["hum"],
+      "prompt": "Which word means 'they (masc./mixed)'?",
+      "options": ["سَيَّارَة", "فِي", "وَلَد", "هُمْ"],
+      "answer": "هُمْ"
+    },
+    {
+      "id": "l7-ex11",
+      "type": "multiple-choice",
+      "refIds": ["saeed"],
+      "prompt": "What does 'سَعِيد' mean?",
+      "options": ["who", "happy (masc.)", "window", "pen"],
+      "answer": "happy (masc.)"
+    },
+    {
+      "id": "l7-ex12",
+      "type": "typing",
+      "refIds": ["saeed"],
+      "prompt": "Type the Arabic word for 'happy (masc.)'.",
+      "answer": "سعيد"
+    },
+    {
+      "id": "l7-ex13",
+      "type": "multiple-choice",
+      "refIds": ["saeeda"],
+      "prompt": "What does 'سَعِيدَة' mean?",
+      "options": ["door", "happy (fem.)", "clock / watch / hour", "book"],
+      "answer": "happy (fem.)"
+    },
+    {
+      "id": "l7-ex14",
+      "type": "multiple-choice",
+      "refIds": ["saeeda"],
+      "prompt": "Which word means 'happy (fem.)'?",
+      "options": ["طَوِيل", "سَعِيدَة", "هِيَ", "هَذِهِ"],
+      "answer": "سَعِيدَة"
+    },
+    {
+      "id": "l7-ex15",
+      "type": "letter-recognition",
+      "refIds": ["nun"],
+      "prompt": "Which letter is this? ن",
+      "options": ["Nūn", "Thāʾ", "Ḥāʾ", "Fāʾ"],
+      "answer": "Nūn"
+    },
+    {
+      "id": "l7-ex16",
+      "type": "letter-recognition",
+      "refIds": ["ha_light"],
+      "prompt": "Which letter is this? ه",
+      "options": ["Dhāl", "Mīm", "Ḍād", "Hāʾ"],
+      "answer": "Hāʾ"
+    },
+    {
+      "id": "l7-ex17",
+      "type": "letter-recognition",
+      "refIds": ["ya"],
+      "prompt": "Which letter is this? ي",
+      "options": ["Yāʾ", "Hāʾ", "Khāʾ", "Ṭāʾ"],
+      "answer": "Yāʾ"
     }
   ]
 }

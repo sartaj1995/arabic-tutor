@@ -159,6 +159,92 @@
       "prompt": "Listen and select the word you hear.",
       "options": ["فِي", "عَلَى", "ذَلِكَ", "تِلْكَ"],
       "answer": "فِي"
+    },
+    {
+      "id": "l5-ex5",
+      "type": "multiple-choice",
+      "refIds": ["haadhaa"],
+      "prompt": "What does 'هَذَا' mean?",
+      "options": ["thank you", "new", "clock / watch / hour", "this (masc.)"],
+      "answer": "this (masc.)"
+    },
+    {
+      "id": "l5-ex6",
+      "type": "multiple-choice",
+      "refIds": ["haadhaa"],
+      "prompt": "Which word means 'this (masc.)'?",
+      "options": ["هَذِهِ", "جَدِيد", "هَذَا", "أَخ"],
+      "answer": "هَذَا"
+    },
+    {
+      "id": "l5-ex7",
+      "type": "multiple-choice",
+      "refIds": ["dhaalika"],
+      "prompt": "What does 'ذَلِكَ' mean?",
+      "options": ["I", "that (masc.)", "in", "brother"],
+      "answer": "that (masc.)"
+    },
+    {
+      "id": "l5-ex8",
+      "type": "typing",
+      "refIds": ["dhaalika"],
+      "prompt": "Type the Arabic word for 'that (masc.)'.",
+      "answer": "ذلك"
+    },
+    {
+      "id": "l5-ex9",
+      "type": "multiple-choice",
+      "refIds": ["tilka"],
+      "prompt": "What does 'تِلْكَ' mean?",
+      "options": ["father", "boy / son", "no", "that (fem.)"],
+      "answer": "that (fem.)"
+    },
+    {
+      "id": "l5-ex10",
+      "type": "multiple-choice",
+      "refIds": ["tilka"],
+      "prompt": "Which word means 'that (fem.)'?",
+      "options": ["عَلَى", "جَدِيد", "تِلْكَ", "أُمّ"],
+      "answer": "تِلْكَ"
+    },
+    {
+      "id": "l5-ex11",
+      "type": "multiple-choice",
+      "refIds": ["alaa"],
+      "prompt": "What does 'عَلَى' mean?",
+      "options": ["small", "mother", "house", "on"],
+      "answer": "on"
+    },
+    {
+      "id": "l5-ex12",
+      "type": "typing",
+      "refIds": ["alaa"],
+      "prompt": "Type the Arabic word for 'on'.",
+      "answer": "على"
+    },
+    {
+      "id": "l5-ex13",
+      "type": "letter-recognition",
+      "refIds": ["zaa_emphatic"],
+      "prompt": "Which letter is this? ظ",
+      "options": ["Ẓāʾ", "Ghayn", "Fāʾ", "Ṭāʾ"],
+      "answer": "Ẓāʾ"
+    },
+    {
+      "id": "l5-ex14",
+      "type": "letter-recognition",
+      "refIds": ["ghayn"],
+      "prompt": "Which letter is this? غ",
+      "options": ["Thāʾ", "Ghayn", "Bāʾ", "Fāʾ"],
+      "answer": "Ghayn"
+    },
+    {
+      "id": "l5-ex15",
+      "type": "letter-recognition",
+      "refIds": ["fa"],
+      "prompt": "Which letter is this? ف",
+      "options": ["Tāʾ", "Fāʾ", "Alif", "Ḥāʾ"],
+      "answer": "Fāʾ"
     }
   ]
 }

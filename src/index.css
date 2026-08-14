@@ -48,6 +48,15 @@ body {
   padding: 1.5rem;
 }
 
+.voice-warning {
+  margin: 0 0 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  background: var(--incorrect-bg);
+  color: var(--incorrect);
+  font-size: 0.85rem;
+}
+
 .review-banner {
   margin-bottom: 1rem;
 }

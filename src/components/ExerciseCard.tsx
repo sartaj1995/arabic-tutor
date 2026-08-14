@@ -9,7 +9,7 @@ export type AnswerResult = "correct" | "incorrect" | "unscored";
 interface ExerciseCardProps {
   exercise: Exercise;
   onAnswer: (result: AnswerResult) => void;
-  /** Maps a content item id (letter/vocab/pattern id) to its audio clip id. */
+  /** Maps a content item id (letter/vocab/pattern id) to the Arabic text its audio should speak. */
   audioIndex?: Record<string, string>;
 }
 
@@ -22,7 +22,7 @@ const CHOICE_TYPES = new Set<Exercise["type"]>([
 ]);
 
 export default function ExerciseCard({ exercise, onAnswer, audioIndex }: ExerciseCardProps) {
-  const targetAudioId = exercise.refIds[0] ? audioIndex?.[exercise.refIds[0]] : undefined;
+  const targetAudioText = exercise.refIds[0] ? audioIndex?.[exercise.refIds[0]] : undefined;
 
   return (
     <li className="exercise-card">
@@ -30,8 +30,8 @@ export default function ExerciseCard({ exercise, onAnswer, audioIndex }: Exercis
       <p className="exercise-prompt" dir="auto">
         {exercise.prompt}
       </p>
-      {exercise.type === "audio-recognition" && targetAudioId && (
-        <PlayAudioButton audioId={targetAudioId} label="Listen" className="listen-btn" />
+      {exercise.type === "audio-recognition" && targetAudioText && (
+        <PlayAudioButton text={targetAudioText} label="Listen" className="listen-btn" />
       )}
       {CHOICE_TYPES.has(exercise.type) && exercise.options && (
         <ChoiceExercise exercise={exercise} onAnswer={onAnswer} />
