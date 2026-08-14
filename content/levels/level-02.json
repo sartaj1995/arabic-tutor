@@ -147,6 +147,77 @@
       "refIds": ["akh"],
       "prompt": "Type the Arabic word for 'brother'.",
       "answer": "أخ"
+    },
+    {
+      "id": "l2-ex5",
+      "type": "multiple-choice",
+      "refIds": ["umm"],
+      "prompt": "What does 'أُمّ' mean?",
+      "options": ["brother", "house", "mother", "sister"],
+      "answer": "mother"
+    },
+    {
+      "id": "l2-ex6",
+      "type": "multiple-choice",
+      "refIds": ["umm"],
+      "prompt": "Which word means 'mother'?",
+      "options": ["بَاب", "بِنْت", "بَيْت", "أُمّ"],
+      "answer": "أُمّ"
+    },
+    {
+      "id": "l2-ex7",
+      "type": "multiple-choice",
+      "refIds": ["walad"],
+      "prompt": "What does 'وَلَد' mean?",
+      "options": ["boy / son", "girl / daughter", "I", "thank you"],
+      "answer": "boy / son"
+    },
+    {
+      "id": "l2-ex8",
+      "type": "typing",
+      "refIds": ["walad"],
+      "prompt": "Type the Arabic word for 'boy / son'.",
+      "answer": "ولد"
+    },
+    {
+      "id": "l2-ex9",
+      "type": "multiple-choice",
+      "refIds": ["bint"],
+      "prompt": "What does 'بِنْت' mean?",
+      "options": ["girl / daughter", "I", "mother", "thank you"],
+      "answer": "girl / daughter"
+    },
+    {
+      "id": "l2-ex10",
+      "type": "multiple-choice",
+      "refIds": ["bint"],
+      "prompt": "Which word means 'girl / daughter'?",
+      "options": ["بِنْت", "بَيْت", "أُمّ", "أَخ"],
+      "answer": "بِنْت"
+    },
+    {
+      "id": "l2-ex11",
+      "type": "letter-recognition",
+      "refIds": ["jeem"],
+      "prompt": "Which letter is this? ج",
+      "options": ["Bāʾ", "Dāl", "Tāʾ", "Jīm"],
+      "answer": "Jīm"
+    },
+    {
+      "id": "l2-ex12",
+      "type": "letter-recognition",
+      "refIds": ["kha"],
+      "prompt": "Which letter is this? خ",
+      "options": ["Tāʾ", "Ḥāʾ", "Khāʾ", "Bāʾ"],
+      "answer": "Khāʾ"
+    },
+    {
+      "id": "l2-ex13",
+      "type": "letter-recognition",
+      "refIds": ["dal"],
+      "prompt": "Which letter is this? د",
+      "options": ["Dāl", "Khāʾ", "Alif", "Bāʾ"],
+      "answer": "Dāl"
     }
   ]
 }

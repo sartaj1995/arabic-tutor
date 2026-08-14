@@ -147,6 +147,77 @@
       "refIds": ["jadeed"],
       "prompt": "Type the Arabic word for 'new'.",
       "answer": "جديد"
+    },
+    {
+      "id": "l4-ex5",
+      "type": "multiple-choice",
+      "refIds": ["kabeer"],
+      "prompt": "What does 'كَبِير' mean?",
+      "options": ["brother", "small", "big", "pen"],
+      "answer": "big"
+    },
+    {
+      "id": "l4-ex6",
+      "type": "multiple-choice",
+      "refIds": ["kabeer"],
+      "prompt": "Which word means 'big'?",
+      "options": ["أَنَا", "أَخ", "كَبِير", "سَاعَة"],
+      "answer": "كَبِير"
+    },
+    {
+      "id": "l4-ex7",
+      "type": "multiple-choice",
+      "refIds": ["jameel"],
+      "prompt": "What does 'جَمِيل' mean?",
+      "options": ["beautiful", "thank you", "car", "pen"],
+      "answer": "beautiful"
+    },
+    {
+      "id": "l4-ex8",
+      "type": "typing",
+      "refIds": ["jameel"],
+      "prompt": "Type the Arabic word for 'beautiful'.",
+      "answer": "جميل"
+    },
+    {
+      "id": "l4-ex9",
+      "type": "multiple-choice",
+      "refIds": ["qaseer"],
+      "prompt": "What does 'قَصِير' mean?",
+      "options": ["father", "you (masc.)", "short", "pen"],
+      "answer": "short"
+    },
+    {
+      "id": "l4-ex10",
+      "type": "multiple-choice",
+      "refIds": ["qaseer"],
+      "prompt": "Which word means 'short'?",
+      "options": ["أَنَا", "سَاعَة", "أَخ", "قَصِير"],
+      "answer": "قَصِير"
+    },
+    {
+      "id": "l4-ex11",
+      "type": "letter-recognition",
+      "refIds": ["sheen"],
+      "prompt": "Which letter is this? ش",
+      "options": ["Dāl", "Shīn", "Thāʾ", "Tāʾ"],
+      "answer": "Shīn"
+    },
+    {
+      "id": "l4-ex12",
+      "type": "letter-recognition",
+      "refIds": ["daad"],
+      "prompt": "Which letter is this? ض",
+      "options": ["Rāʾ", "Thāʾ", "Ḍād", "Ṣād"],
+      "answer": "Ḍād"
+    },
+    {
+      "id": "l4-ex13",
+      "type": "letter-recognition",
+      "refIds": ["taa_emphatic"],
+      "prompt": "Which letter is this? ط",
+      "options": ["Tāʾ", "Khāʾ", "Ḍād", "Ṭāʾ"],
+      "answer": "Ṭāʾ"
     }
   ]
 }

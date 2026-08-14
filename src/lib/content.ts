@@ -1,4 +1,4 @@
-import type { Level, Letter, VocabWord, SentencePattern, SRSItemType } from "../types/content";
+import type { Level, Letter, VocabWord, SentencePattern, SRSItemType, Exercise } from "../types/content";
 
 const modules = import.meta.glob("/content/levels/*.json", {
   eager: true,
@@ -10,6 +10,15 @@ export const levels: Level[] = Object.values(modules)
 
 export function getLevel(number: number): Level | undefined {
   return levels.find((level) => level.number === number);
+}
+
+// Speaking exercises are self-check only and excluded from scoring — see
+// LevelDetail. Shared here so a saved score's total can be validated
+// against the level's *current* exercise set, not just trusted blindly:
+// content (like the exercise-depth pass) can change the count after a
+// completion record was already saved.
+export function scoreableExercises(level: Level): Exercise[] {
+  return level.exercises.filter((e) => e.type !== "speaking");
 }
 
 // Flattened across every level — spaced-repetition review spans everything

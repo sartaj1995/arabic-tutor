@@ -1,13 +1,15 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { levels } from "../lib/content";
+import { levels, scoreableExercises } from "../lib/content";
 import { db, type LevelProgress } from "../lib/db";
+import { useHasArabicVoice } from "../lib/speech";
 
 const TOTAL_PLANNED_LEVELS = 100;
 
 export default function LevelList() {
   const [progress, setProgress] = useState<Record<number, LevelProgress>>({});
   const [dueCount, setDueCount] = useState<number | null>(null);
+  const hasVoice = useHasArabicVoice();
 
   useEffect(() => {
     db.levelProgress.toArray().then((rows) => {
@@ -24,6 +26,12 @@ export default function LevelList() {
 
   return (
     <div className="level-list">
+      {!hasVoice && (
+        <p className="voice-warning">
+          🔇 No Arabic voice found in this browser, so 🔊 buttons won't play anything. Try Chrome,
+          or check your OS's language/speech settings for an Arabic voice.
+        </p>
+      )}
       <div className="review-banner">
         {dueCount !== null &&
           (dueCount > 0 ? (
@@ -45,7 +53,7 @@ export default function LevelList() {
               <Link to={`/level/${level.number}`} className="level-card">
                 <span className="level-number">{level.number}</span>
                 <span className="level-title">{level.title}</span>
-                {record?.completed && (
+                {record?.completed && record.lastScoreTotal === scoreableExercises(level).length && (
                   <span className="level-badge">
                     ✓ {record.lastScore}/{record.lastScoreTotal}
                   </span>

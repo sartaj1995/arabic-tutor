@@ -117,6 +117,53 @@
       "refIds": ["kitaabii"],
       "prompt": "Type the Arabic word for 'my book'.",
       "answer": "كتابي"
+    },
+    {
+      "id": "l9-ex5",
+      "type": "multiple-choice",
+      "refIds": ["baytuka"],
+      "prompt": "What does 'بَيْتُكَ' mean?",
+      "options": ["door", "my book", "your house (masc.)", "he"],
+      "answer": "your house (masc.)"
+    },
+    {
+      "id": "l9-ex6",
+      "type": "multiple-choice",
+      "refIds": ["baytuka"],
+      "prompt": "Which word means 'your house (masc.)'?",
+      "options": ["بَيْتُكَ", "عَلَى", "قَصِير", "ثَلَاثَة"],
+      "answer": "بَيْتُكَ"
+    },
+    {
+      "id": "l9-ex7",
+      "type": "multiple-choice",
+      "refIds": ["baytuki"],
+      "prompt": "What does 'بَيْتُكِ' mean?",
+      "options": ["this (fem.)", "your house (fem.)", "on", "house"],
+      "answer": "your house (fem.)"
+    },
+    {
+      "id": "l9-ex8",
+      "type": "typing",
+      "refIds": ["baytuki"],
+      "prompt": "Type the Arabic word for 'your house (fem.)'.",
+      "answer": "بيتك"
+    },
+    {
+      "id": "l9-ex9",
+      "type": "multiple-choice",
+      "refIds": ["baytuhaa"],
+      "prompt": "What does 'بَيْتُهَا' mean?",
+      "options": ["three", "her house", "you (fem.)", "she"],
+      "answer": "her house"
+    },
+    {
+      "id": "l9-ex10",
+      "type": "multiple-choice",
+      "refIds": ["baytuhaa"],
+      "prompt": "Which word means 'her house'?",
+      "options": ["كَيْفَ", "تِلْكَ", "بَيْتُهَا", "أَيْنَ"],
+      "answer": "بَيْتُهَا"
     }
   ]
 }

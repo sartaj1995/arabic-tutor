@@ -115,6 +115,53 @@
       "prompt": "Listen and select the word you hear.",
       "options": ["لَيْسَتْ", "لَيْسَ", "لَسْتُ", "لَسْتَ"],
       "answer": "لَيْسَتْ"
+    },
+    {
+      "id": "l10-ex6",
+      "type": "multiple-choice",
+      "refIds": ["lasta"],
+      "prompt": "What does 'لَسْتَ' mean?",
+      "options": ["your house (masc.)", "that (fem.)", "you (masc.) are not", "your house (fem.)"],
+      "answer": "you (masc.) are not"
+    },
+    {
+      "id": "l10-ex7",
+      "type": "multiple-choice",
+      "refIds": ["lasta"],
+      "prompt": "Which word means 'you (masc.) are not'?",
+      "options": ["أَنْتِ", "لَسْتَ", "سَاعَة", "نَعَمْ"],
+      "answer": "لَسْتَ"
+    },
+    {
+      "id": "l10-ex8",
+      "type": "multiple-choice",
+      "refIds": ["lasti"],
+      "prompt": "What does 'لَسْتِ' mean?",
+      "options": ["he", "you (fem.) are not", "her house", "this (masc.)"],
+      "answer": "you (fem.) are not"
+    },
+    {
+      "id": "l10-ex9",
+      "type": "typing",
+      "refIds": ["lasti"],
+      "prompt": "Type the Arabic word for 'you (fem.) are not'.",
+      "answer": "لست"
+    },
+    {
+      "id": "l10-ex10",
+      "type": "multiple-choice",
+      "refIds": ["laysa"],
+      "prompt": "What does 'لَيْسَ' mean?",
+      "options": ["my book", "three", "two", "he/it is not"],
+      "answer": "he/it is not"
+    },
+    {
+      "id": "l10-ex11",
+      "type": "multiple-choice",
+      "refIds": ["laysa"],
+      "prompt": "Which word means 'he/it is not'?",
+      "options": ["طَوِيل", "لَيْسَ", "جَمِيل", "كَبِير"],
+      "answer": "لَيْسَ"
     }
   ]
 }

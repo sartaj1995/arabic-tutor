@@ -104,6 +104,37 @@
       "prompt": "Which hamza seat appears when a word begins with a short 'i' vowel, as in إِنَّ (indeed)?",
       "options": ["إ", "أ", "ؤ", "ئ"],
       "answer": "إ"
+    },
+    {
+      "id": "l8-ex6",
+      "type": "multiple-choice",
+      "refIds": ["arbaa"],
+      "prompt": "What does 'أَرْبَعَة' mean?",
+      "options": ["boy / son", "four", "big", "no"],
+      "answer": "four"
+    },
+    {
+      "id": "l8-ex7",
+      "type": "multiple-choice",
+      "refIds": ["arbaa"],
+      "prompt": "Which word means 'four'?",
+      "options": ["نَافِذَة", "أَرْبَعَة", "لِمَاذَا", "كَبِير"],
+      "answer": "أَرْبَعَة"
+    },
+    {
+      "id": "l8-ex8",
+      "type": "multiple-choice",
+      "refIds": ["khamsa"],
+      "prompt": "What does 'خَمْسَة' mean?",
+      "options": ["four", "hello (lit. 'peace be upon you')", "brother", "five"],
+      "answer": "five"
+    },
+    {
+      "id": "l8-ex9",
+      "type": "typing",
+      "refIds": ["khamsa"],
+      "prompt": "Type the Arabic word for 'five'.",
+      "answer": "خمسة"
     }
   ]
 }
