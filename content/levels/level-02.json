@@ -1,0 +1,152 @@
+{
+  "number": 2,
+  "title": "Family",
+  "newLetters": ["jeem", "ha_pharyngeal", "kha", "dal"],
+  "newVocab": ["umm", "akh", "ukht", "bayt", "walad", "bint"],
+  "newPatterns": [],
+  "diacriticsLevel": "full",
+  "letters": [
+    {
+      "id": "jeem",
+      "forms": { "isolated": "ج", "initial": "جـ", "medial": "ـجـ", "final": "ـج" },
+      "name": "Jīm",
+      "sound": "j, as in 'jam'.",
+      "transliteration": "j",
+      "shapeFamily": "jeem-family",
+      "audio": { "id": "letter_jeem", "text": "جِيم" },
+      "introducedInLevel": 2
+    },
+    {
+      "id": "ha_pharyngeal",
+      "forms": { "isolated": "ح", "initial": "حـ", "medial": "ـحـ", "final": "ـح" },
+      "name": "Ḥāʾ",
+      "sound": "A breathy 'h', stronger and further back in the throat than English 'h'.",
+      "transliteration": "ḥ",
+      "shapeFamily": "jeem-family",
+      "audio": { "id": "letter_ha_pharyngeal", "text": "حَاء" },
+      "introducedInLevel": 2
+    },
+    {
+      "id": "kha",
+      "forms": { "isolated": "خ", "initial": "خـ", "medial": "ـخـ", "final": "ـخ" },
+      "name": "Khāʾ",
+      "sound": "kh, like the 'ch' in Scottish 'loch' or German 'Bach'.",
+      "transliteration": "kh",
+      "shapeFamily": "jeem-family",
+      "audio": { "id": "letter_kha", "text": "خَاء" },
+      "introducedInLevel": 2
+    },
+    {
+      "id": "dal",
+      "forms": { "isolated": "د", "initial": "د", "medial": "ـد", "final": "ـد" },
+      "name": "Dāl",
+      "sound": "d, as in 'dog'.",
+      "transliteration": "d",
+      "shapeFamily": "dal-family",
+      "audio": { "id": "letter_dal", "text": "دَال" },
+      "introducedInLevel": 2
+    }
+  ],
+  "vocab": [
+    {
+      "id": "umm",
+      "arabic": "أُمّ",
+      "arabicNoDiacritics": "أم",
+      "transliteration": "umm",
+      "english": "mother",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_umm", "text": "أُمّ" },
+      "introducedInLevel": 2,
+      "tags": ["family"]
+    },
+    {
+      "id": "akh",
+      "arabic": "أَخ",
+      "arabicNoDiacritics": "أخ",
+      "transliteration": "akh",
+      "english": "brother",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_akh", "text": "أَخ" },
+      "introducedInLevel": 2,
+      "tags": ["family"]
+    },
+    {
+      "id": "ukht",
+      "arabic": "أُخْت",
+      "arabicNoDiacritics": "أخت",
+      "transliteration": "ukht",
+      "english": "sister",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_ukht", "text": "أُخْت" },
+      "introducedInLevel": 2,
+      "tags": ["family"]
+    },
+    {
+      "id": "bayt",
+      "arabic": "بَيْت",
+      "arabicNoDiacritics": "بيت",
+      "transliteration": "bayt",
+      "english": "house",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_bayt", "text": "بَيْت" },
+      "introducedInLevel": 2,
+      "tags": ["core", "home"]
+    },
+    {
+      "id": "walad",
+      "arabic": "وَلَد",
+      "arabicNoDiacritics": "ولد",
+      "transliteration": "walad",
+      "english": "boy / son",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_walad", "text": "وَلَد" },
+      "introducedInLevel": 2,
+      "tags": ["family"]
+    },
+    {
+      "id": "bint",
+      "arabic": "بِنْت",
+      "arabicNoDiacritics": "بنت",
+      "transliteration": "bint",
+      "english": "girl / daughter",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_bint", "text": "بِنْت" },
+      "introducedInLevel": 2,
+      "tags": ["family"]
+    }
+  ],
+  "patterns": [],
+  "exercises": [
+    {
+      "id": "l2-ex1",
+      "type": "letter-recognition",
+      "refIds": ["ha_pharyngeal", "jeem", "kha", "dal"],
+      "prompt": "Which letter is this? ح",
+      "options": ["Jīm", "Ḥāʾ", "Khāʾ", "Dāl"],
+      "answer": "Ḥāʾ"
+    },
+    {
+      "id": "l2-ex2",
+      "type": "matching",
+      "refIds": ["ab", "umm", "akh", "ukht"],
+      "prompt": "Match the Arabic family word to its English meaning: أُخْت",
+      "options": ["sister", "brother", "mother", "father"],
+      "answer": "sister"
+    },
+    {
+      "id": "l2-ex3",
+      "type": "audio-recognition",
+      "refIds": ["bayt", "walad", "bint", "umm"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["بَيْت", "وَلَد", "بِنْت", "أُمّ"],
+      "answer": "بَيْت"
+    },
+    {
+      "id": "l2-ex4",
+      "type": "typing",
+      "refIds": ["akh"],
+      "prompt": "Type the Arabic word for 'brother'.",
+      "answer": "أخ"
+    }
+  ]
+}

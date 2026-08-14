@@ -1,0 +1,152 @@
+{
+  "number": 3,
+  "title": "Everyday Objects",
+  "newLetters": ["dhal", "ra", "zay", "seen"],
+  "newVocab": ["kitaab", "qalam", "saaa", "zahra", "naafidha", "sayyaara"],
+  "newPatterns": [],
+  "diacriticsLevel": "full",
+  "letters": [
+    {
+      "id": "dhal",
+      "forms": { "isolated": "ذ", "initial": "ذ", "medial": "ـذ", "final": "ـذ" },
+      "name": "Dhāl",
+      "sound": "th, voiced, as in 'this'.",
+      "transliteration": "dh",
+      "shapeFamily": "dal-family",
+      "audio": { "id": "letter_dhal", "text": "ذَال" },
+      "introducedInLevel": 3
+    },
+    {
+      "id": "ra",
+      "forms": { "isolated": "ر", "initial": "ر", "medial": "ـر", "final": "ـر" },
+      "name": "Rāʾ",
+      "sound": "A tapped/rolled r, like Spanish 'r'.",
+      "transliteration": "r",
+      "shapeFamily": "ra-family",
+      "audio": { "id": "letter_ra", "text": "رَاء" },
+      "introducedInLevel": 3
+    },
+    {
+      "id": "zay",
+      "forms": { "isolated": "ز", "initial": "ز", "medial": "ـز", "final": "ـز" },
+      "name": "Zāy",
+      "sound": "z, as in 'zoo'.",
+      "transliteration": "z",
+      "shapeFamily": "ra-family",
+      "audio": { "id": "letter_zay", "text": "زَاي" },
+      "introducedInLevel": 3
+    },
+    {
+      "id": "seen",
+      "forms": { "isolated": "س", "initial": "سـ", "medial": "ـسـ", "final": "ـس" },
+      "name": "Sīn",
+      "sound": "s, as in 'sun'.",
+      "transliteration": "s",
+      "shapeFamily": "seen-family",
+      "audio": { "id": "letter_seen", "text": "سِين" },
+      "introducedInLevel": 3
+    }
+  ],
+  "vocab": [
+    {
+      "id": "kitaab",
+      "arabic": "كِتَاب",
+      "arabicNoDiacritics": "كتاب",
+      "transliteration": "kitāb",
+      "english": "book",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_kitaab", "text": "كِتَاب" },
+      "introducedInLevel": 3,
+      "tags": ["core", "object"]
+    },
+    {
+      "id": "qalam",
+      "arabic": "قَلَم",
+      "arabicNoDiacritics": "قلم",
+      "transliteration": "qalam",
+      "english": "pen",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_qalam", "text": "قَلَم" },
+      "introducedInLevel": 3,
+      "tags": ["object"]
+    },
+    {
+      "id": "saaa",
+      "arabic": "سَاعَة",
+      "arabicNoDiacritics": "ساعة",
+      "transliteration": "sāʿa",
+      "english": "clock / watch / hour",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_saaa", "text": "سَاعَة" },
+      "introducedInLevel": 3,
+      "tags": ["object"]
+    },
+    {
+      "id": "zahra",
+      "arabic": "زَهْرَة",
+      "arabicNoDiacritics": "زهرة",
+      "transliteration": "zahra",
+      "english": "flower",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_zahra", "text": "زَهْرَة" },
+      "introducedInLevel": 3,
+      "tags": ["object"]
+    },
+    {
+      "id": "naafidha",
+      "arabic": "نَافِذَة",
+      "arabicNoDiacritics": "نافذة",
+      "transliteration": "nāfidha",
+      "english": "window",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_naafidha", "text": "نَافِذَة" },
+      "introducedInLevel": 3,
+      "tags": ["object", "home"]
+    },
+    {
+      "id": "sayyaara",
+      "arabic": "سَيَّارَة",
+      "arabicNoDiacritics": "سيارة",
+      "transliteration": "sayyāra",
+      "english": "car",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_sayyaara", "text": "سَيَّارَة" },
+      "introducedInLevel": 3,
+      "tags": ["object"]
+    }
+  ],
+  "patterns": [],
+  "exercises": [
+    {
+      "id": "l3-ex1",
+      "type": "letter-recognition",
+      "refIds": ["seen", "dhal", "ra", "zay"],
+      "prompt": "Which letter is this? س",
+      "options": ["Dhāl", "Rāʾ", "Zāy", "Sīn"],
+      "answer": "Sīn"
+    },
+    {
+      "id": "l3-ex2",
+      "type": "multiple-choice",
+      "refIds": ["kitaab"],
+      "prompt": "What does 'كِتَاب' mean?",
+      "options": ["book", "pen", "car", "window"],
+      "answer": "book"
+    },
+    {
+      "id": "l3-ex3",
+      "type": "audio-recognition",
+      "refIds": ["sayyaara", "zahra", "saaa", "naafidha"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["سَيَّارَة", "زَهْرَة", "سَاعَة", "نَافِذَة"],
+      "answer": "سَيَّارَة"
+    },
+    {
+      "id": "l3-ex4",
+      "type": "typing",
+      "refIds": ["qalam"],
+      "prompt": "Type the Arabic word for 'pen'.",
+      "answer": "قلم"
+    }
+  ]
+}

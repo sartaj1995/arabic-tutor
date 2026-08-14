@@ -1,0 +1,109 @@
+{
+  "number": 8,
+  "title": "Numbers 1–5 & Hamza Forms",
+  "newLetters": [],
+  "newVocab": ["wahid", "ithnaan", "thalatha", "arbaa", "khamsa"],
+  "newPatterns": [],
+  "diacriticsLevel": "full",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "wahid",
+      "arabic": "وَاحِد",
+      "arabicNoDiacritics": "واحد",
+      "transliteration": "wāḥid",
+      "english": "one",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_wahid", "text": "وَاحِد" },
+      "introducedInLevel": 8,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "ithnaan",
+      "arabic": "اِثْنَان",
+      "arabicNoDiacritics": "اثنان",
+      "transliteration": "ithnān",
+      "english": "two",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_ithnaan", "text": "اِثْنَان" },
+      "introducedInLevel": 8,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "thalatha",
+      "arabic": "ثَلَاثَة",
+      "arabicNoDiacritics": "ثلاثة",
+      "transliteration": "thalātha",
+      "english": "three",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_thalatha", "text": "ثَلَاثَة" },
+      "introducedInLevel": 8,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "arbaa",
+      "arabic": "أَرْبَعَة",
+      "arabicNoDiacritics": "أربعة",
+      "transliteration": "arbaʿa",
+      "english": "four",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_arbaa", "text": "أَرْبَعَة" },
+      "introducedInLevel": 8,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "khamsa",
+      "arabic": "خَمْسَة",
+      "arabicNoDiacritics": "خمسة",
+      "transliteration": "khamsa",
+      "english": "five",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_khamsa", "text": "خَمْسَة" },
+      "introducedInLevel": 8,
+      "tags": ["core", "number"]
+    }
+  ],
+  "patterns": [],
+  "exercises": [
+    {
+      "id": "l8-ex1",
+      "type": "multiple-choice",
+      "refIds": ["wahid"],
+      "prompt": "What does 'وَاحِد' mean?",
+      "options": ["one", "two", "three", "four"],
+      "answer": "one"
+    },
+    {
+      "id": "l8-ex2",
+      "type": "audio-recognition",
+      "refIds": ["thalatha", "arbaa", "khamsa", "ithnaan"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["ثَلَاثَة", "أَرْبَعَة", "خَمْسَة", "اِثْنَان"],
+      "answer": "ثَلَاثَة"
+    },
+    {
+      "id": "l8-ex3",
+      "type": "matching",
+      "refIds": ["wahid", "ithnaan", "thalatha", "khamsa"],
+      "prompt": "Match the numeral to the word: 2",
+      "options": ["اِثْنَان", "وَاحِد", "ثَلَاثَة", "خَمْسَة"],
+      "answer": "اِثْنَان"
+    },
+    {
+      "id": "l8-ex4",
+      "type": "multiple-choice",
+      "refIds": [],
+      "prompt": "Orthography note: hamza (ء) is a consonant, not one of the 28 base letters — it just needs a 'seat' to sit on. Which seat is used when a hamza sits on a wāw, as in سُؤَال (question)?",
+      "options": ["ؤ", "ئ", "إ", "ء"],
+      "answer": "ؤ"
+    },
+    {
+      "id": "l8-ex5",
+      "type": "multiple-choice",
+      "refIds": [],
+      "prompt": "Which hamza seat appears when a word begins with a short 'i' vowel, as in إِنَّ (indeed)?",
+      "options": ["إ", "أ", "ؤ", "ئ"],
+      "answer": "إ"
+    }
+  ]
+}

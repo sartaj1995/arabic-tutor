@@ -1,0 +1,164 @@
+{
+  "number": 5,
+  "title": "Demonstratives — \"This is...\"",
+  "newLetters": ["zaa_emphatic", "ayn", "ghayn", "fa"],
+  "newVocab": ["haadhaa", "haadhihi", "dhaalika", "tilka", "fi", "alaa"],
+  "newPatterns": ["this-is-noun"],
+  "diacriticsLevel": "full",
+  "letters": [
+    {
+      "id": "zaa_emphatic",
+      "forms": { "isolated": "ظ", "initial": "ظـ", "medial": "ـظـ", "final": "ـظ" },
+      "name": "Ẓāʾ",
+      "sound": "Emphatic/heavy voiced 'th' — like ذ but pharyngealized.",
+      "transliteration": "ẓ",
+      "shapeFamily": "taa-family",
+      "audio": { "id": "letter_zaa_emphatic", "text": "ظَاء" },
+      "introducedInLevel": 5
+    },
+    {
+      "id": "ayn",
+      "forms": { "isolated": "ع", "initial": "عـ", "medial": "ـعـ", "final": "ـع" },
+      "name": "ʿAyn",
+      "sound": "A voiced pharyngeal fricative made by tightening the throat — distinctive to Arabic, no English equivalent.",
+      "transliteration": "ʿ",
+      "shapeFamily": "ayn-family",
+      "audio": { "id": "letter_ayn", "text": "عَيْن" },
+      "introducedInLevel": 5
+    },
+    {
+      "id": "ghayn",
+      "forms": { "isolated": "غ", "initial": "غـ", "medial": "ـغـ", "final": "ـغ" },
+      "name": "Ghayn",
+      "sound": "A voiced, gargled sound made in the back of the throat, similar to a Parisian French 'r'.",
+      "transliteration": "gh",
+      "shapeFamily": "ayn-family",
+      "audio": { "id": "letter_ghayn", "text": "غَيْن" },
+      "introducedInLevel": 5
+    },
+    {
+      "id": "fa",
+      "forms": { "isolated": "ف", "initial": "فـ", "medial": "ـفـ", "final": "ـف" },
+      "name": "Fāʾ",
+      "sound": "f, as in 'fun'.",
+      "transliteration": "f",
+      "shapeFamily": "fa-family",
+      "audio": { "id": "letter_fa", "text": "فَاء" },
+      "introducedInLevel": 5
+    }
+  ],
+  "vocab": [
+    {
+      "id": "haadhaa",
+      "arabic": "هَذَا",
+      "arabicNoDiacritics": "هذا",
+      "transliteration": "hādhā",
+      "english": "this (masc.)",
+      "partOfSpeech": "demonstrative",
+      "audio": { "id": "word_haadhaa", "text": "هَذَا" },
+      "introducedInLevel": 5,
+      "tags": ["core", "demonstrative"]
+    },
+    {
+      "id": "haadhihi",
+      "arabic": "هَذِهِ",
+      "arabicNoDiacritics": "هذه",
+      "transliteration": "hādhihi",
+      "english": "this (fem.)",
+      "partOfSpeech": "demonstrative",
+      "audio": { "id": "word_haadhihi", "text": "هَذِهِ" },
+      "introducedInLevel": 5,
+      "tags": ["core", "demonstrative"]
+    },
+    {
+      "id": "dhaalika",
+      "arabic": "ذَلِكَ",
+      "arabicNoDiacritics": "ذلك",
+      "transliteration": "dhālika",
+      "english": "that (masc.)",
+      "partOfSpeech": "demonstrative",
+      "audio": { "id": "word_dhaalika", "text": "ذَلِكَ" },
+      "introducedInLevel": 5,
+      "tags": ["demonstrative"]
+    },
+    {
+      "id": "tilka",
+      "arabic": "تِلْكَ",
+      "arabicNoDiacritics": "تلك",
+      "transliteration": "tilka",
+      "english": "that (fem.)",
+      "partOfSpeech": "demonstrative",
+      "audio": { "id": "word_tilka", "text": "تِلْكَ" },
+      "introducedInLevel": 5,
+      "tags": ["demonstrative"]
+    },
+    {
+      "id": "fi",
+      "arabic": "فِي",
+      "arabicNoDiacritics": "في",
+      "transliteration": "fī",
+      "english": "in",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_fi", "text": "فِي" },
+      "introducedInLevel": 5,
+      "tags": ["core", "preposition"]
+    },
+    {
+      "id": "alaa",
+      "arabic": "عَلَى",
+      "arabicNoDiacritics": "على",
+      "transliteration": "ʿalā",
+      "english": "on",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_alaa", "text": "عَلَى" },
+      "introducedInLevel": 5,
+      "tags": ["preposition"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "this-is-noun",
+      "pattern": "[Demonstrative] + [Indefinite Noun]",
+      "exampleArabic": "هَذَا بَيْتٌ",
+      "exampleTransliteration": "hādhā baytun",
+      "exampleEnglish": "This is a house.",
+      "grammarNote": "Arabic has no separate word for 'is' in a simple present-tense statement — placing a demonstrative directly before a noun forms a complete sentence. The final -un ending (tanwīn / nunation) marks the noun as indefinite ('a house', not 'the house'); it's frequently dropped in casual speech.",
+      "audio": { "id": "phrase_haadhaa_baytun", "text": "هَذَا بَيْتٌ" },
+      "introducedInLevel": 5
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l5-ex1",
+      "type": "letter-recognition",
+      "refIds": ["ayn", "zaa_emphatic", "ghayn", "fa"],
+      "prompt": "Which letter is this? ع",
+      "options": ["Ẓāʾ", "ʿAyn", "Ghayn", "Fāʾ"],
+      "answer": "ʿAyn"
+    },
+    {
+      "id": "l5-ex2",
+      "type": "sentence-build",
+      "refIds": ["haadhaa", "bayt", "this-is-noun"],
+      "prompt": "Arrange the tiles to say 'This is a house.'",
+      "options": ["هَذَا", "بَيْتٌ"],
+      "answer": "هَذَا بَيْتٌ"
+    },
+    {
+      "id": "l5-ex3",
+      "type": "multiple-choice",
+      "refIds": ["haadhihi"],
+      "prompt": "What does 'هَذِهِ' mean?",
+      "options": ["this (fem.)", "this (masc.)", "that (fem.)", "that (masc.)"],
+      "answer": "this (fem.)"
+    },
+    {
+      "id": "l5-ex4",
+      "type": "audio-recognition",
+      "refIds": ["fi", "alaa", "dhaalika", "tilka"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["فِي", "عَلَى", "ذَلِكَ", "تِلْكَ"],
+      "answer": "فِي"
+    }
+  ]
+}

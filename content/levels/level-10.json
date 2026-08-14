@@ -1,0 +1,120 @@
+{
+  "number": 10,
+  "title": "Negation & Review",
+  "newLetters": [],
+  "newVocab": ["lastu", "lasta", "lasti", "laysa", "laysat"],
+  "newPatterns": ["i-am-not-adjective"],
+  "diacriticsLevel": "partial",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "lastu",
+      "arabic": "لَسْتُ",
+      "arabicNoDiacritics": "لست",
+      "transliteration": "lastu",
+      "english": "I am not",
+      "partOfSpeech": "negation particle (conjugated)",
+      "audio": { "id": "word_lastu", "text": "لَسْتُ" },
+      "introducedInLevel": 10,
+      "tags": ["core", "negation"]
+    },
+    {
+      "id": "lasta",
+      "arabic": "لَسْتَ",
+      "arabicNoDiacritics": "لست",
+      "transliteration": "lasta",
+      "english": "you (masc.) are not",
+      "partOfSpeech": "negation particle (conjugated)",
+      "audio": { "id": "word_lasta", "text": "لَسْتَ" },
+      "introducedInLevel": 10,
+      "tags": ["negation"]
+    },
+    {
+      "id": "lasti",
+      "arabic": "لَسْتِ",
+      "arabicNoDiacritics": "لست",
+      "transliteration": "lasti",
+      "english": "you (fem.) are not",
+      "partOfSpeech": "negation particle (conjugated)",
+      "audio": { "id": "word_lasti", "text": "لَسْتِ" },
+      "introducedInLevel": 10,
+      "tags": ["negation"]
+    },
+    {
+      "id": "laysa",
+      "arabic": "لَيْسَ",
+      "arabicNoDiacritics": "ليس",
+      "transliteration": "laysa",
+      "english": "he/it is not",
+      "partOfSpeech": "negation particle (conjugated)",
+      "audio": { "id": "word_laysa", "text": "لَيْسَ" },
+      "introducedInLevel": 10,
+      "tags": ["negation"]
+    },
+    {
+      "id": "laysat",
+      "arabic": "لَيْسَتْ",
+      "arabicNoDiacritics": "ليست",
+      "transliteration": "laysat",
+      "english": "she/it is not",
+      "partOfSpeech": "negation particle (conjugated)",
+      "audio": { "id": "word_laysat", "text": "لَيْسَتْ" },
+      "introducedInLevel": 10,
+      "tags": ["negation"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "i-am-not-adjective",
+      "pattern": "[Negation particle, conjugated] + [Adjective in accusative]",
+      "exampleArabic": "لَسْتُ سَعِيدًا",
+      "exampleTransliteration": "lastu saʿīdan",
+      "exampleEnglish": "I am not happy. (male speaker)",
+      "grammarNote": "لَيْسَ (laysa) negates equational (verb-less) sentences. It's a 'defective verb' that conjugates by person like a past-tense verb even though its meaning is present tense: لَسْتُ (I am not), لَسْتَ / لَسْتِ (you m./f. are not), لَيْسَ (he is not), لَيْسَتْ (she is not). The adjective that follows switches to the accusative case ending -an (سَعِيدًا, not سَعِيدٌ).",
+      "audio": { "id": "phrase_lastu_saeedan", "text": "لَسْتُ سَعِيدًا" },
+      "introducedInLevel": 10
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l10-ex1",
+      "type": "multiple-choice",
+      "refIds": ["lastu"],
+      "prompt": "What does 'لَسْتُ' mean?",
+      "options": ["I am not", "you are not", "he is not", "she is not"],
+      "answer": "I am not"
+    },
+    {
+      "id": "l10-ex2",
+      "type": "sentence-build",
+      "refIds": ["lastu", "saeed", "i-am-not-adjective"],
+      "prompt": "Arrange the tiles to say 'I am not happy.' (male speaker)",
+      "options": ["لَسْتُ", "سَعِيدًا"],
+      "answer": "لَسْتُ سَعِيدًا"
+    },
+    {
+      "id": "l10-ex3",
+      "type": "matching",
+      "refIds": ["laysat", "laysa", "lasta", "lasti"],
+      "prompt": "Which pronoun goes with 'لَيْسَتْ'?",
+      "options": ["hiya (she)", "huwa (he)", "anta (you, m.)", "anti (you, f.)"],
+      "answer": "hiya (she)"
+    },
+    {
+      "id": "l10-ex4",
+      "type": "sentence-build",
+      "refIds": ["kitaabii", "jameel"],
+      "prompt": "Review: arrange the tiles to say 'My book is beautiful.'",
+      "options": ["كِتَابِي", "جَمِيلٌ"],
+      "answer": "كِتَابِي جَمِيلٌ"
+    },
+    {
+      "id": "l10-ex5",
+      "type": "audio-recognition",
+      "refIds": ["laysat", "laysa", "lastu", "lasta"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["لَيْسَتْ", "لَيْسَ", "لَسْتُ", "لَسْتَ"],
+      "answer": "لَيْسَتْ"
+    }
+  ]
+}
