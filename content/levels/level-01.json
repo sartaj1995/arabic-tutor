@@ -327,6 +327,38 @@
       "refIds": ["baab"],
       "prompt": "Practice saying 'بَاب' (door) out loud.",
       "answer": "باب"
+    },
+    {
+      "id": "l1-ex26",
+      "type": "letter-writing",
+      "refIds": ["alif"],
+      "prompt": "Which is the correct initial form of the letter Alif?",
+      "options": ["ثـ", "بـ", "ا", "تـ"],
+      "answer": "ا"
+    },
+    {
+      "id": "l1-ex27",
+      "type": "letter-writing",
+      "refIds": ["ba"],
+      "prompt": "Which is the correct medial form of the letter Bāʾ?",
+      "options": ["ـثـ", "ـبـ", "ـا", "ـتـ"],
+      "answer": "ـبـ"
+    },
+    {
+      "id": "l1-ex28",
+      "type": "letter-writing",
+      "refIds": ["ta"],
+      "prompt": "Which is the correct final form of the letter Tāʾ?",
+      "options": ["ـت", "ـا", "ـث", "ـب"],
+      "answer": "ـت"
+    },
+    {
+      "id": "l1-ex29",
+      "type": "letter-writing",
+      "refIds": ["tha"],
+      "prompt": "Which is the correct initial form of the letter Thāʾ?",
+      "options": ["ثـ", "تـ", "ا", "بـ"],
+      "answer": "ثـ"
     }
   ]
 }

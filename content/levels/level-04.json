@@ -260,6 +260,38 @@
       "refIds": ["qaseer"],
       "prompt": "Practice saying 'قَصِير' (short) out loud.",
       "answer": "قصير"
+    },
+    {
+      "id": "l4-ex20",
+      "type": "letter-writing",
+      "refIds": ["sheen"],
+      "prompt": "Which is the correct initial form of the letter Shīn?",
+      "options": ["شـ", "تـ", "ذ", "ا"],
+      "answer": "شـ"
+    },
+    {
+      "id": "l4-ex21",
+      "type": "letter-writing",
+      "refIds": ["saad"],
+      "prompt": "Which is the correct medial form of the letter Ṣād?",
+      "options": ["ـز", "ـصـ", "ـشـ", "ـثـ"],
+      "answer": "ـصـ"
+    },
+    {
+      "id": "l4-ex22",
+      "type": "letter-writing",
+      "refIds": ["daad"],
+      "prompt": "Which is the correct final form of the letter Ḍād?",
+      "options": ["ـض", "ـط", "ـش", "ـح"],
+      "answer": "ـض"
+    },
+    {
+      "id": "l4-ex23",
+      "type": "letter-writing",
+      "refIds": ["taa_emphatic"],
+      "prompt": "Which is the correct initial form of the letter Ṭāʾ?",
+      "options": ["بـ", "حـ", "ا", "طـ"],
+      "answer": "طـ"
     }
   ]
 }

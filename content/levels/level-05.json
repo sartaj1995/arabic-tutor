@@ -287,6 +287,38 @@
       "refIds": ["alaa"],
       "prompt": "Practice saying 'عَلَى' (on) out loud.",
       "answer": "على"
+    },
+    {
+      "id": "l5-ex22",
+      "type": "letter-writing",
+      "refIds": ["zaa_emphatic"],
+      "prompt": "Which is the correct initial form of the letter Ẓāʾ?",
+      "options": ["ظـ", "جـ", "د", "سـ"],
+      "answer": "ظـ"
+    },
+    {
+      "id": "l5-ex23",
+      "type": "letter-writing",
+      "refIds": ["ayn"],
+      "prompt": "Which is the correct medial form of the letter ʿAyn?",
+      "options": ["ـغـ", "ـا", "ـعـ", "ـشـ"],
+      "answer": "ـعـ"
+    },
+    {
+      "id": "l5-ex24",
+      "type": "letter-writing",
+      "refIds": ["ghayn"],
+      "prompt": "Which is the correct final form of the letter Ghayn?",
+      "options": ["ـع", "ـغ", "ـط", "ـص"],
+      "answer": "ـغ"
+    },
+    {
+      "id": "l5-ex25",
+      "type": "letter-writing",
+      "refIds": ["fa"],
+      "prompt": "Which is the correct initial form of the letter Fāʾ?",
+      "options": ["ظـ", "فـ", "د", "شـ"],
+      "answer": "فـ"
     }
   ]
 }

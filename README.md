@@ -190,12 +190,14 @@ generated coverage exercises — 222 total across the 20 levels).
    of level 1's exercises via a scripted click-through, got a clean 17/17,
    and confirmed SRS seeding still counts by unique content item (not
    exercise count), so this didn't perturb the review-queue math.
-5. **Give speaking exercises real feedback (current priority).** Audio
-   infrastructure exists now, but `SpeakingExercise` (`ExerciseCard.tsx`)
-   isn't wired to it yet — still just a "mark as practiced" toggle. Play the
-   target word/phrase via `speak()` so the learner has a reference to
-   compare their own pronunciation against; true automated pronunciation
-   scoring is a much bigger separate feature, out of scope for this step.
+5. ~~Give speaking exercises real feedback.~~ Done — `SpeakingExercise`
+   (`ExerciseCard.tsx`) now plays the target word/phrase via `speak()`
+   before the self-check, reusing the same reference-audio pattern as
+   `audio-recognition`. Also authored 116 `speaking` exercises across all
+   20 levels (one per vocab word) via `generate-exercises.mjs`, since none
+   existed in any level before this. True automated pronunciation scoring
+   (recording + grading the learner's own voice) remains a much bigger
+   separate feature, deliberately out of scope.
 6. ~~Add a progress dashboard.~~ Done — `/progress` (`src/pages/Progress.tsx`
    + `src/lib/progress.ts`), reachable from a nav link in the header on
    every page. All stats are computed on the fly from existing
@@ -223,6 +225,10 @@ generated coverage exercises — 222 total across the 20 levels).
    (irregular) plurals, past tense, and more verbs are the natural next
    grammar topics. `generate-exercises.mjs` is idempotent, so re-run it
    after each new batch to fill in coverage automatically.
-9. **Author a `letter-writing` exercise.** The type exists in the schema
-   (`src/types/content.ts`) and `ExerciseCard` already handles it, but no
-   level uses it yet — only recognition, no tracing/handwriting practice.
+9. ~~Author `letter-writing` exercises.~~ Done — `generate-exercises.mjs`
+   now generates one per letter (28 total, across levels 1–7 where all the
+   alphabet is introduced), testing the production direction (name ->
+   glyph) that `letter-recognition` doesn't cover, rotating through the
+   initial/medial/final positional forms so a letter's joining shapes get
+   exercised too, not just its isolated form. Reuses the existing
+   choice-exercise UI — no new component needed.

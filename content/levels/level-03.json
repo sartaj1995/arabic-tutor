@@ -260,6 +260,38 @@
       "refIds": ["sayyaara"],
       "prompt": "Practice saying 'سَيَّارَة' (car) out loud.",
       "answer": "سيارة"
+    },
+    {
+      "id": "l3-ex20",
+      "type": "letter-writing",
+      "refIds": ["dhal"],
+      "prompt": "Which is the correct initial form of the letter Dhāl?",
+      "options": ["خـ", "حـ", "ذ", "بـ"],
+      "answer": "ذ"
+    },
+    {
+      "id": "l3-ex21",
+      "type": "letter-writing",
+      "refIds": ["ra"],
+      "prompt": "Which is the correct medial form of the letter Rāʾ?",
+      "options": ["ـثـ", "ـخـ", "ـر", "ـحـ"],
+      "answer": "ـر"
+    },
+    {
+      "id": "l3-ex22",
+      "type": "letter-writing",
+      "refIds": ["zay"],
+      "prompt": "Which is the correct final form of the letter Zāy?",
+      "options": ["ـز", "ـس", "ـج", "ـب"],
+      "answer": "ـز"
+    },
+    {
+      "id": "l3-ex23",
+      "type": "letter-writing",
+      "refIds": ["seen"],
+      "prompt": "Which is the correct initial form of the letter Sīn?",
+      "options": ["تـ", "حـ", "سـ", "ثـ"],
+      "answer": "سـ"
     }
   ]
 }

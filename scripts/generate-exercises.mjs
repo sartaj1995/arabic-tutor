@@ -88,6 +88,28 @@ function findSpeakingCoverage(level) {
   return covered;
 }
 
+// Letter-writing coverage, tracked the same way as speaking coverage above
+// (separately from findCoveredIds): a letter is already "covered" in the
+// generic sense by its letter-recognition exercise (glyph -> name), but that
+// leaves the reverse, production direction (name -> glyph) — and the
+// initial/medial/final positional forms specifically — untested. So this
+// looks for an existing "letter-writing" exercise referencing the letter's
+// id directly, rather than reusing the name-matching coveredLetters set.
+function findLetterWritingCoverage(level) {
+  const covered = new Set();
+  for (const ex of level.exercises) {
+    if (ex.type !== "letter-writing") continue;
+    for (const refId of ex.refIds) covered.add(refId);
+  }
+  return covered;
+}
+
+const POSITIONAL_FORMS = [
+  { key: "initial", label: "initial" },
+  { key: "medial", label: "medial" },
+  { key: "final", label: "final" },
+];
+
 function findCoveredIds(level) {
   const coveredVocab = new Set();
   const coveredLetters = new Set();
@@ -144,6 +166,7 @@ function main() {
 
     const { coveredVocab, coveredLetters, coveredPatterns } = findCoveredIds(level);
     const speakingCovered = findSpeakingCoverage(level);
+    const letterWritingCovered = findLetterWritingCoverage(level);
     const genId = nextExerciseIdFactory(level);
     const newExercises = [];
 
@@ -221,6 +244,29 @@ function main() {
       });
     }
 
+    // Every letter gets a production-direction exercise too (name -> glyph,
+    // mirroring letter-recognition's glyph -> name), rotating through the
+    // initial/medial/final positional forms so a letter's joining shapes get
+    // exercised, not just its isolated form.
+    level.letters.forEach((letter, index) => {
+      if (letterWritingCovered.has(letter.id)) return;
+      const { key: formKey, label: formLabel } = POSITIONAL_FORMS[index % POSITIONAL_FORMS.length];
+      const correctForm = displayArabic(letter.forms[formKey], level);
+      const distractors = pickDistractors(
+        lettersSoFar.map((l) => displayArabic(l.forms[formKey], level)),
+        correctForm,
+        3,
+      );
+      newExercises.push({
+        id: genId(),
+        type: "letter-writing",
+        refIds: [letter.id],
+        prompt: `Which is the correct ${formLabel} form of the letter ${letter.name}?`,
+        options: shuffle([correctForm, ...distractors]),
+        answer: correctForm,
+      });
+    });
+
     for (const pattern of uncoveredPatterns) {
       const distractors = pickDistractors(
         patternsSoFar.map((p) => p.exampleEnglish),
@@ -250,14 +296,25 @@ function main() {
     totalAdded += newExercises.length;
 
     if (!DRY_RUN) {
-      const closeMarker = "\n  ]\n}";
+      // Files may be checked out with CRLF line endings (Windows
+      // core.autocrlf) even though this script always composes new content
+      // with plain "\n" — detect the file's actual line ending so the
+      // splice marker and appended text both match it, rather than assuming LF.
+      const nl = raw.includes("\r\n") ? "\r\n" : "\n";
+      const closeMarker = `${nl}  ]${nl}}`;
       const idx = raw.lastIndexOf(closeMarker);
       if (idx === -1) {
         throw new Error(`Could not find exercises array close in ${file} — aborting to avoid corrupting it.`);
       }
       const before = raw.slice(0, idx);
-      const newBlocks = newExercises.map(formatExercise).join(",\n");
-      const updated = `${before},\n${newBlocks}${closeMarker}\n`;
+      // formatExercise always joins with plain "\n" internally; normalize to
+      // the file's actual line ending in one pass, after joining, so an "\r"
+      // we just inserted never gets matched and doubled by this same replace.
+      const newBlocks = newExercises
+        .map(formatExercise)
+        .join(",\n")
+        .replace(/\n/g, nl);
+      const updated = `${before},${nl}${newBlocks}${closeMarker}${nl}`;
       writeFileSync(filePath, updated, "utf8");
     }
   }

@@ -260,6 +260,38 @@
       "refIds": ["bint"],
       "prompt": "Practice saying 'بِنْت' (girl / daughter) out loud.",
       "answer": "بنت"
+    },
+    {
+      "id": "l2-ex20",
+      "type": "letter-writing",
+      "refIds": ["jeem"],
+      "prompt": "Which is the correct initial form of the letter Jīm?",
+      "options": ["خـ", "جـ", "حـ", "تـ"],
+      "answer": "جـ"
+    },
+    {
+      "id": "l2-ex21",
+      "type": "letter-writing",
+      "refIds": ["ha_pharyngeal"],
+      "prompt": "Which is the correct medial form of the letter Ḥāʾ?",
+      "options": ["ـد", "ـجـ", "ـحـ", "ـا"],
+      "answer": "ـحـ"
+    },
+    {
+      "id": "l2-ex22",
+      "type": "letter-writing",
+      "refIds": ["kha"],
+      "prompt": "Which is the correct final form of the letter Khāʾ?",
+      "options": ["ـا", "ـج", "ـخ", "ـح"],
+      "answer": "ـخ"
+    },
+    {
+      "id": "l2-ex23",
+      "type": "letter-writing",
+      "refIds": ["dal"],
+      "prompt": "Which is the correct initial form of the letter Dāl?",
+      "options": ["تـ", "د", "خـ", "حـ"],
+      "answer": "د"
     }
   ]
 }
