@@ -24,6 +24,24 @@ const LEVELS_DIR = path.join(ROOT, "content", "levels");
 
 const DRY_RUN = process.argv.includes("--dry-run");
 
+// Same diacritics ranges as src/lib/arabic.ts's normalizeArabic — kept as a
+// separate copy since this is a plain Node script, not bundled with the app.
+const DIACRITICS_REGEX =
+  /[ؐ-ًؚ-ٰٟۖ-ۜ۟-۪ۨ-ۭـ]/g;
+
+function stripDiacritics(text) {
+  return text.replace(DIACRITICS_REGEX, "");
+}
+
+// Renders Arabic text the way this level wants it shown: levels whose
+// diacriticsLevel is "none" get plain text (matching the fade-out design —
+// see docs/content-model.md), everything else keeps full diacritics as
+// authored. Applies to distractors too, even ones sourced from an earlier
+// (still-diacritized) level, so a single exercise never mixes styles.
+function displayArabic(text, level) {
+  return level.diacriticsLevel === "none" ? stripDiacritics(text) : text;
+}
+
 function shuffle(items) {
   const copy = [...items];
   for (let i = copy.length - 1; i > 0; i--) {
@@ -119,6 +137,8 @@ function main() {
     const uncoveredPatterns = level.patterns.filter((p) => !coveredPatterns.has(p.id));
 
     uncoveredVocab.forEach((word, index) => {
+      const wordArabicDisplay = displayArabic(word.arabic, level);
+
       // Every uncovered word gets a meaning-recognition question...
       const meaningDistractors = pickDistractors(
         vocabSoFar.map((v) => v.english),
@@ -129,7 +149,7 @@ function main() {
         id: genId(),
         type: "multiple-choice",
         refIds: [word.id],
-        prompt: `What does '${word.arabic}' mean?`,
+        prompt: `What does '${wordArabicDisplay}' mean?`,
         options: shuffle([word.english, ...meaningDistractors]),
         answer: word.english,
       });
@@ -137,18 +157,15 @@ function main() {
       // ...plus a second, production-oriented question, alternating between
       // recall (pick the Arabic word) and typing it out, for variety.
       if (index % 2 === 0) {
-        const recallDistractors = pickDistractors(
-          vocabSoFar.map((v) => v.arabic),
-          word.arabic,
-          3,
-        );
+        const arabicPoolDisplay = vocabSoFar.map((v) => displayArabic(v.arabic, level));
+        const recallDistractors = pickDistractors(arabicPoolDisplay, wordArabicDisplay, 3);
         newExercises.push({
           id: genId(),
           type: "multiple-choice",
           refIds: [word.id],
           prompt: `Which word means '${word.english}'?`,
-          options: shuffle([word.arabic, ...recallDistractors]),
-          answer: word.arabic,
+          options: shuffle([wordArabicDisplay, ...recallDistractors]),
+          answer: wordArabicDisplay,
         });
       } else {
         newExercises.push({
@@ -171,7 +188,7 @@ function main() {
         id: genId(),
         type: "letter-recognition",
         refIds: [letter.id],
-        prompt: `Which letter is this? ${letter.forms.isolated}`,
+        prompt: `Which letter is this? ${displayArabic(letter.forms.isolated, level)}`,
         options: shuffle([letter.name, ...distractors]),
         answer: letter.name,
       });
@@ -187,7 +204,7 @@ function main() {
         id: genId(),
         type: "multiple-choice",
         refIds: [pattern.id],
-        prompt: `What does this mean? ${pattern.exampleArabic}`,
+        prompt: `What does this mean? ${displayArabic(pattern.exampleArabic, level)}`,
         options: shuffle([pattern.exampleEnglish, ...distractors]),
         answer: pattern.exampleEnglish,
       });

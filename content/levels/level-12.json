@@ -1,0 +1,135 @@
+{
+  "number": 12,
+  "title": "Verbs — \"To Go\" (I / You)",
+  "newLetters": [],
+  "newVocab": ["adhhabu", "tadhhabu", "tadhhabeena", "ilaa", "madrasa"],
+  "newPatterns": ["go-to-place"],
+  "diacriticsLevel": "partial",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "adhhabu",
+      "arabic": "أَذْهَبُ",
+      "arabicNoDiacritics": "أذهب",
+      "transliteration": "adhhabu",
+      "english": "I go",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_adhhabu", "text": "أَذْهَبُ" },
+      "introducedInLevel": 12,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tadhhabu",
+      "arabic": "تَذْهَبُ",
+      "arabicNoDiacritics": "تذهب",
+      "transliteration": "tadhhabu",
+      "english": "you (masc.) go / she goes",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tadhhabu", "text": "تَذْهَبُ" },
+      "introducedInLevel": 12,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tadhhabeena",
+      "arabic": "تَذْهَبِينَ",
+      "arabicNoDiacritics": "تذهبين",
+      "transliteration": "tadhhabīna",
+      "english": "you (fem.) go",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tadhhabeena", "text": "تَذْهَبِينَ" },
+      "introducedInLevel": 12,
+      "tags": ["verb"]
+    },
+    {
+      "id": "ilaa",
+      "arabic": "إِلَى",
+      "arabicNoDiacritics": "إلى",
+      "transliteration": "ilā",
+      "english": "to / towards",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_ilaa", "text": "إِلَى" },
+      "introducedInLevel": 12,
+      "tags": ["core", "preposition"]
+    },
+    {
+      "id": "madrasa",
+      "arabic": "مَدْرَسَةٌ",
+      "arabicNoDiacritics": "مدرسة",
+      "transliteration": "madrasatun",
+      "english": "a school",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_madrasa", "text": "مَدْرَسَةٌ" },
+      "introducedInLevel": 12,
+      "tags": ["core", "place"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "go-to-place",
+      "pattern": "[Verb] + إِلَى + الـ[Place, genitive]",
+      "exampleArabic": "أَذْهَبُ إِلَى الْمَدْرَسَةِ",
+      "exampleTransliteration": "adhhabu ilā l-madrasati",
+      "exampleEnglish": "I go to school.",
+      "grammarNote": "Present-tense MSA verbs conjugate with a prefix for the subject: أَ- (I), تَ- (you/she), يَ- (he), نَ- (we), attached to a verb stem (here ‑ذْهَب‑), usually with a -ُ ending. إِلَى ('to/towards') is a preposition that puts the following noun in the genitive case, shown by a -ِ ending — so الْمَدْرَسَةُ ('the school', nominative) becomes الْمَدْرَسَةِ after إِلَى.",
+      "audio": { "id": "phrase_adhhabu_ilaa_madrasa", "text": "أَذْهَبُ إِلَى الْمَدْرَسَةِ" },
+      "introducedInLevel": 12
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l12-ex1",
+      "type": "multiple-choice",
+      "refIds": ["adhhabu"],
+      "prompt": "What does 'أَذْهَبُ' mean?",
+      "options": ["you go", "I go", "he goes", "we go"],
+      "answer": "I go"
+    },
+    {
+      "id": "l12-ex2",
+      "type": "sentence-build",
+      "refIds": ["adhhabu", "madrasa", "go-to-place"],
+      "prompt": "Arrange the tiles to say 'I go to school.'",
+      "options": ["أَذْهَبُ", "إِلَى", "الْمَدْرَسَةِ"],
+      "answer": "أَذْهَبُ إِلَى الْمَدْرَسَةِ"
+    },
+    {
+      "id": "l12-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tadhhabeena"],
+      "prompt": "What does 'تَذْهَبِينَ' mean?",
+      "options": ["I go", "he goes", "you (fem.) go", "we go"],
+      "answer": "you (fem.) go"
+    },
+    {
+      "id": "l12-ex4",
+      "type": "multiple-choice",
+      "refIds": ["ilaa"],
+      "prompt": "What does 'إِلَى' mean?",
+      "options": ["in", "on", "to / towards", "from"],
+      "answer": "to / towards"
+    },
+    {
+      "id": "l12-ex5",
+      "type": "typing",
+      "refIds": ["madrasa"],
+      "prompt": "Type the Arabic word for 'a school'.",
+      "answer": "مدرسة"
+    },
+    {
+      "id": "l12-ex6",
+      "type": "multiple-choice",
+      "refIds": ["tadhhabu"],
+      "prompt": "What does 'تَذْهَبُ' mean?",
+      "options": ["why", "your house (fem.)", "a school", "you (masc.) go / she goes"],
+      "answer": "you (masc.) go / she goes"
+    },
+    {
+      "id": "l12-ex7",
+      "type": "multiple-choice",
+      "refIds": ["tadhhabu"],
+      "prompt": "Which word means 'you (masc.) go / she goes'?",
+      "options": ["تَذْهَبُ", "كَمْ", "أَب", "زَهْرَة"],
+      "answer": "تَذْهَبُ"
+    }
+  ]
+}

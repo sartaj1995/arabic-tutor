@@ -1,0 +1,188 @@
+{
+  "number": 18,
+  "title": "Verbs — \"To Read\" (Full Paradigm)",
+  "newLetters": [],
+  "newVocab": ["aqrau", "taqrau", "taqraeena", "yaqrau", "naqrau", "jareeda", "majalla"],
+  "newPatterns": ["read-object"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "aqrau",
+      "arabic": "أَقْرَأُ",
+      "arabicNoDiacritics": "أقرأ",
+      "transliteration": "aqraʾu",
+      "english": "I read",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_aqrau", "text": "أَقْرَأُ" },
+      "introducedInLevel": 18,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "taqrau",
+      "arabic": "تَقْرَأُ",
+      "arabicNoDiacritics": "تقرأ",
+      "transliteration": "taqraʾu",
+      "english": "you (masc.) read / she reads",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taqrau", "text": "تَقْرَأُ" },
+      "introducedInLevel": 18,
+      "tags": ["verb"]
+    },
+    {
+      "id": "taqraeena",
+      "arabic": "تَقْرَئِينَ",
+      "arabicNoDiacritics": "تقرئين",
+      "transliteration": "taqraʾīna",
+      "english": "you (fem.) read",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taqraeena", "text": "تَقْرَئِينَ" },
+      "introducedInLevel": 18,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yaqrau",
+      "arabic": "يَقْرَأُ",
+      "arabicNoDiacritics": "يقرأ",
+      "transliteration": "yaqraʾu",
+      "english": "he reads",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yaqrau", "text": "يَقْرَأُ" },
+      "introducedInLevel": 18,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "naqrau",
+      "arabic": "نَقْرَأُ",
+      "arabicNoDiacritics": "نقرأ",
+      "transliteration": "naqraʾu",
+      "english": "we read",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_naqrau", "text": "نَقْرَأُ" },
+      "introducedInLevel": 18,
+      "tags": ["verb"]
+    },
+    {
+      "id": "jareeda",
+      "arabic": "جَرِيدَةٌ",
+      "arabicNoDiacritics": "جريدة",
+      "transliteration": "jarīdatun",
+      "english": "a newspaper",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_jareeda", "text": "جَرِيدَةٌ" },
+      "introducedInLevel": 18,
+      "tags": ["core"]
+    },
+    {
+      "id": "majalla",
+      "arabic": "مَجَلَّةٌ",
+      "arabicNoDiacritics": "مجلة",
+      "transliteration": "majallatun",
+      "english": "a magazine",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_majalla", "text": "مَجَلَّةٌ" },
+      "introducedInLevel": 18,
+      "tags": []
+    }
+  ],
+  "patterns": [
+    {
+      "id": "read-object",
+      "pattern": "[Subject] + [Verb] + [Indefinite Object, accusative]",
+      "exampleArabic": "هو يقرأ جريدة",
+      "exampleTransliteration": "huwa yaqraʾu jarīdatan",
+      "exampleEnglish": "He is reading a newspaper.",
+      "grammarNote": "قرأ ('to read') has a root ending in hamza (ء), which changes seat depending on the vowel around it — compare تَقْرَأُ (you m. / she) with تَقْرَئِينَ (you f.), where the hamza sits on a ي before the -īna ending. Same accusative -an object pattern as level 15's أُرِيدُ قَهْوَةً: جَرِيدَةً here.",
+      "audio": { "id": "phrase_huwa_yaqrau_jareedatan", "text": "هو يقرأ جريدة" },
+      "introducedInLevel": 18
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l18-ex1",
+      "type": "multiple-choice",
+      "refIds": ["aqrau"],
+      "prompt": "What does 'أقرأ' mean?",
+      "options": ["I read", "you read", "he reads", "we read"],
+      "answer": "I read"
+    },
+    {
+      "id": "l18-ex2",
+      "type": "sentence-build",
+      "refIds": ["huwa", "yaqrau", "read-object"],
+      "prompt": "Arrange the tiles to say 'He is reading a newspaper.'",
+      "options": ["هو", "يقرأ", "جريدة"],
+      "answer": "هو يقرأ جريدة"
+    },
+    {
+      "id": "l18-ex3",
+      "type": "multiple-choice",
+      "refIds": ["naqrau"],
+      "prompt": "What does 'نقرأ' mean?",
+      "options": ["we read", "I read", "he reads", "she reads"],
+      "answer": "we read"
+    },
+    {
+      "id": "l18-ex4",
+      "type": "typing",
+      "refIds": ["majalla"],
+      "prompt": "Type the Arabic word for 'a magazine'.",
+      "answer": "مجلة"
+    },
+    {
+      "id": "l18-ex5",
+      "type": "multiple-choice",
+      "refIds": ["taqraeena"],
+      "prompt": "What does 'تقرئين' mean?",
+      "options": ["you (fem.) read", "you (masc.) read", "she reads", "I read"],
+      "answer": "you (fem.) read"
+    },
+    {
+      "id": "l18-ex6",
+      "type": "multiple-choice",
+      "refIds": ["taqrau"],
+      "prompt": "What does 'تقرأ' mean?",
+      "options": ["you (masc.) read / she reads", "Monday", "no", "we read"],
+      "answer": "you (masc.) read / she reads"
+    },
+    {
+      "id": "l18-ex7",
+      "type": "multiple-choice",
+      "refIds": ["taqrau"],
+      "prompt": "Which word means 'you (masc.) read / she reads'?",
+      "options": ["قصير", "أربعة", "كتابي", "تقرأ"],
+      "answer": "تقرأ"
+    },
+    {
+      "id": "l18-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yaqrau"],
+      "prompt": "What does 'يقرأ' mean?",
+      "options": ["a newspaper", "he reads", "that (masc.)", "tall / long"],
+      "answer": "he reads"
+    },
+    {
+      "id": "l18-ex9",
+      "type": "typing",
+      "refIds": ["yaqrau"],
+      "prompt": "Type the Arabic word for 'he reads'.",
+      "answer": "يقرأ"
+    },
+    {
+      "id": "l18-ex10",
+      "type": "multiple-choice",
+      "refIds": ["jareeda"],
+      "prompt": "What does 'جريدة' mean?",
+      "options": ["he", "girl / daughter", "one", "a newspaper"],
+      "answer": "a newspaper"
+    },
+    {
+      "id": "l18-ex11",
+      "type": "multiple-choice",
+      "refIds": ["jareeda"],
+      "prompt": "Which word means 'a newspaper'?",
+      "options": ["بيت", "جريدة", "أب", "سيارة"],
+      "answer": "جريدة"
+    }
+  ]
+}

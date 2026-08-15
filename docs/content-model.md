@@ -25,10 +25,13 @@ authoring new levels. The formal schema lives in
   `AudioRef.text` on click — no account, API key, or generation step
   required, and it costs nothing. Chosen over cloud TTS specifically to
   avoid the billing-account requirement most providers impose even for
-  free-tier usage. Trade-off: voice quality/availability depends on the
-  user's browser/OS (Chrome supplies Arabic voices remotely regardless of
-  what's installed locally; other browsers may have none, in which case
-  playback fails silently and `LevelList` shows a one-line notice). An
+  free-tier usage. Trade-off: voice quality/availability depends entirely on
+  what's installed on the user's OS — Chrome's own "remote" voice list turned
+  out to be a small fixed set that does *not* reliably include Arabic (this
+  was verified directly, not assumed), so a user may need to install an
+  Arabic language pack at the OS level before any Arabic voice is available
+  to any browser. When none is available, playback fails silently and
+  `LevelList` shows a one-line notice. An
   offline pre-generation pipeline for Google Cloud TTS
   (`scripts/generate-audio.mjs`) still exists as a documented fallback if
   downloadable/consistent audio is ever wanted instead — `AudioRef.id` is
@@ -56,10 +59,11 @@ order. Full alphabet is covered by level 7:
 | 6 | ق ك ل م | standalone shapes |
 | 7 | ن ه و ي | standalone shapes, alphabet complete |
 
-Levels 8–10 add no new base letters; they cover orthographic special cases
-(hamza forms, tāʾ marbūṭa, sun/moon letter assimilation of `ال`) inside the
-existing letter set, plus a big jump in vocabulary and grammar now that
-every glyph is available.
+Levels 8+ add no new base letters; they cover orthographic special cases
+inside the existing letter set (hamza forms in level 8; tāʾ marbūṭa
+pronunciation and sun/moon letter assimilation of `ال` in level 11 — see
+"Levels 11–20" below), plus a growing jump in vocabulary and grammar now
+that every glyph is available.
 
 ## Vocabulary: two converging tracks, not one gated track
 
@@ -84,9 +88,15 @@ Real Arabic text (news, books, street signs) is not diacritized. Showing
 full vowel marks forever would leave a learner unable to read anything
 authentic. `Level.diacriticsLevel` fades `"full"` → `"partial"` →
 `"none"` over the course of the curriculum so undiacritized reading is a
-trained skill, not a cliff at the end.
+trained skill, not a cliff at the end. Current schedule: levels 1–8 full,
+9–15 partial, 16+ none. Note this only actually changes what's rendered
+starting at level 16 — `Letter`/`VocabWord.arabic` fields always store full
+diacritics regardless of the level's setting (that's the canonical,
+TTS-facing form); it's hand-authored exercise/pattern text, and anything
+`scripts/generate-exercises.mjs` generates, that gets stripped down to
+match a "none" level's setting.
 
-## First 10 levels, at a glance
+## First 20 levels, at a glance
 
 | Level | Theme | New letters | New pattern |
 |---|---|---|---|
@@ -100,11 +110,25 @@ trained skill, not a cliff at the end.
 | 8 | Numbers 1–5, hamza forms | — | — |
 | 9 | Possession | — | "This is my [noun]." |
 | 10 | Negation & review | — | "I am not [adjective]." |
+| 11 | The definite article ال | — | "The house is big." |
+| 12 | Verbs — "to go" (I/you) | — | "I go to school." |
+| 13 | Verbs — "to go" (he/she/we) | — | "Where are you going?" |
+| 14 | Numbers 6–10 | — | — |
+| 15 | Verbs — "to want" (full) | — | "I want coffee." |
+| 16 | Colors | — | "The car is red." |
+| 17 | Days of the week | — | "Today is Friday." |
+| 18 | Verbs — "to read" (full) | — | "He is reading a newspaper." |
+| 19 | Sound plurals | — | "The teachers are in the school." |
+| 20 | "And" (وَ) & review | — | capstone: two verbs joined by وَ |
 
-This first-10 arc is a **pacing proof of concept** — it exists to validate
-that the schema and progression feel right before the remaining 90 levels
-are generated. Expect to revise letter/vocab pacing after actually using
-these levels.
+Levels 1–10 were a **pacing proof of concept** validating the schema and
+progression before continuing; levels 11–20 build on that same shape and
+add MSA's biggest missing grammatical piece — present-tense verbs —
+introduced gradually across three verbs (ذهب "go", أراد "want", قرأ "read")
+rather than dumping the full conjugation table at once. Each verb's
+paradigm is deliberately simplified to the six pronouns already taught
+(أنا, أنتَ, أنتِ, هو, هي, نحن), skipping dual and the -تم/-هم plural forms
+for now. Expect to keep revising pacing as more levels get added.
 
 ## Exercises in the JSON files
 
@@ -113,4 +137,7 @@ sentence-build/matching/typing exercises that show off a level's grammar
 point) plus generated coverage exercises ensuring every letter and vocab
 word gets at least one dedicated question — see
 `scripts/generate-exercises.mjs`, an idempotent script safe to re-run after
-authoring new levels.
+authoring new levels. As of level 20: 158 content items, 222 exercises
+total. The generator is diacritics-aware — it renders Arabic text stripped
+for levels where `diacriticsLevel === "none"` so generated and
+hand-authored exercises never mix styles within the same level.

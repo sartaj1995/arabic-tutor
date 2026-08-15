@@ -1,0 +1,108 @@
+{
+  "number": 13,
+  "title": "Verbs — \"To Go\" (He / She / We)",
+  "newLetters": [],
+  "newVocab": ["yadhhabu", "nadhhabu", "jaamiaa", "suuq"],
+  "newPatterns": ["where-are-you-going"],
+  "diacriticsLevel": "partial",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "yadhhabu",
+      "arabic": "يَذْهَبُ",
+      "arabicNoDiacritics": "يذهب",
+      "transliteration": "yadhhabu",
+      "english": "he goes",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yadhhabu", "text": "يَذْهَبُ" },
+      "introducedInLevel": 13,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nadhhabu",
+      "arabic": "نَذْهَبُ",
+      "arabicNoDiacritics": "نذهب",
+      "transliteration": "nadhhabu",
+      "english": "we go",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nadhhabu", "text": "نَذْهَبُ" },
+      "introducedInLevel": 13,
+      "tags": ["verb"]
+    },
+    {
+      "id": "jaamiaa",
+      "arabic": "جَامِعَةٌ",
+      "arabicNoDiacritics": "جامعة",
+      "transliteration": "jāmiʿatun",
+      "english": "a university",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_jaamiaa", "text": "جَامِعَةٌ" },
+      "introducedInLevel": 13,
+      "tags": ["place"]
+    },
+    {
+      "id": "suuq",
+      "arabic": "سُوقٌ",
+      "arabicNoDiacritics": "سوق",
+      "transliteration": "sūqun",
+      "english": "a market",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_suuq", "text": "سُوقٌ" },
+      "introducedInLevel": 13,
+      "tags": ["core", "place"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "where-are-you-going",
+      "pattern": "أَيْنَ + [Verb, 'you' form]؟",
+      "exampleArabic": "أَيْنَ تَذْهَبِينَ؟",
+      "exampleTransliteration": "ayna tadhhabīna?",
+      "exampleEnglish": "Where are you (fem.) going?",
+      "grammarNote": "This completes the present-tense set for ذهب across levels 12–13 (skipping dual and the -تم/-هم plural forms for now, which come later): أَذْهَبُ (I), تَذْهَبُ (you m. / she), تَذْهَبِينَ (you f.), يَذْهَبُ (he), نَذْهَبُ (we). Worth flagging: تَذْهَبُ is a genuine homograph — 'you (masc.) go' and 'she goes' are spelled and pronounced identically. Only the subject (stated or implied by context) tells them apart, e.g. هِيَ تَذْهَبُ إِلَى الْجَامِعَةِ ('she goes to the university') vs أَنْتَ تَذْهَبُ إِلَى السُّوقِ ('you go to the market').",
+      "audio": { "id": "phrase_ayna_tadhhabiina", "text": "أَيْنَ تَذْهَبِينَ؟" },
+      "introducedInLevel": 13
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l13-ex1",
+      "type": "multiple-choice",
+      "refIds": ["yadhhabu"],
+      "prompt": "What does 'يَذْهَبُ' mean?",
+      "options": ["I go", "we go", "he goes", "you go"],
+      "answer": "he goes"
+    },
+    {
+      "id": "l13-ex2",
+      "type": "sentence-build",
+      "refIds": ["ayna", "tadhhabeena", "where-are-you-going"],
+      "prompt": "Arrange the tiles to ask 'Where are you (fem.) going?'",
+      "options": ["أَيْنَ", "تَذْهَبِينَ؟"],
+      "answer": "أَيْنَ تَذْهَبِينَ؟"
+    },
+    {
+      "id": "l13-ex3",
+      "type": "multiple-choice",
+      "refIds": ["nadhhabu"],
+      "prompt": "What does 'نَذْهَبُ' mean?",
+      "options": ["we go", "she goes", "you go", "I go"],
+      "answer": "we go"
+    },
+    {
+      "id": "l13-ex4",
+      "type": "typing",
+      "refIds": ["suuq"],
+      "prompt": "Type the Arabic word for 'a market'.",
+      "answer": "سوق"
+    },
+    {
+      "id": "l13-ex5",
+      "type": "multiple-choice",
+      "refIds": ["jaamiaa"],
+      "prompt": "What does 'جَامِعَةٌ' mean?",
+      "options": ["a school", "a market", "a university", "a house"],
+      "answer": "a university"
+    }
+  ]
+}

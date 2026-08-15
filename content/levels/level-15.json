@@ -1,0 +1,188 @@
+{
+  "number": 15,
+  "title": "Verbs — \"To Want\" (Full Paradigm)",
+  "newLetters": [],
+  "newVocab": ["ureedu", "tureedu", "tureedeena", "yureedu", "nureedu", "qahwa", "shay"],
+  "newPatterns": ["want-object"],
+  "diacriticsLevel": "partial",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ureedu",
+      "arabic": "أُرِيدُ",
+      "arabicNoDiacritics": "أريد",
+      "transliteration": "urīdu",
+      "english": "I want",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_ureedu", "text": "أُرِيدُ" },
+      "introducedInLevel": 15,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tureedu",
+      "arabic": "تُرِيدُ",
+      "arabicNoDiacritics": "تريد",
+      "transliteration": "turīdu",
+      "english": "you (masc.) want / she wants",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tureedu", "text": "تُرِيدُ" },
+      "introducedInLevel": 15,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tureedeena",
+      "arabic": "تُرِيدِينَ",
+      "arabicNoDiacritics": "تريدين",
+      "transliteration": "turīdīna",
+      "english": "you (fem.) want",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tureedeena", "text": "تُرِيدِينَ" },
+      "introducedInLevel": 15,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yureedu",
+      "arabic": "يُرِيدُ",
+      "arabicNoDiacritics": "يريد",
+      "transliteration": "yurīdu",
+      "english": "he wants",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yureedu", "text": "يُرِيدُ" },
+      "introducedInLevel": 15,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nureedu",
+      "arabic": "نُرِيدُ",
+      "arabicNoDiacritics": "نريد",
+      "transliteration": "nurīdu",
+      "english": "we want",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nureedu", "text": "نُرِيدُ" },
+      "introducedInLevel": 15,
+      "tags": ["verb"]
+    },
+    {
+      "id": "qahwa",
+      "arabic": "قَهْوَةٌ",
+      "arabicNoDiacritics": "قهوة",
+      "transliteration": "qahwatun",
+      "english": "coffee",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_qahwa", "text": "قَهْوَةٌ" },
+      "introducedInLevel": 15,
+      "tags": ["core", "food"]
+    },
+    {
+      "id": "shay",
+      "arabic": "شَايٌ",
+      "arabicNoDiacritics": "شاي",
+      "transliteration": "shāyun",
+      "english": "tea",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_shay", "text": "شَايٌ" },
+      "introducedInLevel": 15,
+      "tags": ["core", "food"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "want-object",
+      "pattern": "[Verb] + [Indefinite Object, accusative]",
+      "exampleArabic": "أُرِيدُ قَهْوَةً",
+      "exampleTransliteration": "urīdu qahwatan",
+      "exampleEnglish": "I want coffee.",
+      "grammarNote": "أُرِيدُ ('I want') here has a full present-tense set, same prefixes as ذهب: أُرِيدُ، تُرِيدُ (you m. / she — another instance of that homograph), تُرِيدِينَ، يُرِيدُ، نُرِيدُ. The thing wanted is the direct object of the verb, which takes the accusative case — an indefinite noun in the accusative gets a -an ending (فتحتان, tanwīn fatḥ): قَهْوَةً, not قَهْوَةٌ. You already saw this -an ending on adjectives after لَيْسَ in level 10 (لَسْتُ سَعِيدًا) — same case, different reason (direct object here vs. predicate of a negation there).",
+      "audio": { "id": "phrase_ureedu_qahwatan", "text": "أُرِيدُ قَهْوَةً" },
+      "introducedInLevel": 15
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l15-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ureedu"],
+      "prompt": "What does 'أُرِيدُ' mean?",
+      "options": ["I want", "you want", "he wants", "we want"],
+      "answer": "I want"
+    },
+    {
+      "id": "l15-ex2",
+      "type": "sentence-build",
+      "refIds": ["ureedu", "qahwa", "want-object"],
+      "prompt": "Arrange the tiles to say 'I want coffee.'",
+      "options": ["أُرِيدُ", "قَهْوَةً"],
+      "answer": "أُرِيدُ قَهْوَةً"
+    },
+    {
+      "id": "l15-ex3",
+      "type": "multiple-choice",
+      "refIds": ["yureedu"],
+      "prompt": "What does 'يُرِيدُ' mean?",
+      "options": ["I want", "she wants", "he wants", "we want"],
+      "answer": "he wants"
+    },
+    {
+      "id": "l15-ex4",
+      "type": "typing",
+      "refIds": ["shay"],
+      "prompt": "Type the Arabic word for 'tea'.",
+      "answer": "شاي"
+    },
+    {
+      "id": "l15-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tureedeena"],
+      "prompt": "What does 'تُرِيدِينَ' mean?",
+      "options": ["you (fem.) want", "you (masc.) want", "she wants", "we want"],
+      "answer": "you (fem.) want"
+    },
+    {
+      "id": "l15-ex6",
+      "type": "multiple-choice",
+      "refIds": ["tureedu"],
+      "prompt": "What does 'تُرِيدُ' mean?",
+      "options": ["I am not", "this (fem.)", "you (masc.) want / she wants", "the book"],
+      "answer": "you (masc.) want / she wants"
+    },
+    {
+      "id": "l15-ex7",
+      "type": "multiple-choice",
+      "refIds": ["tureedu"],
+      "prompt": "Which word means 'you (masc.) want / she wants'?",
+      "options": ["تُرِيدُ", "أُمّ", "طَوِيل", "تُرِيدِينَ"],
+      "answer": "تُرِيدُ"
+    },
+    {
+      "id": "l15-ex8",
+      "type": "multiple-choice",
+      "refIds": ["nureedu"],
+      "prompt": "What does 'نُرِيدُ' mean?",
+      "options": ["brother", "small", "you (fem.)", "we want"],
+      "answer": "we want"
+    },
+    {
+      "id": "l15-ex9",
+      "type": "typing",
+      "refIds": ["nureedu"],
+      "prompt": "Type the Arabic word for 'we want'.",
+      "answer": "نريد"
+    },
+    {
+      "id": "l15-ex10",
+      "type": "multiple-choice",
+      "refIds": ["qahwa"],
+      "prompt": "What does 'قَهْوَةٌ' mean?",
+      "options": ["coffee", "this (fem.)", "car", "he/it is not"],
+      "answer": "coffee"
+    },
+    {
+      "id": "l15-ex11",
+      "type": "multiple-choice",
+      "refIds": ["qahwa"],
+      "prompt": "Which word means 'coffee'?",
+      "options": ["سِتَّةٌ", "نَعَمْ", "قَهْوَةٌ", "زَهْرَة"],
+      "answer": "قَهْوَةٌ"
+    }
+  ]
+}

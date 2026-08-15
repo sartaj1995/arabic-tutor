@@ -1,0 +1,161 @@
+{
+  "number": 19,
+  "title": "Sound Plurals",
+  "newLetters": [],
+  "newVocab": ["mudarris", "mudarrisuun", "mudarrisa", "mudarrisaat", "sayyaraat", "saaaat"],
+  "newPatterns": ["plural-in-place"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "mudarris",
+      "arabic": "مُدَرِّسٌ",
+      "arabicNoDiacritics": "مدرس",
+      "transliteration": "mudarrisun",
+      "english": "a teacher (masc.)",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_mudarris", "text": "مُدَرِّسٌ" },
+      "introducedInLevel": 19,
+      "tags": ["core"]
+    },
+    {
+      "id": "mudarrisuun",
+      "arabic": "مُدَرِّسُونَ",
+      "arabicNoDiacritics": "مدرسون",
+      "transliteration": "mudarrisūna",
+      "english": "teachers (masc.)",
+      "partOfSpeech": "noun (sound plural)",
+      "audio": { "id": "word_mudarrisuun", "text": "مُدَرِّسُونَ" },
+      "introducedInLevel": 19,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "mudarrisa",
+      "arabic": "مُدَرِّسَةٌ",
+      "arabicNoDiacritics": "مدرسة",
+      "transliteration": "mudarrisatun",
+      "english": "a teacher (fem.)",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_mudarrisa", "text": "مُدَرِّسَةٌ" },
+      "introducedInLevel": 19,
+      "tags": []
+    },
+    {
+      "id": "mudarrisaat",
+      "arabic": "مُدَرِّسَاتٌ",
+      "arabicNoDiacritics": "مدرسات",
+      "transliteration": "mudarrisātun",
+      "english": "teachers (fem.)",
+      "partOfSpeech": "noun (sound plural)",
+      "audio": { "id": "word_mudarrisaat", "text": "مُدَرِّسَاتٌ" },
+      "introducedInLevel": 19,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "sayyaraat",
+      "arabic": "سَيَّارَاتٌ",
+      "arabicNoDiacritics": "سيارات",
+      "transliteration": "sayyārātun",
+      "english": "cars",
+      "partOfSpeech": "noun (sound plural)",
+      "audio": { "id": "word_sayyaraat", "text": "سَيَّارَاتٌ" },
+      "introducedInLevel": 19,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "saaaat",
+      "arabic": "سَاعَاتٌ",
+      "arabicNoDiacritics": "ساعات",
+      "transliteration": "sāʿātun",
+      "english": "clocks / hours",
+      "partOfSpeech": "noun (sound plural)",
+      "audio": { "id": "word_saaaat", "text": "سَاعَاتٌ" },
+      "introducedInLevel": 19,
+      "tags": ["grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "plural-in-place",
+      "pattern": "الـ[Sound Masc. Plural] + فِي + الـ[Place]",
+      "exampleArabic": "المدرسون في المدرسة",
+      "exampleTransliteration": "al-mudarrisūna fī l-madrasati",
+      "exampleEnglish": "The teachers are in the school.",
+      "grammarNote": "Two regular ('sound') plural patterns: masculine nouns usually add ـُونَ (mudarris → mudarrisūna); feminine nouns (including ones ending in ة, which is dropped first) usually add ـَاتٌ (mudarrisa → mudarrisāt, sayyāra → sayyārāt). Many nouns instead take an irregular 'broken' plural with no predictable pattern — those come later. Careful: مُدَرِّسَة ('teacher', fem.) and مَدْرَسَة ('school') look and sound almost identical but are unrelated words — only the middle vowel pattern differs.",
+      "audio": { "id": "phrase_almudarrisuun_fi_almadrasa", "text": "المدرسون في المدرسة" },
+      "introducedInLevel": 19
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l19-ex1",
+      "type": "multiple-choice",
+      "refIds": ["mudarris"],
+      "prompt": "What does 'مدرس' mean?",
+      "options": ["a teacher (masc.)", "a school", "a student", "a book"],
+      "answer": "a teacher (masc.)"
+    },
+    {
+      "id": "l19-ex2",
+      "type": "sentence-build",
+      "refIds": ["mudarrisuun", "madrasa", "plural-in-place"],
+      "prompt": "Arrange the tiles to say 'The teachers are in the school.'",
+      "options": ["المدرسون", "في", "المدرسة"],
+      "answer": "المدرسون في المدرسة"
+    },
+    {
+      "id": "l19-ex3",
+      "type": "multiple-choice",
+      "refIds": ["mudarrisaat"],
+      "prompt": "What does 'مدرسات' mean?",
+      "options": ["teachers (fem.)", "teachers (masc.)", "a teacher (fem.)", "schools"],
+      "answer": "teachers (fem.)"
+    },
+    {
+      "id": "l19-ex4",
+      "type": "typing",
+      "refIds": ["sayyaraat"],
+      "prompt": "Type the Arabic word for 'cars'.",
+      "answer": "سيارات"
+    },
+    {
+      "id": "l19-ex5",
+      "type": "multiple-choice",
+      "refIds": ["saaaat"],
+      "prompt": "What does 'ساعات' mean?",
+      "options": ["clocks / hours", "cars", "books", "teachers"],
+      "answer": "clocks / hours"
+    },
+    {
+      "id": "l19-ex6",
+      "type": "multiple-choice",
+      "refIds": ["mudarrisuun"],
+      "prompt": "What does 'مدرسون' mean?",
+      "options": ["teachers (masc.)", "you (fem.) want", "house", "car"],
+      "answer": "teachers (masc.)"
+    },
+    {
+      "id": "l19-ex7",
+      "type": "multiple-choice",
+      "refIds": ["mudarrisuun"],
+      "prompt": "Which word means 'teachers (masc.)'?",
+      "options": ["ساعة", "الشمس", "المرأة", "مدرسون"],
+      "answer": "مدرسون"
+    },
+    {
+      "id": "l19-ex8",
+      "type": "multiple-choice",
+      "refIds": ["mudarrisa"],
+      "prompt": "What does 'مدرسة' mean?",
+      "options": ["a teacher (fem.)", "in", "clock / watch / hour", "how many / how much"],
+      "answer": "a teacher (fem.)"
+    },
+    {
+      "id": "l19-ex9",
+      "type": "typing",
+      "refIds": ["mudarrisa"],
+      "prompt": "Type the Arabic word for 'a teacher (fem.)'.",
+      "answer": "مدرسة"
+    }
+  ]
+}

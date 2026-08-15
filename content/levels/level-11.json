@@ -1,0 +1,192 @@
+{
+  "number": 11,
+  "title": "The Definite Article \"ال\"",
+  "newLetters": [],
+  "newVocab": ["alkitab", "albayt", "alshams", "alqamar", "alrajul", "almaraa"],
+  "newPatterns": ["definite-noun-adjective"],
+  "diacriticsLevel": "partial",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "alkitab",
+      "arabic": "الْكِتَابُ",
+      "arabicNoDiacritics": "الكتاب",
+      "transliteration": "al-kitābu",
+      "english": "the book",
+      "partOfSpeech": "noun (definite)",
+      "audio": { "id": "word_alkitab", "text": "الْكِتَابُ" },
+      "introducedInLevel": 11,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "albayt",
+      "arabic": "الْبَيْتُ",
+      "arabicNoDiacritics": "البيت",
+      "transliteration": "al-baytu",
+      "english": "the house",
+      "partOfSpeech": "noun (definite)",
+      "audio": { "id": "word_albayt", "text": "الْبَيْتُ" },
+      "introducedInLevel": 11,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "alshams",
+      "arabic": "الشَّمْسُ",
+      "arabicNoDiacritics": "الشمس",
+      "transliteration": "ash-shamsu",
+      "english": "the sun",
+      "partOfSpeech": "noun (definite)",
+      "audio": { "id": "word_alshams", "text": "الشَّمْسُ" },
+      "introducedInLevel": 11,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "alqamar",
+      "arabic": "الْقَمَرُ",
+      "arabicNoDiacritics": "القمر",
+      "transliteration": "al-qamaru",
+      "english": "the moon",
+      "partOfSpeech": "noun (definite)",
+      "audio": { "id": "word_alqamar", "text": "الْقَمَرُ" },
+      "introducedInLevel": 11,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "alrajul",
+      "arabic": "الرَّجُلُ",
+      "arabicNoDiacritics": "الرجل",
+      "transliteration": "ar-rajulu",
+      "english": "the man",
+      "partOfSpeech": "noun (definite)",
+      "audio": { "id": "word_alrajul", "text": "الرَّجُلُ" },
+      "introducedInLevel": 11,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "almaraa",
+      "arabic": "الْمَرْأَةُ",
+      "arabicNoDiacritics": "المرأة",
+      "transliteration": "al-marʾatu",
+      "english": "the woman",
+      "partOfSpeech": "noun (definite)",
+      "audio": { "id": "word_almaraa", "text": "الْمَرْأَةُ" },
+      "introducedInLevel": 11,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "definite-noun-adjective",
+      "pattern": "الـ + [Noun] + [Indefinite Adjective]",
+      "exampleArabic": "الْبَيْتُ كَبِيرٌ",
+      "exampleTransliteration": "al-baytu kabīrun",
+      "exampleEnglish": "The house is big.",
+      "grammarNote": "ال (al-) prefixes a noun to make it definite — 'the' — and it takes the noun's tanwīn ending away (بَيْتٌ 'a house' → الْبَيْتُ 'the house'). A definite subject followed by an indefinite adjective is still a complete equational sentence, same pattern as level 5's هَذَا بَيْتٌ. Two orthography quirks worth knowing: (1) Arabic letters split into 'sun letters' (ت ث د ذ ر ز س ش ص ض ط ظ ل ن) and 'moon letters' (everything else). Before a sun letter, the ل of ال is silent and the sun letter doubles instead — الشَّمْسُ is pronounced ash-shamsu, not al-shamsu. Before a moon letter (like ق in القمر), the ل is pronounced normally: al-qamaru. (2) تاء مربوطة (ة), seen in الْمَرْأَةُ, is silent — pronounced as a light '-ah' at the end of a phrase.",
+      "audio": { "id": "phrase_albaytu_kabiirun", "text": "الْبَيْتُ كَبِيرٌ" },
+      "introducedInLevel": 11
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l11-ex1",
+      "type": "multiple-choice",
+      "refIds": ["alshams"],
+      "prompt": "الشَّمْسُ starts with a 'sun letter' (ش), so its ال is silent and the sun letter doubles. How is it pronounced?",
+      "options": ["ash-shamsu", "al-shamsu", "al-samsu", "sha-shamsu"],
+      "answer": "ash-shamsu"
+    },
+    {
+      "id": "l11-ex2",
+      "type": "multiple-choice",
+      "refIds": ["alqamar"],
+      "prompt": "الْقَمَرُ starts with a 'moon letter' (ق), so the ل of ال IS pronounced. How is it pronounced?",
+      "options": ["a-qamaru", "al-qamaru", "aq-qamaru", "qa-qamaru"],
+      "answer": "al-qamaru"
+    },
+    {
+      "id": "l11-ex3",
+      "type": "sentence-build",
+      "refIds": ["albayt", "kabeer", "definite-noun-adjective"],
+      "prompt": "Arrange the tiles to say 'The house is big.'",
+      "options": ["الْبَيْتُ", "كَبِيرٌ"],
+      "answer": "الْبَيْتُ كَبِيرٌ"
+    },
+    {
+      "id": "l11-ex4",
+      "type": "multiple-choice",
+      "refIds": ["alrajul"],
+      "prompt": "What does 'الرَّجُلُ' mean?",
+      "options": ["the woman", "the man", "the book", "the house"],
+      "answer": "the man"
+    },
+    {
+      "id": "l11-ex5",
+      "type": "typing",
+      "refIds": ["almaraa"],
+      "prompt": "Type the Arabic word for 'the woman'.",
+      "answer": "المرأة"
+    },
+    {
+      "id": "l11-ex6",
+      "type": "multiple-choice",
+      "refIds": ["alkitab"],
+      "prompt": "What does 'الْكِتَابُ' mean?",
+      "options": ["the book", "who", "five", "that (masc.)"],
+      "answer": "the book"
+    },
+    {
+      "id": "l11-ex7",
+      "type": "multiple-choice",
+      "refIds": ["alkitab"],
+      "prompt": "Which word means 'the book'?",
+      "options": ["الْبَيْتُ", "مَنْ", "لَسْتَ", "الْكِتَابُ"],
+      "answer": "الْكِتَابُ"
+    },
+    {
+      "id": "l11-ex8",
+      "type": "multiple-choice",
+      "refIds": ["albayt"],
+      "prompt": "What does 'الْبَيْتُ' mean?",
+      "options": ["you (masc.) are not", "his house", "in", "the house"],
+      "answer": "the house"
+    },
+    {
+      "id": "l11-ex9",
+      "type": "typing",
+      "refIds": ["albayt"],
+      "prompt": "Type the Arabic word for 'the house'.",
+      "answer": "البيت"
+    },
+    {
+      "id": "l11-ex10",
+      "type": "multiple-choice",
+      "refIds": ["alshams"],
+      "prompt": "What does 'الشَّمْسُ' mean?",
+      "options": ["how", "she/it is not", "the sun", "your house (fem.)"],
+      "answer": "the sun"
+    },
+    {
+      "id": "l11-ex11",
+      "type": "multiple-choice",
+      "refIds": ["alshams"],
+      "prompt": "Which word means 'the sun'?",
+      "options": ["كَيْفَ", "الشَّمْسُ", "الْكِتَابُ", "كَمْ"],
+      "answer": "الشَّمْسُ"
+    },
+    {
+      "id": "l11-ex12",
+      "type": "multiple-choice",
+      "refIds": ["alqamar"],
+      "prompt": "What does 'الْقَمَرُ' mean?",
+      "options": ["four", "what", "the moon", "we"],
+      "answer": "the moon"
+    },
+    {
+      "id": "l11-ex13",
+      "type": "typing",
+      "refIds": ["alqamar"],
+      "prompt": "Type the Arabic word for 'the moon'.",
+      "answer": "القمر"
+    }
+  ]
+}

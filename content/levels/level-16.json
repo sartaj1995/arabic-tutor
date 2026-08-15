@@ -1,0 +1,154 @@
+{
+  "number": 16,
+  "title": "Colors",
+  "newLetters": [],
+  "newVocab": ["ahmar", "azraq", "akhdar", "asfar", "aswad", "abyad"],
+  "newPatterns": ["color-agreement"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ahmar",
+      "arabic": "أَحْمَر",
+      "arabicNoDiacritics": "أحمر",
+      "transliteration": "aḥmar",
+      "english": "red",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_ahmar", "text": "أَحْمَر" },
+      "introducedInLevel": 16,
+      "tags": ["core", "color"]
+    },
+    {
+      "id": "azraq",
+      "arabic": "أَزْرَق",
+      "arabicNoDiacritics": "أزرق",
+      "transliteration": "azraq",
+      "english": "blue",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_azraq", "text": "أَزْرَق" },
+      "introducedInLevel": 16,
+      "tags": ["core", "color"]
+    },
+    {
+      "id": "akhdar",
+      "arabic": "أَخْضَر",
+      "arabicNoDiacritics": "أخضر",
+      "transliteration": "akhḍar",
+      "english": "green",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_akhdar", "text": "أَخْضَر" },
+      "introducedInLevel": 16,
+      "tags": ["color"]
+    },
+    {
+      "id": "asfar",
+      "arabic": "أَصْفَر",
+      "arabicNoDiacritics": "أصفر",
+      "transliteration": "aṣfar",
+      "english": "yellow",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_asfar", "text": "أَصْفَر" },
+      "introducedInLevel": 16,
+      "tags": ["color"]
+    },
+    {
+      "id": "aswad",
+      "arabic": "أَسْوَد",
+      "arabicNoDiacritics": "أسود",
+      "transliteration": "aswad",
+      "english": "black",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_aswad", "text": "أَسْوَد" },
+      "introducedInLevel": 16,
+      "tags": ["core", "color"]
+    },
+    {
+      "id": "abyad",
+      "arabic": "أَبْيَض",
+      "arabicNoDiacritics": "أبيض",
+      "transliteration": "abyaḍ",
+      "english": "white",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_abyad", "text": "أَبْيَض" },
+      "introducedInLevel": 16,
+      "tags": ["core", "color"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "color-agreement",
+      "pattern": "الـ[Fem. Noun] + [Fem. Color]",
+      "exampleArabic": "السيارة حمراء",
+      "exampleTransliteration": "as-sayyāratu ḥamrāʾu",
+      "exampleEnglish": "The car is red.",
+      "grammarNote": "Colors follow a special 'أَفْعَل' pattern and have their own feminine form instead of the usual ة ending: أَحْمَر (red, masc.) → حَمْرَاء (red, fem.), أَبْيَض (white) → بَيْضَاء, أَسْوَد (black) → سَوْدَاء, أَزْرَق (blue) → زَرْقَاء, أَخْضَر (green) → خَضْرَاء, أَصْفَر (yellow) → صَفْرَاء. سَيَّارَة ('car', from level 3) is feminine, so its color adjective must also be feminine: حَمْرَاء, not أَحْمَر.",
+      "audio": { "id": "phrase_sayyaara_hamraa", "text": "السيارة حمراء" },
+      "introducedInLevel": 16
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l16-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ahmar"],
+      "prompt": "What does 'أحمر' mean?",
+      "options": ["red", "blue", "green", "yellow"],
+      "answer": "red"
+    },
+    {
+      "id": "l16-ex2",
+      "type": "audio-recognition",
+      "refIds": ["azraq", "akhdar", "asfar", "aswad"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["أزرق", "أخضر", "أصفر", "أسود"],
+      "answer": "أزرق"
+    },
+    {
+      "id": "l16-ex3",
+      "type": "multiple-choice",
+      "refIds": ["abyad"],
+      "prompt": "What does 'أبيض' mean?",
+      "options": ["black", "white", "red", "green"],
+      "answer": "white"
+    },
+    {
+      "id": "l16-ex4",
+      "type": "typing",
+      "refIds": ["aswad"],
+      "prompt": "Type the Arabic word for 'black'.",
+      "answer": "أسود"
+    },
+    {
+      "id": "l16-ex5",
+      "type": "multiple-choice",
+      "refIds": ["akhdar"],
+      "prompt": "Which word means 'green'?",
+      "options": ["أصفر", "أخضر", "أزرق", "أبيض"],
+      "answer": "أخضر"
+    },
+    {
+      "id": "l16-ex6",
+      "type": "multiple-choice",
+      "refIds": ["asfar"],
+      "prompt": "What does 'أصفر' mean?",
+      "options": ["boy / son", "you (masc.) want / she wants", "yellow", "your house (masc.)"],
+      "answer": "yellow"
+    },
+    {
+      "id": "l16-ex7",
+      "type": "multiple-choice",
+      "refIds": ["asfar"],
+      "prompt": "Which word means 'yellow'?",
+      "options": ["ليس", "أصفر", "ما", "بنت"],
+      "answer": "أصفر"
+    },
+    {
+      "id": "l16-ex8",
+      "type": "multiple-choice",
+      "refIds": ["color-agreement"],
+      "prompt": "What does this mean? السيارة حمراء",
+      "options": ["The car is red.", "I want coffee.", "I go to school.", "This is my house."],
+      "answer": "The car is red."
+    }
+  ]
+}

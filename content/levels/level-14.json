@@ -1,0 +1,116 @@
+{
+  "number": 14,
+  "title": "Numbers 6–10",
+  "newLetters": [],
+  "newVocab": ["sitta", "sabaa", "thamaania", "tisaa", "ashara"],
+  "newPatterns": [],
+  "diacriticsLevel": "partial",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "sitta",
+      "arabic": "سِتَّةٌ",
+      "arabicNoDiacritics": "ستة",
+      "transliteration": "sittatun",
+      "english": "six",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_sitta", "text": "سِتَّةٌ" },
+      "introducedInLevel": 14,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "sabaa",
+      "arabic": "سَبْعَةٌ",
+      "arabicNoDiacritics": "سبعة",
+      "transliteration": "sabʿatun",
+      "english": "seven",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_sabaa", "text": "سَبْعَةٌ" },
+      "introducedInLevel": 14,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "thamaania",
+      "arabic": "ثَمَانِيَةٌ",
+      "arabicNoDiacritics": "ثمانية",
+      "transliteration": "thamāniyatun",
+      "english": "eight",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_thamaania", "text": "ثَمَانِيَةٌ" },
+      "introducedInLevel": 14,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "tisaa",
+      "arabic": "تِسْعَةٌ",
+      "arabicNoDiacritics": "تسعة",
+      "transliteration": "tisʿatun",
+      "english": "nine",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_tisaa", "text": "تِسْعَةٌ" },
+      "introducedInLevel": 14,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "ashara",
+      "arabic": "عَشَرَةٌ",
+      "arabicNoDiacritics": "عشرة",
+      "transliteration": "ʿasharatun",
+      "english": "ten",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_ashara", "text": "عَشَرَةٌ" },
+      "introducedInLevel": 14,
+      "tags": ["core", "number"]
+    }
+  ],
+  "patterns": [],
+  "exercises": [
+    {
+      "id": "l14-ex1",
+      "type": "multiple-choice",
+      "refIds": ["sitta"],
+      "prompt": "What does 'سِتَّةٌ' mean?",
+      "options": ["six", "seven", "eight", "nine"],
+      "answer": "six"
+    },
+    {
+      "id": "l14-ex2",
+      "type": "audio-recognition",
+      "refIds": ["thamaania", "tisaa", "ashara", "sabaa"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["ثَمَانِيَةٌ", "تِسْعَةٌ", "عَشَرَةٌ", "سَبْعَةٌ"],
+      "answer": "ثَمَانِيَةٌ"
+    },
+    {
+      "id": "l14-ex3",
+      "type": "matching",
+      "refIds": ["sabaa", "tisaa", "ashara", "sitta"],
+      "prompt": "Match the numeral to the word: 7",
+      "options": ["سَبْعَةٌ", "تِسْعَةٌ", "عَشَرَةٌ", "سِتَّةٌ"],
+      "answer": "سَبْعَةٌ"
+    },
+    {
+      "id": "l14-ex4",
+      "type": "typing",
+      "refIds": ["ashara"],
+      "prompt": "Type the Arabic word for 'ten'.",
+      "answer": "عشرة"
+    },
+    {
+      "id": "l14-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tisaa"],
+      "prompt": "What does 'تِسْعَةٌ' mean?",
+      "options": ["we", "nine", "on", "a school"],
+      "answer": "nine"
+    },
+    {
+      "id": "l14-ex6",
+      "type": "multiple-choice",
+      "refIds": ["tisaa"],
+      "prompt": "Which word means 'nine'?",
+      "options": ["نَافِذَة", "تِسْعَةٌ", "هُمْ", "أَخ"],
+      "answer": "تِسْعَةٌ"
+    }
+  ]
+}
