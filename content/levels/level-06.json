@@ -287,6 +287,38 @@
       "refIds": ["kam"],
       "prompt": "Practice saying 'كَمْ' (how many / how much) out loud.",
       "answer": "كم"
+    },
+    {
+      "id": "l6-ex22",
+      "type": "letter-writing",
+      "refIds": ["qaf"],
+      "prompt": "Which is the correct initial form of the letter Qāf?",
+      "options": ["ز", "مـ", "صـ", "قـ"],
+      "answer": "قـ"
+    },
+    {
+      "id": "l6-ex23",
+      "type": "letter-writing",
+      "refIds": ["kaf"],
+      "prompt": "Which is the correct medial form of the letter Kāf?",
+      "options": ["ـكـ", "ـفـ", "ـز", "ـقـ"],
+      "answer": "ـكـ"
+    },
+    {
+      "id": "l6-ex24",
+      "type": "letter-writing",
+      "refIds": ["lam"],
+      "prompt": "Which is the correct final form of the letter Lām?",
+      "options": ["ـل", "ـك", "ـع", "ـا"],
+      "answer": "ـل"
+    },
+    {
+      "id": "l6-ex25",
+      "type": "letter-writing",
+      "refIds": ["meem"],
+      "prompt": "Which is the correct initial form of the letter Mīm?",
+      "options": ["خـ", "ذ", "كـ", "مـ"],
+      "answer": "مـ"
     }
   ]
 }

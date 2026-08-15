@@ -321,6 +321,38 @@
       "refIds": ["saeeda"],
       "prompt": "Practice saying 'سَعِيدَة' (happy (fem.)) out loud.",
       "answer": "سعيدة"
+    },
+    {
+      "id": "l7-ex25",
+      "type": "letter-writing",
+      "refIds": ["nun"],
+      "prompt": "Which is the correct initial form of the letter Nūn?",
+      "options": ["ضـ", "نـ", "ا", "بـ"],
+      "answer": "نـ"
+    },
+    {
+      "id": "l7-ex26",
+      "type": "letter-writing",
+      "refIds": ["ha_light"],
+      "prompt": "Which is the correct medial form of the letter Hāʾ?",
+      "options": ["ـفـ", "ـنـ", "ـغـ", "ـهـ"],
+      "answer": "ـهـ"
+    },
+    {
+      "id": "l7-ex27",
+      "type": "letter-writing",
+      "refIds": ["waw"],
+      "prompt": "Which is the correct final form of the letter Wāw?",
+      "options": ["ـض", "ـع", "ـر", "ـو"],
+      "answer": "ـو"
+    },
+    {
+      "id": "l7-ex28",
+      "type": "letter-writing",
+      "refIds": ["ya"],
+      "prompt": "Which is the correct initial form of the letter Yāʾ?",
+      "options": ["بـ", "قـ", "و", "يـ"],
+      "answer": "يـ"
     }
   ]
 }
