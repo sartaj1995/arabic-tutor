@@ -135,6 +135,41 @@
       "refIds": ["khamsa"],
       "prompt": "Type the Arabic word for 'five'.",
       "answer": "خمسة"
+    },
+    {
+      "id": "l8-ex10",
+      "type": "speaking",
+      "refIds": ["wahid"],
+      "prompt": "Practice saying 'وَاحِد' (one) out loud.",
+      "answer": "واحد"
+    },
+    {
+      "id": "l8-ex11",
+      "type": "speaking",
+      "refIds": ["ithnaan"],
+      "prompt": "Practice saying 'اِثْنَان' (two) out loud.",
+      "answer": "اثنان"
+    },
+    {
+      "id": "l8-ex12",
+      "type": "speaking",
+      "refIds": ["thalatha"],
+      "prompt": "Practice saying 'ثَلَاثَة' (three) out loud.",
+      "answer": "ثلاثة"
+    },
+    {
+      "id": "l8-ex13",
+      "type": "speaking",
+      "refIds": ["arbaa"],
+      "prompt": "Practice saying 'أَرْبَعَة' (four) out loud.",
+      "answer": "أربعة"
+    },
+    {
+      "id": "l8-ex14",
+      "type": "speaking",
+      "refIds": ["khamsa"],
+      "prompt": "Practice saying 'خَمْسَة' (five) out loud.",
+      "answer": "خمسة"
     }
   ]
 }

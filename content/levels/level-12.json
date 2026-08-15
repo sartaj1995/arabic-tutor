@@ -130,6 +130,41 @@
       "prompt": "Which word means 'you (masc.) go / she goes'?",
       "options": ["تَذْهَبُ", "كَمْ", "أَب", "زَهْرَة"],
       "answer": "تَذْهَبُ"
+    },
+    {
+      "id": "l12-ex8",
+      "type": "speaking",
+      "refIds": ["adhhabu"],
+      "prompt": "Practice saying 'أَذْهَبُ' (I go) out loud.",
+      "answer": "أذهب"
+    },
+    {
+      "id": "l12-ex9",
+      "type": "speaking",
+      "refIds": ["tadhhabu"],
+      "prompt": "Practice saying 'تَذْهَبُ' (you (masc.) go / she goes) out loud.",
+      "answer": "تذهب"
+    },
+    {
+      "id": "l12-ex10",
+      "type": "speaking",
+      "refIds": ["tadhhabeena"],
+      "prompt": "Practice saying 'تَذْهَبِينَ' (you (fem.) go) out loud.",
+      "answer": "تذهبين"
+    },
+    {
+      "id": "l12-ex11",
+      "type": "speaking",
+      "refIds": ["ilaa"],
+      "prompt": "Practice saying 'إِلَى' (to / towards) out loud.",
+      "answer": "إلى"
+    },
+    {
+      "id": "l12-ex12",
+      "type": "speaking",
+      "refIds": ["madrasa"],
+      "prompt": "Practice saying 'مَدْرَسَةٌ' (a school) out loud.",
+      "answer": "مدرسة"
     }
   ]
 }

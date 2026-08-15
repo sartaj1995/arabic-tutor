@@ -111,6 +111,41 @@
       "prompt": "Which word means 'nine'?",
       "options": ["نَافِذَة", "تِسْعَةٌ", "هُمْ", "أَخ"],
       "answer": "تِسْعَةٌ"
+    },
+    {
+      "id": "l14-ex7",
+      "type": "speaking",
+      "refIds": ["sitta"],
+      "prompt": "Practice saying 'سِتَّةٌ' (six) out loud.",
+      "answer": "ستة"
+    },
+    {
+      "id": "l14-ex8",
+      "type": "speaking",
+      "refIds": ["sabaa"],
+      "prompt": "Practice saying 'سَبْعَةٌ' (seven) out loud.",
+      "answer": "سبعة"
+    },
+    {
+      "id": "l14-ex9",
+      "type": "speaking",
+      "refIds": ["thamaania"],
+      "prompt": "Practice saying 'ثَمَانِيَةٌ' (eight) out loud.",
+      "answer": "ثمانية"
+    },
+    {
+      "id": "l14-ex10",
+      "type": "speaking",
+      "refIds": ["tisaa"],
+      "prompt": "Practice saying 'تِسْعَةٌ' (nine) out loud.",
+      "answer": "تسعة"
+    },
+    {
+      "id": "l14-ex11",
+      "type": "speaking",
+      "refIds": ["ashara"],
+      "prompt": "Practice saying 'عَشَرَةٌ' (ten) out loud.",
+      "answer": "عشرة"
     }
   ]
 }

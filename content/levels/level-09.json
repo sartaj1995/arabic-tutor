@@ -164,6 +164,48 @@
       "prompt": "Which word means 'her house'?",
       "options": ["كَيْفَ", "تِلْكَ", "بَيْتُهَا", "أَيْنَ"],
       "answer": "بَيْتُهَا"
+    },
+    {
+      "id": "l9-ex11",
+      "type": "speaking",
+      "refIds": ["baytii"],
+      "prompt": "Practice saying 'بَيْتِي' (my house) out loud.",
+      "answer": "بيتي"
+    },
+    {
+      "id": "l9-ex12",
+      "type": "speaking",
+      "refIds": ["baytuka"],
+      "prompt": "Practice saying 'بَيْتُكَ' (your house (masc.)) out loud.",
+      "answer": "بيتك"
+    },
+    {
+      "id": "l9-ex13",
+      "type": "speaking",
+      "refIds": ["baytuki"],
+      "prompt": "Practice saying 'بَيْتُكِ' (your house (fem.)) out loud.",
+      "answer": "بيتك"
+    },
+    {
+      "id": "l9-ex14",
+      "type": "speaking",
+      "refIds": ["baytuhu"],
+      "prompt": "Practice saying 'بَيْتُهُ' (his house) out loud.",
+      "answer": "بيته"
+    },
+    {
+      "id": "l9-ex15",
+      "type": "speaking",
+      "refIds": ["baytuhaa"],
+      "prompt": "Practice saying 'بَيْتُهَا' (her house) out loud.",
+      "answer": "بيتها"
+    },
+    {
+      "id": "l9-ex16",
+      "type": "speaking",
+      "refIds": ["kitaabii"],
+      "prompt": "Practice saying 'كِتَابِي' (my book) out loud.",
+      "answer": "كتابي"
     }
   ]
 }

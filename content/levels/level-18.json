@@ -183,6 +183,55 @@
       "prompt": "Which word means 'a newspaper'?",
       "options": ["بيت", "جريدة", "أب", "سيارة"],
       "answer": "جريدة"
+    },
+    {
+      "id": "l18-ex12",
+      "type": "speaking",
+      "refIds": ["aqrau"],
+      "prompt": "Practice saying 'أقرأ' (I read) out loud.",
+      "answer": "أقرأ"
+    },
+    {
+      "id": "l18-ex13",
+      "type": "speaking",
+      "refIds": ["taqrau"],
+      "prompt": "Practice saying 'تقرأ' (you (masc.) read / she reads) out loud.",
+      "answer": "تقرأ"
+    },
+    {
+      "id": "l18-ex14",
+      "type": "speaking",
+      "refIds": ["taqraeena"],
+      "prompt": "Practice saying 'تقرئين' (you (fem.) read) out loud.",
+      "answer": "تقرئين"
+    },
+    {
+      "id": "l18-ex15",
+      "type": "speaking",
+      "refIds": ["yaqrau"],
+      "prompt": "Practice saying 'يقرأ' (he reads) out loud.",
+      "answer": "يقرأ"
+    },
+    {
+      "id": "l18-ex16",
+      "type": "speaking",
+      "refIds": ["naqrau"],
+      "prompt": "Practice saying 'نقرأ' (we read) out loud.",
+      "answer": "نقرأ"
+    },
+    {
+      "id": "l18-ex17",
+      "type": "speaking",
+      "refIds": ["jareeda"],
+      "prompt": "Practice saying 'جريدة' (a newspaper) out loud.",
+      "answer": "جريدة"
+    },
+    {
+      "id": "l18-ex18",
+      "type": "speaking",
+      "refIds": ["majalla"],
+      "prompt": "Practice saying 'مجلة' (a magazine) out loud.",
+      "answer": "مجلة"
     }
   ]
 }

@@ -78,6 +78,13 @@
       "refIds": ["ashara"],
       "prompt": "Review: type the Arabic word for 'ten'.",
       "answer": "عشرة"
+    },
+    {
+      "id": "l20-ex7",
+      "type": "speaking",
+      "refIds": ["wa"],
+      "prompt": "Practice saying 'و' (and) out loud.",
+      "answer": "و"
     }
   ]
 }

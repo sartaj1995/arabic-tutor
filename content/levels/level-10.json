@@ -162,6 +162,41 @@
       "prompt": "Which word means 'he/it is not'?",
       "options": ["طَوِيل", "لَيْسَ", "جَمِيل", "كَبِير"],
       "answer": "لَيْسَ"
+    },
+    {
+      "id": "l10-ex12",
+      "type": "speaking",
+      "refIds": ["lastu"],
+      "prompt": "Practice saying 'لَسْتُ' (I am not) out loud.",
+      "answer": "لست"
+    },
+    {
+      "id": "l10-ex13",
+      "type": "speaking",
+      "refIds": ["lasta"],
+      "prompt": "Practice saying 'لَسْتَ' (you (masc.) are not) out loud.",
+      "answer": "لست"
+    },
+    {
+      "id": "l10-ex14",
+      "type": "speaking",
+      "refIds": ["lasti"],
+      "prompt": "Practice saying 'لَسْتِ' (you (fem.) are not) out loud.",
+      "answer": "لست"
+    },
+    {
+      "id": "l10-ex15",
+      "type": "speaking",
+      "refIds": ["laysa"],
+      "prompt": "Practice saying 'لَيْسَ' (he/it is not) out loud.",
+      "answer": "ليس"
+    },
+    {
+      "id": "l10-ex16",
+      "type": "speaking",
+      "refIds": ["laysat"],
+      "prompt": "Practice saying 'لَيْسَتْ' (she/it is not) out loud.",
+      "answer": "ليست"
     }
   ]
 }

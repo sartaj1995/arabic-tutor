@@ -218,6 +218,48 @@
       "prompt": "Which letter is this? ز",
       "options": ["Dāl", "Zāy", "Dhāl", "Jīm"],
       "answer": "Zāy"
+    },
+    {
+      "id": "l3-ex14",
+      "type": "speaking",
+      "refIds": ["kitaab"],
+      "prompt": "Practice saying 'كِتَاب' (book) out loud.",
+      "answer": "كتاب"
+    },
+    {
+      "id": "l3-ex15",
+      "type": "speaking",
+      "refIds": ["qalam"],
+      "prompt": "Practice saying 'قَلَم' (pen) out loud.",
+      "answer": "قلم"
+    },
+    {
+      "id": "l3-ex16",
+      "type": "speaking",
+      "refIds": ["saaa"],
+      "prompt": "Practice saying 'سَاعَة' (clock / watch / hour) out loud.",
+      "answer": "ساعة"
+    },
+    {
+      "id": "l3-ex17",
+      "type": "speaking",
+      "refIds": ["zahra"],
+      "prompt": "Practice saying 'زَهْرَة' (flower) out loud.",
+      "answer": "زهرة"
+    },
+    {
+      "id": "l3-ex18",
+      "type": "speaking",
+      "refIds": ["naafidha"],
+      "prompt": "Practice saying 'نَافِذَة' (window) out loud.",
+      "answer": "نافذة"
+    },
+    {
+      "id": "l3-ex19",
+      "type": "speaking",
+      "refIds": ["sayyaara"],
+      "prompt": "Practice saying 'سَيَّارَة' (car) out loud.",
+      "answer": "سيارة"
     }
   ]
 }
