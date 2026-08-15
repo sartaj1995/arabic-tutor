@@ -1,0 +1,214 @@
+{
+  "number": 17,
+  "title": "Days of the Week",
+  "newLetters": [],
+  "newVocab": ["alahad", "alithnayn", "althulathaa", "alarbiaa", "alkhamees", "aljumua", "alsabt", "yawm"],
+  "newPatterns": ["today-is"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "alahad",
+      "arabic": "الأَحَدُ",
+      "arabicNoDiacritics": "الأحد",
+      "transliteration": "al-aḥadu",
+      "english": "Sunday",
+      "partOfSpeech": "noun (day)",
+      "audio": { "id": "word_alahad", "text": "الأَحَدُ" },
+      "introducedInLevel": 17,
+      "tags": ["core", "day"]
+    },
+    {
+      "id": "alithnayn",
+      "arabic": "الِاثْنَيْنُ",
+      "arabicNoDiacritics": "الاثنين",
+      "transliteration": "al-ithnaynu",
+      "english": "Monday",
+      "partOfSpeech": "noun (day)",
+      "audio": { "id": "word_alithnayn", "text": "الِاثْنَيْنُ" },
+      "introducedInLevel": 17,
+      "tags": ["core", "day"]
+    },
+    {
+      "id": "althulathaa",
+      "arabic": "الثُّلَاثَاءُ",
+      "arabicNoDiacritics": "الثلاثاء",
+      "transliteration": "ath-thulāthāʾu",
+      "english": "Tuesday",
+      "partOfSpeech": "noun (day)",
+      "audio": { "id": "word_althulathaa", "text": "الثُّلَاثَاءُ" },
+      "introducedInLevel": 17,
+      "tags": ["day"]
+    },
+    {
+      "id": "alarbiaa",
+      "arabic": "الأَرْبِعَاءُ",
+      "arabicNoDiacritics": "الأربعاء",
+      "transliteration": "al-arbiʿāʾu",
+      "english": "Wednesday",
+      "partOfSpeech": "noun (day)",
+      "audio": { "id": "word_alarbiaa", "text": "الأَرْبِعَاءُ" },
+      "introducedInLevel": 17,
+      "tags": ["day"]
+    },
+    {
+      "id": "alkhamees",
+      "arabic": "الْخَمِيسُ",
+      "arabicNoDiacritics": "الخميس",
+      "transliteration": "al-khamīsu",
+      "english": "Thursday",
+      "partOfSpeech": "noun (day)",
+      "audio": { "id": "word_alkhamees", "text": "الْخَمِيسُ" },
+      "introducedInLevel": 17,
+      "tags": ["day"]
+    },
+    {
+      "id": "aljumua",
+      "arabic": "الْجُمُعَةُ",
+      "arabicNoDiacritics": "الجمعة",
+      "transliteration": "al-jumuʿatu",
+      "english": "Friday",
+      "partOfSpeech": "noun (day)",
+      "audio": { "id": "word_aljumua", "text": "الْجُمُعَةُ" },
+      "introducedInLevel": 17,
+      "tags": ["core", "day"]
+    },
+    {
+      "id": "alsabt",
+      "arabic": "السَّبْتُ",
+      "arabicNoDiacritics": "السبت",
+      "transliteration": "as-sabtu",
+      "english": "Saturday",
+      "partOfSpeech": "noun (day)",
+      "audio": { "id": "word_alsabt", "text": "السَّبْتُ" },
+      "introducedInLevel": 17,
+      "tags": ["day"]
+    },
+    {
+      "id": "yawm",
+      "arabic": "يَوْمٌ",
+      "arabicNoDiacritics": "يوم",
+      "transliteration": "yawmun",
+      "english": "a day",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_yawm", "text": "يَوْمٌ" },
+      "introducedInLevel": 17,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "today-is",
+      "pattern": "الْيَوْمُ + هُوَ + [Day]",
+      "exampleArabic": "اليوم هو الجمعة",
+      "exampleTransliteration": "al-yawmu huwa l-jumuʿatu",
+      "exampleEnglish": "Today is Friday.",
+      "grammarNote": "الْيَوْمُ ('the day') is used idiomatically to mean 'today'. Normally a definite subject can be followed directly by an indefinite predicate (level 11), but here BOTH sides are definite (الْيَوْمُ and الْجُمُعَةُ) — without something in between, that would misread as one long phrase ('Friday's day'). MSA fixes this by inserting a 'pronoun of separation' (هُوَ for masc., هِيَ for fem.) between two definite parts of an equational sentence. Also note: ث and س in الثُّلَاثَاءُ/السَّبْتُ are sun letters (level 11) — pronounced ath-thulāthāʾu, as-sabtu.",
+      "audio": { "id": "phrase_alyawm_huwa_aljumua", "text": "اليوم هو الجمعة" },
+      "introducedInLevel": 17
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l17-ex1",
+      "type": "multiple-choice",
+      "refIds": ["aljumua"],
+      "prompt": "What does 'الجمعة' mean?",
+      "options": ["Friday", "Saturday", "Sunday", "Thursday"],
+      "answer": "Friday"
+    },
+    {
+      "id": "l17-ex2",
+      "type": "sentence-build",
+      "refIds": ["yawm", "aljumua", "today-is"],
+      "prompt": "Arrange the tiles to say 'Today is Friday.'",
+      "options": ["اليوم", "هو", "الجمعة"],
+      "answer": "اليوم هو الجمعة"
+    },
+    {
+      "id": "l17-ex3",
+      "type": "multiple-choice",
+      "refIds": ["alahad"],
+      "prompt": "What does 'الأحد' mean?",
+      "options": ["Sunday", "Monday", "Saturday", "Tuesday"],
+      "answer": "Sunday"
+    },
+    {
+      "id": "l17-ex4",
+      "type": "typing",
+      "refIds": ["alsabt"],
+      "prompt": "Type the Arabic word for 'Saturday'.",
+      "answer": "السبت"
+    },
+    {
+      "id": "l17-ex5",
+      "type": "audio-recognition",
+      "refIds": ["alithnayn", "althulathaa", "alarbiaa", "alkhamees"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["الاثنين", "الثلاثاء", "الأربعاء", "الخميس"],
+      "answer": "الاثنين"
+    },
+    {
+      "id": "l17-ex6",
+      "type": "multiple-choice",
+      "refIds": ["althulathaa"],
+      "prompt": "What does 'الثلاثاء' mean?",
+      "options": ["Tuesday", "Saturday", "flower", "big"],
+      "answer": "Tuesday"
+    },
+    {
+      "id": "l17-ex7",
+      "type": "multiple-choice",
+      "refIds": ["althulathaa"],
+      "prompt": "Which word means 'Tuesday'?",
+      "options": ["الأحد", "الثلاثاء", "البيت", "الكتاب"],
+      "answer": "الثلاثاء"
+    },
+    {
+      "id": "l17-ex8",
+      "type": "multiple-choice",
+      "refIds": ["alarbiaa"],
+      "prompt": "What does 'الأربعاء' mean?",
+      "options": ["yes", "Wednesday", "father", "new"],
+      "answer": "Wednesday"
+    },
+    {
+      "id": "l17-ex9",
+      "type": "typing",
+      "refIds": ["alarbiaa"],
+      "prompt": "Type the Arabic word for 'Wednesday'.",
+      "answer": "الأربعاء"
+    },
+    {
+      "id": "l17-ex10",
+      "type": "multiple-choice",
+      "refIds": ["alkhamees"],
+      "prompt": "What does 'الخميس' mean?",
+      "options": ["this (masc.)", "black", "Thursday", "book"],
+      "answer": "Thursday"
+    },
+    {
+      "id": "l17-ex11",
+      "type": "multiple-choice",
+      "refIds": ["alkhamees"],
+      "prompt": "Which word means 'Thursday'?",
+      "options": ["كتاب", "ثمانية", "الخميس", "باب"],
+      "answer": "الخميس"
+    },
+    {
+      "id": "l17-ex12",
+      "type": "multiple-choice",
+      "refIds": ["yawm"],
+      "prompt": "What does 'يوم' mean?",
+      "options": ["tea", "the moon", "book", "a day"],
+      "answer": "a day"
+    },
+    {
+      "id": "l17-ex13",
+      "type": "typing",
+      "refIds": ["yawm"],
+      "prompt": "Type the Arabic word for 'a day'.",
+      "answer": "يوم"
+    }
+  ]
+}

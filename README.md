@@ -4,16 +4,19 @@ A web app for English speakers to learn Modern Standard Arabic (MSA) —
 script, vocabulary, and sentence-building — across 100 levels.
 
 **Status: app shell with interactive exercises, an on-screen Arabic
-keyboard, spaced-repetition review, real exercise depth, and live audio.**
-The first 10 levels of curriculum content exist as structured JSON — 133
-exercises across them, generated so every letter and vocab word gets at
-least one dedicated question, not just the illustrative few each level
-started with. A React/Vite app loads and displays them with
+keyboard, spaced-repetition review, real exercise depth, live audio, and a
+progress dashboard.** The first 20 levels of curriculum content exist as
+structured JSON — 222 exercises across them, generated so every letter and
+vocab word gets at least one dedicated question, not just the illustrative
+few each level started with. A React/Vite app loads and displays them with
 clickable/typeable exercises and live scoring, finishing a level feeds its
 letters/vocab/patterns into a spaced-repetition queue you work through at
-`/review`, and 🔊 buttons speak Arabic text aloud using the browser's
-built-in Web Speech API — free, no account, no API key, no pre-generated
-files. See Next steps for what's still missing.
+`/review`, 🔊 buttons speak Arabic text aloud using the browser's built-in
+Web Speech API — free, no account, no API key, no pre-generated files
+(though it does need an Arabic voice installed at the OS level — see
+"Audio" below) — and `/progress` shows levels completed, average score,
+items learned, SRS mastery breakdown, a day streak, and a review-load
+forecast. See Next steps for what's still missing.
 
 ## Running it
 
@@ -28,14 +31,19 @@ Then open the printed `localhost` URL. `npm run build` produces a static
 ### Audio
 
 🔊 buttons speak Arabic text live via the browser's Web Speech API
-(`src/lib/speech.ts`) — nothing to set up, nothing to generate. Voice
-quality/availability depends on your browser and OS:
+(`src/lib/speech.ts`) — nothing to set up, nothing to generate, but it does
+need an Arabic voice available at the OS level. Verified directly (not
+assumed): Chrome's own "remote" voice list is a small fixed set that does
+**not** reliably include Arabic, so don't count on it working out of the
+box. If `LevelList` shows "No Arabic voice found," install one:
 
-- **Chrome** supplies Arabic voices remotely regardless of what's installed
-  locally — this is the most reliable option.
-- Other browsers rely on voices installed at the OS level; if none are
-  found, `LevelList` shows a small notice and 🔊 buttons no-op silently
-  rather than erroring.
+- **Windows**: Settings → Time & Language → Language & region → Add a
+  language → pick an Arabic variant → make sure Speech/text-to-speech is
+  included in the download → restart the browser afterward.
+- Other OSes: check the system language/speech/accessibility settings for
+  installing an Arabic voice, then restart the browser.
+
+Until then, 🔊 buttons no-op silently rather than erroring.
 
 An offline pre-generation pipeline for Google Cloud TTS
 (`scripts/generate-audio.mjs`) still exists as a documented fallback if you
@@ -84,6 +92,12 @@ since already-covered items are skipped.
   yourself vs. reference audio). Every letter and vocab word gets at least
   one dedicated exercise per `scripts/generate-exercises.mjs` — see
   "Generating exercises" above.
+- **Progress dashboard** (`/progress`, `src/lib/progress.ts`): computed
+  entirely from data already in IndexedDB, no separate tracking needed —
+  levels completed, average score, items learned by type, an SRS mastery
+  breakdown (new/learning/mastered, by repetitions), a day streak (derived
+  from SRS review + level-completion timestamps), and a review-load
+  forecast (due today / this week / later).
 
 Full rationale for these decisions — including why letters are taught in
 shape families instead of dictionary order, and why vocabulary isn't
@@ -101,9 +115,10 @@ src/lib/arabic.ts         Diacritics-stripping normalization for grading
 src/lib/srs.ts            Spaced-repetition scheduling (lightweight SM-2)
 src/lib/reviewExercise.ts Turns a due SRS item into a synthetic quiz question
 src/lib/speech.ts         Web Speech API wrapper (speak, voice detection)
-src/pages/                LevelList, LevelDetail, Review
+src/lib/progress.ts       Dashboard stats computed from IndexedDB (no separate tracking)
+src/pages/                LevelList, LevelDetail, Review, Progress
 src/components/           ArabicText, ExerciseCard, PlayAudioButton, ArabicKeyboard
-content/levels/*.json     Authored level content (levels 1–10 so far)
+content/levels/*.json     Authored level content (levels 1–20 so far)
 scripts/generate-audio.mjs      Offline Google Cloud TTS pipeline — fallback, unused
 scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 ```
@@ -111,9 +126,9 @@ scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 Each `content/levels/level-XX.json` follows the `Level` type in
 `src/types/content.ts`: new letters, new vocab, new sentence patterns, a
 diacritics-display setting, and exercises (a hand-authored core set plus
-generated coverage exercises — 133 total across the 10 levels).
+generated coverage exercises — 222 total across the 20 levels).
 
-## First 10 levels
+## First 20 levels
 
 | # | Theme |
 |---|---|
@@ -127,11 +142,21 @@ generated coverage exercises — 133 total across the 10 levels).
 | 8 | Numbers 1–5 & hamza forms |
 | 9 | Possession — "This is my..." |
 | 10 | Negation & review |
+| 11 | The definite article ال — sun/moon letters |
+| 12 | Verbs — "to go" (I / you) |
+| 13 | Verbs — "to go" (he / she / we) |
+| 14 | Numbers 6–10 |
+| 15 | Verbs — "to want" (full paradigm) |
+| 16 | Colors |
+| 17 | Days of the week |
+| 18 | Verbs — "to read" (full paradigm) |
+| 19 | Sound plurals |
+| 20 | "And" (وَ) & review |
 
 ## Next steps
 
 1. **Review the pacing.** Read through `content/levels/level-01.json` →
-   `level-10.json` (or the summary table in `docs/content-model.md`) and
+   `level-20.json` (or the summary table in `docs/content-model.md`) and
    sanity-check that the progression feels right before more levels are
    generated the same way.
 2. ~~Scaffold the app.~~ Done — `npm run dev` to try it.
@@ -171,12 +196,33 @@ generated coverage exercises — 133 total across the 10 levels).
    target word/phrase via `speak()` so the learner has a reference to
    compare their own pronunciation against; true automated pronunciation
    scoring is a much bigger separate feature, out of scope for this step.
-6. **Add a progress dashboard** beyond the per-level score badges — e.g.
-   review load over time, words learned, streaks.
-7. **Author levels 11–100** once the first 10 are validated, continuing the
-   interleaved letters → orthography → vocabulary → grammar progression.
-   `generate-exercises.mjs` is idempotent, so re-run it after each new batch
-   of levels to fill in coverage automatically.
-8. **Author a `letter-writing` exercise.** The type exists in the schema
+6. ~~Add a progress dashboard.~~ Done — `/progress` (`src/pages/Progress.tsx`
+   + `src/lib/progress.ts`), reachable from a nav link in the header on
+   every page. All stats are computed on the fly from existing
+   `levelProgress`/`srsItems` IndexedDB data — no new tracking needed.
+   Verified end-to-end: completed level 1 (17/17), dashboard correctly
+   showed "1/20 levels", "100% average", "12 items learned — 4 letters, 8
+   vocab", streak "🔥 1", all 12 items "New" and "due today". Then did a
+   full review session (12/12 correct) and confirmed the mastery bar moved
+   all 12 items from New → Learning and the forecast shifted from "12 due
+   today" to "0 today / 12 this week" — exactly matching the SM-2 algorithm's
+   1-day interval.
+7. ~~Author levels 11–20.~~ Done — introduces the definite article
+   (ال, with sun/moon letter assimilation and tāʾ marbūṭa pronunciation)
+   and present-tense verb conjugation, MSA's biggest missing grammar piece
+   until now, spread gradually across three verbs (ذهب "go", أراد "want",
+   قرأ "read") rather than dumped at once. Also: numbers 6–10, colors, days
+   of the week, sound plurals, and the وَ conjunction. Diacritics fade to
+   "none" starting level 16 (see `docs/content-model.md`). Validated with a
+   full consistency pass (0 problems across 158 items / 222 exercises: no
+   duplicate ids, every refId resolves, every sentence-build's tiles join to
+   its answer) and in the browser — level 11 renders and scores correctly,
+   and level 20's capstone sentence (combining two verbs from levels 12 and
+   18 via وَ) was built tile-by-tile and scored "Correct!".
+8. **Author levels 21–100**, continuing the same progression. Broken
+   (irregular) plurals, past tense, and more verbs are the natural next
+   grammar topics. `generate-exercises.mjs` is idempotent, so re-run it
+   after each new batch to fill in coverage automatically.
+9. **Author a `letter-writing` exercise.** The type exists in the schema
    (`src/types/content.ts`) and `ExerciseCard` already handles it, but no
    level uses it yet — only recognition, no tracing/handwriting practice.

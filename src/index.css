@@ -10,6 +10,7 @@
   --correct-bg: #e8f3ea;
   --incorrect: #b3432b;
   --incorrect-bg: #fbe9e5;
+  --learning: #c9862e;
   font-family:
     "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
@@ -33,6 +34,9 @@ body {
   padding: 1rem 1.5rem;
   border-bottom: 1px solid var(--border);
   background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .app-title {
@@ -40,6 +44,17 @@ body {
   font-weight: 700;
   color: var(--text);
   text-decoration: none;
+}
+
+.app-nav-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.app-nav-link:hover {
+  text-decoration: underline;
 }
 
 .app-main {
@@ -109,6 +124,125 @@ body {
   color: var(--text-muted);
   max-width: 40ch;
   line-height: 1.5;
+}
+
+.progress-page h2 {
+  margin: 0.75rem 0 1.25rem;
+}
+
+.progress-page section {
+  margin-bottom: 2rem;
+}
+
+.progress-page h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 1rem;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.progress-empty {
+  color: var(--text-muted);
+}
+
+.mastery-bar {
+  display: flex;
+  height: 1.25rem;
+  border-radius: 999px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin-bottom: 0.75rem;
+}
+
+.mastery-segment {
+  height: 100%;
+}
+
+.mastery-new {
+  background: var(--border);
+}
+
+.mastery-learning {
+  background: var(--learning);
+}
+
+.mastery-mastered {
+  background: var(--correct);
+}
+
+.mastery-legend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.mastery-legend li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+}
+
+.forecast-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.forecast-list li {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.forecast-list strong {
+  font-size: 1.3rem;
+  color: var(--text);
+  margin-right: 0.35rem;
 }
 
 .level-list-intro {

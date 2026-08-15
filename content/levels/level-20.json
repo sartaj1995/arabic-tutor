@@ -1,0 +1,83 @@
+{
+  "number": 20,
+  "title": "\"And\" (وَ) & Review",
+  "newLetters": [],
+  "newVocab": ["wa"],
+  "newPatterns": ["go-and-read"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "wa",
+      "arabic": "وَ",
+      "arabicNoDiacritics": "و",
+      "transliteration": "wa-",
+      "english": "and",
+      "partOfSpeech": "conjunction",
+      "audio": { "id": "word_wa", "text": "وَ" },
+      "introducedInLevel": 20,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "go-and-read",
+      "pattern": "[Sentence] + وَ + [Sentence]",
+      "exampleArabic": "أذهب إلى المدرسة وأقرأ كتابا",
+      "exampleTransliteration": "adhhabu ilā l-madrasati wa-aqraʾu kitāban",
+      "exampleEnglish": "I go to school and read a book.",
+      "grammarNote": "وَ ('and') is a prefix, not a separate word — it attaches directly to whatever follows with no space: وَأَقْرَأُ ('and I read'), not وَ أَقْرَأُ. This sentence combines level 12's [verb] + إِلَى + الـ[place] pattern with level 18's [verb] + [accusative object] pattern — a capstone of everything from levels 11–19: the definite article, two present-tense verbs, and an indefinite accusative object.",
+      "audio": { "id": "phrase_adhhabu_wa_aqrau", "text": "أذهب إلى المدرسة وأقرأ كتابا" },
+      "introducedInLevel": 20
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l20-ex1",
+      "type": "multiple-choice",
+      "refIds": ["wa"],
+      "prompt": "What does 'و' mean?",
+      "options": ["and", "or", "to", "in"],
+      "answer": "and"
+    },
+    {
+      "id": "l20-ex2",
+      "type": "sentence-build",
+      "refIds": ["adhhabu", "madrasa", "aqrau", "kitaab", "go-and-read"],
+      "prompt": "Arrange the tiles to say 'I go to school and read a book.'",
+      "options": ["أذهب", "إلى", "المدرسة", "وأقرأ", "كتابا"],
+      "answer": "أذهب إلى المدرسة وأقرأ كتابا"
+    },
+    {
+      "id": "l20-ex3",
+      "type": "multiple-choice",
+      "refIds": ["yureedu"],
+      "prompt": "Review: what does 'يريد' mean?",
+      "options": ["he wants", "he reads", "he goes", "he is"],
+      "answer": "he wants"
+    },
+    {
+      "id": "l20-ex4",
+      "type": "multiple-choice",
+      "refIds": ["ahmar"],
+      "prompt": "Review: what does 'أحمر' mean?",
+      "options": ["red", "blue", "black", "white"],
+      "answer": "red"
+    },
+    {
+      "id": "l20-ex5",
+      "type": "multiple-choice",
+      "refIds": ["aljumua"],
+      "prompt": "Review: what does 'الجمعة' mean?",
+      "options": ["Friday", "Monday", "a day", "Saturday"],
+      "answer": "Friday"
+    },
+    {
+      "id": "l20-ex6",
+      "type": "typing",
+      "refIds": ["ashara"],
+      "prompt": "Review: type the Arabic word for 'ten'.",
+      "answer": "عشرة"
+    }
+  ]
+}
