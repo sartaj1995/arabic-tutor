@@ -218,6 +218,48 @@
       "prompt": "Which letter is this? د",
       "options": ["Dāl", "Khāʾ", "Alif", "Bāʾ"],
       "answer": "Dāl"
+    },
+    {
+      "id": "l2-ex14",
+      "type": "speaking",
+      "refIds": ["umm"],
+      "prompt": "Practice saying 'أُمّ' (mother) out loud.",
+      "answer": "أم"
+    },
+    {
+      "id": "l2-ex15",
+      "type": "speaking",
+      "refIds": ["akh"],
+      "prompt": "Practice saying 'أَخ' (brother) out loud.",
+      "answer": "أخ"
+    },
+    {
+      "id": "l2-ex16",
+      "type": "speaking",
+      "refIds": ["ukht"],
+      "prompt": "Practice saying 'أُخْت' (sister) out loud.",
+      "answer": "أخت"
+    },
+    {
+      "id": "l2-ex17",
+      "type": "speaking",
+      "refIds": ["bayt"],
+      "prompt": "Practice saying 'بَيْت' (house) out loud.",
+      "answer": "بيت"
+    },
+    {
+      "id": "l2-ex18",
+      "type": "speaking",
+      "refIds": ["walad"],
+      "prompt": "Practice saying 'وَلَد' (boy / son) out loud.",
+      "answer": "ولد"
+    },
+    {
+      "id": "l2-ex19",
+      "type": "speaking",
+      "refIds": ["bint"],
+      "prompt": "Practice saying 'بِنْت' (girl / daughter) out loud.",
+      "answer": "بنت"
     }
   ]
 }

@@ -187,6 +187,48 @@
       "refIds": ["alqamar"],
       "prompt": "Type the Arabic word for 'the moon'.",
       "answer": "القمر"
+    },
+    {
+      "id": "l11-ex14",
+      "type": "speaking",
+      "refIds": ["alkitab"],
+      "prompt": "Practice saying 'الْكِتَابُ' (the book) out loud.",
+      "answer": "الكتاب"
+    },
+    {
+      "id": "l11-ex15",
+      "type": "speaking",
+      "refIds": ["albayt"],
+      "prompt": "Practice saying 'الْبَيْتُ' (the house) out loud.",
+      "answer": "البيت"
+    },
+    {
+      "id": "l11-ex16",
+      "type": "speaking",
+      "refIds": ["alshams"],
+      "prompt": "Practice saying 'الشَّمْسُ' (the sun) out loud.",
+      "answer": "الشمس"
+    },
+    {
+      "id": "l11-ex17",
+      "type": "speaking",
+      "refIds": ["alqamar"],
+      "prompt": "Practice saying 'الْقَمَرُ' (the moon) out loud.",
+      "answer": "القمر"
+    },
+    {
+      "id": "l11-ex18",
+      "type": "speaking",
+      "refIds": ["alrajul"],
+      "prompt": "Practice saying 'الرَّجُلُ' (the man) out loud.",
+      "answer": "الرجل"
+    },
+    {
+      "id": "l11-ex19",
+      "type": "speaking",
+      "refIds": ["almaraa"],
+      "prompt": "Practice saying 'الْمَرْأَةُ' (the woman) out loud.",
+      "answer": "المرأة"
     }
   ]
 }

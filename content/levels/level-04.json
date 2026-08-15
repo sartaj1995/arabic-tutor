@@ -218,6 +218,48 @@
       "prompt": "Which letter is this? ط",
       "options": ["Tāʾ", "Khāʾ", "Ḍād", "Ṭāʾ"],
       "answer": "Ṭāʾ"
+    },
+    {
+      "id": "l4-ex14",
+      "type": "speaking",
+      "refIds": ["kabeer"],
+      "prompt": "Practice saying 'كَبِير' (big) out loud.",
+      "answer": "كبير"
+    },
+    {
+      "id": "l4-ex15",
+      "type": "speaking",
+      "refIds": ["sagheer"],
+      "prompt": "Practice saying 'صَغِير' (small) out loud.",
+      "answer": "صغير"
+    },
+    {
+      "id": "l4-ex16",
+      "type": "speaking",
+      "refIds": ["jameel"],
+      "prompt": "Practice saying 'جَمِيل' (beautiful) out loud.",
+      "answer": "جميل"
+    },
+    {
+      "id": "l4-ex17",
+      "type": "speaking",
+      "refIds": ["jadeed"],
+      "prompt": "Practice saying 'جَدِيد' (new) out loud.",
+      "answer": "جديد"
+    },
+    {
+      "id": "l4-ex18",
+      "type": "speaking",
+      "refIds": ["taweel"],
+      "prompt": "Practice saying 'طَوِيل' (tall / long) out loud.",
+      "answer": "طويل"
+    },
+    {
+      "id": "l4-ex19",
+      "type": "speaking",
+      "refIds": ["qaseer"],
+      "prompt": "Practice saying 'قَصِير' (short) out loud.",
+      "answer": "قصير"
     }
   ]
 }

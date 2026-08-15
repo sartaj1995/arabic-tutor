@@ -183,6 +183,55 @@
       "prompt": "Which word means 'coffee'?",
       "options": ["سِتَّةٌ", "نَعَمْ", "قَهْوَةٌ", "زَهْرَة"],
       "answer": "قَهْوَةٌ"
+    },
+    {
+      "id": "l15-ex12",
+      "type": "speaking",
+      "refIds": ["ureedu"],
+      "prompt": "Practice saying 'أُرِيدُ' (I want) out loud.",
+      "answer": "أريد"
+    },
+    {
+      "id": "l15-ex13",
+      "type": "speaking",
+      "refIds": ["tureedu"],
+      "prompt": "Practice saying 'تُرِيدُ' (you (masc.) want / she wants) out loud.",
+      "answer": "تريد"
+    },
+    {
+      "id": "l15-ex14",
+      "type": "speaking",
+      "refIds": ["tureedeena"],
+      "prompt": "Practice saying 'تُرِيدِينَ' (you (fem.) want) out loud.",
+      "answer": "تريدين"
+    },
+    {
+      "id": "l15-ex15",
+      "type": "speaking",
+      "refIds": ["yureedu"],
+      "prompt": "Practice saying 'يُرِيدُ' (he wants) out loud.",
+      "answer": "يريد"
+    },
+    {
+      "id": "l15-ex16",
+      "type": "speaking",
+      "refIds": ["nureedu"],
+      "prompt": "Practice saying 'نُرِيدُ' (we want) out loud.",
+      "answer": "نريد"
+    },
+    {
+      "id": "l15-ex17",
+      "type": "speaking",
+      "refIds": ["qahwa"],
+      "prompt": "Practice saying 'قَهْوَةٌ' (coffee) out loud.",
+      "answer": "قهوة"
+    },
+    {
+      "id": "l15-ex18",
+      "type": "speaking",
+      "refIds": ["shay"],
+      "prompt": "Practice saying 'شَايٌ' (tea) out loud.",
+      "answer": "شاي"
     }
   ]
 }

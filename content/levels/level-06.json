@@ -245,6 +245,48 @@
       "prompt": "Which letter is this? م",
       "options": ["Lām", "Ḍād", "Ṣād", "Mīm"],
       "answer": "Mīm"
+    },
+    {
+      "id": "l6-ex16",
+      "type": "speaking",
+      "refIds": ["maa"],
+      "prompt": "Practice saying 'مَا' (what) out loud.",
+      "answer": "ما"
+    },
+    {
+      "id": "l6-ex17",
+      "type": "speaking",
+      "refIds": ["man"],
+      "prompt": "Practice saying 'مَنْ' (who) out loud.",
+      "answer": "من"
+    },
+    {
+      "id": "l6-ex18",
+      "type": "speaking",
+      "refIds": ["ayna"],
+      "prompt": "Practice saying 'أَيْنَ' (where) out loud.",
+      "answer": "أين"
+    },
+    {
+      "id": "l6-ex19",
+      "type": "speaking",
+      "refIds": ["kayfa"],
+      "prompt": "Practice saying 'كَيْفَ' (how) out loud.",
+      "answer": "كيف"
+    },
+    {
+      "id": "l6-ex20",
+      "type": "speaking",
+      "refIds": ["limaadhaa"],
+      "prompt": "Practice saying 'لِمَاذَا' (why) out loud.",
+      "answer": "لماذا"
+    },
+    {
+      "id": "l6-ex21",
+      "type": "speaking",
+      "refIds": ["kam"],
+      "prompt": "Practice saying 'كَمْ' (how many / how much) out loud.",
+      "answer": "كم"
     }
   ]
 }

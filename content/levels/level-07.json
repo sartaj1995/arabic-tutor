@@ -272,6 +272,55 @@
       "prompt": "Which letter is this? ي",
       "options": ["Yāʾ", "Hāʾ", "Khāʾ", "Ṭāʾ"],
       "answer": "Yāʾ"
+    },
+    {
+      "id": "l7-ex18",
+      "type": "speaking",
+      "refIds": ["anti"],
+      "prompt": "Practice saying 'أَنْتِ' (you (fem.)) out loud.",
+      "answer": "أنت"
+    },
+    {
+      "id": "l7-ex19",
+      "type": "speaking",
+      "refIds": ["huwa"],
+      "prompt": "Practice saying 'هُوَ' (he) out loud.",
+      "answer": "هو"
+    },
+    {
+      "id": "l7-ex20",
+      "type": "speaking",
+      "refIds": ["hiya"],
+      "prompt": "Practice saying 'هِيَ' (she) out loud.",
+      "answer": "هي"
+    },
+    {
+      "id": "l7-ex21",
+      "type": "speaking",
+      "refIds": ["nahnu"],
+      "prompt": "Practice saying 'نَحْنُ' (we) out loud.",
+      "answer": "نحن"
+    },
+    {
+      "id": "l7-ex22",
+      "type": "speaking",
+      "refIds": ["hum"],
+      "prompt": "Practice saying 'هُمْ' (they (masc./mixed)) out loud.",
+      "answer": "هم"
+    },
+    {
+      "id": "l7-ex23",
+      "type": "speaking",
+      "refIds": ["saeed"],
+      "prompt": "Practice saying 'سَعِيد' (happy (masc.)) out loud.",
+      "answer": "سعيد"
+    },
+    {
+      "id": "l7-ex24",
+      "type": "speaking",
+      "refIds": ["saeeda"],
+      "prompt": "Practice saying 'سَعِيدَة' (happy (fem.)) out loud.",
+      "answer": "سعيدة"
     }
   ]
 }

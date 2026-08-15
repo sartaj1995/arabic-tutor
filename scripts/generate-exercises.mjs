@@ -74,6 +74,20 @@ function formatExercise(ex) {
   return lines.join("\n");
 }
 
+// Speaking coverage is tracked separately from findCoveredIds: a word can
+// already be "covered" by a multiple-choice/typing exercise (which is what
+// findCoveredIds checks, via matching answer text) while still lacking any
+// pronunciation-practice exercise of its own, so this looks for an existing
+// exercise of type "speaking" that references the word's id directly.
+function findSpeakingCoverage(level) {
+  const covered = new Set();
+  for (const ex of level.exercises) {
+    if (ex.type !== "speaking") continue;
+    for (const refId of ex.refIds) covered.add(refId);
+  }
+  return covered;
+}
+
 function findCoveredIds(level) {
   const coveredVocab = new Set();
   const coveredLetters = new Set();
@@ -129,6 +143,7 @@ function main() {
     patternsSoFar = [...patternsSoFar, ...level.patterns];
 
     const { coveredVocab, coveredLetters, coveredPatterns } = findCoveredIds(level);
+    const speakingCovered = findSpeakingCoverage(level);
     const genId = nextExerciseIdFactory(level);
     const newExercises = [];
 
@@ -177,6 +192,18 @@ function main() {
         });
       }
     });
+
+    for (const word of level.vocab) {
+      if (speakingCovered.has(word.id)) continue;
+      const wordArabicDisplay = displayArabic(word.arabic, level);
+      newExercises.push({
+        id: genId(),
+        type: "speaking",
+        refIds: [word.id],
+        prompt: `Practice saying '${wordArabicDisplay}' (${word.english}) out loud.`,
+        answer: word.arabicNoDiacritics,
+      });
+    }
 
     for (const letter of uncoveredLetters) {
       const distractors = pickDistractors(

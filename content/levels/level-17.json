@@ -209,6 +209,62 @@
       "refIds": ["yawm"],
       "prompt": "Type the Arabic word for 'a day'.",
       "answer": "يوم"
+    },
+    {
+      "id": "l17-ex14",
+      "type": "speaking",
+      "refIds": ["alahad"],
+      "prompt": "Practice saying 'الأحد' (Sunday) out loud.",
+      "answer": "الأحد"
+    },
+    {
+      "id": "l17-ex15",
+      "type": "speaking",
+      "refIds": ["alithnayn"],
+      "prompt": "Practice saying 'الاثنين' (Monday) out loud.",
+      "answer": "الاثنين"
+    },
+    {
+      "id": "l17-ex16",
+      "type": "speaking",
+      "refIds": ["althulathaa"],
+      "prompt": "Practice saying 'الثلاثاء' (Tuesday) out loud.",
+      "answer": "الثلاثاء"
+    },
+    {
+      "id": "l17-ex17",
+      "type": "speaking",
+      "refIds": ["alarbiaa"],
+      "prompt": "Practice saying 'الأربعاء' (Wednesday) out loud.",
+      "answer": "الأربعاء"
+    },
+    {
+      "id": "l17-ex18",
+      "type": "speaking",
+      "refIds": ["alkhamees"],
+      "prompt": "Practice saying 'الخميس' (Thursday) out loud.",
+      "answer": "الخميس"
+    },
+    {
+      "id": "l17-ex19",
+      "type": "speaking",
+      "refIds": ["aljumua"],
+      "prompt": "Practice saying 'الجمعة' (Friday) out loud.",
+      "answer": "الجمعة"
+    },
+    {
+      "id": "l17-ex20",
+      "type": "speaking",
+      "refIds": ["alsabt"],
+      "prompt": "Practice saying 'السبت' (Saturday) out loud.",
+      "answer": "السبت"
+    },
+    {
+      "id": "l17-ex21",
+      "type": "speaking",
+      "refIds": ["yawm"],
+      "prompt": "Practice saying 'يوم' (a day) out loud.",
+      "answer": "يوم"
     }
   ]
 }

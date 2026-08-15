@@ -40,7 +40,9 @@ export default function ExerciseCard({ exercise, onAnswer, audioIndex }: Exercis
         <SentenceBuildExercise exercise={exercise} onAnswer={onAnswer} />
       )}
       {exercise.type === "typing" && <TypingExercise exercise={exercise} onAnswer={onAnswer} />}
-      {exercise.type === "speaking" && <SpeakingExercise onAnswer={onAnswer} />}
+      {exercise.type === "speaking" && (
+        <SpeakingExercise onAnswer={onAnswer} targetAudioText={targetAudioText} />
+      )}
     </li>
   );
 }
@@ -214,11 +216,20 @@ function TypingExercise({ exercise, onAnswer }: ExerciseCardProps) {
   );
 }
 
-function SpeakingExercise({ onAnswer }: { onAnswer: (result: AnswerResult) => void }) {
+function SpeakingExercise({
+  onAnswer,
+  targetAudioText,
+}: {
+  onAnswer: (result: AnswerResult) => void;
+  targetAudioText?: string;
+}) {
   const [practiced, setPracticed] = useState(false);
 
   return (
     <div className="speaking-exercise">
+      {targetAudioText && (
+        <PlayAudioButton text={targetAudioText} label="Hear pronunciation" className="listen-btn" />
+      )}
       <button
         type="button"
         className="check-btn"
@@ -230,7 +241,9 @@ function SpeakingExercise({ onAnswer }: { onAnswer: (result: AnswerResult) => vo
       >
         {practiced ? "Marked as practiced ✓" : "I said it out loud"}
       </button>
-      <p className="speaking-note">Self-check only — not scored, no reference audio yet.</p>
+      <p className="speaking-note">
+        Self-check only — listen to the reference audio, repeat it out loud, then mark it practiced.
+      </p>
     </div>
   );
 }

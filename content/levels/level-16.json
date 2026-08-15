@@ -149,6 +149,48 @@
       "prompt": "What does this mean? السيارة حمراء",
       "options": ["The car is red.", "I want coffee.", "I go to school.", "This is my house."],
       "answer": "The car is red."
+    },
+    {
+      "id": "l16-ex9",
+      "type": "speaking",
+      "refIds": ["ahmar"],
+      "prompt": "Practice saying 'أحمر' (red) out loud.",
+      "answer": "أحمر"
+    },
+    {
+      "id": "l16-ex10",
+      "type": "speaking",
+      "refIds": ["azraq"],
+      "prompt": "Practice saying 'أزرق' (blue) out loud.",
+      "answer": "أزرق"
+    },
+    {
+      "id": "l16-ex11",
+      "type": "speaking",
+      "refIds": ["akhdar"],
+      "prompt": "Practice saying 'أخضر' (green) out loud.",
+      "answer": "أخضر"
+    },
+    {
+      "id": "l16-ex12",
+      "type": "speaking",
+      "refIds": ["asfar"],
+      "prompt": "Practice saying 'أصفر' (yellow) out loud.",
+      "answer": "أصفر"
+    },
+    {
+      "id": "l16-ex13",
+      "type": "speaking",
+      "refIds": ["aswad"],
+      "prompt": "Practice saying 'أسود' (black) out loud.",
+      "answer": "أسود"
+    },
+    {
+      "id": "l16-ex14",
+      "type": "speaking",
+      "refIds": ["abyad"],
+      "prompt": "Practice saying 'أبيض' (white) out loud.",
+      "answer": "أبيض"
     }
   ]
 }

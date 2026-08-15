@@ -245,6 +245,48 @@
       "prompt": "Which letter is this? ف",
       "options": ["Tāʾ", "Fāʾ", "Alif", "Ḥāʾ"],
       "answer": "Fāʾ"
+    },
+    {
+      "id": "l5-ex16",
+      "type": "speaking",
+      "refIds": ["haadhaa"],
+      "prompt": "Practice saying 'هَذَا' (this (masc.)) out loud.",
+      "answer": "هذا"
+    },
+    {
+      "id": "l5-ex17",
+      "type": "speaking",
+      "refIds": ["haadhihi"],
+      "prompt": "Practice saying 'هَذِهِ' (this (fem.)) out loud.",
+      "answer": "هذه"
+    },
+    {
+      "id": "l5-ex18",
+      "type": "speaking",
+      "refIds": ["dhaalika"],
+      "prompt": "Practice saying 'ذَلِكَ' (that (masc.)) out loud.",
+      "answer": "ذلك"
+    },
+    {
+      "id": "l5-ex19",
+      "type": "speaking",
+      "refIds": ["tilka"],
+      "prompt": "Practice saying 'تِلْكَ' (that (fem.)) out loud.",
+      "answer": "تلك"
+    },
+    {
+      "id": "l5-ex20",
+      "type": "speaking",
+      "refIds": ["fi"],
+      "prompt": "Practice saying 'فِي' (in) out loud.",
+      "answer": "في"
+    },
+    {
+      "id": "l5-ex21",
+      "type": "speaking",
+      "refIds": ["alaa"],
+      "prompt": "Practice saying 'عَلَى' (on) out loud.",
+      "answer": "على"
     }
   ]
 }

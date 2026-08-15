@@ -156,6 +156,48 @@
       "refIds": ["mudarrisa"],
       "prompt": "Type the Arabic word for 'a teacher (fem.)'.",
       "answer": "مدرسة"
+    },
+    {
+      "id": "l19-ex10",
+      "type": "speaking",
+      "refIds": ["mudarris"],
+      "prompt": "Practice saying 'مدرس' (a teacher (masc.)) out loud.",
+      "answer": "مدرس"
+    },
+    {
+      "id": "l19-ex11",
+      "type": "speaking",
+      "refIds": ["mudarrisuun"],
+      "prompt": "Practice saying 'مدرسون' (teachers (masc.)) out loud.",
+      "answer": "مدرسون"
+    },
+    {
+      "id": "l19-ex12",
+      "type": "speaking",
+      "refIds": ["mudarrisa"],
+      "prompt": "Practice saying 'مدرسة' (a teacher (fem.)) out loud.",
+      "answer": "مدرسة"
+    },
+    {
+      "id": "l19-ex13",
+      "type": "speaking",
+      "refIds": ["mudarrisaat"],
+      "prompt": "Practice saying 'مدرسات' (teachers (fem.)) out loud.",
+      "answer": "مدرسات"
+    },
+    {
+      "id": "l19-ex14",
+      "type": "speaking",
+      "refIds": ["sayyaraat"],
+      "prompt": "Practice saying 'سيارات' (cars) out loud.",
+      "answer": "سيارات"
+    },
+    {
+      "id": "l19-ex15",
+      "type": "speaking",
+      "refIds": ["saaaat"],
+      "prompt": "Practice saying 'ساعات' (clocks / hours) out loud.",
+      "answer": "ساعات"
     }
   ]
 }

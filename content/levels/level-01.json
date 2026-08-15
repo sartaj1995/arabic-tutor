@@ -271,6 +271,62 @@
       "prompt": "Which letter is this? ث",
       "options": ["Thāʾ", "Tāʾ", "Alif", "Bāʾ"],
       "answer": "Thāʾ"
+    },
+    {
+      "id": "l1-ex18",
+      "type": "speaking",
+      "refIds": ["ana"],
+      "prompt": "Practice saying 'أَنَا' (I) out loud.",
+      "answer": "أنا"
+    },
+    {
+      "id": "l1-ex19",
+      "type": "speaking",
+      "refIds": ["anta"],
+      "prompt": "Practice saying 'أَنْتَ' (you (masc.)) out loud.",
+      "answer": "أنت"
+    },
+    {
+      "id": "l1-ex20",
+      "type": "speaking",
+      "refIds": ["naam"],
+      "prompt": "Practice saying 'نَعَمْ' (yes) out loud.",
+      "answer": "نعم"
+    },
+    {
+      "id": "l1-ex21",
+      "type": "speaking",
+      "refIds": ["la"],
+      "prompt": "Practice saying 'لَا' (no) out loud.",
+      "answer": "لا"
+    },
+    {
+      "id": "l1-ex22",
+      "type": "speaking",
+      "refIds": ["salaam"],
+      "prompt": "Practice saying 'السَّلَامُ عَلَيْكُمْ' (hello (lit. 'peace be upon you')) out loud.",
+      "answer": "السلام عليكم"
+    },
+    {
+      "id": "l1-ex23",
+      "type": "speaking",
+      "refIds": ["shukran"],
+      "prompt": "Practice saying 'شُكْرًا' (thank you) out loud.",
+      "answer": "شكرا"
+    },
+    {
+      "id": "l1-ex24",
+      "type": "speaking",
+      "refIds": ["ab"],
+      "prompt": "Practice saying 'أَب' (father) out loud.",
+      "answer": "أب"
+    },
+    {
+      "id": "l1-ex25",
+      "type": "speaking",
+      "refIds": ["baab"],
+      "prompt": "Practice saying 'بَاب' (door) out loud.",
+      "answer": "باب"
     }
   ]
 }

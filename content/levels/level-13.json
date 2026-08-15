@@ -103,6 +103,34 @@
       "prompt": "What does 'جَامِعَةٌ' mean?",
       "options": ["a school", "a market", "a university", "a house"],
       "answer": "a university"
+    },
+    {
+      "id": "l13-ex6",
+      "type": "speaking",
+      "refIds": ["yadhhabu"],
+      "prompt": "Practice saying 'يَذْهَبُ' (he goes) out loud.",
+      "answer": "يذهب"
+    },
+    {
+      "id": "l13-ex7",
+      "type": "speaking",
+      "refIds": ["nadhhabu"],
+      "prompt": "Practice saying 'نَذْهَبُ' (we go) out loud.",
+      "answer": "نذهب"
+    },
+    {
+      "id": "l13-ex8",
+      "type": "speaking",
+      "refIds": ["jaamiaa"],
+      "prompt": "Practice saying 'جَامِعَةٌ' (a university) out loud.",
+      "answer": "جامعة"
+    },
+    {
+      "id": "l13-ex9",
+      "type": "speaking",
+      "refIds": ["suuq"],
+      "prompt": "Practice saying 'سُوقٌ' (a market) out loud.",
+      "answer": "سوق"
     }
   ]
 }
