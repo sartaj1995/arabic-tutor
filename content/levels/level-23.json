@@ -1,0 +1,169 @@
+{
+  "number": 23,
+  "title": "Past Tense — \"To Want\"",
+  "newLetters": [],
+  "newVocab": ["aradtu", "araada", "araadat", "aradnaa"],
+  "newPatterns": ["past-want-object"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "aradtu",
+      "arabic": "أَرَدْتُ",
+      "arabicNoDiacritics": "أردت",
+      "transliteration": "aradtu",
+      "english": "I / you (masc.) / you (fem.) wanted",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_aradtu", "text": "أَرَدْتُ" },
+      "introducedInLevel": 23,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "araada",
+      "arabic": "أَرَادَ",
+      "arabicNoDiacritics": "أراد",
+      "transliteration": "arāda",
+      "english": "he wanted",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_araada", "text": "أَرَادَ" },
+      "introducedInLevel": 23,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "araadat",
+      "arabic": "أَرَادَتْ",
+      "arabicNoDiacritics": "أرادت",
+      "transliteration": "arādat",
+      "english": "she wanted",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_araadat", "text": "أَرَادَتْ" },
+      "introducedInLevel": 23,
+      "tags": ["verb"]
+    },
+    {
+      "id": "aradnaa",
+      "arabic": "أَرَدْنَا",
+      "arabicNoDiacritics": "أردنا",
+      "transliteration": "aradnā",
+      "english": "we wanted",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_aradnaa", "text": "أَرَدْنَا" },
+      "introducedInLevel": 23,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "past-want-object",
+      "pattern": "[Time word] + [Past verb] + [Indefinite Object, accusative]",
+      "exampleArabic": "أمس أردت قهوة",
+      "exampleTransliteration": "amsi aradtu qahwatan",
+      "exampleEnglish": "Yesterday I wanted coffee.",
+      "grammarNote": "أراد is a 'hollow' verb — its middle root letter is a weak و, which shows up as a long ا only when a vowel follows. Before a consonant-starting suffix it disappears: أَرَدْتُ, not أَرَادْتُ. Before a vowel-starting suffix it stays: أَرَادَ (he), أَرَادَتْ (she). That difference actually helps here — unlike ذهب last level, أراد's هو and هي forms (أَرَادَ / أَرَادَتْ) stay visually distinct even without diacritics, because the vowel shortening is a real letter change, not just a missing vowel mark. Only I/you (masc.)/you (fem.) still collapse to the same أردت.",
+      "audio": { "id": "phrase_amsi_aradtu_qahwatan", "text": "أمس أردت قهوة" },
+      "introducedInLevel": 23
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l23-ex1",
+      "type": "multiple-choice",
+      "refIds": ["aradtu"],
+      "prompt": "What does 'أردت' mean?",
+      "options": [
+        "I / you (masc.) / you (fem.) wanted",
+        "he wanted",
+        "she wanted",
+        "we wanted"
+      ],
+      "answer": "I / you (masc.) / you (fem.) wanted"
+    },
+    {
+      "id": "l23-ex2",
+      "type": "sentence-build",
+      "refIds": ["amsi", "aradtu", "qahwa", "past-want-object"],
+      "prompt": "Arrange the tiles to say 'Yesterday I wanted coffee.'",
+      "options": ["أمس", "أردت", "قهوة"],
+      "answer": "أمس أردت قهوة"
+    },
+    {
+      "id": "l23-ex3",
+      "type": "multiple-choice",
+      "refIds": ["araada", "araadat"],
+      "prompt": "What is the difference between 'أراد' and 'أرادت'?",
+      "options": [
+        "'he wanted' vs. 'she wanted'",
+        "'I wanted' vs. 'we wanted'",
+        "'he wants' vs. 'she wants'",
+        "there is no difference"
+      ],
+      "answer": "'he wanted' vs. 'she wanted'"
+    },
+    {
+      "id": "l23-ex4",
+      "type": "typing",
+      "refIds": ["aradnaa"],
+      "prompt": "Type the Arabic word for 'we wanted'.",
+      "answer": "أردنا"
+    },
+    {
+      "id": "l23-ex5",
+      "type": "multiple-choice",
+      "refIds": ["araada"],
+      "prompt": "What does 'أراد' mean?",
+      "options": ["you (fem.) are not", "how", "he wanted", "yes"],
+      "answer": "he wanted"
+    },
+    {
+      "id": "l23-ex6",
+      "type": "multiple-choice",
+      "refIds": ["araada"],
+      "prompt": "Which word means 'he wanted'?",
+      "options": ["أراد", "كبير", "أرادت", "تذهب"],
+      "answer": "أراد"
+    },
+    {
+      "id": "l23-ex7",
+      "type": "multiple-choice",
+      "refIds": ["araadat"],
+      "prompt": "What does 'أرادت' mean?",
+      "options": ["house", "I go", "short", "she wanted"],
+      "answer": "she wanted"
+    },
+    {
+      "id": "l23-ex8",
+      "type": "typing",
+      "refIds": ["araadat"],
+      "prompt": "Type the Arabic word for 'she wanted'.",
+      "answer": "أرادت"
+    },
+    {
+      "id": "l23-ex9",
+      "type": "speaking",
+      "refIds": ["aradtu"],
+      "prompt": "Practice saying 'أردت' (I / you (masc.) / you (fem.) wanted) out loud.",
+      "answer": "أردت"
+    },
+    {
+      "id": "l23-ex10",
+      "type": "speaking",
+      "refIds": ["araada"],
+      "prompt": "Practice saying 'أراد' (he wanted) out loud.",
+      "answer": "أراد"
+    },
+    {
+      "id": "l23-ex11",
+      "type": "speaking",
+      "refIds": ["araadat"],
+      "prompt": "Practice saying 'أرادت' (she wanted) out loud.",
+      "answer": "أرادت"
+    },
+    {
+      "id": "l23-ex12",
+      "type": "speaking",
+      "refIds": ["aradnaa"],
+      "prompt": "Practice saying 'أردنا' (we wanted) out loud.",
+      "answer": "أردنا"
+    }
+  ]
+}

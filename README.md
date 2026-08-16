@@ -5,8 +5,8 @@ script, vocabulary, and sentence-building — across 100 levels.
 
 **Status: app shell with interactive exercises, an on-screen Arabic
 keyboard, spaced-repetition review, real exercise depth, live audio, and a
-progress dashboard.** The first 20 levels of curriculum content exist as
-structured JSON — 222 exercises across them, generated so every letter and
+progress dashboard.** The first 30 levels of curriculum content exist as
+structured JSON — 504 exercises across them, generated so every letter and
 vocab word gets at least one dedicated question, not just the illustrative
 few each level started with. A React/Vite app loads and displays them with
 clickable/typeable exercises and live scoring, finishing a level feeds its
@@ -118,7 +118,7 @@ src/lib/speech.ts         Web Speech API wrapper (speak, voice detection)
 src/lib/progress.ts       Dashboard stats computed from IndexedDB (no separate tracking)
 src/pages/                LevelList, LevelDetail, Review, Progress
 src/components/           ArabicText, ExerciseCard, PlayAudioButton, ArabicKeyboard
-content/levels/*.json     Authored level content (levels 1–20 so far)
+content/levels/*.json     Authored level content (levels 1–30 so far)
 scripts/generate-audio.mjs      Offline Google Cloud TTS pipeline — fallback, unused
 scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 ```
@@ -126,9 +126,9 @@ scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 Each `content/levels/level-XX.json` follows the `Level` type in
 `src/types/content.ts`: new letters, new vocab, new sentence patterns, a
 diacritics-display setting, and exercises (a hand-authored core set plus
-generated coverage exercises — 222 total across the 20 levels).
+generated coverage exercises — 504 total across the 30 levels).
 
-## First 20 levels
+## First 30 levels
 
 | # | Theme |
 |---|---|
@@ -152,11 +152,21 @@ generated coverage exercises — 222 total across the 20 levels).
 | 18 | Verbs — "to read" (full paradigm) |
 | 19 | Sound plurals |
 | 20 | "And" (وَ) & review |
+| 21 | Broken plurals |
+| 22 | Past tense — "to go" |
+| 23 | Past tense — "to want" |
+| 24 | Past tense — "to read" |
+| 25 | Verbs — "to eat" (present tense) |
+| 26 | Verbs — "to drink" (present tense) |
+| 27 | Broken plurals II — cities & mountains |
+| 28 | Past tense — "to eat" |
+| 29 | Past tense — "to drink" |
+| 30 | Review — levels 21–30 |
 
 ## Next steps
 
 1. **Review the pacing.** Read through `content/levels/level-01.json` →
-   `level-20.json` (or the summary table in `docs/content-model.md`) and
+   `level-30.json` (or the summary table in `docs/content-model.md`) and
    sanity-check that the progression feels right before more levels are
    generated the same way.
 2. ~~Scaffold the app.~~ Done — `npm run dev` to try it.
@@ -221,10 +231,21 @@ generated coverage exercises — 222 total across the 20 levels).
    its answer) and in the browser — level 11 renders and scores correctly,
    and level 20's capstone sentence (combining two verbs from levels 12 and
    18 via وَ) was built tile-by-tile and scored "Correct!".
-8. **Author levels 21–100**, continuing the same progression. Broken
-   (irregular) plurals, past tense, and more verbs are the natural next
-   grammar topics. `generate-exercises.mjs` is idempotent, so re-run it
-   after each new batch to fill in coverage automatically.
+8. ~~Author levels 21–30.~~ Done — broken (irregular) plurals (كِتَاب →
+   كُتُب, and non-human plural agreement: الْجِبَالُ جَمِيلَةٌ, a fem.
+   singular adjective for any non-human plural), full past tense across
+   five verbs (ذهب، أراد، قرأ، أكل، شرب), and two new present-tense verbs
+   (أكل "eat", شرب "drink"). Past tense uncovered a real content-design
+   issue, not just a pacing decision: several conjugated forms become
+   textually identical once diacritics strip away (levels 16+), so each
+   regular past-tense verb is taught as 3 vocab entries instead of 6 — see
+   "Past-tense homograph collisions" in `docs/content-model.md` for the
+   full reasoning. Validated with a full consistency pass (0 problems
+   across 216 items / 504 exercises) and in the browser — level 27's
+   non-human plural agreement and level 30's capstone sentence (past tense
+   + broken plural + وَ, spanning five of the ten new levels' vocabulary)
+   both render and score correctly. 30 of 100 levels done; 31–100
+   continues the same progression.
 9. ~~Author `letter-writing` exercises.~~ Done — `generate-exercises.mjs`
    now generates one per letter (28 total, across levels 1–7 where all the
    alphabet is introduced), testing the production direction (name ->

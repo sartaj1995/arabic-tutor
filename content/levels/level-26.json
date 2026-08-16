@@ -1,0 +1,249 @@
+{
+  "number": 26,
+  "title": "Verbs — \"To Drink\"",
+  "newLetters": [],
+  "newVocab": ["ashrabu", "tashrabu", "tashrabeena", "yashrabu", "nashrabu", "maaun", "aseer"],
+  "newPatterns": ["drink-object"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ashrabu",
+      "arabic": "أَشْرَبُ",
+      "arabicNoDiacritics": "أشرب",
+      "transliteration": "ashrabu",
+      "english": "I drink",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_ashrabu", "text": "أَشْرَبُ" },
+      "introducedInLevel": 26,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tashrabu",
+      "arabic": "تَشْرَبُ",
+      "arabicNoDiacritics": "تشرب",
+      "transliteration": "tashrabu",
+      "english": "you (masc.) drink / she drinks",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tashrabu", "text": "تَشْرَبُ" },
+      "introducedInLevel": 26,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tashrabeena",
+      "arabic": "تَشْرَبِينَ",
+      "arabicNoDiacritics": "تشربين",
+      "transliteration": "tashrabīna",
+      "english": "you (fem.) drink",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tashrabeena", "text": "تَشْرَبِينَ" },
+      "introducedInLevel": 26,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yashrabu",
+      "arabic": "يَشْرَبُ",
+      "arabicNoDiacritics": "يشرب",
+      "transliteration": "yashrabu",
+      "english": "he drinks",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yashrabu", "text": "يَشْرَبُ" },
+      "introducedInLevel": 26,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nashrabu",
+      "arabic": "نَشْرَبُ",
+      "arabicNoDiacritics": "نشرب",
+      "transliteration": "nashrabu",
+      "english": "we drink",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nashrabu", "text": "نَشْرَبُ" },
+      "introducedInLevel": 26,
+      "tags": ["verb"]
+    },
+    {
+      "id": "maaun",
+      "arabic": "مَاءٌ",
+      "arabicNoDiacritics": "ماء",
+      "transliteration": "māʾun",
+      "english": "water",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_maa", "text": "مَاءٌ" },
+      "introducedInLevel": 26,
+      "tags": ["core", "food"]
+    },
+    {
+      "id": "aseer",
+      "arabic": "عَصِيرٌ",
+      "arabicNoDiacritics": "عصير",
+      "transliteration": "ʿaṣīrun",
+      "english": "juice",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_aseer", "text": "عَصِيرٌ" },
+      "introducedInLevel": 26,
+      "tags": ["core", "food"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "drink-object",
+      "pattern": "[Verb] + الـ[Object, accusative]",
+      "exampleArabic": "أشرب الماء",
+      "exampleTransliteration": "ashrabu l-māʾa",
+      "exampleEnglish": "I drink water.",
+      "grammarNote": "شرب is fully regular, following the exact same prefix pattern as ذهب: أَشْرَبُ، تَشْرَبُ، تَشْرَبِينَ، يَشْرَبُ، نَشْرَبُ — a good confirmation that most Form I verbs behave this way. أكل's hamza merger last level was the exception, not the rule.",
+      "audio": { "id": "phrase_ashrabu_almaa", "text": "أشرب الماء" },
+      "introducedInLevel": 26
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l26-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ashrabu"],
+      "prompt": "What does 'أشرب' mean?",
+      "options": ["I drink", "I eat", "I want", "I go"],
+      "answer": "I drink"
+    },
+    {
+      "id": "l26-ex2",
+      "type": "sentence-build",
+      "refIds": ["ashrabu", "maaun", "drink-object"],
+      "prompt": "Arrange the tiles to say 'I drink water.'",
+      "options": ["أشرب", "الماء"],
+      "answer": "أشرب الماء"
+    },
+    {
+      "id": "l26-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tashrabeena"],
+      "prompt": "What does 'تشربين' mean?",
+      "options": [
+        "you (fem.) drink",
+        "you (masc.) drink / she drinks",
+        "we drink",
+        "he drinks"
+      ],
+      "answer": "you (fem.) drink"
+    },
+    {
+      "id": "l26-ex4",
+      "type": "typing",
+      "refIds": ["aseer"],
+      "prompt": "Type the Arabic word for 'juice'.",
+      "answer": "عصير"
+    },
+    {
+      "id": "l26-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tashrabu"],
+      "prompt": "What does 'تشرب' mean?",
+      "options": ["why", "houses (irregular plural of بَيْت)", "you (masc.) drink / she drinks", "her house"],
+      "answer": "you (masc.) drink / she drinks"
+    },
+    {
+      "id": "l26-ex6",
+      "type": "multiple-choice",
+      "refIds": ["tashrabu"],
+      "prompt": "Which word means 'you (masc.) drink / she drinks'?",
+      "options": ["جديد", "مدرسات", "تشرب", "تلك"],
+      "answer": "تشرب"
+    },
+    {
+      "id": "l26-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yashrabu"],
+      "prompt": "What does 'يشرب' mean?",
+      "options": ["juice", "how", "he drinks", "father"],
+      "answer": "he drinks"
+    },
+    {
+      "id": "l26-ex8",
+      "type": "typing",
+      "refIds": ["yashrabu"],
+      "prompt": "Type the Arabic word for 'he drinks'.",
+      "answer": "يشرب"
+    },
+    {
+      "id": "l26-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nashrabu"],
+      "prompt": "What does 'نشرب' mean?",
+      "options": ["I drink", "two", "on", "we drink"],
+      "answer": "we drink"
+    },
+    {
+      "id": "l26-ex10",
+      "type": "multiple-choice",
+      "refIds": ["nashrabu"],
+      "prompt": "Which word means 'we drink'?",
+      "options": ["نشرب", "ساعة", "تأكلين", "هذا"],
+      "answer": "نشرب"
+    },
+    {
+      "id": "l26-ex11",
+      "type": "multiple-choice",
+      "refIds": ["maaun"],
+      "prompt": "What does 'ماء' mean?",
+      "options": ["a teacher (masc.)", "water", "you (fem.) go", "you (fem.) drink"],
+      "answer": "water"
+    },
+    {
+      "id": "l26-ex12",
+      "type": "typing",
+      "refIds": ["maaun"],
+      "prompt": "Type the Arabic word for 'water'.",
+      "answer": "ماء"
+    },
+    {
+      "id": "l26-ex13",
+      "type": "speaking",
+      "refIds": ["ashrabu"],
+      "prompt": "Practice saying 'أشرب' (I drink) out loud.",
+      "answer": "أشرب"
+    },
+    {
+      "id": "l26-ex14",
+      "type": "speaking",
+      "refIds": ["tashrabu"],
+      "prompt": "Practice saying 'تشرب' (you (masc.) drink / she drinks) out loud.",
+      "answer": "تشرب"
+    },
+    {
+      "id": "l26-ex15",
+      "type": "speaking",
+      "refIds": ["tashrabeena"],
+      "prompt": "Practice saying 'تشربين' (you (fem.) drink) out loud.",
+      "answer": "تشربين"
+    },
+    {
+      "id": "l26-ex16",
+      "type": "speaking",
+      "refIds": ["yashrabu"],
+      "prompt": "Practice saying 'يشرب' (he drinks) out loud.",
+      "answer": "يشرب"
+    },
+    {
+      "id": "l26-ex17",
+      "type": "speaking",
+      "refIds": ["nashrabu"],
+      "prompt": "Practice saying 'نشرب' (we drink) out loud.",
+      "answer": "نشرب"
+    },
+    {
+      "id": "l26-ex18",
+      "type": "speaking",
+      "refIds": ["maaun"],
+      "prompt": "Practice saying 'ماء' (water) out loud.",
+      "answer": "ماء"
+    },
+    {
+      "id": "l26-ex19",
+      "type": "speaking",
+      "refIds": ["aseer"],
+      "prompt": "Practice saying 'عصير' (juice) out loud.",
+      "answer": "عصير"
+    }
+  ]
+}

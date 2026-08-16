@@ -1,0 +1,198 @@
+{
+  "number": 24,
+  "title": "Past Tense — \"To Read\"",
+  "newLetters": [],
+  "newVocab": ["qaraatu", "qaraa", "qaraanaa", "alyawm", "hal"],
+  "newPatterns": ["past-read-question"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "qaraatu",
+      "arabic": "قَرَأْتُ",
+      "arabicNoDiacritics": "قرأت",
+      "transliteration": "qaraʾtu",
+      "english": "I / you (masc.) / you (fem.) / she read (past)",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_qaraatu", "text": "قَرَأْتُ" },
+      "introducedInLevel": 24,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "qaraa",
+      "arabic": "قَرَأَ",
+      "arabicNoDiacritics": "قرأ",
+      "transliteration": "qaraʾa",
+      "english": "he read (past)",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_qaraa", "text": "قَرَأَ" },
+      "introducedInLevel": 24,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "qaraanaa",
+      "arabic": "قَرَأْنَا",
+      "arabicNoDiacritics": "قرأنا",
+      "transliteration": "qaraʾnā",
+      "english": "we read (past)",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_qaraanaa", "text": "قَرَأْنَا" },
+      "introducedInLevel": 24,
+      "tags": ["verb"]
+    },
+    {
+      "id": "alyawm",
+      "arabic": "الْيَوْمَ",
+      "arabicNoDiacritics": "اليوم",
+      "transliteration": "al-yawma",
+      "english": "today",
+      "partOfSpeech": "adverb (time)",
+      "audio": { "id": "word_alyawm", "text": "الْيَوْمَ" },
+      "introducedInLevel": 24,
+      "tags": ["core", "time"]
+    },
+    {
+      "id": "hal",
+      "arabic": "هَلْ",
+      "arabicNoDiacritics": "هل",
+      "transliteration": "hal",
+      "english": "[question particle for yes/no questions]",
+      "partOfSpeech": "particle",
+      "audio": { "id": "word_hal", "text": "هَلْ" },
+      "introducedInLevel": 24,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "past-read-question",
+      "pattern": "هَلْ + [Past verb] + الـ[Object] + [Time word]؟",
+      "exampleArabic": "هل قرأت الجريدة اليوم",
+      "exampleTransliteration": "hal qaraʾta l-jarīdata l-yawma",
+      "exampleEnglish": "Did you (masc.) read the newspaper today?",
+      "grammarNote": "هَلْ turns any statement into a yes/no question just by placing it at the very front — no word order change, unlike English 'did you read?'. The same هَلْ works for present and past tense alike. Answer with نَعَمْ or لَا, both known since level 1. قرأ conjugates exactly like ذهب in the past tense — its root-final hamza just changes spelling 'seat' depending on the surrounding vowels (the same hamza rules from level 8), so قَرَأْتُ، قَرَأْتَ، قَرَأْتِ، and قَرَأَتْ all collapse to قرأت without diacritics, same collision pattern as ذهب.",
+      "audio": { "id": "phrase_hal_qaraata_aljareeda_alyawm", "text": "هل قرأت الجريدة اليوم" },
+      "introducedInLevel": 24
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l24-ex1",
+      "type": "multiple-choice",
+      "refIds": ["hal"],
+      "prompt": "What does 'هل' do?",
+      "options": [
+        "turns a statement into a yes/no question",
+        "means 'and'",
+        "means 'not'",
+        "means 'where'"
+      ],
+      "answer": "turns a statement into a yes/no question"
+    },
+    {
+      "id": "l24-ex2",
+      "type": "sentence-build",
+      "refIds": ["hal", "qaraatu", "jareeda", "alyawm", "past-read-question"],
+      "prompt": "Arrange the tiles to say 'Did you read the newspaper today?'",
+      "options": ["هل", "قرأت", "الجريدة", "اليوم"],
+      "answer": "هل قرأت الجريدة اليوم"
+    },
+    {
+      "id": "l24-ex3",
+      "type": "multiple-choice",
+      "refIds": ["qaraa"],
+      "prompt": "What does 'قرأ' mean here?",
+      "options": ["he read (past)", "he reads", "we read (past)", "I read (past)"],
+      "answer": "he read (past)"
+    },
+    {
+      "id": "l24-ex4",
+      "type": "typing",
+      "refIds": ["alyawm"],
+      "prompt": "Type the Arabic word for 'today'.",
+      "answer": "اليوم"
+    },
+    {
+      "id": "l24-ex5",
+      "type": "multiple-choice",
+      "refIds": ["qaraatu"],
+      "prompt": "What does 'قرأت' mean?",
+      "options": ["I / you (masc.) / you (fem.) / she read (past)", "Monday", "mother", "yesterday"],
+      "answer": "I / you (masc.) / you (fem.) / she read (past)"
+    },
+    {
+      "id": "l24-ex6",
+      "type": "multiple-choice",
+      "refIds": ["qaraatu"],
+      "prompt": "Which word means 'I / you (masc.) / you (fem.) / she read (past)'?",
+      "options": ["واحد", "ذهبنا", "قرأت", "نافذة"],
+      "answer": "قرأت"
+    },
+    {
+      "id": "l24-ex7",
+      "type": "multiple-choice",
+      "refIds": ["qaraanaa"],
+      "prompt": "What does 'قرأنا' mean?",
+      "options": ["to / towards", "we read (past)", "you (masc.) read / she reads", "he read (past)"],
+      "answer": "we read (past)"
+    },
+    {
+      "id": "l24-ex8",
+      "type": "typing",
+      "refIds": ["qaraanaa"],
+      "prompt": "Type the Arabic word for 'we read (past)'.",
+      "answer": "قرأنا"
+    },
+    {
+      "id": "l24-ex9",
+      "type": "multiple-choice",
+      "refIds": ["hal"],
+      "prompt": "What does 'هل' mean?",
+      "options": ["Thursday", "car", "[question particle for yes/no questions]", "clocks / hours"],
+      "answer": "[question particle for yes/no questions]"
+    },
+    {
+      "id": "l24-ex10",
+      "type": "multiple-choice",
+      "refIds": ["hal"],
+      "prompt": "Which word means '[question particle for yes/no questions]'?",
+      "options": ["ساعات", "يقرأ", "ليست", "هل"],
+      "answer": "هل"
+    },
+    {
+      "id": "l24-ex11",
+      "type": "speaking",
+      "refIds": ["qaraatu"],
+      "prompt": "Practice saying 'قرأت' (I / you (masc.) / you (fem.) / she read (past)) out loud.",
+      "answer": "قرأت"
+    },
+    {
+      "id": "l24-ex12",
+      "type": "speaking",
+      "refIds": ["qaraa"],
+      "prompt": "Practice saying 'قرأ' (he read (past)) out loud.",
+      "answer": "قرأ"
+    },
+    {
+      "id": "l24-ex13",
+      "type": "speaking",
+      "refIds": ["qaraanaa"],
+      "prompt": "Practice saying 'قرأنا' (we read (past)) out loud.",
+      "answer": "قرأنا"
+    },
+    {
+      "id": "l24-ex14",
+      "type": "speaking",
+      "refIds": ["alyawm"],
+      "prompt": "Practice saying 'اليوم' (today) out loud.",
+      "answer": "اليوم"
+    },
+    {
+      "id": "l24-ex15",
+      "type": "speaking",
+      "refIds": ["hal"],
+      "prompt": "Practice saying 'هل' ([question particle for yes/no questions]) out loud.",
+      "answer": "هل"
+    }
+  ]
+}

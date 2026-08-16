@@ -1,0 +1,208 @@
+{
+  "number": 28,
+  "title": "Past Tense — \"To Eat\"",
+  "newLetters": [],
+  "newVocab": ["akaltu", "akala", "akalnaa", "jadd", "jadda"],
+  "newPatterns": ["past-eat-object"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "akaltu",
+      "arabic": "أَكَلْتُ",
+      "arabicNoDiacritics": "أكلت",
+      "transliteration": "akaltu",
+      "english": "I / you (masc.) / you (fem.) / she ate",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_akaltu", "text": "أَكَلْتُ" },
+      "introducedInLevel": 28,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "akala",
+      "arabic": "أَكَلَ",
+      "arabicNoDiacritics": "أكل",
+      "transliteration": "akala",
+      "english": "he ate",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_akala", "text": "أَكَلَ" },
+      "introducedInLevel": 28,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "akalnaa",
+      "arabic": "أَكَلْنَا",
+      "arabicNoDiacritics": "أكلنا",
+      "transliteration": "akalnā",
+      "english": "we ate",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_akalnaa", "text": "أَكَلْنَا" },
+      "introducedInLevel": 28,
+      "tags": ["verb"]
+    },
+    {
+      "id": "jadd",
+      "arabic": "جَدٌّ",
+      "arabicNoDiacritics": "جد",
+      "transliteration": "jaddun",
+      "english": "grandfather",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_jadd", "text": "جَدٌّ" },
+      "introducedInLevel": 28,
+      "tags": ["core", "family"]
+    },
+    {
+      "id": "jadda",
+      "arabic": "جَدَّةٌ",
+      "arabicNoDiacritics": "جدة",
+      "transliteration": "jaddatun",
+      "english": "grandmother",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_jadda", "text": "جَدَّةٌ" },
+      "introducedInLevel": 28,
+      "tags": ["core", "family"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "past-eat-object",
+      "pattern": "[Time word] + [Past verb] + الـ[Object, accusative]",
+      "exampleArabic": "أمس أكل جدي التفاح",
+      "exampleTransliteration": "amsi akala jaddī t-tuffāḥa",
+      "exampleEnglish": "Yesterday grandfather ate the apple.",
+      "grammarNote": "أكل's past tense is fully regular — unlike its present tense (آكُلُ's hamza merger), the past tense reads exactly like ذَهَبْتُ, ذَهَبَ, ذَهَبْنَا with a different root: أَكَلْتُ، أَكَلَ، أَكَلْنَا. The 'I/you/you/she' collision from level 22 applies here too: أَكَلْتُ، أَكَلْتَ، أَكَلْتِ، and أَكَلَتْ all collapse to أكلت without diacritics. جَدِّي ('my grandfather') applies the possessive ي- ending from level 9 to a brand-new noun — the grammar was already yours, only the word is new.",
+      "audio": { "id": "phrase_amsi_akala_jaddi_altuffaah", "text": "أمس أكل جدي التفاح" },
+      "introducedInLevel": 28
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l28-ex1",
+      "type": "multiple-choice",
+      "refIds": ["akaltu"],
+      "prompt": "What does 'أكلت' mean?",
+      "options": [
+        "I / you (masc.) / you (fem.) / she ate",
+        "he ate",
+        "we ate",
+        "I eat"
+      ],
+      "answer": "I / you (masc.) / you (fem.) / she ate"
+    },
+    {
+      "id": "l28-ex2",
+      "type": "multiple-choice",
+      "refIds": ["past-eat-object"],
+      "prompt": "What does this mean? أمس أكل جدي التفاح",
+      "options": [
+        "Yesterday grandfather ate the apple.",
+        "Tomorrow grandmother will eat bread.",
+        "I ate the apple yesterday.",
+        "Grandfather eats bread today."
+      ],
+      "answer": "Yesterday grandfather ate the apple."
+    },
+    {
+      "id": "l28-ex3",
+      "type": "multiple-choice",
+      "refIds": ["jadd", "jadda"],
+      "prompt": "What is the difference between 'جَدّ' and 'جَدَّة'?",
+      "options": [
+        "'grandfather' vs. 'grandmother'",
+        "'father' vs. 'mother'",
+        "'grandfather' vs. 'aunt'",
+        "there is no difference"
+      ],
+      "answer": "'grandfather' vs. 'grandmother'"
+    },
+    {
+      "id": "l28-ex4",
+      "type": "typing",
+      "refIds": ["akalnaa"],
+      "prompt": "Type the Arabic word for 'we ate'.",
+      "answer": "أكلنا"
+    },
+    {
+      "id": "l28-ex5",
+      "type": "multiple-choice",
+      "refIds": ["akala"],
+      "prompt": "What does 'أكل' mean?",
+      "options": ["Wednesday", "a market", "green", "he ate"],
+      "answer": "he ate"
+    },
+    {
+      "id": "l28-ex6",
+      "type": "multiple-choice",
+      "refIds": ["akala"],
+      "prompt": "Which word means 'he ate'?",
+      "options": ["أكل", "يذهب", "هو", "أريد"],
+      "answer": "أكل"
+    },
+    {
+      "id": "l28-ex7",
+      "type": "multiple-choice",
+      "refIds": ["jadd"],
+      "prompt": "What does 'جد' mean?",
+      "options": ["grandfather", "your house (fem.)", "book", "teachers (masc.)"],
+      "answer": "grandfather"
+    },
+    {
+      "id": "l28-ex8",
+      "type": "typing",
+      "refIds": ["jadd"],
+      "prompt": "Type the Arabic word for 'grandfather'.",
+      "answer": "جد"
+    },
+    {
+      "id": "l28-ex9",
+      "type": "multiple-choice",
+      "refIds": ["jadda"],
+      "prompt": "What does 'جدة' mean?",
+      "options": ["on", "grandmother", "he/it is not", "your house (fem.)"],
+      "answer": "grandmother"
+    },
+    {
+      "id": "l28-ex10",
+      "type": "multiple-choice",
+      "refIds": ["jadda"],
+      "prompt": "Which word means 'grandmother'?",
+      "options": ["أذهب", "تذهب", "جامعة", "جدة"],
+      "answer": "جدة"
+    },
+    {
+      "id": "l28-ex11",
+      "type": "speaking",
+      "refIds": ["akaltu"],
+      "prompt": "Practice saying 'أكلت' (I / you (masc.) / you (fem.) / she ate) out loud.",
+      "answer": "أكلت"
+    },
+    {
+      "id": "l28-ex12",
+      "type": "speaking",
+      "refIds": ["akala"],
+      "prompt": "Practice saying 'أكل' (he ate) out loud.",
+      "answer": "أكل"
+    },
+    {
+      "id": "l28-ex13",
+      "type": "speaking",
+      "refIds": ["akalnaa"],
+      "prompt": "Practice saying 'أكلنا' (we ate) out loud.",
+      "answer": "أكلنا"
+    },
+    {
+      "id": "l28-ex14",
+      "type": "speaking",
+      "refIds": ["jadd"],
+      "prompt": "Practice saying 'جد' (grandfather) out loud.",
+      "answer": "جد"
+    },
+    {
+      "id": "l28-ex15",
+      "type": "speaking",
+      "refIds": ["jadda"],
+      "prompt": "Practice saying 'جدة' (grandmother) out loud.",
+      "answer": "جدة"
+    }
+  ]
+}
