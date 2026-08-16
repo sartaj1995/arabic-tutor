@@ -1,0 +1,198 @@
+{
+  "number": 21,
+  "title": "Broken Plurals",
+  "newLetters": [],
+  "newVocab": ["kutub", "buyoot", "awlaad", "rijaal", "aqlaam"],
+  "newPatterns": ["broken-plural-place"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "kutub",
+      "arabic": "كُتُبٌ",
+      "arabicNoDiacritics": "كتب",
+      "transliteration": "kutubun",
+      "english": "books (irregular plural of كِتَاب)",
+      "partOfSpeech": "noun (broken plural)",
+      "audio": { "id": "word_kutub", "text": "كُتُبٌ" },
+      "introducedInLevel": 21,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "buyoot",
+      "arabic": "بُيُوتٌ",
+      "arabicNoDiacritics": "بيوت",
+      "transliteration": "buyūtun",
+      "english": "houses (irregular plural of بَيْت)",
+      "partOfSpeech": "noun (broken plural)",
+      "audio": { "id": "word_buyoot", "text": "بُيُوتٌ" },
+      "introducedInLevel": 21,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "awlaad",
+      "arabic": "أَوْلَادٌ",
+      "arabicNoDiacritics": "أولاد",
+      "transliteration": "awlādun",
+      "english": "boys / children (irregular plural of وَلَد)",
+      "partOfSpeech": "noun (broken plural)",
+      "audio": { "id": "word_awlaad", "text": "أَوْلَادٌ" },
+      "introducedInLevel": 21,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "rijaal",
+      "arabic": "رِجَالٌ",
+      "arabicNoDiacritics": "رجال",
+      "transliteration": "rijālun",
+      "english": "men (irregular plural of رَجُل)",
+      "partOfSpeech": "noun (broken plural)",
+      "audio": { "id": "word_rijaal", "text": "رِجَالٌ" },
+      "introducedInLevel": 21,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "aqlaam",
+      "arabic": "أَقْلَامٌ",
+      "arabicNoDiacritics": "أقلام",
+      "transliteration": "aqlāmun",
+      "english": "pens (irregular plural of قَلَم)",
+      "partOfSpeech": "noun (broken plural)",
+      "audio": { "id": "word_aqlaam", "text": "أَقْلَامٌ" },
+      "introducedInLevel": 21,
+      "tags": ["grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "broken-plural-place",
+      "pattern": "الـ[Broken Plural] + فِي + الـ[Place]",
+      "exampleArabic": "الكتب في البيت",
+      "exampleTransliteration": "al-kutubu fī l-bayti",
+      "exampleEnglish": "The books are in the house.",
+      "grammarNote": "Most Arabic plurals are actually 'broken' (جمع تكسير), not sound: the word's internal vowel pattern changes unpredictably instead of adding a suffix like the ـُونَ/ـَاتٌ from level 19. كِتَاب → كُتُب, بَيْت → بُيُوت, وَلَد → أَوْلَاد, رَجُل → رِجَال, قَلَم → أَقْلَام — there's no rule to derive these from, only patterns to recognize with exposure, the same way English has 'child' → 'children' instead of 'childs'. Most common nouns you'll meet from here on use a broken plural, not a sound one.",
+      "audio": { "id": "phrase_alkutub_fi_albayt", "text": "الكتب في البيت" },
+      "introducedInLevel": 21
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l21-ex1",
+      "type": "multiple-choice",
+      "refIds": ["kutub"],
+      "prompt": "What does 'كتب' mean?",
+      "options": [
+        "books (irregular plural of كِتَاب)",
+        "a book",
+        "pens (irregular plural of قَلَم)",
+        "houses (irregular plural of بَيْت)"
+      ],
+      "answer": "books (irregular plural of كِتَاب)"
+    },
+    {
+      "id": "l21-ex2",
+      "type": "sentence-build",
+      "refIds": ["kutub", "bayt", "broken-plural-place"],
+      "prompt": "Arrange the tiles to say 'The books are in the house.'",
+      "options": ["الكتب", "في", "البيت"],
+      "answer": "الكتب في البيت"
+    },
+    {
+      "id": "l21-ex3",
+      "type": "matching",
+      "refIds": ["kutub", "buyoot", "awlaad", "rijaal"],
+      "prompt": "Match the plural to its singular: كِتَاب",
+      "options": ["كتب", "بيوت", "أولاد", "رجال"],
+      "answer": "كتب"
+    },
+    {
+      "id": "l21-ex4",
+      "type": "typing",
+      "refIds": ["aqlaam"],
+      "prompt": "Type the Arabic word for 'pens'.",
+      "answer": "أقلام"
+    },
+    {
+      "id": "l21-ex5",
+      "type": "multiple-choice",
+      "refIds": ["buyoot"],
+      "prompt": "What does 'بيوت' mean?",
+      "options": ["houses (irregular plural of بَيْت)", "you (masc.) are not", "what", "you (masc.)"],
+      "answer": "houses (irregular plural of بَيْت)"
+    },
+    {
+      "id": "l21-ex6",
+      "type": "multiple-choice",
+      "refIds": ["buyoot"],
+      "prompt": "Which word means 'houses (irregular plural of بَيْت)'?",
+      "options": ["أنا", "الرجل", "الأحد", "بيوت"],
+      "answer": "بيوت"
+    },
+    {
+      "id": "l21-ex7",
+      "type": "multiple-choice",
+      "refIds": ["awlaad"],
+      "prompt": "What does 'أولاد' mean?",
+      "options": ["this (fem.)", "boys / children (irregular plural of وَلَد)", "clocks / hours", "teachers (masc.)"],
+      "answer": "boys / children (irregular plural of وَلَد)"
+    },
+    {
+      "id": "l21-ex8",
+      "type": "typing",
+      "refIds": ["awlaad"],
+      "prompt": "Type the Arabic word for 'boys / children (irregular plural of وَلَد)'.",
+      "answer": "أولاد"
+    },
+    {
+      "id": "l21-ex9",
+      "type": "multiple-choice",
+      "refIds": ["rijaal"],
+      "prompt": "What does 'رجال' mean?",
+      "options": ["we want", "men (irregular plural of رَجُل)", "boys / children (irregular plural of وَلَد)", "happy (masc.)"],
+      "answer": "men (irregular plural of رَجُل)"
+    },
+    {
+      "id": "l21-ex10",
+      "type": "multiple-choice",
+      "refIds": ["rijaal"],
+      "prompt": "Which word means 'men (irregular plural of رَجُل)'?",
+      "options": ["رجال", "الخميس", "الأربعاء", "كتابي"],
+      "answer": "رجال"
+    },
+    {
+      "id": "l21-ex11",
+      "type": "speaking",
+      "refIds": ["kutub"],
+      "prompt": "Practice saying 'كتب' (books (irregular plural of كِتَاب)) out loud.",
+      "answer": "كتب"
+    },
+    {
+      "id": "l21-ex12",
+      "type": "speaking",
+      "refIds": ["buyoot"],
+      "prompt": "Practice saying 'بيوت' (houses (irregular plural of بَيْت)) out loud.",
+      "answer": "بيوت"
+    },
+    {
+      "id": "l21-ex13",
+      "type": "speaking",
+      "refIds": ["awlaad"],
+      "prompt": "Practice saying 'أولاد' (boys / children (irregular plural of وَلَد)) out loud.",
+      "answer": "أولاد"
+    },
+    {
+      "id": "l21-ex14",
+      "type": "speaking",
+      "refIds": ["rijaal"],
+      "prompt": "Practice saying 'رجال' (men (irregular plural of رَجُل)) out loud.",
+      "answer": "رجال"
+    },
+    {
+      "id": "l21-ex15",
+      "type": "speaking",
+      "refIds": ["aqlaam"],
+      "prompt": "Practice saying 'أقلام' (pens (irregular plural of قَلَم)) out loud.",
+      "answer": "أقلام"
+    }
+  ]
+}

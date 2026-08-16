@@ -1,0 +1,216 @@
+{
+  "number": 27,
+  "title": "Broken Plurals II — Cities & Mountains",
+  "newLetters": [],
+  "newVocab": ["ayyaam", "aswaaq", "madina", "mudun", "jabal", "jibaal"],
+  "newPatterns": ["nonhuman-plural-agreement"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ayyaam",
+      "arabic": "أَيَّامٌ",
+      "arabicNoDiacritics": "أيام",
+      "transliteration": "ayyāmun",
+      "english": "days (irregular plural of يَوْم)",
+      "partOfSpeech": "noun (broken plural)",
+      "audio": { "id": "word_ayyaam", "text": "أَيَّامٌ" },
+      "introducedInLevel": 27,
+      "tags": ["grammar", "time"]
+    },
+    {
+      "id": "aswaaq",
+      "arabic": "أَسْوَاقٌ",
+      "arabicNoDiacritics": "أسواق",
+      "transliteration": "aswāqun",
+      "english": "markets (irregular plural of سُوق)",
+      "partOfSpeech": "noun (broken plural)",
+      "audio": { "id": "word_aswaaq", "text": "أَسْوَاقٌ" },
+      "introducedInLevel": 27,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "madina",
+      "arabic": "مَدِينَةٌ",
+      "arabicNoDiacritics": "مدينة",
+      "transliteration": "madīnatun",
+      "english": "a city",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_madina", "text": "مَدِينَةٌ" },
+      "introducedInLevel": 27,
+      "tags": ["core"]
+    },
+    {
+      "id": "mudun",
+      "arabic": "مُدُنٌ",
+      "arabicNoDiacritics": "مدن",
+      "transliteration": "mudunun",
+      "english": "cities (irregular plural of مَدِينَة)",
+      "partOfSpeech": "noun (broken plural)",
+      "audio": { "id": "word_mudun", "text": "مُدُنٌ" },
+      "introducedInLevel": 27,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "jabal",
+      "arabic": "جَبَلٌ",
+      "arabicNoDiacritics": "جبل",
+      "transliteration": "jabalun",
+      "english": "a mountain",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_jabal", "text": "جَبَلٌ" },
+      "introducedInLevel": 27,
+      "tags": ["core"]
+    },
+    {
+      "id": "jibaal",
+      "arabic": "جِبَالٌ",
+      "arabicNoDiacritics": "جبال",
+      "transliteration": "jibālun",
+      "english": "mountains (irregular plural of جَبَل)",
+      "partOfSpeech": "noun (broken plural)",
+      "audio": { "id": "word_jibaal", "text": "جِبَالٌ" },
+      "introducedInLevel": 27,
+      "tags": ["grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "nonhuman-plural-agreement",
+      "pattern": "الـ[Non-human Plural] + [Fem. singular Adjective]",
+      "exampleArabic": "الجبال جميلة",
+      "exampleTransliteration": "al-jibālu jamīlatun",
+      "exampleEnglish": "The mountains are beautiful.",
+      "grammarNote": "Non-human plurals (places, objects, animals — anything that isn't a group of people) take FEMININE SINGULAR agreement, no matter the noun's own gender: الْجِبَالُ (a masculine-singular-based plural) pairs with جَمِيلَةٌ (feminine singular), not a masculine plural form. This rule applies to any non-human plural, broken or sound alike. Human plurals (like مُدَرِّسُونَ from level 19) agree normally instead — this is one of MSA's most-missed rules for learners, so it's worth drilling deliberately.",
+      "audio": { "id": "phrase_aljibaal_jameela", "text": "الجبال جميلة" },
+      "introducedInLevel": 27
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l27-ex1",
+      "type": "multiple-choice",
+      "refIds": ["madina"],
+      "prompt": "What does 'مدينة' mean?",
+      "options": ["a city", "a mountain", "a market", "a school"],
+      "answer": "a city"
+    },
+    {
+      "id": "l27-ex2",
+      "type": "multiple-choice",
+      "refIds": ["nonhuman-plural-agreement"],
+      "prompt": "What does this mean? الجبال جميلة",
+      "options": [
+        "The mountains are beautiful.",
+        "The mountain is beautiful.",
+        "The men are beautiful.",
+        "The cities are big."
+      ],
+      "answer": "The mountains are beautiful."
+    },
+    {
+      "id": "l27-ex3",
+      "type": "matching",
+      "refIds": ["mudun", "jibaal", "ayyaam", "aswaaq"],
+      "prompt": "Match the plural to its singular: مَدِينَة",
+      "options": ["مدن", "جبال", "أيام", "أسواق"],
+      "answer": "مدن"
+    },
+    {
+      "id": "l27-ex4",
+      "type": "typing",
+      "refIds": ["jabal"],
+      "prompt": "Type the Arabic word for 'a mountain'.",
+      "answer": "جبل"
+    },
+    {
+      "id": "l27-ex5",
+      "type": "multiple-choice",
+      "refIds": ["ayyaam"],
+      "prompt": "What does 'أيام' mean?",
+      "options": ["black", "green", "books (irregular plural of كِتَاب)", "days (irregular plural of يَوْم)"],
+      "answer": "days (irregular plural of يَوْم)"
+    },
+    {
+      "id": "l27-ex6",
+      "type": "multiple-choice",
+      "refIds": ["ayyaam"],
+      "prompt": "Which word means 'days (irregular plural of يَوْم)'?",
+      "options": ["لست", "هذا", "أيام", "هذه"],
+      "answer": "أيام"
+    },
+    {
+      "id": "l27-ex7",
+      "type": "multiple-choice",
+      "refIds": ["aswaaq"],
+      "prompt": "What does 'أسواق' mean?",
+      "options": ["markets (irregular plural of سُوق)", "we", "big", "hello (lit. 'peace be upon you')"],
+      "answer": "markets (irregular plural of سُوق)"
+    },
+    {
+      "id": "l27-ex8",
+      "type": "typing",
+      "refIds": ["aswaaq"],
+      "prompt": "Type the Arabic word for 'markets (irregular plural of سُوق)'.",
+      "answer": "أسواق"
+    },
+    {
+      "id": "l27-ex9",
+      "type": "multiple-choice",
+      "refIds": ["jibaal"],
+      "prompt": "What does 'جبال' mean?",
+      "options": ["he/it is not", "mountains (irregular plural of جَبَل)", "sister", "a teacher (masc.)"],
+      "answer": "mountains (irregular plural of جَبَل)"
+    },
+    {
+      "id": "l27-ex10",
+      "type": "multiple-choice",
+      "refIds": ["jibaal"],
+      "prompt": "Which word means 'mountains (irregular plural of جَبَل)'?",
+      "options": ["زهرة", "ساعات", "سوق", "جبال"],
+      "answer": "جبال"
+    },
+    {
+      "id": "l27-ex11",
+      "type": "speaking",
+      "refIds": ["ayyaam"],
+      "prompt": "Practice saying 'أيام' (days (irregular plural of يَوْم)) out loud.",
+      "answer": "أيام"
+    },
+    {
+      "id": "l27-ex12",
+      "type": "speaking",
+      "refIds": ["aswaaq"],
+      "prompt": "Practice saying 'أسواق' (markets (irregular plural of سُوق)) out loud.",
+      "answer": "أسواق"
+    },
+    {
+      "id": "l27-ex13",
+      "type": "speaking",
+      "refIds": ["madina"],
+      "prompt": "Practice saying 'مدينة' (a city) out loud.",
+      "answer": "مدينة"
+    },
+    {
+      "id": "l27-ex14",
+      "type": "speaking",
+      "refIds": ["mudun"],
+      "prompt": "Practice saying 'مدن' (cities (irregular plural of مَدِينَة)) out loud.",
+      "answer": "مدن"
+    },
+    {
+      "id": "l27-ex15",
+      "type": "speaking",
+      "refIds": ["jabal"],
+      "prompt": "Practice saying 'جبل' (a mountain) out loud.",
+      "answer": "جبل"
+    },
+    {
+      "id": "l27-ex16",
+      "type": "speaking",
+      "refIds": ["jibaal"],
+      "prompt": "Practice saying 'جبال' (mountains (irregular plural of جَبَل)) out loud.",
+      "answer": "جبال"
+    }
+  ]
+}

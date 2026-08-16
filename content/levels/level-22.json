@@ -1,0 +1,182 @@
+{
+  "number": 22,
+  "title": "Past Tense — \"To Go\"",
+  "newLetters": [],
+  "newVocab": ["dhahabtu", "dhahaba", "dhahabnaa", "amsi", "ghadan"],
+  "newPatterns": ["past-go-place"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "dhahabtu",
+      "arabic": "ذَهَبْتُ",
+      "arabicNoDiacritics": "ذهبت",
+      "transliteration": "dhahabtu",
+      "english": "I / you (masc.) / you (fem.) / she went",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_dhahabtu", "text": "ذَهَبْتُ" },
+      "introducedInLevel": 22,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "dhahaba",
+      "arabic": "ذَهَبَ",
+      "arabicNoDiacritics": "ذهب",
+      "transliteration": "dhahaba",
+      "english": "he went",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_dhahaba", "text": "ذَهَبَ" },
+      "introducedInLevel": 22,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "dhahabnaa",
+      "arabic": "ذَهَبْنَا",
+      "arabicNoDiacritics": "ذهبنا",
+      "transliteration": "dhahabnā",
+      "english": "we went",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_dhahabnaa", "text": "ذَهَبْنَا" },
+      "introducedInLevel": 22,
+      "tags": ["verb"]
+    },
+    {
+      "id": "amsi",
+      "arabic": "أَمْسِ",
+      "arabicNoDiacritics": "أمس",
+      "transliteration": "amsi",
+      "english": "yesterday",
+      "partOfSpeech": "adverb (time)",
+      "audio": { "id": "word_amsi", "text": "أَمْسِ" },
+      "introducedInLevel": 22,
+      "tags": ["core", "time"]
+    },
+    {
+      "id": "ghadan",
+      "arabic": "غَدًا",
+      "arabicNoDiacritics": "غدا",
+      "transliteration": "ghadan",
+      "english": "tomorrow",
+      "partOfSpeech": "adverb (time)",
+      "audio": { "id": "word_ghadan", "text": "غَدًا" },
+      "introducedInLevel": 22,
+      "tags": ["core", "time"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "past-go-place",
+      "pattern": "[Time word] + [Past verb] + إِلَى + الـ[Place]",
+      "exampleArabic": "أمس ذهبت إلى السوق",
+      "exampleTransliteration": "amsi dhahabtu ilā s-sūqi",
+      "exampleEnglish": "Yesterday I went to the market.",
+      "grammarNote": "The past tense (الماضي) doesn't use the أَ-/تَ-/يَ-/نَ- prefixes you learned for the present tense — instead it attaches suffixes straight onto the root: -tu (I), -ta (you masc.), -ti (you fem.), -at (she), -nā (we), or nothing at all (he). Written without diacritics, ذَهَبْتُ، ذَهَبْتَ، ذَهَبْتِ، and ذَهَبَتْ all collapse to the identical written shape ذهبت — a real ambiguity even for fluent readers, resolved by context (a preceding subject like أَنَا or هِيَ) rather than the verb alone. ذَهَبَ (he) and ذَهَبْنَا (we) stay visually distinct either way. أَمْسِ ('yesterday') doesn't change form for case; غَدًا ('tomorrow') ends in tanwīn fatḥ (-an) because it's functioning as an adverb of time, same ending you saw on قَهْوَةً in level 15.",
+      "audio": { "id": "phrase_amsi_dhahabtu_ila_alsuuq", "text": "أمس ذهبت إلى السوق" },
+      "introducedInLevel": 22
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l22-ex1",
+      "type": "multiple-choice",
+      "refIds": ["dhahabtu"],
+      "prompt": "What does 'ذهبت' mean?",
+      "options": [
+        "I / you (masc.) / you (fem.) / she went",
+        "he went",
+        "we went",
+        "I go"
+      ],
+      "answer": "I / you (masc.) / you (fem.) / she went"
+    },
+    {
+      "id": "l22-ex2",
+      "type": "sentence-build",
+      "refIds": ["amsi", "dhahabtu", "suuq", "past-go-place"],
+      "prompt": "Arrange the tiles to say 'Yesterday I went to the market.'",
+      "options": ["أمس", "ذهبت", "إلى", "السوق"],
+      "answer": "أمس ذهبت إلى السوق"
+    },
+    {
+      "id": "l22-ex3",
+      "type": "multiple-choice",
+      "refIds": ["dhahaba"],
+      "prompt": "What does 'ذهب' mean here?",
+      "options": ["he went", "he goes", "we went", "I went"],
+      "answer": "he went"
+    },
+    {
+      "id": "l22-ex4",
+      "type": "typing",
+      "refIds": ["ghadan"],
+      "prompt": "Type the Arabic word for 'tomorrow'.",
+      "answer": "غدا"
+    },
+    {
+      "id": "l22-ex5",
+      "type": "multiple-choice",
+      "refIds": ["dhahabnaa"],
+      "prompt": "What does 'ذهبنا' mean?",
+      "options": ["Thursday", "one", "we went", "boy / son"],
+      "answer": "we went"
+    },
+    {
+      "id": "l22-ex6",
+      "type": "multiple-choice",
+      "refIds": ["dhahabnaa"],
+      "prompt": "Which word means 'we went'?",
+      "options": ["ذهبنا", "الثلاثاء", "لست", "أب"],
+      "answer": "ذهبنا"
+    },
+    {
+      "id": "l22-ex7",
+      "type": "multiple-choice",
+      "refIds": ["amsi"],
+      "prompt": "What does 'أمس' mean?",
+      "options": ["house", "in", "I go", "yesterday"],
+      "answer": "yesterday"
+    },
+    {
+      "id": "l22-ex8",
+      "type": "typing",
+      "refIds": ["amsi"],
+      "prompt": "Type the Arabic word for 'yesterday'.",
+      "answer": "أمس"
+    },
+    {
+      "id": "l22-ex9",
+      "type": "speaking",
+      "refIds": ["dhahabtu"],
+      "prompt": "Practice saying 'ذهبت' (I / you (masc.) / you (fem.) / she went) out loud.",
+      "answer": "ذهبت"
+    },
+    {
+      "id": "l22-ex10",
+      "type": "speaking",
+      "refIds": ["dhahaba"],
+      "prompt": "Practice saying 'ذهب' (he went) out loud.",
+      "answer": "ذهب"
+    },
+    {
+      "id": "l22-ex11",
+      "type": "speaking",
+      "refIds": ["dhahabnaa"],
+      "prompt": "Practice saying 'ذهبنا' (we went) out loud.",
+      "answer": "ذهبنا"
+    },
+    {
+      "id": "l22-ex12",
+      "type": "speaking",
+      "refIds": ["amsi"],
+      "prompt": "Practice saying 'أمس' (yesterday) out loud.",
+      "answer": "أمس"
+    },
+    {
+      "id": "l22-ex13",
+      "type": "speaking",
+      "refIds": ["ghadan"],
+      "prompt": "Practice saying 'غدا' (tomorrow) out loud.",
+      "answer": "غدا"
+    }
+  ]
+}

@@ -96,7 +96,7 @@ TTS-facing form); it's hand-authored exercise/pattern text, and anything
 `scripts/generate-exercises.mjs` generates, that gets stripped down to
 match a "none" level's setting.
 
-## First 20 levels, at a glance
+## First 30 levels, at a glance
 
 | Level | Theme | New letters | New pattern |
 |---|---|---|---|
@@ -120,6 +120,16 @@ match a "none" level's setting.
 | 18 | Verbs — "to read" (full) | — | "He is reading a newspaper." |
 | 19 | Sound plurals | — | "The teachers are in the school." |
 | 20 | "And" (وَ) & review | — | capstone: two verbs joined by وَ |
+| 21 | Broken plurals | — | "The books are in the house." |
+| 22 | Past tense — "to go" | — | "Yesterday I went to the market." |
+| 23 | Past tense — "to want" | — | "Yesterday I wanted coffee." |
+| 24 | Past tense — "to read" | — | "Did you read the newspaper today?" |
+| 25 | Verbs — "to eat" (present) | — | "I eat bread." |
+| 26 | Verbs — "to drink" (present) | — | "I drink water." |
+| 27 | Broken plurals II — cities & mountains | — | "The mountains are beautiful." (non-human plural agreement) |
+| 28 | Past tense — "to eat" | — | "Yesterday grandfather ate the apple." |
+| 29 | Past tense — "to drink" | — | capstone: two full past-tense clauses joined by وَ |
+| 30 | Review — levels 21–30 | — | capstone: past tense + broken plural + وَ |
 
 Levels 1–10 were a **pacing proof of concept** validating the schema and
 progression before continuing; levels 11–20 build on that same shape and
@@ -128,7 +138,45 @@ introduced gradually across three verbs (ذهب "go", أراد "want", قرأ "r
 rather than dumping the full conjugation table at once. Each verb's
 paradigm is deliberately simplified to the six pronouns already taught
 (أنا, أنتَ, أنتِ, هو, هي, نحن), skipping dual and the -تم/-هم plural forms
-for now. Expect to keep revising pacing as more levels get added.
+for now.
+
+Levels 21–30 add the two other big pieces flagged as "natural next topics"
+after level 20: broken (irregular) plurals and past tense, plus two new
+verbs (أكل "eat", شرب "drink") to keep vocabulary growing. Past tense is
+spread across multiple levels the same way present tense was — one level
+per verb (22 ذهب, 23 أراد, 24 قرأ, 28 أكل, 29 شرب) — but each level teaches
+noticeably *fewer* than six conjugated forms per verb, for a reason
+specific to the past tense: see "Past-tense homograph collisions" below.
+Expect to keep revising pacing as more levels get added.
+
+### Past-tense homograph collisions
+
+Arabic's past tense conjugates by suffix (ذَهَبْتُ "I went", ذَهَبَ "he
+went", …) rather than the present tense's prefix system. For a regular
+verb, the suffixes for *I*, *you (masc.)*, *you (fem.)*, and *she* differ
+**only by a short vowel diacritic** on the very last letter — so once
+diacritics are stripped (every level from 16 on), all four collapse to the
+*identical* written string: ذَهَبْتُ / ذَهَبْتَ / ذَهَبْتِ / ذَهَبَتْ all
+become `ذهبت`. This is a real feature of unvocalized Arabic (native
+readers resolve it from context, not the verb alone), not a content bug —
+but it means those four meanings cannot be separate vocab entries without
+producing multiple-choice options and typing answers that are visually
+identical for different correct answers.
+
+The fix: each regular past-tense verb (ذهب، قرأ، أكل، شرب) is taught as
+**3 vocab entries**, not 6 — one merged entry covering the
+I/you-masc./you-fem./she collision group (with a 4-way English gloss), one
+for هو (distinct: no suffix at all), one for نحن (distinct: -نَا). أراد is
+the exception: as a hollow verb, its vowel shortens before consonant
+suffixes but not before vowel ones, so هو (أَرَادَ) and هي (أَرَادَتْ) stay
+visually distinct from each other even without diacritics — it gets **4
+entries** instead of 3, and level 23's grammar note calls this out
+explicitly as a teaching point (compare the levels' `newVocab` counts:
+22/24/28/29 have 3 verb forms each, 23 has 4). Before authoring any new
+past-tense (or other suffix-conjugated) content, compute each candidate
+vocab word's `arabicNoDiacritics` by hand and check for collisions the same
+way — `scripts/generate-exercises.mjs` doesn't detect this automatically,
+it will happily generate broken exercises from colliding vocab.
 
 ## Exercises in the JSON files
 
@@ -137,7 +185,7 @@ sentence-build/matching/typing exercises that show off a level's grammar
 point) plus generated coverage exercises ensuring every letter and vocab
 word gets at least one dedicated question — see
 `scripts/generate-exercises.mjs`, an idempotent script safe to re-run after
-authoring new levels. As of level 20: 158 content items, 222 exercises
+authoring new levels. As of level 30: 216 content items, 504 exercises
 total. The generator is diacritics-aware — it renders Arabic text stripped
 for levels where `diacriticsLevel === "none"` so generated and
 hand-authored exercises never mix styles within the same level.

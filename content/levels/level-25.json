@@ -1,0 +1,244 @@
+{
+  "number": 25,
+  "title": "Verbs — \"To Eat\"",
+  "newLetters": [],
+  "newVocab": ["aakulu", "taakulu", "taakuleena", "yaakulu", "naakulu", "khubz", "tuffaah"],
+  "newPatterns": ["eat-object"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "aakulu",
+      "arabic": "آكُلُ",
+      "arabicNoDiacritics": "آكل",
+      "transliteration": "ākulu",
+      "english": "I eat",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_aakulu", "text": "آكُلُ" },
+      "introducedInLevel": 25,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "taakulu",
+      "arabic": "تَأْكُلُ",
+      "arabicNoDiacritics": "تأكل",
+      "transliteration": "taʾkulu",
+      "english": "you (masc.) eat / she eats",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taakulu", "text": "تَأْكُلُ" },
+      "introducedInLevel": 25,
+      "tags": ["verb"]
+    },
+    {
+      "id": "taakuleena",
+      "arabic": "تَأْكُلِينَ",
+      "arabicNoDiacritics": "تأكلين",
+      "transliteration": "taʾkulīna",
+      "english": "you (fem.) eat",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taakuleena", "text": "تَأْكُلِينَ" },
+      "introducedInLevel": 25,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yaakulu",
+      "arabic": "يَأْكُلُ",
+      "arabicNoDiacritics": "يأكل",
+      "transliteration": "yaʾkulu",
+      "english": "he eats",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yaakulu", "text": "يَأْكُلُ" },
+      "introducedInLevel": 25,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "naakulu",
+      "arabic": "نَأْكُلُ",
+      "arabicNoDiacritics": "نأكل",
+      "transliteration": "naʾkulu",
+      "english": "we eat",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_naakulu", "text": "نَأْكُلُ" },
+      "introducedInLevel": 25,
+      "tags": ["verb"]
+    },
+    {
+      "id": "khubz",
+      "arabic": "خُبْزٌ",
+      "arabicNoDiacritics": "خبز",
+      "transliteration": "khubzun",
+      "english": "bread",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_khubz", "text": "خُبْزٌ" },
+      "introducedInLevel": 25,
+      "tags": ["core", "food"]
+    },
+    {
+      "id": "tuffaah",
+      "arabic": "تُفَّاحٌ",
+      "arabicNoDiacritics": "تفاح",
+      "transliteration": "tuffāḥun",
+      "english": "apple(s)",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_tuffaah", "text": "تُفَّاحٌ" },
+      "introducedInLevel": 25,
+      "tags": ["core", "food"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "eat-object",
+      "pattern": "[Verb] + الـ[Object, accusative]",
+      "exampleArabic": "آكل الخبز",
+      "exampleTransliteration": "ākulu l-khubza",
+      "exampleEnglish": "I eat bread.",
+      "grammarNote": "أكل ('to eat') is a hamzated-initial verb — its root starts with ء. In the 'I' form, the verb's own root hamza would collide with the prefix hamza (أَ + أْكُلُ) and the two merge into one long ا: آكُلُ, not أَأْكُلُ. Every other person is completely regular, matching ذهب's exact prefix pattern: تَأْكُلُ، تَأْكُلِينَ، يَأْكُلُ، نَأْكُلُ. الْخُبْزَ here is definite but still means 'bread' generically — Arabic often uses ال for food and other mass nouns where English uses no article at all.",
+      "audio": { "id": "phrase_aakulu_alkhubz", "text": "آكل الخبز" },
+      "introducedInLevel": 25
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l25-ex1",
+      "type": "multiple-choice",
+      "refIds": ["aakulu"],
+      "prompt": "What does 'آكل' mean?",
+      "options": ["I eat", "I drink", "I want", "I read"],
+      "answer": "I eat"
+    },
+    {
+      "id": "l25-ex2",
+      "type": "sentence-build",
+      "refIds": ["aakulu", "khubz", "eat-object"],
+      "prompt": "Arrange the tiles to say 'I eat bread.'",
+      "options": ["آكل", "الخبز"],
+      "answer": "آكل الخبز"
+    },
+    {
+      "id": "l25-ex3",
+      "type": "multiple-choice",
+      "refIds": ["yaakulu"],
+      "prompt": "What does 'يأكل' mean?",
+      "options": ["he eats", "I eat", "we eat", "she wanted"],
+      "answer": "he eats"
+    },
+    {
+      "id": "l25-ex4",
+      "type": "typing",
+      "refIds": ["tuffaah"],
+      "prompt": "Type the Arabic word for 'apple(s)'.",
+      "answer": "تفاح"
+    },
+    {
+      "id": "l25-ex5",
+      "type": "multiple-choice",
+      "refIds": ["taakulu"],
+      "prompt": "What does 'تأكل' mean?",
+      "options": ["you (masc.) eat / she eats", "black", "the book", "big"],
+      "answer": "you (masc.) eat / she eats"
+    },
+    {
+      "id": "l25-ex6",
+      "type": "multiple-choice",
+      "refIds": ["taakulu"],
+      "prompt": "Which word means 'you (masc.) eat / she eats'?",
+      "options": ["بنت", "مدرس", "تأكل", "سيارات"],
+      "answer": "تأكل"
+    },
+    {
+      "id": "l25-ex7",
+      "type": "multiple-choice",
+      "refIds": ["taakuleena"],
+      "prompt": "What does 'تأكلين' mean?",
+      "options": ["you (fem.) eat", "this (fem.)", "door", "a school"],
+      "answer": "you (fem.) eat"
+    },
+    {
+      "id": "l25-ex8",
+      "type": "typing",
+      "refIds": ["taakuleena"],
+      "prompt": "Type the Arabic word for 'you (fem.) eat'.",
+      "answer": "تأكلين"
+    },
+    {
+      "id": "l25-ex9",
+      "type": "multiple-choice",
+      "refIds": ["naakulu"],
+      "prompt": "What does 'نأكل' mean?",
+      "options": ["that (fem.)", "we eat", "Thursday", "pens (irregular plural of قَلَم)"],
+      "answer": "we eat"
+    },
+    {
+      "id": "l25-ex10",
+      "type": "multiple-choice",
+      "refIds": ["naakulu"],
+      "prompt": "Which word means 'we eat'?",
+      "options": ["أقلام", "أحمر", "أخت", "نأكل"],
+      "answer": "نأكل"
+    },
+    {
+      "id": "l25-ex11",
+      "type": "multiple-choice",
+      "refIds": ["khubz"],
+      "prompt": "What does 'خبز' mean?",
+      "options": ["seven", "two", "yes", "bread"],
+      "answer": "bread"
+    },
+    {
+      "id": "l25-ex12",
+      "type": "typing",
+      "refIds": ["khubz"],
+      "prompt": "Type the Arabic word for 'bread'.",
+      "answer": "خبز"
+    },
+    {
+      "id": "l25-ex13",
+      "type": "speaking",
+      "refIds": ["aakulu"],
+      "prompt": "Practice saying 'آكل' (I eat) out loud.",
+      "answer": "آكل"
+    },
+    {
+      "id": "l25-ex14",
+      "type": "speaking",
+      "refIds": ["taakulu"],
+      "prompt": "Practice saying 'تأكل' (you (masc.) eat / she eats) out loud.",
+      "answer": "تأكل"
+    },
+    {
+      "id": "l25-ex15",
+      "type": "speaking",
+      "refIds": ["taakuleena"],
+      "prompt": "Practice saying 'تأكلين' (you (fem.) eat) out loud.",
+      "answer": "تأكلين"
+    },
+    {
+      "id": "l25-ex16",
+      "type": "speaking",
+      "refIds": ["yaakulu"],
+      "prompt": "Practice saying 'يأكل' (he eats) out loud.",
+      "answer": "يأكل"
+    },
+    {
+      "id": "l25-ex17",
+      "type": "speaking",
+      "refIds": ["naakulu"],
+      "prompt": "Practice saying 'نأكل' (we eat) out loud.",
+      "answer": "نأكل"
+    },
+    {
+      "id": "l25-ex18",
+      "type": "speaking",
+      "refIds": ["khubz"],
+      "prompt": "Practice saying 'خبز' (bread) out loud.",
+      "answer": "خبز"
+    },
+    {
+      "id": "l25-ex19",
+      "type": "speaking",
+      "refIds": ["tuffaah"],
+      "prompt": "Practice saying 'تفاح' (apple(s)) out loud.",
+      "answer": "تفاح"
+    }
+  ]
+}

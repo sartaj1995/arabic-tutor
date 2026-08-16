@@ -1,0 +1,111 @@
+{
+  "number": 30,
+  "title": "Review — Levels 21–30",
+  "newLetters": [],
+  "newVocab": ["jiddan"],
+  "newPatterns": ["review-capstone"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "jiddan",
+      "arabic": "جِدًّا",
+      "arabicNoDiacritics": "جدا",
+      "transliteration": "jiddan",
+      "english": "very",
+      "partOfSpeech": "adverb",
+      "audio": { "id": "word_jiddan", "text": "جِدًّا" },
+      "introducedInLevel": 30,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "review-capstone",
+      "pattern": "أَمْسِ + [Past verb] + إِلَى + الـ[Place] + وَ + [Past verb] + الـ[Object]",
+      "exampleArabic": "أمس ذهبت إلى المدينة وأكلت التفاح",
+      "exampleTransliteration": "amsi dhahabtu ilā l-madīnati wa-akaltu t-tuffāḥa",
+      "exampleEnglish": "Yesterday I went to the city and ate the apple.",
+      "grammarNote": "A closing capstone for levels 21–30: broken plurals (كُتُب، بُيُوت، جِبَال...), full past tense across five verbs (ذهب، أراد، قرأ، أكل، شرب), and وَ joining two complete past-tense clauses — the same joining structure as level 20's capstone, now entirely in the past. جِدًّا ('very') always follows the word it intensifies: بَيْتٌ كَبِيرٌ جِدًّا ('a very big house'), never before it. 30 of 100 levels down.",
+      "audio": { "id": "phrase_amsi_dhahabtu_almadina_wa_akaltu_altuffaah", "text": "أمس ذهبت إلى المدينة وأكلت التفاح" },
+      "introducedInLevel": 30
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l30-ex1",
+      "type": "multiple-choice",
+      "refIds": ["jiddan"],
+      "prompt": "What does 'جدا' mean?",
+      "options": ["very", "always", "never", "sometimes"],
+      "answer": "very"
+    },
+    {
+      "id": "l30-ex2",
+      "type": "sentence-build",
+      "refIds": ["amsi", "dhahabtu", "madina", "akaltu", "tuffaah", "review-capstone"],
+      "prompt": "Arrange the tiles to say 'Yesterday I went to the city and ate the apple.'",
+      "options": ["أمس", "ذهبت", "إلى", "المدينة", "وأكلت", "التفاح"],
+      "answer": "أمس ذهبت إلى المدينة وأكلت التفاح"
+    },
+    {
+      "id": "l30-ex3",
+      "type": "multiple-choice",
+      "refIds": ["kutub"],
+      "prompt": "Review: what does 'كتب' mean?",
+      "options": [
+        "books (irregular plural of كِتَاب)",
+        "a book",
+        "pens (irregular plural of قَلَم)",
+        "days (irregular plural of يَوْم)"
+      ],
+      "answer": "books (irregular plural of كِتَاب)"
+    },
+    {
+      "id": "l30-ex4",
+      "type": "multiple-choice",
+      "refIds": ["aradtu"],
+      "prompt": "Review: what does 'أردت' mean?",
+      "options": [
+        "I / you (masc.) / you (fem.) wanted",
+        "he wanted",
+        "she wanted",
+        "I want"
+      ],
+      "answer": "I / you (masc.) / you (fem.) wanted"
+    },
+    {
+      "id": "l30-ex5",
+      "type": "multiple-choice",
+      "refIds": ["taakulu"],
+      "prompt": "Review: what does 'تأكل' mean?",
+      "options": [
+        "you (masc.) eat / she eats",
+        "I eat",
+        "we eat",
+        "he eats"
+      ],
+      "answer": "you (masc.) eat / she eats"
+    },
+    {
+      "id": "l30-ex6",
+      "type": "multiple-choice",
+      "refIds": ["jibaal"],
+      "prompt": "Review: what does 'جبال' mean?",
+      "options": [
+        "mountains (irregular plural of جَبَل)",
+        "a mountain",
+        "cities (irregular plural of مَدِينَة)",
+        "markets (irregular plural of سُوق)"
+      ],
+      "answer": "mountains (irregular plural of جَبَل)"
+    },
+    {
+      "id": "l30-ex7",
+      "type": "speaking",
+      "refIds": ["jiddan"],
+      "prompt": "Practice saying 'جدا' (very) out loud.",
+      "answer": "جدا"
+    }
+  ]
+}

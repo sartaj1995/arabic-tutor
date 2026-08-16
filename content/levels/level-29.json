@@ -1,0 +1,115 @@
+{
+  "number": 29,
+  "title": "Past Tense — \"To Drink\"",
+  "newLetters": [],
+  "newVocab": ["sharibtu", "shariba", "sharibnaa"],
+  "newPatterns": ["past-eat-and-drink"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "sharibtu",
+      "arabic": "شَرِبْتُ",
+      "arabicNoDiacritics": "شربت",
+      "transliteration": "sharibtu",
+      "english": "I / you (masc.) / you (fem.) / she drank",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_sharibtu", "text": "شَرِبْتُ" },
+      "introducedInLevel": 29,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "shariba",
+      "arabic": "شَرِبَ",
+      "arabicNoDiacritics": "شرب",
+      "transliteration": "shariba",
+      "english": "he drank",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_shariba", "text": "شَرِبَ" },
+      "introducedInLevel": 29,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "sharibnaa",
+      "arabic": "شَرِبْنَا",
+      "arabicNoDiacritics": "شربنا",
+      "transliteration": "sharibnā",
+      "english": "we drank",
+      "partOfSpeech": "verb (past tense)",
+      "audio": { "id": "word_sharibnaa", "text": "شَرِبْنَا" },
+      "introducedInLevel": 29,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "past-eat-and-drink",
+      "pattern": "أَمْسِ + [Past verb] + الـ[Object] + وَ + [Past verb] + الـ[Object]",
+      "exampleArabic": "أمس أكلت الخبز وشربت العصير",
+      "exampleTransliteration": "amsi akaltu l-khubza wa-sharibtu l-ʿaṣīra",
+      "exampleEnglish": "Yesterday I ate bread and drank juice.",
+      "grammarNote": "شرب's past tense is fully regular too, reading exactly like شَرِبْتُ، شَرِبَ، شَرِبْنَا next to أَكَلْتُ، أَكَلَ، أَكَلْنَا — every verb drilled across levels 21–29 in both tenses (ذهب، أراد، قرأ، أكل، شرب) turns out simpler in the past tense, since one suffix set (ـتُ/ـتَ/ـتِ/ـَ/ـَتْ/ـنَا) covers every regular verb with no vowel-pattern prefix to learn. This sentence reuses وَ from level 20 to join two full past-tense clauses — the same capstone structure, now with a different tense entirely.",
+      "audio": { "id": "phrase_amsi_akaltu_alkhubz_wa_sharibtu_alaseer", "text": "أمس أكلت الخبز وشربت العصير" },
+      "introducedInLevel": 29
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l29-ex1",
+      "type": "multiple-choice",
+      "refIds": ["sharibtu"],
+      "prompt": "What does 'شربت' mean?",
+      "options": [
+        "I / you (masc.) / you (fem.) / she drank",
+        "he drank",
+        "we drank",
+        "I drink"
+      ],
+      "answer": "I / you (masc.) / you (fem.) / she drank"
+    },
+    {
+      "id": "l29-ex2",
+      "type": "sentence-build",
+      "refIds": ["amsi", "akaltu", "khubz", "sharibtu", "aseer", "past-eat-and-drink"],
+      "prompt": "Arrange the tiles to say 'Yesterday I ate bread and drank juice.'",
+      "options": ["أمس", "أكلت", "الخبز", "وشربت", "العصير"],
+      "answer": "أمس أكلت الخبز وشربت العصير"
+    },
+    {
+      "id": "l29-ex3",
+      "type": "multiple-choice",
+      "refIds": ["shariba"],
+      "prompt": "What does 'شرب' mean here?",
+      "options": ["he drank", "he drinks", "we drank", "I drank"],
+      "answer": "he drank"
+    },
+    {
+      "id": "l29-ex4",
+      "type": "typing",
+      "refIds": ["sharibnaa"],
+      "prompt": "Type the Arabic word for 'we drank'.",
+      "answer": "شربنا"
+    },
+    {
+      "id": "l29-ex5",
+      "type": "speaking",
+      "refIds": ["sharibtu"],
+      "prompt": "Practice saying 'شربت' (I / you (masc.) / you (fem.) / she drank) out loud.",
+      "answer": "شربت"
+    },
+    {
+      "id": "l29-ex6",
+      "type": "speaking",
+      "refIds": ["shariba"],
+      "prompt": "Practice saying 'شرب' (he drank) out loud.",
+      "answer": "شرب"
+    },
+    {
+      "id": "l29-ex7",
+      "type": "speaking",
+      "refIds": ["sharibnaa"],
+      "prompt": "Practice saying 'شربنا' (we drank) out loud.",
+      "answer": "شربنا"
+    }
+  ]
+}
