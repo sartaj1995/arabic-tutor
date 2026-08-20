@@ -1,0 +1,212 @@
+{
+  "number": 34,
+  "title": "Verbs — \"To Write\"",
+  "newLetters": [],
+  "newVocab": ["aktubu", "taktubu", "taktubeena", "yaktubu", "naktubu", "bi"],
+  "newPatterns": ["write-instrument"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "aktubu",
+      "arabic": "أَكْتُبُ",
+      "arabicNoDiacritics": "أكتب",
+      "transliteration": "aktubu",
+      "english": "I write",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_aktubu", "text": "أَكْتُبُ" },
+      "introducedInLevel": 34,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "taktubu",
+      "arabic": "تَكْتُبُ",
+      "arabicNoDiacritics": "تكتب",
+      "transliteration": "taktubu",
+      "english": "you (masc.) write / she writes",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taktubu", "text": "تَكْتُبُ" },
+      "introducedInLevel": 34,
+      "tags": ["verb"]
+    },
+    {
+      "id": "taktubeena",
+      "arabic": "تَكْتُبِينَ",
+      "arabicNoDiacritics": "تكتبين",
+      "transliteration": "taktubīna",
+      "english": "you (fem.) write",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taktubeena", "text": "تَكْتُبِينَ" },
+      "introducedInLevel": 34,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yaktubu",
+      "arabic": "يَكْتُبُ",
+      "arabicNoDiacritics": "يكتب",
+      "transliteration": "yaktubu",
+      "english": "he writes",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yaktubu", "text": "يَكْتُبُ" },
+      "introducedInLevel": 34,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "naktubu",
+      "arabic": "نَكْتُبُ",
+      "arabicNoDiacritics": "نكتب",
+      "transliteration": "naktubu",
+      "english": "we write",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_naktubu", "text": "نَكْتُبُ" },
+      "introducedInLevel": 34,
+      "tags": ["verb"]
+    },
+    {
+      "id": "bi",
+      "arabic": "بِ",
+      "arabicNoDiacritics": "ب",
+      "transliteration": "bi-",
+      "english": "with / by (using)",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_bi", "text": "بِ" },
+      "introducedInLevel": 34,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "write-instrument",
+      "pattern": "[Verb] + بِالـ[Instrument]",
+      "exampleArabic": "أكتب بالقلم",
+      "exampleTransliteration": "aktubu bi-l-qalami",
+      "exampleEnglish": "I write with the pen.",
+      "grammarNote": "كتب conjugates fully regularly, like ذهب/شرب/عمل. بِ ('with/by', showing the tool used to do something) is a prefix like وَ and الـ — it attaches directly, no space: بِالْقَلَمِ, not بِ الْقَلَمِ. كِتَاب ('book', level 3) and كَتَبَ/يَكْتُبُ ('wrote'/'writes') share the same root ك-ت-ب — Arabic vocabulary is built from three-letter roots this way, so recognizing a root often helps you guess a related word's meaning.",
+      "audio": { "id": "phrase_aktubu_bialqalam", "text": "أكتب بالقلم" },
+      "introducedInLevel": 34
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l34-ex1",
+      "type": "multiple-choice",
+      "refIds": ["aktubu"],
+      "prompt": "What does 'أكتب' mean?",
+      "options": ["I write", "I read", "I work", "I want"],
+      "answer": "I write"
+    },
+    {
+      "id": "l34-ex2",
+      "type": "sentence-build",
+      "refIds": ["aktubu", "qalam", "write-instrument"],
+      "prompt": "Arrange the tiles to say 'I write with the pen.'",
+      "options": ["أكتب", "بالقلم"],
+      "answer": "أكتب بالقلم"
+    },
+    {
+      "id": "l34-ex3",
+      "type": "multiple-choice",
+      "refIds": ["yaktubu"],
+      "prompt": "What does 'يكتب' mean?",
+      "options": ["he writes", "I write", "we write", "he works"],
+      "answer": "he writes"
+    },
+    {
+      "id": "l34-ex4",
+      "type": "multiple-choice",
+      "refIds": ["bi"],
+      "prompt": "What does 'ب' mean here?",
+      "options": ["with / by (using)", "and", "in", "to / towards"],
+      "answer": "with / by (using)"
+    },
+    {
+      "id": "l34-ex5",
+      "type": "multiple-choice",
+      "refIds": ["taktubu"],
+      "prompt": "What does 'تكتب' mean?",
+      "options": ["you (masc.) write / she writes", "you (masc.) work / she works", "a university", "I read"],
+      "answer": "you (masc.) write / she writes"
+    },
+    {
+      "id": "l34-ex6",
+      "type": "multiple-choice",
+      "refIds": ["taktubu"],
+      "prompt": "Which word means 'you (masc.) write / she writes'?",
+      "options": ["تقرأ", "هم", "تكتب", "قصير"],
+      "answer": "تكتب"
+    },
+    {
+      "id": "l34-ex7",
+      "type": "multiple-choice",
+      "refIds": ["taktubeena"],
+      "prompt": "What does 'تكتبين' mean?",
+      "options": ["my house", "eight", "you (fem.) write", "house"],
+      "answer": "you (fem.) write"
+    },
+    {
+      "id": "l34-ex8",
+      "type": "typing",
+      "refIds": ["taktubeena"],
+      "prompt": "Type the Arabic word for 'you (fem.) write'.",
+      "answer": "تكتبين"
+    },
+    {
+      "id": "l34-ex9",
+      "type": "multiple-choice",
+      "refIds": ["naktubu"],
+      "prompt": "What does 'نكتب' mean?",
+      "options": ["cities (irregular plural of مَدِينَة)", "I / you (masc.) / you (fem.) wanted", "we write", "with / by (using)"],
+      "answer": "we write"
+    },
+    {
+      "id": "l34-ex10",
+      "type": "multiple-choice",
+      "refIds": ["naktubu"],
+      "prompt": "Which word means 'we write'?",
+      "options": ["ستة", "سيارات", "جدة", "نكتب"],
+      "answer": "نكتب"
+    },
+    {
+      "id": "l34-ex11",
+      "type": "speaking",
+      "refIds": ["aktubu"],
+      "prompt": "Practice saying 'أكتب' (I write) out loud.",
+      "answer": "أكتب"
+    },
+    {
+      "id": "l34-ex12",
+      "type": "speaking",
+      "refIds": ["taktubu"],
+      "prompt": "Practice saying 'تكتب' (you (masc.) write / she writes) out loud.",
+      "answer": "تكتب"
+    },
+    {
+      "id": "l34-ex13",
+      "type": "speaking",
+      "refIds": ["taktubeena"],
+      "prompt": "Practice saying 'تكتبين' (you (fem.) write) out loud.",
+      "answer": "تكتبين"
+    },
+    {
+      "id": "l34-ex14",
+      "type": "speaking",
+      "refIds": ["yaktubu"],
+      "prompt": "Practice saying 'يكتب' (he writes) out loud.",
+      "answer": "يكتب"
+    },
+    {
+      "id": "l34-ex15",
+      "type": "speaking",
+      "refIds": ["naktubu"],
+      "prompt": "Practice saying 'نكتب' (we write) out loud.",
+      "answer": "نكتب"
+    },
+    {
+      "id": "l34-ex16",
+      "type": "speaking",
+      "refIds": ["bi"],
+      "prompt": "Practice saying 'ب' (with / by (using)) out loud.",
+      "answer": "ب"
+    }
+  ]
+}

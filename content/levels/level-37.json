@@ -1,0 +1,110 @@
+{
+  "number": 37,
+  "title": "Comparatives and Superlatives",
+  "newLetters": [],
+  "newVocab": ["akbar", "asghar", "ajmal"],
+  "newPatterns": ["comparative-min"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "akbar",
+      "arabic": "أَكْبَر",
+      "arabicNoDiacritics": "أكبر",
+      "transliteration": "akbar",
+      "english": "bigger / biggest",
+      "partOfSpeech": "adjective (comparative)",
+      "audio": { "id": "word_akbar", "text": "أَكْبَر" },
+      "introducedInLevel": 37,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "asghar",
+      "arabic": "أَصْغَر",
+      "arabicNoDiacritics": "أصغر",
+      "transliteration": "aṣghar",
+      "english": "smaller / smallest",
+      "partOfSpeech": "adjective (comparative)",
+      "audio": { "id": "word_asghar", "text": "أَصْغَر" },
+      "introducedInLevel": 37,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "ajmal",
+      "arabic": "أَجْمَل",
+      "arabicNoDiacritics": "أجمل",
+      "transliteration": "ajmal",
+      "english": "more / most beautiful",
+      "partOfSpeech": "adjective (comparative)",
+      "audio": { "id": "word_ajmal", "text": "أَجْمَل" },
+      "introducedInLevel": 37,
+      "tags": ["grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "comparative-min",
+      "pattern": "[Noun] + [Comparative] + مِنْ + [Noun]",
+      "exampleArabic": "بيتي أكبر من بيتك",
+      "exampleTransliteration": "baytī akbaru min baytika",
+      "exampleEnglish": "My house is bigger than your house.",
+      "grammarNote": "Comparatives use the exact same أَفْعَل pattern you already saw for colors in level 16 — أَكْبَر ('bigger', from كَبِير) is built the same way as أَحْمَر ('red'). Add مِنْ ('than', a new word here — careful, it looks identical to مَنْ 'who' from level 6 once diacritics are stripped, the same kind of ambiguity you saw in the past tense) after the comparative to name what's being compared to. For a superlative ('the biggest'), just make it definite with الـ and drop مِنْ entirely, since there's nothing left to compare to: الْبَيْتُ الْأَكْبَرُ ('the biggest house').",
+      "audio": { "id": "phrase_bayti_akbar_min_baytika", "text": "بيتي أكبر من بيتك" },
+      "introducedInLevel": 37
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l37-ex1",
+      "type": "multiple-choice",
+      "refIds": ["akbar"],
+      "prompt": "What does 'أكبر' mean?",
+      "options": ["bigger / biggest", "smaller / smallest", "more / most beautiful", "big"],
+      "answer": "bigger / biggest"
+    },
+    {
+      "id": "l37-ex2",
+      "type": "sentence-build",
+      "refIds": ["baytii", "akbar", "baytuka", "comparative-min"],
+      "prompt": "Arrange the tiles to say 'My house is bigger than your house.'",
+      "options": ["بيتي", "أكبر", "من", "بيتك"],
+      "answer": "بيتي أكبر من بيتك"
+    },
+    {
+      "id": "l37-ex3",
+      "type": "multiple-choice",
+      "refIds": ["asghar"],
+      "prompt": "What does 'أصغر' mean?",
+      "options": ["smaller / smallest", "bigger / biggest", "shorter / shortest", "new"],
+      "answer": "smaller / smallest"
+    },
+    {
+      "id": "l37-ex4",
+      "type": "typing",
+      "refIds": ["ajmal"],
+      "prompt": "Type the Arabic word for 'more / most beautiful'.",
+      "answer": "أجمل"
+    },
+    {
+      "id": "l37-ex5",
+      "type": "speaking",
+      "refIds": ["akbar"],
+      "prompt": "Practice saying 'أكبر' (bigger / biggest) out loud.",
+      "answer": "أكبر"
+    },
+    {
+      "id": "l37-ex6",
+      "type": "speaking",
+      "refIds": ["asghar"],
+      "prompt": "Practice saying 'أصغر' (smaller / smallest) out loud.",
+      "answer": "أصغر"
+    },
+    {
+      "id": "l37-ex7",
+      "type": "speaking",
+      "refIds": ["ajmal"],
+      "prompt": "Practice saying 'أجمل' (more / most beautiful) out loud.",
+      "answer": "أجمل"
+    }
+  ]
+}

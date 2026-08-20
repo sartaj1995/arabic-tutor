@@ -1,0 +1,149 @@
+{
+  "number": 32,
+  "title": "Negating the Past and Future",
+  "newLetters": [],
+  "newVocab": ["lam", "lan"],
+  "newPatterns": ["lam-negation", "lan-negation"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "lam",
+      "arabic": "لَمْ",
+      "arabicNoDiacritics": "لم",
+      "transliteration": "lam",
+      "english": "[negates a verb in the past — 'did not']",
+      "partOfSpeech": "particle",
+      "audio": { "id": "word_lam", "text": "لَمْ" },
+      "introducedInLevel": 32,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "lan",
+      "arabic": "لَنْ",
+      "arabicNoDiacritics": "لن",
+      "transliteration": "lan",
+      "english": "[negates a verb in the future — 'will not']",
+      "partOfSpeech": "particle",
+      "audio": { "id": "word_lan", "text": "لَنْ" },
+      "introducedInLevel": 32,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "lam-negation",
+      "pattern": "لَمْ + [Present-tense verb]",
+      "exampleArabic": "لم أذهب إلى المدرسة أمس",
+      "exampleTransliteration": "lam adhhab ilā l-madrasati amsi",
+      "exampleEnglish": "I did not go to school yesterday.",
+      "grammarNote": "لَمْ negates a verb in the PAST — but it does this by pairing with the present-tense form you already know, not the suffixed past-tense forms from levels 22-29. أَذْهَبُ becomes أَذْهَبْ after لَمْ (the final vowel just drops), which looks and sounds almost the same and means exactly the same thing in this app's exercises, since diacritics aren't shown anyway. So you don't need to learn new verb forms for this — just put لَمْ in front of a present-tense verb you already know, and it means 'didn't'. This is a third way to negate, alongside لَيْسَ/لَسْتُ (level 10, for is/am-not sentences) and the suffixed past tense (levels 22-29, for a positive statement of what did happen).",
+      "audio": { "id": "phrase_lam_adhhab_almadrasa_amsi", "text": "لم أذهب إلى المدرسة أمس" },
+      "introducedInLevel": 32
+    },
+    {
+      "id": "lan-negation",
+      "pattern": "لَنْ + [Present-tense verb]",
+      "exampleArabic": "لن أذهب إلى المدرسة غدا",
+      "exampleTransliteration": "lan adhhaba ilā l-madrasati ghadan",
+      "exampleEnglish": "I will not go to school tomorrow.",
+      "grammarNote": "لَنْ works the same way as لَمْ, but for the FUTURE: 'will not'. Arabic has no separate future-tense verb forms to learn here — لَنْ (and, for a positive future, سَـ or سَوْفَ, not covered yet) simply pairs with the present tense you already know. Between لَمْ (level 32, past), the present tense itself (levels 12-18, present/ongoing), and لَنْ (future), you can now talk about all three time frames using verb forms you've already drilled.",
+      "audio": { "id": "phrase_lan_adhhab_almadrasa_ghadan", "text": "لن أذهب إلى المدرسة غدا" },
+      "introducedInLevel": 32
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l32-ex1",
+      "type": "multiple-choice",
+      "refIds": ["lam"],
+      "prompt": "What does 'لم' do?",
+      "options": [
+        "negates a verb in the past ('did not')",
+        "negates a verb in the future ('will not')",
+        "means 'and'",
+        "means 'today'"
+      ],
+      "answer": "negates a verb in the past ('did not')"
+    },
+    {
+      "id": "l32-ex2",
+      "type": "sentence-build",
+      "refIds": ["lam", "adhhabu", "madrasa", "amsi", "lam-negation"],
+      "prompt": "Arrange the tiles to say 'I did not go to school yesterday.'",
+      "options": ["لم", "أذهب", "إلى", "المدرسة", "أمس"],
+      "answer": "لم أذهب إلى المدرسة أمس"
+    },
+    {
+      "id": "l32-ex3",
+      "type": "multiple-choice",
+      "refIds": ["lan"],
+      "prompt": "What does 'لن' do?",
+      "options": [
+        "negates a verb in the future ('will not')",
+        "negates a verb in the past ('did not')",
+        "means 'why'",
+        "means 'very'"
+      ],
+      "answer": "negates a verb in the future ('will not')"
+    },
+    {
+      "id": "l32-ex4",
+      "type": "multiple-choice",
+      "refIds": ["lan-negation"],
+      "prompt": "What does this mean? لن أذهب إلى المدرسة غدا",
+      "options": [
+        "I will not go to school tomorrow.",
+        "I did not go to school yesterday.",
+        "I am not going to school today.",
+        "I go to school every day."
+      ],
+      "answer": "I will not go to school tomorrow."
+    },
+    {
+      "id": "l32-ex5",
+      "type": "multiple-choice",
+      "refIds": ["lam"],
+      "prompt": "What does 'لم' mean?",
+      "options": ["he wants", "he drank", "three", "[negates a verb in the past — 'did not']"],
+      "answer": "[negates a verb in the past — 'did not']"
+    },
+    {
+      "id": "l32-ex6",
+      "type": "multiple-choice",
+      "refIds": ["lam"],
+      "prompt": "Which word means '[negates a verb in the past — 'did not']'?",
+      "options": ["أنت", "لم", "ذهبنا", "هي"],
+      "answer": "لم"
+    },
+    {
+      "id": "l32-ex7",
+      "type": "multiple-choice",
+      "refIds": ["lan"],
+      "prompt": "What does 'لن' mean?",
+      "options": ["hello (lit. 'peace be upon you')", "she wanted", "nine", "[negates a verb in the future — 'will not']"],
+      "answer": "[negates a verb in the future — 'will not']"
+    },
+    {
+      "id": "l32-ex8",
+      "type": "typing",
+      "refIds": ["lan"],
+      "prompt": "Type the Arabic word for '[negates a verb in the future — 'will not']'.",
+      "answer": "لن"
+    },
+    {
+      "id": "l32-ex9",
+      "type": "speaking",
+      "refIds": ["lam"],
+      "prompt": "Practice saying 'لم' ([negates a verb in the past — 'did not']) out loud.",
+      "answer": "لم"
+    },
+    {
+      "id": "l32-ex10",
+      "type": "speaking",
+      "refIds": ["lan"],
+      "prompt": "Practice saying 'لن' ([negates a verb in the future — 'will not']) out loud.",
+      "answer": "لن"
+    }
+  ]
+}

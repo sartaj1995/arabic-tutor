@@ -1,0 +1,97 @@
+{
+  "number": 31,
+  "title": "Idafa — Construct Phrases",
+  "newLetters": [],
+  "newVocab": ["maktab", "miftaah"],
+  "newPatterns": ["idafa-possession"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "maktab",
+      "arabic": "مَكْتَبٌ",
+      "arabicNoDiacritics": "مكتب",
+      "transliteration": "maktabun",
+      "english": "an office / a desk",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_maktab", "text": "مَكْتَبٌ" },
+      "introducedInLevel": 31,
+      "tags": ["core"]
+    },
+    {
+      "id": "miftaah",
+      "arabic": "مِفْتَاحٌ",
+      "arabicNoDiacritics": "مفتاح",
+      "transliteration": "miftāḥun",
+      "english": "a key",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_miftaah", "text": "مِفْتَاحٌ" },
+      "introducedInLevel": 31,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "idafa-possession",
+      "pattern": "[Noun, no ال] + الـ[Noun, definite]",
+      "exampleArabic": "مفتاح البيت كبير",
+      "exampleTransliteration": "miftāḥu l-bayti kabīrun",
+      "exampleEnglish": "The house key is big.",
+      "grammarNote": "This is 'idafa' (الإضافة) — Arabic's way of joining two nouns into a possessive phrase, with no word for 'of' at all. The first noun (مِفْتَاح) takes NO ال and NO tanwīn, even though it's meaning-wise definite ('the key'); the second noun (الْبَيْت) carries the ال instead, and the whole phrase's definiteness comes from it. Compare to the pronoun-suffix possession from level 9 (بَيْتِي 'my house') — idafa is the noun-noun version of that same idea: بَيْتُ الرَّجُلِ ('the man's house', literally 'house-of the-man'). You can even chain idafa: مِفْتَاحُ بَيْتِ الرَّجُلِ ('the key of the man's house') — only the very last noun in the chain gets the ال.",
+      "audio": { "id": "phrase_miftaah_albayt_kabeer", "text": "مفتاح البيت كبير" },
+      "introducedInLevel": 31
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l31-ex1",
+      "type": "multiple-choice",
+      "refIds": ["maktab"],
+      "prompt": "What does 'مكتب' mean?",
+      "options": ["an office / a desk", "a key", "a house", "a school"],
+      "answer": "an office / a desk"
+    },
+    {
+      "id": "l31-ex2",
+      "type": "multiple-choice",
+      "refIds": ["idafa-possession"],
+      "prompt": "What does this mean? مفتاح البيت كبير",
+      "options": [
+        "The house key is big.",
+        "The big house has a key.",
+        "My house is big.",
+        "The office is big."
+      ],
+      "answer": "The house key is big."
+    },
+    {
+      "id": "l31-ex3",
+      "type": "sentence-build",
+      "refIds": ["bayt", "alrajul", "idafa-possession"],
+      "prompt": "Arrange the tiles to say 'the man's house' (idafa: house-of the-man).",
+      "options": ["بيت", "الرجل"],
+      "answer": "بيت الرجل"
+    },
+    {
+      "id": "l31-ex4",
+      "type": "typing",
+      "refIds": ["miftaah"],
+      "prompt": "Type the Arabic word for 'a key'.",
+      "answer": "مفتاح"
+    },
+    {
+      "id": "l31-ex5",
+      "type": "speaking",
+      "refIds": ["maktab"],
+      "prompt": "Practice saying 'مكتب' (an office / a desk) out loud.",
+      "answer": "مكتب"
+    },
+    {
+      "id": "l31-ex6",
+      "type": "speaking",
+      "refIds": ["miftaah"],
+      "prompt": "Practice saying 'مفتاح' (a key) out loud.",
+      "answer": "مفتاح"
+    }
+  ]
+}

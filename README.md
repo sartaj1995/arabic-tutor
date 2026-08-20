@@ -5,8 +5,8 @@ script, vocabulary, and sentence-building — across 100 levels.
 
 **Status: app shell with interactive exercises, an on-screen Arabic
 keyboard, spaced-repetition review, real exercise depth, live audio, and a
-progress dashboard.** The first 30 levels of curriculum content exist as
-structured JSON — 504 exercises across them, generated so every letter and
+progress dashboard.** The first 40 levels of curriculum content exist as
+structured JSON — 617 exercises across them, generated so every letter and
 vocab word gets at least one dedicated question, not just the illustrative
 few each level started with. A React/Vite app loads and displays them with
 clickable/typeable exercises and live scoring, finishing a level feeds its
@@ -118,7 +118,7 @@ src/lib/speech.ts         Web Speech API wrapper (speak, voice detection)
 src/lib/progress.ts       Dashboard stats computed from IndexedDB (no separate tracking)
 src/pages/                LevelList, LevelDetail, Review, Progress
 src/components/           ArabicText, ExerciseCard, PlayAudioButton, ArabicKeyboard
-content/levels/*.json     Authored level content (levels 1–30 so far)
+content/levels/*.json     Authored level content (levels 1–40 so far)
 scripts/generate-audio.mjs      Offline Google Cloud TTS pipeline — fallback, unused
 scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 ```
@@ -126,9 +126,9 @@ scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 Each `content/levels/level-XX.json` follows the `Level` type in
 `src/types/content.ts`: new letters, new vocab, new sentence patterns, a
 diacritics-display setting, and exercises (a hand-authored core set plus
-generated coverage exercises — 504 total across the 30 levels).
+generated coverage exercises — 617 total across the 40 levels).
 
-## First 30 levels
+## First 40 levels
 
 | # | Theme |
 |---|---|
@@ -162,11 +162,21 @@ generated coverage exercises — 504 total across the 30 levels).
 | 28 | Past tense — "to eat" |
 | 29 | Past tense — "to drink" |
 | 30 | Review — levels 21–30 |
+| 31 | Idafa — construct phrases |
+| 32 | Negating the past and future (لم / لن) |
+| 33 | Verbs — "to work" (present tense) |
+| 34 | Verbs — "to write" (present tense) |
+| 35 | Ordinal numbers (masc.) |
+| 36 | Telling time |
+| 37 | Comparatives and superlatives |
+| 38 | The dual |
+| 39 | Weather and seasons |
+| 40 | Review — levels 31–40 |
 
 ## Next steps
 
 1. **Review the pacing.** Read through `content/levels/level-01.json` →
-   `level-30.json` (or the summary table in `docs/content-model.md`) and
+   `level-40.json` (or the summary table in `docs/content-model.md`) and
    sanity-check that the progression feels right before more levels are
    generated the same way.
 2. ~~Scaffold the app.~~ Done — `npm run dev` to try it.
@@ -246,6 +256,27 @@ generated coverage exercises — 504 total across the 30 levels).
    + broken plural + وَ, spanning five of the ten new levels' vocabulary)
    both render and score correctly. 30 of 100 levels done; 31–100
    continues the same progression.
+8b. ~~Author levels 31–40.~~ Done — idafa/construct phrases (بَيْتُ
+    الرَّجُلِ "the man's house", no word for "of"), negating a verb rather
+    than just an is/am-not sentence (لَمْ + present tense for the past,
+    لَنْ + present tense for the future — reuses existing verb vocab, no
+    new suffixed forms), two more verbs in the present tense only (عمل
+    "work", كتب "write" — past tense left as a recognition note, not
+    drilled, since the suffix pattern is well-established by verb #5),
+    ordinal numbers split masc./fem. across two levels specifically so
+    fem. ordinals could be motivated by telling time right after,
+    comparative/superlative adjectives (reusing the level-16 أَفْعَل
+    pattern), and the dual (kept light: nominative -َانِ only). Hit a
+    second kind of homograph collision, distinct from past tense's: `مِنْ`
+    ("than", needed for comparatives) strips to the same text as the
+    already-taught `مَنْ` ("who") — since these are unrelated words, not
+    forms of one verb, there was no sensible way to merge them into one
+    vocab entry, so `مِنْ` simply isn't given its own vocab entry at all,
+    appearing only in pattern text tested via whole-sentence
+    multiple-choice. Validated with a full consistency pass (0 problems
+    across 266 items / 617 exercises) and in the browser — idafa, telling
+    time's feminine-ordinal agreement, and the dual all render correctly.
+    40 of 100 levels done.
 9. ~~Author `letter-writing` exercises.~~ Done — `generate-exercises.mjs`
    now generates one per letter (28 total, across levels 1–7 where all the
    alphabet is introduced), testing the production direction (name ->

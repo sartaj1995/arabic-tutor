@@ -1,0 +1,244 @@
+{
+  "number": 33,
+  "title": "Verbs — \"To Work\"",
+  "newLetters": [],
+  "newVocab": ["amalu", "tamalu", "tamaleena", "yamalu", "namalu", "tabeeb", "muhandis"],
+  "newPatterns": ["work-place"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "amalu",
+      "arabic": "أَعْمَلُ",
+      "arabicNoDiacritics": "أعمل",
+      "transliteration": "aʿmalu",
+      "english": "I work",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_amalu", "text": "أَعْمَلُ" },
+      "introducedInLevel": 33,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tamalu",
+      "arabic": "تَعْمَلُ",
+      "arabicNoDiacritics": "تعمل",
+      "transliteration": "taʿmalu",
+      "english": "you (masc.) work / she works",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tamalu", "text": "تَعْمَلُ" },
+      "introducedInLevel": 33,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tamaleena",
+      "arabic": "تَعْمَلِينَ",
+      "arabicNoDiacritics": "تعملين",
+      "transliteration": "taʿmalīna",
+      "english": "you (fem.) work",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tamaleena", "text": "تَعْمَلِينَ" },
+      "introducedInLevel": 33,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yamalu",
+      "arabic": "يَعْمَلُ",
+      "arabicNoDiacritics": "يعمل",
+      "transliteration": "yaʿmalu",
+      "english": "he works",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yamalu", "text": "يَعْمَلُ" },
+      "introducedInLevel": 33,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "namalu",
+      "arabic": "نَعْمَلُ",
+      "arabicNoDiacritics": "نعمل",
+      "transliteration": "naʿmalu",
+      "english": "we work",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_namalu", "text": "نَعْمَلُ" },
+      "introducedInLevel": 33,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tabeeb",
+      "arabic": "طَبِيبٌ",
+      "arabicNoDiacritics": "طبيب",
+      "transliteration": "ṭabībun",
+      "english": "a doctor",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_tabeeb", "text": "طَبِيبٌ" },
+      "introducedInLevel": 33,
+      "tags": ["core"]
+    },
+    {
+      "id": "muhandis",
+      "arabic": "مُهَنْدِسٌ",
+      "arabicNoDiacritics": "مهندس",
+      "transliteration": "muhandisun",
+      "english": "an engineer",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_muhandis", "text": "مُهَنْدِسٌ" },
+      "introducedInLevel": 33,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "work-place",
+      "pattern": "[Verb] + فِي + [Place]",
+      "exampleArabic": "أعمل في مكتب",
+      "exampleTransliteration": "aʿmalu fī maktabin",
+      "exampleEnglish": "I work in an office.",
+      "grammarNote": "عمل conjugates exactly like ذهب and شرب — fully regular, following the same أَ-/تَ-/تَ...ينَ/يَ-/نَ- prefix template you've now drilled repeatedly. Its past tense (not tested separately in this level) follows the same suffix pattern too: عَمِلْتُ (I/you/you/she worked, the same collision-group as always), عَمِلَ (he worked), عَمِلْنَا (we worked) — you already have all the tools to recognize it.",
+      "audio": { "id": "phrase_amalu_fi_maktab", "text": "أعمل في مكتب" },
+      "introducedInLevel": 33
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l33-ex1",
+      "type": "multiple-choice",
+      "refIds": ["amalu"],
+      "prompt": "What does 'أعمل' mean?",
+      "options": ["I work", "I write", "I want", "I go"],
+      "answer": "I work"
+    },
+    {
+      "id": "l33-ex2",
+      "type": "sentence-build",
+      "refIds": ["amalu", "maktab", "work-place"],
+      "prompt": "Arrange the tiles to say 'I work in an office.'",
+      "options": ["أعمل", "في", "مكتب"],
+      "answer": "أعمل في مكتب"
+    },
+    {
+      "id": "l33-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tabeeb"],
+      "prompt": "What does 'طبيب' mean?",
+      "options": ["a doctor", "an engineer", "a teacher", "an office"],
+      "answer": "a doctor"
+    },
+    {
+      "id": "l33-ex4",
+      "type": "typing",
+      "refIds": ["muhandis"],
+      "prompt": "Type the Arabic word for 'an engineer'.",
+      "answer": "مهندس"
+    },
+    {
+      "id": "l33-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tamalu"],
+      "prompt": "What does 'تعمل' mean?",
+      "options": ["you (masc.) work / she works", "pen", "we ate", "you (fem.) go"],
+      "answer": "you (masc.) work / she works"
+    },
+    {
+      "id": "l33-ex6",
+      "type": "multiple-choice",
+      "refIds": ["tamalu"],
+      "prompt": "Which word means 'you (masc.) work / she works'?",
+      "options": ["تقرأ", "تعمل", "اثنان", "مدرس"],
+      "answer": "تعمل"
+    },
+    {
+      "id": "l33-ex7",
+      "type": "multiple-choice",
+      "refIds": ["tamaleena"],
+      "prompt": "What does 'تعملين' mean?",
+      "options": ["on", "you (fem.) work", "no", "a mountain"],
+      "answer": "you (fem.) work"
+    },
+    {
+      "id": "l33-ex8",
+      "type": "typing",
+      "refIds": ["tamaleena"],
+      "prompt": "Type the Arabic word for 'you (fem.) work'.",
+      "answer": "تعملين"
+    },
+    {
+      "id": "l33-ex9",
+      "type": "multiple-choice",
+      "refIds": ["yamalu"],
+      "prompt": "What does 'يعمل' mean?",
+      "options": ["two", "hello (lit. 'peace be upon you')", "big", "he works"],
+      "answer": "he works"
+    },
+    {
+      "id": "l33-ex10",
+      "type": "multiple-choice",
+      "refIds": ["yamalu"],
+      "prompt": "Which word means 'he works'?",
+      "options": ["لن", "مكتب", "يعمل", "لست"],
+      "answer": "يعمل"
+    },
+    {
+      "id": "l33-ex11",
+      "type": "multiple-choice",
+      "refIds": ["namalu"],
+      "prompt": "What does 'نعمل' mean?",
+      "options": ["he read (past)", "he works", "we work", "you (fem.) work"],
+      "answer": "we work"
+    },
+    {
+      "id": "l33-ex12",
+      "type": "typing",
+      "refIds": ["namalu"],
+      "prompt": "Type the Arabic word for 'we work'.",
+      "answer": "نعمل"
+    },
+    {
+      "id": "l33-ex13",
+      "type": "speaking",
+      "refIds": ["amalu"],
+      "prompt": "Practice saying 'أعمل' (I work) out loud.",
+      "answer": "أعمل"
+    },
+    {
+      "id": "l33-ex14",
+      "type": "speaking",
+      "refIds": ["tamalu"],
+      "prompt": "Practice saying 'تعمل' (you (masc.) work / she works) out loud.",
+      "answer": "تعمل"
+    },
+    {
+      "id": "l33-ex15",
+      "type": "speaking",
+      "refIds": ["tamaleena"],
+      "prompt": "Practice saying 'تعملين' (you (fem.) work) out loud.",
+      "answer": "تعملين"
+    },
+    {
+      "id": "l33-ex16",
+      "type": "speaking",
+      "refIds": ["yamalu"],
+      "prompt": "Practice saying 'يعمل' (he works) out loud.",
+      "answer": "يعمل"
+    },
+    {
+      "id": "l33-ex17",
+      "type": "speaking",
+      "refIds": ["namalu"],
+      "prompt": "Practice saying 'نعمل' (we work) out loud.",
+      "answer": "نعمل"
+    },
+    {
+      "id": "l33-ex18",
+      "type": "speaking",
+      "refIds": ["tabeeb"],
+      "prompt": "Practice saying 'طبيب' (a doctor) out loud.",
+      "answer": "طبيب"
+    },
+    {
+      "id": "l33-ex19",
+      "type": "speaking",
+      "refIds": ["muhandis"],
+      "prompt": "Practice saying 'مهندس' (an engineer) out loud.",
+      "answer": "مهندس"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "number": 40,
+  "title": "Review — Levels 31–40",
+  "newLetters": [],
+  "newVocab": ["aydan"],
+  "newPatterns": ["review-capstone-2"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "aydan",
+      "arabic": "أَيْضًا",
+      "arabicNoDiacritics": "أيضا",
+      "transliteration": "aydan",
+      "english": "also / too",
+      "partOfSpeech": "adverb",
+      "audio": { "id": "word_aydan", "text": "أَيْضًا" },
+      "introducedInLevel": 40,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "review-capstone-2",
+      "pattern": "[Idafa phrase] + [Comparative] + مِنْ + [Noun] + وَ + الطَّقْسُ + [Adjective] + الْيَوْمَ",
+      "exampleArabic": "بيت الرجل أكبر من بيتي والطقس حار اليوم",
+      "exampleTransliteration": "baytu r-rajuli akbaru min baytī wa-ṭ-ṭaqsu ḥārrun al-yawma",
+      "exampleEnglish": "The man's house is bigger than mine, and the weather is hot today.",
+      "grammarNote": "A closing capstone for levels 31-40: idafa (بَيْتُ الرَّجُلِ, level 31), a comparative with مِنْ (level 37), and وَ joining a second clause built from level 25's ال-generic-noun pattern and level 24's اليوم — one sentence drawing on four different levels' grammar at once. أَيْضًا ('also/too') normally comes at the end of a clause: أَنَا أَيْضًا أَعْمَلُ فِي مَكْتَبٍ ('I also work in an office' / 'I work in an office too'). 40 of 100 levels down.",
+      "audio": { "id": "phrase_bayt_alrajul_akbar_min_bayti_waltaqs_haarr_alyawm", "text": "بيت الرجل أكبر من بيتي والطقس حار اليوم" },
+      "introducedInLevel": 40
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l40-ex1",
+      "type": "multiple-choice",
+      "refIds": ["aydan"],
+      "prompt": "What does 'أيضا' mean?",
+      "options": ["also / too", "very", "always", "never"],
+      "answer": "also / too"
+    },
+    {
+      "id": "l40-ex2",
+      "type": "sentence-build",
+      "refIds": ["bayt", "alrajul", "akbar", "baytii", "altaqs", "haarr", "alyawm", "review-capstone-2"],
+      "prompt": "Arrange the tiles to say 'The man's house is bigger than mine, and the weather is hot today.'",
+      "options": ["بيت", "الرجل", "أكبر", "من", "بيتي", "والطقس", "حار", "اليوم"],
+      "answer": "بيت الرجل أكبر من بيتي والطقس حار اليوم"
+    },
+    {
+      "id": "l40-ex3",
+      "type": "multiple-choice",
+      "refIds": ["miftaah"],
+      "prompt": "Review: what does 'مفتاح' mean?",
+      "options": ["a key", "an office / a desk", "a house", "a door"],
+      "answer": "a key"
+    },
+    {
+      "id": "l40-ex4",
+      "type": "multiple-choice",
+      "refIds": ["lam"],
+      "prompt": "Review: what does 'لم' do?",
+      "options": [
+        "negates a verb in the past ('did not')",
+        "negates a verb in the future ('will not')",
+        "means 'and'",
+        "means 'also'"
+      ],
+      "answer": "negates a verb in the past ('did not')"
+    },
+    {
+      "id": "l40-ex5",
+      "type": "multiple-choice",
+      "refIds": ["aloula"],
+      "prompt": "Review: what does 'الأولى' mean?",
+      "options": ["the first (fem.)", "the first (masc.)", "one", "the last"],
+      "answer": "the first (fem.)"
+    },
+    {
+      "id": "l40-ex6",
+      "type": "multiple-choice",
+      "refIds": ["kitabaan"],
+      "prompt": "Review: what does 'كتابان' mean?",
+      "options": ["two books", "a book", "books", "two keys"],
+      "answer": "two books"
+    },
+    {
+      "id": "l40-ex7",
+      "type": "speaking",
+      "refIds": ["aydan"],
+      "prompt": "Practice saying 'أيضا' (also / too) out loud.",
+      "answer": "أيضا"
+    }
+  ]
+}

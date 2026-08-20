@@ -1,0 +1,177 @@
+{
+  "number": 35,
+  "title": "Ordinal Numbers",
+  "newLetters": [],
+  "newVocab": ["alawwal", "althaani", "althaalith", "alraabi", "alkhaamis"],
+  "newPatterns": ["ordinal-agreement"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "alawwal",
+      "arabic": "الْأَوَّل",
+      "arabicNoDiacritics": "الأول",
+      "transliteration": "al-awwal",
+      "english": "the first",
+      "partOfSpeech": "adjective (ordinal)",
+      "audio": { "id": "word_alawwal", "text": "الْأَوَّل" },
+      "introducedInLevel": 35,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "althaani",
+      "arabic": "الثَّانِي",
+      "arabicNoDiacritics": "الثاني",
+      "transliteration": "ath-thaani",
+      "english": "the second",
+      "partOfSpeech": "adjective (ordinal)",
+      "audio": { "id": "word_althaani", "text": "الثَّانِي" },
+      "introducedInLevel": 35,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "althaalith",
+      "arabic": "الثَّالِث",
+      "arabicNoDiacritics": "الثالث",
+      "transliteration": "ath-thaalith",
+      "english": "the third",
+      "partOfSpeech": "adjective (ordinal)",
+      "audio": { "id": "word_althaalith", "text": "الثَّالِث" },
+      "introducedInLevel": 35,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "alraabi",
+      "arabic": "الرَّابِع",
+      "arabicNoDiacritics": "الرابع",
+      "transliteration": "ar-raabiʿ",
+      "english": "the fourth",
+      "partOfSpeech": "adjective (ordinal)",
+      "audio": { "id": "word_alraabi", "text": "الرَّابِع" },
+      "introducedInLevel": 35,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "alkhaamis",
+      "arabic": "الْخَامِس",
+      "arabicNoDiacritics": "الخامس",
+      "transliteration": "al-khaamis",
+      "english": "the fifth",
+      "partOfSpeech": "adjective (ordinal)",
+      "audio": { "id": "word_alkhaamis", "text": "الْخَامِس" },
+      "introducedInLevel": 35,
+      "tags": ["grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "ordinal-agreement",
+      "pattern": "الـ[Noun] + الـ[Ordinal]",
+      "exampleArabic": "اليوم الأول",
+      "exampleTransliteration": "al-yawmu l-awwalu",
+      "exampleEnglish": "the first day",
+      "grammarNote": "Ordinals act as adjectives — they follow the noun and agree in definiteness, exactly like the colors from level 16: الْيَوْمُ الْأَوَّلُ ('the first day'), not الأول اليوم. Unlike cardinal numbers (one, two, three...), ordinals 1st-10th don't derive from the cardinals in a single predictable way — الْأَوَّل doesn't visibly relate to وَاحِد the way 'first' doesn't relate to 'one' in English either, so they're best learned as their own vocabulary. These are the masculine forms; feminine ordinals (needed for telling time) come next level.",
+      "audio": { "id": "phrase_alyawm_alawwal", "text": "اليوم الأول" },
+      "introducedInLevel": 35
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l35-ex1",
+      "type": "multiple-choice",
+      "refIds": ["alawwal"],
+      "prompt": "What does 'الأول' mean?",
+      "options": ["the first", "the second", "the third", "one"],
+      "answer": "the first"
+    },
+    {
+      "id": "l35-ex2",
+      "type": "sentence-build",
+      "refIds": ["yawm", "alawwal", "ordinal-agreement"],
+      "prompt": "Arrange the tiles to say 'the first day'.",
+      "options": ["اليوم", "الأول"],
+      "answer": "اليوم الأول"
+    },
+    {
+      "id": "l35-ex3",
+      "type": "matching",
+      "refIds": ["althaani", "althaalith", "alraabi", "alkhaamis"],
+      "prompt": "Match the ordinal to its meaning: 2nd",
+      "options": ["الثاني", "الثالث", "الرابع", "الخامس"],
+      "answer": "الثاني"
+    },
+    {
+      "id": "l35-ex4",
+      "type": "typing",
+      "refIds": ["alkhaamis"],
+      "prompt": "Type the Arabic word for 'the fifth'.",
+      "answer": "الخامس"
+    },
+    {
+      "id": "l35-ex5",
+      "type": "multiple-choice",
+      "refIds": ["althaalith"],
+      "prompt": "What does 'الثالث' mean?",
+      "options": ["the third", "clocks / hours", "the second", "to / towards"],
+      "answer": "the third"
+    },
+    {
+      "id": "l35-ex6",
+      "type": "multiple-choice",
+      "refIds": ["althaalith"],
+      "prompt": "Which word means 'the third'?",
+      "options": ["لا", "مهندس", "الثالث", "الأول"],
+      "answer": "الثالث"
+    },
+    {
+      "id": "l35-ex7",
+      "type": "multiple-choice",
+      "refIds": ["alraabi"],
+      "prompt": "What does 'الرابع' mean?",
+      "options": ["the fourth", "the first", "a key", "you (fem.) write"],
+      "answer": "the fourth"
+    },
+    {
+      "id": "l35-ex8",
+      "type": "typing",
+      "refIds": ["alraabi"],
+      "prompt": "Type the Arabic word for 'the fourth'.",
+      "answer": "الرابع"
+    },
+    {
+      "id": "l35-ex9",
+      "type": "speaking",
+      "refIds": ["alawwal"],
+      "prompt": "Practice saying 'الأول' (the first) out loud.",
+      "answer": "الأول"
+    },
+    {
+      "id": "l35-ex10",
+      "type": "speaking",
+      "refIds": ["althaani"],
+      "prompt": "Practice saying 'الثاني' (the second) out loud.",
+      "answer": "الثاني"
+    },
+    {
+      "id": "l35-ex11",
+      "type": "speaking",
+      "refIds": ["althaalith"],
+      "prompt": "Practice saying 'الثالث' (the third) out loud.",
+      "answer": "الثالث"
+    },
+    {
+      "id": "l35-ex12",
+      "type": "speaking",
+      "refIds": ["alraabi"],
+      "prompt": "Practice saying 'الرابع' (the fourth) out loud.",
+      "answer": "الرابع"
+    },
+    {
+      "id": "l35-ex13",
+      "type": "speaking",
+      "refIds": ["alkhaamis"],
+      "prompt": "Practice saying 'الخامس' (the fifth) out loud.",
+      "answer": "الخامس"
+    }
+  ]
+}
