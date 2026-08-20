@@ -1,0 +1,177 @@
+{
+  "number": 39,
+  "title": "Weather and Seasons",
+  "newLetters": [],
+  "newVocab": ["altaqs", "haarr", "baarid", "alshitaa", "alsayf"],
+  "newPatterns": ["weather-season"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "altaqs",
+      "arabic": "الطَّقْسُ",
+      "arabicNoDiacritics": "الطقس",
+      "transliteration": "aṭ-ṭaqsu",
+      "english": "the weather",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_altaqs", "text": "الطَّقْسُ" },
+      "introducedInLevel": 39,
+      "tags": ["core"]
+    },
+    {
+      "id": "haarr",
+      "arabic": "حَارّ",
+      "arabicNoDiacritics": "حار",
+      "transliteration": "ḥārr",
+      "english": "hot",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_haarr", "text": "حَارّ" },
+      "introducedInLevel": 39,
+      "tags": ["core"]
+    },
+    {
+      "id": "baarid",
+      "arabic": "بَارِد",
+      "arabicNoDiacritics": "بارد",
+      "transliteration": "bārid",
+      "english": "cold",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_baarid", "text": "بَارِد" },
+      "introducedInLevel": 39,
+      "tags": ["core"]
+    },
+    {
+      "id": "alshitaa",
+      "arabic": "الشِّتَاء",
+      "arabicNoDiacritics": "الشتاء",
+      "transliteration": "ash-shitāʾ",
+      "english": "winter",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_alshitaa", "text": "الشِّتَاء" },
+      "introducedInLevel": 39,
+      "tags": ["core"]
+    },
+    {
+      "id": "alsayf",
+      "arabic": "الصَّيْف",
+      "arabicNoDiacritics": "الصيف",
+      "transliteration": "aṣ-ṣayf",
+      "english": "summer",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_alsayf", "text": "الصَّيْف" },
+      "introducedInLevel": 39,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "weather-season",
+      "pattern": "الطَّقْسُ + [Adjective] + فِي + الـ[Season]",
+      "exampleArabic": "الطقس حار في الصيف",
+      "exampleTransliteration": "aṭ-ṭaqsu ḥārrun fī ṣ-ṣayfi",
+      "exampleEnglish": "The weather is hot in summer.",
+      "grammarNote": "الطَّقْسُ ('the weather') is almost always definite with ال, even though it's talking about weather in general, not one specific known thing — similar to how الْخُبْزَ meant bread in general back in level 25. حَارّ and بَارِد are ordinary adjectives, agreeing the normal way you learned in level 4 — no special pattern like the أَفْعَل colors or comparatives.",
+      "audio": { "id": "phrase_altaqs_haarr_fi_alsayf", "text": "الطقس حار في الصيف" },
+      "introducedInLevel": 39
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l39-ex1",
+      "type": "multiple-choice",
+      "refIds": ["altaqs"],
+      "prompt": "What does 'الطقس' mean?",
+      "options": ["the weather", "summer", "winter", "the sun"],
+      "answer": "the weather"
+    },
+    {
+      "id": "l39-ex2",
+      "type": "sentence-build",
+      "refIds": ["altaqs", "haarr", "alsayf", "weather-season"],
+      "prompt": "Arrange the tiles to say 'The weather is hot in summer.'",
+      "options": ["الطقس", "حار", "في", "الصيف"],
+      "answer": "الطقس حار في الصيف"
+    },
+    {
+      "id": "l39-ex3",
+      "type": "multiple-choice",
+      "refIds": ["baarid"],
+      "prompt": "What does 'بارد' mean?",
+      "options": ["cold", "hot", "beautiful", "new"],
+      "answer": "cold"
+    },
+    {
+      "id": "l39-ex4",
+      "type": "typing",
+      "refIds": ["alshitaa"],
+      "prompt": "Type the Arabic word for 'winter'.",
+      "answer": "الشتاء"
+    },
+    {
+      "id": "l39-ex5",
+      "type": "multiple-choice",
+      "refIds": ["haarr"],
+      "prompt": "What does 'حار' mean?",
+      "options": ["we went", "he reads", "who", "hot"],
+      "answer": "hot"
+    },
+    {
+      "id": "l39-ex6",
+      "type": "multiple-choice",
+      "refIds": ["haarr"],
+      "prompt": "Which word means 'hot'?",
+      "options": ["تأكلين", "سبعة", "الثالث", "حار"],
+      "answer": "حار"
+    },
+    {
+      "id": "l39-ex7",
+      "type": "multiple-choice",
+      "refIds": ["alsayf"],
+      "prompt": "What does 'الصيف' mean?",
+      "options": ["where", "[negates a verb in the past — 'did not']", "a city", "summer"],
+      "answer": "summer"
+    },
+    {
+      "id": "l39-ex8",
+      "type": "typing",
+      "refIds": ["alsayf"],
+      "prompt": "Type the Arabic word for 'summer'.",
+      "answer": "الصيف"
+    },
+    {
+      "id": "l39-ex9",
+      "type": "speaking",
+      "refIds": ["altaqs"],
+      "prompt": "Practice saying 'الطقس' (the weather) out loud.",
+      "answer": "الطقس"
+    },
+    {
+      "id": "l39-ex10",
+      "type": "speaking",
+      "refIds": ["haarr"],
+      "prompt": "Practice saying 'حار' (hot) out loud.",
+      "answer": "حار"
+    },
+    {
+      "id": "l39-ex11",
+      "type": "speaking",
+      "refIds": ["baarid"],
+      "prompt": "Practice saying 'بارد' (cold) out loud.",
+      "answer": "بارد"
+    },
+    {
+      "id": "l39-ex12",
+      "type": "speaking",
+      "refIds": ["alshitaa"],
+      "prompt": "Practice saying 'الشتاء' (winter) out loud.",
+      "answer": "الشتاء"
+    },
+    {
+      "id": "l39-ex13",
+      "type": "speaking",
+      "refIds": ["alsayf"],
+      "prompt": "Practice saying 'الصيف' (summer) out loud.",
+      "answer": "الصيف"
+    }
+  ]
+}

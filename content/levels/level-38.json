@@ -1,0 +1,115 @@
+{
+  "number": 38,
+  "title": "The Dual",
+  "newLetters": [],
+  "newVocab": ["kitabaan", "waladaan", "bintaan"],
+  "newPatterns": ["dual-agreement"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "kitabaan",
+      "arabic": "كِتَابَانِ",
+      "arabicNoDiacritics": "كتابان",
+      "transliteration": "kitābāni",
+      "english": "two books",
+      "partOfSpeech": "noun (dual)",
+      "audio": { "id": "word_kitabaan", "text": "كِتَابَانِ" },
+      "introducedInLevel": 38,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "waladaan",
+      "arabic": "وَلَدَانِ",
+      "arabicNoDiacritics": "ولدان",
+      "transliteration": "waladāni",
+      "english": "two boys",
+      "partOfSpeech": "noun (dual)",
+      "audio": { "id": "word_waladaan", "text": "وَلَدَانِ" },
+      "introducedInLevel": 38,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "bintaan",
+      "arabic": "بِنْتَانِ",
+      "arabicNoDiacritics": "بنتان",
+      "transliteration": "bintāni",
+      "english": "two girls",
+      "partOfSpeech": "noun (dual)",
+      "audio": { "id": "word_bintaan", "text": "بِنْتَانِ" },
+      "introducedInLevel": 38,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "dual-agreement",
+      "pattern": "الـ[Dual Noun] + [Dual Adjective]",
+      "exampleArabic": "الولدان صغيران",
+      "exampleTransliteration": "al-waladāni ṣaghīrāni",
+      "exampleEnglish": "The two boys are small.",
+      "grammarNote": "Arabic marks exactly TWO of something with its own ending, separate from both singular and plural: -َانِ (waladāni 'two boys'), not the broken or sound plurals from levels 19/21. Adjectives agree with the same dual ending: صَغِيرَانِ ('small', dual), matching وَلَدَانِ the way plural adjectives matched plural nouns before. This -َانِ form is used for the subject of a sentence; there's a second dual ending, -َيْنِ, used elsewhere (after prepositions, as an object) that isn't drilled yet — for now, just recognize that a noun ending in ـَانِ or ـَيْنِ means 'exactly two'.",
+      "audio": { "id": "phrase_alwaladaan_saghiiraan", "text": "الولدان صغيران" },
+      "introducedInLevel": 38
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l38-ex1",
+      "type": "multiple-choice",
+      "refIds": ["kitabaan"],
+      "prompt": "What does 'كتابان' mean?",
+      "options": ["two books", "a book", "books", "two pens"],
+      "answer": "two books"
+    },
+    {
+      "id": "l38-ex2",
+      "type": "multiple-choice",
+      "refIds": ["dual-agreement"],
+      "prompt": "What does this mean? الولدان صغيران",
+      "options": [
+        "The two boys are small.",
+        "The boy is small.",
+        "The two girls are small.",
+        "The boys are small."
+      ],
+      "answer": "The two boys are small."
+    },
+    {
+      "id": "l38-ex3",
+      "type": "multiple-choice",
+      "refIds": ["waladaan"],
+      "prompt": "Which word means 'two boys'?",
+      "options": ["ولدان", "أولاد", "ولد", "بنتان"],
+      "answer": "ولدان"
+    },
+    {
+      "id": "l38-ex4",
+      "type": "typing",
+      "refIds": ["bintaan"],
+      "prompt": "Type the Arabic word for 'two girls'.",
+      "answer": "بنتان"
+    },
+    {
+      "id": "l38-ex5",
+      "type": "speaking",
+      "refIds": ["kitabaan"],
+      "prompt": "Practice saying 'كتابان' (two books) out loud.",
+      "answer": "كتابان"
+    },
+    {
+      "id": "l38-ex6",
+      "type": "speaking",
+      "refIds": ["waladaan"],
+      "prompt": "Practice saying 'ولدان' (two boys) out loud.",
+      "answer": "ولدان"
+    },
+    {
+      "id": "l38-ex7",
+      "type": "speaking",
+      "refIds": ["bintaan"],
+      "prompt": "Practice saying 'بنتان' (two girls) out loud.",
+      "answer": "بنتان"
+    }
+  ]
+}

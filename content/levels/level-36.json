@@ -1,0 +1,198 @@
+{
+  "number": 36,
+  "title": "Telling Time",
+  "newLetters": [],
+  "newVocab": ["aloula", "althaaniya", "althaalitha", "alraabia", "alkhaamisa"],
+  "newPatterns": ["telling-time"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "aloula",
+      "arabic": "الْأُولَى",
+      "arabicNoDiacritics": "الأولى",
+      "transliteration": "al-ūlā",
+      "english": "the first (fem.)",
+      "partOfSpeech": "adjective (ordinal)",
+      "audio": { "id": "word_aloula", "text": "الْأُولَى" },
+      "introducedInLevel": 36,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "althaaniya",
+      "arabic": "الثَّانِيَة",
+      "arabicNoDiacritics": "الثانية",
+      "transliteration": "ath-thaaniya",
+      "english": "the second (fem.)",
+      "partOfSpeech": "adjective (ordinal)",
+      "audio": { "id": "word_althaaniya", "text": "الثَّانِيَة" },
+      "introducedInLevel": 36,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "althaalitha",
+      "arabic": "الثَّالِثَة",
+      "arabicNoDiacritics": "الثالثة",
+      "transliteration": "ath-thaalitha",
+      "english": "the third (fem.)",
+      "partOfSpeech": "adjective (ordinal)",
+      "audio": { "id": "word_althaalitha", "text": "الثَّالِثَة" },
+      "introducedInLevel": 36,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "alraabia",
+      "arabic": "الرَّابِعَة",
+      "arabicNoDiacritics": "الرابعة",
+      "transliteration": "ar-raabiʿa",
+      "english": "the fourth (fem.)",
+      "partOfSpeech": "adjective (ordinal)",
+      "audio": { "id": "word_alraabia", "text": "الرَّابِعَة" },
+      "introducedInLevel": 36,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "alkhaamisa",
+      "arabic": "الْخَامِسَة",
+      "arabicNoDiacritics": "الخامسة",
+      "transliteration": "al-khaamisa",
+      "english": "the fifth (fem.)",
+      "partOfSpeech": "adjective (ordinal)",
+      "audio": { "id": "word_alkhaamisa", "text": "الْخَامِسَة" },
+      "introducedInLevel": 36,
+      "tags": ["grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "telling-time",
+      "pattern": "السَّاعَةُ + الـ[Fem. Ordinal]",
+      "exampleArabic": "الساعة الثالثة",
+      "exampleTransliteration": "as-saaʿatu th-thaalithatu",
+      "exampleEnglish": "It is three o'clock.",
+      "grammarNote": "Telling time always uses the FEMININE ordinal, because سَاعَة ('hour/clock', level 3) is a feminine noun and the ordinal has to agree — the same adjective-agreement rule from level 4, now applied to ordinals instead of regular adjectives. Feminine ordinals mostly just add ة to last level's masculine form (الثالث → الثالثة), except الأول, whose feminine is irregular: الْأُولَى, not الْأَوَّلَة. So 'one o'clock' is السَّاعَةُ الْأُولَى, not a form based on الأول at all.",
+      "audio": { "id": "phrase_alsaaa_althaalitha", "text": "الساعة الثالثة" },
+      "introducedInLevel": 36
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l36-ex1",
+      "type": "multiple-choice",
+      "refIds": ["aloula"],
+      "prompt": "What does 'الأولى' mean?",
+      "options": ["the first (fem.)", "the first (masc.)", "the second (fem.)", "one"],
+      "answer": "the first (fem.)"
+    },
+    {
+      "id": "l36-ex2",
+      "type": "sentence-build",
+      "refIds": ["saaa", "althaalitha", "telling-time"],
+      "prompt": "Arrange the tiles to say 'It is three o'clock.'",
+      "options": ["الساعة", "الثالثة"],
+      "answer": "الساعة الثالثة"
+    },
+    {
+      "id": "l36-ex3",
+      "type": "multiple-choice",
+      "refIds": ["telling-time"],
+      "prompt": "Why is it 'الساعة الثالثة' and not 'الساعة الثالث'?",
+      "options": [
+        "ساعة is feminine, so the ordinal must be feminine too",
+        "ثالثة is a completely different word",
+        "there is no rule, both are correct",
+        "الثالث only means 'third' when talking about days"
+      ],
+      "answer": "ساعة is feminine, so the ordinal must be feminine too"
+    },
+    {
+      "id": "l36-ex4",
+      "type": "typing",
+      "refIds": ["alkhaamisa"],
+      "prompt": "Type the Arabic word for 'the fifth (fem.)'.",
+      "answer": "الخامسة"
+    },
+    {
+      "id": "l36-ex5",
+      "type": "multiple-choice",
+      "refIds": ["althaaniya"],
+      "prompt": "What does 'الثانية' mean?",
+      "options": ["he goes", "the house", "clocks / hours", "the second (fem.)"],
+      "answer": "the second (fem.)"
+    },
+    {
+      "id": "l36-ex6",
+      "type": "multiple-choice",
+      "refIds": ["althaaniya"],
+      "prompt": "Which word means 'the second (fem.)'?",
+      "options": ["الثانية", "المرأة", "طويل", "تكتب"],
+      "answer": "الثانية"
+    },
+    {
+      "id": "l36-ex7",
+      "type": "multiple-choice",
+      "refIds": ["althaalitha"],
+      "prompt": "What does 'الثالثة' mean?",
+      "options": ["a magazine", "the third (fem.)", "black", "an engineer"],
+      "answer": "the third (fem.)"
+    },
+    {
+      "id": "l36-ex8",
+      "type": "typing",
+      "refIds": ["althaalitha"],
+      "prompt": "Type the Arabic word for 'the third (fem.)'.",
+      "answer": "الثالثة"
+    },
+    {
+      "id": "l36-ex9",
+      "type": "multiple-choice",
+      "refIds": ["alraabia"],
+      "prompt": "What does 'الرابعة' mean?",
+      "options": ["he eats", "the fourth (fem.)", "the house", "I / you (masc.) / you (fem.) / she ate"],
+      "answer": "the fourth (fem.)"
+    },
+    {
+      "id": "l36-ex10",
+      "type": "multiple-choice",
+      "refIds": ["alraabia"],
+      "prompt": "Which word means 'the fourth (fem.)'?",
+      "options": ["أحمر", "الرابعة", "المرأة", "أربعة"],
+      "answer": "الرابعة"
+    },
+    {
+      "id": "l36-ex11",
+      "type": "speaking",
+      "refIds": ["aloula"],
+      "prompt": "Practice saying 'الأولى' (the first (fem.)) out loud.",
+      "answer": "الأولى"
+    },
+    {
+      "id": "l36-ex12",
+      "type": "speaking",
+      "refIds": ["althaaniya"],
+      "prompt": "Practice saying 'الثانية' (the second (fem.)) out loud.",
+      "answer": "الثانية"
+    },
+    {
+      "id": "l36-ex13",
+      "type": "speaking",
+      "refIds": ["althaalitha"],
+      "prompt": "Practice saying 'الثالثة' (the third (fem.)) out loud.",
+      "answer": "الثالثة"
+    },
+    {
+      "id": "l36-ex14",
+      "type": "speaking",
+      "refIds": ["alraabia"],
+      "prompt": "Practice saying 'الرابعة' (the fourth (fem.)) out loud.",
+      "answer": "الرابعة"
+    },
+    {
+      "id": "l36-ex15",
+      "type": "speaking",
+      "refIds": ["alkhaamisa"],
+      "prompt": "Practice saying 'الخامسة' (the fifth (fem.)) out loud.",
+      "answer": "الخامسة"
+    }
+  ]
+}

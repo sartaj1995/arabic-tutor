@@ -96,7 +96,7 @@ TTS-facing form); it's hand-authored exercise/pattern text, and anything
 `scripts/generate-exercises.mjs` generates, that gets stripped down to
 match a "none" level's setting.
 
-## First 30 levels, at a glance
+## First 40 levels, at a glance
 
 | Level | Theme | New letters | New pattern |
 |---|---|---|---|
@@ -130,6 +130,16 @@ match a "none" level's setting.
 | 28 | Past tense — "to eat" | — | "Yesterday grandfather ate the apple." |
 | 29 | Past tense — "to drink" | — | capstone: two full past-tense clauses joined by وَ |
 | 30 | Review — levels 21–30 | — | capstone: past tense + broken plural + وَ |
+| 31 | Idafa — construct phrases | — | "The house key is big." |
+| 32 | Negating the past and future (لم / لن) | — | "I did not go to school yesterday." |
+| 33 | Verbs — "to work" (present) | — | "I work in an office." |
+| 34 | Verbs — "to write" (present) | — | "I write with the pen." |
+| 35 | Ordinal numbers (masc.) | — | "the first day" |
+| 36 | Telling time | — | "It is three o'clock." |
+| 37 | Comparatives and superlatives | — | "My house is bigger than your house." |
+| 38 | The dual | — | "The two boys are small." |
+| 39 | Weather and seasons | — | "The weather is hot in summer." |
+| 40 | Review — levels 31–40 | — | capstone: idafa + comparative + وَ |
 
 Levels 1–10 were a **pacing proof of concept** validating the schema and
 progression before continuing; levels 11–20 build on that same shape and
@@ -178,6 +188,41 @@ vocab word's `arabicNoDiacritics` by hand and check for collisions the same
 way — `scripts/generate-exercises.mjs` doesn't detect this automatically,
 it will happily generate broken exercises from colliding vocab.
 
+Levels 31–40 deliberately avoid the suffix-conjugation trap above:
+negation (لَمْ for past, لَنْ for future, level 32) pairs with the
+*present*-tense verb forms already in the vocab pool rather than minting
+new suffixed forms, so it introduces the grammar with only 2 new vocab
+items (the particles themselves) and zero new collision risk. The two new
+verbs this batch (عمل "work" level 33, كتب "write" level 34) are taught in
+the present tense only — past tense is mentioned in the grammar note as a
+recognition exercise, not drilled with new vocab, since by verb #5 the
+suffix pattern is thoroughly established and doesn't need re-teaching.
+
+This batch also hit a *different* kind of collision, worth flagging for
+future levels: `مِنْ` ("than", needed for comparatives in level 37) strips
+to the identical text `من` as the already-taught `مَنْ` ("who", level 6) —
+the same vowel-only-diacritic problem as the past tense, but between two
+otherwise-unrelated words rather than two forms of the same verb. There's
+no way to "merge" a question word and a preposition into one sensible
+vocab entry the way homograph verb forms get merged, so level 37 simply
+never gives `مِنْ` its own vocab entry — it appears only inside pattern/
+exercise prose (tested via whole-sentence multiple-choice), never as a
+flashcard that could collide with `مَنْ` in a distractor pool. General
+lesson: *any* new word's `arabicNoDiacritics` needs checking against the
+*entire* existing vocab pool, not just other forms of the same verb.
+
+Levels 31–40 also pick up three grammar points that were explicitly
+deferred from earlier batches — idafa/construct phrases (31, "the man's
+house" with no word for "of"), negating a verb rather than just a nominal
+sentence (32), and the dual (38, kept deliberately light: nominative
+-َانِ only, no dual pronouns/verbs, no accusative/genitive -َيْنِ) — plus
+comparative/superlative adjectives (37, reusing the level-16 أَفْعَل
+pattern) and two vocabulary-driven levels motivated by a real use case
+(ordinal numbers in 35 exist specifically to enable telling time in 36;
+masculine ordinals are taught first, feminine second, since time-telling
+requires the feminine form and that ordering makes the "why feminine?"
+grammar note land better than teaching both forms at once).
+
 ## Exercises in the JSON files
 
 Each level file has a small hand-authored core set (the flagship
@@ -185,7 +230,7 @@ sentence-build/matching/typing exercises that show off a level's grammar
 point) plus generated coverage exercises ensuring every letter and vocab
 word gets at least one dedicated question — see
 `scripts/generate-exercises.mjs`, an idempotent script safe to re-run after
-authoring new levels. As of level 30: 216 content items, 504 exercises
+authoring new levels. As of level 40: 266 content items, 617 exercises
 total. The generator is diacritics-aware — it renders Arabic text stripped
 for levels where `diacriticsLevel === "none"` so generated and
 hand-authored exercises never mix styles within the same level.
