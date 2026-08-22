@@ -334,6 +334,38 @@ a.hero-stat.is-review:hover {
   color: var(--text-muted);
 }
 
+.backup-actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.backup-message-ok,
+.backup-message-error {
+  font-size: 0.85rem;
+  margin-top: 0.6rem;
+}
+
+.backup-message-ok {
+  color: var(--accent);
+}
+
+.backup-message-error {
+  color: var(--incorrect);
+}
+
 .mastery-bar {
   display: flex;
   height: 1.25rem;
