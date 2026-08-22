@@ -5,8 +5,8 @@ script, vocabulary, and sentence-building — across 100 levels.
 
 **Status: app shell with interactive exercises, an on-screen Arabic
 keyboard, spaced-repetition review, real exercise depth, live audio, and a
-progress dashboard.** The first 40 levels of curriculum content exist as
-structured JSON — 617 exercises across them, generated so every letter and
+progress dashboard.** The first 50 levels of curriculum content exist as
+structured JSON — 740 exercises across them, generated so every letter and
 vocab word gets at least one dedicated question, not just the illustrative
 few each level started with. A React/Vite app loads and displays them with
 clickable/typeable exercises and live scoring, finishing a level feeds its
@@ -118,7 +118,7 @@ src/lib/speech.ts         Web Speech API wrapper (speak, voice detection)
 src/lib/progress.ts       Dashboard stats computed from IndexedDB (no separate tracking)
 src/pages/                LevelList, LevelDetail, Review, Progress
 src/components/           ArabicText, ExerciseCard, PlayAudioButton, ArabicKeyboard
-content/levels/*.json     Authored level content (levels 1–40 so far)
+content/levels/*.json     Authored level content (levels 1–50 so far)
 scripts/generate-audio.mjs      Offline Google Cloud TTS pipeline — fallback, unused
 scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 ```
@@ -126,9 +126,9 @@ scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 Each `content/levels/level-XX.json` follows the `Level` type in
 `src/types/content.ts`: new letters, new vocab, new sentence patterns, a
 diacritics-display setting, and exercises (a hand-authored core set plus
-generated coverage exercises — 617 total across the 40 levels).
+generated coverage exercises — 740 total across the 50 levels).
 
-## First 40 levels
+## First 50 levels
 
 | # | Theme |
 |---|---|
@@ -172,11 +172,21 @@ generated coverage exercises — 617 total across the 40 levels).
 | 38 | The dual |
 | 39 | Weather and seasons |
 | 40 | Review — levels 31–40 |
+| 41 | The future tense (سَـ / سَوْفَ) |
+| 42 | The imperative — giving commands |
+| 43 | Verbs — "to travel" (present, Form III) |
+| 44 | Verbs — "to study" (present) |
+| 45 | Body parts |
+| 46 | Prepositions of place |
+| 47 | Nisba — nationalities |
+| 48 | "To be able to" — يستطيع |
+| 49 | More family and feelings |
+| 50 | Review — levels 41–50 |
 
 ## Next steps
 
 1. **Review the pacing.** Read through `content/levels/level-01.json` →
-   `level-40.json` (or the summary table in `docs/content-model.md`) and
+   `level-50.json` (or the summary table in `docs/content-model.md`) and
    sanity-check that the progression feels right before more levels are
    generated the same way.
 2. ~~Scaffold the app.~~ Done — `npm run dev` to try it.
@@ -277,6 +287,26 @@ generated coverage exercises — 617 total across the 40 levels).
     across 266 items / 617 exercises) and in the browser — idafa, telling
     time's feminine-ordinal agreement, and the dual all render correctly.
     40 of 100 levels done.
+8c. ~~Author levels 41–50.~~ Done — rounds out the tense/mood picture:
+    the positive future (سَـ/سَوْفَ, completing لَنْ from level 32), the
+    imperative (built from the same jussive stem لَمْ uses, including the
+    well-known irregular أكل → كُلْ exception), and يستطيع + أَنْ ("can"),
+    which reuses the same "pair a particle with existing present-tense
+    vocab" trick as لَمْ/لَنْ/سَـ rather than minting new subjunctive-form
+    entries. سافر ("travel") is the first verb taught outside the basic
+    Form I pattern — Form III, present-tense prefixes take damma instead
+    of fatha (أُسَافِرُ). Also: درس ("study", present tense only, same
+    reasoning as levels 33/34), body parts, prepositions of place (an
+    idafa-like structure — تَحْتَ الْكِتَابِ), nisba adjectives (the ـِيّ
+    pattern behind nationalities), and more family/feelings vocab.
+    Validated with a full consistency pass (0 problems across 319 items /
+    740 exercises, 0 new stripped-text collisions across the full 246-word
+    pool) and in the browser — the imperative, the Form III verb, nisba
+    agreement, and a 7-tile capstone sentence-build (spanning 41, 43, and
+    48) all render and score correctly. Also extended
+    `src/components/LevelIcon.tsx` with 5 new per-level-type icons so
+    none of this batch's levels fall back to the generic icon. 50 of 100
+    levels done — halfway.
 9. ~~Author `letter-writing` exercises.~~ Done — `generate-exercises.mjs`
    now generates one per letter (28 total, across levels 1–7 where all the
    alphabet is introduced), testing the production direction (name ->

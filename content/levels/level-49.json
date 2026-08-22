@@ -1,0 +1,187 @@
+{
+  "number": 49,
+  "title": "More Family and Feelings",
+  "newLetters": [],
+  "newVocab": ["amm", "khaal", "hazeen", "ghadban", "mutab"],
+  "newPatterns": ["feeling-today"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "amm",
+      "arabic": "عَمّ",
+      "arabicNoDiacritics": "عم",
+      "transliteration": "ʿamm",
+      "english": "uncle (father's brother)",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_amm", "text": "عَمّ" },
+      "introducedInLevel": 49,
+      "tags": ["core", "family"]
+    },
+    {
+      "id": "khaal",
+      "arabic": "خَال",
+      "arabicNoDiacritics": "خال",
+      "transliteration": "khāl",
+      "english": "uncle (mother's brother)",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_khaal", "text": "خَال" },
+      "introducedInLevel": 49,
+      "tags": ["family"]
+    },
+    {
+      "id": "hazeen",
+      "arabic": "حَزِين",
+      "arabicNoDiacritics": "حزين",
+      "transliteration": "ḥazīn",
+      "english": "sad",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_hazeen", "text": "حَزِين" },
+      "introducedInLevel": 49,
+      "tags": ["core"]
+    },
+    {
+      "id": "ghadban",
+      "arabic": "غَضْبَان",
+      "arabicNoDiacritics": "غضبان",
+      "transliteration": "ghaḍbān",
+      "english": "angry",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_ghadban", "text": "غَضْبَان" },
+      "introducedInLevel": 49,
+      "tags": ["core"]
+    },
+    {
+      "id": "mutab",
+      "arabic": "مُتْعَب",
+      "arabicNoDiacritics": "متعب",
+      "transliteration": "mutʿab",
+      "english": "tired",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_mutab", "text": "مُتْعَب" },
+      "introducedInLevel": 49,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "feeling-today",
+      "pattern": "أَنَا + [Feeling] + الْيَوْمَ",
+      "exampleArabic": "أنا حزين اليوم",
+      "exampleTransliteration": "anā ḥazīnun al-yawma",
+      "exampleEnglish": "I am sad today.",
+      "grammarNote": "Arabic distinguishes paternal from maternal relatives systematically, not just for uncles: عَمّ is specifically your father's brother, خَال your mother's brother — English 'uncle' collapses a distinction Arabic always keeps (and extends to aunts and cousins too, if you keep going). اليوم reuses level 24's word — 'today' works as a time adverb after any adjective of feeling, not just with verbs.",
+      "audio": { "id": "phrase_ana_hazeen_alyawm", "text": "أنا حزين اليوم" },
+      "introducedInLevel": 49
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l49-ex1",
+      "type": "multiple-choice",
+      "refIds": ["amm"],
+      "prompt": "What does 'عم' mean?",
+      "options": [
+        "uncle (father's brother)",
+        "uncle (mother's brother)",
+        "grandfather",
+        "brother"
+      ],
+      "answer": "uncle (father's brother)"
+    },
+    {
+      "id": "l49-ex2",
+      "type": "sentence-build",
+      "refIds": ["ana", "hazeen", "alyawm", "feeling-today"],
+      "prompt": "Arrange the tiles to say 'I am sad today.'",
+      "options": ["أنا", "حزين", "اليوم"],
+      "answer": "أنا حزين اليوم"
+    },
+    {
+      "id": "l49-ex3",
+      "type": "multiple-choice",
+      "refIds": ["khaal"],
+      "prompt": "What does 'خال' mean?",
+      "options": [
+        "uncle (mother's brother)",
+        "uncle (father's brother)",
+        "aunt",
+        "cousin"
+      ],
+      "answer": "uncle (mother's brother)"
+    },
+    {
+      "id": "l49-ex4",
+      "type": "typing",
+      "refIds": ["mutab"],
+      "prompt": "Type the Arabic word for 'tired'.",
+      "answer": "متعب"
+    },
+    {
+      "id": "l49-ex5",
+      "type": "multiple-choice",
+      "refIds": ["hazeen"],
+      "prompt": "What does 'حزين' mean?",
+      "options": ["sad", "yes", "we study", "we"],
+      "answer": "sad"
+    },
+    {
+      "id": "l49-ex6",
+      "type": "multiple-choice",
+      "refIds": ["hazeen"],
+      "prompt": "Which word means 'sad'?",
+      "options": ["الجمعة", "حزين", "السلام عليكم", "السبت"],
+      "answer": "حزين"
+    },
+    {
+      "id": "l49-ex7",
+      "type": "multiple-choice",
+      "refIds": ["ghadban"],
+      "prompt": "What does 'غضبان' mean?",
+      "options": ["you (masc.) can / she can", "more / most beautiful", "this (masc.)", "angry"],
+      "answer": "angry"
+    },
+    {
+      "id": "l49-ex8",
+      "type": "typing",
+      "refIds": ["ghadban"],
+      "prompt": "Type the Arabic word for 'angry'.",
+      "answer": "غضبان"
+    },
+    {
+      "id": "l49-ex9",
+      "type": "speaking",
+      "refIds": ["amm"],
+      "prompt": "Practice saying 'عم' (uncle (father's brother)) out loud.",
+      "answer": "عم"
+    },
+    {
+      "id": "l49-ex10",
+      "type": "speaking",
+      "refIds": ["khaal"],
+      "prompt": "Practice saying 'خال' (uncle (mother's brother)) out loud.",
+      "answer": "خال"
+    },
+    {
+      "id": "l49-ex11",
+      "type": "speaking",
+      "refIds": ["hazeen"],
+      "prompt": "Practice saying 'حزين' (sad) out loud.",
+      "answer": "حزين"
+    },
+    {
+      "id": "l49-ex12",
+      "type": "speaking",
+      "refIds": ["ghadban"],
+      "prompt": "Practice saying 'غضبان' (angry) out loud.",
+      "answer": "غضبان"
+    },
+    {
+      "id": "l49-ex13",
+      "type": "speaking",
+      "refIds": ["mutab"],
+      "prompt": "Practice saying 'متعب' (tired) out loud.",
+      "answer": "متعب"
+    }
+  ]
+}

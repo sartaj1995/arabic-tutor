@@ -96,7 +96,7 @@ TTS-facing form); it's hand-authored exercise/pattern text, and anything
 `scripts/generate-exercises.mjs` generates, that gets stripped down to
 match a "none" level's setting.
 
-## First 40 levels, at a glance
+## First 50 levels, at a glance
 
 | Level | Theme | New letters | New pattern |
 |---|---|---|---|
@@ -140,6 +140,16 @@ match a "none" level's setting.
 | 38 | The dual | — | "The two boys are small." |
 | 39 | Weather and seasons | — | "The weather is hot in summer." |
 | 40 | Review — levels 31–40 | — | capstone: idafa + comparative + وَ |
+| 41 | The future tense (سَـ / سَوْفَ) | — | "I will go to the market tomorrow." |
+| 42 | The imperative — giving commands | — | "Go to school!" |
+| 43 | Verbs — "to travel" (present, Form III) | — | "I travel by plane." |
+| 44 | Verbs — "to study" (present) | — | "I study at the university." |
+| 45 | Body parts | — | "My hand is big." |
+| 46 | Prepositions of place | — | "The pen is under the book." |
+| 47 | Nisba — nationalities | — | "I am Egyptian." |
+| 48 | "To be able to" — يستطيع + أَنْ | — | "I can go." |
+| 49 | More family and feelings | — | "I am sad today." |
+| 50 | Review — levels 41–50 | — | capstone: سَـ-future + وَ + يستطيع/أَنْ |
 
 Levels 1–10 were a **pacing proof of concept** validating the schema and
 progression before continuing; levels 11–20 build on that same shape and
@@ -223,6 +233,27 @@ masculine ordinals are taught first, feminine second, since time-telling
 requires the feminine form and that ordering makes the "why feminine?"
 grammar note land better than teaching both forms at once).
 
+Levels 41–50 round out the remaining tense/mood gaps and add two more
+verbs plus several practical vocab sets. سَـ/سَوْفَ (41, positive future)
+completes the three-way future picture alongside لَنْ (level 32); the
+imperative (42) introduces commands, built from the same jussive stem
+لَمْ already uses, including the well-known irregular exception (أكل →
+كُلْ, dropping the prosthetic hamza entirely). سافر ("travel", 43) is the
+batch's other notable grammar point: the first verb taught outside the
+basic Form I (فَعَلَ) pattern — it's Form III (فَاعَلَ), whose present-tense
+prefixes take damma instead of fatha (أُسَافِرُ, not أَسَافِرُ). Both new
+verbs this batch (سافر 43, درس 44) are present-tense only, same reasoning
+as levels 33/34: past tense doesn't need fresh drilling by verb #8-9.
+يستطيع + أَنْ (48, "can") reuses the لَمْ/لَنْ/سَـ trick one more time —
+the verb after أَنْ is technically subjunctive, but since that's invisible
+without diacritics, it just reuses the existing present-tense vocabulary
+rather than minting new subjunctive-form entries. Body parts (45),
+prepositions of place (46, explicitly framed as another idafa-like
+structure — تَحْتَ الْكِتَابِ literally "the-underside-of the-book"), nisba
+adjectives (47, the ـِيّ pattern that builds nationalities, religions, and
+professions-from-place alike), and more family/feelings vocab (49) round
+out the batch. 50 of 100 levels now authored — the halfway point.
+
 ## Exercises in the JSON files
 
 Each level file has a small hand-authored core set (the flagship
@@ -230,7 +261,7 @@ sentence-build/matching/typing exercises that show off a level's grammar
 point) plus generated coverage exercises ensuring every letter and vocab
 word gets at least one dedicated question — see
 `scripts/generate-exercises.mjs`, an idempotent script safe to re-run after
-authoring new levels. As of level 40: 266 content items, 617 exercises
+authoring new levels. As of level 50: 319 content items, 740 exercises
 total. The generator is diacritics-aware — it renders Arabic text stripped
 for levels where `diacriticsLevel === "none"` so generated and
 hand-authored exercises never mix styles within the same level.

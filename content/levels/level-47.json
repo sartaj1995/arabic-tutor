@@ -1,0 +1,110 @@
+{
+  "number": 47,
+  "title": "Nisba — Nationalities",
+  "newLetters": [],
+  "newVocab": ["arabi", "amriki", "misri"],
+  "newPatterns": ["nisba-adjective"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "arabi",
+      "arabic": "عَرَبِيّ",
+      "arabicNoDiacritics": "عربي",
+      "transliteration": "ʿarabiyy",
+      "english": "Arab / Arabic",
+      "partOfSpeech": "adjective (nisba)",
+      "audio": { "id": "word_arabi", "text": "عَرَبِيّ" },
+      "introducedInLevel": 47,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "amriki",
+      "arabic": "أَمْرِيكِيّ",
+      "arabicNoDiacritics": "أمريكي",
+      "transliteration": "amrīkiyy",
+      "english": "American",
+      "partOfSpeech": "adjective (nisba)",
+      "audio": { "id": "word_amriki", "text": "أَمْرِيكِيّ" },
+      "introducedInLevel": 47,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "misri",
+      "arabic": "مِصْرِيّ",
+      "arabicNoDiacritics": "مصري",
+      "transliteration": "miṣriyy",
+      "english": "Egyptian",
+      "partOfSpeech": "adjective (nisba)",
+      "audio": { "id": "word_misri", "text": "مِصْرِيّ" },
+      "introducedInLevel": 47,
+      "tags": ["grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "nisba-adjective",
+      "pattern": "[Pronoun] + [Noun/Place] + ـِيّ",
+      "exampleArabic": "أنا مصري",
+      "exampleTransliteration": "anā miṣriyy",
+      "exampleEnglish": "I am Egyptian.",
+      "grammarNote": "Adding ـِيّ (with a shadda) to almost any place name or noun turns it into a 'nisba' adjective meaning 'relating to X': مِصْر (Egypt) → مِصْرِيّ ('Egyptian'), أَمْرِيكَا (America) → أَمْرِيكِيّ, عَرَب (Arabs) → عَرَبِيّ. This is one of the most productive patterns in Arabic — it also builds words for religions, professions, and fields of study, not just nationalities. The feminine adds ة on top of the ي: مِصْرِيَّة ('Egyptian', fem.).",
+      "audio": { "id": "phrase_ana_misri", "text": "أنا مصري" },
+      "introducedInLevel": 47
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l47-ex1",
+      "type": "multiple-choice",
+      "refIds": ["arabi"],
+      "prompt": "What does 'عربي' mean?",
+      "options": ["Arab / Arabic", "American", "Egyptian", "big"],
+      "answer": "Arab / Arabic"
+    },
+    {
+      "id": "l47-ex2",
+      "type": "sentence-build",
+      "refIds": ["ana", "misri", "nisba-adjective"],
+      "prompt": "Arrange the tiles to say 'I am Egyptian.'",
+      "options": ["أنا", "مصري"],
+      "answer": "أنا مصري"
+    },
+    {
+      "id": "l47-ex3",
+      "type": "multiple-choice",
+      "refIds": ["amriki"],
+      "prompt": "What does 'أمريكي' mean?",
+      "options": ["American", "Arab / Arabic", "Egyptian", "new"],
+      "answer": "American"
+    },
+    {
+      "id": "l47-ex4",
+      "type": "typing",
+      "refIds": ["misri"],
+      "prompt": "Type the Arabic word for 'Egyptian'.",
+      "answer": "مصري"
+    },
+    {
+      "id": "l47-ex5",
+      "type": "speaking",
+      "refIds": ["arabi"],
+      "prompt": "Practice saying 'عربي' (Arab / Arabic) out loud.",
+      "answer": "عربي"
+    },
+    {
+      "id": "l47-ex6",
+      "type": "speaking",
+      "refIds": ["amriki"],
+      "prompt": "Practice saying 'أمريكي' (American) out loud.",
+      "answer": "أمريكي"
+    },
+    {
+      "id": "l47-ex7",
+      "type": "speaking",
+      "refIds": ["misri"],
+      "prompt": "Practice saying 'مصري' (Egyptian) out loud.",
+      "answer": "مصري"
+    }
+  ]
+}

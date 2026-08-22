@@ -1,0 +1,177 @@
+{
+  "number": 46,
+  "title": "Prepositions of Place",
+  "newLetters": [],
+  "newVocab": ["tahta", "fawqa", "amaama", "khalfa", "bayna"],
+  "newPatterns": ["place-preposition"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "tahta",
+      "arabic": "تَحْتَ",
+      "arabicNoDiacritics": "تحت",
+      "transliteration": "taḥta",
+      "english": "under",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_tahta", "text": "تَحْتَ" },
+      "introducedInLevel": 46,
+      "tags": ["core"]
+    },
+    {
+      "id": "fawqa",
+      "arabic": "فَوْقَ",
+      "arabicNoDiacritics": "فوق",
+      "transliteration": "fawqa",
+      "english": "above / over",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_fawqa", "text": "فَوْقَ" },
+      "introducedInLevel": 46,
+      "tags": ["core"]
+    },
+    {
+      "id": "amaama",
+      "arabic": "أَمَامَ",
+      "arabicNoDiacritics": "أمام",
+      "transliteration": "amāma",
+      "english": "in front of",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_amaama", "text": "أَمَامَ" },
+      "introducedInLevel": 46,
+      "tags": ["core"]
+    },
+    {
+      "id": "khalfa",
+      "arabic": "خَلْفَ",
+      "arabicNoDiacritics": "خلف",
+      "transliteration": "khalfa",
+      "english": "behind",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_khalfa", "text": "خَلْفَ" },
+      "introducedInLevel": 46,
+      "tags": ["core"]
+    },
+    {
+      "id": "bayna",
+      "arabic": "بَيْنَ",
+      "arabicNoDiacritics": "بين",
+      "transliteration": "bayna",
+      "english": "between",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_bayna", "text": "بَيْنَ" },
+      "introducedInLevel": 46,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "place-preposition",
+      "pattern": "[Noun] + تَحْتَ + الـ[Noun]",
+      "exampleArabic": "القلم تحت الكتاب",
+      "exampleTransliteration": "al-qalamu taḥta l-kitābi",
+      "exampleEnglish": "The pen is under the book.",
+      "grammarNote": "These words are all built the same way idafa was in level 31: تَحْتَ ('under') literally means something like 'the underside of', and is always followed by a genitive noun — تَحْتَ الْكِتَابِ is structurally 'the-underside-of the-book'. That's why they end in fatḥa (تَحْتَ, فَوْقَ, أَمَامَ...) rather than looking like ordinary nouns — they're functioning adverbially, the same accusative role you saw with أَمْسِ and غَدًا in level 22.",
+      "audio": { "id": "phrase_alqalam_tahta_alkitaab", "text": "القلم تحت الكتاب" },
+      "introducedInLevel": 46
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l46-ex1",
+      "type": "multiple-choice",
+      "refIds": ["tahta"],
+      "prompt": "What does 'تحت' mean?",
+      "options": ["under", "above / over", "in front of", "behind"],
+      "answer": "under"
+    },
+    {
+      "id": "l46-ex2",
+      "type": "sentence-build",
+      "refIds": ["qalam", "kitaab", "place-preposition"],
+      "prompt": "Arrange the tiles to say 'The pen is under the book.'",
+      "options": ["القلم", "تحت", "الكتاب"],
+      "answer": "القلم تحت الكتاب"
+    },
+    {
+      "id": "l46-ex3",
+      "type": "matching",
+      "refIds": ["fawqa", "amaama", "khalfa", "bayna"],
+      "prompt": "Match the preposition to its meaning: خَلْفَ",
+      "options": ["behind", "above / over", "in front of", "between"],
+      "answer": "behind"
+    },
+    {
+      "id": "l46-ex4",
+      "type": "typing",
+      "refIds": ["bayna"],
+      "prompt": "Type the Arabic word for 'between'.",
+      "answer": "بين"
+    },
+    {
+      "id": "l46-ex5",
+      "type": "multiple-choice",
+      "refIds": ["fawqa"],
+      "prompt": "What does 'فوق' mean?",
+      "options": ["above / over", "yesterday", "tall / long", "Friday"],
+      "answer": "above / over"
+    },
+    {
+      "id": "l46-ex6",
+      "type": "multiple-choice",
+      "refIds": ["fawqa"],
+      "prompt": "Which word means 'above / over'?",
+      "options": ["ذهبنا", "فوق", "هي", "أخت"],
+      "answer": "فوق"
+    },
+    {
+      "id": "l46-ex7",
+      "type": "multiple-choice",
+      "refIds": ["amaama"],
+      "prompt": "What does 'أمام' mean?",
+      "options": ["in front of", "I / you (masc.) / you (fem.) / she ate", "you (fem.) are not", "above / over"],
+      "answer": "in front of"
+    },
+    {
+      "id": "l46-ex8",
+      "type": "typing",
+      "refIds": ["amaama"],
+      "prompt": "Type the Arabic word for 'in front of'.",
+      "answer": "أمام"
+    },
+    {
+      "id": "l46-ex9",
+      "type": "speaking",
+      "refIds": ["tahta"],
+      "prompt": "Practice saying 'تحت' (under) out loud.",
+      "answer": "تحت"
+    },
+    {
+      "id": "l46-ex10",
+      "type": "speaking",
+      "refIds": ["fawqa"],
+      "prompt": "Practice saying 'فوق' (above / over) out loud.",
+      "answer": "فوق"
+    },
+    {
+      "id": "l46-ex11",
+      "type": "speaking",
+      "refIds": ["amaama"],
+      "prompt": "Practice saying 'أمام' (in front of) out loud.",
+      "answer": "أمام"
+    },
+    {
+      "id": "l46-ex12",
+      "type": "speaking",
+      "refIds": ["khalfa"],
+      "prompt": "Practice saying 'خلف' (behind) out loud.",
+      "answer": "خلف"
+    },
+    {
+      "id": "l46-ex13",
+      "type": "speaking",
+      "refIds": ["bayna"],
+      "prompt": "Practice saying 'بين' (between) out loud.",
+      "answer": "بين"
+    }
+  ]
+}

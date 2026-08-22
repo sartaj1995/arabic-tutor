@@ -281,6 +281,71 @@ function BookIcon() {
   );
 }
 
+function Exclamation() {
+  return (
+    <>
+      <circle cx="10" cy="10" r="6.5" stroke="currentColor" strokeWidth="1.4" />
+      <path d="M10 6.5v4.3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+      <circle cx="10" cy="13.3" r="0.95" fill="currentColor" />
+    </>
+  );
+}
+
+function HandIcon() {
+  return (
+    <path
+      d="M8 9.5V4.3a1 1 0 0 1 2 0V9M10 9V3.6a1 1 0 0 1 2 0V9M12 9.2V5a1 1 0 0 1 2 0v6.5c0 3-2 5.5-4.8 5.5-2 0-3-.7-4-2L4.7 11a1.1 1.1 0 0 1 1.7-1.4L8 11.5"
+      stroke="currentColor"
+      strokeWidth="1.3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  );
+}
+
+function Compass() {
+  return (
+    <>
+      <circle cx="10" cy="10" r="6.5" stroke="currentColor" strokeWidth="1.4" />
+      <path
+        d="M12.5 7.5 11 11l-3.5 1.5L9 9l3.5-1.5Z"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinejoin="round"
+      />
+    </>
+  );
+}
+
+function Globe() {
+  return (
+    <>
+      <circle cx="10" cy="10" r="6.5" stroke="currentColor" strokeWidth="1.4" />
+      <path
+        d="M3.5 10h13M10 3.5c2.2 1.7 2.2 11.3 0 13M10 3.5c-2.2 1.7-2.2 11.3 0 13"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+    </>
+  );
+}
+
+function CapabilityIcon() {
+  return (
+    <>
+      <circle cx="10" cy="10" r="6.5" stroke="currentColor" strokeWidth="1.4" />
+      <path
+        d="M7 10.2l2 2 4-4.4"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </>
+  );
+}
+
 const RULES: Array<[string, () => JSX.Element]> = [
   ["Past Tense", ClockBack],
   ["Verbs", VerbAction],
@@ -300,7 +365,13 @@ const RULES: Array<[string, () => JSX.Element]> = [
   ["Days of the Week", Calendar],
   ["Plurals", Layers],
   ['"And"', LinkIcon],
+  ["Future Tense", ClockForward],
   ["Telling Time", ClockForward],
+  ["Imperative", Exclamation],
+  ["Body Parts", HandIcon],
+  ["Prepositions of Place", Compass],
+  ["Nisba", Globe],
+  ["To Be Able To", CapabilityIcon],
   ["Comparatives", Scale],
   ["Dual", TwoCircles],
   ["Weather", Cloud],

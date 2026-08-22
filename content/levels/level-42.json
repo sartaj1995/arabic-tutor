@@ -1,0 +1,164 @@
+{
+  "number": 42,
+  "title": "The Imperative — Giving Commands",
+  "newLetters": [],
+  "newVocab": ["idhhab", "idhhabi", "uktub", "kul"],
+  "newPatterns": ["imperative-command"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "idhhab",
+      "arabic": "اِذْهَبْ",
+      "arabicNoDiacritics": "اذهب",
+      "transliteration": "idhhab",
+      "english": "Go! (masc.)",
+      "partOfSpeech": "verb (imperative)",
+      "audio": { "id": "word_idhhab", "text": "اِذْهَبْ" },
+      "introducedInLevel": 42,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "idhhabi",
+      "arabic": "اِذْهَبِي",
+      "arabicNoDiacritics": "اذهبي",
+      "transliteration": "idhhabī",
+      "english": "Go! (fem.)",
+      "partOfSpeech": "verb (imperative)",
+      "audio": { "id": "word_idhhabi", "text": "اِذْهَبِي" },
+      "introducedInLevel": 42,
+      "tags": ["verb"]
+    },
+    {
+      "id": "uktub",
+      "arabic": "اُكْتُبْ",
+      "arabicNoDiacritics": "اكتب",
+      "transliteration": "uktub",
+      "english": "Write! (masc.)",
+      "partOfSpeech": "verb (imperative)",
+      "audio": { "id": "word_uktub", "text": "اُكْتُبْ" },
+      "introducedInLevel": 42,
+      "tags": ["verb"]
+    },
+    {
+      "id": "kul",
+      "arabic": "كُلْ",
+      "arabicNoDiacritics": "كل",
+      "transliteration": "kul",
+      "english": "Eat! (masc.)",
+      "partOfSpeech": "verb (imperative, irregular)",
+      "audio": { "id": "word_kul", "text": "كُلْ" },
+      "introducedInLevel": 42,
+      "tags": ["core", "verb", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "imperative-command",
+      "pattern": "[Imperative verb] + إِلَى + الـ[Place]",
+      "exampleArabic": "اذهب إلى المدرسة",
+      "exampleTransliteration": "idhhab ilā l-madrasati",
+      "exampleEnglish": "Go to school!",
+      "grammarNote": "The imperative is built from the jussive stem (the same stem لَمْ uses — level 32) with the تَـ/تَـ prefix stripped off, plus a helper vowel at the front so the word isn't unpronounceable: اِ- for most verbs (اِذْهَبْ, اِذْهَبِي — feminine just keeps the same ي ending as تَذْهَبِينَ), but اُ- when the verb's own vowel pattern is damma-type like كتب: اُكْتُبْ, not اِكْتُبْ. أَكَلَ ('to eat') is one of a small set of exceptions that drop the helper vowel entirely: كُلْ, not أُكُلْ — the same happens with أَخَذَ ('take') → خُذْ and أَمَرَ ('order') → مُرْ, not covered yet.",
+      "audio": { "id": "phrase_idhhab_almadrasa", "text": "اذهب إلى المدرسة" },
+      "introducedInLevel": 42
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l42-ex1",
+      "type": "multiple-choice",
+      "refIds": ["idhhab"],
+      "prompt": "What does 'اذهب' mean?",
+      "options": ["Go! (masc.)", "I go", "he went", "we go"],
+      "answer": "Go! (masc.)"
+    },
+    {
+      "id": "l42-ex2",
+      "type": "sentence-build",
+      "refIds": ["idhhab", "madrasa", "imperative-command"],
+      "prompt": "Arrange the tiles to say 'Go to school!'",
+      "options": ["اذهب", "إلى", "المدرسة"],
+      "answer": "اذهب إلى المدرسة"
+    },
+    {
+      "id": "l42-ex3",
+      "type": "multiple-choice",
+      "refIds": ["uktub", "kul"],
+      "prompt": "Why is 'كُلْ' irregular where 'اُكْتُبْ' is not?",
+      "options": [
+        "أكل drops the helper vowel entirely, unlike most verbs",
+        "كل is not really an imperative",
+        "there is no difference, both are regular",
+        "اكتب is the irregular one instead"
+      ],
+      "answer": "أكل drops the helper vowel entirely, unlike most verbs"
+    },
+    {
+      "id": "l42-ex4",
+      "type": "typing",
+      "refIds": ["idhhabi"],
+      "prompt": "Type the Arabic word for 'Go! (fem.)'.",
+      "answer": "اذهبي"
+    },
+    {
+      "id": "l42-ex5",
+      "type": "multiple-choice",
+      "refIds": ["uktub"],
+      "prompt": "What does 'اكتب' mean?",
+      "options": ["he went", "Write! (masc.)", "he eats", "how many / how much"],
+      "answer": "Write! (masc.)"
+    },
+    {
+      "id": "l42-ex6",
+      "type": "multiple-choice",
+      "refIds": ["uktub"],
+      "prompt": "Which word means 'Write! (masc.)'?",
+      "options": ["ذلك", "اكتب", "بيتك", "لست"],
+      "answer": "اكتب"
+    },
+    {
+      "id": "l42-ex7",
+      "type": "multiple-choice",
+      "refIds": ["kul"],
+      "prompt": "What does 'كل' mean?",
+      "options": ["you (fem.)", "I work", "he writes", "Eat! (masc.)"],
+      "answer": "Eat! (masc.)"
+    },
+    {
+      "id": "l42-ex8",
+      "type": "typing",
+      "refIds": ["kul"],
+      "prompt": "Type the Arabic word for 'Eat! (masc.)'.",
+      "answer": "كل"
+    },
+    {
+      "id": "l42-ex9",
+      "type": "speaking",
+      "refIds": ["idhhab"],
+      "prompt": "Practice saying 'اذهب' (Go! (masc.)) out loud.",
+      "answer": "اذهب"
+    },
+    {
+      "id": "l42-ex10",
+      "type": "speaking",
+      "refIds": ["idhhabi"],
+      "prompt": "Practice saying 'اذهبي' (Go! (fem.)) out loud.",
+      "answer": "اذهبي"
+    },
+    {
+      "id": "l42-ex11",
+      "type": "speaking",
+      "refIds": ["uktub"],
+      "prompt": "Practice saying 'اكتب' (Write! (masc.)) out loud.",
+      "answer": "اكتب"
+    },
+    {
+      "id": "l42-ex12",
+      "type": "speaking",
+      "refIds": ["kul"],
+      "prompt": "Practice saying 'كل' (Eat! (masc.)) out loud.",
+      "answer": "كل"
+    }
+  ]
+}
