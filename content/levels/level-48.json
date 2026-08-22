@@ -1,0 +1,231 @@
+{
+  "number": 48,
+  "title": "\"To Be Able To\" — يستطيع",
+  "newLetters": [],
+  "newVocab": ["astatiu", "tastatiu", "tastatieena", "yastatiu", "nastatiu", "an"],
+  "newPatterns": ["can-subordinate"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "astatiu",
+      "arabic": "أَسْتَطِيعُ",
+      "arabicNoDiacritics": "أستطيع",
+      "transliteration": "astaṭīʿu",
+      "english": "I can / I am able to",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_astatiu", "text": "أَسْتَطِيعُ" },
+      "introducedInLevel": 48,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tastatiu",
+      "arabic": "تَسْتَطِيعُ",
+      "arabicNoDiacritics": "تستطيع",
+      "transliteration": "tastaṭīʿu",
+      "english": "you (masc.) can / she can",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tastatiu", "text": "تَسْتَطِيعُ" },
+      "introducedInLevel": 48,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tastatieena",
+      "arabic": "تَسْتَطِيعِينَ",
+      "arabicNoDiacritics": "تستطيعين",
+      "transliteration": "tastaṭīʿīna",
+      "english": "you (fem.) can",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tastatieena", "text": "تَسْتَطِيعِينَ" },
+      "introducedInLevel": 48,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yastatiu",
+      "arabic": "يَسْتَطِيعُ",
+      "arabicNoDiacritics": "يستطيع",
+      "transliteration": "yastaṭīʿu",
+      "english": "he can",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yastatiu", "text": "يَسْتَطِيعُ" },
+      "introducedInLevel": 48,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nastatiu",
+      "arabic": "نَسْتَطِيعُ",
+      "arabicNoDiacritics": "نستطيع",
+      "transliteration": "nastaṭīʿu",
+      "english": "we can",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nastatiu", "text": "نَسْتَطِيعُ" },
+      "introducedInLevel": 48,
+      "tags": ["verb"]
+    },
+    {
+      "id": "an",
+      "arabic": "أَنْ",
+      "arabicNoDiacritics": "أن",
+      "transliteration": "an",
+      "english": "that / to [introduces a following verb]",
+      "partOfSpeech": "particle",
+      "audio": { "id": "word_an", "text": "أَنْ" },
+      "introducedInLevel": 48,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "can-subordinate",
+      "pattern": "[يستطيع form] + أَنْ + [Present-tense verb]",
+      "exampleArabic": "أستطيع أن أذهب",
+      "exampleTransliteration": "astaṭīʿu an adhhaba",
+      "exampleEnglish": "I can go.",
+      "grammarNote": "يستطيع ('to be able to/can') is a longer Form X verb (root ط-و-ع), but conjugates with the exact same six-pronoun prefix template you already know. أَنْ ('that/to') connects it to a second verb — and that second verb technically shifts into the subjunctive mood (منصوب), which for a regular verb just changes the final vowel (أَذْهَبُ → أَذْهَبَ), invisible here since diacritics aren't shown. So exactly like لَمْ and لَنْ, you don't need new vocabulary for the verb after أَنْ — reuse the present-tense form you already know.",
+      "audio": { "id": "phrase_astatiu_an_adhhab", "text": "أستطيع أن أذهب" },
+      "introducedInLevel": 48
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l48-ex1",
+      "type": "multiple-choice",
+      "refIds": ["astatiu"],
+      "prompt": "What does 'أستطيع' mean?",
+      "options": ["I can / I am able to", "I will", "I want", "I work"],
+      "answer": "I can / I am able to"
+    },
+    {
+      "id": "l48-ex2",
+      "type": "sentence-build",
+      "refIds": ["astatiu", "an", "adhhabu", "can-subordinate"],
+      "prompt": "Arrange the tiles to say 'I can go.'",
+      "options": ["أستطيع", "أن", "أذهب"],
+      "answer": "أستطيع أن أذهب"
+    },
+    {
+      "id": "l48-ex3",
+      "type": "multiple-choice",
+      "refIds": ["an"],
+      "prompt": "What does 'أن' do here?",
+      "options": [
+        "connects to a following verb ('that/to')",
+        "negates the verb",
+        "means 'and'",
+        "means 'will'"
+      ],
+      "answer": "connects to a following verb ('that/to')"
+    },
+    {
+      "id": "l48-ex4",
+      "type": "typing",
+      "refIds": ["yastatiu"],
+      "prompt": "Type the Arabic word for 'he can'.",
+      "answer": "يستطيع"
+    },
+    {
+      "id": "l48-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tastatiu"],
+      "prompt": "What does 'تستطيع' mean?",
+      "options": ["you (masc.) can / she can", "on", "we work", "I study"],
+      "answer": "you (masc.) can / she can"
+    },
+    {
+      "id": "l48-ex6",
+      "type": "multiple-choice",
+      "refIds": ["tastatiu"],
+      "prompt": "Which word means 'you (masc.) can / she can'?",
+      "options": ["ليس", "أين", "فوق", "تستطيع"],
+      "answer": "تستطيع"
+    },
+    {
+      "id": "l48-ex7",
+      "type": "multiple-choice",
+      "refIds": ["tastatieena"],
+      "prompt": "What does 'تستطيعين' mean?",
+      "options": ["in front of", "he wanted", "markets (irregular plural of سُوق)", "you (fem.) can"],
+      "answer": "you (fem.) can"
+    },
+    {
+      "id": "l48-ex8",
+      "type": "typing",
+      "refIds": ["tastatieena"],
+      "prompt": "Type the Arabic word for 'you (fem.) can'.",
+      "answer": "تستطيعين"
+    },
+    {
+      "id": "l48-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nastatiu"],
+      "prompt": "What does 'نستطيع' mean?",
+      "options": ["we can", "I eat", "one", "days (irregular plural of يَوْم)"],
+      "answer": "we can"
+    },
+    {
+      "id": "l48-ex10",
+      "type": "multiple-choice",
+      "refIds": ["nastatiu"],
+      "prompt": "Which word means 'we can'?",
+      "options": ["أردنا", "نستطيع", "تسعة", "تحت"],
+      "answer": "نستطيع"
+    },
+    {
+      "id": "l48-ex11",
+      "type": "multiple-choice",
+      "refIds": ["an"],
+      "prompt": "What does 'أن' mean?",
+      "options": ["that / to [introduces a following verb]", "how many / how much", "you (masc.) eat / she eats", "that (masc.)"],
+      "answer": "that / to [introduces a following verb]"
+    },
+    {
+      "id": "l48-ex12",
+      "type": "typing",
+      "refIds": ["an"],
+      "prompt": "Type the Arabic word for 'that / to [introduces a following verb]'.",
+      "answer": "أن"
+    },
+    {
+      "id": "l48-ex13",
+      "type": "speaking",
+      "refIds": ["astatiu"],
+      "prompt": "Practice saying 'أستطيع' (I can / I am able to) out loud.",
+      "answer": "أستطيع"
+    },
+    {
+      "id": "l48-ex14",
+      "type": "speaking",
+      "refIds": ["tastatiu"],
+      "prompt": "Practice saying 'تستطيع' (you (masc.) can / she can) out loud.",
+      "answer": "تستطيع"
+    },
+    {
+      "id": "l48-ex15",
+      "type": "speaking",
+      "refIds": ["tastatieena"],
+      "prompt": "Practice saying 'تستطيعين' (you (fem.) can) out loud.",
+      "answer": "تستطيعين"
+    },
+    {
+      "id": "l48-ex16",
+      "type": "speaking",
+      "refIds": ["yastatiu"],
+      "prompt": "Practice saying 'يستطيع' (he can) out loud.",
+      "answer": "يستطيع"
+    },
+    {
+      "id": "l48-ex17",
+      "type": "speaking",
+      "refIds": ["nastatiu"],
+      "prompt": "Practice saying 'نستطيع' (we can) out loud.",
+      "answer": "نستطيع"
+    },
+    {
+      "id": "l48-ex18",
+      "type": "speaking",
+      "refIds": ["an"],
+      "prompt": "Practice saying 'أن' (that / to [introduces a following verb]) out loud.",
+      "answer": "أن"
+    }
+  ]
+}

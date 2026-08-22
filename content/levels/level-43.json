@@ -1,0 +1,244 @@
+{
+  "number": 43,
+  "title": "Verbs — \"To Travel\"",
+  "newLetters": [],
+  "newVocab": ["usaafiru", "tusaafiru", "tusaafireena", "yusaafiru", "nusaafiru", "mataar", "taaira"],
+  "newPatterns": ["travel-by"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "usaafiru",
+      "arabic": "أُسَافِرُ",
+      "arabicNoDiacritics": "أسافر",
+      "transliteration": "usāfiru",
+      "english": "I travel",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_usaafiru", "text": "أُسَافِرُ" },
+      "introducedInLevel": 43,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tusaafiru",
+      "arabic": "تُسَافِرُ",
+      "arabicNoDiacritics": "تسافر",
+      "transliteration": "tusāfiru",
+      "english": "you (masc.) travel / she travels",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tusaafiru", "text": "تُسَافِرُ" },
+      "introducedInLevel": 43,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tusaafireena",
+      "arabic": "تُسَافِرِينَ",
+      "arabicNoDiacritics": "تسافرين",
+      "transliteration": "tusāfirīna",
+      "english": "you (fem.) travel",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tusaafireena", "text": "تُسَافِرِينَ" },
+      "introducedInLevel": 43,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yusaafiru",
+      "arabic": "يُسَافِرُ",
+      "arabicNoDiacritics": "يسافر",
+      "transliteration": "yusāfiru",
+      "english": "he travels",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yusaafiru", "text": "يُسَافِرُ" },
+      "introducedInLevel": 43,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nusaafiru",
+      "arabic": "نُسَافِرُ",
+      "arabicNoDiacritics": "نسافر",
+      "transliteration": "nusāfiru",
+      "english": "we travel",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nusaafiru", "text": "نُسَافِرُ" },
+      "introducedInLevel": 43,
+      "tags": ["verb"]
+    },
+    {
+      "id": "mataar",
+      "arabic": "مَطَارٌ",
+      "arabicNoDiacritics": "مطار",
+      "transliteration": "maṭārun",
+      "english": "an airport",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_mataar", "text": "مَطَارٌ" },
+      "introducedInLevel": 43,
+      "tags": ["core"]
+    },
+    {
+      "id": "taaira",
+      "arabic": "طَائِرَةٌ",
+      "arabicNoDiacritics": "طائرة",
+      "transliteration": "ṭāʾiratun",
+      "english": "an airplane",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_taaira", "text": "طَائِرَةٌ" },
+      "introducedInLevel": 43,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "travel-by",
+      "pattern": "[Verb] + بِالـ[Instrument]",
+      "exampleArabic": "أسافر بالطائرة",
+      "exampleTransliteration": "usāfiru bi-ṭ-ṭāʾirati",
+      "exampleEnglish": "I travel by plane.",
+      "grammarNote": "سافر is the first verb you've met outside the basic فَعَلَ pattern (Form I) — it's Form III (فَاعَلَ), marked by a long ا after the first root letter: سَافَرَ, not سَفَرَ. Form III present-tense prefixes take DAMMA, not fatha: أُسَافِرُ, تُسَافِرُ, تُسَافِرِينَ, يُسَافِرُ, نُسَافِرُ — otherwise the same six-pronoun template you already know. بِالطَّائِرَةِ ('by plane') reuses بِ ('with/by', level 34) exactly the way it introduced بِالْقَلَمِ.",
+      "audio": { "id": "phrase_usaafiru_bialtaaira", "text": "أسافر بالطائرة" },
+      "introducedInLevel": 43
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l43-ex1",
+      "type": "multiple-choice",
+      "refIds": ["usaafiru"],
+      "prompt": "What does 'أسافر' mean?",
+      "options": ["I travel", "I go", "I work", "I study"],
+      "answer": "I travel"
+    },
+    {
+      "id": "l43-ex2",
+      "type": "sentence-build",
+      "refIds": ["usaafiru", "taaira", "travel-by"],
+      "prompt": "Arrange the tiles to say 'I travel by plane.'",
+      "options": ["أسافر", "بالطائرة"],
+      "answer": "أسافر بالطائرة"
+    },
+    {
+      "id": "l43-ex3",
+      "type": "multiple-choice",
+      "refIds": ["mataar"],
+      "prompt": "What does 'مطار' mean?",
+      "options": ["an airport", "an airplane", "an office", "a market"],
+      "answer": "an airport"
+    },
+    {
+      "id": "l43-ex4",
+      "type": "typing",
+      "refIds": ["taaira"],
+      "prompt": "Type the Arabic word for 'an airplane'.",
+      "answer": "طائرة"
+    },
+    {
+      "id": "l43-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tusaafiru"],
+      "prompt": "What does 'تسافر' mean?",
+      "options": ["we went", "he writes", "you (masc.) travel / she travels", "we go"],
+      "answer": "you (masc.) travel / she travels"
+    },
+    {
+      "id": "l43-ex6",
+      "type": "multiple-choice",
+      "refIds": ["tusaafiru"],
+      "prompt": "Which word means 'you (masc.) travel / she travels'?",
+      "options": ["تسافر", "تعملين", "نافذة", "الشتاء"],
+      "answer": "تسافر"
+    },
+    {
+      "id": "l43-ex7",
+      "type": "multiple-choice",
+      "refIds": ["tusaafireena"],
+      "prompt": "What does 'تسافرين' mean?",
+      "options": ["I read", "house", "the book", "you (fem.) travel"],
+      "answer": "you (fem.) travel"
+    },
+    {
+      "id": "l43-ex8",
+      "type": "typing",
+      "refIds": ["tusaafireena"],
+      "prompt": "Type the Arabic word for 'you (fem.) travel'.",
+      "answer": "تسافرين"
+    },
+    {
+      "id": "l43-ex9",
+      "type": "multiple-choice",
+      "refIds": ["yusaafiru"],
+      "prompt": "What does 'يسافر' mean?",
+      "options": ["you (fem.) drink", "on", "he travels", "she wanted"],
+      "answer": "he travels"
+    },
+    {
+      "id": "l43-ex10",
+      "type": "multiple-choice",
+      "refIds": ["yusaafiru"],
+      "prompt": "Which word means 'he travels'?",
+      "options": ["جميل", "تفاح", "يسافر", "حار"],
+      "answer": "يسافر"
+    },
+    {
+      "id": "l43-ex11",
+      "type": "multiple-choice",
+      "refIds": ["nusaafiru"],
+      "prompt": "What does 'نسافر' mean?",
+      "options": ["the fourth (fem.)", "we travel", "pens (irregular plural of قَلَم)", "you (masc.) work / she works"],
+      "answer": "we travel"
+    },
+    {
+      "id": "l43-ex12",
+      "type": "typing",
+      "refIds": ["nusaafiru"],
+      "prompt": "Type the Arabic word for 'we travel'.",
+      "answer": "نسافر"
+    },
+    {
+      "id": "l43-ex13",
+      "type": "speaking",
+      "refIds": ["usaafiru"],
+      "prompt": "Practice saying 'أسافر' (I travel) out loud.",
+      "answer": "أسافر"
+    },
+    {
+      "id": "l43-ex14",
+      "type": "speaking",
+      "refIds": ["tusaafiru"],
+      "prompt": "Practice saying 'تسافر' (you (masc.) travel / she travels) out loud.",
+      "answer": "تسافر"
+    },
+    {
+      "id": "l43-ex15",
+      "type": "speaking",
+      "refIds": ["tusaafireena"],
+      "prompt": "Practice saying 'تسافرين' (you (fem.) travel) out loud.",
+      "answer": "تسافرين"
+    },
+    {
+      "id": "l43-ex16",
+      "type": "speaking",
+      "refIds": ["yusaafiru"],
+      "prompt": "Practice saying 'يسافر' (he travels) out loud.",
+      "answer": "يسافر"
+    },
+    {
+      "id": "l43-ex17",
+      "type": "speaking",
+      "refIds": ["nusaafiru"],
+      "prompt": "Practice saying 'نسافر' (we travel) out loud.",
+      "answer": "نسافر"
+    },
+    {
+      "id": "l43-ex18",
+      "type": "speaking",
+      "refIds": ["mataar"],
+      "prompt": "Practice saying 'مطار' (an airport) out loud.",
+      "answer": "مطار"
+    },
+    {
+      "id": "l43-ex19",
+      "type": "speaking",
+      "refIds": ["taaira"],
+      "prompt": "Practice saying 'طائرة' (an airplane) out loud.",
+      "answer": "طائرة"
+    }
+  ]
+}

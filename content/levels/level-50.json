@@ -1,0 +1,91 @@
+{
+  "number": 50,
+  "title": "Review — Levels 41–50",
+  "newLetters": [],
+  "newVocab": ["qaleelan"],
+  "newPatterns": ["review-capstone-3"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "qaleelan",
+      "arabic": "قَلِيلًا",
+      "arabicNoDiacritics": "قليلا",
+      "transliteration": "qalīlan",
+      "english": "a little / a few",
+      "partOfSpeech": "adverb",
+      "audio": { "id": "word_qaleelan", "text": "قَلِيلًا" },
+      "introducedInLevel": 50,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "review-capstone-3",
+      "pattern": "سَ + [Verb] + إِلَى + الـ[Place] + غَدًا، وَ + [يستطيع form] + أَنْ + [Verb]",
+      "exampleArabic": "سأذهب إلى المطار غدا وأستطيع أن أسافر",
+      "exampleTransliteration": "sa-adhhabu ilā l-maṭāri ghadan wa-astaṭīʿu an usāfira",
+      "exampleEnglish": "Tomorrow I will go to the airport, and I am able to travel.",
+      "grammarNote": "A closing capstone for levels 41-50: the سَـ future (level 41) joined by وَ (level 20) to أَسْتَطِيعُ أَنْ + a reused present-tense verb (level 48), reusing المطار and أسافر from levels 43. Halfway to 100 — 50 of 100 levels down. قَلِيلًا ('a little/a few') takes the same -ًا accusative-adverb ending you've now seen on غَدًا, أَمْسًا-type words, and جِدًّا — it can soften an adjective (بَارِدٌ قَلِيلًا, 'a little cold') or modify a verb.",
+      "audio": { "id": "phrase_sa_adhhab_almataar_wa_astatiu_an_usaafir", "text": "سأذهب إلى المطار غدا وأستطيع أن أسافر" },
+      "introducedInLevel": 50
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l50-ex1",
+      "type": "multiple-choice",
+      "refIds": ["qaleelan"],
+      "prompt": "What does 'قليلا' mean?",
+      "options": ["a little / a few", "a lot / often", "also / too", "very"],
+      "answer": "a little / a few"
+    },
+    {
+      "id": "l50-ex2",
+      "type": "sentence-build",
+      "refIds": ["sa", "adhhabu", "mataar", "ghadan", "astatiu", "an", "usaafiru", "review-capstone-3"],
+      "prompt": "Arrange the tiles to say 'Tomorrow I will go to the airport, and I am able to travel.'",
+      "options": ["سأذهب", "إلى", "المطار", "غدا", "وأستطيع", "أن", "أسافر"],
+      "answer": "سأذهب إلى المطار غدا وأستطيع أن أسافر"
+    },
+    {
+      "id": "l50-ex3",
+      "type": "multiple-choice",
+      "refIds": ["idhhab"],
+      "prompt": "Review: what does 'اذهب' mean?",
+      "options": ["Go! (masc.)", "I go", "he went", "will go"],
+      "answer": "Go! (masc.)"
+    },
+    {
+      "id": "l50-ex4",
+      "type": "multiple-choice",
+      "refIds": ["yad"],
+      "prompt": "Review: what does 'يد' mean?",
+      "options": ["a hand", "an eye", "an ear", "a head"],
+      "answer": "a hand"
+    },
+    {
+      "id": "l50-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tahta"],
+      "prompt": "Review: what does 'تحت' mean?",
+      "options": ["under", "above / over", "behind", "between"],
+      "answer": "under"
+    },
+    {
+      "id": "l50-ex6",
+      "type": "multiple-choice",
+      "refIds": ["misri"],
+      "prompt": "Review: what does 'مصري' mean?",
+      "options": ["Egyptian", "Arab / Arabic", "American", "a market"],
+      "answer": "Egyptian"
+    },
+    {
+      "id": "l50-ex7",
+      "type": "speaking",
+      "refIds": ["qaleelan"],
+      "prompt": "Practice saying 'قليلا' (a little / a few) out loud.",
+      "answer": "قليلا"
+    }
+  ]
+}

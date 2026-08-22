@@ -17,6 +17,7 @@ const UNIT_THEMES: { title: string; arabic: string }[] = [
   { title: "Verbs & Grammar", arabic: "الأفعال" },
   { title: "Past Tense & Plurals", arabic: "الماضي" },
   { title: "Everyday Structures", arabic: "الحياة اليومية" },
+  { title: "Real-World Arabic", arabic: "الحياة العملية" },
 ];
 
 function CheckIcon() {

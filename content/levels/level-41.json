@@ -1,0 +1,118 @@
+{
+  "number": 41,
+  "title": "The Future Tense",
+  "newLetters": [],
+  "newVocab": ["sa", "sawfa"],
+  "newPatterns": ["sa-future"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "sa",
+      "arabic": "سَ",
+      "arabicNoDiacritics": "س",
+      "transliteration": "sa-",
+      "english": "will [near future — attaches directly to the verb]",
+      "partOfSpeech": "particle",
+      "audio": { "id": "word_sa", "text": "سَ" },
+      "introducedInLevel": 41,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "sawfa",
+      "arabic": "سَوْفَ",
+      "arabicNoDiacritics": "سوف",
+      "transliteration": "sawfa",
+      "english": "will [future — a separate word]",
+      "partOfSpeech": "particle",
+      "audio": { "id": "word_sawfa", "text": "سَوْفَ" },
+      "introducedInLevel": 41,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "sa-future",
+      "pattern": "سَ + [Present-tense verb]",
+      "exampleArabic": "سأذهب إلى السوق غدا",
+      "exampleTransliteration": "sa-adhhabu ilā s-sūqi ghadan",
+      "exampleEnglish": "I will go to the market tomorrow.",
+      "grammarNote": "Like لَمْ and لَنْ (level 32), the future doesn't need new verb forms — it just pairs with the present tense you already know. سَ attaches directly to the verb with no space, like وَ and بِ: سَأَذْهَبُ, not سَ أَذْهَبُ. سَوْفَ is the same meaning as a separate word, slightly more formal or emphatic — سَوْفَ أَذْهَبُ and سَأَذْهَبُ both mean 'I will go'. You now have all three futures: سَـ/سَوْفَ ('will'), لَنْ ('will not', level 32).",
+      "audio": { "id": "phrase_sa_adhhab_alsuuq_ghadan", "text": "سأذهب إلى السوق غدا" },
+      "introducedInLevel": 41
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l41-ex1",
+      "type": "multiple-choice",
+      "refIds": ["sa"],
+      "prompt": "What does 'س' do here?",
+      "options": [
+        "marks the near future ('will')",
+        "negates the past ('did not')",
+        "means 'and'",
+        "means 'with'"
+      ],
+      "answer": "marks the near future ('will')"
+    },
+    {
+      "id": "l41-ex2",
+      "type": "sentence-build",
+      "refIds": ["sa", "adhhabu", "suuq", "ghadan", "sa-future"],
+      "prompt": "Arrange the tiles to say 'I will go to the market tomorrow.'",
+      "options": ["سأذهب", "إلى", "السوق", "غدا"],
+      "answer": "سأذهب إلى السوق غدا"
+    },
+    {
+      "id": "l41-ex3",
+      "type": "multiple-choice",
+      "refIds": ["sawfa"],
+      "prompt": "What does 'سوف' mean?",
+      "options": [
+        "will [future]",
+        "will not",
+        "did not",
+        "yesterday"
+      ],
+      "answer": "will [future]"
+    },
+    {
+      "id": "l41-ex4",
+      "type": "typing",
+      "refIds": ["sawfa"],
+      "prompt": "Type the Arabic word for 'will [future]'.",
+      "answer": "سوف"
+    },
+    {
+      "id": "l41-ex5",
+      "type": "multiple-choice",
+      "refIds": ["sa"],
+      "prompt": "What does 'س' mean?",
+      "options": ["two boys", "hot", "will [near future — attaches directly to the verb]", "he goes"],
+      "answer": "will [near future — attaches directly to the verb]"
+    },
+    {
+      "id": "l41-ex6",
+      "type": "multiple-choice",
+      "refIds": ["sa"],
+      "prompt": "Which word means 'will [near future — attaches directly to the verb]'?",
+      "options": ["لست", "س", "جبال", "لم"],
+      "answer": "س"
+    },
+    {
+      "id": "l41-ex7",
+      "type": "speaking",
+      "refIds": ["sa"],
+      "prompt": "Practice saying 'س' (will [near future — attaches directly to the verb]) out loud.",
+      "answer": "س"
+    },
+    {
+      "id": "l41-ex8",
+      "type": "speaking",
+      "refIds": ["sawfa"],
+      "prompt": "Practice saying 'سوف' (will [future — a separate word]) out loud.",
+      "answer": "سوف"
+    }
+  ]
+}

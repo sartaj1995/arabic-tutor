@@ -1,0 +1,177 @@
+{
+  "number": 44,
+  "title": "Verbs — \"To Study\"",
+  "newLetters": [],
+  "newVocab": ["adrusu", "tadrusu", "tadruseena", "yadrusu", "nadrusu"],
+  "newPatterns": ["study-place"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "adrusu",
+      "arabic": "أَدْرُسُ",
+      "arabicNoDiacritics": "أدرس",
+      "transliteration": "adrusu",
+      "english": "I study",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_adrusu", "text": "أَدْرُسُ" },
+      "introducedInLevel": 44,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tadrusu",
+      "arabic": "تَدْرُسُ",
+      "arabicNoDiacritics": "تدرس",
+      "transliteration": "tadrusu",
+      "english": "you (masc.) study / she studies",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tadrusu", "text": "تَدْرُسُ" },
+      "introducedInLevel": 44,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tadruseena",
+      "arabic": "تَدْرُسِينَ",
+      "arabicNoDiacritics": "تدرسين",
+      "transliteration": "tadrusīna",
+      "english": "you (fem.) study",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tadruseena", "text": "تَدْرُسِينَ" },
+      "introducedInLevel": 44,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yadrusu",
+      "arabic": "يَدْرُسُ",
+      "arabicNoDiacritics": "يدرس",
+      "transliteration": "yadrusu",
+      "english": "he studies",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yadrusu", "text": "يَدْرُسُ" },
+      "introducedInLevel": 44,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nadrusu",
+      "arabic": "نَدْرُسُ",
+      "arabicNoDiacritics": "ندرس",
+      "transliteration": "nadrusu",
+      "english": "we study",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nadrusu", "text": "نَدْرُسُ" },
+      "introducedInLevel": 44,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "study-place",
+      "pattern": "[Verb] + فِي + الـ[Place]",
+      "exampleArabic": "أدرس في الجامعة",
+      "exampleTransliteration": "adrusu fī l-jāmiʿati",
+      "exampleEnglish": "I study at the university.",
+      "grammarNote": "درس is back to Form I, but with the DAMMA stem-vowel pattern (yadrusu) instead of the fatha pattern you've mostly seen (yadhhabu, yaʿmalu) — the same pattern as كتب/يكتب. Its imperative would follow the same damma-prosthetic rule as اُكْتُبْ: اُدْرُسْ, though it isn't drilled here. No new nouns this level — فِي الْجَامِعَةِ reuses level 13's noun directly.",
+      "audio": { "id": "phrase_adrusu_fi_aljaamia", "text": "أدرس في الجامعة" },
+      "introducedInLevel": 44
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l44-ex1",
+      "type": "multiple-choice",
+      "refIds": ["adrusu"],
+      "prompt": "What does 'أدرس' mean?",
+      "options": ["I study", "I travel", "I write", "I work"],
+      "answer": "I study"
+    },
+    {
+      "id": "l44-ex2",
+      "type": "sentence-build",
+      "refIds": ["adrusu", "jaamiaa", "study-place"],
+      "prompt": "Arrange the tiles to say 'I study at the university.'",
+      "options": ["أدرس", "في", "الجامعة"],
+      "answer": "أدرس في الجامعة"
+    },
+    {
+      "id": "l44-ex3",
+      "type": "multiple-choice",
+      "refIds": ["yadrusu"],
+      "prompt": "What does 'يدرس' mean?",
+      "options": ["he studies", "he travels", "he writes", "we study"],
+      "answer": "he studies"
+    },
+    {
+      "id": "l44-ex4",
+      "type": "typing",
+      "refIds": ["nadrusu"],
+      "prompt": "Type the Arabic word for 'we study'.",
+      "answer": "ندرس"
+    },
+    {
+      "id": "l44-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tadrusu"],
+      "prompt": "What does 'تدرس' mean?",
+      "options": ["the man", "you (masc.) study / she studies", "houses (irregular plural of بَيْت)", "pen"],
+      "answer": "you (masc.) study / she studies"
+    },
+    {
+      "id": "l44-ex6",
+      "type": "multiple-choice",
+      "refIds": ["tadrusu"],
+      "prompt": "Which word means 'you (masc.) study / she studies'?",
+      "options": ["قلم", "الشتاء", "يأكل", "تدرس"],
+      "answer": "تدرس"
+    },
+    {
+      "id": "l44-ex7",
+      "type": "multiple-choice",
+      "refIds": ["tadruseena"],
+      "prompt": "What does 'تدرسين' mean?",
+      "options": ["you (fem.) study", "window", "pens (irregular plural of قَلَم)", "they (masc./mixed)"],
+      "answer": "you (fem.) study"
+    },
+    {
+      "id": "l44-ex8",
+      "type": "typing",
+      "refIds": ["tadruseena"],
+      "prompt": "Type the Arabic word for 'you (fem.) study'.",
+      "answer": "تدرسين"
+    },
+    {
+      "id": "l44-ex9",
+      "type": "speaking",
+      "refIds": ["adrusu"],
+      "prompt": "Practice saying 'أدرس' (I study) out loud.",
+      "answer": "أدرس"
+    },
+    {
+      "id": "l44-ex10",
+      "type": "speaking",
+      "refIds": ["tadrusu"],
+      "prompt": "Practice saying 'تدرس' (you (masc.) study / she studies) out loud.",
+      "answer": "تدرس"
+    },
+    {
+      "id": "l44-ex11",
+      "type": "speaking",
+      "refIds": ["tadruseena"],
+      "prompt": "Practice saying 'تدرسين' (you (fem.) study) out loud.",
+      "answer": "تدرسين"
+    },
+    {
+      "id": "l44-ex12",
+      "type": "speaking",
+      "refIds": ["yadrusu"],
+      "prompt": "Practice saying 'يدرس' (he studies) out loud.",
+      "answer": "يدرس"
+    },
+    {
+      "id": "l44-ex13",
+      "type": "speaking",
+      "refIds": ["nadrusu"],
+      "prompt": "Practice saying 'ندرس' (we study) out loud.",
+      "answer": "ندرس"
+    }
+  ]
+}

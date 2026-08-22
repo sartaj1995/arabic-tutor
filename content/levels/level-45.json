@@ -1,0 +1,182 @@
+{
+  "number": 45,
+  "title": "Body Parts",
+  "newLetters": [],
+  "newVocab": ["raas", "yad", "ayn", "udhun", "fam"],
+  "newPatterns": ["body-part-agreement"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "raas",
+      "arabic": "رَأْسٌ",
+      "arabicNoDiacritics": "رأس",
+      "transliteration": "raʾsun",
+      "english": "a head",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_raas", "text": "رَأْسٌ" },
+      "introducedInLevel": 45,
+      "tags": ["core"]
+    },
+    {
+      "id": "yad",
+      "arabic": "يَدٌ",
+      "arabicNoDiacritics": "يد",
+      "transliteration": "yadun",
+      "english": "a hand",
+      "partOfSpeech": "noun (fem.)",
+      "audio": { "id": "word_yad", "text": "يَدٌ" },
+      "introducedInLevel": 45,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "ayn",
+      "arabic": "عَيْنٌ",
+      "arabicNoDiacritics": "عين",
+      "transliteration": "ʿaynun",
+      "english": "an eye",
+      "partOfSpeech": "noun (fem.)",
+      "audio": { "id": "word_ayn", "text": "عَيْنٌ" },
+      "introducedInLevel": 45,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "udhun",
+      "arabic": "أُذُنٌ",
+      "arabicNoDiacritics": "أذن",
+      "transliteration": "udhunun",
+      "english": "an ear",
+      "partOfSpeech": "noun (fem.)",
+      "audio": { "id": "word_udhun", "text": "أُذُنٌ" },
+      "introducedInLevel": 45,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "fam",
+      "arabic": "فَمٌ",
+      "arabicNoDiacritics": "فم",
+      "transliteration": "famun",
+      "english": "a mouth",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_fam", "text": "فَمٌ" },
+      "introducedInLevel": 45,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "body-part-agreement",
+      "pattern": "[Body Part]ِي + [Fem. Adjective]",
+      "exampleArabic": "يدي كبيرة",
+      "exampleTransliteration": "yadī kabīratun",
+      "exampleEnglish": "My hand is big.",
+      "grammarNote": "يَد ('hand'), عَيْن ('eye'), and أُذُن ('ear') are irregularly feminine even though none of them end in ة — a small set of body-part and nature words work this way, and just have to be memorized alongside the word. Adjectives still have to agree: يَدِي كَبِيرَةٌ ('my hand is big'), with the feminine كَبِيرَة, not the masculine كَبِير you'd expect from a word with no ة. يَدِي applies the possessive ي- ending from level 9 to a new noun, same as جَدِّي did in level 28.",
+      "audio": { "id": "phrase_yadi_kabiira", "text": "يدي كبيرة" },
+      "introducedInLevel": 45
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l45-ex1",
+      "type": "multiple-choice",
+      "refIds": ["raas"],
+      "prompt": "What does 'رأس' mean?",
+      "options": ["a head", "a hand", "an eye", "a mouth"],
+      "answer": "a head"
+    },
+    {
+      "id": "l45-ex2",
+      "type": "multiple-choice",
+      "refIds": ["body-part-agreement"],
+      "prompt": "What does this mean? يدي كبيرة",
+      "options": [
+        "My hand is big.",
+        "My head is big.",
+        "My hand is small.",
+        "The hand is big."
+      ],
+      "answer": "My hand is big."
+    },
+    {
+      "id": "l45-ex3",
+      "type": "matching",
+      "refIds": ["yad", "ayn", "udhun", "fam"],
+      "prompt": "Match the body part to its meaning: عَيْن",
+      "options": ["an eye", "a hand", "an ear", "a mouth"],
+      "answer": "an eye"
+    },
+    {
+      "id": "l45-ex4",
+      "type": "typing",
+      "refIds": ["udhun"],
+      "prompt": "Type the Arabic word for 'an ear'.",
+      "answer": "أذن"
+    },
+    {
+      "id": "l45-ex5",
+      "type": "multiple-choice",
+      "refIds": ["yad"],
+      "prompt": "What does 'يد' mean?",
+      "options": ["a hand", "you (fem.) drink", "more / most beautiful", "will [near future — attaches directly to the verb]"],
+      "answer": "a hand"
+    },
+    {
+      "id": "l45-ex6",
+      "type": "multiple-choice",
+      "refIds": ["yad"],
+      "prompt": "Which word means 'a hand'?",
+      "options": ["الثالثة", "مكتب", "لست", "يد"],
+      "answer": "يد"
+    },
+    {
+      "id": "l45-ex7",
+      "type": "multiple-choice",
+      "refIds": ["fam"],
+      "prompt": "What does 'فم' mean?",
+      "options": ["you (masc.) are not", "you (fem.) study", "Write! (masc.)", "a mouth"],
+      "answer": "a mouth"
+    },
+    {
+      "id": "l45-ex8",
+      "type": "typing",
+      "refIds": ["fam"],
+      "prompt": "Type the Arabic word for 'a mouth'.",
+      "answer": "فم"
+    },
+    {
+      "id": "l45-ex9",
+      "type": "speaking",
+      "refIds": ["raas"],
+      "prompt": "Practice saying 'رأس' (a head) out loud.",
+      "answer": "رأس"
+    },
+    {
+      "id": "l45-ex10",
+      "type": "speaking",
+      "refIds": ["yad"],
+      "prompt": "Practice saying 'يد' (a hand) out loud.",
+      "answer": "يد"
+    },
+    {
+      "id": "l45-ex11",
+      "type": "speaking",
+      "refIds": ["ayn"],
+      "prompt": "Practice saying 'عين' (an eye) out loud.",
+      "answer": "عين"
+    },
+    {
+      "id": "l45-ex12",
+      "type": "speaking",
+      "refIds": ["udhun"],
+      "prompt": "Practice saying 'أذن' (an ear) out loud.",
+      "answer": "أذن"
+    },
+    {
+      "id": "l45-ex13",
+      "type": "speaking",
+      "refIds": ["fam"],
+      "prompt": "Practice saying 'فم' (a mouth) out loud.",
+      "answer": "فم"
+    }
+  ]
+}
