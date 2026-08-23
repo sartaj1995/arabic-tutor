@@ -1,0 +1,227 @@
+{
+  "number": 54,
+  "title": "Verbs — \"To Teach\" (Form II)",
+  "newLetters": [],
+  "newVocab": ["uallimu", "tuallimu", "tuallimeena", "yuallimu", "nuallimu", "talib"],
+  "newPatterns": ["teach-someone"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "uallimu",
+      "arabic": "أُعَلِّمُ",
+      "arabicNoDiacritics": "أعلم",
+      "transliteration": "uʿallimu",
+      "english": "I teach",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_uallimu", "text": "أُعَلِّمُ" },
+      "introducedInLevel": 54,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tuallimu",
+      "arabic": "تُعَلِّمُ",
+      "arabicNoDiacritics": "تعلم",
+      "transliteration": "tuʿallimu",
+      "english": "you (masc.) teach / she teaches",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tuallimu", "text": "تُعَلِّمُ" },
+      "introducedInLevel": 54,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tuallimeena",
+      "arabic": "تُعَلِّمِينَ",
+      "arabicNoDiacritics": "تعلمين",
+      "transliteration": "tuʿallimīna",
+      "english": "you (fem.) teach",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tuallimeena", "text": "تُعَلِّمِينَ" },
+      "introducedInLevel": 54,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yuallimu",
+      "arabic": "يُعَلِّمُ",
+      "arabicNoDiacritics": "يعلم",
+      "transliteration": "yuʿallimu",
+      "english": "he teaches",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yuallimu", "text": "يُعَلِّمُ" },
+      "introducedInLevel": 54,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nuallimu",
+      "arabic": "نُعَلِّمُ",
+      "arabicNoDiacritics": "نعلم",
+      "transliteration": "nuʿallimu",
+      "english": "we teach",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nuallimu", "text": "نُعَلِّمُ" },
+      "introducedInLevel": 54,
+      "tags": ["verb"]
+    },
+    {
+      "id": "talib",
+      "arabic": "طَالِبٌ",
+      "arabicNoDiacritics": "طالب",
+      "transliteration": "ṭālibun",
+      "english": "a student",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_talib", "text": "طَالِبٌ" },
+      "introducedInLevel": 54,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "teach-someone",
+      "pattern": "[Verb] + الـ[Direct object]",
+      "exampleArabic": "أعلم الطالب",
+      "exampleTransliteration": "uʿallimu ṭ-ṭāliba",
+      "exampleEnglish": "I teach the student.",
+      "grammarNote": "عَلَّمَ ('to teach') is the first Form II (فَعَّلَ) verb — marked by a doubled middle root letter, shown with a shadda: عَلَّمَ, not عَلَمَ. Like Form III (سافر, level 43), Form II's present-tense prefix takes damma, not fatha: أُعَلِّمُ, تُعَلِّمُ, تُعَلِّمِينَ, يُعَلِّمُ, نُعَلِّمُ — same six-pronoun template, different stem shape. Form II often carries a causative sense next to its Form I root meaning ('to know' → 'to cause to know', i.e. teach). طَالِبٌ ('a student') takes الـ exactly like any other noun.",
+      "audio": { "id": "phrase_uallimu_altalib", "text": "أعلم الطالب" },
+      "introducedInLevel": 54
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l54-ex1",
+      "type": "multiple-choice",
+      "refIds": ["uallimu"],
+      "prompt": "What does 'أعلم' mean?",
+      "options": ["I teach", "I study", "I work", "I write"],
+      "answer": "I teach"
+    },
+    {
+      "id": "l54-ex2",
+      "type": "sentence-build",
+      "refIds": ["uallimu", "talib", "teach-someone"],
+      "prompt": "Arrange the tiles to say 'I teach the student.'",
+      "options": ["أعلم", "الطالب"],
+      "answer": "أعلم الطالب"
+    },
+    {
+      "id": "l54-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tuallimu"],
+      "prompt": "What does 'تعلم' mean?",
+      "options": ["yesterday", "black", "a little / a few", "you (masc.) teach / she teaches"],
+      "answer": "you (masc.) teach / she teaches"
+    },
+    {
+      "id": "l54-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tuallimu"],
+      "prompt": "Which word means 'you (masc.) teach / she teaches'?",
+      "options": ["ليست", "أين", "تعلم", "نريد"],
+      "answer": "تعلم"
+    },
+    {
+      "id": "l54-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tuallimeena"],
+      "prompt": "What does 'تعلمين' mean?",
+      "options": ["you (fem.) teach", "door", "house", "you (fem.)"],
+      "answer": "you (fem.) teach"
+    },
+    {
+      "id": "l54-ex6",
+      "type": "typing",
+      "refIds": ["tuallimeena"],
+      "prompt": "Type the Arabic word for 'you (fem.) teach'.",
+      "answer": "تعلمين"
+    },
+    {
+      "id": "l54-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yuallimu"],
+      "prompt": "What does 'يعلم' mean?",
+      "options": ["I / you (masc.) / you (fem.) / she went", "hello (lit. 'peace be upon you')", "one", "he teaches"],
+      "answer": "he teaches"
+    },
+    {
+      "id": "l54-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yuallimu"],
+      "prompt": "Which word means 'he teaches'?",
+      "options": ["فم", "يعلم", "شاي", "قرأنا"],
+      "answer": "يعلم"
+    },
+    {
+      "id": "l54-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nuallimu"],
+      "prompt": "What does 'نعلم' mean?",
+      "options": ["you (masc.) drink / she drinks", "door", "car", "we teach"],
+      "answer": "we teach"
+    },
+    {
+      "id": "l54-ex10",
+      "type": "typing",
+      "refIds": ["nuallimu"],
+      "prompt": "Type the Arabic word for 'we teach'.",
+      "answer": "نعلم"
+    },
+    {
+      "id": "l54-ex11",
+      "type": "multiple-choice",
+      "refIds": ["talib"],
+      "prompt": "What does 'طالب' mean?",
+      "options": ["they (fem.)", "you (fem.) write", "a student", "nineteen"],
+      "answer": "a student"
+    },
+    {
+      "id": "l54-ex12",
+      "type": "multiple-choice",
+      "refIds": ["talib"],
+      "prompt": "Which word means 'a student'?",
+      "options": ["عشرون", "طالب", "واحد", "مطار"],
+      "answer": "طالب"
+    },
+    {
+      "id": "l54-ex13",
+      "type": "speaking",
+      "refIds": ["uallimu"],
+      "prompt": "Practice saying 'أعلم' (I teach) out loud.",
+      "answer": "أعلم"
+    },
+    {
+      "id": "l54-ex14",
+      "type": "speaking",
+      "refIds": ["tuallimu"],
+      "prompt": "Practice saying 'تعلم' (you (masc.) teach / she teaches) out loud.",
+      "answer": "تعلم"
+    },
+    {
+      "id": "l54-ex15",
+      "type": "speaking",
+      "refIds": ["tuallimeena"],
+      "prompt": "Practice saying 'تعلمين' (you (fem.) teach) out loud.",
+      "answer": "تعلمين"
+    },
+    {
+      "id": "l54-ex16",
+      "type": "speaking",
+      "refIds": ["yuallimu"],
+      "prompt": "Practice saying 'يعلم' (he teaches) out loud.",
+      "answer": "يعلم"
+    },
+    {
+      "id": "l54-ex17",
+      "type": "speaking",
+      "refIds": ["nuallimu"],
+      "prompt": "Practice saying 'نعلم' (we teach) out loud.",
+      "answer": "نعلم"
+    },
+    {
+      "id": "l54-ex18",
+      "type": "speaking",
+      "refIds": ["talib"],
+      "prompt": "Practice saying 'طالب' (a student) out loud.",
+      "answer": "طالب"
+    }
+  ]
+}

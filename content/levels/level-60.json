@@ -1,0 +1,115 @@
+{
+  "number": 60,
+  "title": "Review — Levels 51–60",
+  "newLetters": [],
+  "newVocab": ["daaiman"],
+  "newPatterns": ["review-capstone-4"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "daaiman",
+      "arabic": "دَائِمًا",
+      "arabicNoDiacritics": "دائما",
+      "transliteration": "dāʾiman",
+      "english": "always",
+      "partOfSpeech": "adverb",
+      "audio": { "id": "word_daaiman", "text": "دَائِمًا" },
+      "introducedInLevel": 60,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "review-capstone-4",
+      "pattern": "إِذَا + [Past-tense verb] + الـ[Noun] + الذي/التي + [Verb clause]، + سَـ[Verb]",
+      "exampleArabic": "إذا ذهب الرجل الذي يعمل في المكتب سيأكل",
+      "exampleTransliteration": "idhā dhahaba r-rajulu lladhī yaʿmalu fī l-maktabi sa-yaʾkulu",
+      "exampleEnglish": "If the man who works in the office goes, he will eat.",
+      "grammarNote": "A closing capstone for levels 51-60: the إِذَا conditional (level 57) wrapped around a relative clause (level 55, الرجل الذي يعمل في المكتب, reusing يعمل from level 33 and في المكتب from levels 5/31), with a سَـ-future result clause (level 41) built on يَأْكُلُ ('he eats', level 25) — سَيَأْكُلُ, 'he will eat', the same reuse trick as ever. 60 of 100 levels now authored. دَائِمًا ('always') takes the same accusative -ًا ending you've now seen on غَدًا, جِدًّا, أَيْضًا, and قَلِيلًا — a small, recurring family of adverbs.",
+      "audio": { "id": "phrase_idha_dhahaba_alrajul_alladhi_yamalu_almaktab_sayakulu", "text": "إذا ذهب الرجل الذي يعمل في المكتب سيأكل" },
+      "introducedInLevel": 60
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l60-ex1",
+      "type": "multiple-choice",
+      "refIds": ["daaiman"],
+      "prompt": "What does 'دائما' mean?",
+      "options": ["always", "sometimes", "never", "a little / a few"],
+      "answer": "always"
+    },
+    {
+      "id": "l60-ex2",
+      "type": "sentence-build",
+      "refIds": ["idha", "dhahaba", "alrajul", "alladhi", "yamalu", "fi", "maktab", "yaakulu", "sa", "review-capstone-4"],
+      "prompt": "Arrange the tiles to say 'If the man who works in the office goes, he will eat.'",
+      "options": ["إذا", "ذهب", "الرجل", "الذي", "يعمل", "في", "المكتب", "سيأكل"],
+      "answer": "إذا ذهب الرجل الذي يعمل في المكتب سيأكل"
+    },
+    {
+      "id": "l60-ex3",
+      "type": "multiple-choice",
+      "refIds": ["antum"],
+      "prompt": "Review: what does 'أنتم' mean?",
+      "options": ["you (plural, masc./mixed)", "they (fem.)", "we", "you (masc.)"],
+      "answer": "you (plural, masc./mixed)"
+    },
+    {
+      "id": "l60-ex4",
+      "type": "multiple-choice",
+      "refIds": ["ishruun"],
+      "prompt": "Review: what does 'عشرون' mean?",
+      "options": ["twenty", "twelve", "fifteen", "ten"],
+      "answer": "twenty"
+    },
+    {
+      "id": "l60-ex5",
+      "type": "multiple-choice",
+      "refIds": ["talib"],
+      "prompt": "Review: what does 'طالب' mean?",
+      "options": ["a student", "a teacher", "an office", "a book"],
+      "answer": "a student"
+    },
+    {
+      "id": "l60-ex6",
+      "type": "multiple-choice",
+      "refIds": ["alladhi"],
+      "prompt": "Review: what does 'الذي' mean?",
+      "options": ["who / which / that (masc.)", "this (masc.)", "that (masc.)", "he"],
+      "answer": "who / which / that (masc.)"
+    },
+    {
+      "id": "l60-ex7",
+      "type": "multiple-choice",
+      "refIds": ["risaala"],
+      "prompt": "Review: what does 'رسالة' mean?",
+      "options": ["a letter / a message", "a book", "a newspaper", "a magazine"],
+      "answer": "a letter / a message"
+    },
+    {
+      "id": "l60-ex8",
+      "type": "multiple-choice",
+      "refIds": ["matam"],
+      "prompt": "Review: what does 'مطعم' mean?",
+      "options": ["a restaurant", "a market", "an office", "a school"],
+      "answer": "a restaurant"
+    },
+    {
+      "id": "l60-ex9",
+      "type": "multiple-choice",
+      "refIds": ["qamees"],
+      "prompt": "Review: what does 'قميص' mean?",
+      "options": ["a shirt", "shoes", "a bag", "glasses"],
+      "answer": "a shirt"
+    },
+    {
+      "id": "l60-ex10",
+      "type": "speaking",
+      "refIds": ["daaiman"],
+      "prompt": "Practice saying 'دائما' (always) out loud.",
+      "answer": "دائما"
+    }
+  ]
+}

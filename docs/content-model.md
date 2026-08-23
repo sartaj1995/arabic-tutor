@@ -96,7 +96,7 @@ TTS-facing form); it's hand-authored exercise/pattern text, and anything
 `scripts/generate-exercises.mjs` generates, that gets stripped down to
 match a "none" level's setting.
 
-## First 50 levels, at a glance
+## First 60 levels, at a glance
 
 | Level | Theme | New letters | New pattern |
 |---|---|---|---|
@@ -150,6 +150,16 @@ match a "none" level's setting.
 | 48 | "To be able to" — يستطيع + أَنْ | — | "I can go." |
 | 49 | More family and feelings | — | "I am sad today." |
 | 50 | Review — levels 41–50 | — | capstone: سَـ-future + وَ + يستطيع/أَنْ |
+| 51 | Plural pronouns | — | "You (plural) go to the university." |
+| 52 | Numbers 11–15 | — | — |
+| 53 | Numbers 16–20 | — | — |
+| 54 | Verbs — "to teach" (Form II) | — | "I teach the student." |
+| 55 | Relative clauses — الذي / التي | — | "The man who works in the office." |
+| 56 | Verbs — "to send" (Form IV) | — | "I send a letter to the office." |
+| 57 | Conditionals — إِذَا | — | "If I go to the airport, I will travel." |
+| 58 | Food & restaurant vocabulary | — | "I am hungry and I want food." |
+| 59 | Clothing & everyday items | — | "This shirt is red." |
+| 60 | Review — levels 51–60 | — | capstone: إِذَا + relative clause + سَـ-future |
 
 Levels 1–10 were a **pacing proof of concept** validating the schema and
 progression before continuing; levels 11–20 build on that same shape and
@@ -254,6 +264,45 @@ adjectives (47, the ـِيّ pattern that builds nationalities, religions, and
 professions-from-place alike), and more family/feelings vocab (49) round
 out the batch. 50 of 100 levels now authored — the halfway point.
 
+Levels 51–60 pick up three of the "real grammar gaps" explicitly flagged
+after level 50: plural pronouns, relative clauses, and conditionals, plus
+two more verb forms and a start on numbers past ten. 51 fills in the
+plural side of the pronoun table left incomplete since level 7 — أَنْتُمْ
+and هُنَّ join هُمْ (vocab-only until now) with their own present-tense verb
+endings (ـُونَ, echoing the level-19 sound-plural noun ending, and ـْنَ).
+أَنْتُنَّ ("you", fem. plural) is deliberately left out, the same "kept
+light" call made for the dual in level 38. 52–53 begin numbers past ten —
+teens 11–19 as indeclinable compounds ([units]+عَشَرَ), then 20 as the
+first of the "tens" family — but stop there rather than pushing through
+to 100 in one batch, the same incremental approach past tense and present
+tense took across levels 12–29; full gender-polarity agreement for 3–19
+and the 30–100 tens are left for a future batch, flagged explicitly
+rather than silently dropped.
+
+54 and 56 add the batch's two new verb forms — عَلَّمَ ("to teach", Form II,
+doubled middle root letter) and أَرْسَلَ ("to send", Form IV, hamza-prefixed
+past stem) — both taking damma-prefixed present tense like Form III
+(سافر, level 43), rounding out three of the ten forms covered outside the
+base Form I. **A collision was caught and avoided while choosing the Form
+II verb**: دَرَّسَ ("to teach", also root د-ر-س) was the obvious first
+choice given level 44 already taught دَرَسَ ("to study", root د-ر-س,
+Form I) — but its present tense يُدَرِّسُ strips to identical text as
+يَدْرُسُ ("he studies", level 44) once diacritics fade, the shadda being
+the only distinguishing mark. عَلَّمَ (root ع-ل-م) was used instead — another
+concrete case of the "check the whole vocab pool" lesson from levels
+21–30, this time triggered by a *near-homonym root choice*, not a
+suffix-conjugation collision. 55 (relative clauses, الَّذِي/الَّتِي) and 57
+(conditionals, إِذَا) are the batch's two major syntax additions — both
+mint almost no new vocabulary (2 words and 1 word respectively) by design,
+reusing existing nouns/verbs as clause content the same way idafa (31) and
+negation (32) did. إِذَا specifically reuses the لَمْ/لَنْ/سَـ trick one more
+time: MSA conditionals pair إِذَا with a *past*-tense verb even for a
+future/hypothetical meaning, so the level-22 past-tense pool is reused
+rather than minting new forms. 58 (food/restaurant) and 59
+(clothing/everyday items) are vocabulary-only breathers, each combining
+new nouns with sentence structures already fully known (أُرِيدُ + object,
+هَذَا + definite noun + adjective). 60 of 100 levels now authored.
+
 ## Exercises in the JSON files
 
 Each level file has a small hand-authored core set (the flagship
@@ -261,7 +310,7 @@ sentence-build/matching/typing exercises that show off a level's grammar
 point) plus generated coverage exercises ensuring every letter and vocab
 word gets at least one dedicated question — see
 `scripts/generate-exercises.mjs`, an idempotent script safe to re-run after
-authoring new levels. As of level 50: 319 content items, 740 exercises
+authoring new levels. As of level 60: 369 content items, 867 exercises
 total. The generator is diacritics-aware — it renders Arabic text stripped
 for levels where `diacriticsLevel === "none"` so generated and
 hand-authored exercises never mix styles within the same level.

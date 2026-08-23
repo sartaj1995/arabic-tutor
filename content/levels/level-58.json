@@ -1,0 +1,227 @@
+{
+  "number": 58,
+  "title": "Food & Restaurant Vocabulary",
+  "newLetters": [],
+  "newVocab": ["matam", "taam", "lahm", "samak", "aruzz", "jaaia"],
+  "newPatterns": ["hungry-want-food"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "matam",
+      "arabic": "مَطْعَمٌ",
+      "arabicNoDiacritics": "مطعم",
+      "transliteration": "maṭʿamun",
+      "english": "a restaurant",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_matam", "text": "مَطْعَمٌ" },
+      "introducedInLevel": 58,
+      "tags": ["core", "place"]
+    },
+    {
+      "id": "taam",
+      "arabic": "طَعَامٌ",
+      "arabicNoDiacritics": "طعام",
+      "transliteration": "ṭaʿāmun",
+      "english": "food",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_taam", "text": "طَعَامٌ" },
+      "introducedInLevel": 58,
+      "tags": ["core", "food"]
+    },
+    {
+      "id": "lahm",
+      "arabic": "لَحْمٌ",
+      "arabicNoDiacritics": "لحم",
+      "transliteration": "laḥmun",
+      "english": "meat",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_lahm", "text": "لَحْمٌ" },
+      "introducedInLevel": 58,
+      "tags": ["food"]
+    },
+    {
+      "id": "samak",
+      "arabic": "سَمَكٌ",
+      "arabicNoDiacritics": "سمك",
+      "transliteration": "samakun",
+      "english": "fish",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_samak", "text": "سَمَكٌ" },
+      "introducedInLevel": 58,
+      "tags": ["food"]
+    },
+    {
+      "id": "aruzz",
+      "arabic": "أُرُزٌّ",
+      "arabicNoDiacritics": "أرز",
+      "transliteration": "aruzzun",
+      "english": "rice",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_aruzz", "text": "أُرُزٌّ" },
+      "introducedInLevel": 58,
+      "tags": ["food"]
+    },
+    {
+      "id": "jaaia",
+      "arabic": "جَائِع",
+      "arabicNoDiacritics": "جائع",
+      "transliteration": "jāʾiʿ",
+      "english": "hungry",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_jaaia", "text": "جَائِع" },
+      "introducedInLevel": 58,
+      "tags": ["core", "adjective"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "hungry-want-food",
+      "pattern": "أَنَا + [Adjective] + وَ + أُرِيدُ + [Noun]",
+      "exampleArabic": "أنا جائع وأريد طعاما",
+      "exampleTransliteration": "anā jāʾiʿun wa-urīdu ṭaʿāman",
+      "exampleEnglish": "I am hungry and I want food.",
+      "grammarNote": "Nothing new grammatically here — جَائِع ('hungry') is a plain equational sentence like سَعِيد/حَزِين (levels 7 and 49): أَنَا + adjective, no verb 'to be' needed. أُرِيدُ ('I want', level 15) still takes its object directly, no preposition. This level is otherwise vocabulary-only: مَطْعَم ('restaurant'), لَحْم ('meat'), سَمَك ('fish'), and أُرُزّ ('rice') to build your own food sentences with.",
+      "audio": { "id": "phrase_ana_jaaia_wa_ureedu_taaman", "text": "أنا جائع وأريد طعاما" },
+      "introducedInLevel": 58
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l58-ex1",
+      "type": "multiple-choice",
+      "refIds": ["matam"],
+      "prompt": "What does 'مطعم' mean?",
+      "options": ["a restaurant", "a school", "an office", "an airport"],
+      "answer": "a restaurant"
+    },
+    {
+      "id": "l58-ex2",
+      "type": "sentence-build",
+      "refIds": ["jaaia", "wa", "ureedu", "taam", "hungry-want-food"],
+      "prompt": "Arrange the tiles to say 'I am hungry and I want food.'",
+      "options": ["أنا", "جائع", "وأريد", "طعاما"],
+      "answer": "أنا جائع وأريد طعاما"
+    },
+    {
+      "id": "l58-ex3",
+      "type": "multiple-choice",
+      "refIds": ["taam"],
+      "prompt": "What does 'طعام' mean?",
+      "options": ["food", "you (fem.) travel", "mother", "you (fem.) teach"],
+      "answer": "food"
+    },
+    {
+      "id": "l58-ex4",
+      "type": "multiple-choice",
+      "refIds": ["taam"],
+      "prompt": "Which word means 'food'?",
+      "options": ["إلى", "تكتب", "البيت", "طعام"],
+      "answer": "طعام"
+    },
+    {
+      "id": "l58-ex5",
+      "type": "multiple-choice",
+      "refIds": ["lahm"],
+      "prompt": "What does 'لحم' mean?",
+      "options": ["the man", "I can / I am able to", "meat", "we travel"],
+      "answer": "meat"
+    },
+    {
+      "id": "l58-ex6",
+      "type": "typing",
+      "refIds": ["lahm"],
+      "prompt": "Type the Arabic word for 'meat'.",
+      "answer": "لحم"
+    },
+    {
+      "id": "l58-ex7",
+      "type": "multiple-choice",
+      "refIds": ["samak"],
+      "prompt": "What does 'سمك' mean?",
+      "options": ["father", "fish", "we drank", "window"],
+      "answer": "fish"
+    },
+    {
+      "id": "l58-ex8",
+      "type": "multiple-choice",
+      "refIds": ["samak"],
+      "prompt": "Which word means 'fish'?",
+      "options": ["جبال", "مدرسون", "سمك", "الخامسة"],
+      "answer": "سمك"
+    },
+    {
+      "id": "l58-ex9",
+      "type": "multiple-choice",
+      "refIds": ["aruzz"],
+      "prompt": "What does 'أرز' mean?",
+      "options": ["your house (masc.)", "we drank", "he went", "rice"],
+      "answer": "rice"
+    },
+    {
+      "id": "l58-ex10",
+      "type": "typing",
+      "refIds": ["aruzz"],
+      "prompt": "Type the Arabic word for 'rice'.",
+      "answer": "أرز"
+    },
+    {
+      "id": "l58-ex11",
+      "type": "multiple-choice",
+      "refIds": ["jaaia"],
+      "prompt": "What does 'جائع' mean?",
+      "options": ["no", "two books", "hungry", "flower"],
+      "answer": "hungry"
+    },
+    {
+      "id": "l58-ex12",
+      "type": "multiple-choice",
+      "refIds": ["jaaia"],
+      "prompt": "Which word means 'hungry'?",
+      "options": ["بيته", "أراد", "جائع", "أربعة عشر"],
+      "answer": "جائع"
+    },
+    {
+      "id": "l58-ex13",
+      "type": "speaking",
+      "refIds": ["matam"],
+      "prompt": "Practice saying 'مطعم' (a restaurant) out loud.",
+      "answer": "مطعم"
+    },
+    {
+      "id": "l58-ex14",
+      "type": "speaking",
+      "refIds": ["taam"],
+      "prompt": "Practice saying 'طعام' (food) out loud.",
+      "answer": "طعام"
+    },
+    {
+      "id": "l58-ex15",
+      "type": "speaking",
+      "refIds": ["lahm"],
+      "prompt": "Practice saying 'لحم' (meat) out loud.",
+      "answer": "لحم"
+    },
+    {
+      "id": "l58-ex16",
+      "type": "speaking",
+      "refIds": ["samak"],
+      "prompt": "Practice saying 'سمك' (fish) out loud.",
+      "answer": "سمك"
+    },
+    {
+      "id": "l58-ex17",
+      "type": "speaking",
+      "refIds": ["aruzz"],
+      "prompt": "Practice saying 'أرز' (rice) out loud.",
+      "answer": "أرز"
+    },
+    {
+      "id": "l58-ex18",
+      "type": "speaking",
+      "refIds": ["jaaia"],
+      "prompt": "Practice saying 'جائع' (hungry) out loud.",
+      "answer": "جائع"
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "number": 52,
+  "title": "Numbers 11–15",
+  "newLetters": [],
+  "newVocab": ["ahadaashar", "ithnaaashar", "thalathataashar", "arbaataashar", "khamsataashar"],
+  "newPatterns": [],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ahadaashar",
+      "arabic": "أَحَدَ عَشَرَ",
+      "arabicNoDiacritics": "أحد عشر",
+      "transliteration": "aḥada ʿashar",
+      "english": "eleven",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_ahadaashar", "text": "أَحَدَ عَشَرَ" },
+      "introducedInLevel": 52,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "ithnaaashar",
+      "arabic": "اِثْنَا عَشَرَ",
+      "arabicNoDiacritics": "اثنا عشر",
+      "transliteration": "ithnā ʿashar",
+      "english": "twelve",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_ithnaaashar", "text": "اِثْنَا عَشَرَ" },
+      "introducedInLevel": 52,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "thalathataashar",
+      "arabic": "ثَلَاثَةَ عَشَرَ",
+      "arabicNoDiacritics": "ثلاثة عشر",
+      "transliteration": "thalāthata ʿashar",
+      "english": "thirteen",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_thalathataashar", "text": "ثَلَاثَةَ عَشَرَ" },
+      "introducedInLevel": 52,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "arbaataashar",
+      "arabic": "أَرْبَعَةَ عَشَرَ",
+      "arabicNoDiacritics": "أربعة عشر",
+      "transliteration": "arbaʿata ʿashar",
+      "english": "fourteen",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_arbaataashar", "text": "أَرْبَعَةَ عَشَرَ" },
+      "introducedInLevel": 52,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "khamsataashar",
+      "arabic": "خَمْسَةَ عَشَرَ",
+      "arabicNoDiacritics": "خمسة عشر",
+      "transliteration": "khamsata ʿashar",
+      "english": "fifteen",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_khamsataashar", "text": "خَمْسَةَ عَشَرَ" },
+      "introducedInLevel": 52,
+      "tags": ["core", "number"]
+    }
+  ],
+  "patterns": [],
+  "exercises": [
+    {
+      "id": "l52-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ahadaashar"],
+      "prompt": "What does 'أحد عشر' mean?",
+      "options": ["eleven", "twelve", "thirteen", "one"],
+      "answer": "eleven"
+    },
+    {
+      "id": "l52-ex2",
+      "type": "audio-recognition",
+      "refIds": ["ithnaaashar", "thalathataashar", "arbaataashar", "khamsataashar"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["اثنا عشر", "ثلاثة عشر", "أربعة عشر", "خمسة عشر"],
+      "answer": "اثنا عشر"
+    },
+    {
+      "id": "l52-ex3",
+      "type": "matching",
+      "refIds": ["thalathataashar", "arbaataashar", "khamsataashar", "ahadaashar"],
+      "prompt": "Match the numeral to the word: 13",
+      "options": ["ثلاثة عشر", "أربعة عشر", "خمسة عشر", "أحد عشر"],
+      "answer": "ثلاثة عشر"
+    },
+    {
+      "id": "l52-ex4",
+      "type": "multiple-choice",
+      "refIds": ["arbaataashar"],
+      "prompt": "What does 'أربعة عشر' mean?",
+      "options": ["you (masc.) work / she works", "I / you (masc.) / you (fem.) / she drank", "Thursday", "fourteen"],
+      "answer": "fourteen"
+    },
+    {
+      "id": "l52-ex5",
+      "type": "multiple-choice",
+      "refIds": ["arbaataashar"],
+      "prompt": "Which word means 'fourteen'?",
+      "options": ["أربعة عشر", "بنت", "حار", "بارد"],
+      "answer": "أربعة عشر"
+    },
+    {
+      "id": "l52-ex6",
+      "type": "multiple-choice",
+      "refIds": ["khamsataashar"],
+      "prompt": "What does 'خمسة عشر' mean?",
+      "options": ["Eat! (masc.)", "fifteen", "you (fem.) eat", "who"],
+      "answer": "fifteen"
+    },
+    {
+      "id": "l52-ex7",
+      "type": "typing",
+      "refIds": ["khamsataashar"],
+      "prompt": "Type the Arabic word for 'fifteen'.",
+      "answer": "خمسة عشر"
+    },
+    {
+      "id": "l52-ex8",
+      "type": "speaking",
+      "refIds": ["ahadaashar"],
+      "prompt": "Practice saying 'أحد عشر' (eleven) out loud.",
+      "answer": "أحد عشر"
+    },
+    {
+      "id": "l52-ex9",
+      "type": "speaking",
+      "refIds": ["ithnaaashar"],
+      "prompt": "Practice saying 'اثنا عشر' (twelve) out loud.",
+      "answer": "اثنا عشر"
+    },
+    {
+      "id": "l52-ex10",
+      "type": "speaking",
+      "refIds": ["thalathataashar"],
+      "prompt": "Practice saying 'ثلاثة عشر' (thirteen) out loud.",
+      "answer": "ثلاثة عشر"
+    },
+    {
+      "id": "l52-ex11",
+      "type": "speaking",
+      "refIds": ["arbaataashar"],
+      "prompt": "Practice saying 'أربعة عشر' (fourteen) out loud.",
+      "answer": "أربعة عشر"
+    },
+    {
+      "id": "l52-ex12",
+      "type": "speaking",
+      "refIds": ["khamsataashar"],
+      "prompt": "Practice saying 'خمسة عشر' (fifteen) out loud.",
+      "answer": "خمسة عشر"
+    }
+  ]
+}
