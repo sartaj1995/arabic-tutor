@@ -346,6 +346,41 @@ function CapabilityIcon() {
   );
 }
 
+function Fork() {
+  return (
+    <path
+      d="M10 3.5v4M10 7.5c0 2.5-3.3 2.5-3.3 5v3M10 7.5c0 2.5 3.3 2.5 3.3 5v3"
+      stroke="currentColor"
+      strokeWidth="1.4"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  );
+}
+
+function Utensils() {
+  return (
+    <path
+      d="M5.3 3.5v6.3M4 3.5v4.5a1.3 1.3 0 0 0 2.6 0V3.5M5.3 9.8v6.7M14.7 3.5c-1.4 0-2.3 1.6-2.3 4s.9 3.3 2.3 3.3v6"
+      stroke="currentColor"
+      strokeWidth="1.3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  );
+}
+
+function Shirt() {
+  return (
+    <path
+      d="M7 3.8 10 5l3-1.2 3 2.7-2 2-1-.8v7.8H7V7.7l-1 .8-2-2 3-2.7Z"
+      stroke="currentColor"
+      strokeWidth="1.3"
+      strokeLinejoin="round"
+    />
+  );
+}
+
 const RULES: Array<[string, () => JSX.Element]> = [
   ["Past Tense", ClockBack],
   ["Verbs", VerbAction],
@@ -375,6 +410,10 @@ const RULES: Array<[string, () => JSX.Element]> = [
   ["Comparatives", Scale],
   ["Dual", TwoCircles],
   ["Weather", Cloud],
+  ["Relative Clauses", LinkIcon],
+  ["Conditionals", Fork],
+  ["Food", Utensils],
+  ["Clothing", Shirt],
   ["Review", Flag],
 ];
 

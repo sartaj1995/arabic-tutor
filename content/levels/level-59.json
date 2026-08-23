@@ -1,0 +1,193 @@
+{
+  "number": 59,
+  "title": "Clothing & Everyday Items",
+  "newLetters": [],
+  "newVocab": ["qamees", "hidhaa", "nazzara", "haqeeba", "malabis"],
+  "newPatterns": ["clothing-demonstrative"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "qamees",
+      "arabic": "قَمِيصٌ",
+      "arabicNoDiacritics": "قميص",
+      "transliteration": "qamīṣun",
+      "english": "a shirt",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_qamees", "text": "قَمِيصٌ" },
+      "introducedInLevel": 59,
+      "tags": ["core"]
+    },
+    {
+      "id": "hidhaa",
+      "arabic": "حِذَاءٌ",
+      "arabicNoDiacritics": "حذاء",
+      "transliteration": "ḥidhāʾun",
+      "english": "shoes",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_hidhaa", "text": "حِذَاءٌ" },
+      "introducedInLevel": 59,
+      "tags": ["core"]
+    },
+    {
+      "id": "nazzara",
+      "arabic": "نَظَّارَةٌ",
+      "arabicNoDiacritics": "نظارة",
+      "transliteration": "naẓẓāratun",
+      "english": "glasses",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_nazzara", "text": "نَظَّارَةٌ" },
+      "introducedInLevel": 59,
+      "tags": []
+    },
+    {
+      "id": "haqeeba",
+      "arabic": "حَقِيبَةٌ",
+      "arabicNoDiacritics": "حقيبة",
+      "transliteration": "ḥaqībatun",
+      "english": "a bag",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_haqeeba", "text": "حَقِيبَةٌ" },
+      "introducedInLevel": 59,
+      "tags": []
+    },
+    {
+      "id": "malabis",
+      "arabic": "مَلَابِسُ",
+      "arabicNoDiacritics": "ملابس",
+      "transliteration": "malābisu",
+      "english": "clothes",
+      "partOfSpeech": "noun (plural)",
+      "audio": { "id": "word_malabis", "text": "مَلَابِسُ" },
+      "introducedInLevel": 59,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "clothing-demonstrative",
+      "pattern": "هَذَا + الـ[Noun] + [Color adjective]",
+      "exampleArabic": "هذا القميص أحمر",
+      "exampleTransliteration": "hādhā l-qamīṣu aḥmaru",
+      "exampleEnglish": "This shirt is red.",
+      "grammarNote": "A pure combination of things you already know: هَذَا + a definite noun (levels 5, 11) as the demonstrative sentence, plus a color adjective (level 16) as the predicate. Nothing new grammatically — the point of this level is the vocabulary: قَمِيص ('shirt'), حِذَاء ('shoes'), نَظَّارَة ('glasses'), حَقِيبَة ('bag'), and مَلَابِسُ ('clothes', a plural word for the whole category — notice it has no تَنْوِين, unlike most of the indefinite nouns you've seen; a handful of plural patterns like this one just don't take it).",
+      "audio": { "id": "phrase_haadhaa_alqamees_ahmar", "text": "هذا القميص أحمر" },
+      "introducedInLevel": 59
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l59-ex1",
+      "type": "multiple-choice",
+      "refIds": ["qamees"],
+      "prompt": "What does 'قميص' mean?",
+      "options": ["a shirt", "shoes", "glasses", "a bag"],
+      "answer": "a shirt"
+    },
+    {
+      "id": "l59-ex2",
+      "type": "sentence-build",
+      "refIds": ["haadhaa", "qamees", "ahmar", "clothing-demonstrative"],
+      "prompt": "Arrange the tiles to say 'This shirt is red.'",
+      "options": ["هذا", "القميص", "أحمر"],
+      "answer": "هذا القميص أحمر"
+    },
+    {
+      "id": "l59-ex3",
+      "type": "multiple-choice",
+      "refIds": ["hidhaa"],
+      "prompt": "What does 'حذاء' mean?",
+      "options": ["Arab / Arabic", "you (fem.) travel", "American", "shoes"],
+      "answer": "shoes"
+    },
+    {
+      "id": "l59-ex4",
+      "type": "multiple-choice",
+      "refIds": ["hidhaa"],
+      "prompt": "Which word means 'shoes'?",
+      "options": ["نافذة", "اذهبي", "حذاء", "نقرأ"],
+      "answer": "حذاء"
+    },
+    {
+      "id": "l59-ex5",
+      "type": "multiple-choice",
+      "refIds": ["nazzara"],
+      "prompt": "What does 'نظارة' mean?",
+      "options": ["you (plural) go", "glasses", "hot", "we went"],
+      "answer": "glasses"
+    },
+    {
+      "id": "l59-ex6",
+      "type": "typing",
+      "refIds": ["nazzara"],
+      "prompt": "Type the Arabic word for 'glasses'.",
+      "answer": "نظارة"
+    },
+    {
+      "id": "l59-ex7",
+      "type": "multiple-choice",
+      "refIds": ["haqeeba"],
+      "prompt": "What does 'حقيبة' mean?",
+      "options": ["you (fem.) read", "between", "tea", "a bag"],
+      "answer": "a bag"
+    },
+    {
+      "id": "l59-ex8",
+      "type": "multiple-choice",
+      "refIds": ["haqeeba"],
+      "prompt": "Which word means 'a bag'?",
+      "options": ["حار", "مدرسة", "الطقس", "حقيبة"],
+      "answer": "حقيبة"
+    },
+    {
+      "id": "l59-ex9",
+      "type": "multiple-choice",
+      "refIds": ["malabis"],
+      "prompt": "What does 'ملابس' mean?",
+      "options": ["we wanted", "you (fem.) eat", "grandmother", "clothes"],
+      "answer": "clothes"
+    },
+    {
+      "id": "l59-ex10",
+      "type": "typing",
+      "refIds": ["malabis"],
+      "prompt": "Type the Arabic word for 'clothes'.",
+      "answer": "ملابس"
+    },
+    {
+      "id": "l59-ex11",
+      "type": "speaking",
+      "refIds": ["qamees"],
+      "prompt": "Practice saying 'قميص' (a shirt) out loud.",
+      "answer": "قميص"
+    },
+    {
+      "id": "l59-ex12",
+      "type": "speaking",
+      "refIds": ["hidhaa"],
+      "prompt": "Practice saying 'حذاء' (shoes) out loud.",
+      "answer": "حذاء"
+    },
+    {
+      "id": "l59-ex13",
+      "type": "speaking",
+      "refIds": ["nazzara"],
+      "prompt": "Practice saying 'نظارة' (glasses) out loud.",
+      "answer": "نظارة"
+    },
+    {
+      "id": "l59-ex14",
+      "type": "speaking",
+      "refIds": ["haqeeba"],
+      "prompt": "Practice saying 'حقيبة' (a bag) out loud.",
+      "answer": "حقيبة"
+    },
+    {
+      "id": "l59-ex15",
+      "type": "speaking",
+      "refIds": ["malabis"],
+      "prompt": "Practice saying 'ملابس' (clothes) out loud.",
+      "answer": "ملابس"
+    }
+  ]
+}

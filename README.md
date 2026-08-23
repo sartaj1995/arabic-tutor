@@ -5,8 +5,8 @@ script, vocabulary, and sentence-building — across 100 levels.
 
 **Status: app shell with interactive exercises, an on-screen Arabic
 keyboard, spaced-repetition review, real exercise depth, live audio, and a
-progress dashboard.** The first 50 levels of curriculum content exist as
-structured JSON — 740 exercises across them, generated so every letter and
+progress dashboard.** The first 60 levels of curriculum content exist as
+structured JSON — 867 exercises across them, generated so every letter and
 vocab word gets at least one dedicated question, not just the illustrative
 few each level started with. A React/Vite app loads and displays them with
 clickable/typeable exercises and live scoring, finishing a level feeds its
@@ -118,7 +118,7 @@ src/lib/speech.ts         Web Speech API wrapper (speak, voice detection)
 src/lib/progress.ts       Dashboard stats computed from IndexedDB (no separate tracking)
 src/pages/                LevelList, LevelDetail, Review, Progress
 src/components/           ArabicText, ExerciseCard, PlayAudioButton, ArabicKeyboard
-content/levels/*.json     Authored level content (levels 1–50 so far)
+content/levels/*.json     Authored level content (levels 1–60 so far)
 scripts/generate-audio.mjs      Offline Google Cloud TTS pipeline — fallback, unused
 scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 ```
@@ -126,9 +126,9 @@ scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 Each `content/levels/level-XX.json` follows the `Level` type in
 `src/types/content.ts`: new letters, new vocab, new sentence patterns, a
 diacritics-display setting, and exercises (a hand-authored core set plus
-generated coverage exercises — 740 total across the 50 levels).
+generated coverage exercises — 867 total across the 60 levels).
 
-## First 50 levels
+## First 60 levels
 
 | # | Theme |
 |---|---|
@@ -182,11 +182,21 @@ generated coverage exercises — 740 total across the 50 levels).
 | 48 | "To be able to" — يستطيع |
 | 49 | More family and feelings |
 | 50 | Review — levels 41–50 |
+| 51 | Plural pronouns |
+| 52 | Numbers 11–15 |
+| 53 | Numbers 16–20 |
+| 54 | Verbs — "to teach" (Form II) |
+| 55 | Relative clauses — الذي / التي |
+| 56 | Verbs — "to send" (Form IV) |
+| 57 | Conditionals — إِذَا |
+| 58 | Food & restaurant vocabulary |
+| 59 | Clothing & everyday items |
+| 60 | Review — levels 51–60 |
 
 ## Next steps
 
 1. **Review the pacing.** Read through `content/levels/level-01.json` →
-   `level-50.json` (or the summary table in `docs/content-model.md`) and
+   `level-60.json` (or the summary table in `docs/content-model.md`) and
    sanity-check that the progression feels right before more levels are
    generated the same way.
 2. ~~Scaffold the app.~~ Done — `npm run dev` to try it.
@@ -307,6 +317,26 @@ generated coverage exercises — 740 total across the 50 levels).
     `src/components/LevelIcon.tsx` with 5 new per-level-type icons so
     none of this batch's levels fall back to the generic icon. 50 of 100
     levels done — halfway.
+8d. ~~Author levels 51–60.~~ Done — picks up three of the "real grammar
+    gaps" flagged after level 50: plural pronouns (أَنْتُمْ, هُنَّ, completing
+    the pronoun table left unfinished since level 7), relative clauses
+    (الَّذِي/الَّتِي), and conditionals (إِذَا, which — like لَمْ/لَنْ/سَـ before
+    it — pairs with the existing past-tense pool instead of minting new
+    forms). Two more verb forms: عَلَّمَ ("to teach", Form II) and أَرْسَلَ
+    ("to send", Form IV), rounding out three of the ten forms outside
+    basic Form I. Also began numbers past ten (11–20) without pushing all
+    the way to 100 in one batch — teens/tens gender-polarity and 30–100
+    are explicitly left for a future batch, not silently dropped. Caught
+    a real collision while picking the Form II verb: دَرَّسَ ("to teach",
+    same root as level 44's دَرَسَ "to study") would have produced an
+    identical stripped present-tense form to يَدْرُسُ once diacritics fade
+    — switched to عَلَّمَ (root ع-ل-م) instead. Validated with a full
+    consistency pass (0 problems across 369 items / 867 exercises, 0 new
+    stripped-text collisions against the full 288-word vocab pool) and in
+    the browser — the new Unit 6 ("Complex Sentences" / الجمل المركبة)
+    renders all ten levels with correct icons, and level 60's 8-tile
+    capstone (إِذَا + relative clause + سَـ-future) renders and scores
+    correctly. 60 of 100 levels done.
 9. ~~Author `letter-writing` exercises.~~ Done — `generate-exercises.mjs`
    now generates one per letter (28 total, across levels 1–7 where all the
    alphabet is introduced), testing the production direction (name ->

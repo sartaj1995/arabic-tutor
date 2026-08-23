@@ -1,0 +1,227 @@
+{
+  "number": 56,
+  "title": "Verbs — \"To Send\" (Form IV)",
+  "newLetters": [],
+  "newVocab": ["ursilu", "tursilu", "tursileena", "yursilu", "nursilu", "risaala"],
+  "newPatterns": ["send-to"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ursilu",
+      "arabic": "أُرْسِلُ",
+      "arabicNoDiacritics": "أرسل",
+      "transliteration": "ursilu",
+      "english": "I send",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_ursilu", "text": "أُرْسِلُ" },
+      "introducedInLevel": 56,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tursilu",
+      "arabic": "تُرْسِلُ",
+      "arabicNoDiacritics": "ترسل",
+      "transliteration": "tursilu",
+      "english": "you (masc.) send / she sends",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tursilu", "text": "تُرْسِلُ" },
+      "introducedInLevel": 56,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tursileena",
+      "arabic": "تُرْسِلِينَ",
+      "arabicNoDiacritics": "ترسلين",
+      "transliteration": "tursilīna",
+      "english": "you (fem.) send",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tursileena", "text": "تُرْسِلِينَ" },
+      "introducedInLevel": 56,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yursilu",
+      "arabic": "يُرْسِلُ",
+      "arabicNoDiacritics": "يرسل",
+      "transliteration": "yursilu",
+      "english": "he sends",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yursilu", "text": "يُرْسِلُ" },
+      "introducedInLevel": 56,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nursilu",
+      "arabic": "نُرْسِلُ",
+      "arabicNoDiacritics": "نرسل",
+      "transliteration": "nursilu",
+      "english": "we send",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nursilu", "text": "نُرْسِلُ" },
+      "introducedInLevel": 56,
+      "tags": ["verb"]
+    },
+    {
+      "id": "risaala",
+      "arabic": "رِسَالَةٌ",
+      "arabicNoDiacritics": "رسالة",
+      "transliteration": "risālatun",
+      "english": "a letter / a message",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_risaala", "text": "رِسَالَةٌ" },
+      "introducedInLevel": 56,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "send-to",
+      "pattern": "[Verb] + [Object] + إِلَى + الـ[Recipient]",
+      "exampleArabic": "أرسل رسالة إلى المكتب",
+      "exampleTransliteration": "ursilu risālatan ilā l-maktabi",
+      "exampleEnglish": "I send a letter to the office.",
+      "grammarNote": "أَرْسَلَ ('to send') is Form IV (أَفْعَلَ) — marked by a hamza at the start of the past-tense stem: أَرْسَلَ, not رَسَلَ. Like Forms II and III, Form IV's present-tense prefix takes damma: أُرْسِلُ, تُرْسِلُ, تُرْسِلِينَ, يُرْسِلُ, نُرْسِلُ. Notice the stem shape differs from both earlier forms: Form II doubles the middle letter (عَلَّمَ → يُعَلِّمُ, level 54), Form III lengthens the first vowel (سَافَرَ → يُسَافِرُ, level 43), and Form IV instead has a plain sukun-kasra stem: يُرْسِلُ. Three of the ten verb forms are now covered outside the base Form I (فَعَلَ): III (سافر), II (علّم), IV (أرسل). إِلَى reuses level 12 exactly as before.",
+      "audio": { "id": "phrase_ursilu_risaala_ilaa_almaktab", "text": "أرسل رسالة إلى المكتب" },
+      "introducedInLevel": 56
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l56-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ursilu"],
+      "prompt": "What does 'أرسل' mean?",
+      "options": ["I send", "I write", "I teach", "I travel"],
+      "answer": "I send"
+    },
+    {
+      "id": "l56-ex2",
+      "type": "sentence-build",
+      "refIds": ["ursilu", "risaala", "maktab", "send-to"],
+      "prompt": "Arrange the tiles to say 'I send a letter to the office.'",
+      "options": ["أرسل", "رسالة", "إلى", "المكتب"],
+      "answer": "أرسل رسالة إلى المكتب"
+    },
+    {
+      "id": "l56-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tursilu"],
+      "prompt": "What does 'ترسل' mean?",
+      "options": ["I send", "the first", "you (masc.) send / she sends", "no"],
+      "answer": "you (masc.) send / she sends"
+    },
+    {
+      "id": "l56-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tursilu"],
+      "prompt": "Which word means 'you (masc.) send / she sends'?",
+      "options": ["أكل", "الثاني", "يعمل", "ترسل"],
+      "answer": "ترسل"
+    },
+    {
+      "id": "l56-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tursileena"],
+      "prompt": "What does 'ترسلين' mean?",
+      "options": ["a school", "will [future — a separate word]", "who", "you (fem.) send"],
+      "answer": "you (fem.) send"
+    },
+    {
+      "id": "l56-ex6",
+      "type": "typing",
+      "refIds": ["tursileena"],
+      "prompt": "Type the Arabic word for 'you (fem.) send'.",
+      "answer": "ترسلين"
+    },
+    {
+      "id": "l56-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yursilu"],
+      "prompt": "What does 'يرسل' mean?",
+      "options": ["he reads", "[negates a verb in the future — 'will not']", "he sends", "your house (fem.)"],
+      "answer": "he sends"
+    },
+    {
+      "id": "l56-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yursilu"],
+      "prompt": "Which word means 'he sends'?",
+      "options": ["يرسل", "نريد", "تسافر", "ذهب"],
+      "answer": "يرسل"
+    },
+    {
+      "id": "l56-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nursilu"],
+      "prompt": "What does 'نرسل' mean?",
+      "options": ["the man", "a newspaper", "we send", "he sends"],
+      "answer": "we send"
+    },
+    {
+      "id": "l56-ex10",
+      "type": "typing",
+      "refIds": ["nursilu"],
+      "prompt": "Type the Arabic word for 'we send'.",
+      "answer": "نرسل"
+    },
+    {
+      "id": "l56-ex11",
+      "type": "multiple-choice",
+      "refIds": ["risaala"],
+      "prompt": "What does 'رسالة' mean?",
+      "options": ["the second", "above / over", "that / to [introduces a following verb]", "a letter / a message"],
+      "answer": "a letter / a message"
+    },
+    {
+      "id": "l56-ex12",
+      "type": "multiple-choice",
+      "refIds": ["risaala"],
+      "prompt": "Which word means 'a letter / a message'?",
+      "options": ["كتاب", "تحت", "رسالة", "أنتم"],
+      "answer": "رسالة"
+    },
+    {
+      "id": "l56-ex13",
+      "type": "speaking",
+      "refIds": ["ursilu"],
+      "prompt": "Practice saying 'أرسل' (I send) out loud.",
+      "answer": "أرسل"
+    },
+    {
+      "id": "l56-ex14",
+      "type": "speaking",
+      "refIds": ["tursilu"],
+      "prompt": "Practice saying 'ترسل' (you (masc.) send / she sends) out loud.",
+      "answer": "ترسل"
+    },
+    {
+      "id": "l56-ex15",
+      "type": "speaking",
+      "refIds": ["tursileena"],
+      "prompt": "Practice saying 'ترسلين' (you (fem.) send) out loud.",
+      "answer": "ترسلين"
+    },
+    {
+      "id": "l56-ex16",
+      "type": "speaking",
+      "refIds": ["yursilu"],
+      "prompt": "Practice saying 'يرسل' (he sends) out loud.",
+      "answer": "يرسل"
+    },
+    {
+      "id": "l56-ex17",
+      "type": "speaking",
+      "refIds": ["nursilu"],
+      "prompt": "Practice saying 'نرسل' (we send) out loud.",
+      "answer": "نرسل"
+    },
+    {
+      "id": "l56-ex18",
+      "type": "speaking",
+      "refIds": ["risaala"],
+      "prompt": "Practice saying 'رسالة' (a letter / a message) out loud.",
+      "answer": "رسالة"
+    }
+  ]
+}

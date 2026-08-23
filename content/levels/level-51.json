@@ -1,0 +1,193 @@
+{
+  "number": 51,
+  "title": "Plural Pronouns",
+  "newLetters": [],
+  "newVocab": ["antum", "hunna", "tadhhabuuna", "yadhhabuuna", "yadhhabna"],
+  "newPatterns": ["plural-pronoun-verb"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "antum",
+      "arabic": "أَنْتُمْ",
+      "arabicNoDiacritics": "أنتم",
+      "transliteration": "antum",
+      "english": "you (plural, masc./mixed)",
+      "partOfSpeech": "pronoun",
+      "audio": { "id": "word_antum", "text": "أَنْتُمْ" },
+      "introducedInLevel": 51,
+      "tags": ["core", "pronoun"]
+    },
+    {
+      "id": "hunna",
+      "arabic": "هُنَّ",
+      "arabicNoDiacritics": "هن",
+      "transliteration": "hunna",
+      "english": "they (fem.)",
+      "partOfSpeech": "pronoun",
+      "audio": { "id": "word_hunna", "text": "هُنَّ" },
+      "introducedInLevel": 51,
+      "tags": ["pronoun"]
+    },
+    {
+      "id": "tadhhabuuna",
+      "arabic": "تَذْهَبُونَ",
+      "arabicNoDiacritics": "تذهبون",
+      "transliteration": "tadhhabūna",
+      "english": "you (plural) go",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tadhhabuuna", "text": "تَذْهَبُونَ" },
+      "introducedInLevel": 51,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yadhhabuuna",
+      "arabic": "يَذْهَبُونَ",
+      "arabicNoDiacritics": "يذهبون",
+      "transliteration": "yadhhabūna",
+      "english": "they (masc.) go",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yadhhabuuna", "text": "يَذْهَبُونَ" },
+      "introducedInLevel": 51,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "yadhhabna",
+      "arabic": "يَذْهَبْنَ",
+      "arabicNoDiacritics": "يذهبن",
+      "transliteration": "yadhhabna",
+      "english": "they (fem.) go",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yadhhabna", "text": "يَذْهَبْنَ" },
+      "introducedInLevel": 51,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "plural-pronoun-verb",
+      "pattern": "[Plural pronoun] + [Verb ending in ـُونَ / ـْنَ]",
+      "exampleArabic": "أنتم تذهبون إلى الجامعة",
+      "exampleTransliteration": "antum tadhhabūna ilā l-jāmiʿati",
+      "exampleEnglish": "You (plural) go to the university.",
+      "grammarNote": "50 levels in, you've only had six pronouns (أَنَا, أَنْتَ, أَنْتِ, هُوَ, هِيَ, نَحْنُ) — this level fills in the plural side (skipping the dual, kept light since level 38): أَنْتُمْ ('you', plural masc./mixed) and هُنَّ ('they', fem.) join هُمْ (level 7, 'they' masc./mixed, vocab-only until now). Their verb forms follow a pattern you've already half-seen: the masc. plural ending ـُونَ echoes the sound-plural noun ending from level 19 (مُدَرِّسُونَ), while the fem. plural ending ـْنَ has no long vowel at all — تَذْهَبُونَ (you-pl. go) / يَذْهَبُونَ (they-masc. go) / يَذْهَبْنَ (they-fem. go). أَنْتُنَّ ('you', fem. plural) is the one pronoun still deliberately left out, the same 'kept light' call made for the dual.",
+      "audio": { "id": "phrase_antum_tadhhabuuna_aljaamiaa", "text": "أنتم تذهبون إلى الجامعة" },
+      "introducedInLevel": 51
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l51-ex1",
+      "type": "multiple-choice",
+      "refIds": ["antum"],
+      "prompt": "What does 'أنتم' mean?",
+      "options": ["you (plural, masc./mixed)", "they (fem.)", "we", "you (fem.)"],
+      "answer": "you (plural, masc./mixed)"
+    },
+    {
+      "id": "l51-ex2",
+      "type": "sentence-build",
+      "refIds": ["antum", "tadhhabuuna", "jaamiaa", "plural-pronoun-verb"],
+      "prompt": "Arrange the tiles to say 'You (plural) go to the university.'",
+      "options": ["أنتم", "تذهبون", "إلى", "الجامعة"],
+      "answer": "أنتم تذهبون إلى الجامعة"
+    },
+    {
+      "id": "l51-ex3",
+      "type": "multiple-choice",
+      "refIds": ["hunna"],
+      "prompt": "What does 'هن' mean?",
+      "options": ["they (fem.)", "we wanted", "where", "he"],
+      "answer": "they (fem.)"
+    },
+    {
+      "id": "l51-ex4",
+      "type": "multiple-choice",
+      "refIds": ["hunna"],
+      "prompt": "Which word means 'they (fem.)'?",
+      "options": ["أكتب", "ليس", "هن", "تستطيعين"],
+      "answer": "هن"
+    },
+    {
+      "id": "l51-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tadhhabuuna"],
+      "prompt": "What does 'تذهبون' mean?",
+      "options": ["he writes", "we read", "you (plural) go", "I can / I am able to"],
+      "answer": "you (plural) go"
+    },
+    {
+      "id": "l51-ex6",
+      "type": "typing",
+      "refIds": ["tadhhabuuna"],
+      "prompt": "Type the Arabic word for 'you (plural) go'.",
+      "answer": "تذهبون"
+    },
+    {
+      "id": "l51-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yadhhabuuna"],
+      "prompt": "What does 'يذهبون' mean?",
+      "options": ["Egyptian", "the fourth", "behind", "they (masc.) go"],
+      "answer": "they (masc.) go"
+    },
+    {
+      "id": "l51-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yadhhabuuna"],
+      "prompt": "Which word means 'they (masc.) go'?",
+      "options": ["بيتك", "يذهبون", "كبير", "نشرب"],
+      "answer": "يذهبون"
+    },
+    {
+      "id": "l51-ex9",
+      "type": "multiple-choice",
+      "refIds": ["yadhhabna"],
+      "prompt": "What does 'يذهبن' mean?",
+      "options": ["short", "they (fem.) go", "one", "brother"],
+      "answer": "they (fem.) go"
+    },
+    {
+      "id": "l51-ex10",
+      "type": "typing",
+      "refIds": ["yadhhabna"],
+      "prompt": "Type the Arabic word for 'they (fem.) go'.",
+      "answer": "يذهبن"
+    },
+    {
+      "id": "l51-ex11",
+      "type": "speaking",
+      "refIds": ["antum"],
+      "prompt": "Practice saying 'أنتم' (you (plural, masc./mixed)) out loud.",
+      "answer": "أنتم"
+    },
+    {
+      "id": "l51-ex12",
+      "type": "speaking",
+      "refIds": ["hunna"],
+      "prompt": "Practice saying 'هن' (they (fem.)) out loud.",
+      "answer": "هن"
+    },
+    {
+      "id": "l51-ex13",
+      "type": "speaking",
+      "refIds": ["tadhhabuuna"],
+      "prompt": "Practice saying 'تذهبون' (you (plural) go) out loud.",
+      "answer": "تذهبون"
+    },
+    {
+      "id": "l51-ex14",
+      "type": "speaking",
+      "refIds": ["yadhhabuuna"],
+      "prompt": "Practice saying 'يذهبون' (they (masc.) go) out loud.",
+      "answer": "يذهبون"
+    },
+    {
+      "id": "l51-ex15",
+      "type": "speaking",
+      "refIds": ["yadhhabna"],
+      "prompt": "Practice saying 'يذهبن' (they (fem.) go) out loud.",
+      "answer": "يذهبن"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "number": 57,
+  "title": "Conditionals — إِذَا",
+  "newLetters": [],
+  "newVocab": ["idha"],
+  "newPatterns": ["conditional-idha"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "idha",
+      "arabic": "إِذَا",
+      "arabicNoDiacritics": "إذا",
+      "transliteration": "idhā",
+      "english": "if",
+      "partOfSpeech": "conjunction",
+      "audio": { "id": "word_idha", "text": "إِذَا" },
+      "introducedInLevel": 57,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "conditional-idha",
+      "pattern": "إِذَا + [Past-tense verb clause] + سَـ[Present-tense verb clause]",
+      "exampleArabic": "إذا ذهبت إلى المطار سأسافر",
+      "exampleTransliteration": "idhā dhahabtu ilā l-maṭāri sa-usāfiru",
+      "exampleEnglish": "If I go to the airport, I will travel.",
+      "grammarNote": "إِذَا ('if') introduces a conditional clause. Formal MSA pairs إِذَا with a PAST-tense verb even when the meaning is future or hypothetical — ذَهَبْتُ here doesn't mean 'I went', it means 'if I go / were I to go', reusing the exact past-tense forms from level 22 rather than minting new ones — the same trick لَمْ/لَنْ/سَـ used to reuse the present-tense pool in levels 32 and 41. The result clause (what happens 'then') is just a normal سَـ-future sentence from level 41. No separate word for 'then' is needed — the two clauses simply follow each other, the same way وَ-joined capstone sentences do.",
+      "audio": { "id": "phrase_idha_dhahabtu_almataar_sausaafiru", "text": "إذا ذهبت إلى المطار سأسافر" },
+      "introducedInLevel": 57
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l57-ex1",
+      "type": "multiple-choice",
+      "refIds": ["idha"],
+      "prompt": "What does 'إذا' mean?",
+      "options": ["if", "when", "because", "but"],
+      "answer": "if"
+    },
+    {
+      "id": "l57-ex2",
+      "type": "sentence-build",
+      "refIds": ["idha", "dhahabtu", "mataar", "sa", "usaafiru", "conditional-idha"],
+      "prompt": "Arrange the tiles to say 'If I go to the airport, I will travel.'",
+      "options": ["إذا", "ذهبت", "إلى", "المطار", "سأسافر"],
+      "answer": "إذا ذهبت إلى المطار سأسافر"
+    },
+    {
+      "id": "l57-ex3",
+      "type": "speaking",
+      "refIds": ["idha"],
+      "prompt": "Practice saying 'إذا' (if) out loud.",
+      "answer": "إذا"
+    }
+  ]
+}

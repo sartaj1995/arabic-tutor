@@ -1,0 +1,98 @@
+{
+  "number": 55,
+  "title": "Relative Clauses",
+  "newLetters": [],
+  "newVocab": ["alladhi", "allati"],
+  "newPatterns": ["relative-clause"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "alladhi",
+      "arabic": "الَّذِي",
+      "arabicNoDiacritics": "الذي",
+      "transliteration": "alladhī",
+      "english": "who / which / that (masc.)",
+      "partOfSpeech": "relative pronoun",
+      "audio": { "id": "word_alladhi", "text": "الَّذِي" },
+      "introducedInLevel": 55,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "allati",
+      "arabic": "الَّتِي",
+      "arabicNoDiacritics": "التي",
+      "transliteration": "allatī",
+      "english": "who / which / that (fem.)",
+      "partOfSpeech": "relative pronoun",
+      "audio": { "id": "word_allati", "text": "الَّتِي" },
+      "introducedInLevel": 55,
+      "tags": ["grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "relative-clause",
+      "pattern": "الـ[Noun] + الذي/التي + [Verb clause]",
+      "exampleArabic": "الرجل الذي يعمل في المكتب",
+      "exampleTransliteration": "ar-rajulu lladhī yaʿmalu fī l-maktabi",
+      "exampleEnglish": "The man who works in the office.",
+      "grammarNote": "الَّذِي (masc.) and الَّتِي (fem.) introduce a relative clause — 'who/which/that' — describing a definite noun that comes right before it. Agreement is by the gender of the noun being described, not the clause's own subject: الرَّجُلُ الَّذِي ('the man who...') uses الَّذِي because رَجُل is masculine; الْمَرْأَةُ الَّتِي ('the woman who...') uses الَّتِي because مَرْأَة is feminine, reusing المرأة from level 11. Inside the clause, word order is just a normal verb-subject-object sentence, same as anything else you've built. One rule worth flagging: a relative clause only follows a DEFINITE noun (with الـ). An indefinite noun ('a man who...') is described with no connecting word at all — that construction is outside this course.",
+      "audio": { "id": "phrase_alrajul_alladhi_yamalu_almaktab", "text": "الرجل الذي يعمل في المكتب" },
+      "introducedInLevel": 55
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l55-ex1",
+      "type": "multiple-choice",
+      "refIds": ["alladhi"],
+      "prompt": "What does 'الذي' mean?",
+      "options": [
+        "who / which / that (masc.)",
+        "who / which / that (fem.)",
+        "this (masc.)",
+        "that (masc.)"
+      ],
+      "answer": "who / which / that (masc.)"
+    },
+    {
+      "id": "l55-ex2",
+      "type": "sentence-build",
+      "refIds": ["alrajul", "alladhi", "yamalu", "fi", "maktab", "relative-clause"],
+      "prompt": "Arrange the tiles to say 'The man who works in the office.'",
+      "options": ["الرجل", "الذي", "يعمل", "في", "المكتب"],
+      "answer": "الرجل الذي يعمل في المكتب"
+    },
+    {
+      "id": "l55-ex3",
+      "type": "multiple-choice",
+      "refIds": ["allati"],
+      "prompt": "What does 'التي' mean?",
+      "options": ["fourteen", "coffee", "they (fem.) go", "who / which / that (fem.)"],
+      "answer": "who / which / that (fem.)"
+    },
+    {
+      "id": "l55-ex4",
+      "type": "multiple-choice",
+      "refIds": ["allati"],
+      "prompt": "Which word means 'who / which / that (fem.)'?",
+      "options": ["الثاني", "ولدان", "التي", "السلام عليكم"],
+      "answer": "التي"
+    },
+    {
+      "id": "l55-ex5",
+      "type": "speaking",
+      "refIds": ["alladhi"],
+      "prompt": "Practice saying 'الذي' (who / which / that (masc.)) out loud.",
+      "answer": "الذي"
+    },
+    {
+      "id": "l55-ex6",
+      "type": "speaking",
+      "refIds": ["allati"],
+      "prompt": "Practice saying 'التي' (who / which / that (fem.)) out loud.",
+      "answer": "التي"
+    }
+  ]
+}

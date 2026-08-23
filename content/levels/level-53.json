@@ -1,0 +1,159 @@
+{
+  "number": 53,
+  "title": "Numbers 16–20",
+  "newLetters": [],
+  "newVocab": ["sittataashar", "sabaataashar", "thamaaniyataashar", "tisaataashar", "ishruun"],
+  "newPatterns": [],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "sittataashar",
+      "arabic": "سِتَّةَ عَشَرَ",
+      "arabicNoDiacritics": "ستة عشر",
+      "transliteration": "sittata ʿashar",
+      "english": "sixteen",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_sittataashar", "text": "سِتَّةَ عَشَرَ" },
+      "introducedInLevel": 53,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "sabaataashar",
+      "arabic": "سَبْعَةَ عَشَرَ",
+      "arabicNoDiacritics": "سبعة عشر",
+      "transliteration": "sabʿata ʿashar",
+      "english": "seventeen",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_sabaataashar", "text": "سَبْعَةَ عَشَرَ" },
+      "introducedInLevel": 53,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "thamaaniyataashar",
+      "arabic": "ثَمَانِيَةَ عَشَرَ",
+      "arabicNoDiacritics": "ثمانية عشر",
+      "transliteration": "thamāniyata ʿashar",
+      "english": "eighteen",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_thamaaniyataashar", "text": "ثَمَانِيَةَ عَشَرَ" },
+      "introducedInLevel": 53,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "tisaataashar",
+      "arabic": "تِسْعَةَ عَشَرَ",
+      "arabicNoDiacritics": "تسعة عشر",
+      "transliteration": "tisʿata ʿashar",
+      "english": "nineteen",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_tisaataashar", "text": "تِسْعَةَ عَشَرَ" },
+      "introducedInLevel": 53,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "ishruun",
+      "arabic": "عِشْرُونَ",
+      "arabicNoDiacritics": "عشرون",
+      "transliteration": "ʿishrūn",
+      "english": "twenty",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_ishruun", "text": "عِشْرُونَ" },
+      "introducedInLevel": 53,
+      "tags": ["core", "number"]
+    }
+  ],
+  "patterns": [],
+  "exercises": [
+    {
+      "id": "l53-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ishruun"],
+      "prompt": "What does 'عشرون' mean?",
+      "options": ["twenty", "twelve", "ten", "nineteen"],
+      "answer": "twenty"
+    },
+    {
+      "id": "l53-ex2",
+      "type": "audio-recognition",
+      "refIds": ["sittataashar", "sabaataashar", "thamaaniyataashar", "tisaataashar"],
+      "prompt": "Listen and select the word you hear.",
+      "options": ["ستة عشر", "سبعة عشر", "ثمانية عشر", "تسعة عشر"],
+      "answer": "ستة عشر"
+    },
+    {
+      "id": "l53-ex3",
+      "type": "matching",
+      "refIds": ["sabaataashar", "thamaaniyataashar", "tisaataashar", "ishruun"],
+      "prompt": "Match the numeral to the word: 17",
+      "options": ["سبعة عشر", "ثمانية عشر", "تسعة عشر", "عشرون"],
+      "answer": "سبعة عشر"
+    },
+    {
+      "id": "l53-ex4",
+      "type": "multiple-choice",
+      "refIds": ["thamaaniyataashar"],
+      "prompt": "What does 'ثمانية عشر' mean?",
+      "options": ["eighteen", "how many / how much", "you (fem.) work", "small"],
+      "answer": "eighteen"
+    },
+    {
+      "id": "l53-ex5",
+      "type": "multiple-choice",
+      "refIds": ["thamaaniyataashar"],
+      "prompt": "Which word means 'eighteen'?",
+      "options": ["تذهبين", "نريد", "على", "ثمانية عشر"],
+      "answer": "ثمانية عشر"
+    },
+    {
+      "id": "l53-ex6",
+      "type": "multiple-choice",
+      "refIds": ["tisaataashar"],
+      "prompt": "What does 'تسعة عشر' mean?",
+      "options": ["he reads", "Saturday", "book", "nineteen"],
+      "answer": "nineteen"
+    },
+    {
+      "id": "l53-ex7",
+      "type": "typing",
+      "refIds": ["tisaataashar"],
+      "prompt": "Type the Arabic word for 'nineteen'.",
+      "answer": "تسعة عشر"
+    },
+    {
+      "id": "l53-ex8",
+      "type": "speaking",
+      "refIds": ["sittataashar"],
+      "prompt": "Practice saying 'ستة عشر' (sixteen) out loud.",
+      "answer": "ستة عشر"
+    },
+    {
+      "id": "l53-ex9",
+      "type": "speaking",
+      "refIds": ["sabaataashar"],
+      "prompt": "Practice saying 'سبعة عشر' (seventeen) out loud.",
+      "answer": "سبعة عشر"
+    },
+    {
+      "id": "l53-ex10",
+      "type": "speaking",
+      "refIds": ["thamaaniyataashar"],
+      "prompt": "Practice saying 'ثمانية عشر' (eighteen) out loud.",
+      "answer": "ثمانية عشر"
+    },
+    {
+      "id": "l53-ex11",
+      "type": "speaking",
+      "refIds": ["tisaataashar"],
+      "prompt": "Practice saying 'تسعة عشر' (nineteen) out loud.",
+      "answer": "تسعة عشر"
+    },
+    {
+      "id": "l53-ex12",
+      "type": "speaking",
+      "refIds": ["ishruun"],
+      "prompt": "Practice saying 'عشرون' (twenty) out loud.",
+      "answer": "عشرون"
+    }
+  ]
+}
