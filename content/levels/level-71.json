@@ -1,0 +1,126 @@
+{
+  "number": 71,
+  "title": "Verbs — \"To Meet\" (Form VI)",
+  "newLetters": [],
+  "newVocab": ["nataqabalu", "tataqabaluuna", "yataqabaluuna"],
+  "newPatterns": ["meet-tomorrow"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "nataqabalu",
+      "arabic": "نَتَقَابَلُ",
+      "arabicNoDiacritics": "نتقابل",
+      "transliteration": "nataqābalu",
+      "english": "we meet (each other)",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nataqabalu", "text": "نَتَقَابَلُ" },
+      "introducedInLevel": 71,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tataqabaluuna",
+      "arabic": "تَتَقَابَلُونَ",
+      "arabicNoDiacritics": "تتقابلون",
+      "transliteration": "tataqābalūna",
+      "english": "you (plural) meet (each other)",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tataqabaluuna", "text": "تَتَقَابَلُونَ" },
+      "introducedInLevel": 71,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yataqabaluuna",
+      "arabic": "يَتَقَابَلُونَ",
+      "arabicNoDiacritics": "يتقابلون",
+      "transliteration": "yataqābalūna",
+      "english": "they meet (each other)",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yataqabaluuna", "text": "يَتَقَابَلُونَ" },
+      "introducedInLevel": 71,
+      "tags": ["core", "verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "meet-tomorrow",
+      "pattern": "نَتَقَابَلُ + غَدًا",
+      "exampleArabic": "نتقابل غدا",
+      "exampleTransliteration": "nataqābalu ghadan",
+      "exampleEnglish": "We meet each other tomorrow.",
+      "grammarNote": "تَقَابَلَ ('to meet each other') is Form VI (تَفَاعَلَ) — reciprocal, built the same way Form V's تَعَلَّمَ (level 62) was built from Form II: a تَـ prefix on Form III قَابَلَ ('to face/meet someone', not taught on its own). Because 'meeting each other' inherently needs two or more people, this verb is naturally used with plural subjects — نَحْنُ, أَنْتُمْ, هُمْ — rather than a single أَنَا or هُوَ, so only those three forms are taught, reusing the plural pronouns and the ـُونَ ending from level 51. Seven of the ten verb forms are now covered outside the base Form I: II, III, IV, V, VI, VIII, and X (يستطيع, level 48).",
+      "audio": { "id": "phrase_nataqabalu_ghadan", "text": "نتقابل غدا" },
+      "introducedInLevel": 71
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l71-ex1",
+      "type": "multiple-choice",
+      "refIds": ["nataqabalu"],
+      "prompt": "What does 'نتقابل' mean?",
+      "options": ["we meet (each other)", "we learn", "we wait", "we sleep"],
+      "answer": "we meet (each other)"
+    },
+    {
+      "id": "l71-ex2",
+      "type": "sentence-build",
+      "refIds": ["nataqabalu", "ghadan", "meet-tomorrow"],
+      "prompt": "Arrange the tiles to say 'We meet each other tomorrow.'",
+      "options": ["نتقابل", "غدا"],
+      "answer": "نتقابل غدا"
+    },
+    {
+      "id": "l71-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tataqabaluuna"],
+      "prompt": "What does 'تتقابلون' mean?",
+      "options": ["you (plural) meet (each other)", "August", "I want", "clock / watch / hour"],
+      "answer": "you (plural) meet (each other)"
+    },
+    {
+      "id": "l71-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tataqabaluuna"],
+      "prompt": "Which word means 'you (plural) meet (each other)'?",
+      "options": ["ثمانية عشر", "ترسلين", "تتقابلون", "تشربين"],
+      "answer": "تتقابلون"
+    },
+    {
+      "id": "l71-ex5",
+      "type": "multiple-choice",
+      "refIds": ["yataqabaluuna"],
+      "prompt": "What does 'يتقابلون' mean?",
+      "options": ["father", "they meet (each other)", "November", "she wanted"],
+      "answer": "they meet (each other)"
+    },
+    {
+      "id": "l71-ex6",
+      "type": "typing",
+      "refIds": ["yataqabaluuna"],
+      "prompt": "Type the Arabic word for 'they meet (each other)'.",
+      "answer": "يتقابلون"
+    },
+    {
+      "id": "l71-ex7",
+      "type": "speaking",
+      "refIds": ["nataqabalu"],
+      "prompt": "Practice saying 'نتقابل' (we meet (each other)) out loud.",
+      "answer": "نتقابل"
+    },
+    {
+      "id": "l71-ex8",
+      "type": "speaking",
+      "refIds": ["tataqabaluuna"],
+      "prompt": "Practice saying 'تتقابلون' (you (plural) meet (each other)) out loud.",
+      "answer": "تتقابلون"
+    },
+    {
+      "id": "l71-ex9",
+      "type": "speaking",
+      "refIds": ["yataqabaluuna"],
+      "prompt": "Practice saying 'يتقابلون' (they meet (each other)) out loud.",
+      "answer": "يتقابلون"
+    }
+  ]
+}

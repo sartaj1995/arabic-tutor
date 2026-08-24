@@ -381,6 +381,20 @@ function Shirt() {
   );
 }
 
+function Coin() {
+  return (
+    <>
+      <circle cx="10" cy="10" r="6.5" stroke="currentColor" strokeWidth="1.4" />
+      <path
+        d="M10 6.3v7.4M12 7.6c-.5-.5-1.3-.8-2.1-.8-1.3 0-2.3.7-2.3 1.7s1 1.4 2.3 1.7c1.4.3 2.3.7 2.3 1.7s-1 1.7-2.3 1.7c-.9 0-1.7-.3-2.2-.9"
+        stroke="currentColor"
+        strokeWidth="1.2"
+        strokeLinecap="round"
+      />
+    </>
+  );
+}
+
 function Vehicle() {
   return (
     <>
@@ -435,6 +449,10 @@ const RULES: Array<[string, () => JSX.Element]> = [
   ["Prepositions of Time", Compass],
   ["Transportation", Vehicle],
   ["Household", Cube],
+  ["Directions", Compass],
+  ["Money & Shopping", Coin],
+  ["Adjectives", Tag],
+  ["Comparison", Scale],
   ["Review", Flag],
 ];
 

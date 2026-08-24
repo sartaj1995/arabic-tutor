@@ -5,8 +5,8 @@ script, vocabulary, and sentence-building — across 100 levels.
 
 **Status: app shell with interactive exercises, an on-screen Arabic
 keyboard, spaced-repetition review, real exercise depth, live audio, and a
-progress dashboard.** The first 70 levels of curriculum content exist as
-structured JSON — 1029 exercises across them, generated so every letter and
+progress dashboard.** The first 80 levels of curriculum content exist as
+structured JSON — 1146 exercises across them, generated so every letter and
 vocab word gets at least one dedicated question, not just the illustrative
 few each level started with. A React/Vite app loads and displays them with
 clickable/typeable exercises and live scoring, finishing a level feeds its
@@ -118,7 +118,7 @@ src/lib/speech.ts         Web Speech API wrapper (speak, voice detection)
 src/lib/progress.ts       Dashboard stats computed from IndexedDB (no separate tracking)
 src/pages/                LevelList, LevelDetail, Review, Progress
 src/components/           ArabicText, ExerciseCard, PlayAudioButton, ArabicKeyboard
-content/levels/*.json     Authored level content (levels 1–70 so far)
+content/levels/*.json     Authored level content (levels 1–80 so far)
 scripts/generate-audio.mjs      Offline Google Cloud TTS pipeline — fallback, unused
 scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 ```
@@ -126,9 +126,9 @@ scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 Each `content/levels/level-XX.json` follows the `Level` type in
 `src/types/content.ts`: new letters, new vocab, new sentence patterns, a
 diacritics-display setting, and exercises (a hand-authored core set plus
-generated coverage exercises — 1029 total across the 70 levels).
+generated coverage exercises — 1146 total across the 80 levels).
 
-## First 70 levels
+## First 80 levels
 
 | # | Theme |
 |---|---|
@@ -202,11 +202,21 @@ generated coverage exercises — 1029 total across the 70 levels).
 | 68 | Transportation vocabulary |
 | 69 | Household & furniture |
 | 70 | Review — levels 61–70 |
+| 71 | Verbs — "to meet" (Form VI) |
+| 72 | Directions |
+| 73 | Verbs — "to depart" (Form VII) |
+| 74 | Money & shopping |
+| 75 | Verbs — "to walk" (defective) |
+| 76 | More object pronouns |
+| 77 | Verbs — "to like/love" (geminate) |
+| 78 | More adjectives |
+| 79 | Comparison — كَـ ("like/as") |
+| 80 | Review — levels 71–80 |
 
 ## Next steps
 
 1. **Review the pacing.** Read through `content/levels/level-01.json` →
-   `level-70.json` (or the summary table in `docs/content-model.md`) and
+   `level-80.json` (or the summary table in `docs/content-model.md`) and
    sanity-check that the progression feels right before more levels are
    generated the same way.
 2. ~~Scaffold the app.~~ Done — `npm run dev` to try it.
@@ -372,6 +382,31 @@ generated coverage exercises — 1029 total across the 70 levels).
     Expanded" / الحياة اليومية الموسعة) renders all ten levels with correct
     icons, level 65's 13-word month list and level 70's 5-tile capstone
     both render and score correctly. 70 of 100 levels done.
+8f. ~~Author levels 71–80.~~ Done — rounds out the verb-form system to
+    nine of ten forms (Form IX left out deliberately, too narrow to be
+    worth a level) with تَقَابَلَ ("to meet each other", Form VI) and
+    اِنْطَلَقَ ("to depart", Form VII), and introduces the two remaining
+    weak-verb irregularity classes: مَشَى ("to walk", defective/weak-final)
+    and أَحَبَّ ("to like/love", geminate/doubled-root) — alongside hollow
+    verbs already known, all three weak-verb categories are now
+    represented, each via one genuinely useful verb. تَقَابَلَ's grammar note
+    flags a deliberate choice: reciprocal verbs only make sense with
+    plural subjects, so only نَحْنُ/أَنْتُمْ/هُمْ forms are taught, reusing
+    level 51's plural verb endings instead of a six-pronoun paradigm
+    nobody would use. Also extends level 64's object pronouns with three
+    more suffixes (-كَ, -نَا, -هُمْ — six of Arabic's object pronouns now
+    taught), adds a light comparison particle (كَـ, "like/as" — its
+    example deliberately avoids Arabic's irregular "five nouns" by using
+    أُمِّهَا 'her mother' instead of أَبِيهِ 'his father'), directions, money
+    & shopping, and more adjectives. Validated with a full consistency
+    pass (0 problems across 478 items / 1146 exercises, 0 new
+    stripped-text collisions against the full 377-word vocab pool) and in
+    the browser — the new Unit 8 ("Practical Fluency" / الطلاقة العملية)
+    renders all ten levels with correct icons, level 77's geminate-verb
+    conjugation and level 80's 7-tile capstone (combining قَبْلَ with
+    أَنْ + a verb for the first time) both render and score correctly. 80
+    of 100 levels done. Also added a favicon and meta description
+    (`index.html`, `public/favicon.svg`) — the app previously had neither.
 9. ~~Author `letter-writing` exercises.~~ Done — `generate-exercises.mjs`
    now generates one per letter (28 total, across levels 1–7 where all the
    alphabet is introduced), testing the production direction (name ->

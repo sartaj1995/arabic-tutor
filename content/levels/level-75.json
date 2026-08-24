@@ -1,0 +1,193 @@
+{
+  "number": 75,
+  "title": "Verbs — \"To Walk\" (Defective)",
+  "newLetters": [],
+  "newVocab": ["amshi", "tamshi", "tamsheena", "yamshi", "namshi"],
+  "newPatterns": ["walk-to-school"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "amshi",
+      "arabic": "أَمْشِي",
+      "arabicNoDiacritics": "أمشي",
+      "transliteration": "amshī",
+      "english": "I walk",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_amshi", "text": "أَمْشِي" },
+      "introducedInLevel": 75,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tamshi",
+      "arabic": "تَمْشِي",
+      "arabicNoDiacritics": "تمشي",
+      "transliteration": "tamshī",
+      "english": "you (masc.) walk / she walks",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tamshi", "text": "تَمْشِي" },
+      "introducedInLevel": 75,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tamsheena",
+      "arabic": "تَمْشِينَ",
+      "arabicNoDiacritics": "تمشين",
+      "transliteration": "tamshīna",
+      "english": "you (fem.) walk",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tamsheena", "text": "تَمْشِينَ" },
+      "introducedInLevel": 75,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yamshi",
+      "arabic": "يَمْشِي",
+      "arabicNoDiacritics": "يمشي",
+      "transliteration": "yamshī",
+      "english": "he walks",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yamshi", "text": "يَمْشِي" },
+      "introducedInLevel": 75,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "namshi",
+      "arabic": "نَمْشِي",
+      "arabicNoDiacritics": "نمشي",
+      "transliteration": "namshī",
+      "english": "we walk",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_namshi", "text": "نَمْشِي" },
+      "introducedInLevel": 75,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "walk-to-school",
+      "pattern": "[Verb] + إِلَى الـ[Place]",
+      "exampleArabic": "أمشي إلى المدرسة",
+      "exampleTransliteration": "amshī ilā l-madrasati",
+      "exampleEnglish": "I walk to school.",
+      "grammarNote": "مَشَى ('to walk') is your first 'defective' (weak-final) verb — a root whose LAST letter is و or ي, a third kind of weak-verb irregularity alongside hollow, middle-weak verbs like أَرَادَ/نَامَ (levels 15, 66). In the present tense it mostly behaves like an ordinary Form I verb with a long ي wherever the root's ي would be: أَمْشِي, تَمْشِي, يَمْشِي, نَمْشِي. The one real wrinkle is 'you (fem.)': the root's final ي and the -ِينَ suffix's own ي merge into a single ي rather than stacking two — تَمْشِينَ, not the doubled-up تَمْشِيِينَ you might expect by analogy with تَذْهَبِينَ.",
+      "audio": { "id": "phrase_amshi_ilaa_almadrasa", "text": "أمشي إلى المدرسة" },
+      "introducedInLevel": 75
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l75-ex1",
+      "type": "multiple-choice",
+      "refIds": ["amshi"],
+      "prompt": "What does 'أمشي' mean?",
+      "options": ["I walk", "I go", "I depart", "I meet"],
+      "answer": "I walk"
+    },
+    {
+      "id": "l75-ex2",
+      "type": "sentence-build",
+      "refIds": ["amshi", "madrasa", "walk-to-school"],
+      "prompt": "Arrange the tiles to say 'I walk to school.'",
+      "options": ["أمشي", "إلى", "المدرسة"],
+      "answer": "أمشي إلى المدرسة"
+    },
+    {
+      "id": "l75-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tamshi"],
+      "prompt": "What does 'تمشي' mean?",
+      "options": ["we wanted", "you (masc.) walk / she walks", "you (fem.) can", "six"],
+      "answer": "you (masc.) walk / she walks"
+    },
+    {
+      "id": "l75-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tamshi"],
+      "prompt": "Which word means 'you (masc.) walk / she walks'?",
+      "options": ["ستة عشر", "تمشي", "الثانية", "أمام"],
+      "answer": "تمشي"
+    },
+    {
+      "id": "l75-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tamsheena"],
+      "prompt": "What does 'تمشين' mean?",
+      "options": ["always", "I teach", "a school", "you (fem.) walk"],
+      "answer": "you (fem.) walk"
+    },
+    {
+      "id": "l75-ex6",
+      "type": "typing",
+      "refIds": ["tamsheena"],
+      "prompt": "Type the Arabic word for 'you (fem.) walk'.",
+      "answer": "تمشين"
+    },
+    {
+      "id": "l75-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yamshi"],
+      "prompt": "What does 'يمشي' mean?",
+      "options": ["December", "you (masc.) walk / she walks", "nine", "he walks"],
+      "answer": "he walks"
+    },
+    {
+      "id": "l75-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yamshi"],
+      "prompt": "Which word means 'he walks'?",
+      "options": ["يمشي", "آكل", "يتقابلون", "قرأ"],
+      "answer": "يمشي"
+    },
+    {
+      "id": "l75-ex9",
+      "type": "multiple-choice",
+      "refIds": ["namshi"],
+      "prompt": "What does 'نمشي' mean?",
+      "options": ["smaller / smallest", "what", "we walk", "you (masc.) go / she goes"],
+      "answer": "we walk"
+    },
+    {
+      "id": "l75-ex10",
+      "type": "typing",
+      "refIds": ["namshi"],
+      "prompt": "Type the Arabic word for 'we walk'.",
+      "answer": "نمشي"
+    },
+    {
+      "id": "l75-ex11",
+      "type": "speaking",
+      "refIds": ["amshi"],
+      "prompt": "Practice saying 'أمشي' (I walk) out loud.",
+      "answer": "أمشي"
+    },
+    {
+      "id": "l75-ex12",
+      "type": "speaking",
+      "refIds": ["tamshi"],
+      "prompt": "Practice saying 'تمشي' (you (masc.) walk / she walks) out loud.",
+      "answer": "تمشي"
+    },
+    {
+      "id": "l75-ex13",
+      "type": "speaking",
+      "refIds": ["tamsheena"],
+      "prompt": "Practice saying 'تمشين' (you (fem.) walk) out loud.",
+      "answer": "تمشين"
+    },
+    {
+      "id": "l75-ex14",
+      "type": "speaking",
+      "refIds": ["yamshi"],
+      "prompt": "Practice saying 'يمشي' (he walks) out loud.",
+      "answer": "يمشي"
+    },
+    {
+      "id": "l75-ex15",
+      "type": "speaking",
+      "refIds": ["namshi"],
+      "prompt": "Practice saying 'نمشي' (we walk) out loud.",
+      "answer": "نمشي"
+    }
+  ]
+}

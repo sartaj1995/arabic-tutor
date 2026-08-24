@@ -1,0 +1,107 @@
+{
+  "number": 80,
+  "title": "Review — Levels 71–80",
+  "newLetters": [],
+  "newVocab": ["maan"],
+  "newPatterns": ["review-capstone-6"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "maan",
+      "arabic": "مَعًا",
+      "arabicNoDiacritics": "معا",
+      "transliteration": "maʿan",
+      "english": "together",
+      "partOfSpeech": "adverb",
+      "audio": { "id": "word_maan", "text": "مَعًا" },
+      "introducedInLevel": 80,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "review-capstone-6",
+      "pattern": "[Verb] + فِي الـ[Place] + قَبْلَ أَنْ + [Verb]",
+      "exampleArabic": "نتقابل في المحطة قبل أن ينطلق القطار",
+      "exampleTransliteration": "nataqābalu fī l-maḥaṭṭati qabla an yanṭaliqa l-qiṭāri",
+      "exampleEnglish": "We meet each other at the station before the train departs.",
+      "grammarNote": "A closing capstone for levels 71-80: نَتَقَابَلُ ('we meet each other', Form VI, level 71) فِي الْمَحَطَّةِ ('at the station', level 68), then قَبْلَ أَنْ يَنْطَلِقَ الْقِطَارُ ('before the train departs') — a new but fully justified combination: قَبْلَ (level 67) can take either a plain genitive noun, as level 67 taught, or أَنْ + a verb (level 48's subjunctive-reuse trick), exactly like English 'before' can take either a noun ('before the train') or a clause ('before the train departs'). 80 of 100 levels now authored. مَعًا ('together') joins the -ًا adverb family and fits the reciprocal theme of this batch's meeting/departing verbs.",
+      "audio": { "id": "phrase_nataqabalu_almahatta_qabla_an_yantaliq_alqitaar", "text": "نتقابل في المحطة قبل أن ينطلق القطار" },
+      "introducedInLevel": 80
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l80-ex1",
+      "type": "multiple-choice",
+      "refIds": ["maan"],
+      "prompt": "What does 'معا' mean?",
+      "options": ["together", "sometimes", "always", "before"],
+      "answer": "together"
+    },
+    {
+      "id": "l80-ex2",
+      "type": "sentence-build",
+      "refIds": ["nataqabalu", "fi", "mahatta", "qabla", "an", "yantaliqu", "qitaar", "review-capstone-6"],
+      "prompt": "Arrange the tiles to say 'We meet each other at the station before the train departs.'",
+      "options": ["نتقابل", "في", "المحطة", "قبل", "أن", "ينطلق", "القطار"],
+      "answer": "نتقابل في المحطة قبل أن ينطلق القطار"
+    },
+    {
+      "id": "l80-ex3",
+      "type": "multiple-choice",
+      "refIds": ["yameen"],
+      "prompt": "Review: what does 'يمين' mean?",
+      "options": ["right", "left", "north", "east"],
+      "answer": "right"
+    },
+    {
+      "id": "l80-ex4",
+      "type": "multiple-choice",
+      "refIds": ["rakhees"],
+      "prompt": "Review: what does 'رخيص' mean?",
+      "options": ["cheap", "clean", "easy", "money"],
+      "answer": "cheap"
+    },
+    {
+      "id": "l80-ex5",
+      "type": "multiple-choice",
+      "refIds": ["amshi"],
+      "prompt": "Review: what does 'أمشي' mean?",
+      "options": ["I walk", "I depart", "I meet", "I wait"],
+      "answer": "I walk"
+    },
+    {
+      "id": "l80-ex6",
+      "type": "multiple-choice",
+      "refIds": ["uhibbu"],
+      "prompt": "Review: what does 'أحب' mean?",
+      "options": ["I like / I love", "I want", "I teach", "I learn"],
+      "answer": "I like / I love"
+    },
+    {
+      "id": "l80-ex7",
+      "type": "multiple-choice",
+      "refIds": ["sahl"],
+      "prompt": "Review: what does 'سهل' mean?",
+      "options": ["easy", "difficult", "clean", "dirty"],
+      "answer": "easy"
+    },
+    {
+      "id": "l80-ex8",
+      "type": "multiple-choice",
+      "refIds": ["ka"],
+      "prompt": "Review: what does 'كَـ' mean?",
+      "options": ["like / as", "with / by", "and", "before"],
+      "answer": "like / as"
+    },
+    {
+      "id": "l80-ex9",
+      "type": "speaking",
+      "refIds": ["maan"],
+      "prompt": "Practice saying 'معا' (together) out loud.",
+      "answer": "معا"
+    }
+  ]
+}

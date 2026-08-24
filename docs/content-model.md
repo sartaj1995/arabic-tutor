@@ -96,7 +96,7 @@ TTS-facing form); it's hand-authored exercise/pattern text, and anything
 `scripts/generate-exercises.mjs` generates, that gets stripped down to
 match a "none" level's setting.
 
-## First 70 levels, at a glance
+## First 80 levels, at a glance
 
 | Level | Theme | New letters | New pattern |
 |---|---|---|---|
@@ -170,6 +170,16 @@ match a "none" level's setting.
 | 68 | Transportation vocabulary | — | "I go by train." |
 | 69 | Household & furniture | — | "The bed is in the room." |
 | 70 | Review — levels 61–70 | — | capstone: سَـ-future + انتظر + قَبْلَ |
+| 71 | Verbs — "to meet" (Form VI) | — | "We meet each other tomorrow." |
+| 72 | Directions | — | "The office is on the right." |
+| 73 | Verbs — "to depart" (Form VII) | — | "The train departs." |
+| 74 | Money & shopping | — | "This is cheap." |
+| 75 | Verbs — "to walk" (defective) | — | "I walk to school." |
+| 76 | More object pronouns | — | "The teacher teaches us." |
+| 77 | Verbs — "to like/love" (geminate) | — | "I love coffee." |
+| 78 | More adjectives | — | "The book is easy." |
+| 79 | Comparison — كَـ ("like/as") | — | "She is like her mother." |
+| 80 | Review — levels 71–80 | — | capstone: تقابل + قبل أن + انطلق |
 
 Levels 1–10 were a **pacing proof of concept** validating the schema and
 progression before continuing; levels 11–20 build on that same shape and
@@ -346,6 +356,35 @@ idafa-like preposition pattern to time, and reuses level 36's
 telling-time construction in its example sentence. 70 of 100 levels now
 authored.
 
+Levels 71–80 finish rounding out the verb-form system (nine of ten forms
+now covered, Form IX deliberately excluded as too narrow) and introduce
+the two remaining weak-verb irregularity classes. 71 (تَقَابَلَ, "to meet
+each other", Form VI) and 73 (اِنْطَلَقَ, "to depart", Form VII) complete
+that count; 71's grammar note explains a deliberate, meaning-driven
+choice — reciprocal verbs only make sense with plural subjects, so only
+نَحْنُ/أَنْتُمْ/هُمْ forms are taught, reusing level 51's plural verb endings
+rather than a full six-pronoun paradigm nobody would use. 75 (مَشَى, "to
+walk") introduces defective (weak-final) verbs, and 77 (أَحَبَّ, "to
+like/love") introduces geminate (doubled-root) verbs — alongside hollow
+verbs (أَرَادَ/نَامَ, levels 15/66), all three of Arabic's weak-verb
+categories are now represented, each via one clearly useful, high-utility
+verb rather than an abstract drill.
+
+76 extends level 64's attached object pronouns with three more suffixes
+(-كَ, -نَا, -هُمْ), bringing the taught set to six of Arabic's object
+pronouns and explicitly flagging the rest (-كِ, -كُمْ, -هُنَّ) as a "kept
+light" extension, the same call made for the dual and أَنْتُنَّ. 79 (كَـ,
+"like/as") is a light, single-word grammar point — a prefixing particle
+like بِ/وَ/سَـ — deliberately built on أُمِّهَا rather than أَبِيهِ in its
+example, sidestepping Arabic's irregular "five nouns" (الأسماء الخمسة,
+which includes أَب) rather than introducing a second irregularity inside
+what's meant to be a light level. 72 (directions), 74 (money/shopping),
+and 78 (more adjectives) are vocabulary-only levels reusing fully
+established sentence structures. 80's capstone combines قَبْلَ (level 67)
+taking أَنْ + a verb instead of a plain noun — a new but fully justified
+extension, exactly parallel to how English "before" can take either a
+noun or a clause. 80 of 100 levels now authored.
+
 ## Exercises in the JSON files
 
 Each level file has a small hand-authored core set (the flagship
@@ -353,7 +392,7 @@ sentence-build/matching/typing exercises that show off a level's grammar
 point) plus generated coverage exercises ensuring every letter and vocab
 word gets at least one dedicated question — see
 `scripts/generate-exercises.mjs`, an idempotent script safe to re-run after
-authoring new levels. As of level 70: 431 content items, 1029 exercises
+authoring new levels. As of level 80: 478 content items, 1146 exercises
 total. The generator is diacritics-aware — it renders Arabic text stripped
 for levels where `diacriticsLevel === "none"` so generated and
 hand-authored exercises never mix styles within the same level.
