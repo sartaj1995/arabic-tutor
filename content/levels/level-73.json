@@ -1,0 +1,193 @@
+{
+  "number": 73,
+  "title": "Verbs — \"To Depart\" (Form VII)",
+  "newLetters": [],
+  "newVocab": ["antaliqu", "tantaliqu", "tantaliqeena", "yantaliqu", "nantaliqu"],
+  "newPatterns": ["train-departs"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "antaliqu",
+      "arabic": "أَنْطَلِقُ",
+      "arabicNoDiacritics": "أنطلق",
+      "transliteration": "anṭaliqu",
+      "english": "I depart",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_antaliqu", "text": "أَنْطَلِقُ" },
+      "introducedInLevel": 73,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tantaliqu",
+      "arabic": "تَنْطَلِقُ",
+      "arabicNoDiacritics": "تنطلق",
+      "transliteration": "tanṭaliqu",
+      "english": "you (masc.) depart / she departs",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tantaliqu", "text": "تَنْطَلِقُ" },
+      "introducedInLevel": 73,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tantaliqeena",
+      "arabic": "تَنْطَلِقِينَ",
+      "arabicNoDiacritics": "تنطلقين",
+      "transliteration": "tanṭaliqīna",
+      "english": "you (fem.) depart",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tantaliqeena", "text": "تَنْطَلِقِينَ" },
+      "introducedInLevel": 73,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yantaliqu",
+      "arabic": "يَنْطَلِقُ",
+      "arabicNoDiacritics": "ينطلق",
+      "transliteration": "yanṭaliqu",
+      "english": "he departs / it departs",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yantaliqu", "text": "يَنْطَلِقُ" },
+      "introducedInLevel": 73,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nantaliqu",
+      "arabic": "نَنْطَلِقُ",
+      "arabicNoDiacritics": "ننطلق",
+      "transliteration": "nanṭaliqu",
+      "english": "we depart",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nantaliqu", "text": "نَنْطَلِقُ" },
+      "introducedInLevel": 73,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "train-departs",
+      "pattern": "الـ[Noun] + يَنْطَلِقُ",
+      "exampleArabic": "القطار ينطلق",
+      "exampleTransliteration": "al-qiṭāru yanṭaliqu",
+      "exampleEnglish": "The train departs.",
+      "grammarNote": "اِنْطَلَقَ ('to depart/set off') is Form VII (اِنْفَعَلَ) — marked by an اِنْـ prefix. Like Forms V, VI, and VIII, its present-tense prefix takes fatha: أَنْطَلِقُ, تَنْطَلِقُ, تَنْطَلِقِينَ, يَنْطَلِقُ, نَنْطَلِقُ. Form VII often carries a sense of something happening 'by itself' rather than being done to something — القطار ينطلق ('the train departs') describes the train's own motion, not someone departing it. With this form, nine of the ten verb forms are now covered outside the base Form I; only Form IX (اِفْعَلَّ, used almost exclusively for colors and physical traits — e.g. اِحْمَرَّ 'to blush') is left out, deliberately, as too narrow to be worth its own level.",
+      "audio": { "id": "phrase_alqitaar_yantaliqu", "text": "القطار ينطلق" },
+      "introducedInLevel": 73
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l73-ex1",
+      "type": "multiple-choice",
+      "refIds": ["antaliqu"],
+      "prompt": "What does 'أنطلق' mean?",
+      "options": ["I depart", "I meet", "I wait", "I go"],
+      "answer": "I depart"
+    },
+    {
+      "id": "l73-ex2",
+      "type": "sentence-build",
+      "refIds": ["qitaar", "yantaliqu", "train-departs"],
+      "prompt": "Arrange the tiles to say 'The train departs.'",
+      "options": ["القطار", "ينطلق"],
+      "answer": "القطار ينطلق"
+    },
+    {
+      "id": "l73-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tantaliqu"],
+      "prompt": "What does 'تنطلق' mean?",
+      "options": ["twenty", "bread", "a hand", "you (masc.) depart / she departs"],
+      "answer": "you (masc.) depart / she departs"
+    },
+    {
+      "id": "l73-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tantaliqu"],
+      "prompt": "Which word means 'you (masc.) depart / she departs'?",
+      "options": ["قطار", "الثالثة", "تنطلق", "اثنان"],
+      "answer": "تنطلق"
+    },
+    {
+      "id": "l73-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tantaliqeena"],
+      "prompt": "What does 'تنطلقين' mean?",
+      "options": ["that (fem.)", "you (fem.) depart", "in front of", "he sleeps"],
+      "answer": "you (fem.) depart"
+    },
+    {
+      "id": "l73-ex6",
+      "type": "typing",
+      "refIds": ["tantaliqeena"],
+      "prompt": "Type the Arabic word for 'you (fem.) depart'.",
+      "answer": "تنطلقين"
+    },
+    {
+      "id": "l73-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yantaliqu"],
+      "prompt": "What does 'ينطلق' mean?",
+      "options": ["he departs / it departs", "two girls", "one hundred", "a head"],
+      "answer": "he departs / it departs"
+    },
+    {
+      "id": "l73-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yantaliqu"],
+      "prompt": "Which word means 'he departs / it departs'?",
+      "options": ["حار", "يستطيع", "الرابعة", "ينطلق"],
+      "answer": "ينطلق"
+    },
+    {
+      "id": "l73-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nantaliqu"],
+      "prompt": "What does 'ننطلق' mean?",
+      "options": ["you (fem.) work", "she/it is not", "green", "we depart"],
+      "answer": "we depart"
+    },
+    {
+      "id": "l73-ex10",
+      "type": "typing",
+      "refIds": ["nantaliqu"],
+      "prompt": "Type the Arabic word for 'we depart'.",
+      "answer": "ننطلق"
+    },
+    {
+      "id": "l73-ex11",
+      "type": "speaking",
+      "refIds": ["antaliqu"],
+      "prompt": "Practice saying 'أنطلق' (I depart) out loud.",
+      "answer": "أنطلق"
+    },
+    {
+      "id": "l73-ex12",
+      "type": "speaking",
+      "refIds": ["tantaliqu"],
+      "prompt": "Practice saying 'تنطلق' (you (masc.) depart / she departs) out loud.",
+      "answer": "تنطلق"
+    },
+    {
+      "id": "l73-ex13",
+      "type": "speaking",
+      "refIds": ["tantaliqeena"],
+      "prompt": "Practice saying 'تنطلقين' (you (fem.) depart) out loud.",
+      "answer": "تنطلقين"
+    },
+    {
+      "id": "l73-ex14",
+      "type": "speaking",
+      "refIds": ["yantaliqu"],
+      "prompt": "Practice saying 'ينطلق' (he departs / it departs) out loud.",
+      "answer": "ينطلق"
+    },
+    {
+      "id": "l73-ex15",
+      "type": "speaking",
+      "refIds": ["nantaliqu"],
+      "prompt": "Practice saying 'ننطلق' (we depart) out loud.",
+      "answer": "ننطلق"
+    }
+  ]
+}

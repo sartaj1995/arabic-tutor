@@ -1,0 +1,59 @@
+{
+  "number": 79,
+  "title": "Comparison — كَـ (\"Like / As\")",
+  "newLetters": [],
+  "newVocab": ["ka"],
+  "newPatterns": ["like-her-mother"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ka",
+      "arabic": "كَـ",
+      "arabicNoDiacritics": "ك",
+      "transliteration": "ka-",
+      "english": "like / as",
+      "partOfSpeech": "particle",
+      "audio": { "id": "word_ka", "text": "كَـ" },
+      "introducedInLevel": 79,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "like-her-mother",
+      "pattern": "[Subject] + كَـ + [Noun + suffix]",
+      "exampleArabic": "هي كأمها",
+      "exampleTransliteration": "hiya ka-ummihā",
+      "exampleEnglish": "She is like her mother.",
+      "grammarNote": "كَـ ('like/as') attaches directly to the following noun with no space, exactly like بِ (level 34), وَ (level 20), and سَـ (level 41) before it. أُمِّهَا reuses the exact same possessive suffix (-هَا, 'her', level 9) you already know — كَأُمِّهَا is literally 'like-her-mother'. No verb 'to be' is needed, the same equational sentence pattern as always.",
+      "audio": { "id": "phrase_hiya_kaummiha", "text": "هي كأمها" },
+      "introducedInLevel": 79
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l79-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ka"],
+      "prompt": "What does 'كَـ' mean?",
+      "options": ["like / as", "with / by", "and", "will"],
+      "answer": "like / as"
+    },
+    {
+      "id": "l79-ex2",
+      "type": "sentence-build",
+      "refIds": ["hiya", "ka", "umm", "like-her-mother"],
+      "prompt": "Arrange the tiles to say 'She is like her mother.'",
+      "options": ["هي", "كأمها"],
+      "answer": "هي كأمها"
+    },
+    {
+      "id": "l79-ex3",
+      "type": "speaking",
+      "refIds": ["ka"],
+      "prompt": "Practice saying 'ك' (like / as) out loud.",
+      "answer": "ك"
+    }
+  ]
+}

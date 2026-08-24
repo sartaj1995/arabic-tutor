@@ -1,0 +1,160 @@
+{
+  "number": 74,
+  "title": "Money & Shopping",
+  "newLetters": [],
+  "newVocab": ["nuqood", "sir", "rakhees", "dukkan"],
+  "newPatterns": ["this-is-cheap"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "nuqood",
+      "arabic": "نُقُودٌ",
+      "arabicNoDiacritics": "نقود",
+      "transliteration": "nuqūdun",
+      "english": "money",
+      "partOfSpeech": "noun (plural)",
+      "audio": { "id": "word_nuqood", "text": "نُقُودٌ" },
+      "introducedInLevel": 74,
+      "tags": ["core"]
+    },
+    {
+      "id": "sir",
+      "arabic": "سِعْرٌ",
+      "arabicNoDiacritics": "سعر",
+      "transliteration": "siʿrun",
+      "english": "a price",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_sir", "text": "سِعْرٌ" },
+      "introducedInLevel": 74,
+      "tags": ["core"]
+    },
+    {
+      "id": "rakhees",
+      "arabic": "رَخِيص",
+      "arabicNoDiacritics": "رخيص",
+      "transliteration": "rakhīṣ",
+      "english": "cheap",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_rakhees", "text": "رَخِيص" },
+      "introducedInLevel": 74,
+      "tags": ["core", "adjective"]
+    },
+    {
+      "id": "dukkan",
+      "arabic": "دُكَّانٌ",
+      "arabicNoDiacritics": "دكان",
+      "transliteration": "dukkānun",
+      "english": "a shop",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_dukkan", "text": "دُكَّانٌ" },
+      "introducedInLevel": 74,
+      "tags": ["core", "place"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "this-is-cheap",
+      "pattern": "هَذَا + [Adjective]",
+      "exampleArabic": "هذا رخيص",
+      "exampleTransliteration": "hādhā rakhīṣun",
+      "exampleEnglish": "This is cheap.",
+      "grammarNote": "Nothing new grammatically — هَذَا + adjective is the same equational sentence from level 5. نُقُودٌ ('money') is a plural-only noun, the way 'clothes' works in English — there's no everyday singular 'a money'. سِعْرٌ ('a price') and دُكَّانٌ ('a shop') round out the set for building your own shopping sentences: دُكَّانٌ رَخِيصٌ ('a cheap shop'), سِعْرُهُ رَخِيصٌ ('its price is cheap', reusing the -ُهُ suffix from level 9).",
+      "audio": { "id": "phrase_haadhaa_rakhees", "text": "هذا رخيص" },
+      "introducedInLevel": 74
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l74-ex1",
+      "type": "multiple-choice",
+      "refIds": ["nuqood"],
+      "prompt": "What does 'نقود' mean?",
+      "options": ["money", "a price", "a shop", "cheap"],
+      "answer": "money"
+    },
+    {
+      "id": "l74-ex2",
+      "type": "sentence-build",
+      "refIds": ["haadhaa", "rakhees", "this-is-cheap"],
+      "prompt": "Arrange the tiles to say 'This is cheap.'",
+      "options": ["هذا", "رخيص"],
+      "answer": "هذا رخيص"
+    },
+    {
+      "id": "l74-ex3",
+      "type": "multiple-choice",
+      "refIds": ["sir"],
+      "prompt": "What does 'سعر' mean?",
+      "options": ["your house (fem.)", "boys / children (irregular plural of وَلَد)", "a price", "you (masc.) are not"],
+      "answer": "a price"
+    },
+    {
+      "id": "l74-ex4",
+      "type": "multiple-choice",
+      "refIds": ["sir"],
+      "prompt": "Which word means 'a price'?",
+      "options": ["تكتبين", "سعر", "هذا", "جد"],
+      "answer": "سعر"
+    },
+    {
+      "id": "l74-ex5",
+      "type": "multiple-choice",
+      "refIds": ["rakhees"],
+      "prompt": "What does 'رخيص' mean?",
+      "options": ["we read", "a price", "cheap", "father"],
+      "answer": "cheap"
+    },
+    {
+      "id": "l74-ex6",
+      "type": "typing",
+      "refIds": ["rakhees"],
+      "prompt": "Type the Arabic word for 'cheap'.",
+      "answer": "رخيص"
+    },
+    {
+      "id": "l74-ex7",
+      "type": "multiple-choice",
+      "refIds": ["dukkan"],
+      "prompt": "What does 'دكان' mean?",
+      "options": ["a shop", "what", "pen", "his house"],
+      "answer": "a shop"
+    },
+    {
+      "id": "l74-ex8",
+      "type": "multiple-choice",
+      "refIds": ["dukkan"],
+      "prompt": "Which word means 'a shop'?",
+      "options": ["دكان", "متعب", "يأكل", "تلك"],
+      "answer": "دكان"
+    },
+    {
+      "id": "l74-ex9",
+      "type": "speaking",
+      "refIds": ["nuqood"],
+      "prompt": "Practice saying 'نقود' (money) out loud.",
+      "answer": "نقود"
+    },
+    {
+      "id": "l74-ex10",
+      "type": "speaking",
+      "refIds": ["sir"],
+      "prompt": "Practice saying 'سعر' (a price) out loud.",
+      "answer": "سعر"
+    },
+    {
+      "id": "l74-ex11",
+      "type": "speaking",
+      "refIds": ["rakhees"],
+      "prompt": "Practice saying 'رخيص' (cheap) out loud.",
+      "answer": "رخيص"
+    },
+    {
+      "id": "l74-ex12",
+      "type": "speaking",
+      "refIds": ["dukkan"],
+      "prompt": "Practice saying 'دكان' (a shop) out loud.",
+      "answer": "دكان"
+    }
+  ]
+}

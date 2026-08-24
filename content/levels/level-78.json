@@ -1,0 +1,160 @@
+{
+  "number": 78,
+  "title": "More Adjectives",
+  "newLetters": [],
+  "newVocab": ["natheef", "wasikh", "sahl", "saab"],
+  "newPatterns": ["book-is-easy"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "natheef",
+      "arabic": "نَظِيف",
+      "arabicNoDiacritics": "نظيف",
+      "transliteration": "naẓīf",
+      "english": "clean",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_natheef", "text": "نَظِيف" },
+      "introducedInLevel": 78,
+      "tags": ["core", "adjective"]
+    },
+    {
+      "id": "wasikh",
+      "arabic": "وَسِخ",
+      "arabicNoDiacritics": "وسخ",
+      "transliteration": "wasikh",
+      "english": "dirty",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_wasikh", "text": "وَسِخ" },
+      "introducedInLevel": 78,
+      "tags": ["adjective"]
+    },
+    {
+      "id": "sahl",
+      "arabic": "سَهْل",
+      "arabicNoDiacritics": "سهل",
+      "transliteration": "sahl",
+      "english": "easy",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_sahl", "text": "سَهْل" },
+      "introducedInLevel": 78,
+      "tags": ["core", "adjective"]
+    },
+    {
+      "id": "saab",
+      "arabic": "صَعْب",
+      "arabicNoDiacritics": "صعب",
+      "transliteration": "ṣaʿb",
+      "english": "difficult",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_saab", "text": "صَعْب" },
+      "introducedInLevel": 78,
+      "tags": ["core", "adjective"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "book-is-easy",
+      "pattern": "الـ[Noun] + [Adjective]",
+      "exampleArabic": "الكتاب سهل",
+      "exampleTransliteration": "al-kitābu sahlun",
+      "exampleEnglish": "The book is easy.",
+      "grammarNote": "Nothing new grammatically — a definite noun followed directly by an adjective, the equational sentence pattern from level 11. This level is vocabulary only: نَظِيف/وَسِخ ('clean'/'dirty') for the household nouns from level 69, and سَهْل/صَعْب ('easy'/'difficult') for describing lessons, exercises, or anything else.",
+      "audio": { "id": "phrase_alkitab_sahl", "text": "الكتاب سهل" },
+      "introducedInLevel": 78
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l78-ex1",
+      "type": "multiple-choice",
+      "refIds": ["natheef"],
+      "prompt": "What does 'نظيف' mean?",
+      "options": ["clean", "dirty", "easy", "difficult"],
+      "answer": "clean"
+    },
+    {
+      "id": "l78-ex2",
+      "type": "sentence-build",
+      "refIds": ["alkitab", "sahl", "book-is-easy"],
+      "prompt": "Arrange the tiles to say 'The book is easy.'",
+      "options": ["الكتاب", "سهل"],
+      "answer": "الكتاب سهل"
+    },
+    {
+      "id": "l78-ex3",
+      "type": "multiple-choice",
+      "refIds": ["wasikh"],
+      "prompt": "What does 'وسخ' mean?",
+      "options": ["nineteen", "May", "dirty", "I teach"],
+      "answer": "dirty"
+    },
+    {
+      "id": "l78-ex4",
+      "type": "multiple-choice",
+      "refIds": ["wasikh"],
+      "prompt": "Which word means 'dirty'?",
+      "options": ["وسخ", "تحبين", "سرير", "اليوم"],
+      "answer": "وسخ"
+    },
+    {
+      "id": "l78-ex5",
+      "type": "multiple-choice",
+      "refIds": ["sahl"],
+      "prompt": "What does 'سهل' mean?",
+      "options": ["he likes", "easy", "the fifth (fem.)", "he/it is not"],
+      "answer": "easy"
+    },
+    {
+      "id": "l78-ex6",
+      "type": "typing",
+      "refIds": ["sahl"],
+      "prompt": "Type the Arabic word for 'easy'.",
+      "answer": "سهل"
+    },
+    {
+      "id": "l78-ex7",
+      "type": "multiple-choice",
+      "refIds": ["saab"],
+      "prompt": "What does 'صعب' mean?",
+      "options": ["difficult", "ten", "we can", "she/it is not"],
+      "answer": "difficult"
+    },
+    {
+      "id": "l78-ex8",
+      "type": "multiple-choice",
+      "refIds": ["saab"],
+      "prompt": "Which word means 'difficult'?",
+      "options": ["غضبان", "حزين", "تذهب", "صعب"],
+      "answer": "صعب"
+    },
+    {
+      "id": "l78-ex9",
+      "type": "speaking",
+      "refIds": ["natheef"],
+      "prompt": "Practice saying 'نظيف' (clean) out loud.",
+      "answer": "نظيف"
+    },
+    {
+      "id": "l78-ex10",
+      "type": "speaking",
+      "refIds": ["wasikh"],
+      "prompt": "Practice saying 'وسخ' (dirty) out loud.",
+      "answer": "وسخ"
+    },
+    {
+      "id": "l78-ex11",
+      "type": "speaking",
+      "refIds": ["sahl"],
+      "prompt": "Practice saying 'سهل' (easy) out loud.",
+      "answer": "سهل"
+    },
+    {
+      "id": "l78-ex12",
+      "type": "speaking",
+      "refIds": ["saab"],
+      "prompt": "Practice saying 'صعب' (difficult) out loud.",
+      "answer": "صعب"
+    }
+  ]
+}

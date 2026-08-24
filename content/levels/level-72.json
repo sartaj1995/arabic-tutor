@@ -1,0 +1,227 @@
+{
+  "number": 72,
+  "title": "Directions",
+  "newLetters": [],
+  "newVocab": ["yameen", "yasaar", "shamal", "janoob", "sharq", "gharb"],
+  "newPatterns": ["on-the-right"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "yameen",
+      "arabic": "يَمِين",
+      "arabicNoDiacritics": "يمين",
+      "transliteration": "yamīn",
+      "english": "right",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_yameen", "text": "يَمِين" },
+      "introducedInLevel": 72,
+      "tags": ["core"]
+    },
+    {
+      "id": "yasaar",
+      "arabic": "يَسَار",
+      "arabicNoDiacritics": "يسار",
+      "transliteration": "yasār",
+      "english": "left",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_yasaar", "text": "يَسَار" },
+      "introducedInLevel": 72,
+      "tags": ["core"]
+    },
+    {
+      "id": "shamal",
+      "arabic": "شَمَال",
+      "arabicNoDiacritics": "شمال",
+      "transliteration": "shamāl",
+      "english": "north",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_shamal", "text": "شَمَال" },
+      "introducedInLevel": 72,
+      "tags": []
+    },
+    {
+      "id": "janoob",
+      "arabic": "جَنُوب",
+      "arabicNoDiacritics": "جنوب",
+      "transliteration": "janūb",
+      "english": "south",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_janoob", "text": "جَنُوب" },
+      "introducedInLevel": 72,
+      "tags": []
+    },
+    {
+      "id": "sharq",
+      "arabic": "شَرْق",
+      "arabicNoDiacritics": "شرق",
+      "transliteration": "sharq",
+      "english": "east",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_sharq", "text": "شَرْق" },
+      "introducedInLevel": 72,
+      "tags": []
+    },
+    {
+      "id": "gharb",
+      "arabic": "غَرْب",
+      "arabicNoDiacritics": "غرب",
+      "transliteration": "gharb",
+      "english": "west",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_gharb", "text": "غَرْب" },
+      "introducedInLevel": 72,
+      "tags": []
+    }
+  ],
+  "patterns": [
+    {
+      "id": "on-the-right",
+      "pattern": "الـ[Noun] + عَلَى الـ[Direction]",
+      "exampleArabic": "المكتب على اليمين",
+      "exampleTransliteration": "al-maktabu ʿalā l-yamīni",
+      "exampleEnglish": "The office is on the right.",
+      "grammarNote": "Nothing new grammatically — عَلَى ('on', level 5) plus a definite noun works exactly as it always has. This level is vocabulary only: يَمِين/يَسَار ('right'/'left') for everyday directions, and the four compass points شَمَال/جَنُوب/شَرْق/غَرْب ('north'/'south'/'east'/'west') for the bigger picture.",
+      "audio": { "id": "phrase_almaktab_alaa_alyameen", "text": "المكتب على اليمين" },
+      "introducedInLevel": 72
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l72-ex1",
+      "type": "multiple-choice",
+      "refIds": ["yameen"],
+      "prompt": "What does 'يمين' mean?",
+      "options": ["right", "left", "north", "south"],
+      "answer": "right"
+    },
+    {
+      "id": "l72-ex2",
+      "type": "sentence-build",
+      "refIds": ["maktab", "yameen", "on-the-right"],
+      "prompt": "Arrange the tiles to say 'The office is on the right.'",
+      "options": ["المكتب", "على", "اليمين"],
+      "answer": "المكتب على اليمين"
+    },
+    {
+      "id": "l72-ex3",
+      "type": "multiple-choice",
+      "refIds": ["yasaar"],
+      "prompt": "What does 'يسار' mean?",
+      "options": ["yesterday", "they (fem.)", "we read", "left"],
+      "answer": "left"
+    },
+    {
+      "id": "l72-ex4",
+      "type": "multiple-choice",
+      "refIds": ["yasaar"],
+      "prompt": "Which word means 'left'?",
+      "options": ["ما", "يسار", "تذهب", "طائرة"],
+      "answer": "يسار"
+    },
+    {
+      "id": "l72-ex5",
+      "type": "multiple-choice",
+      "refIds": ["shamal"],
+      "prompt": "What does 'شمال' mean?",
+      "options": ["I teach him", "I / you (masc.) / you (fem.) wanted", "north", "five"],
+      "answer": "north"
+    },
+    {
+      "id": "l72-ex6",
+      "type": "typing",
+      "refIds": ["shamal"],
+      "prompt": "Type the Arabic word for 'north'.",
+      "answer": "شمال"
+    },
+    {
+      "id": "l72-ex7",
+      "type": "multiple-choice",
+      "refIds": ["janoob"],
+      "prompt": "What does 'جنوب' mean?",
+      "options": ["south", "we went", "we go", "thirteen"],
+      "answer": "south"
+    },
+    {
+      "id": "l72-ex8",
+      "type": "multiple-choice",
+      "refIds": ["janoob"],
+      "prompt": "Which word means 'south'?",
+      "options": ["ليست", "ينتظر", "فوق", "جنوب"],
+      "answer": "جنوب"
+    },
+    {
+      "id": "l72-ex9",
+      "type": "multiple-choice",
+      "refIds": ["sharq"],
+      "prompt": "What does 'شرق' mean?",
+      "options": ["you (fem.) read", "an office / a desk", "east", "you (masc.) travel / she travels"],
+      "answer": "east"
+    },
+    {
+      "id": "l72-ex10",
+      "type": "typing",
+      "refIds": ["sharq"],
+      "prompt": "Type the Arabic word for 'east'.",
+      "answer": "شرق"
+    },
+    {
+      "id": "l72-ex11",
+      "type": "multiple-choice",
+      "refIds": ["gharb"],
+      "prompt": "What does 'غرب' mean?",
+      "options": ["November", "I read", "I study", "west"],
+      "answer": "west"
+    },
+    {
+      "id": "l72-ex12",
+      "type": "multiple-choice",
+      "refIds": ["gharb"],
+      "prompt": "Which word means 'west'?",
+      "options": ["ليست", "أسواق", "غرب", "مفتاح"],
+      "answer": "غرب"
+    },
+    {
+      "id": "l72-ex13",
+      "type": "speaking",
+      "refIds": ["yameen"],
+      "prompt": "Practice saying 'يمين' (right) out loud.",
+      "answer": "يمين"
+    },
+    {
+      "id": "l72-ex14",
+      "type": "speaking",
+      "refIds": ["yasaar"],
+      "prompt": "Practice saying 'يسار' (left) out loud.",
+      "answer": "يسار"
+    },
+    {
+      "id": "l72-ex15",
+      "type": "speaking",
+      "refIds": ["shamal"],
+      "prompt": "Practice saying 'شمال' (north) out loud.",
+      "answer": "شمال"
+    },
+    {
+      "id": "l72-ex16",
+      "type": "speaking",
+      "refIds": ["janoob"],
+      "prompt": "Practice saying 'جنوب' (south) out loud.",
+      "answer": "جنوب"
+    },
+    {
+      "id": "l72-ex17",
+      "type": "speaking",
+      "refIds": ["sharq"],
+      "prompt": "Practice saying 'شرق' (east) out loud.",
+      "answer": "شرق"
+    },
+    {
+      "id": "l72-ex18",
+      "type": "speaking",
+      "refIds": ["gharb"],
+      "prompt": "Practice saying 'غرب' (west) out loud.",
+      "answer": "غرب"
+    }
+  ]
+}

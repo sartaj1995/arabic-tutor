@@ -1,0 +1,193 @@
+{
+  "number": 77,
+  "title": "Verbs — \"To Like / Love\" (Geminate)",
+  "newLetters": [],
+  "newVocab": ["uhibbu", "tuhibbu", "tuhibbeena", "yuhibbu", "nuhibbu"],
+  "newPatterns": ["love-coffee"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "uhibbu",
+      "arabic": "أُحِبُّ",
+      "arabicNoDiacritics": "أحب",
+      "transliteration": "uḥibbu",
+      "english": "I like / I love",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_uhibbu", "text": "أُحِبُّ" },
+      "introducedInLevel": 77,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tuhibbu",
+      "arabic": "تُحِبُّ",
+      "arabicNoDiacritics": "تحب",
+      "transliteration": "tuḥibbu",
+      "english": "you (masc.) like / she likes",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tuhibbu", "text": "تُحِبُّ" },
+      "introducedInLevel": 77,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tuhibbeena",
+      "arabic": "تُحِبِّينَ",
+      "arabicNoDiacritics": "تحبين",
+      "transliteration": "tuḥibbīna",
+      "english": "you (fem.) like",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tuhibbeena", "text": "تُحِبِّينَ" },
+      "introducedInLevel": 77,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yuhibbu",
+      "arabic": "يُحِبُّ",
+      "arabicNoDiacritics": "يحب",
+      "transliteration": "yuḥibbu",
+      "english": "he likes",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yuhibbu", "text": "يُحِبُّ" },
+      "introducedInLevel": 77,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nuhibbu",
+      "arabic": "نُحِبُّ",
+      "arabicNoDiacritics": "نحب",
+      "transliteration": "nuḥibbu",
+      "english": "we like",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nuhibbu", "text": "نُحِبُّ" },
+      "introducedInLevel": 77,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "love-coffee",
+      "pattern": "[Verb] + الـ[Noun]",
+      "exampleArabic": "أحب القهوة",
+      "exampleTransliteration": "uḥibbu l-qahwata",
+      "exampleEnglish": "I love coffee.",
+      "grammarNote": "أَحَبَّ ('to like/love') is Form IV of a 'geminate' (doubled) root — ح-ب-ب, whose last two letters are identical. Rather than spelling them out separately, Arabic always contracts them into one letter marked with a shadda: حَبَّ, not حَبَبَ — and with the Form IV prefix, أَحَبَّ. The present tense keeps the same contraction: يُحِبُّ, not the spelled-out يُحْبِبُ you might expect. This is a third weak-verb pattern, alongside hollow (أَرَادَ/نَامَ) and defective (مَشَى, level 75) roots — geminate roots contract rather than losing a letter or turning into a vowel.",
+      "audio": { "id": "phrase_uhibbu_alqahwa", "text": "أحب القهوة" },
+      "introducedInLevel": 77
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l77-ex1",
+      "type": "multiple-choice",
+      "refIds": ["uhibbu"],
+      "prompt": "What does 'أحب' mean?",
+      "options": ["I like / I love", "I want", "I walk", "I know"],
+      "answer": "I like / I love"
+    },
+    {
+      "id": "l77-ex2",
+      "type": "sentence-build",
+      "refIds": ["uhibbu", "qahwa", "love-coffee"],
+      "prompt": "Arrange the tiles to say 'I love coffee.'",
+      "options": ["أحب", "القهوة"],
+      "answer": "أحب القهوة"
+    },
+    {
+      "id": "l77-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tuhibbu"],
+      "prompt": "What does 'تحب' mean?",
+      "options": ["left", "I", "a bicycle", "you (masc.) like / she likes"],
+      "answer": "you (masc.) like / she likes"
+    },
+    {
+      "id": "l77-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tuhibbu"],
+      "prompt": "Which word means 'you (masc.) like / she likes'?",
+      "options": ["بيت", "تحب", "طويل", "كتابي"],
+      "answer": "تحب"
+    },
+    {
+      "id": "l77-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tuhibbeena"],
+      "prompt": "What does 'تحبين' mean?",
+      "options": ["you (fem.) like", "you (masc.) sleep / she sleeps", "a mountain", "more / most beautiful"],
+      "answer": "you (fem.) like"
+    },
+    {
+      "id": "l77-ex6",
+      "type": "typing",
+      "refIds": ["tuhibbeena"],
+      "prompt": "Type the Arabic word for 'you (fem.) like'.",
+      "answer": "تحبين"
+    },
+    {
+      "id": "l77-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yuhibbu"],
+      "prompt": "What does 'يحب' mean?",
+      "options": ["I read", "he likes", "new", "fourteen"],
+      "answer": "he likes"
+    },
+    {
+      "id": "l77-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yuhibbu"],
+      "prompt": "Which word means 'he likes'?",
+      "options": ["مدينة", "يحب", "لحم", "ب"],
+      "answer": "يحب"
+    },
+    {
+      "id": "l77-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nuhibbu"],
+      "prompt": "What does 'نحب' mean?",
+      "options": ["we like", "you (masc.) depart / she departs", "teachers (fem.)", "one"],
+      "answer": "we like"
+    },
+    {
+      "id": "l77-ex10",
+      "type": "typing",
+      "refIds": ["nuhibbu"],
+      "prompt": "Type the Arabic word for 'we like'.",
+      "answer": "نحب"
+    },
+    {
+      "id": "l77-ex11",
+      "type": "speaking",
+      "refIds": ["uhibbu"],
+      "prompt": "Practice saying 'أحب' (I like / I love) out loud.",
+      "answer": "أحب"
+    },
+    {
+      "id": "l77-ex12",
+      "type": "speaking",
+      "refIds": ["tuhibbu"],
+      "prompt": "Practice saying 'تحب' (you (masc.) like / she likes) out loud.",
+      "answer": "تحب"
+    },
+    {
+      "id": "l77-ex13",
+      "type": "speaking",
+      "refIds": ["tuhibbeena"],
+      "prompt": "Practice saying 'تحبين' (you (fem.) like) out loud.",
+      "answer": "تحبين"
+    },
+    {
+      "id": "l77-ex14",
+      "type": "speaking",
+      "refIds": ["yuhibbu"],
+      "prompt": "Practice saying 'يحب' (he likes) out loud.",
+      "answer": "يحب"
+    },
+    {
+      "id": "l77-ex15",
+      "type": "speaking",
+      "refIds": ["nuhibbu"],
+      "prompt": "Practice saying 'نحب' (we like) out loud.",
+      "answer": "نحب"
+    }
+  ]
+}

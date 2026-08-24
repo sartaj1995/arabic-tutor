@@ -1,0 +1,126 @@
+{
+  "number": 76,
+  "title": "More Object Pronouns",
+  "newLetters": [],
+  "newVocab": ["uallimuka", "yuallimuna", "uallimuhum"],
+  "newPatterns": ["object-suffix-2"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "uallimuka",
+      "arabic": "أُعَلِّمُكَ",
+      "arabicNoDiacritics": "أعلمك",
+      "transliteration": "uʿallimuka",
+      "english": "I teach you (masc.)",
+      "partOfSpeech": "verb + suffix",
+      "audio": { "id": "word_uallimuka", "text": "أُعَلِّمُكَ" },
+      "introducedInLevel": 76,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "yuallimuna",
+      "arabic": "يُعَلِّمُنَا",
+      "arabicNoDiacritics": "يعلمنا",
+      "transliteration": "yuʿallimunā",
+      "english": "he teaches us",
+      "partOfSpeech": "verb + suffix",
+      "audio": { "id": "word_yuallimuna", "text": "يُعَلِّمُنَا" },
+      "introducedInLevel": 76,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "uallimuhum",
+      "arabic": "أُعَلِّمُهُمْ",
+      "arabicNoDiacritics": "أعلمهم",
+      "transliteration": "uʿallimuhum",
+      "english": "I teach them",
+      "partOfSpeech": "verb + suffix",
+      "audio": { "id": "word_uallimuhum", "text": "أُعَلِّمُهُمْ" },
+      "introducedInLevel": 76,
+      "tags": ["grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "object-suffix-2",
+      "pattern": "[Present-tense verb] + -كَ / -نَا / -هُمْ",
+      "exampleArabic": "المدرس يعلمنا",
+      "exampleTransliteration": "al-mudarrisu yuʿallimunā",
+      "exampleEnglish": "The teacher teaches us.",
+      "grammarNote": "Three more attached object pronouns, continuing level 64's -هُ/-هَا/-نِي: -كَ ('you', masc. — أُعَلِّمُكَ), -نَا ('us' — يُعَلِّمُنَا, the same -نَا you've seen on possessed nouns), and -هُمْ ('them' — أُعَلِّمُهُمْ, matching هُمْ the pronoun exactly). Together with level 64 you now have six of Arabic's object-suffix pronouns; -كِ ('you', fem.), -كُمْ ('you', plural), and -هُنَّ ('them', fem.) follow the identical pattern and are left as a natural extension, the same 'kept light' call made for the dual and أَنْتُنَّ.",
+      "audio": { "id": "phrase_almudarris_yuallimuna", "text": "المدرس يعلمنا" },
+      "introducedInLevel": 76
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l76-ex1",
+      "type": "multiple-choice",
+      "refIds": ["uallimuka"],
+      "prompt": "What does 'أعلمك' mean?",
+      "options": ["I teach you (masc.)", "I teach him", "I teach them", "he teaches us"],
+      "answer": "I teach you (masc.)"
+    },
+    {
+      "id": "l76-ex2",
+      "type": "sentence-build",
+      "refIds": ["mudarris", "yuallimuna", "object-suffix-2"],
+      "prompt": "Arrange the tiles to say 'The teacher teaches us.'",
+      "options": ["المدرس", "يعلمنا"],
+      "answer": "المدرس يعلمنا"
+    },
+    {
+      "id": "l76-ex3",
+      "type": "multiple-choice",
+      "refIds": ["yuallimuna"],
+      "prompt": "What does 'يعلمنا' mean?",
+      "options": ["he teaches us", "the second", "a teacher (masc.)", "winter"],
+      "answer": "he teaches us"
+    },
+    {
+      "id": "l76-ex4",
+      "type": "multiple-choice",
+      "refIds": ["yuallimuna"],
+      "prompt": "Which word means 'he teaches us'?",
+      "options": ["أخضر", "يعلمنا", "نرسل", "خبز"],
+      "answer": "يعلمنا"
+    },
+    {
+      "id": "l76-ex5",
+      "type": "multiple-choice",
+      "refIds": ["uallimuhum"],
+      "prompt": "What does 'أعلمهم' mean?",
+      "options": ["sixteen", "house", "I teach them", "two books"],
+      "answer": "I teach them"
+    },
+    {
+      "id": "l76-ex6",
+      "type": "typing",
+      "refIds": ["uallimuhum"],
+      "prompt": "Type the Arabic word for 'I teach them'.",
+      "answer": "أعلمهم"
+    },
+    {
+      "id": "l76-ex7",
+      "type": "speaking",
+      "refIds": ["uallimuka"],
+      "prompt": "Practice saying 'أعلمك' (I teach you (masc.)) out loud.",
+      "answer": "أعلمك"
+    },
+    {
+      "id": "l76-ex8",
+      "type": "speaking",
+      "refIds": ["yuallimuna"],
+      "prompt": "Practice saying 'يعلمنا' (he teaches us) out loud.",
+      "answer": "يعلمنا"
+    },
+    {
+      "id": "l76-ex9",
+      "type": "speaking",
+      "refIds": ["uallimuhum"],
+      "prompt": "Practice saying 'أعلمهم' (I teach them) out loud.",
+      "answer": "أعلمهم"
+    }
+  ]
+}

@@ -20,6 +20,7 @@ const UNIT_THEMES: { title: string; arabic: string }[] = [
   { title: "Real-World Arabic", arabic: "الحياة العملية" },
   { title: "Complex Sentences", arabic: "الجمل المركبة" },
   { title: "Daily Life Expanded", arabic: "الحياة اليومية الموسعة" },
+  { title: "Practical Fluency", arabic: "الطلاقة العملية" },
 ];
 
 function CheckIcon() {
