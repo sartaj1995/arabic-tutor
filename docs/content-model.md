@@ -96,7 +96,7 @@ TTS-facing form); it's hand-authored exercise/pattern text, and anything
 `scripts/generate-exercises.mjs` generates, that gets stripped down to
 match a "none" level's setting.
 
-## First 60 levels, at a glance
+## First 70 levels, at a glance
 
 | Level | Theme | New letters | New pattern |
 |---|---|---|---|
@@ -160,6 +160,16 @@ match a "none" level's setting.
 | 58 | Food & restaurant vocabulary | — | "I am hungry and I want food." |
 | 59 | Clothing & everyday items | — | "This shirt is red." |
 | 60 | Review — levels 51–60 | — | capstone: إِذَا + relative clause + سَـ-future |
+| 61 | Numbers 21–100 | — | "thirty-five" (compound numbers) |
+| 62 | Verbs — "to learn" (Form V) | — | "I learn at the university." |
+| 63 | Verbs — "to wait" (Form VIII) | — | "I wait at the restaurant." |
+| 64 | Attached object pronouns | — | "The teacher teaches me." |
+| 65 | Months of the year | — | "I am in January." |
+| 66 | Verbs — "to sleep" | — | "I sleep in the house." |
+| 67 | Prepositions of time — قَبْلَ / بَعْدَ | — | "I go to the airport before three o'clock." |
+| 68 | Transportation vocabulary | — | "I go by train." |
+| 69 | Household & furniture | — | "The bed is in the room." |
+| 70 | Review — levels 61–70 | — | capstone: سَـ-future + انتظر + قَبْلَ |
 
 Levels 1–10 were a **pacing proof of concept** validating the schema and
 progression before continuing; levels 11–20 build on that same shape and
@@ -303,6 +313,39 @@ rather than minting new forms. 58 (food/restaurant) and 59
 new nouns with sentence structures already fully known (أُرِيدُ + object,
 هَذَا + definite noun + adjective). 60 of 100 levels now authored.
 
+Levels 61–70 close out numbers entirely and add two more verb forms plus
+a real gap flagged after level 60: attached object pronouns. 61 finishes
+the numbers system: the tens (30–100, regular -ُونَ pattern, no gender
+polarity) plus a grammar note explaining that 21–99 needs no new
+vocabulary at all — it's just [unit] + وَ + [ten], reusing level 20's وَ.
+Full 3–19 gender-polarity agreement remains the one deliberately deferred
+piece, flagged again rather than silently dropped. 62 (تَعَلَّمَ, "to learn",
+Form V) and 63 (اِنْتَظَرَ, "to wait", Form VIII) bring the running count of
+non-Form-I verb forms to five (II, III, IV, V, VIII) — 62 is built
+directly on 54's عَلَّمَ ("to teach"), making the II→V causative/reflexive
+relationship (علّم → تعلم) a concrete, memorable pair rather than an
+abstract rule. Both levels' grammar notes also correct a rule that could
+have been over-generalized from level 43: only Forms II, III, and IV take
+a damma-prefixed present tense — V and beyond (including X, already met
+via يستطيع in level 48) take fatha instead, because their extra prefix
+consonant is now part of the stem itself.
+
+64 covers attached object pronouns (أُعَلِّمُهُ "I teach him", يُعَلِّمُنِي "he
+teaches me") — the same possessive suffix set from level 9, reused in a
+new syntactic role, with one deliberate exception flagged: "me" as an
+object is -نِي, not the possessive -ي, a genuine distinction Arabic makes
+that would otherwise sound identical. 65 (months), 68 (transportation),
+and 69 (household/furniture) are vocabulary-only levels reusing fully
+established sentence structures. 66 (نَامَ, "to sleep") is deliberately
+NOT a new verb form — it's the second hollow (weak-middle-radical) verb
+after أَرَادَ (level 15), included specifically to reinforce that pattern
+rather than adding new grammar, and its grammar note flags that hollow
+verbs keep an individually-memorized vowel rather than following one
+predictable rule. 67 (قَبْلَ/بَعْدَ, "before"/"after") extends level 46's
+idafa-like preposition pattern to time, and reuses level 36's
+telling-time construction in its example sentence. 70 of 100 levels now
+authored.
+
 ## Exercises in the JSON files
 
 Each level file has a small hand-authored core set (the flagship
@@ -310,7 +353,7 @@ sentence-build/matching/typing exercises that show off a level's grammar
 point) plus generated coverage exercises ensuring every letter and vocab
 word gets at least one dedicated question — see
 `scripts/generate-exercises.mjs`, an idempotent script safe to re-run after
-authoring new levels. As of level 60: 369 content items, 867 exercises
+authoring new levels. As of level 70: 431 content items, 1029 exercises
 total. The generator is diacritics-aware — it renders Arabic text stripped
 for levels where `diacriticsLevel === "none"` so generated and
 hand-authored exercises never mix styles within the same level.

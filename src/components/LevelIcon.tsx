@@ -381,6 +381,23 @@ function Shirt() {
   );
 }
 
+function Vehicle() {
+  return (
+    <>
+      <path
+        d="M3.5 12.5V8.8a1.5 1.5 0 0 1 1.5-1.5h6l3 3v2.2"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M3.5 12.5h13" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
+      <circle cx="6.3" cy="13.8" r="1.5" stroke="currentColor" strokeWidth="1.3" />
+      <circle cx="13.3" cy="13.8" r="1.5" stroke="currentColor" strokeWidth="1.3" />
+    </>
+  );
+}
+
 const RULES: Array<[string, () => JSX.Element]> = [
   ["Past Tense", ClockBack],
   ["Verbs", VerbAction],
@@ -414,6 +431,10 @@ const RULES: Array<[string, () => JSX.Element]> = [
   ["Conditionals", Fork],
   ["Food", Utensils],
   ["Clothing", Shirt],
+  ["Months", Calendar],
+  ["Prepositions of Time", Compass],
+  ["Transportation", Vehicle],
+  ["Household", Cube],
   ["Review", Flag],
 ];
 

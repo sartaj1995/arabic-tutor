@@ -1,0 +1,193 @@
+{
+  "number": 66,
+  "title": "Verbs — \"To Sleep\"",
+  "newLetters": [],
+  "newVocab": ["anamu", "tanamu", "tanameena", "yanamu", "nanamu"],
+  "newPatterns": ["sleep-at-home"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "anamu",
+      "arabic": "أَنَامُ",
+      "arabicNoDiacritics": "أنام",
+      "transliteration": "anāmu",
+      "english": "I sleep",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_anamu", "text": "أَنَامُ" },
+      "introducedInLevel": 66,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tanamu",
+      "arabic": "تَنَامُ",
+      "arabicNoDiacritics": "تنام",
+      "transliteration": "tanāmu",
+      "english": "you (masc.) sleep / she sleeps",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tanamu", "text": "تَنَامُ" },
+      "introducedInLevel": 66,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tanameena",
+      "arabic": "تَنَامِينَ",
+      "arabicNoDiacritics": "تنامين",
+      "transliteration": "tanāmīna",
+      "english": "you (fem.) sleep",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tanameena", "text": "تَنَامِينَ" },
+      "introducedInLevel": 66,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yanamu",
+      "arabic": "يَنَامُ",
+      "arabicNoDiacritics": "ينام",
+      "transliteration": "yanāmu",
+      "english": "he sleeps",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yanamu", "text": "يَنَامُ" },
+      "introducedInLevel": 66,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nanamu",
+      "arabic": "نَنَامُ",
+      "arabicNoDiacritics": "ننام",
+      "transliteration": "nanāmu",
+      "english": "we sleep",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nanamu", "text": "نَنَامُ" },
+      "introducedInLevel": 66,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "sleep-at-home",
+      "pattern": "[Verb] + فِي الـ[Place]",
+      "exampleArabic": "أنام في البيت",
+      "exampleTransliteration": "anāmu fī l-bayti",
+      "exampleEnglish": "I sleep in the house.",
+      "grammarNote": "نَامَ ('to sleep') is only the second 'hollow' verb you've met — a root whose middle letter (here و) turns into a long vowel instead of staying a consonant, the same irregularity أَرَادَ (level 15/23) has. Unlike أَرَادَ though, نَامَ keeps the SAME long ا vowel in both the past and the present tense: نَامَ / يَنَامُ, not يَنُومُ — hollow verbs are memorized individually by which vowel they keep, not derived from a single rule. Otherwise it's a completely ordinary Form I present tense: أَنَامُ, تَنَامُ, تَنَامِينَ, يَنَامُ, نَنَامُ.",
+      "audio": { "id": "phrase_anamu_fi_albayt", "text": "أنام في البيت" },
+      "introducedInLevel": 66
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l66-ex1",
+      "type": "multiple-choice",
+      "refIds": ["anamu"],
+      "prompt": "What does 'أنام' mean?",
+      "options": ["I sleep", "I wait", "I go", "I learn"],
+      "answer": "I sleep"
+    },
+    {
+      "id": "l66-ex2",
+      "type": "sentence-build",
+      "refIds": ["anamu", "bayt", "sleep-at-home"],
+      "prompt": "Arrange the tiles to say 'I sleep in the house.'",
+      "options": ["أنام", "في", "البيت"],
+      "answer": "أنام في البيت"
+    },
+    {
+      "id": "l66-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tanamu"],
+      "prompt": "What does 'تنام' mean?",
+      "options": ["October", "thirteen", "you (masc.) write / she writes", "you (masc.) sleep / she sleeps"],
+      "answer": "you (masc.) sleep / she sleeps"
+    },
+    {
+      "id": "l66-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tanamu"],
+      "prompt": "Which word means 'you (masc.) sleep / she sleeps'?",
+      "options": ["تنام", "جبال", "نريد", "جميل"],
+      "answer": "تنام"
+    },
+    {
+      "id": "l66-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tanameena"],
+      "prompt": "What does 'تنامين' mean?",
+      "options": ["a shirt", "April", "I / you (masc.) / you (fem.) / she went", "you (fem.) sleep"],
+      "answer": "you (fem.) sleep"
+    },
+    {
+      "id": "l66-ex6",
+      "type": "typing",
+      "refIds": ["tanameena"],
+      "prompt": "Type the Arabic word for 'you (fem.) sleep'.",
+      "answer": "تنامين"
+    },
+    {
+      "id": "l66-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yanamu"],
+      "prompt": "What does 'ينام' mean?",
+      "options": ["he sleeps", "the fourth", "bigger / biggest", "he goes"],
+      "answer": "he sleeps"
+    },
+    {
+      "id": "l66-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yanamu"],
+      "prompt": "Which word means 'he sleeps'?",
+      "options": ["ولدان", "ينام", "تشربين", "ما"],
+      "answer": "ينام"
+    },
+    {
+      "id": "l66-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nanamu"],
+      "prompt": "What does 'ننام' mean?",
+      "options": ["we sleep", "tired", "the house", "twelve"],
+      "answer": "we sleep"
+    },
+    {
+      "id": "l66-ex10",
+      "type": "typing",
+      "refIds": ["nanamu"],
+      "prompt": "Type the Arabic word for 'we sleep'.",
+      "answer": "ننام"
+    },
+    {
+      "id": "l66-ex11",
+      "type": "speaking",
+      "refIds": ["anamu"],
+      "prompt": "Practice saying 'أنام' (I sleep) out loud.",
+      "answer": "أنام"
+    },
+    {
+      "id": "l66-ex12",
+      "type": "speaking",
+      "refIds": ["tanamu"],
+      "prompt": "Practice saying 'تنام' (you (masc.) sleep / she sleeps) out loud.",
+      "answer": "تنام"
+    },
+    {
+      "id": "l66-ex13",
+      "type": "speaking",
+      "refIds": ["tanameena"],
+      "prompt": "Practice saying 'تنامين' (you (fem.) sleep) out loud.",
+      "answer": "تنامين"
+    },
+    {
+      "id": "l66-ex14",
+      "type": "speaking",
+      "refIds": ["yanamu"],
+      "prompt": "Practice saying 'ينام' (he sleeps) out loud.",
+      "answer": "ينام"
+    },
+    {
+      "id": "l66-ex15",
+      "type": "speaking",
+      "refIds": ["nanamu"],
+      "prompt": "Practice saying 'ننام' (we sleep) out loud.",
+      "answer": "ننام"
+    }
+  ]
+}

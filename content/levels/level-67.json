@@ -1,0 +1,93 @@
+{
+  "number": 67,
+  "title": "Prepositions of Time",
+  "newLetters": [],
+  "newVocab": ["qabla", "baada"],
+  "newPatterns": ["time-preposition"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "qabla",
+      "arabic": "قَبْلَ",
+      "arabicNoDiacritics": "قبل",
+      "transliteration": "qabla",
+      "english": "before",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_qabla", "text": "قَبْلَ" },
+      "introducedInLevel": 67,
+      "tags": ["core", "preposition"]
+    },
+    {
+      "id": "baada",
+      "arabic": "بَعْدَ",
+      "arabicNoDiacritics": "بعد",
+      "transliteration": "baʿda",
+      "english": "after",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_baada", "text": "بَعْدَ" },
+      "introducedInLevel": 67,
+      "tags": ["core", "preposition"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "time-preposition",
+      "pattern": "[Clause] + قَبْلَ + الـ[Time]",
+      "exampleArabic": "أذهب إلى المطار قبل الساعة الثالثة",
+      "exampleTransliteration": "adhhabu ilā l-maṭāri qabla s-sāʿati th-thālithati",
+      "exampleEnglish": "I go to the airport before three o'clock.",
+      "grammarNote": "قَبْلَ ('before') and بَعْدَ ('after') work exactly like تَحْتَ/فَوْقَ (level 46) — idafa-like, always followed by a genitive noun, ending in fatha because they function adverbially rather than as ordinary nouns. This example reuses the telling-time construction from level 36 (السَّاعَةِ الثَّالِثَةِ, 'the third hour' = three o'clock) to put قَبْلَ to immediate use.",
+      "audio": { "id": "phrase_adhhab_almataar_qabla_alsaaa_althaalitha", "text": "أذهب إلى المطار قبل الساعة الثالثة" },
+      "introducedInLevel": 67
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l67-ex1",
+      "type": "multiple-choice",
+      "refIds": ["qabla"],
+      "prompt": "What does 'قبل' mean?",
+      "options": ["before", "after", "under", "between"],
+      "answer": "before"
+    },
+    {
+      "id": "l67-ex2",
+      "type": "sentence-build",
+      "refIds": ["adhhabu", "mataar", "qabla", "saaa", "althaalitha", "time-preposition"],
+      "prompt": "Arrange the tiles to say 'I go to the airport before three o'clock.'",
+      "options": ["أذهب", "إلى", "المطار", "قبل", "الساعة", "الثالثة"],
+      "answer": "أذهب إلى المطار قبل الساعة الثالثة"
+    },
+    {
+      "id": "l67-ex3",
+      "type": "multiple-choice",
+      "refIds": ["baada"],
+      "prompt": "What does 'بعد' mean?",
+      "options": ["he sleeps", "after", "apple(s)", "twelve"],
+      "answer": "after"
+    },
+    {
+      "id": "l67-ex4",
+      "type": "multiple-choice",
+      "refIds": ["baada"],
+      "prompt": "Which word means 'after'?",
+      "options": ["بعد", "يقرأ", "مائة", "ب"],
+      "answer": "بعد"
+    },
+    {
+      "id": "l67-ex5",
+      "type": "speaking",
+      "refIds": ["qabla"],
+      "prompt": "Practice saying 'قبل' (before) out loud.",
+      "answer": "قبل"
+    },
+    {
+      "id": "l67-ex6",
+      "type": "speaking",
+      "refIds": ["baada"],
+      "prompt": "Practice saying 'بعد' (after) out loud.",
+      "answer": "بعد"
+    }
+  ]
+}

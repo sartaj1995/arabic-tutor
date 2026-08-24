@@ -1,0 +1,107 @@
+{
+  "number": 70,
+  "title": "Review — Levels 61–70",
+  "newLetters": [],
+  "newVocab": ["ahyanan"],
+  "newPatterns": ["review-capstone-5"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ahyanan",
+      "arabic": "أَحْيَانًا",
+      "arabicNoDiacritics": "أحيانا",
+      "transliteration": "aḥyānan",
+      "english": "sometimes",
+      "partOfSpeech": "adverb",
+      "audio": { "id": "word_ahyanan", "text": "أَحْيَانًا" },
+      "introducedInLevel": 70,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "review-capstone-5",
+      "pattern": "سَـ[Verb] + فِي الـ[Place] + قَبْلَ الـ[Noun]",
+      "exampleArabic": "سأنتظر في المحطة قبل القطار",
+      "exampleTransliteration": "sa-antaẓiru fī l-maḥaṭṭati qabla l-qiṭāri",
+      "exampleEnglish": "I will wait at the station before the train.",
+      "grammarNote": "A closing capstone for levels 61-70: the سَـ-future (level 41) built on أَنْتَظِرُ ('I wait', Form VIII, level 63), placed فِي الْمَحَطَّةِ ('at the station', level 68), followed by قَبْلَ الْقِطَارِ ('before the train', level 67 preposition + level 68 vocabulary). 70 of 100 levels now authored. أَحْيَانًا ('sometimes') joins the small -ًا adverb family (غَدًا, جِدًّا, أَيْضًا, قَلِيلًا, دَائِمًا) with a fittingly-timed opposite of دَائِمًا (level 60, 'always').",
+      "audio": { "id": "phrase_saantaziru_almahatta_qabla_alqitaar", "text": "سأنتظر في المحطة قبل القطار" },
+      "introducedInLevel": 70
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l70-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ahyanan"],
+      "prompt": "What does 'أحيانا' mean?",
+      "options": ["sometimes", "always", "never", "often"],
+      "answer": "sometimes"
+    },
+    {
+      "id": "l70-ex2",
+      "type": "sentence-build",
+      "refIds": ["sa", "antaziru", "fi", "mahatta", "qabla", "qitaar", "review-capstone-5"],
+      "prompt": "Arrange the tiles to say 'I will wait at the station before the train.'",
+      "options": ["سأنتظر", "في", "المحطة", "قبل", "القطار"],
+      "answer": "سأنتظر في المحطة قبل القطار"
+    },
+    {
+      "id": "l70-ex3",
+      "type": "multiple-choice",
+      "refIds": ["thalathuun"],
+      "prompt": "Review: what does 'ثلاثون' mean?",
+      "options": ["thirty", "thirteen", "three", "twenty"],
+      "answer": "thirty"
+    },
+    {
+      "id": "l70-ex4",
+      "type": "multiple-choice",
+      "refIds": ["ataallamu"],
+      "prompt": "Review: what does 'أتعلم' mean?",
+      "options": ["I learn", "I teach", "I study", "I send"],
+      "answer": "I learn"
+    },
+    {
+      "id": "l70-ex5",
+      "type": "multiple-choice",
+      "refIds": ["yuallimuni"],
+      "prompt": "Review: what does 'يعلمني' mean?",
+      "options": ["he teaches me", "I teach him", "he teaches", "I teach"],
+      "answer": "he teaches me"
+    },
+    {
+      "id": "l70-ex6",
+      "type": "multiple-choice",
+      "refIds": ["yanayir"],
+      "prompt": "Review: what does 'يناير' mean?",
+      "options": ["January", "February", "March", "a month"],
+      "answer": "January"
+    },
+    {
+      "id": "l70-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yanamu"],
+      "prompt": "Review: what does 'ينام' mean?",
+      "options": ["he sleeps", "he waits", "he learns", "he goes"],
+      "answer": "he sleeps"
+    },
+    {
+      "id": "l70-ex8",
+      "type": "multiple-choice",
+      "refIds": ["ghurfa"],
+      "prompt": "Review: what does 'غرفة' mean?",
+      "options": ["a room", "a bed", "a station", "a train"],
+      "answer": "a room"
+    },
+    {
+      "id": "l70-ex9",
+      "type": "speaking",
+      "refIds": ["ahyanan"],
+      "prompt": "Practice saying 'أحيانا' (sometimes) out loud.",
+      "answer": "أحيانا"
+    }
+  ]
+}

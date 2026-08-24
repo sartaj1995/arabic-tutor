@@ -1,0 +1,193 @@
+{
+  "number": 63,
+  "title": "Verbs — \"To Wait\" (Form VIII)",
+  "newLetters": [],
+  "newVocab": ["antaziru", "tantaziru", "tantazireena", "yantaziru", "nantaziru"],
+  "newPatterns": ["wait-at-place"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "antaziru",
+      "arabic": "أَنْتَظِرُ",
+      "arabicNoDiacritics": "أنتظر",
+      "transliteration": "antaẓiru",
+      "english": "I wait",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_antaziru", "text": "أَنْتَظِرُ" },
+      "introducedInLevel": 63,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tantaziru",
+      "arabic": "تَنْتَظِرُ",
+      "arabicNoDiacritics": "تنتظر",
+      "transliteration": "tantaẓiru",
+      "english": "you (masc.) wait / she waits",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tantaziru", "text": "تَنْتَظِرُ" },
+      "introducedInLevel": 63,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tantazireena",
+      "arabic": "تَنْتَظِرِينَ",
+      "arabicNoDiacritics": "تنتظرين",
+      "transliteration": "tantaẓirīna",
+      "english": "you (fem.) wait",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tantazireena", "text": "تَنْتَظِرِينَ" },
+      "introducedInLevel": 63,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yantaziru",
+      "arabic": "يَنْتَظِرُ",
+      "arabicNoDiacritics": "ينتظر",
+      "transliteration": "yantaẓiru",
+      "english": "he waits",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yantaziru", "text": "يَنْتَظِرُ" },
+      "introducedInLevel": 63,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nantaziru",
+      "arabic": "نَنْتَظِرُ",
+      "arabicNoDiacritics": "ننتظر",
+      "transliteration": "nantaẓiru",
+      "english": "we wait",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nantaziru", "text": "نَنْتَظِرُ" },
+      "introducedInLevel": 63,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "wait-at-place",
+      "pattern": "[Verb] + فِي الـ[Place]",
+      "exampleArabic": "أنتظر في المطعم",
+      "exampleTransliteration": "antaẓiru fī l-maṭʿami",
+      "exampleEnglish": "I wait at the restaurant.",
+      "grammarNote": "اِنْتَظَرَ ('to wait') is Form VIII (اِفْتَعَلَ) — marked by an inserted تَـ after the first root letter: اِنْتَظَرَ, not اِنَظَرَ. Like Form V (level 62), Form VIII's present-tense prefix takes fatha, not damma: أَنْتَظِرُ, تَنْتَظِرُ, تَنْتَظِرِينَ, يَنْتَظِرُ, نَنْتَظِرُ. Five of the ten verb forms are now covered outside the base Form I: III (سافر), II (علّم), IV (أرسل), V (تعلم), and now VIII (انتظر).",
+      "audio": { "id": "phrase_antaziru_fi_almatam", "text": "أنتظر في المطعم" },
+      "introducedInLevel": 63
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l63-ex1",
+      "type": "multiple-choice",
+      "refIds": ["antaziru"],
+      "prompt": "What does 'أنتظر' mean?",
+      "options": ["I wait", "I go", "I learn", "I send"],
+      "answer": "I wait"
+    },
+    {
+      "id": "l63-ex2",
+      "type": "sentence-build",
+      "refIds": ["antaziru", "matam", "wait-at-place"],
+      "prompt": "Arrange the tiles to say 'I wait at the restaurant.'",
+      "options": ["أنتظر", "في", "المطعم"],
+      "answer": "أنتظر في المطعم"
+    },
+    {
+      "id": "l63-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tantaziru"],
+      "prompt": "What does 'تنتظر' mean?",
+      "options": ["this (masc.)", "you (masc.) wait / she waits", "who / which / that (masc.)", "you (fem.) send"],
+      "answer": "you (masc.) wait / she waits"
+    },
+    {
+      "id": "l63-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tantaziru"],
+      "prompt": "Which word means 'you (masc.) wait / she waits'?",
+      "options": ["ستة عشر", "تعمل", "تنتظر", "يكتب"],
+      "answer": "تنتظر"
+    },
+    {
+      "id": "l63-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tantazireena"],
+      "prompt": "What does 'تنتظرين' mean?",
+      "options": ["you (fem.) wait", "blue", "I / you (masc.) / you (fem.) / she drank", "apple(s)"],
+      "answer": "you (fem.) wait"
+    },
+    {
+      "id": "l63-ex6",
+      "type": "typing",
+      "refIds": ["tantazireena"],
+      "prompt": "Type the Arabic word for 'you (fem.) wait'.",
+      "answer": "تنتظرين"
+    },
+    {
+      "id": "l63-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yantaziru"],
+      "prompt": "What does 'ينتظر' mean?",
+      "options": ["he waits", "he teaches", "the second (fem.)", "we drank"],
+      "answer": "he waits"
+    },
+    {
+      "id": "l63-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yantaziru"],
+      "prompt": "Which word means 'he waits'?",
+      "options": ["مفتاح", "أقلام", "تتعلم", "ينتظر"],
+      "answer": "ينتظر"
+    },
+    {
+      "id": "l63-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nantaziru"],
+      "prompt": "What does 'ننتظر' mean?",
+      "options": ["we wait", "we want", "always", "the sun"],
+      "answer": "we wait"
+    },
+    {
+      "id": "l63-ex10",
+      "type": "typing",
+      "refIds": ["nantaziru"],
+      "prompt": "Type the Arabic word for 'we wait'.",
+      "answer": "ننتظر"
+    },
+    {
+      "id": "l63-ex11",
+      "type": "speaking",
+      "refIds": ["antaziru"],
+      "prompt": "Practice saying 'أنتظر' (I wait) out loud.",
+      "answer": "أنتظر"
+    },
+    {
+      "id": "l63-ex12",
+      "type": "speaking",
+      "refIds": ["tantaziru"],
+      "prompt": "Practice saying 'تنتظر' (you (masc.) wait / she waits) out loud.",
+      "answer": "تنتظر"
+    },
+    {
+      "id": "l63-ex13",
+      "type": "speaking",
+      "refIds": ["tantazireena"],
+      "prompt": "Practice saying 'تنتظرين' (you (fem.) wait) out loud.",
+      "answer": "تنتظرين"
+    },
+    {
+      "id": "l63-ex14",
+      "type": "speaking",
+      "refIds": ["yantaziru"],
+      "prompt": "Practice saying 'ينتظر' (he waits) out loud.",
+      "answer": "ينتظر"
+    },
+    {
+      "id": "l63-ex15",
+      "type": "speaking",
+      "refIds": ["nantaziru"],
+      "prompt": "Practice saying 'ننتظر' (we wait) out loud.",
+      "answer": "ننتظر"
+    }
+  ]
+}
