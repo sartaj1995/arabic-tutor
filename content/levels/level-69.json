@@ -1,0 +1,193 @@
+{
+  "number": 69,
+  "title": "Household & Furniture",
+  "newLetters": [],
+  "newVocab": ["ghurfa", "sareer", "taawila", "kursiy", "misbaah"],
+  "newPatterns": ["furniture-location"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ghurfa",
+      "arabic": "غُرْفَةٌ",
+      "arabicNoDiacritics": "غرفة",
+      "transliteration": "ghurfatun",
+      "english": "a room",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_ghurfa", "text": "غُرْفَةٌ" },
+      "introducedInLevel": 69,
+      "tags": ["core", "home"]
+    },
+    {
+      "id": "sareer",
+      "arabic": "سَرِيرٌ",
+      "arabicNoDiacritics": "سرير",
+      "transliteration": "sarīrun",
+      "english": "a bed",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_sareer", "text": "سَرِيرٌ" },
+      "introducedInLevel": 69,
+      "tags": ["core", "home"]
+    },
+    {
+      "id": "taawila",
+      "arabic": "طَاوِلَةٌ",
+      "arabicNoDiacritics": "طاولة",
+      "transliteration": "ṭāwilatun",
+      "english": "a table",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_taawila", "text": "طَاوِلَةٌ" },
+      "introducedInLevel": 69,
+      "tags": ["core", "home"]
+    },
+    {
+      "id": "kursiy",
+      "arabic": "كُرْسِيٌّ",
+      "arabicNoDiacritics": "كرسي",
+      "transliteration": "kursiyyun",
+      "english": "a chair",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_kursiy", "text": "كُرْسِيٌّ" },
+      "introducedInLevel": 69,
+      "tags": ["core", "home"]
+    },
+    {
+      "id": "misbaah",
+      "arabic": "مِصْبَاحٌ",
+      "arabicNoDiacritics": "مصباح",
+      "transliteration": "miṣbāḥun",
+      "english": "a lamp",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_misbaah", "text": "مِصْبَاحٌ" },
+      "introducedInLevel": 69,
+      "tags": ["home"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "furniture-location",
+      "pattern": "الـ[Furniture] + فِي الـ[Room]",
+      "exampleArabic": "السرير في الغرفة",
+      "exampleTransliteration": "as-sarīru fī l-ghurfati",
+      "exampleEnglish": "The bed is in the room.",
+      "grammarNote": "Nothing new grammatically — the definite noun + فِي + definite noun structure has been available since level 5. This level is vocabulary only: غُرْفَة ('a room'), سَرِير ('a bed'), طَاوِلَة ('a table'), كُرْسِيّ ('a chair'), and مِصْبَاح ('a lamp'), to describe the inside of a house alongside the rooms/objects from levels 2–3.",
+      "audio": { "id": "phrase_alsareer_fi_alghurfa", "text": "السرير في الغرفة" },
+      "introducedInLevel": 69
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l69-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ghurfa"],
+      "prompt": "What does 'غرفة' mean?",
+      "options": ["a room", "a bed", "a table", "a chair"],
+      "answer": "a room"
+    },
+    {
+      "id": "l69-ex2",
+      "type": "sentence-build",
+      "refIds": ["sareer", "ghurfa", "furniture-location"],
+      "prompt": "Arrange the tiles to say 'The bed is in the room.'",
+      "options": ["السرير", "في", "الغرفة"],
+      "answer": "السرير في الغرفة"
+    },
+    {
+      "id": "l69-ex3",
+      "type": "multiple-choice",
+      "refIds": ["sareer"],
+      "prompt": "What does 'سرير' mean?",
+      "options": ["my book", "who / which / that (masc.)", "white", "a bed"],
+      "answer": "a bed"
+    },
+    {
+      "id": "l69-ex4",
+      "type": "multiple-choice",
+      "refIds": ["sareer"],
+      "prompt": "Which word means 'a bed'?",
+      "options": ["أخضر", "أصفر", "سرير", "الرجل"],
+      "answer": "سرير"
+    },
+    {
+      "id": "l69-ex5",
+      "type": "multiple-choice",
+      "refIds": ["taawila"],
+      "prompt": "What does 'طاولة' mean?",
+      "options": ["a table", "father", "a school", "Thursday"],
+      "answer": "a table"
+    },
+    {
+      "id": "l69-ex6",
+      "type": "typing",
+      "refIds": ["taawila"],
+      "prompt": "Type the Arabic word for 'a table'.",
+      "answer": "طاولة"
+    },
+    {
+      "id": "l69-ex7",
+      "type": "multiple-choice",
+      "refIds": ["kursiy"],
+      "prompt": "What does 'كرسي' mean?",
+      "options": ["an airplane", "a chair", "I wait", "I teach her"],
+      "answer": "a chair"
+    },
+    {
+      "id": "l69-ex8",
+      "type": "multiple-choice",
+      "refIds": ["kursiy"],
+      "prompt": "Which word means 'a chair'?",
+      "options": ["جديد", "كرسي", "أنام", "ترسل"],
+      "answer": "كرسي"
+    },
+    {
+      "id": "l69-ex9",
+      "type": "multiple-choice",
+      "refIds": ["misbaah"],
+      "prompt": "What does 'مصباح' mean?",
+      "options": ["flower", "sixteen", "I want", "a lamp"],
+      "answer": "a lamp"
+    },
+    {
+      "id": "l69-ex10",
+      "type": "typing",
+      "refIds": ["misbaah"],
+      "prompt": "Type the Arabic word for 'a lamp'.",
+      "answer": "مصباح"
+    },
+    {
+      "id": "l69-ex11",
+      "type": "speaking",
+      "refIds": ["ghurfa"],
+      "prompt": "Practice saying 'غرفة' (a room) out loud.",
+      "answer": "غرفة"
+    },
+    {
+      "id": "l69-ex12",
+      "type": "speaking",
+      "refIds": ["sareer"],
+      "prompt": "Practice saying 'سرير' (a bed) out loud.",
+      "answer": "سرير"
+    },
+    {
+      "id": "l69-ex13",
+      "type": "speaking",
+      "refIds": ["taawila"],
+      "prompt": "Practice saying 'طاولة' (a table) out loud.",
+      "answer": "طاولة"
+    },
+    {
+      "id": "l69-ex14",
+      "type": "speaking",
+      "refIds": ["kursiy"],
+      "prompt": "Practice saying 'كرسي' (a chair) out loud.",
+      "answer": "كرسي"
+    },
+    {
+      "id": "l69-ex15",
+      "type": "speaking",
+      "refIds": ["misbaah"],
+      "prompt": "Practice saying 'مصباح' (a lamp) out loud.",
+      "answer": "مصباح"
+    }
+  ]
+}

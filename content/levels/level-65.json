@@ -1,0 +1,475 @@
+{
+  "number": 65,
+  "title": "Months of the Year",
+  "newLetters": [],
+  "newVocab": [
+    "shahr",
+    "yanayir",
+    "fibrayir",
+    "maris",
+    "abreel",
+    "mayu",
+    "yuniyu",
+    "yuliyu",
+    "ughustus",
+    "sibtambir",
+    "uktoobir",
+    "nufambir",
+    "deesambir"
+  ],
+  "newPatterns": ["month-sentence"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "shahr",
+      "arabic": "شَهْر",
+      "arabicNoDiacritics": "شهر",
+      "transliteration": "shahr",
+      "english": "a month",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_shahr", "text": "شَهْر" },
+      "introducedInLevel": 65,
+      "tags": ["core"]
+    },
+    {
+      "id": "yanayir",
+      "arabic": "يَنَايِر",
+      "arabicNoDiacritics": "يناير",
+      "transliteration": "yanāyir",
+      "english": "January",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_yanayir", "text": "يَنَايِر" },
+      "introducedInLevel": 65,
+      "tags": ["core", "month"]
+    },
+    {
+      "id": "fibrayir",
+      "arabic": "فِبْرَايِر",
+      "arabicNoDiacritics": "فبراير",
+      "transliteration": "fibrāyir",
+      "english": "February",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_fibrayir", "text": "فِبْرَايِر" },
+      "introducedInLevel": 65,
+      "tags": ["month"]
+    },
+    {
+      "id": "maris",
+      "arabic": "مَارِس",
+      "arabicNoDiacritics": "مارس",
+      "transliteration": "māris",
+      "english": "March",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_maris", "text": "مَارِس" },
+      "introducedInLevel": 65,
+      "tags": ["month"]
+    },
+    {
+      "id": "abreel",
+      "arabic": "أَبْرِيل",
+      "arabicNoDiacritics": "أبريل",
+      "transliteration": "abrīl",
+      "english": "April",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_abreel", "text": "أَبْرِيل" },
+      "introducedInLevel": 65,
+      "tags": ["month"]
+    },
+    {
+      "id": "mayu",
+      "arabic": "مَايُو",
+      "arabicNoDiacritics": "مايو",
+      "transliteration": "māyū",
+      "english": "May",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_mayu", "text": "مَايُو" },
+      "introducedInLevel": 65,
+      "tags": ["month"]
+    },
+    {
+      "id": "yuniyu",
+      "arabic": "يُونِيُو",
+      "arabicNoDiacritics": "يونيو",
+      "transliteration": "yūniyū",
+      "english": "June",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_yuniyu", "text": "يُونِيُو" },
+      "introducedInLevel": 65,
+      "tags": ["month"]
+    },
+    {
+      "id": "yuliyu",
+      "arabic": "يُولِيُو",
+      "arabicNoDiacritics": "يوليو",
+      "transliteration": "yūliyū",
+      "english": "July",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_yuliyu", "text": "يُولِيُو" },
+      "introducedInLevel": 65,
+      "tags": ["month"]
+    },
+    {
+      "id": "ughustus",
+      "arabic": "أُغُسْطُس",
+      "arabicNoDiacritics": "أغسطس",
+      "transliteration": "ughusṭus",
+      "english": "August",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_ughustus", "text": "أُغُسْطُس" },
+      "introducedInLevel": 65,
+      "tags": ["month"]
+    },
+    {
+      "id": "sibtambir",
+      "arabic": "سِبْتَمْبِر",
+      "arabicNoDiacritics": "سبتمبر",
+      "transliteration": "sibtambir",
+      "english": "September",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_sibtambir", "text": "سِبْتَمْبِر" },
+      "introducedInLevel": 65,
+      "tags": ["month"]
+    },
+    {
+      "id": "uktoobir",
+      "arabic": "أُكْتُوبِر",
+      "arabicNoDiacritics": "أكتوبر",
+      "transliteration": "uktūbir",
+      "english": "October",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_uktoobir", "text": "أُكْتُوبِر" },
+      "introducedInLevel": 65,
+      "tags": ["month"]
+    },
+    {
+      "id": "nufambir",
+      "arabic": "نُوفَمْبِر",
+      "arabicNoDiacritics": "نوفمبر",
+      "transliteration": "nūfambir",
+      "english": "November",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_nufambir", "text": "نُوفَمْبِر" },
+      "introducedInLevel": 65,
+      "tags": ["month"]
+    },
+    {
+      "id": "deesambir",
+      "arabic": "دِيسَمْبِر",
+      "arabicNoDiacritics": "ديسمبر",
+      "transliteration": "dīsambir",
+      "english": "December",
+      "partOfSpeech": "noun (month)",
+      "audio": { "id": "word_deesambir", "text": "دِيسَمْبِر" },
+      "introducedInLevel": 65,
+      "tags": ["core", "month"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "month-sentence",
+      "pattern": "أَنَا فِي + [Month]",
+      "exampleArabic": "أنا في يناير",
+      "exampleTransliteration": "anā fī yanāyir",
+      "exampleEnglish": "I am in January.",
+      "grammarNote": "These twelve names are the internationally recognized Gregorian months used across most modern Arabic media and official contexts — Arabized versions of the same names you already know, not translated. (The Levant region also uses a separate, older set of Aramaic-derived names for the same months; those aren't covered here.) Grammatically there's nothing new: أَنَا فِي + [month] reuses فِي exactly as level 5 introduced it. شَهْر ('a month') is the generic noun the way يَوْم ('a day', level 17) works for days of the week.",
+      "audio": { "id": "phrase_ana_fi_yanayir", "text": "أنا في يناير" },
+      "introducedInLevel": 65
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l65-ex1",
+      "type": "multiple-choice",
+      "refIds": ["shahr"],
+      "prompt": "What does 'شهر' mean?",
+      "options": ["a month", "a day", "a year", "a week"],
+      "answer": "a month"
+    },
+    {
+      "id": "l65-ex2",
+      "type": "sentence-build",
+      "refIds": ["yanayir", "month-sentence"],
+      "prompt": "Arrange the tiles to say 'I am in January.'",
+      "options": ["أنا", "في", "يناير"],
+      "answer": "أنا في يناير"
+    },
+    {
+      "id": "l65-ex3",
+      "type": "multiple-choice",
+      "refIds": ["yanayir"],
+      "prompt": "What does 'يناير' mean?",
+      "options": ["January", "you (fem.) teach", "in", "tea"],
+      "answer": "January"
+    },
+    {
+      "id": "l65-ex4",
+      "type": "multiple-choice",
+      "refIds": ["yanayir"],
+      "prompt": "Which word means 'January'?",
+      "options": ["يذهبون", "يناير", "مائة", "خمسة"],
+      "answer": "يناير"
+    },
+    {
+      "id": "l65-ex5",
+      "type": "multiple-choice",
+      "refIds": ["fibrayir"],
+      "prompt": "What does 'فبراير' mean?",
+      "options": ["Go! (masc.)", "February", "sad", "above / over"],
+      "answer": "February"
+    },
+    {
+      "id": "l65-ex6",
+      "type": "typing",
+      "refIds": ["fibrayir"],
+      "prompt": "Type the Arabic word for 'February'.",
+      "answer": "فبراير"
+    },
+    {
+      "id": "l65-ex7",
+      "type": "multiple-choice",
+      "refIds": ["maris"],
+      "prompt": "What does 'مارس' mean?",
+      "options": ["an airport", "today", "March", "he went"],
+      "answer": "March"
+    },
+    {
+      "id": "l65-ex8",
+      "type": "multiple-choice",
+      "refIds": ["maris"],
+      "prompt": "Which word means 'March'?",
+      "options": ["مارس", "الثانية", "مدرس", "جامعة"],
+      "answer": "مارس"
+    },
+    {
+      "id": "l65-ex9",
+      "type": "multiple-choice",
+      "refIds": ["abreel"],
+      "prompt": "What does 'أبريل' mean?",
+      "options": ["winter", "you (plural, masc./mixed)", "bigger / biggest", "April"],
+      "answer": "April"
+    },
+    {
+      "id": "l65-ex10",
+      "type": "typing",
+      "refIds": ["abreel"],
+      "prompt": "Type the Arabic word for 'April'.",
+      "answer": "أبريل"
+    },
+    {
+      "id": "l65-ex11",
+      "type": "multiple-choice",
+      "refIds": ["mayu"],
+      "prompt": "What does 'مايو' mean?",
+      "options": ["a month", "green", "May", "my book"],
+      "answer": "May"
+    },
+    {
+      "id": "l65-ex12",
+      "type": "multiple-choice",
+      "refIds": ["mayu"],
+      "prompt": "Which word means 'May'?",
+      "options": ["تشربين", "سوف", "مايو", "نتعلم"],
+      "answer": "مايو"
+    },
+    {
+      "id": "l65-ex13",
+      "type": "multiple-choice",
+      "refIds": ["yuniyu"],
+      "prompt": "What does 'يونيو' mean?",
+      "options": ["they (masc.) go", "hot", "June", "a restaurant"],
+      "answer": "June"
+    },
+    {
+      "id": "l65-ex14",
+      "type": "typing",
+      "refIds": ["yuniyu"],
+      "prompt": "Type the Arabic word for 'June'.",
+      "answer": "يونيو"
+    },
+    {
+      "id": "l65-ex15",
+      "type": "multiple-choice",
+      "refIds": ["yuliyu"],
+      "prompt": "What does 'يوليو' mean?",
+      "options": ["that (fem.)", "July", "an office / a desk", "that / to [introduces a following verb]"],
+      "answer": "July"
+    },
+    {
+      "id": "l65-ex16",
+      "type": "multiple-choice",
+      "refIds": ["yuliyu"],
+      "prompt": "Which word means 'July'?",
+      "options": ["يوليو", "رسالة", "سعيدة", "اذهبي"],
+      "answer": "يوليو"
+    },
+    {
+      "id": "l65-ex17",
+      "type": "multiple-choice",
+      "refIds": ["ughustus"],
+      "prompt": "What does 'أغسطس' mean?",
+      "options": ["he sends", "brother", "the weather", "August"],
+      "answer": "August"
+    },
+    {
+      "id": "l65-ex18",
+      "type": "typing",
+      "refIds": ["ughustus"],
+      "prompt": "Type the Arabic word for 'August'.",
+      "answer": "أغسطس"
+    },
+    {
+      "id": "l65-ex19",
+      "type": "multiple-choice",
+      "refIds": ["sibtambir"],
+      "prompt": "What does 'سبتمبر' mean?",
+      "options": ["will [future — a separate word]", "clocks / hours", "he drinks", "September"],
+      "answer": "September"
+    },
+    {
+      "id": "l65-ex20",
+      "type": "multiple-choice",
+      "refIds": ["sibtambir"],
+      "prompt": "Which word means 'September'?",
+      "options": ["ديسمبر", "سبتمبر", "قهوة", "لن"],
+      "answer": "سبتمبر"
+    },
+    {
+      "id": "l65-ex21",
+      "type": "multiple-choice",
+      "refIds": ["uktoobir"],
+      "prompt": "What does 'أكتوبر' mean?",
+      "options": ["will [near future — attaches directly to the verb]", "you (fem.) work", "October", "grandmother"],
+      "answer": "October"
+    },
+    {
+      "id": "l65-ex22",
+      "type": "typing",
+      "refIds": ["uktoobir"],
+      "prompt": "Type the Arabic word for 'October'.",
+      "answer": "أكتوبر"
+    },
+    {
+      "id": "l65-ex23",
+      "type": "multiple-choice",
+      "refIds": ["nufambir"],
+      "prompt": "What does 'نوفمبر' mean?",
+      "options": ["you (masc.) travel / she travels", "I write", "November", "boy / son"],
+      "answer": "November"
+    },
+    {
+      "id": "l65-ex24",
+      "type": "multiple-choice",
+      "refIds": ["nufambir"],
+      "prompt": "Which word means 'November'?",
+      "options": ["نعمل", "نوفمبر", "أمام", "أرسل"],
+      "answer": "نوفمبر"
+    },
+    {
+      "id": "l65-ex25",
+      "type": "multiple-choice",
+      "refIds": ["deesambir"],
+      "prompt": "What does 'ديسمبر' mean?",
+      "options": ["an office / a desk", "he ate", "tired", "December"],
+      "answer": "December"
+    },
+    {
+      "id": "l65-ex26",
+      "type": "typing",
+      "refIds": ["deesambir"],
+      "prompt": "Type the Arabic word for 'December'.",
+      "answer": "ديسمبر"
+    },
+    {
+      "id": "l65-ex27",
+      "type": "speaking",
+      "refIds": ["shahr"],
+      "prompt": "Practice saying 'شهر' (a month) out loud.",
+      "answer": "شهر"
+    },
+    {
+      "id": "l65-ex28",
+      "type": "speaking",
+      "refIds": ["yanayir"],
+      "prompt": "Practice saying 'يناير' (January) out loud.",
+      "answer": "يناير"
+    },
+    {
+      "id": "l65-ex29",
+      "type": "speaking",
+      "refIds": ["fibrayir"],
+      "prompt": "Practice saying 'فبراير' (February) out loud.",
+      "answer": "فبراير"
+    },
+    {
+      "id": "l65-ex30",
+      "type": "speaking",
+      "refIds": ["maris"],
+      "prompt": "Practice saying 'مارس' (March) out loud.",
+      "answer": "مارس"
+    },
+    {
+      "id": "l65-ex31",
+      "type": "speaking",
+      "refIds": ["abreel"],
+      "prompt": "Practice saying 'أبريل' (April) out loud.",
+      "answer": "أبريل"
+    },
+    {
+      "id": "l65-ex32",
+      "type": "speaking",
+      "refIds": ["mayu"],
+      "prompt": "Practice saying 'مايو' (May) out loud.",
+      "answer": "مايو"
+    },
+    {
+      "id": "l65-ex33",
+      "type": "speaking",
+      "refIds": ["yuniyu"],
+      "prompt": "Practice saying 'يونيو' (June) out loud.",
+      "answer": "يونيو"
+    },
+    {
+      "id": "l65-ex34",
+      "type": "speaking",
+      "refIds": ["yuliyu"],
+      "prompt": "Practice saying 'يوليو' (July) out loud.",
+      "answer": "يوليو"
+    },
+    {
+      "id": "l65-ex35",
+      "type": "speaking",
+      "refIds": ["ughustus"],
+      "prompt": "Practice saying 'أغسطس' (August) out loud.",
+      "answer": "أغسطس"
+    },
+    {
+      "id": "l65-ex36",
+      "type": "speaking",
+      "refIds": ["sibtambir"],
+      "prompt": "Practice saying 'سبتمبر' (September) out loud.",
+      "answer": "سبتمبر"
+    },
+    {
+      "id": "l65-ex37",
+      "type": "speaking",
+      "refIds": ["uktoobir"],
+      "prompt": "Practice saying 'أكتوبر' (October) out loud.",
+      "answer": "أكتوبر"
+    },
+    {
+      "id": "l65-ex38",
+      "type": "speaking",
+      "refIds": ["nufambir"],
+      "prompt": "Practice saying 'نوفمبر' (November) out loud.",
+      "answer": "نوفمبر"
+    },
+    {
+      "id": "l65-ex39",
+      "type": "speaking",
+      "refIds": ["deesambir"],
+      "prompt": "Practice saying 'ديسمبر' (December) out loud.",
+      "answer": "ديسمبر"
+    }
+  ]
+}

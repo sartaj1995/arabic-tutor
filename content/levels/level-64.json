@@ -1,0 +1,126 @@
+{
+  "number": 64,
+  "title": "Attached Object Pronouns",
+  "newLetters": [],
+  "newVocab": ["uallimuhu", "uallimuha", "yuallimuni"],
+  "newPatterns": ["object-suffix"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "uallimuhu",
+      "arabic": "أُعَلِّمُهُ",
+      "arabicNoDiacritics": "أعلمه",
+      "transliteration": "uʿallimuhu",
+      "english": "I teach him",
+      "partOfSpeech": "verb + suffix",
+      "audio": { "id": "word_uallimuhu", "text": "أُعَلِّمُهُ" },
+      "introducedInLevel": 64,
+      "tags": ["core", "grammar"]
+    },
+    {
+      "id": "uallimuha",
+      "arabic": "أُعَلِّمُهَا",
+      "arabicNoDiacritics": "أعلمها",
+      "transliteration": "uʿallimuhā",
+      "english": "I teach her",
+      "partOfSpeech": "verb + suffix",
+      "audio": { "id": "word_uallimuha", "text": "أُعَلِّمُهَا" },
+      "introducedInLevel": 64,
+      "tags": ["grammar"]
+    },
+    {
+      "id": "yuallimuni",
+      "arabic": "يُعَلِّمُنِي",
+      "arabicNoDiacritics": "يعلمني",
+      "transliteration": "yuʿallimunī",
+      "english": "he teaches me",
+      "partOfSpeech": "verb + suffix",
+      "audio": { "id": "word_yuallimuni", "text": "يُعَلِّمُنِي" },
+      "introducedInLevel": 64,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "object-suffix",
+      "pattern": "[Present-tense verb] + -هُ / -هَا / -نِي",
+      "exampleArabic": "المدرس يعلمني",
+      "exampleTransliteration": "al-mudarrisu yuʿallimunī",
+      "exampleEnglish": "The teacher teaches me.",
+      "grammarNote": "The same suffixes that mark possession on a noun (بَيْتُهُ 'his house', بَيْتُهَا 'her house', level 9) attach directly to a present-tense verb to mark its direct OBJECT instead: أُعَلِّمُهُ isn't 'my teach' — it's 'I teach him'. -هُ and -هَا work identically in both roles. 'Me' is the one exception: as a possessive it's -ي (كِتَابِي, 'my book'), but as a verb's object it's -نِي (يُعَلِّمُنِي, 'he teaches me') — a real, deliberate difference that keeps the two roles from sounding identical. This pattern works with any verb you already know: تَذْهَبُونَ has no object, but a transitive verb like عَلَّمَ or أَرْسَلَ (level 56) can take any of these three suffixes the same way.",
+      "audio": { "id": "phrase_almudarris_yuallimuni", "text": "المدرس يعلمني" },
+      "introducedInLevel": 64
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l64-ex1",
+      "type": "multiple-choice",
+      "refIds": ["uallimuhu"],
+      "prompt": "What does 'أعلمه' mean?",
+      "options": ["I teach him", "I teach her", "he teaches me", "I teach"],
+      "answer": "I teach him"
+    },
+    {
+      "id": "l64-ex2",
+      "type": "sentence-build",
+      "refIds": ["mudarris", "yuallimuni", "object-suffix"],
+      "prompt": "Arrange the tiles to say 'The teacher teaches me.'",
+      "options": ["المدرس", "يعلمني"],
+      "answer": "المدرس يعلمني"
+    },
+    {
+      "id": "l64-ex3",
+      "type": "multiple-choice",
+      "refIds": ["uallimuha"],
+      "prompt": "What does 'أعلمها' mean?",
+      "options": ["the fifth (fem.)", "rice", "you (fem.)", "I teach her"],
+      "answer": "I teach her"
+    },
+    {
+      "id": "l64-ex4",
+      "type": "multiple-choice",
+      "refIds": ["uallimuha"],
+      "prompt": "Which word means 'I teach her'?",
+      "options": ["أعلمها", "لحم", "أدرس", "خمسة عشر"],
+      "answer": "أعلمها"
+    },
+    {
+      "id": "l64-ex5",
+      "type": "multiple-choice",
+      "refIds": ["yuallimuni"],
+      "prompt": "What does 'يعلمني' mean?",
+      "options": ["mountains (irregular plural of جَبَل)", "I / you (masc.) / you (fem.) / she read (past)", "you (fem.)", "he teaches me"],
+      "answer": "he teaches me"
+    },
+    {
+      "id": "l64-ex6",
+      "type": "typing",
+      "refIds": ["yuallimuni"],
+      "prompt": "Type the Arabic word for 'he teaches me'.",
+      "answer": "يعلمني"
+    },
+    {
+      "id": "l64-ex7",
+      "type": "speaking",
+      "refIds": ["uallimuhu"],
+      "prompt": "Practice saying 'أعلمه' (I teach him) out loud.",
+      "answer": "أعلمه"
+    },
+    {
+      "id": "l64-ex8",
+      "type": "speaking",
+      "refIds": ["uallimuha"],
+      "prompt": "Practice saying 'أعلمها' (I teach her) out loud.",
+      "answer": "أعلمها"
+    },
+    {
+      "id": "l64-ex9",
+      "type": "speaking",
+      "refIds": ["yuallimuni"],
+      "prompt": "Practice saying 'يعلمني' (he teaches me) out loud.",
+      "answer": "يعلمني"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "number": 68,
+  "title": "Transportation Vocabulary",
+  "newLetters": [],
+  "newVocab": ["qitaar", "hafila", "darraja", "mahatta", "tadhkira"],
+  "newPatterns": ["go-by-vehicle"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "qitaar",
+      "arabic": "قِطَارٌ",
+      "arabicNoDiacritics": "قطار",
+      "transliteration": "qiṭārun",
+      "english": "a train",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_qitaar", "text": "قِطَارٌ" },
+      "introducedInLevel": 68,
+      "tags": ["core"]
+    },
+    {
+      "id": "hafila",
+      "arabic": "حَافِلَةٌ",
+      "arabicNoDiacritics": "حافلة",
+      "transliteration": "ḥāfilatun",
+      "english": "a bus",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_hafila", "text": "حَافِلَةٌ" },
+      "introducedInLevel": 68,
+      "tags": ["core"]
+    },
+    {
+      "id": "darraja",
+      "arabic": "دَرَّاجَةٌ",
+      "arabicNoDiacritics": "دراجة",
+      "transliteration": "darrājatun",
+      "english": "a bicycle",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_darraja", "text": "دَرَّاجَةٌ" },
+      "introducedInLevel": 68,
+      "tags": []
+    },
+    {
+      "id": "mahatta",
+      "arabic": "مَحَطَّةٌ",
+      "arabicNoDiacritics": "محطة",
+      "transliteration": "maḥaṭṭatun",
+      "english": "a station",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_mahatta", "text": "مَحَطَّةٌ" },
+      "introducedInLevel": 68,
+      "tags": ["core", "place"]
+    },
+    {
+      "id": "tadhkira",
+      "arabic": "تَذْكِرَةٌ",
+      "arabicNoDiacritics": "تذكرة",
+      "transliteration": "tadhkiratun",
+      "english": "a ticket",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_tadhkira", "text": "تَذْكِرَةٌ" },
+      "introducedInLevel": 68,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "go-by-vehicle",
+      "pattern": "أَذْهَبُ + بِالـ[Vehicle]",
+      "exampleArabic": "أذهب بالقطار",
+      "exampleTransliteration": "adhhabu bi-l-qiṭāri",
+      "exampleEnglish": "I go by train.",
+      "grammarNote": "Reuses the بِالـ ('by [vehicle]') structure level 43 introduced with أُسَافِرُ بِالطَّائِرَةِ ('I travel by plane'), just with the everyday verb أَذْهَبُ ('I go', level 12) and a new set of vocabulary: قِطَار ('train'), حَافِلَة ('bus'), دَرَّاجَة ('bicycle'), مَحَطَّة ('station'), and تَذْكِرَة ('ticket') — everything you need to build your own 'I go to the station and wait for the train' sentences using verbs from levels 63 and 67 too.",
+      "audio": { "id": "phrase_adhhab_bialqitaar", "text": "أذهب بالقطار" },
+      "introducedInLevel": 68
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l68-ex1",
+      "type": "multiple-choice",
+      "refIds": ["qitaar"],
+      "prompt": "What does 'قطار' mean?",
+      "options": ["a train", "a bus", "a bicycle", "a station"],
+      "answer": "a train"
+    },
+    {
+      "id": "l68-ex2",
+      "type": "sentence-build",
+      "refIds": ["adhhabu", "qitaar", "go-by-vehicle"],
+      "prompt": "Arrange the tiles to say 'I go by train.'",
+      "options": ["أذهب", "بالقطار"],
+      "answer": "أذهب بالقطار"
+    },
+    {
+      "id": "l68-ex3",
+      "type": "multiple-choice",
+      "refIds": ["hafila"],
+      "prompt": "What does 'حافلة' mean?",
+      "options": ["girl / daughter", "October", "no", "a bus"],
+      "answer": "a bus"
+    },
+    {
+      "id": "l68-ex4",
+      "type": "multiple-choice",
+      "refIds": ["hafila"],
+      "prompt": "Which word means 'a bus'?",
+      "options": ["الرجل", "أصفر", "مدرسة", "حافلة"],
+      "answer": "حافلة"
+    },
+    {
+      "id": "l68-ex5",
+      "type": "multiple-choice",
+      "refIds": ["darraja"],
+      "prompt": "What does 'دراجة' mean?",
+      "options": ["you (masc.)", "July", "in front of", "a bicycle"],
+      "answer": "a bicycle"
+    },
+    {
+      "id": "l68-ex6",
+      "type": "typing",
+      "refIds": ["darraja"],
+      "prompt": "Type the Arabic word for 'a bicycle'.",
+      "answer": "دراجة"
+    },
+    {
+      "id": "l68-ex7",
+      "type": "multiple-choice",
+      "refIds": ["mahatta"],
+      "prompt": "What does 'محطة' mean?",
+      "options": ["you (masc.) drink / she drinks", "thank you", "tomorrow", "a station"],
+      "answer": "a station"
+    },
+    {
+      "id": "l68-ex8",
+      "type": "multiple-choice",
+      "refIds": ["mahatta"],
+      "prompt": "Which word means 'a station'?",
+      "options": ["ننام", "تستطيعين", "سبتمبر", "محطة"],
+      "answer": "محطة"
+    },
+    {
+      "id": "l68-ex9",
+      "type": "multiple-choice",
+      "refIds": ["tadhkira"],
+      "prompt": "What does 'تذكرة' mean?",
+      "options": ["thirty", "a ticket", "we drank", "we want"],
+      "answer": "a ticket"
+    },
+    {
+      "id": "l68-ex10",
+      "type": "typing",
+      "refIds": ["tadhkira"],
+      "prompt": "Type the Arabic word for 'a ticket'.",
+      "answer": "تذكرة"
+    },
+    {
+      "id": "l68-ex11",
+      "type": "speaking",
+      "refIds": ["qitaar"],
+      "prompt": "Practice saying 'قطار' (a train) out loud.",
+      "answer": "قطار"
+    },
+    {
+      "id": "l68-ex12",
+      "type": "speaking",
+      "refIds": ["hafila"],
+      "prompt": "Practice saying 'حافلة' (a bus) out loud.",
+      "answer": "حافلة"
+    },
+    {
+      "id": "l68-ex13",
+      "type": "speaking",
+      "refIds": ["darraja"],
+      "prompt": "Practice saying 'دراجة' (a bicycle) out loud.",
+      "answer": "دراجة"
+    },
+    {
+      "id": "l68-ex14",
+      "type": "speaking",
+      "refIds": ["mahatta"],
+      "prompt": "Practice saying 'محطة' (a station) out loud.",
+      "answer": "محطة"
+    },
+    {
+      "id": "l68-ex15",
+      "type": "speaking",
+      "refIds": ["tadhkira"],
+      "prompt": "Practice saying 'تذكرة' (a ticket) out loud.",
+      "answer": "تذكرة"
+    }
+  ]
+}

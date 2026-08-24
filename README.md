@@ -5,8 +5,8 @@ script, vocabulary, and sentence-building — across 100 levels.
 
 **Status: app shell with interactive exercises, an on-screen Arabic
 keyboard, spaced-repetition review, real exercise depth, live audio, and a
-progress dashboard.** The first 60 levels of curriculum content exist as
-structured JSON — 867 exercises across them, generated so every letter and
+progress dashboard.** The first 70 levels of curriculum content exist as
+structured JSON — 1029 exercises across them, generated so every letter and
 vocab word gets at least one dedicated question, not just the illustrative
 few each level started with. A React/Vite app loads and displays them with
 clickable/typeable exercises and live scoring, finishing a level feeds its
@@ -118,7 +118,7 @@ src/lib/speech.ts         Web Speech API wrapper (speak, voice detection)
 src/lib/progress.ts       Dashboard stats computed from IndexedDB (no separate tracking)
 src/pages/                LevelList, LevelDetail, Review, Progress
 src/components/           ArabicText, ExerciseCard, PlayAudioButton, ArabicKeyboard
-content/levels/*.json     Authored level content (levels 1–60 so far)
+content/levels/*.json     Authored level content (levels 1–70 so far)
 scripts/generate-audio.mjs      Offline Google Cloud TTS pipeline — fallback, unused
 scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 ```
@@ -126,9 +126,9 @@ scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 Each `content/levels/level-XX.json` follows the `Level` type in
 `src/types/content.ts`: new letters, new vocab, new sentence patterns, a
 diacritics-display setting, and exercises (a hand-authored core set plus
-generated coverage exercises — 867 total across the 60 levels).
+generated coverage exercises — 1029 total across the 70 levels).
 
-## First 60 levels
+## First 70 levels
 
 | # | Theme |
 |---|---|
@@ -192,11 +192,21 @@ generated coverage exercises — 867 total across the 60 levels).
 | 58 | Food & restaurant vocabulary |
 | 59 | Clothing & everyday items |
 | 60 | Review — levels 51–60 |
+| 61 | Numbers 21–100 |
+| 62 | Verbs — "to learn" (Form V) |
+| 63 | Verbs — "to wait" (Form VIII) |
+| 64 | Attached object pronouns |
+| 65 | Months of the year |
+| 66 | Verbs — "to sleep" |
+| 67 | Prepositions of time — قَبْلَ / بَعْدَ |
+| 68 | Transportation vocabulary |
+| 69 | Household & furniture |
+| 70 | Review — levels 61–70 |
 
 ## Next steps
 
 1. **Review the pacing.** Read through `content/levels/level-01.json` →
-   `level-60.json` (or the summary table in `docs/content-model.md`) and
+   `level-70.json` (or the summary table in `docs/content-model.md`) and
    sanity-check that the progression feels right before more levels are
    generated the same way.
 2. ~~Scaffold the app.~~ Done — `npm run dev` to try it.
@@ -337,6 +347,31 @@ generated coverage exercises — 867 total across the 60 levels).
     renders all ten levels with correct icons, and level 60's 8-tile
     capstone (إِذَا + relative clause + سَـ-future) renders and scores
     correctly. 60 of 100 levels done.
+8e. ~~Author levels 61–70.~~ Done — closes out the numbers system (tens
+    30–100, plus a grammar note that 21–99 needs zero new vocabulary: it's
+    just [unit] + وَ + [ten]; full 3–19 gender-polarity agreement is still
+    explicitly deferred) and picks up attached object pronouns
+    (أُعَلِّمُهُ "I teach him", يُعَلِّمُنِي "he teaches me" — the same
+    possessive suffixes from level 9, reused as verb objects, with -نِي
+    as a deliberate exception from possessive -ي). Two more verb forms:
+    تَعَلَّمَ ("to learn", Form V, built directly on level 54's عَلَّمَ "to
+    teach" as a concrete II→V pair) and اِنْتَظَرَ ("to wait", Form VIII),
+    bringing the running count of non-Form-I forms to five. Both levels'
+    grammar notes correct a rule that could have over-generalized from
+    level 43: only Forms II/III/IV take a damma-prefixed present tense;
+    V and beyond (including X, already met via يستطيع) take fatha
+    instead. نَامَ ("to sleep") is deliberately not a new form — it's the
+    second hollow verb after أَرَادَ (level 15), included to reinforce that
+    pattern rather than add new grammar. Also: months of the year (13
+    words, one level, matching the days-of-week precedent), قَبْلَ/بَعْدَ
+    ("before"/"after", extending level 46's idafa-like preposition
+    pattern to time), transportation and household vocabulary. Validated
+    with a full consistency pass (0 problems across 431 items / 1029
+    exercises, 0 new stripped-text collisions against the full 340-word
+    vocab pool) and in the browser — the new Unit 7 ("Daily Life
+    Expanded" / الحياة اليومية الموسعة) renders all ten levels with correct
+    icons, level 65's 13-word month list and level 70's 5-tile capstone
+    both render and score correctly. 70 of 100 levels done.
 9. ~~Author `letter-writing` exercises.~~ Done — `generate-exercises.mjs`
    now generates one per letter (28 total, across levels 1–7 where all the
    alphabet is introduced), testing the production direction (name ->

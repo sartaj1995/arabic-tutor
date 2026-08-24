@@ -1,0 +1,193 @@
+{
+  "number": 62,
+  "title": "Verbs — \"To Learn\" (Form V)",
+  "newLetters": [],
+  "newVocab": ["ataallamu", "tataallamu", "tataallameena", "yataallamu", "nataallamu"],
+  "newPatterns": ["learn-at-school"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ataallamu",
+      "arabic": "أَتَعَلَّمُ",
+      "arabicNoDiacritics": "أتعلم",
+      "transliteration": "ataʿallamu",
+      "english": "I learn",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_ataallamu", "text": "أَتَعَلَّمُ" },
+      "introducedInLevel": 62,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tataallamu",
+      "arabic": "تَتَعَلَّمُ",
+      "arabicNoDiacritics": "تتعلم",
+      "transliteration": "tataʿallamu",
+      "english": "you (masc.) learn / she learns",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tataallamu", "text": "تَتَعَلَّمُ" },
+      "introducedInLevel": 62,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tataallameena",
+      "arabic": "تَتَعَلَّمِينَ",
+      "arabicNoDiacritics": "تتعلمين",
+      "transliteration": "tataʿallamīna",
+      "english": "you (fem.) learn",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tataallameena", "text": "تَتَعَلَّمِينَ" },
+      "introducedInLevel": 62,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yataallamu",
+      "arabic": "يَتَعَلَّمُ",
+      "arabicNoDiacritics": "يتعلم",
+      "transliteration": "yataʿallamu",
+      "english": "he learns",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yataallamu", "text": "يَتَعَلَّمُ" },
+      "introducedInLevel": 62,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nataallamu",
+      "arabic": "نَتَعَلَّمُ",
+      "arabicNoDiacritics": "نتعلم",
+      "transliteration": "nataʿallamu",
+      "english": "we learn",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nataallamu", "text": "نَتَعَلَّمُ" },
+      "introducedInLevel": 62,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "learn-at-school",
+      "pattern": "[Verb] + فِي الـ[Place]",
+      "exampleArabic": "أتعلم في الجامعة",
+      "exampleTransliteration": "ataʿallamu fī l-jāmiʿati",
+      "exampleEnglish": "I learn at the university.",
+      "grammarNote": "تَعَلَّمَ ('to learn') is Form V (تَفَعَّلَ) — built directly from Form II عَلَّمَ (level 54, 'to teach') by adding a تَـ prefix: عَلَّمَ → تَعَلَّمَ, a real and common relationship ('cause to know' → 'come to know for oneself'). Unlike Forms II/III/IV, whose present-tense prefix takes damma, Forms V and beyond take FATHA: أَتَعَلَّمُ, تَتَعَلَّمُ, تَتَعَلَّمِينَ, يَتَعَلَّمُ, نَتَعَلَّمُ — because the تَـ is now part of the stem itself, not a separate present-tense marker. Even without diacritics, تَتَعَلَّمُ ('you learn/she learns') and تُعَلِّمُ (level 54, 'you teach/she teaches') stay visually distinct: تتعلم vs. تعلم — the extra ت from Form V's prefix is a real letter, not a diacritic, so it survives the fade.",
+      "audio": { "id": "phrase_ataallamu_fi_aljaamiaa", "text": "أتعلم في الجامعة" },
+      "introducedInLevel": 62
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l62-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ataallamu"],
+      "prompt": "What does 'أتعلم' mean?",
+      "options": ["I learn", "I teach", "I study", "I write"],
+      "answer": "I learn"
+    },
+    {
+      "id": "l62-ex2",
+      "type": "sentence-build",
+      "refIds": ["ataallamu", "jaamiaa", "learn-at-school"],
+      "prompt": "Arrange the tiles to say 'I learn at the university.'",
+      "options": ["أتعلم", "في", "الجامعة"],
+      "answer": "أتعلم في الجامعة"
+    },
+    {
+      "id": "l62-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tataallamu"],
+      "prompt": "What does 'تتعلم' mean?",
+      "options": ["we study", "you (masc.) learn / she learns", "why", "Go! (fem.)"],
+      "answer": "you (masc.) learn / she learns"
+    },
+    {
+      "id": "l62-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tataallamu"],
+      "prompt": "Which word means 'you (masc.) learn / she learns'?",
+      "options": ["هن", "كتابان", "تتعلم", "الأربعاء"],
+      "answer": "تتعلم"
+    },
+    {
+      "id": "l62-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tataallameena"],
+      "prompt": "What does 'تتعلمين' mean?",
+      "options": ["you (fem.) learn", "a school", "on", "I / you (masc.) / you (fem.) / she ate"],
+      "answer": "you (fem.) learn"
+    },
+    {
+      "id": "l62-ex6",
+      "type": "typing",
+      "refIds": ["tataallameena"],
+      "prompt": "Type the Arabic word for 'you (fem.) learn'.",
+      "answer": "تتعلمين"
+    },
+    {
+      "id": "l62-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yataallamu"],
+      "prompt": "What does 'يتعلم' mean?",
+      "options": ["he learns", "I teach", "the fourth (fem.)", "the third (fem.)"],
+      "answer": "he learns"
+    },
+    {
+      "id": "l62-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yataallamu"],
+      "prompt": "Which word means 'he learns'?",
+      "options": ["أين", "أسواق", "مدينة", "يتعلم"],
+      "answer": "يتعلم"
+    },
+    {
+      "id": "l62-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nataallamu"],
+      "prompt": "What does 'نتعلم' mean?",
+      "options": ["you (masc.) can / she can", "we learn", "the man", "new"],
+      "answer": "we learn"
+    },
+    {
+      "id": "l62-ex10",
+      "type": "typing",
+      "refIds": ["nataallamu"],
+      "prompt": "Type the Arabic word for 'we learn'.",
+      "answer": "نتعلم"
+    },
+    {
+      "id": "l62-ex11",
+      "type": "speaking",
+      "refIds": ["ataallamu"],
+      "prompt": "Practice saying 'أتعلم' (I learn) out loud.",
+      "answer": "أتعلم"
+    },
+    {
+      "id": "l62-ex12",
+      "type": "speaking",
+      "refIds": ["tataallamu"],
+      "prompt": "Practice saying 'تتعلم' (you (masc.) learn / she learns) out loud.",
+      "answer": "تتعلم"
+    },
+    {
+      "id": "l62-ex13",
+      "type": "speaking",
+      "refIds": ["tataallameena"],
+      "prompt": "Practice saying 'تتعلمين' (you (fem.) learn) out loud.",
+      "answer": "تتعلمين"
+    },
+    {
+      "id": "l62-ex14",
+      "type": "speaking",
+      "refIds": ["yataallamu"],
+      "prompt": "Practice saying 'يتعلم' (he learns) out loud.",
+      "answer": "يتعلم"
+    },
+    {
+      "id": "l62-ex15",
+      "type": "speaking",
+      "refIds": ["nataallamu"],
+      "prompt": "Practice saying 'نتعلم' (we learn) out loud.",
+      "answer": "نتعلم"
+    }
+  ]
+}

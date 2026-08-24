@@ -19,6 +19,7 @@ const UNIT_THEMES: { title: string; arabic: string }[] = [
   { title: "Everyday Structures", arabic: "الحياة اليومية" },
   { title: "Real-World Arabic", arabic: "الحياة العملية" },
   { title: "Complex Sentences", arabic: "الجمل المركبة" },
+  { title: "Daily Life Expanded", arabic: "الحياة اليومية الموسعة" },
 ];
 
 function CheckIcon() {

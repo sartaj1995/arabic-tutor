@@ -1,0 +1,294 @@
+{
+  "number": 61,
+  "title": "Numbers 21–100",
+  "newLetters": [],
+  "newVocab": ["thalathuun", "arbauun", "khamsuun", "sittuun", "sabuun", "thamanuun", "tisuun", "miaa"],
+  "newPatterns": ["compound-numbers"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "thalathuun",
+      "arabic": "ثَلَاثُونَ",
+      "arabicNoDiacritics": "ثلاثون",
+      "transliteration": "thalāthūna",
+      "english": "thirty",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_thalathuun", "text": "ثَلَاثُونَ" },
+      "introducedInLevel": 61,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "arbauun",
+      "arabic": "أَرْبَعُونَ",
+      "arabicNoDiacritics": "أربعون",
+      "transliteration": "arbaʿūna",
+      "english": "forty",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_arbauun", "text": "أَرْبَعُونَ" },
+      "introducedInLevel": 61,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "khamsuun",
+      "arabic": "خَمْسُونَ",
+      "arabicNoDiacritics": "خمسون",
+      "transliteration": "khamsūna",
+      "english": "fifty",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_khamsuun", "text": "خَمْسُونَ" },
+      "introducedInLevel": 61,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "sittuun",
+      "arabic": "سِتُّونَ",
+      "arabicNoDiacritics": "ستون",
+      "transliteration": "sittūna",
+      "english": "sixty",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_sittuun", "text": "سِتُّونَ" },
+      "introducedInLevel": 61,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "sabuun",
+      "arabic": "سَبْعُونَ",
+      "arabicNoDiacritics": "سبعون",
+      "transliteration": "sabʿūna",
+      "english": "seventy",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_sabuun", "text": "سَبْعُونَ" },
+      "introducedInLevel": 61,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "thamanuun",
+      "arabic": "ثَمَانُونَ",
+      "arabicNoDiacritics": "ثمانون",
+      "transliteration": "thamānūna",
+      "english": "eighty",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_thamanuun", "text": "ثَمَانُونَ" },
+      "introducedInLevel": 61,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "tisuun",
+      "arabic": "تِسْعُونَ",
+      "arabicNoDiacritics": "تسعون",
+      "transliteration": "tisʿūna",
+      "english": "ninety",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_tisuun", "text": "تِسْعُونَ" },
+      "introducedInLevel": 61,
+      "tags": ["core", "number"]
+    },
+    {
+      "id": "miaa",
+      "arabic": "مِائَة",
+      "arabicNoDiacritics": "مائة",
+      "transliteration": "miʾa",
+      "english": "one hundred",
+      "partOfSpeech": "number",
+      "audio": { "id": "word_miaa", "text": "مِائَة" },
+      "introducedInLevel": 61,
+      "tags": ["core", "number"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "compound-numbers",
+      "pattern": "[Unit 1–9] + وَ + [Ten]",
+      "exampleArabic": "خمسة وثلاثون",
+      "exampleTransliteration": "khamsatun wa-thalāthūna",
+      "exampleEnglish": "thirty-five (literally 'five and thirty')",
+      "grammarNote": "Now that you have units (levels 8, 14) and tens (levels 53, 61), every number from 21 to 99 is just [unit] + وَ + [ten] — reusing level-20's وَ exactly as before. Order is the reverse of English: the unit comes FIRST, the ten second: خَمْسَةٌ وَثَلَاثُونَ is literally 'five and thirty' = 35. No new vocabulary is needed for 21–99 beyond what you already have. مِائَة ('100') is the one exception to the -ُونَ tens pattern — and unlike the tens, it takes a singular noun after it (مِائَةُ كِتَابٍ, 'a hundred books', literally 'a hundred of book'), an idafa-like structure similar to level 31 that's flagged here but not drilled.",
+      "audio": { "id": "phrase_khamsa_wa_thalathuun", "text": "خمسة وثلاثون" },
+      "introducedInLevel": 61
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l61-ex1",
+      "type": "multiple-choice",
+      "refIds": ["thalathuun"],
+      "prompt": "What does 'ثلاثون' mean?",
+      "options": ["thirty", "three", "thirteen", "forty"],
+      "answer": "thirty"
+    },
+    {
+      "id": "l61-ex2",
+      "type": "sentence-build",
+      "refIds": ["khamsa", "wa", "thalathuun", "compound-numbers"],
+      "prompt": "Arrange the tiles to say 'thirty-five' (literally 'five and thirty').",
+      "options": ["خمسة", "وثلاثون"],
+      "answer": "خمسة وثلاثون"
+    },
+    {
+      "id": "l61-ex3",
+      "type": "multiple-choice",
+      "refIds": ["arbauun"],
+      "prompt": "What does 'أربعون' mean?",
+      "options": ["two girls", "forty", "the third", "he travels"],
+      "answer": "forty"
+    },
+    {
+      "id": "l61-ex4",
+      "type": "multiple-choice",
+      "refIds": ["arbauun"],
+      "prompt": "Which word means 'forty'?",
+      "options": ["أربعون", "سعيدة", "بنتان", "تعملين"],
+      "answer": "أربعون"
+    },
+    {
+      "id": "l61-ex5",
+      "type": "multiple-choice",
+      "refIds": ["khamsuun"],
+      "prompt": "What does 'خمسون' mean?",
+      "options": ["a market", "I study", "fifty", "he works"],
+      "answer": "fifty"
+    },
+    {
+      "id": "l61-ex6",
+      "type": "typing",
+      "refIds": ["khamsuun"],
+      "prompt": "Type the Arabic word for 'fifty'.",
+      "answer": "خمسون"
+    },
+    {
+      "id": "l61-ex7",
+      "type": "multiple-choice",
+      "refIds": ["sittuun"],
+      "prompt": "What does 'ستون' mean?",
+      "options": ["red", "sixty", "we drank", "he can"],
+      "answer": "sixty"
+    },
+    {
+      "id": "l61-ex8",
+      "type": "multiple-choice",
+      "refIds": ["sittuun"],
+      "prompt": "Which word means 'sixty'?",
+      "options": ["تذهب", "يرسل", "ستون", "يعمل"],
+      "answer": "ستون"
+    },
+    {
+      "id": "l61-ex9",
+      "type": "multiple-choice",
+      "refIds": ["sabuun"],
+      "prompt": "What does 'سبعون' mean?",
+      "options": ["seventy", "Saturday", "she/it is not", "Go! (masc.)"],
+      "answer": "seventy"
+    },
+    {
+      "id": "l61-ex10",
+      "type": "typing",
+      "refIds": ["sabuun"],
+      "prompt": "Type the Arabic word for 'seventy'.",
+      "answer": "سبعون"
+    },
+    {
+      "id": "l61-ex11",
+      "type": "multiple-choice",
+      "refIds": ["thamanuun"],
+      "prompt": "What does 'ثمانون' mean?",
+      "options": ["eighty", "house", "they (masc.) go", "boy / son"],
+      "answer": "eighty"
+    },
+    {
+      "id": "l61-ex12",
+      "type": "multiple-choice",
+      "refIds": ["thamanuun"],
+      "prompt": "Which word means 'eighty'?",
+      "options": ["نظارة", "ثمانون", "نعمل", "يدرس"],
+      "answer": "ثمانون"
+    },
+    {
+      "id": "l61-ex13",
+      "type": "multiple-choice",
+      "refIds": ["tisuun"],
+      "prompt": "What does 'تسعون' mean?",
+      "options": ["you (masc.) teach / she teaches", "new", "ninety", "Wednesday"],
+      "answer": "ninety"
+    },
+    {
+      "id": "l61-ex14",
+      "type": "typing",
+      "refIds": ["tisuun"],
+      "prompt": "Type the Arabic word for 'ninety'.",
+      "answer": "تسعون"
+    },
+    {
+      "id": "l61-ex15",
+      "type": "multiple-choice",
+      "refIds": ["miaa"],
+      "prompt": "What does 'مائة' mean?",
+      "options": ["you (plural, masc./mixed)", "you (fem.) teach", "one hundred", "the woman"],
+      "answer": "one hundred"
+    },
+    {
+      "id": "l61-ex16",
+      "type": "multiple-choice",
+      "refIds": ["miaa"],
+      "prompt": "Which word means 'one hundred'?",
+      "options": ["سعيد", "مائة", "أخت", "أذن"],
+      "answer": "مائة"
+    },
+    {
+      "id": "l61-ex17",
+      "type": "speaking",
+      "refIds": ["thalathuun"],
+      "prompt": "Practice saying 'ثلاثون' (thirty) out loud.",
+      "answer": "ثلاثون"
+    },
+    {
+      "id": "l61-ex18",
+      "type": "speaking",
+      "refIds": ["arbauun"],
+      "prompt": "Practice saying 'أربعون' (forty) out loud.",
+      "answer": "أربعون"
+    },
+    {
+      "id": "l61-ex19",
+      "type": "speaking",
+      "refIds": ["khamsuun"],
+      "prompt": "Practice saying 'خمسون' (fifty) out loud.",
+      "answer": "خمسون"
+    },
+    {
+      "id": "l61-ex20",
+      "type": "speaking",
+      "refIds": ["sittuun"],
+      "prompt": "Practice saying 'ستون' (sixty) out loud.",
+      "answer": "ستون"
+    },
+    {
+      "id": "l61-ex21",
+      "type": "speaking",
+      "refIds": ["sabuun"],
+      "prompt": "Practice saying 'سبعون' (seventy) out loud.",
+      "answer": "سبعون"
+    },
+    {
+      "id": "l61-ex22",
+      "type": "speaking",
+      "refIds": ["thamanuun"],
+      "prompt": "Practice saying 'ثمانون' (eighty) out loud.",
+      "answer": "ثمانون"
+    },
+    {
+      "id": "l61-ex23",
+      "type": "speaking",
+      "refIds": ["tisuun"],
+      "prompt": "Practice saying 'تسعون' (ninety) out loud.",
+      "answer": "تسعون"
+    },
+    {
+      "id": "l61-ex24",
+      "type": "speaking",
+      "refIds": ["miaa"],
+      "prompt": "Practice saying 'مائة' (one hundred) out loud.",
+      "answer": "مائة"
+    }
+  ]
+}
