@@ -1,0 +1,160 @@
+{
+  "number": 89,
+  "title": "Health & Illness",
+  "newLetters": [],
+  "newVocab": ["mareed", "sudaa", "dawaa", "saydaliyya"],
+  "newPatterns": ["sick-want-medicine"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "mareed",
+      "arabic": "مَرِيض",
+      "arabicNoDiacritics": "مريض",
+      "transliteration": "marīḍ",
+      "english": "sick",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_mareed", "text": "مَرِيض" },
+      "introducedInLevel": 89,
+      "tags": ["core", "adjective"]
+    },
+    {
+      "id": "sudaa",
+      "arabic": "صُدَاعٌ",
+      "arabicNoDiacritics": "صداع",
+      "transliteration": "ṣudāʿun",
+      "english": "a headache",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_sudaa", "text": "صُدَاعٌ" },
+      "introducedInLevel": 89,
+      "tags": []
+    },
+    {
+      "id": "dawaa",
+      "arabic": "دَوَاءٌ",
+      "arabicNoDiacritics": "دواء",
+      "transliteration": "dawāʾun",
+      "english": "medicine",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_dawaa", "text": "دَوَاءٌ" },
+      "introducedInLevel": 89,
+      "tags": ["core"]
+    },
+    {
+      "id": "saydaliyya",
+      "arabic": "صَيْدَلِيَّةٌ",
+      "arabicNoDiacritics": "صيدلية",
+      "transliteration": "ṣaydaliyyatun",
+      "english": "a pharmacy",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_saydaliyya", "text": "صَيْدَلِيَّةٌ" },
+      "introducedInLevel": 89,
+      "tags": ["place"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "sick-want-medicine",
+      "pattern": "أَنَا + مَرِيضٌ + وَ + أُرِيدُ + [Noun]",
+      "exampleArabic": "أنا مريض وأريد دواء",
+      "exampleTransliteration": "anā marīḍun wa-urīdu dawāʾan",
+      "exampleEnglish": "I am sick and I want medicine.",
+      "grammarNote": "The same structure as level 58's أَنَا جَائِعٌ وَأُرِيدُ طَعَامًا — nothing new grammatically, just vocabulary: مَرِيض ('sick'), صُدَاع ('a headache'), دَوَاء ('medicine'), and صَيْدَلِيَّة ('a pharmacy').",
+      "audio": { "id": "phrase_ana_mareed_wa_ureedu_dawaa", "text": "أنا مريض وأريد دواء" },
+      "introducedInLevel": 89
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l89-ex1",
+      "type": "multiple-choice",
+      "refIds": ["mareed"],
+      "prompt": "What does 'مريض' mean?",
+      "options": ["sick", "a headache", "medicine", "a pharmacy"],
+      "answer": "sick"
+    },
+    {
+      "id": "l89-ex2",
+      "type": "sentence-build",
+      "refIds": ["mareed", "wa", "ureedu", "dawaa", "sick-want-medicine"],
+      "prompt": "Arrange the tiles to say 'I am sick and I want medicine.'",
+      "options": ["أنا", "مريض", "وأريد", "دواء"],
+      "answer": "أنا مريض وأريد دواء"
+    },
+    {
+      "id": "l89-ex3",
+      "type": "multiple-choice",
+      "refIds": ["sudaa"],
+      "prompt": "What does 'صداع' mean?",
+      "options": ["a headache", "Eat! (masc.)", "sixty", "cheap"],
+      "answer": "a headache"
+    },
+    {
+      "id": "l89-ex4",
+      "type": "multiple-choice",
+      "refIds": ["sudaa"],
+      "prompt": "Which word means 'a headache'?",
+      "options": ["صداع", "اذهب", "لست", "سيارات"],
+      "answer": "صداع"
+    },
+    {
+      "id": "l89-ex5",
+      "type": "multiple-choice",
+      "refIds": ["dawaa"],
+      "prompt": "What does 'دواء' mean?",
+      "options": ["I / you (masc.) / you (fem.) / she read (past)", "you (masc.)", "happy (masc.)", "medicine"],
+      "answer": "medicine"
+    },
+    {
+      "id": "l89-ex6",
+      "type": "typing",
+      "refIds": ["dawaa"],
+      "prompt": "Type the Arabic word for 'medicine'.",
+      "answer": "دواء"
+    },
+    {
+      "id": "l89-ex7",
+      "type": "multiple-choice",
+      "refIds": ["saydaliyya"],
+      "prompt": "What does 'صيدلية' mean?",
+      "options": ["tired", "a pharmacy", "grandfather", "June"],
+      "answer": "a pharmacy"
+    },
+    {
+      "id": "l89-ex8",
+      "type": "multiple-choice",
+      "refIds": ["saydaliyya"],
+      "prompt": "Which word means 'a pharmacy'?",
+      "options": ["أسود", "أقلام", "صيدلية", "تقرأ"],
+      "answer": "صيدلية"
+    },
+    {
+      "id": "l89-ex9",
+      "type": "speaking",
+      "refIds": ["mareed"],
+      "prompt": "Practice saying 'مريض' (sick) out loud.",
+      "answer": "مريض"
+    },
+    {
+      "id": "l89-ex10",
+      "type": "speaking",
+      "refIds": ["sudaa"],
+      "prompt": "Practice saying 'صداع' (a headache) out loud.",
+      "answer": "صداع"
+    },
+    {
+      "id": "l89-ex11",
+      "type": "speaking",
+      "refIds": ["dawaa"],
+      "prompt": "Practice saying 'دواء' (medicine) out loud.",
+      "answer": "دواء"
+    },
+    {
+      "id": "l89-ex12",
+      "type": "speaking",
+      "refIds": ["saydaliyya"],
+      "prompt": "Practice saying 'صيدلية' (a pharmacy) out loud.",
+      "answer": "صيدلية"
+    }
+  ]
+}

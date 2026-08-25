@@ -1,0 +1,193 @@
+{
+  "number": 87,
+  "title": "Verbs — \"To Give\" (Defective, Form IV)",
+  "newLetters": [],
+  "newVocab": ["utee", "tutee", "tuteena", "yutee", "nutee"],
+  "newPatterns": ["give-you-book"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "utee",
+      "arabic": "أُعْطِي",
+      "arabicNoDiacritics": "أعطي",
+      "transliteration": "uʿṭī",
+      "english": "I give",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_utee", "text": "أُعْطِي" },
+      "introducedInLevel": 87,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tutee",
+      "arabic": "تُعْطِي",
+      "arabicNoDiacritics": "تعطي",
+      "transliteration": "tuʿṭī",
+      "english": "you (masc.) give / she gives",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tutee", "text": "تُعْطِي" },
+      "introducedInLevel": 87,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tuteena",
+      "arabic": "تُعْطِينَ",
+      "arabicNoDiacritics": "تعطين",
+      "transliteration": "tuʿṭīna",
+      "english": "you (fem.) give",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tuteena", "text": "تُعْطِينَ" },
+      "introducedInLevel": 87,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yutee",
+      "arabic": "يُعْطِي",
+      "arabicNoDiacritics": "يعطي",
+      "transliteration": "yuʿṭī",
+      "english": "he gives",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yutee", "text": "يُعْطِي" },
+      "introducedInLevel": 87,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nutee",
+      "arabic": "نُعْطِي",
+      "arabicNoDiacritics": "نعطي",
+      "transliteration": "nuʿṭī",
+      "english": "we give",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nutee", "text": "نُعْطِي" },
+      "introducedInLevel": 87,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "give-you-book",
+      "pattern": "[Verb] + -كَ + الـ[Noun]",
+      "exampleArabic": "أعطيك الكتاب",
+      "exampleTransliteration": "uʿṭīka l-kitāba",
+      "exampleEnglish": "I give you the book.",
+      "grammarNote": "أَعْطَى ('to give') is Form IV and defective (weak-final, root ع-ط-و) — like مَشَى (level 75), its present tense keeps a long ي, and 'you (fem.)' merges the root's ي with -ِينَ into one: تُعْطِينَ, not a doubled-up spelling. 'Give' is also special: it can take TWO objects with no preposition — أُعْطِيكَ الْكِتَابَ is literally 'I-give-you the-book', reusing the -كَ suffix from level 76 as the RECIPIENT rather than level 76's more general direct object.",
+      "audio": { "id": "phrase_uteeka_alkitaab", "text": "أعطيك الكتاب" },
+      "introducedInLevel": 87
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l87-ex1",
+      "type": "multiple-choice",
+      "refIds": ["utee"],
+      "prompt": "What does 'أعطي' mean?",
+      "options": ["I give", "I take", "I send", "I open"],
+      "answer": "I give"
+    },
+    {
+      "id": "l87-ex2",
+      "type": "sentence-build",
+      "refIds": ["utee", "alkitab", "give-you-book"],
+      "prompt": "Arrange the tiles to say 'I give you the book.'",
+      "options": ["أعطيك", "الكتاب"],
+      "answer": "أعطيك الكتاب"
+    },
+    {
+      "id": "l87-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tutee"],
+      "prompt": "What does 'تعطي' mean?",
+      "options": ["you (masc.) give / she gives", "two books", "easy", "you (masc.) go / she goes"],
+      "answer": "you (masc.) give / she gives"
+    },
+    {
+      "id": "l87-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tutee"],
+      "prompt": "Which word means 'you (masc.) give / she gives'?",
+      "options": ["تعطي", "تحت", "شاي", "صديق"],
+      "answer": "تعطي"
+    },
+    {
+      "id": "l87-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tuteena"],
+      "prompt": "What does 'تعطين' mean?",
+      "options": ["[negates a verb in the past — 'did not']", "I read", "I teach them", "you (fem.) give"],
+      "answer": "you (fem.) give"
+    },
+    {
+      "id": "l87-ex6",
+      "type": "typing",
+      "refIds": ["tuteena"],
+      "prompt": "Type the Arabic word for 'you (fem.) give'.",
+      "answer": "تعطين"
+    },
+    {
+      "id": "l87-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yutee"],
+      "prompt": "What does 'يعطي' mean?",
+      "options": ["he gives", "you (masc.) work / she works", "juice", "dirty"],
+      "answer": "he gives"
+    },
+    {
+      "id": "l87-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yutee"],
+      "prompt": "Which word means 'he gives'?",
+      "options": ["مع", "تدرسين", "يمشي", "يعطي"],
+      "answer": "يعطي"
+    },
+    {
+      "id": "l87-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nutee"],
+      "prompt": "What does 'نعطي' mean?",
+      "options": ["we give", "tea", "he opens", "she"],
+      "answer": "we give"
+    },
+    {
+      "id": "l87-ex10",
+      "type": "typing",
+      "refIds": ["nutee"],
+      "prompt": "Type the Arabic word for 'we give'.",
+      "answer": "نعطي"
+    },
+    {
+      "id": "l87-ex11",
+      "type": "speaking",
+      "refIds": ["utee"],
+      "prompt": "Practice saying 'أعطي' (I give) out loud.",
+      "answer": "أعطي"
+    },
+    {
+      "id": "l87-ex12",
+      "type": "speaking",
+      "refIds": ["tutee"],
+      "prompt": "Practice saying 'تعطي' (you (masc.) give / she gives) out loud.",
+      "answer": "تعطي"
+    },
+    {
+      "id": "l87-ex13",
+      "type": "speaking",
+      "refIds": ["tuteena"],
+      "prompt": "Practice saying 'تعطين' (you (fem.) give) out loud.",
+      "answer": "تعطين"
+    },
+    {
+      "id": "l87-ex14",
+      "type": "speaking",
+      "refIds": ["yutee"],
+      "prompt": "Practice saying 'يعطي' (he gives) out loud.",
+      "answer": "يعطي"
+    },
+    {
+      "id": "l87-ex15",
+      "type": "speaking",
+      "refIds": ["nutee"],
+      "prompt": "Practice saying 'نعطي' (we give) out loud.",
+      "answer": "نعطي"
+    }
+  ]
+}

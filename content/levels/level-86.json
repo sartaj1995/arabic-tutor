@@ -1,0 +1,59 @@
+{
+  "number": 86,
+  "title": "Conditionals — لَوْ (\"If\", Hypothetical)",
+  "newLetters": [],
+  "newVocab": ["law"],
+  "newPatterns": ["conditional-law"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "law",
+      "arabic": "لَوْ",
+      "arabicNoDiacritics": "لو",
+      "transliteration": "law",
+      "english": "if (hypothetical)",
+      "partOfSpeech": "conjunction",
+      "audio": { "id": "word_law", "text": "لَوْ" },
+      "introducedInLevel": 86,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "conditional-law",
+      "pattern": "لَوْ + [Past-tense verb] + لَـ + [Past-tense verb]",
+      "exampleArabic": "لو ذهبت لشربت القهوة",
+      "exampleTransliteration": "law dhahabtu la-sharibtu l-qahwata",
+      "exampleEnglish": "If I had gone, I would have drunk the coffee.",
+      "grammarNote": "لَوْ is a SECOND word for 'if', contrasted with إِذَا (level 57): إِذَا introduces a real or likely condition ('if/when I go...'), while لَوْ introduces a hypothetical or counterfactual one ('if I had gone...' — implying you didn't). Like إِذَا, لَوْ pairs with a past-tense verb, reusing your existing pool (level 22's ذَهَبْتُ, level 29's شَرِبْتُ) rather than minting new forms. The result clause often takes a لَـ prefix (لَشَرِبْتُ, 'I would have drunk') marking it as the hypothetical's consequence — لَـ attaches directly with no space, exactly like the other one-letter prefixes you already know (سَـ، بِ، وَ، كَـ).",
+      "audio": { "id": "phrase_law_dhahabtu_lasharibtu_alqahwa", "text": "لو ذهبت لشربت القهوة" },
+      "introducedInLevel": 86
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l86-ex1",
+      "type": "multiple-choice",
+      "refIds": ["law"],
+      "prompt": "What does 'لو' mean?",
+      "options": ["if (hypothetical)", "if (real/likely)", "when", "because"],
+      "answer": "if (hypothetical)"
+    },
+    {
+      "id": "l86-ex2",
+      "type": "sentence-build",
+      "refIds": ["law", "dhahabtu", "sharibtu", "qahwa", "conditional-law"],
+      "prompt": "Arrange the tiles to say 'If I had gone, I would have drunk the coffee.'",
+      "options": ["لو", "ذهبت", "لشربت", "القهوة"],
+      "answer": "لو ذهبت لشربت القهوة"
+    },
+    {
+      "id": "l86-ex3",
+      "type": "speaking",
+      "refIds": ["law"],
+      "prompt": "Practice saying 'لو' (if (hypothetical)) out loud.",
+      "answer": "لو"
+    }
+  ]
+}

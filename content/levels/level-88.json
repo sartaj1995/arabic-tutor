@@ -1,0 +1,193 @@
+{
+  "number": 88,
+  "title": "Sports & Hobbies",
+  "newLetters": [],
+  "newVocab": ["riyaada", "kura", "sibaaha", "mooseeqaa", "qiraaa"],
+  "newPatterns": ["love-sports"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "riyaada",
+      "arabic": "رِيَاضَةٌ",
+      "arabicNoDiacritics": "رياضة",
+      "transliteration": "riyāḍatun",
+      "english": "sport / exercise",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_riyaada", "text": "رِيَاضَةٌ" },
+      "introducedInLevel": 88,
+      "tags": ["core"]
+    },
+    {
+      "id": "kura",
+      "arabic": "كُرَةٌ",
+      "arabicNoDiacritics": "كرة",
+      "transliteration": "kuratun",
+      "english": "a ball",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_kura", "text": "كُرَةٌ" },
+      "introducedInLevel": 88,
+      "tags": ["core"]
+    },
+    {
+      "id": "sibaaha",
+      "arabic": "سِبَاحَةٌ",
+      "arabicNoDiacritics": "سباحة",
+      "transliteration": "sibāḥatun",
+      "english": "swimming",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_sibaaha", "text": "سِبَاحَةٌ" },
+      "introducedInLevel": 88,
+      "tags": []
+    },
+    {
+      "id": "mooseeqaa",
+      "arabic": "مُوسِيقَى",
+      "arabicNoDiacritics": "موسيقى",
+      "transliteration": "mūsīqā",
+      "english": "music",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_mooseeqaa", "text": "مُوسِيقَى" },
+      "introducedInLevel": 88,
+      "tags": ["core"]
+    },
+    {
+      "id": "qiraaa",
+      "arabic": "قِرَاءَةٌ",
+      "arabicNoDiacritics": "قراءة",
+      "transliteration": "qirāʾatun",
+      "english": "reading",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_qiraaa", "text": "قِرَاءَةٌ" },
+      "introducedInLevel": 88,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "love-sports",
+      "pattern": "أُحِبُّ + الـ[Noun]",
+      "exampleArabic": "أحب الرياضة",
+      "exampleTransliteration": "uḥibbu r-riyāḍata",
+      "exampleEnglish": "I love sports.",
+      "grammarNote": "Vocabulary only, reusing أُحِبُّ from level 77: رِيَاضَة ('sport/exercise'), كُرَة ('a ball'), سِبَاحَة ('swimming'), مُوسِيقَى ('music'), and قِرَاءَة ('reading' — the verbal noun of قَرَأَ, level 18, the same relationship 'reading' has to 'read' in English).",
+      "audio": { "id": "phrase_uhibbu_alriyaada", "text": "أحب الرياضة" },
+      "introducedInLevel": 88
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l88-ex1",
+      "type": "multiple-choice",
+      "refIds": ["riyaada"],
+      "prompt": "What does 'رياضة' mean?",
+      "options": ["sport / exercise", "a ball", "swimming", "music"],
+      "answer": "sport / exercise"
+    },
+    {
+      "id": "l88-ex2",
+      "type": "sentence-build",
+      "refIds": ["uhibbu", "riyaada", "love-sports"],
+      "prompt": "Arrange the tiles to say 'I love sports.'",
+      "options": ["أحب", "الرياضة"],
+      "answer": "أحب الرياضة"
+    },
+    {
+      "id": "l88-ex3",
+      "type": "multiple-choice",
+      "refIds": ["kura"],
+      "prompt": "What does 'كرة' mean?",
+      "options": ["and", "a ball", "hot", "a doctor"],
+      "answer": "a ball"
+    },
+    {
+      "id": "l88-ex4",
+      "type": "multiple-choice",
+      "refIds": ["kura"],
+      "prompt": "Which word means 'a ball'?",
+      "options": ["أعمل", "كرة", "تذهب", "ساعات"],
+      "answer": "كرة"
+    },
+    {
+      "id": "l88-ex5",
+      "type": "multiple-choice",
+      "refIds": ["sibaaha"],
+      "prompt": "What does 'سباحة' mean?",
+      "options": ["pen", "swimming", "you (fem.) go", "he wants"],
+      "answer": "swimming"
+    },
+    {
+      "id": "l88-ex6",
+      "type": "typing",
+      "refIds": ["sibaaha"],
+      "prompt": "Type the Arabic word for 'swimming'.",
+      "answer": "سباحة"
+    },
+    {
+      "id": "l88-ex7",
+      "type": "multiple-choice",
+      "refIds": ["mooseeqaa"],
+      "prompt": "What does 'موسيقى' mean?",
+      "options": ["they (fem.) go", "four", "how many / how much", "music"],
+      "answer": "music"
+    },
+    {
+      "id": "l88-ex8",
+      "type": "multiple-choice",
+      "refIds": ["mooseeqaa"],
+      "prompt": "Which word means 'music'?",
+      "options": ["غرفة", "القمر", "موسيقى", "أذن"],
+      "answer": "موسيقى"
+    },
+    {
+      "id": "l88-ex9",
+      "type": "multiple-choice",
+      "refIds": ["qiraaa"],
+      "prompt": "What does 'قراءة' mean?",
+      "options": ["a university", "we meet (each other)", "reading", "four"],
+      "answer": "reading"
+    },
+    {
+      "id": "l88-ex10",
+      "type": "typing",
+      "refIds": ["qiraaa"],
+      "prompt": "Type the Arabic word for 'reading'.",
+      "answer": "قراءة"
+    },
+    {
+      "id": "l88-ex11",
+      "type": "speaking",
+      "refIds": ["riyaada"],
+      "prompt": "Practice saying 'رياضة' (sport / exercise) out loud.",
+      "answer": "رياضة"
+    },
+    {
+      "id": "l88-ex12",
+      "type": "speaking",
+      "refIds": ["kura"],
+      "prompt": "Practice saying 'كرة' (a ball) out loud.",
+      "answer": "كرة"
+    },
+    {
+      "id": "l88-ex13",
+      "type": "speaking",
+      "refIds": ["sibaaha"],
+      "prompt": "Practice saying 'سباحة' (swimming) out loud.",
+      "answer": "سباحة"
+    },
+    {
+      "id": "l88-ex14",
+      "type": "speaking",
+      "refIds": ["mooseeqaa"],
+      "prompt": "Practice saying 'موسيقى' (music) out loud.",
+      "answer": "موسيقى"
+    },
+    {
+      "id": "l88-ex15",
+      "type": "speaking",
+      "refIds": ["qiraaa"],
+      "prompt": "Practice saying 'قراءة' (reading) out loud.",
+      "answer": "قراءة"
+    }
+  ]
+}
