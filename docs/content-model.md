@@ -96,7 +96,7 @@ TTS-facing form); it's hand-authored exercise/pattern text, and anything
 `scripts/generate-exercises.mjs` generates, that gets stripped down to
 match a "none" level's setting.
 
-## First 80 levels, at a glance
+## First 90 levels, at a glance
 
 | Level | Theme | New letters | New pattern |
 |---|---|---|---|
@@ -180,6 +180,16 @@ match a "none" level's setting.
 | 78 | More adjectives | — | "The book is easy." |
 | 79 | Comparison — كَـ ("like/as") | — | "She is like her mother." |
 | 80 | Review — levels 71–80 | — | capstone: تقابل + قبل أن + انطلق |
+| 81 | Verbs — "to know" | — | "I know the Arabic language." |
+| 82 | More prepositions — مَعَ / حَتَّى | — | "I study with my friend." |
+| 83 | Verbs — "to open" | — | "I open the door." |
+| 84 | Verbs — "to close" | — | "I close the door." |
+| 85 | More weather | — | "This is snow." |
+| 86 | Conditionals — لَوْ ("if", hypothetical) | — | "If I had gone, I would have drunk the coffee." |
+| 87 | Verbs — "to give" (defective, Form IV) | — | "I give you the book." |
+| 88 | Sports & hobbies | — | "I love sports." |
+| 89 | Health & illness | — | "I am sick and I want medicine." |
+| 90 | Review — levels 81–90 | — | capstone: عرف + صديق + relative clause |
 
 Levels 1–10 were a **pacing proof of concept** validating the schema and
 progression before continuing; levels 11–20 build on that same shape and
@@ -385,6 +395,25 @@ taking أَنْ + a verb instead of a plain noun — a new but fully justified
 extension, exactly parallel to how English "before" can take either a
 noun or a clause. 80 of 100 levels now authored.
 
+Levels 81–90 round out everyday practical vocabulary with four more
+regular verbs — عَرَفَ ("to know", 81), فَتَحَ/أَغْلَقَ ("to open"/"to close",
+83/84, deliberately taught as a pair the way color adjectives were), and
+أَعْطَى ("to give", 87, defective and Form IV, reinforcing level 75's
+pattern and reusing level 76's object suffixes as recipients rather than
+plain objects — أُعْطِيكَ الْكِتَابَ, 'I-give-you the-book', a genuine
+two-object construction). 86 (لَوْ) adds a second word for "if",
+contrasted directly with إِذَا (level 57): إِذَا marks a real/likely
+condition, لَوْ a hypothetical/counterfactual one — both reuse the
+existing past-tense pool rather than minting new forms, continuing the
+لَمْ/لَنْ/سَـ/إِذَا trick one more time. 82 adds two more prepositions
+(مَعَ, حَتَّى) and finally introduces صَدِيق ("a friend"), a surprisingly
+late but clearly overdue addition. 81 also mints لُغَة ("a language") —
+notable for a language-learning app — specifically to demonstrate
+adjective gender agreement (عَرَبِيّ vs. its feminine عَرَبِيَّة) on a
+concrete example. 85 (weather), 88 (sports/hobbies), and 89
+(health/illness) are vocabulary-only levels reusing fully established
+structures. 90 of 100 levels now authored — ten to go.
+
 ## Exercises in the JSON files
 
 Each level file has a small hand-authored core set (the flagship
@@ -392,7 +421,7 @@ sentence-build/matching/typing exercises that show off a level's grammar
 point) plus generated coverage exercises ensuring every letter and vocab
 word gets at least one dedicated question — see
 `scripts/generate-exercises.mjs`, an idempotent script safe to re-run after
-authoring new levels. As of level 80: 478 content items, 1146 exercises
+authoring new levels. As of level 90: 527 content items, 1268 exercises
 total. The generator is diacritics-aware — it renders Arabic text stripped
 for levels where `diacriticsLevel === "none"` so generated and
 hand-authored exercises never mix styles within the same level.

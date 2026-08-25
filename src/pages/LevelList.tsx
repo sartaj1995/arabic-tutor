@@ -21,6 +21,7 @@ const UNIT_THEMES: { title: string; arabic: string }[] = [
   { title: "Complex Sentences", arabic: "الجمل المركبة" },
   { title: "Daily Life Expanded", arabic: "الحياة اليومية الموسعة" },
   { title: "Practical Fluency", arabic: "الطلاقة العملية" },
+  { title: "Everyday Fluency", arabic: "الطلاقة اليومية" },
 ];
 
 function CheckIcon() {

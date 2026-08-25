@@ -1,0 +1,227 @@
+{
+  "number": 81,
+  "title": "Verbs — \"To Know\"",
+  "newLetters": [],
+  "newVocab": ["aarifu", "taarifu", "taarifeena", "yaarifu", "naarifu", "lugha"],
+  "newPatterns": ["know-the-language"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "aarifu",
+      "arabic": "أَعْرِفُ",
+      "arabicNoDiacritics": "أعرف",
+      "transliteration": "aʿrifu",
+      "english": "I know",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_aarifu", "text": "أَعْرِفُ" },
+      "introducedInLevel": 81,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "taarifu",
+      "arabic": "تَعْرِفُ",
+      "arabicNoDiacritics": "تعرف",
+      "transliteration": "taʿrifu",
+      "english": "you (masc.) know / she knows",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taarifu", "text": "تَعْرِفُ" },
+      "introducedInLevel": 81,
+      "tags": ["verb"]
+    },
+    {
+      "id": "taarifeena",
+      "arabic": "تَعْرِفِينَ",
+      "arabicNoDiacritics": "تعرفين",
+      "transliteration": "taʿrifīna",
+      "english": "you (fem.) know",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taarifeena", "text": "تَعْرِفِينَ" },
+      "introducedInLevel": 81,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yaarifu",
+      "arabic": "يَعْرِفُ",
+      "arabicNoDiacritics": "يعرف",
+      "transliteration": "yaʿrifu",
+      "english": "he knows",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yaarifu", "text": "يَعْرِفُ" },
+      "introducedInLevel": 81,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "naarifu",
+      "arabic": "نَعْرِفُ",
+      "arabicNoDiacritics": "نعرف",
+      "transliteration": "naʿrifu",
+      "english": "we know",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_naarifu", "text": "نَعْرِفُ" },
+      "introducedInLevel": 81,
+      "tags": ["verb"]
+    },
+    {
+      "id": "lugha",
+      "arabic": "لُغَةٌ",
+      "arabicNoDiacritics": "لغة",
+      "transliteration": "lughatun",
+      "english": "a language",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_lugha", "text": "لُغَةٌ" },
+      "introducedInLevel": 81,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "know-the-language",
+      "pattern": "[Verb] + الـ[Noun] + الـ[Adjective]",
+      "exampleArabic": "أعرف اللغة العربية",
+      "exampleTransliteration": "aʿrifu l-lughata l-ʿarabiyyata",
+      "exampleEnglish": "I know the Arabic language.",
+      "grammarNote": "عَرَفَ ('to know') is an ordinary Form I verb — no irregularity, just useful vocabulary: أَعْرِفُ, تَعْرِفُ, تَعْرِفِينَ, يَعْرِفُ, نَعْرِفُ. لُغَة ('a language') pairs naturally with الْعَرَبِيَّة, the FEMININE form of عَرَبِيّ (level 47, 'Arab/Arabic') — adjectives agree in gender with the noun they describe, and since لُغَة is feminine, its adjective takes the ةـ ending: عَرَبِيَّة, not the masculine عَرَبِيّ you met first.",
+      "audio": { "id": "phrase_aarifu_allugha_alarabiyya", "text": "أعرف اللغة العربية" },
+      "introducedInLevel": 81
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l81-ex1",
+      "type": "multiple-choice",
+      "refIds": ["aarifu"],
+      "prompt": "What does 'أعرف' mean?",
+      "options": ["I know", "I learn", "I like / I love", "I teach"],
+      "answer": "I know"
+    },
+    {
+      "id": "l81-ex2",
+      "type": "sentence-build",
+      "refIds": ["aarifu", "lugha", "arabi", "know-the-language"],
+      "prompt": "Arrange the tiles to say 'I know the Arabic language.'",
+      "options": ["أعرف", "اللغة", "العربية"],
+      "answer": "أعرف اللغة العربية"
+    },
+    {
+      "id": "l81-ex3",
+      "type": "multiple-choice",
+      "refIds": ["taarifu"],
+      "prompt": "What does 'تعرف' mean?",
+      "options": ["her house", "beautiful", "twenty", "you (masc.) know / she knows"],
+      "answer": "you (masc.) know / she knows"
+    },
+    {
+      "id": "l81-ex4",
+      "type": "multiple-choice",
+      "refIds": ["taarifu"],
+      "prompt": "Which word means 'you (masc.) know / she knows'?",
+      "options": ["رجال", "جنوب", "تعرف", "هذه"],
+      "answer": "تعرف"
+    },
+    {
+      "id": "l81-ex5",
+      "type": "multiple-choice",
+      "refIds": ["taarifeena"],
+      "prompt": "What does 'تعرفين' mean?",
+      "options": ["you (fem.) send", "they (fem.) go", "fifteen", "you (fem.) know"],
+      "answer": "you (fem.) know"
+    },
+    {
+      "id": "l81-ex6",
+      "type": "typing",
+      "refIds": ["taarifeena"],
+      "prompt": "Type the Arabic word for 'you (fem.) know'.",
+      "answer": "تعرفين"
+    },
+    {
+      "id": "l81-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yaarifu"],
+      "prompt": "What does 'يعرف' mean?",
+      "options": ["mother", "he knows", "I teach her", "we read"],
+      "answer": "he knows"
+    },
+    {
+      "id": "l81-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yaarifu"],
+      "prompt": "Which word means 'he knows'?",
+      "options": ["ثمانية", "يعرف", "رأس", "أبريل"],
+      "answer": "يعرف"
+    },
+    {
+      "id": "l81-ex9",
+      "type": "multiple-choice",
+      "refIds": ["naarifu"],
+      "prompt": "What does 'نعرف' mean?",
+      "options": ["mother", "we wait", "we know", "we like"],
+      "answer": "we know"
+    },
+    {
+      "id": "l81-ex10",
+      "type": "typing",
+      "refIds": ["naarifu"],
+      "prompt": "Type the Arabic word for 'we know'.",
+      "answer": "نعرف"
+    },
+    {
+      "id": "l81-ex11",
+      "type": "multiple-choice",
+      "refIds": ["lugha"],
+      "prompt": "What does 'لغة' mean?",
+      "options": ["a teacher (masc.)", "one hundred", "a language", "April"],
+      "answer": "a language"
+    },
+    {
+      "id": "l81-ex12",
+      "type": "multiple-choice",
+      "refIds": ["lugha"],
+      "prompt": "Which word means 'a language'?",
+      "options": ["يذهبون", "رخيص", "لغة", "نسافر"],
+      "answer": "لغة"
+    },
+    {
+      "id": "l81-ex13",
+      "type": "speaking",
+      "refIds": ["aarifu"],
+      "prompt": "Practice saying 'أعرف' (I know) out loud.",
+      "answer": "أعرف"
+    },
+    {
+      "id": "l81-ex14",
+      "type": "speaking",
+      "refIds": ["taarifu"],
+      "prompt": "Practice saying 'تعرف' (you (masc.) know / she knows) out loud.",
+      "answer": "تعرف"
+    },
+    {
+      "id": "l81-ex15",
+      "type": "speaking",
+      "refIds": ["taarifeena"],
+      "prompt": "Practice saying 'تعرفين' (you (fem.) know) out loud.",
+      "answer": "تعرفين"
+    },
+    {
+      "id": "l81-ex16",
+      "type": "speaking",
+      "refIds": ["yaarifu"],
+      "prompt": "Practice saying 'يعرف' (he knows) out loud.",
+      "answer": "يعرف"
+    },
+    {
+      "id": "l81-ex17",
+      "type": "speaking",
+      "refIds": ["naarifu"],
+      "prompt": "Practice saying 'نعرف' (we know) out loud.",
+      "answer": "نعرف"
+    },
+    {
+      "id": "l81-ex18",
+      "type": "speaking",
+      "refIds": ["lugha"],
+      "prompt": "Practice saying 'لغة' (a language) out loud.",
+      "answer": "لغة"
+    }
+  ]
+}

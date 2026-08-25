@@ -1,0 +1,99 @@
+{
+  "number": 90,
+  "title": "Review — Levels 81–90",
+  "newLetters": [],
+  "newVocab": ["rubbama"],
+  "newPatterns": ["review-capstone-7"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "rubbama",
+      "arabic": "رُبَّمَا",
+      "arabicNoDiacritics": "ربما",
+      "transliteration": "rubbamā",
+      "english": "perhaps / maybe",
+      "partOfSpeech": "adverb",
+      "audio": { "id": "word_rubbama", "text": "رُبَّمَا" },
+      "introducedInLevel": 90,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "review-capstone-7",
+      "pattern": "[Verb] + [Noun + suffix] + الَّذِي + [Verb clause]",
+      "exampleArabic": "أعرف صديقي الذي يعمل في الدكان",
+      "exampleTransliteration": "aʿrifu ṣadīqī lladhī yaʿmalu fī d-dukkāni",
+      "exampleEnglish": "I know my friend who works in the shop.",
+      "grammarNote": "A closing capstone for levels 81-90: أَعْرِفُ ('I know', level 81) + صَدِيقِي ('my friend', level 82) + الَّذِي يَعْمَلُ فِي الدُّكَّانِ ('who works in the shop' — the relative clause from level 55, reusing يَعْمَلُ from level 33 and الدُّكَّانِ from level 74). 90 of 100 levels now authored — ten to go. رُبَّمَا ('perhaps/maybe') is a fittingly uncertain word to end a batch that opened up two new kinds of 'if'.",
+      "audio": { "id": "phrase_aarifu_sadeeqi_alladhi_yamalu_aldukkaan", "text": "أعرف صديقي الذي يعمل في الدكان" },
+      "introducedInLevel": 90
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l90-ex1",
+      "type": "multiple-choice",
+      "refIds": ["rubbama"],
+      "prompt": "What does 'ربما' mean?",
+      "options": ["perhaps / maybe", "always", "sometimes", "never"],
+      "answer": "perhaps / maybe"
+    },
+    {
+      "id": "l90-ex2",
+      "type": "sentence-build",
+      "refIds": ["aarifu", "sadeeq", "alladhi", "yamalu", "fi", "dukkan", "review-capstone-7"],
+      "prompt": "Arrange the tiles to say 'I know my friend who works in the shop.'",
+      "options": ["أعرف", "صديقي", "الذي", "يعمل", "في", "الدكان"],
+      "answer": "أعرف صديقي الذي يعمل في الدكان"
+    },
+    {
+      "id": "l90-ex3",
+      "type": "multiple-choice",
+      "refIds": ["maaa"],
+      "prompt": "Review: what does 'مع' mean?",
+      "options": ["with", "until", "before", "after"],
+      "answer": "with"
+    },
+    {
+      "id": "l90-ex4",
+      "type": "multiple-choice",
+      "refIds": ["aftahu"],
+      "prompt": "Review: what does 'أفتح' mean?",
+      "options": ["I open", "I close", "I give", "I know"],
+      "answer": "I open"
+    },
+    {
+      "id": "l90-ex5",
+      "type": "multiple-choice",
+      "refIds": ["law"],
+      "prompt": "Review: what does 'لو' mean?",
+      "options": ["if (hypothetical)", "if (real/likely)", "when", "until"],
+      "answer": "if (hypothetical)"
+    },
+    {
+      "id": "l90-ex6",
+      "type": "multiple-choice",
+      "refIds": ["utee"],
+      "prompt": "Review: what does 'أعطي' mean?",
+      "options": ["I give", "I take", "I close", "I open"],
+      "answer": "I give"
+    },
+    {
+      "id": "l90-ex7",
+      "type": "multiple-choice",
+      "refIds": ["mareed"],
+      "prompt": "Review: what does 'مريض' mean?",
+      "options": ["sick", "a headache", "a pharmacy", "medicine"],
+      "answer": "sick"
+    },
+    {
+      "id": "l90-ex8",
+      "type": "speaking",
+      "refIds": ["rubbama"],
+      "prompt": "Practice saying 'ربما' (perhaps / maybe) out loud.",
+      "answer": "ربما"
+    }
+  ]
+}

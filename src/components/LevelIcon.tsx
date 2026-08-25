@@ -381,6 +381,29 @@ function Shirt() {
   );
 }
 
+function Ball() {
+  return (
+    <>
+      <circle cx="10" cy="10" r="6.5" stroke="currentColor" strokeWidth="1.4" />
+      <path
+        d="M10 3.5c2 2 2 11 0 13M4.3 7c2.2 1.3 9.2 1.3 11.4 0M4.3 13c2.2-1.3 9.2-1.3 11.4 0"
+        stroke="currentColor"
+        strokeWidth="1.1"
+        strokeLinecap="round"
+      />
+    </>
+  );
+}
+
+function MedicalCross() {
+  return (
+    <>
+      <rect x="3.5" y="3.5" width="13" height="13" rx="3" stroke="currentColor" strokeWidth="1.4" />
+      <path d="M10 6.5v7M6.5 10h7" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </>
+  );
+}
+
 function Coin() {
   return (
     <>
@@ -453,6 +476,9 @@ const RULES: Array<[string, () => JSX.Element]> = [
   ["Money & Shopping", Coin],
   ["Adjectives", Tag],
   ["Comparison", Scale],
+  ["More Prepositions", Compass],
+  ["Sports & Hobbies", Ball],
+  ["Health & Illness", MedicalCross],
   ["Review", Flag],
 ];
 

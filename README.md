@@ -5,8 +5,8 @@ script, vocabulary, and sentence-building — across 100 levels.
 
 **Status: app shell with interactive exercises, an on-screen Arabic
 keyboard, spaced-repetition review, real exercise depth, live audio, and a
-progress dashboard.** The first 80 levels of curriculum content exist as
-structured JSON — 1146 exercises across them, generated so every letter and
+progress dashboard.** The first 90 levels of curriculum content exist as
+structured JSON — 1268 exercises across them, generated so every letter and
 vocab word gets at least one dedicated question, not just the illustrative
 few each level started with. A React/Vite app loads and displays them with
 clickable/typeable exercises and live scoring, finishing a level feeds its
@@ -118,7 +118,7 @@ src/lib/speech.ts         Web Speech API wrapper (speak, voice detection)
 src/lib/progress.ts       Dashboard stats computed from IndexedDB (no separate tracking)
 src/pages/                LevelList, LevelDetail, Review, Progress
 src/components/           ArabicText, ExerciseCard, PlayAudioButton, ArabicKeyboard
-content/levels/*.json     Authored level content (levels 1–80 so far)
+content/levels/*.json     Authored level content (levels 1–90 so far)
 scripts/generate-audio.mjs      Offline Google Cloud TTS pipeline — fallback, unused
 scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 ```
@@ -126,9 +126,9 @@ scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 Each `content/levels/level-XX.json` follows the `Level` type in
 `src/types/content.ts`: new letters, new vocab, new sentence patterns, a
 diacritics-display setting, and exercises (a hand-authored core set plus
-generated coverage exercises — 1146 total across the 80 levels).
+generated coverage exercises — 1268 total across the 90 levels).
 
-## First 80 levels
+## First 90 levels
 
 | # | Theme |
 |---|---|
@@ -212,11 +212,21 @@ generated coverage exercises — 1146 total across the 80 levels).
 | 78 | More adjectives |
 | 79 | Comparison — كَـ ("like/as") |
 | 80 | Review — levels 71–80 |
+| 81 | Verbs — "to know" |
+| 82 | More prepositions — مَعَ / حَتَّى |
+| 83 | Verbs — "to open" |
+| 84 | Verbs — "to close" |
+| 85 | More weather |
+| 86 | Conditionals — لَوْ ("if", hypothetical) |
+| 87 | Verbs — "to give" (defective, Form IV) |
+| 88 | Sports & hobbies |
+| 89 | Health & illness |
+| 90 | Review — levels 81–90 |
 
 ## Next steps
 
 1. **Review the pacing.** Read through `content/levels/level-01.json` →
-   `level-80.json` (or the summary table in `docs/content-model.md`) and
+   `level-90.json` (or the summary table in `docs/content-model.md`) and
    sanity-check that the progression feels right before more levels are
    generated the same way.
 2. ~~Scaffold the app.~~ Done — `npm run dev` to try it.
@@ -407,6 +417,28 @@ generated coverage exercises — 1146 total across the 80 levels).
     أَنْ + a verb for the first time) both render and score correctly. 80
     of 100 levels done. Also added a favicon and meta description
     (`index.html`, `public/favicon.svg`) — the app previously had neither.
+8g. ~~Author levels 81–90.~~ Done — four more high-utility regular verbs:
+    عَرَفَ ("to know", 81), فَتَحَ/أَغْلَقَ ("to open"/"to close", 83/84,
+    deliberately taught as an opposite pair), and أَعْطَى ("to give", 87,
+    defective + Form IV, reusing level 76's object suffixes as recipients
+    rather than plain objects — أُعْطِيكَ الْكِتَابَ, 'I-give-you the-book',
+    a genuine two-object construction). 86 (لَوْ) adds a second word for
+    "if", directly contrasted with إِذَا (level 57): إِذَا marks a
+    real/likely condition, لَوْ a hypothetical/counterfactual one — both
+    reuse the existing past-tense pool rather than minting new forms,
+    continuing the لَمْ/لَنْ/سَـ/إِذَا reuse trick one more time. Also: two
+    more prepositions (مَعَ, حَتَّى) plus a surprisingly overdue صَدِيق
+    ("a friend"), and لُغَة ("a language") — notable for a
+    language-learning app, minted specifically to demonstrate adjective
+    gender agreement (عَرَبِيّ vs. its feminine عَرَبِيَّة) concretely.
+    Weather, sports/hobbies, and health/illness round out the batch as
+    vocabulary-only levels. Validated with a full consistency pass (0
+    problems across 527 items / 1268 exercises, 0 new stripped-text
+    collisions against the full 416-word vocab pool) and in the browser —
+    the new Unit 9 ("Everyday Fluency" / الطلاقة اليومية) renders all ten
+    levels with correct icons, level 86's لَوْ-conditional and level 90's
+    6-tile capstone both render and score correctly. 90 of 100 levels
+    done — ten to go.
 9. ~~Author `letter-writing` exercises.~~ Done — `generate-exercises.mjs`
    now generates one per letter (28 total, across levels 1–7 where all the
    alphabet is introduced), testing the production direction (name ->

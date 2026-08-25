@@ -1,0 +1,193 @@
+{
+  "number": 84,
+  "title": "Verbs — \"To Close\"",
+  "newLetters": [],
+  "newVocab": ["ughliqu", "tughliqu", "tughliqeena", "yughliqu", "nughliqu"],
+  "newPatterns": ["close-the-door"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ughliqu",
+      "arabic": "أُغْلِقُ",
+      "arabicNoDiacritics": "أغلق",
+      "transliteration": "ughliqu",
+      "english": "I close",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_ughliqu", "text": "أُغْلِقُ" },
+      "introducedInLevel": 84,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tughliqu",
+      "arabic": "تُغْلِقُ",
+      "arabicNoDiacritics": "تغلق",
+      "transliteration": "tughliqu",
+      "english": "you (masc.) close / she closes",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tughliqu", "text": "تُغْلِقُ" },
+      "introducedInLevel": 84,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tughliqeena",
+      "arabic": "تُغْلِقِينَ",
+      "arabicNoDiacritics": "تغلقين",
+      "transliteration": "tughliqīna",
+      "english": "you (fem.) close",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tughliqeena", "text": "تُغْلِقِينَ" },
+      "introducedInLevel": 84,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yughliqu",
+      "arabic": "يُغْلِقُ",
+      "arabicNoDiacritics": "يغلق",
+      "transliteration": "yughliqu",
+      "english": "he closes",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yughliqu", "text": "يُغْلِقُ" },
+      "introducedInLevel": 84,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nughliqu",
+      "arabic": "نُغْلِقُ",
+      "arabicNoDiacritics": "نغلق",
+      "transliteration": "nughliqu",
+      "english": "we close",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nughliqu", "text": "نُغْلِقُ" },
+      "introducedInLevel": 84,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "close-the-door",
+      "pattern": "[Verb] + الـ[Noun]",
+      "exampleArabic": "أغلق الباب",
+      "exampleTransliteration": "ughliqu l-bāba",
+      "exampleEnglish": "I close the door.",
+      "grammarNote": "أَغْلَقَ ('to close') is Form IV, paired with فَتَحَ ('to open', level 83, Form I) as a natural opposite worth learning together — the same way color and adjective pairs were taught side by side earlier. Present-tense prefix takes damma, same as other Form IV verbs (أَرْسَلَ, level 56): أُغْلِقُ, تُغْلِقُ, تُغْلِقِينَ, يُغْلِقُ, نُغْلِقُ.",
+      "audio": { "id": "phrase_ughliqu_albaab", "text": "أغلق الباب" },
+      "introducedInLevel": 84
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l84-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ughliqu"],
+      "prompt": "What does 'أغلق' mean?",
+      "options": ["I close", "I open", "I know", "I give"],
+      "answer": "I close"
+    },
+    {
+      "id": "l84-ex2",
+      "type": "sentence-build",
+      "refIds": ["ughliqu", "baab", "close-the-door"],
+      "prompt": "Arrange the tiles to say 'I close the door.'",
+      "options": ["أغلق", "الباب"],
+      "answer": "أغلق الباب"
+    },
+    {
+      "id": "l84-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tughliqu"],
+      "prompt": "What does 'تغلق' mean?",
+      "options": ["we went", "a shirt", "a train", "you (masc.) close / she closes"],
+      "answer": "you (masc.) close / she closes"
+    },
+    {
+      "id": "l84-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tughliqu"],
+      "prompt": "Which word means 'you (masc.) close / she closes'?",
+      "options": ["نريد", "الثالثة", "هذه", "تغلق"],
+      "answer": "تغلق"
+    },
+    {
+      "id": "l84-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tughliqeena"],
+      "prompt": "What does 'تغلقين' mean?",
+      "options": ["I wait", "you (fem.) close", "you (fem.) learn", "who"],
+      "answer": "you (fem.) close"
+    },
+    {
+      "id": "l84-ex6",
+      "type": "typing",
+      "refIds": ["tughliqeena"],
+      "prompt": "Type the Arabic word for 'you (fem.) close'.",
+      "answer": "تغلقين"
+    },
+    {
+      "id": "l84-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yughliqu"],
+      "prompt": "What does 'يغلق' mean?",
+      "options": ["I depart", "a price", "blue", "he closes"],
+      "answer": "he closes"
+    },
+    {
+      "id": "l84-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yughliqu"],
+      "prompt": "Which word means 'he closes'?",
+      "options": ["يغلق", "هو", "نمشي", "يناير"],
+      "answer": "يغلق"
+    },
+    {
+      "id": "l84-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nughliqu"],
+      "prompt": "What does 'نغلق' mean?",
+      "options": ["sister", "you (masc.) sleep / she sleeps", "I want", "we close"],
+      "answer": "we close"
+    },
+    {
+      "id": "l84-ex10",
+      "type": "typing",
+      "refIds": ["nughliqu"],
+      "prompt": "Type the Arabic word for 'we close'.",
+      "answer": "نغلق"
+    },
+    {
+      "id": "l84-ex11",
+      "type": "speaking",
+      "refIds": ["ughliqu"],
+      "prompt": "Practice saying 'أغلق' (I close) out loud.",
+      "answer": "أغلق"
+    },
+    {
+      "id": "l84-ex12",
+      "type": "speaking",
+      "refIds": ["tughliqu"],
+      "prompt": "Practice saying 'تغلق' (you (masc.) close / she closes) out loud.",
+      "answer": "تغلق"
+    },
+    {
+      "id": "l84-ex13",
+      "type": "speaking",
+      "refIds": ["tughliqeena"],
+      "prompt": "Practice saying 'تغلقين' (you (fem.) close) out loud.",
+      "answer": "تغلقين"
+    },
+    {
+      "id": "l84-ex14",
+      "type": "speaking",
+      "refIds": ["yughliqu"],
+      "prompt": "Practice saying 'يغلق' (he closes) out loud.",
+      "answer": "يغلق"
+    },
+    {
+      "id": "l84-ex15",
+      "type": "speaking",
+      "refIds": ["nughliqu"],
+      "prompt": "Practice saying 'نغلق' (we close) out loud.",
+      "answer": "نغلق"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "number": 82,
+  "title": "More Prepositions",
+  "newLetters": [],
+  "newVocab": ["maaa", "hatta", "sadeeq"],
+  "newPatterns": ["study-with-friend"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "maaa",
+      "arabic": "مَعَ",
+      "arabicNoDiacritics": "مع",
+      "transliteration": "maʿa",
+      "english": "with",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_maaa", "text": "مَعَ" },
+      "introducedInLevel": 82,
+      "tags": ["core", "preposition"]
+    },
+    {
+      "id": "hatta",
+      "arabic": "حَتَّى",
+      "arabicNoDiacritics": "حتى",
+      "transliteration": "ḥattā",
+      "english": "until",
+      "partOfSpeech": "preposition",
+      "audio": { "id": "word_hatta", "text": "حَتَّى" },
+      "introducedInLevel": 82,
+      "tags": ["core", "preposition"]
+    },
+    {
+      "id": "sadeeq",
+      "arabic": "صَدِيقٌ",
+      "arabicNoDiacritics": "صديق",
+      "transliteration": "ṣadīqun",
+      "english": "a friend",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_sadeeq", "text": "صَدِيقٌ" },
+      "introducedInLevel": 82,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "study-with-friend",
+      "pattern": "[Verb] + مَعَ + [Noun + suffix]",
+      "exampleArabic": "أدرس مع صديقي",
+      "exampleTransliteration": "adrusu maʿa ṣadīqī",
+      "exampleEnglish": "I study with my friend.",
+      "grammarNote": "مَعَ ('with') and حَتَّى ('until') are two more prepositions taking a genitive noun, just like فِي/عَلَى/إِلَى before them. صَدِيق ('a friend') plus the possessive suffix -ي (level 9) gives صَدِيقِي ('my friend') — the same pattern as كِتَابِي and بَيْتِي. Note مَعَ isn't related to مَعًا ('together', level 80): أَنَا وَأَنْتَ مَعًا ('you and I, together') describes a shared state, while مَعَ is what joins two things in a sentence ('I [verb] WITH X').",
+      "audio": { "id": "phrase_adrusu_maaa_sadeeqi", "text": "أدرس مع صديقي" },
+      "introducedInLevel": 82
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l82-ex1",
+      "type": "multiple-choice",
+      "refIds": ["maaa"],
+      "prompt": "What does 'مع' mean?",
+      "options": ["with", "until", "together", "before"],
+      "answer": "with"
+    },
+    {
+      "id": "l82-ex2",
+      "type": "sentence-build",
+      "refIds": ["adrusu", "maaa", "sadeeq", "study-with-friend"],
+      "prompt": "Arrange the tiles to say 'I study with my friend.'",
+      "options": ["أدرس", "مع", "صديقي"],
+      "answer": "أدرس مع صديقي"
+    },
+    {
+      "id": "l82-ex3",
+      "type": "multiple-choice",
+      "refIds": ["hatta"],
+      "prompt": "What does 'حتى' mean?",
+      "options": ["until", "you (fem.) learn", "he writes", "with"],
+      "answer": "until"
+    },
+    {
+      "id": "l82-ex4",
+      "type": "multiple-choice",
+      "refIds": ["hatta"],
+      "prompt": "Which word means 'until'?",
+      "options": ["شكرا", "حتى", "طويل", "أتعلم"],
+      "answer": "حتى"
+    },
+    {
+      "id": "l82-ex5",
+      "type": "multiple-choice",
+      "refIds": ["sadeeq"],
+      "prompt": "What does 'صديق' mean?",
+      "options": ["a friend", "you (fem.) depart", "he learns", "a school"],
+      "answer": "a friend"
+    },
+    {
+      "id": "l82-ex6",
+      "type": "typing",
+      "refIds": ["sadeeq"],
+      "prompt": "Type the Arabic word for 'a friend'.",
+      "answer": "صديق"
+    },
+    {
+      "id": "l82-ex7",
+      "type": "speaking",
+      "refIds": ["maaa"],
+      "prompt": "Practice saying 'مع' (with) out loud.",
+      "answer": "مع"
+    },
+    {
+      "id": "l82-ex8",
+      "type": "speaking",
+      "refIds": ["hatta"],
+      "prompt": "Practice saying 'حتى' (until) out loud.",
+      "answer": "حتى"
+    },
+    {
+      "id": "l82-ex9",
+      "type": "speaking",
+      "refIds": ["sadeeq"],
+      "prompt": "Practice saying 'صديق' (a friend) out loud.",
+      "answer": "صديق"
+    }
+  ]
+}

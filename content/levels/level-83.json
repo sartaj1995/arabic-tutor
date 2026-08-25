@@ -1,0 +1,193 @@
+{
+  "number": 83,
+  "title": "Verbs — \"To Open\"",
+  "newLetters": [],
+  "newVocab": ["aftahu", "taftahu", "taftaheena", "yaftahu", "naftahu"],
+  "newPatterns": ["open-the-door"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "aftahu",
+      "arabic": "أَفْتَحُ",
+      "arabicNoDiacritics": "أفتح",
+      "transliteration": "aftaḥu",
+      "english": "I open",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_aftahu", "text": "أَفْتَحُ" },
+      "introducedInLevel": 83,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "taftahu",
+      "arabic": "تَفْتَحُ",
+      "arabicNoDiacritics": "تفتح",
+      "transliteration": "taftaḥu",
+      "english": "you (masc.) open / she opens",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taftahu", "text": "تَفْتَحُ" },
+      "introducedInLevel": 83,
+      "tags": ["verb"]
+    },
+    {
+      "id": "taftaheena",
+      "arabic": "تَفْتَحِينَ",
+      "arabicNoDiacritics": "تفتحين",
+      "transliteration": "taftaḥīna",
+      "english": "you (fem.) open",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taftaheena", "text": "تَفْتَحِينَ" },
+      "introducedInLevel": 83,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yaftahu",
+      "arabic": "يَفْتَحُ",
+      "arabicNoDiacritics": "يفتح",
+      "transliteration": "yaftaḥu",
+      "english": "he opens",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yaftahu", "text": "يَفْتَحُ" },
+      "introducedInLevel": 83,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "naftahu",
+      "arabic": "نَفْتَحُ",
+      "arabicNoDiacritics": "نفتح",
+      "transliteration": "naftaḥu",
+      "english": "we open",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_naftahu", "text": "نَفْتَحُ" },
+      "introducedInLevel": 83,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "open-the-door",
+      "pattern": "[Verb] + الـ[Noun]",
+      "exampleArabic": "أفتح الباب",
+      "exampleTransliteration": "aftaḥu l-bāba",
+      "exampleEnglish": "I open the door.",
+      "grammarNote": "فَتَحَ ('to open') is an ordinary Form I verb, present tense يَفْتَحُ — no irregularity, reusing بَاب ('door') from level 1.",
+      "audio": { "id": "phrase_aftahu_albaab", "text": "أفتح الباب" },
+      "introducedInLevel": 83
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l83-ex1",
+      "type": "multiple-choice",
+      "refIds": ["aftahu"],
+      "prompt": "What does 'أفتح' mean?",
+      "options": ["I open", "I close", "I send", "I give"],
+      "answer": "I open"
+    },
+    {
+      "id": "l83-ex2",
+      "type": "sentence-build",
+      "refIds": ["aftahu", "baab", "open-the-door"],
+      "prompt": "Arrange the tiles to say 'I open the door.'",
+      "options": ["أفتح", "الباب"],
+      "answer": "أفتح الباب"
+    },
+    {
+      "id": "l83-ex3",
+      "type": "multiple-choice",
+      "refIds": ["taftahu"],
+      "prompt": "What does 'تفتح' mean?",
+      "options": ["your house (fem.)", "February", "a newspaper", "you (masc.) open / she opens"],
+      "answer": "you (masc.) open / she opens"
+    },
+    {
+      "id": "l83-ex4",
+      "type": "multiple-choice",
+      "refIds": ["taftahu"],
+      "prompt": "Which word means 'you (masc.) open / she opens'?",
+      "options": ["تفتح", "يرسل", "لست", "كم"],
+      "answer": "تفتح"
+    },
+    {
+      "id": "l83-ex5",
+      "type": "multiple-choice",
+      "refIds": ["taftaheena"],
+      "prompt": "What does 'تفتحين' mean?",
+      "options": ["you (fem.) open", "how", "where", "we went"],
+      "answer": "you (fem.) open"
+    },
+    {
+      "id": "l83-ex6",
+      "type": "typing",
+      "refIds": ["taftaheena"],
+      "prompt": "Type the Arabic word for 'you (fem.) open'.",
+      "answer": "تفتحين"
+    },
+    {
+      "id": "l83-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yaftahu"],
+      "prompt": "What does 'يفتح' mean?",
+      "options": ["rice", "meat", "we learn", "he opens"],
+      "answer": "he opens"
+    },
+    {
+      "id": "l83-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yaftahu"],
+      "prompt": "Which word means 'he opens'?",
+      "options": ["مدرسون", "يقرأ", "ينام", "يفتح"],
+      "answer": "يفتح"
+    },
+    {
+      "id": "l83-ex9",
+      "type": "multiple-choice",
+      "refIds": ["naftahu"],
+      "prompt": "What does 'نفتح' mean?",
+      "options": ["six", "we open", "we drink", "dirty"],
+      "answer": "we open"
+    },
+    {
+      "id": "l83-ex10",
+      "type": "typing",
+      "refIds": ["naftahu"],
+      "prompt": "Type the Arabic word for 'we open'.",
+      "answer": "نفتح"
+    },
+    {
+      "id": "l83-ex11",
+      "type": "speaking",
+      "refIds": ["aftahu"],
+      "prompt": "Practice saying 'أفتح' (I open) out loud.",
+      "answer": "أفتح"
+    },
+    {
+      "id": "l83-ex12",
+      "type": "speaking",
+      "refIds": ["taftahu"],
+      "prompt": "Practice saying 'تفتح' (you (masc.) open / she opens) out loud.",
+      "answer": "تفتح"
+    },
+    {
+      "id": "l83-ex13",
+      "type": "speaking",
+      "refIds": ["taftaheena"],
+      "prompt": "Practice saying 'تفتحين' (you (fem.) open) out loud.",
+      "answer": "تفتحين"
+    },
+    {
+      "id": "l83-ex14",
+      "type": "speaking",
+      "refIds": ["yaftahu"],
+      "prompt": "Practice saying 'يفتح' (he opens) out loud.",
+      "answer": "يفتح"
+    },
+    {
+      "id": "l83-ex15",
+      "type": "speaking",
+      "refIds": ["naftahu"],
+      "prompt": "Practice saying 'نفتح' (we open) out loud.",
+      "answer": "نفتح"
+    }
+  ]
+}

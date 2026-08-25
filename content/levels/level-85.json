@@ -1,0 +1,160 @@
+{
+  "number": 85,
+  "title": "More Weather",
+  "newLetters": [],
+  "newVocab": ["matar", "thalj", "reeh", "ghuyoom"],
+  "newPatterns": ["this-is-snow"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "matar",
+      "arabic": "مَطَرٌ",
+      "arabicNoDiacritics": "مطر",
+      "transliteration": "maṭarun",
+      "english": "rain",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_matar", "text": "مَطَرٌ" },
+      "introducedInLevel": 85,
+      "tags": ["core", "weather"]
+    },
+    {
+      "id": "thalj",
+      "arabic": "ثَلْجٌ",
+      "arabicNoDiacritics": "ثلج",
+      "transliteration": "thaljun",
+      "english": "snow",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_thalj", "text": "ثَلْجٌ" },
+      "introducedInLevel": 85,
+      "tags": ["core", "weather"]
+    },
+    {
+      "id": "reeh",
+      "arabic": "رِيحٌ",
+      "arabicNoDiacritics": "ريح",
+      "transliteration": "rīḥun",
+      "english": "wind",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_reeh", "text": "رِيحٌ" },
+      "introducedInLevel": 85,
+      "tags": ["weather"]
+    },
+    {
+      "id": "ghuyoom",
+      "arabic": "غُيُومٌ",
+      "arabicNoDiacritics": "غيوم",
+      "transliteration": "ghuyūmun",
+      "english": "clouds",
+      "partOfSpeech": "noun (plural)",
+      "audio": { "id": "word_ghuyoom", "text": "غُيُومٌ" },
+      "introducedInLevel": 85,
+      "tags": ["weather"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "this-is-snow",
+      "pattern": "هَذَا + [Noun]",
+      "exampleArabic": "هذا ثلج",
+      "exampleTransliteration": "hādhā thaljun",
+      "exampleEnglish": "This is snow.",
+      "grammarNote": "Nothing new grammatically — هَذَا + noun is the same equational sentence from level 5. This level continues level 39's weather set: مَطَر ('rain'), ثَلْج ('snow'), رِيح ('wind'), and غُيُوم ('clouds').",
+      "audio": { "id": "phrase_haadhaa_thalj", "text": "هذا ثلج" },
+      "introducedInLevel": 85
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l85-ex1",
+      "type": "multiple-choice",
+      "refIds": ["matar"],
+      "prompt": "What does 'مطر' mean?",
+      "options": ["rain", "snow", "wind", "clouds"],
+      "answer": "rain"
+    },
+    {
+      "id": "l85-ex2",
+      "type": "sentence-build",
+      "refIds": ["haadhaa", "thalj", "this-is-snow"],
+      "prompt": "Arrange the tiles to say 'This is snow.'",
+      "options": ["هذا", "ثلج"],
+      "answer": "هذا ثلج"
+    },
+    {
+      "id": "l85-ex3",
+      "type": "multiple-choice",
+      "refIds": ["thalj"],
+      "prompt": "What does 'ثلج' mean?",
+      "options": ["that / to [introduces a following verb]", "snow", "boy / son", "above / over"],
+      "answer": "snow"
+    },
+    {
+      "id": "l85-ex4",
+      "type": "multiple-choice",
+      "refIds": ["thalj"],
+      "prompt": "Which word means 'snow'?",
+      "options": ["ثلج", "الخامسة", "تسعة", "الشمس"],
+      "answer": "ثلج"
+    },
+    {
+      "id": "l85-ex5",
+      "type": "multiple-choice",
+      "refIds": ["reeh"],
+      "prompt": "What does 'ريح' mean?",
+      "options": ["you (masc.) walk / she walks", "December", "wind", "she/it is not"],
+      "answer": "wind"
+    },
+    {
+      "id": "l85-ex6",
+      "type": "typing",
+      "refIds": ["reeh"],
+      "prompt": "Type the Arabic word for 'wind'.",
+      "answer": "ريح"
+    },
+    {
+      "id": "l85-ex7",
+      "type": "multiple-choice",
+      "refIds": ["ghuyoom"],
+      "prompt": "What does 'غيوم' mean?",
+      "options": ["a language", "clouds", "that / to [introduces a following verb]", "the first"],
+      "answer": "clouds"
+    },
+    {
+      "id": "l85-ex8",
+      "type": "multiple-choice",
+      "refIds": ["ghuyoom"],
+      "prompt": "Which word means 'clouds'?",
+      "options": ["إلى", "غيوم", "سمك", "يتعلم"],
+      "answer": "غيوم"
+    },
+    {
+      "id": "l85-ex9",
+      "type": "speaking",
+      "refIds": ["matar"],
+      "prompt": "Practice saying 'مطر' (rain) out loud.",
+      "answer": "مطر"
+    },
+    {
+      "id": "l85-ex10",
+      "type": "speaking",
+      "refIds": ["thalj"],
+      "prompt": "Practice saying 'ثلج' (snow) out loud.",
+      "answer": "ثلج"
+    },
+    {
+      "id": "l85-ex11",
+      "type": "speaking",
+      "refIds": ["reeh"],
+      "prompt": "Practice saying 'ريح' (wind) out loud.",
+      "answer": "ريح"
+    },
+    {
+      "id": "l85-ex12",
+      "type": "speaking",
+      "refIds": ["ghuyoom"],
+      "prompt": "Practice saying 'غيوم' (clouds) out loud.",
+      "answer": "غيوم"
+    }
+  ]
+}
