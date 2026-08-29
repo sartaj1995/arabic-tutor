@@ -1,0 +1,193 @@
+{
+  "number": 95,
+  "title": "Verbs — \"To Take\"",
+  "newLetters": [],
+  "newVocab": ["aakhudhu", "taakhudhu", "taakhudheena", "yaakhudhu", "naakhudhu"],
+  "newPatterns": ["take-the-book"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "aakhudhu",
+      "arabic": "آخُذُ",
+      "arabicNoDiacritics": "آخذ",
+      "transliteration": "ākhudhu",
+      "english": "I take",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_aakhudhu", "text": "آخُذُ" },
+      "introducedInLevel": 95,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "taakhudhu",
+      "arabic": "تَأْخُذُ",
+      "arabicNoDiacritics": "تأخذ",
+      "transliteration": "taʾkhudhu",
+      "english": "you (masc.) take / she takes",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taakhudhu", "text": "تَأْخُذُ" },
+      "introducedInLevel": 95,
+      "tags": ["verb"]
+    },
+    {
+      "id": "taakhudheena",
+      "arabic": "تَأْخُذِينَ",
+      "arabicNoDiacritics": "تأخذين",
+      "transliteration": "taʾkhudhīna",
+      "english": "you (fem.) take",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_taakhudheena", "text": "تَأْخُذِينَ" },
+      "introducedInLevel": 95,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yaakhudhu",
+      "arabic": "يَأْخُذُ",
+      "arabicNoDiacritics": "يأخذ",
+      "transliteration": "yaʾkhudhu",
+      "english": "he takes",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yaakhudhu", "text": "يَأْخُذُ" },
+      "introducedInLevel": 95,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "naakhudhu",
+      "arabic": "نَأْخُذُ",
+      "arabicNoDiacritics": "نأخذ",
+      "transliteration": "naʾkhudhu",
+      "english": "we take",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_naakhudhu", "text": "نَأْخُذُ" },
+      "introducedInLevel": 95,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "take-the-book",
+      "pattern": "[Verb] + الـ[Noun]",
+      "exampleArabic": "آخذ الكتاب",
+      "exampleTransliteration": "ākhudhu l-kitāba",
+      "exampleEnglish": "I take the book.",
+      "grammarNote": "أَخَذَ ('to take') has the exact same hamza-initial pattern as أَكَلَ (level 25): the 'I' form fuses two adjacent hamzas into a single alif-madda (آ) — آخُذُ, not أَأْخُذُ. The rest of the paradigm behaves normally: تَأْخُذُ, تَأْخُذِينَ, يَأْخُذُ, نَأْخُذُ.",
+      "audio": { "id": "phrase_aakhudhu_alkitaab", "text": "آخذ الكتاب" },
+      "introducedInLevel": 95
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l95-ex1",
+      "type": "multiple-choice",
+      "refIds": ["aakhudhu"],
+      "prompt": "What does 'آخذ' mean?",
+      "options": ["I take", "I give", "I find", "I see"],
+      "answer": "I take"
+    },
+    {
+      "id": "l95-ex2",
+      "type": "sentence-build",
+      "refIds": ["aakhudhu", "alkitab", "take-the-book"],
+      "prompt": "Arrange the tiles to say 'I take the book.'",
+      "options": ["آخذ", "الكتاب"],
+      "answer": "آخذ الكتاب"
+    },
+    {
+      "id": "l95-ex3",
+      "type": "multiple-choice",
+      "refIds": ["taakhudhu"],
+      "prompt": "What does 'تأخذ' mean?",
+      "options": ["sister", "wind", "we write", "you (masc.) take / she takes"],
+      "answer": "you (masc.) take / she takes"
+    },
+    {
+      "id": "l95-ex4",
+      "type": "multiple-choice",
+      "refIds": ["taakhudhu"],
+      "prompt": "Which word means 'you (masc.) take / she takes'?",
+      "options": ["أصفر", "سبعة عشر", "ملابس", "تأخذ"],
+      "answer": "تأخذ"
+    },
+    {
+      "id": "l95-ex5",
+      "type": "multiple-choice",
+      "refIds": ["taakhudheena"],
+      "prompt": "What does 'تأخذين' mean?",
+      "options": ["you (fem.) take", "the book", "February", "brother"],
+      "answer": "you (fem.) take"
+    },
+    {
+      "id": "l95-ex6",
+      "type": "typing",
+      "refIds": ["taakhudheena"],
+      "prompt": "Type the Arabic word for 'you (fem.) take'.",
+      "answer": "تأخذين"
+    },
+    {
+      "id": "l95-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yaakhudhu"],
+      "prompt": "What does 'يأخذ' mean?",
+      "options": ["above / over", "he takes", "he knows", "uncle (father's brother)"],
+      "answer": "he takes"
+    },
+    {
+      "id": "l95-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yaakhudhu"],
+      "prompt": "Which word means 'he takes'?",
+      "options": ["أكل", "ربما", "يأخذ", "تستطيعين"],
+      "answer": "يأخذ"
+    },
+    {
+      "id": "l95-ex9",
+      "type": "multiple-choice",
+      "refIds": ["naakhudhu"],
+      "prompt": "What does 'نأخذ' mean?",
+      "options": ["eighty", "we take", "we close", "you (fem.)"],
+      "answer": "we take"
+    },
+    {
+      "id": "l95-ex10",
+      "type": "typing",
+      "refIds": ["naakhudhu"],
+      "prompt": "Type the Arabic word for 'we take'.",
+      "answer": "نأخذ"
+    },
+    {
+      "id": "l95-ex11",
+      "type": "speaking",
+      "refIds": ["aakhudhu"],
+      "prompt": "Practice saying 'آخذ' (I take) out loud.",
+      "answer": "آخذ"
+    },
+    {
+      "id": "l95-ex12",
+      "type": "speaking",
+      "refIds": ["taakhudhu"],
+      "prompt": "Practice saying 'تأخذ' (you (masc.) take / she takes) out loud.",
+      "answer": "تأخذ"
+    },
+    {
+      "id": "l95-ex13",
+      "type": "speaking",
+      "refIds": ["taakhudheena"],
+      "prompt": "Practice saying 'تأخذين' (you (fem.) take) out loud.",
+      "answer": "تأخذين"
+    },
+    {
+      "id": "l95-ex14",
+      "type": "speaking",
+      "refIds": ["yaakhudhu"],
+      "prompt": "Practice saying 'يأخذ' (he takes) out loud.",
+      "answer": "يأخذ"
+    },
+    {
+      "id": "l95-ex15",
+      "type": "speaking",
+      "refIds": ["naakhudhu"],
+      "prompt": "Practice saying 'نأخذ' (we take) out loud.",
+      "answer": "نأخذ"
+    }
+  ]
+}

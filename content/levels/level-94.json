@@ -1,0 +1,59 @@
+{
+  "number": 94,
+  "title": "\"I Want To...\"",
+  "newLetters": [],
+  "newVocab": ["lianna"],
+  "newPatterns": ["want-to-go"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "lianna",
+      "arabic": "لِأَنَّ",
+      "arabicNoDiacritics": "لأن",
+      "transliteration": "liʾanna",
+      "english": "because",
+      "partOfSpeech": "conjunction",
+      "audio": { "id": "word_lianna", "text": "لِأَنَّ" },
+      "introducedInLevel": 94,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "want-to-go",
+      "pattern": "أُرِيدُ + أَنْ + [Verb]",
+      "exampleArabic": "أريد أن أذهب إلى البيت",
+      "exampleTransliteration": "urīdu an adhhaba ilā l-bayti",
+      "exampleEnglish": "I want to go home.",
+      "grammarNote": "'I want to [verb]' is simply أُرِيدُ (level 15) + أَنْ (level 48) + a present-tense verb — the exact same combination that made يَسْتَطِيعُ أَنْ ('can', level 48) work. No new vocabulary is needed at all; this is a pure grammar combination showing how far your existing pieces stretch. لِأَنَّ ('because') is this level's one genuinely new word, useful for explaining WHY you want something: أُرِيدُ أَنْ أَذْهَبَ لِأَنِّي جَائِعٌ ('I want to go because I'm hungry').",
+      "audio": { "id": "phrase_ureedu_an_adhhab_albayt", "text": "أريد أن أذهب إلى البيت" },
+      "introducedInLevel": 94
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l94-ex1",
+      "type": "multiple-choice",
+      "refIds": ["lianna"],
+      "prompt": "What does 'لأن' mean?",
+      "options": ["because", "if", "until", "with"],
+      "answer": "because"
+    },
+    {
+      "id": "l94-ex2",
+      "type": "sentence-build",
+      "refIds": ["ureedu", "an", "adhhabu", "bayt", "want-to-go"],
+      "prompt": "Arrange the tiles to say 'I want to go home.'",
+      "options": ["أريد", "أن", "أذهب", "إلى", "البيت"],
+      "answer": "أريد أن أذهب إلى البيت"
+    },
+    {
+      "id": "l94-ex3",
+      "type": "speaking",
+      "refIds": ["lianna"],
+      "prompt": "Practice saying 'لأن' (because) out loud.",
+      "answer": "لأن"
+    }
+  ]
+}

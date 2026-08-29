@@ -1,0 +1,129 @@
+{
+  "number": 97,
+  "title": "Essential Expressions",
+  "newLetters": [],
+  "newVocab": ["maasalaama", "inshaallah", "ahlanwasahlan"],
+  "newPatterns": ["goodbye-pattern"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "maasalaama",
+      "arabic": "مَعَ السَّلَامَةِ",
+      "arabicNoDiacritics": "مع السلامة",
+      "transliteration": "maʿa s-salāmati",
+      "english": "goodbye (lit. 'with safety')",
+      "partOfSpeech": "phrase",
+      "audio": { "id": "phrase_maasalaama_word", "text": "مَعَ السَّلَامَةِ" },
+      "introducedInLevel": 97,
+      "tags": ["core", "greeting"]
+    },
+    {
+      "id": "inshaallah",
+      "arabic": "إِنْ شَاءَ اللَّه",
+      "arabicNoDiacritics": "إن شاء الله",
+      "transliteration": "in shāʾa llāh",
+      "english": "God willing / hopefully",
+      "partOfSpeech": "phrase",
+      "audio": { "id": "phrase_inshaallah_word", "text": "إِنْ شَاءَ اللَّه" },
+      "introducedInLevel": 97,
+      "tags": ["core"]
+    },
+    {
+      "id": "ahlanwasahlan",
+      "arabic": "أَهْلًا وَسَهْلًا",
+      "arabicNoDiacritics": "أهلا وسهلا",
+      "transliteration": "ahlan wa-sahlan",
+      "english": "welcome",
+      "partOfSpeech": "phrase",
+      "audio": { "id": "phrase_ahlanwasahlan_word", "text": "أَهْلًا وَسَهْلًا" },
+      "introducedInLevel": 97,
+      "tags": ["core", "greeting"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "goodbye-pattern",
+      "pattern": "مَعَ السَّلَامَةِ",
+      "exampleArabic": "مع السلامة",
+      "exampleTransliteration": "maʿa s-salāmati",
+      "exampleEnglish": "Goodbye (lit. 'with safety').",
+      "grammarNote": "Three fixed expressions, each treated as one phrase-vocabulary entry the same way السَّلَامُ عَلَيْكُمْ was in level 1 — not meant to be grammatically decomposed. مَعَ السَّلَامَةِ is level 1's greeting's natural counterpart: hello and goodbye, finally bookending the course. إِنْ شَاءَ اللَّه ('God willing') is one of the most common phrases in everyday Arabic, used whenever discussing future plans. أَهْلًا وَسَهْلًا ('welcome') is what you'll hear entering almost any home, shop, or event.",
+      "audio": { "id": "phrase_maasalaama", "text": "مع السلامة" },
+      "introducedInLevel": 97
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l97-ex1",
+      "type": "multiple-choice",
+      "refIds": ["maasalaama"],
+      "prompt": "What does 'مع السلامة' mean?",
+      "options": [
+        "goodbye (lit. 'with safety')",
+        "hello (lit. 'peace be upon you')",
+        "welcome",
+        "God willing / hopefully"
+      ],
+      "answer": "goodbye (lit. 'with safety')"
+    },
+    {
+      "id": "l97-ex2",
+      "type": "sentence-build",
+      "refIds": ["maaa", "maasalaama", "goodbye-pattern"],
+      "prompt": "Arrange the tiles to say 'Goodbye (lit. \"with safety\").'",
+      "options": ["مع", "السلامة"],
+      "answer": "مع السلامة"
+    },
+    {
+      "id": "l97-ex3",
+      "type": "multiple-choice",
+      "refIds": ["inshaallah"],
+      "prompt": "What does 'إن شاء الله' mean?",
+      "options": [
+        "God willing / hopefully",
+        "goodbye (lit. 'with safety')",
+        "welcome",
+        "thank you"
+      ],
+      "answer": "God willing / hopefully"
+    },
+    {
+      "id": "l97-ex4",
+      "type": "multiple-choice",
+      "refIds": ["ahlanwasahlan"],
+      "prompt": "What does 'أهلا وسهلا' mean?",
+      "options": ["one hundred", "you (fem.) teach", "[negates a verb in the future — 'will not']", "welcome"],
+      "answer": "welcome"
+    },
+    {
+      "id": "l97-ex5",
+      "type": "multiple-choice",
+      "refIds": ["ahlanwasahlan"],
+      "prompt": "Which word means 'welcome'?",
+      "options": ["أهلا وسهلا", "مدينة", "ليس", "ينتظر"],
+      "answer": "أهلا وسهلا"
+    },
+    {
+      "id": "l97-ex6",
+      "type": "speaking",
+      "refIds": ["maasalaama"],
+      "prompt": "Practice saying 'مع السلامة' (goodbye (lit. 'with safety')) out loud.",
+      "answer": "مع السلامة"
+    },
+    {
+      "id": "l97-ex7",
+      "type": "speaking",
+      "refIds": ["inshaallah"],
+      "prompt": "Practice saying 'إن شاء الله' (God willing / hopefully) out loud.",
+      "answer": "إن شاء الله"
+    },
+    {
+      "id": "l97-ex8",
+      "type": "speaking",
+      "refIds": ["ahlanwasahlan"],
+      "prompt": "Practice saying 'أهلا وسهلا' (welcome) out loud.",
+      "answer": "أهلا وسهلا"
+    }
+  ]
+}

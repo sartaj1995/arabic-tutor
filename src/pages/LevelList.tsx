@@ -22,6 +22,7 @@ const UNIT_THEMES: { title: string; arabic: string }[] = [
   { title: "Daily Life Expanded", arabic: "الحياة اليومية الموسعة" },
   { title: "Practical Fluency", arabic: "الطلاقة العملية" },
   { title: "Everyday Fluency", arabic: "الطلاقة اليومية" },
+  { title: "Graduation", arabic: "التخرج" },
 ];
 
 function CheckIcon() {
@@ -191,7 +192,9 @@ export default function LevelList() {
       )}
 
       <p className="level-list-intro">
-        {levels.length} of {TOTAL_PLANNED_LEVELS} levels authored so far.
+        {levels.length >= TOTAL_PLANNED_LEVELS
+          ? `All ${TOTAL_PLANNED_LEVELS} levels authored — the full curriculum is here.`
+          : `${levels.length} of ${TOTAL_PLANNED_LEVELS} levels authored so far.`}
       </p>
 
       {units.map((unitLevels, unitIndex) => {

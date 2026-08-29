@@ -3,12 +3,13 @@
 A web app for English speakers to learn Modern Standard Arabic (MSA) —
 script, vocabulary, and sentence-building — across 100 levels.
 
-**Status: app shell with interactive exercises, an on-screen Arabic
-keyboard, spaced-repetition review, real exercise depth, live audio, and a
-progress dashboard.** The first 90 levels of curriculum content exist as
-structured JSON — 1268 exercises across them, generated so every letter and
-vocab word gets at least one dedicated question, not just the illustrative
-few each level started with. A React/Vite app loads and displays them with
+**Status: the full 100-level curriculum is authored and the app shell is
+complete** — interactive exercises, an on-screen Arabic keyboard,
+spaced-repetition review, real exercise depth, live audio, and a progress
+dashboard. All 100 levels of curriculum content exist as structured JSON —
+1367 exercises across them, generated so every letter and vocab word gets
+at least one dedicated question, not just the illustrative few each level
+started with. A React/Vite app loads and displays them with
 clickable/typeable exercises and live scoring, finishing a level feeds its
 letters/vocab/patterns into a spaced-repetition queue you work through at
 `/review`, 🔊 buttons speak Arabic text aloud using the browser's built-in
@@ -16,7 +17,8 @@ Web Speech API — free, no account, no API key, no pre-generated files
 (though it does need an Arabic voice installed at the OS level — see
 "Audio" below) — and `/progress` shows levels completed, average score,
 items learned, SRS mastery breakdown, a day streak, and a review-load
-forecast. See Next steps for what's still missing.
+forecast. See Next steps for what's left now that content is complete
+(native-speaker review, polish items).
 
 ## Running it
 
@@ -118,7 +120,7 @@ src/lib/speech.ts         Web Speech API wrapper (speak, voice detection)
 src/lib/progress.ts       Dashboard stats computed from IndexedDB (no separate tracking)
 src/pages/                LevelList, LevelDetail, Review, Progress
 src/components/           ArabicText, ExerciseCard, PlayAudioButton, ArabicKeyboard
-content/levels/*.json     Authored level content (levels 1–90 so far)
+content/levels/*.json     Authored level content (all 100 levels, complete)
 scripts/generate-audio.mjs      Offline Google Cloud TTS pipeline — fallback, unused
 scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 ```
@@ -126,9 +128,9 @@ scripts/generate-exercises.mjs  Coverage-based exercise generator (idempotent)
 Each `content/levels/level-XX.json` follows the `Level` type in
 `src/types/content.ts`: new letters, new vocab, new sentence patterns, a
 diacritics-display setting, and exercises (a hand-authored core set plus
-generated coverage exercises — 1268 total across the 90 levels).
+generated coverage exercises — 1367 total across all 100 levels).
 
-## First 90 levels
+## All 100 levels
 
 | # | Theme |
 |---|---|
@@ -222,13 +224,23 @@ generated coverage exercises — 1268 total across the 90 levels).
 | 88 | Sports & hobbies |
 | 89 | Health & illness |
 | 90 | Review — levels 81–90 |
+| 91 | Verbs — "to see" (irregular) |
+| 92 | Weeks — last & next |
+| 93 | Verbs — "to find" (assimilated) |
+| 94 | "I want to..." |
+| 95 | Verbs — "to take" |
+| 96 | Giving directions |
+| 97 | Essential expressions |
+| 98 | Verbs — "to arrive" (assimilated) |
+| 99 | Reading passage |
+| 100 | Review — levels 91–100 |
 
 ## Next steps
 
 1. **Review the pacing.** Read through `content/levels/level-01.json` →
-   `level-90.json` (or the summary table in `docs/content-model.md`) and
-   sanity-check that the progression feels right before more levels are
-   generated the same way.
+   `level-100.json` (or the summary table in `docs/content-model.md`) —
+   the full, complete curriculum — and sanity-check that the progression
+   feels right end to end.
 2. ~~Scaffold the app.~~ Done — `npm run dev` to try it.
 2b. ~~Wire up interactive exercises.~~ Done — clickable options, a tile-based
     sentence builder, a typing input (compared leniently, diacritics
@@ -439,6 +451,42 @@ generated coverage exercises — 1268 total across the 90 levels).
     levels with correct icons, level 86's لَوْ-conditional and level 90's
     6-tile capstone both render and score correctly. 90 of 100 levels
     done — ten to go.
+8h. ~~Author levels 91–100 — the curriculum is complete.~~ Done — closes
+    out weak-verb irregularity with the two types not yet covered: رَأَى
+    ("to see", 91) drops its middle hamza entirely in the present tense
+    (يَرَى, not يَرْأَى) — genuinely irregular, saved for last as the most
+    essential verb of the bunch; وَجَدَ/وَصَلَ ("to find"/"to arrive",
+    93/98) are "assimilated" roots whose FIRST letter drops instead
+    (يَجِدُ/يَصِلُ) — 98 deliberately reinforces 93's pattern rather than
+    teaching a new one, the same way نَامَ (level 66) reinforced hollow
+    verbs. All four weak-verb categories (hollow, defective, geminate,
+    assimilated) are now represented. 93 also fills the last gap in
+    negation: لَا + present tense, alongside لَيْسَ/لَمْ/لَنْ. 94 ("I want
+    to...") and 96 (giving directions) are pure grammar combinations
+    minting little or no new vocabulary — أُرِيدُ + أَنْ + a verb, and the
+    level-42 imperative + level-72 directions — showing how far the
+    existing toolkit stretches. 97 finally teaches a goodbye (مَعَ
+    السَّلَامَةِ) to pair with level 1's hello. 99 is a genuine
+    reading-passage capstone: a real three-sentence paragraph built almost
+    entirely from words taught in earlier levels, followed by
+    comprehension questions instead of the usual vocabulary drills. 100's
+    capstone is deliberately simple — a true, warm closing sentence
+    reusing level 81 exactly — with a grammar note surveying the whole
+    course. **Found and fixed a real bug while authoring this batch**:
+    `scripts/generate-exercises.mjs` sorted level files by filename
+    string, not level number — harmless for levels 1–99 (their two-digit
+    filenames happen to sort in numeric order too) but broken the moment
+    `level-100.json` existed, since "100" < "11" as strings. Fixed to sort
+    numerically; `src/lib/content.ts` (the live app) was never affected,
+    since it already sorts by each level's own `number` field. Validated
+    with a full consistency pass (0 problems across 567 items / 1367
+    exercises, 0 new stripped-text collisions against the full 446-word
+    vocab pool) and in the browser — the new, final Unit 10 ("Graduation"
+    / التخرج) renders all ten levels with correct icons, level 99's
+    reading-passage comprehension questions and level 100's course-wide
+    review (reaching all the way back to level 1's greeting) both render
+    and score correctly. **100 of 100 levels authored — the curriculum is
+    complete.**
 9. ~~Author `letter-writing` exercises.~~ Done — `generate-exercises.mjs`
    now generates one per letter (28 total, across levels 1–7 where all the
    alphabet is introduced), testing the production direction (name ->
@@ -446,3 +494,28 @@ generated coverage exercises — 1268 total across the 90 levels).
    initial/medial/final positional forms so a letter's joining shapes get
    exercised too, not just its isolated form. Reuses the existing
    choice-exercise UI — no new component needed.
+
+## What's left, now that content is complete
+
+The 100-level curriculum is done. What remains is no longer "more
+levels" — it's validation and polish:
+
+- **Native-speaker content review.** All 446 vocabulary items, 93
+  grammar patterns, and their explanations were authored and
+  self-verified, not fact-checked by a fluent/native Arabic speaker. This
+  is the single highest-value remaining task if a reviewer is available.
+- **Deliberately excluded, and documented as such** (not gaps to
+  eventually fill): case endings/إعراب (invisible once diacritics fade at
+  level 16 — a permanent design ceiling, not a bug); Form IX verbs
+  (اِفْعَلَّ, restricted almost entirely to colors/physical traits);
+  passive voice (فُعِلَ/يُفْعَلُ changes only internal short vowels, so it
+  would be textually identical to the active voice the moment diacritics
+  fade — genuinely incompatible with this course's diacritics-fade
+  design, not merely deferred); full numbers 3–19 gender-polarity
+  agreement; the dual beyond its light nominative form; أَنْتُنَّ and the
+  remaining object-pronoun suffixes (-كِ, -كُمْ, -هُنَّ).
+- **Lower-priority polish**: PWA/offline support, an automated test
+  suite (everything is currently manually/browser-verified per session),
+  a real accessibility audit (screen reader + keyboard-only nav), true
+  pronunciation scoring (today's speaking exercises are reference-audio
+  self-check only).

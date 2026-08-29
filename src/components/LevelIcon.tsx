@@ -479,6 +479,10 @@ const RULES: Array<[string, () => JSX.Element]> = [
   ["More Prepositions", Compass],
   ["Sports & Hobbies", Ball],
   ["Health & Illness", MedicalCross],
+  ["Weeks", Calendar],
+  ["Want To", Brackets],
+  ["Essential Expressions", SpeechBubble],
+  ["Reading Passage", BookIcon],
   ["Review", Flag],
 ];
 

@@ -1,0 +1,59 @@
+{
+  "number": 96,
+  "title": "Giving Directions",
+  "newLetters": [],
+  "newVocab": ["tareeq"],
+  "newPatterns": ["go-right"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "tareeq",
+      "arabic": "طَرِيقٌ",
+      "arabicNoDiacritics": "طريق",
+      "transliteration": "ṭarīqun",
+      "english": "a road / a way",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_tareeq", "text": "طَرِيقٌ" },
+      "introducedInLevel": 96,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "go-right",
+      "pattern": "[Imperative] + إِلَى الـ[Direction]",
+      "exampleArabic": "اذهب إلى اليمين",
+      "exampleTransliteration": "idhhab ilā l-yamīni",
+      "exampleEnglish": "Go to the right!",
+      "grammarNote": "A pure combination — the imperative from level 42 (اِذْهَبْ) plus the directions from level 72 (الْيَمِينِ), joined by إِلَى exactly as ever, giving you real directions: 'Go right!', 'Go left!', 'Go north!'. طَرِيق ('a road/way') is this level's one new word: هَذَا الطَّرِيقُ طَوِيلٌ ('this road is long', reusing طَوِيل from level 4).",
+      "audio": { "id": "phrase_idhhab_ilaa_alyameen", "text": "اذهب إلى اليمين" },
+      "introducedInLevel": 96
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l96-ex1",
+      "type": "multiple-choice",
+      "refIds": ["tareeq"],
+      "prompt": "What does 'طريق' mean?",
+      "options": ["a road / a way", "a station", "a shop", "a direction"],
+      "answer": "a road / a way"
+    },
+    {
+      "id": "l96-ex2",
+      "type": "sentence-build",
+      "refIds": ["idhhab", "yameen", "go-right"],
+      "prompt": "Arrange the tiles to say 'Go to the right!'",
+      "options": ["اذهب", "إلى", "اليمين"],
+      "answer": "اذهب إلى اليمين"
+    },
+    {
+      "id": "l96-ex3",
+      "type": "speaking",
+      "refIds": ["tareeq"],
+      "prompt": "Practice saying 'طريق' (a road / a way) out loud.",
+      "answer": "طريق"
+    }
+  ]
+}

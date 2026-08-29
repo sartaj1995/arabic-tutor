@@ -1,0 +1,91 @@
+{
+  "number": 99,
+  "title": "Reading Passage",
+  "newLetters": [],
+  "newVocab": ["thumma"],
+  "newPatterns": ["reading-passage"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "thumma",
+      "arabic": "ثُمَّ",
+      "arabicNoDiacritics": "ثم",
+      "transliteration": "thumma",
+      "english": "then / after that",
+      "partOfSpeech": "conjunction",
+      "audio": { "id": "word_thumma", "text": "ثُمَّ" },
+      "introducedInLevel": 99,
+      "tags": ["core", "grammar"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "reading-passage",
+      "pattern": "[Sentence]. [Sentence]. [Sentence] + ثُمَّ + [Sentence].",
+      "exampleArabic": "أنا طالب. أتعلم اللغة العربية في الجامعة. أمشي إلى الجامعة ثم أدرس مع صديقي.",
+      "exampleTransliteration": "anā ṭālibun. ataʿallamu l-lughata l-ʿarabiyyata fī l-jāmiʿati. amshī ilā l-jāmiʿati thumma adrusu maʿa ṣadīqī.",
+      "exampleEnglish": "I am a student. I learn the Arabic language at the university. I walk to the university, then I study with my friend.",
+      "grammarNote": "A short reading passage — every word in it comes from an earlier level (طَالِب 54, أَتَعَلَّمُ 62, اللُّغَةَ الْعَرَبِيَّةَ 81, الْجَامِعَةِ 13, أَمْشِي 75, أَدْرُسُ 44, صَدِيقِي 82), except ثُمَّ ('then/after that'), this level's one new word — a simple sequencing connector for chaining actions in order. Try reading the whole passage aloud before checking the comprehension questions below.",
+      "audio": { "id": "phrase_reading_passage", "text": "أنا طالب. أتعلم اللغة العربية في الجامعة. أمشي إلى الجامعة ثم أدرس مع صديقي." },
+      "introducedInLevel": 99
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l99-ex1",
+      "type": "multiple-choice",
+      "refIds": ["thumma"],
+      "prompt": "What does 'ثم' mean?",
+      "options": ["then / after that", "with", "because", "until"],
+      "answer": "then / after that"
+    },
+    {
+      "id": "l99-ex2",
+      "type": "sentence-build",
+      "refIds": ["amshi", "jaamiaa", "thumma", "adrusu", "maaa", "sadeeq", "reading-passage"],
+      "prompt": "Arrange the tiles to say 'I walk to the university, then I study with my friend.'",
+      "options": ["أمشي", "إلى", "الجامعة", "ثم", "أدرس", "مع", "صديقي"],
+      "answer": "أمشي إلى الجامعة ثم أدرس مع صديقي"
+    },
+    {
+      "id": "l99-ex3",
+      "type": "multiple-choice",
+      "refIds": ["reading-passage"],
+      "prompt": "According to the passage, what does the student learn?",
+      "options": ["the Arabic language", "mathematics", "history", "music"],
+      "answer": "the Arabic language"
+    },
+    {
+      "id": "l99-ex4",
+      "type": "multiple-choice",
+      "refIds": ["reading-passage"],
+      "prompt": "According to the passage, how does the student get to the university?",
+      "options": ["walks", "by train", "by bus", "by bicycle"],
+      "answer": "walks"
+    },
+    {
+      "id": "l99-ex5",
+      "type": "multiple-choice",
+      "refIds": ["reading-passage"],
+      "prompt": "According to the passage, who does the student study with?",
+      "options": ["a friend", "a teacher", "a brother", "alone"],
+      "answer": "a friend"
+    },
+    {
+      "id": "l99-ex6",
+      "type": "speaking",
+      "refIds": ["thumma"],
+      "prompt": "Practice saying 'ثم' (then / after that) out loud.",
+      "answer": "ثم"
+    },
+    {
+      "id": "l99-ex7",
+      "type": "multiple-choice",
+      "refIds": ["reading-passage"],
+      "prompt": "What does this mean? أنا طالب. أتعلم اللغة العربية في الجامعة. أمشي إلى الجامعة ثم أدرس مع صديقي.",
+      "options": ["I send a letter to the office.", "Where are you (fem.) going?", "I am a student. I learn the Arabic language at the university. I walk to the university, then I study with my friend.", "I study with my friend."],
+      "answer": "I am a student. I learn the Arabic language at the university. I walk to the university, then I study with my friend."
+    }
+  ]
+}
