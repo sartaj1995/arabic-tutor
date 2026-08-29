@@ -1,0 +1,193 @@
+{
+  "number": 93,
+  "title": "Verbs — \"To Find\" (Assimilated)",
+  "newLetters": [],
+  "newVocab": ["ajidu", "tajidu", "tajideena", "yajidu", "najidu"],
+  "newPatterns": ["cant-find-key"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ajidu",
+      "arabic": "أَجِدُ",
+      "arabicNoDiacritics": "أجد",
+      "transliteration": "ajidu",
+      "english": "I find",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_ajidu", "text": "أَجِدُ" },
+      "introducedInLevel": 93,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tajidu",
+      "arabic": "تَجِدُ",
+      "arabicNoDiacritics": "تجد",
+      "transliteration": "tajidu",
+      "english": "you (masc.) find / she finds",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tajidu", "text": "تَجِدُ" },
+      "introducedInLevel": 93,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tajideena",
+      "arabic": "تَجِدِينَ",
+      "arabicNoDiacritics": "تجدين",
+      "transliteration": "tajidīna",
+      "english": "you (fem.) find",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tajideena", "text": "تَجِدِينَ" },
+      "introducedInLevel": 93,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yajidu",
+      "arabic": "يَجِدُ",
+      "arabicNoDiacritics": "يجد",
+      "transliteration": "yajidu",
+      "english": "he finds",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yajidu", "text": "يَجِدُ" },
+      "introducedInLevel": 93,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "najidu",
+      "arabic": "نَجِدُ",
+      "arabicNoDiacritics": "نجد",
+      "transliteration": "najidu",
+      "english": "we find",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_najidu", "text": "نَجِدُ" },
+      "introducedInLevel": 93,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "cant-find-key",
+      "pattern": "لَا + [Verb] + الـ[Noun]",
+      "exampleArabic": "لا أجد المفتاح",
+      "exampleTransliteration": "lā ajidu l-miftāḥa",
+      "exampleEnglish": "I don't find the key.",
+      "grammarNote": "وَجَدَ ('to find') introduces a FOURTH weak-verb type — 'assimilated' (مِثَال) roots, whose FIRST letter is weak (و or ي) and disappears entirely in the present tense: وَجَدَ → يَجِدُ, not يَوْجِدُ. You've now met all four: hollow (أَرَادَ/نَامَ, middle letter), defective (مَشَى/أَعْطَى, final letter), geminate (أَحَبَّ, doubled letter), and assimilated (وَجَدَ, first letter). Also new here: لَا + a present-tense verb is how Arabic negates the present tense — distinct from لَيْسَ (equational sentences, level 10), لَمْ (past, level 32), and لَنْ (future, level 32). No special conjugation is needed; لَا simply precedes the ordinary present-tense verb you already know.",
+      "audio": { "id": "phrase_laa_ajidu_almiftaah", "text": "لا أجد المفتاح" },
+      "introducedInLevel": 93
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l93-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ajidu"],
+      "prompt": "What does 'أجد' mean?",
+      "options": ["I find", "I see", "I take", "I give"],
+      "answer": "I find"
+    },
+    {
+      "id": "l93-ex2",
+      "type": "sentence-build",
+      "refIds": ["la", "ajidu", "miftaah", "cant-find-key"],
+      "prompt": "Arrange the tiles to say 'I don't find the key.'",
+      "options": ["لا", "أجد", "المفتاح"],
+      "answer": "لا أجد المفتاح"
+    },
+    {
+      "id": "l93-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tajidu"],
+      "prompt": "What does 'تجد' mean?",
+      "options": ["difficult", "you (masc.) find / she finds", "the sun", "music"],
+      "answer": "you (masc.) find / she finds"
+    },
+    {
+      "id": "l93-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tajidu"],
+      "prompt": "Which word means 'you (masc.) find / she finds'?",
+      "options": ["سيارة", "تذهب", "تجد", "أنام"],
+      "answer": "تجد"
+    },
+    {
+      "id": "l93-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tajideena"],
+      "prompt": "What does 'تجدين' mean?",
+      "options": ["glasses", "this (fem.)", "you (fem.) find", "sixty"],
+      "answer": "you (fem.) find"
+    },
+    {
+      "id": "l93-ex6",
+      "type": "typing",
+      "refIds": ["tajideena"],
+      "prompt": "Type the Arabic word for 'you (fem.) find'.",
+      "answer": "تجدين"
+    },
+    {
+      "id": "l93-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yajidu"],
+      "prompt": "What does 'يجد' mean?",
+      "options": ["we wanted", "he can", "dirty", "he finds"],
+      "answer": "he finds"
+    },
+    {
+      "id": "l93-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yajidu"],
+      "prompt": "Which word means 'he finds'?",
+      "options": ["مدرسون", "ثلج", "سعيد", "يجد"],
+      "answer": "يجد"
+    },
+    {
+      "id": "l93-ex9",
+      "type": "multiple-choice",
+      "refIds": ["najidu"],
+      "prompt": "What does 'نجد' mean?",
+      "options": ["he works", "we find", "you (fem.) see", "green"],
+      "answer": "we find"
+    },
+    {
+      "id": "l93-ex10",
+      "type": "typing",
+      "refIds": ["najidu"],
+      "prompt": "Type the Arabic word for 'we find'.",
+      "answer": "نجد"
+    },
+    {
+      "id": "l93-ex11",
+      "type": "speaking",
+      "refIds": ["ajidu"],
+      "prompt": "Practice saying 'أجد' (I find) out loud.",
+      "answer": "أجد"
+    },
+    {
+      "id": "l93-ex12",
+      "type": "speaking",
+      "refIds": ["tajidu"],
+      "prompt": "Practice saying 'تجد' (you (masc.) find / she finds) out loud.",
+      "answer": "تجد"
+    },
+    {
+      "id": "l93-ex13",
+      "type": "speaking",
+      "refIds": ["tajideena"],
+      "prompt": "Practice saying 'تجدين' (you (fem.) find) out loud.",
+      "answer": "تجدين"
+    },
+    {
+      "id": "l93-ex14",
+      "type": "speaking",
+      "refIds": ["yajidu"],
+      "prompt": "Practice saying 'يجد' (he finds) out loud.",
+      "answer": "يجد"
+    },
+    {
+      "id": "l93-ex15",
+      "type": "speaking",
+      "refIds": ["najidu"],
+      "prompt": "Practice saying 'نجد' (we find) out loud.",
+      "answer": "نجد"
+    }
+  ]
+}

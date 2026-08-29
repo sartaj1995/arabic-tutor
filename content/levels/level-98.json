@@ -1,0 +1,193 @@
+{
+  "number": 98,
+  "title": "Verbs — \"To Arrive\"",
+  "newLetters": [],
+  "newVocab": ["asilu", "tasilu", "tasileena", "yasilu", "nasilu"],
+  "newPatterns": ["train-arrives"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "asilu",
+      "arabic": "أَصِلُ",
+      "arabicNoDiacritics": "أصل",
+      "transliteration": "aṣilu",
+      "english": "I arrive",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_asilu", "text": "أَصِلُ" },
+      "introducedInLevel": 98,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tasilu",
+      "arabic": "تَصِلُ",
+      "arabicNoDiacritics": "تصل",
+      "transliteration": "taṣilu",
+      "english": "you (masc.) arrive / she arrives",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tasilu", "text": "تَصِلُ" },
+      "introducedInLevel": 98,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tasileena",
+      "arabic": "تَصِلِينَ",
+      "arabicNoDiacritics": "تصلين",
+      "transliteration": "taṣilīna",
+      "english": "you (fem.) arrive",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tasileena", "text": "تَصِلِينَ" },
+      "introducedInLevel": 98,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yasilu",
+      "arabic": "يَصِلُ",
+      "arabicNoDiacritics": "يصل",
+      "transliteration": "yaṣilu",
+      "english": "he arrives / it arrives",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yasilu", "text": "يَصِلُ" },
+      "introducedInLevel": 98,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nasilu",
+      "arabic": "نَصِلُ",
+      "arabicNoDiacritics": "نصل",
+      "transliteration": "naṣilu",
+      "english": "we arrive",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nasilu", "text": "نَصِلُ" },
+      "introducedInLevel": 98,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "train-arrives",
+      "pattern": "الـ[Noun] + يَصِلُ",
+      "exampleArabic": "يصل القطار",
+      "exampleTransliteration": "yaṣilu l-qiṭāru",
+      "exampleEnglish": "The train arrives.",
+      "grammarNote": "وَصَلَ ('to arrive') reinforces level 93's assimilated (مِثَال) pattern rather than adding new grammar — its initial و also disappears in the present tense: وَصَلَ → يَصِلُ, not يَوْصِلُ. With اِنْطَلَقَ ('to depart', level 73), you can now describe a whole journey: يَنْطَلِقُ الْقِطَارُ ('the train departs') ... يَصِلُ الْقِطَارُ ('the train arrives').",
+      "audio": { "id": "phrase_yasilu_alqitaar", "text": "يصل القطار" },
+      "introducedInLevel": 98
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l98-ex1",
+      "type": "multiple-choice",
+      "refIds": ["asilu"],
+      "prompt": "What does 'أصل' mean?",
+      "options": ["I arrive", "I depart", "I find", "I take"],
+      "answer": "I arrive"
+    },
+    {
+      "id": "l98-ex2",
+      "type": "sentence-build",
+      "refIds": ["qitaar", "yasilu", "train-arrives"],
+      "prompt": "Arrange the tiles to say 'The train arrives.'",
+      "options": ["يصل", "القطار"],
+      "answer": "يصل القطار"
+    },
+    {
+      "id": "l98-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tasilu"],
+      "prompt": "What does 'تصل' mean?",
+      "options": ["also / too", "men (irregular plural of رَجُل)", "after", "you (masc.) arrive / she arrives"],
+      "answer": "you (masc.) arrive / she arrives"
+    },
+    {
+      "id": "l98-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tasilu"],
+      "prompt": "Which word means 'you (masc.) arrive / she arrives'?",
+      "options": ["أيام", "طويل", "تصل", "بيتي"],
+      "answer": "تصل"
+    },
+    {
+      "id": "l98-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tasileena"],
+      "prompt": "What does 'تصلين' mean?",
+      "options": ["the fifth", "you (fem.) arrive", "we wanted", "a ticket"],
+      "answer": "you (fem.) arrive"
+    },
+    {
+      "id": "l98-ex6",
+      "type": "typing",
+      "refIds": ["tasileena"],
+      "prompt": "Type the Arabic word for 'you (fem.) arrive'.",
+      "answer": "تصلين"
+    },
+    {
+      "id": "l98-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yasilu"],
+      "prompt": "What does 'يصل' mean?",
+      "options": ["we find", "a train", "an office / a desk", "he arrives / it arrives"],
+      "answer": "he arrives / it arrives"
+    },
+    {
+      "id": "l98-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yasilu"],
+      "prompt": "Which word means 'he arrives / it arrives'?",
+      "options": ["رأس", "عصير", "يصل", "ليس"],
+      "answer": "يصل"
+    },
+    {
+      "id": "l98-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nasilu"],
+      "prompt": "What does 'نصل' mean?",
+      "options": ["you (fem.) send", "we arrive", "with / by (using)", "I find"],
+      "answer": "we arrive"
+    },
+    {
+      "id": "l98-ex10",
+      "type": "typing",
+      "refIds": ["nasilu"],
+      "prompt": "Type the Arabic word for 'we arrive'.",
+      "answer": "نصل"
+    },
+    {
+      "id": "l98-ex11",
+      "type": "speaking",
+      "refIds": ["asilu"],
+      "prompt": "Practice saying 'أصل' (I arrive) out loud.",
+      "answer": "أصل"
+    },
+    {
+      "id": "l98-ex12",
+      "type": "speaking",
+      "refIds": ["tasilu"],
+      "prompt": "Practice saying 'تصل' (you (masc.) arrive / she arrives) out loud.",
+      "answer": "تصل"
+    },
+    {
+      "id": "l98-ex13",
+      "type": "speaking",
+      "refIds": ["tasileena"],
+      "prompt": "Practice saying 'تصلين' (you (fem.) arrive) out loud.",
+      "answer": "تصلين"
+    },
+    {
+      "id": "l98-ex14",
+      "type": "speaking",
+      "refIds": ["yasilu"],
+      "prompt": "Practice saying 'يصل' (he arrives / it arrives) out loud.",
+      "answer": "يصل"
+    },
+    {
+      "id": "l98-ex15",
+      "type": "speaking",
+      "refIds": ["nasilu"],
+      "prompt": "Practice saying 'نصل' (we arrive) out loud.",
+      "answer": "نصل"
+    }
+  ]
+}

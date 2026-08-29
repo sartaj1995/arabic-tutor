@@ -1,0 +1,117 @@
+{
+  "number": 100,
+  "title": "Review — Levels 91–100",
+  "newLetters": [],
+  "newVocab": ["mabrook"],
+  "newPatterns": ["review-capstone-8"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "mabrook",
+      "arabic": "مَبْرُوك",
+      "arabicNoDiacritics": "مبروك",
+      "transliteration": "mabrūk",
+      "english": "congratulations",
+      "partOfSpeech": "phrase",
+      "audio": { "id": "word_mabrook", "text": "مَبْرُوك" },
+      "introducedInLevel": 100,
+      "tags": ["core"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "review-capstone-8",
+      "pattern": "أَنْتَ + تَعْرِفُ + الـ[Noun] + الـ[Adjective]",
+      "exampleArabic": "أنت تعرف اللغة العربية",
+      "exampleTransliteration": "anta taʿrifu l-lughata l-ʿarabiyyata",
+      "exampleEnglish": "You know the Arabic language.",
+      "grammarNote": "A closing celebration, not a new grammar point: أَنْتَ تَعْرِفُ اللُّغَةَ الْعَرَبِيَّةَ reuses تَعْرِفُ and اللُّغَةَ الْعَرَبِيَّةَ (both level 81) exactly as first taught — a deliberately simple, true sentence to end on rather than a maximally complex one. 100 of 100 levels now authored: the alphabet (level 7), present and past tense across a dozen-plus verbs and six verb forms beyond the base (levels 12–98), four kinds of weak-verb irregularity (hollow, defective, geminate, assimilated), broken and sound plurals, idafa, negation in every tense, two conditionals, relative clauses, attached object and possessive pronouns, numbers 1–100, and several hundred words of practical vocabulary. مَبْرُوك — congratulations on finishing the course!",
+      "audio": { "id": "phrase_anta_tarifu_allugha_alarabiyya", "text": "أنت تعرف اللغة العربية" },
+      "introducedInLevel": 100
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l100-ex1",
+      "type": "multiple-choice",
+      "refIds": ["mabrook"],
+      "prompt": "What does 'مبروك' mean?",
+      "options": ["congratulations", "goodbye (lit. 'with safety')", "welcome", "perhaps / maybe"],
+      "answer": "congratulations"
+    },
+    {
+      "id": "l100-ex2",
+      "type": "sentence-build",
+      "refIds": ["anta", "taarifu", "lugha", "arabi", "review-capstone-8"],
+      "prompt": "Arrange the tiles to say 'You know the Arabic language.'",
+      "options": ["أنت", "تعرف", "اللغة", "العربية"],
+      "answer": "أنت تعرف اللغة العربية"
+    },
+    {
+      "id": "l100-ex3",
+      "type": "multiple-choice",
+      "refIds": ["ara"],
+      "prompt": "Review: what does 'أرى' mean?",
+      "options": ["I see", "I find", "I take", "I know"],
+      "answer": "I see"
+    },
+    {
+      "id": "l100-ex4",
+      "type": "multiple-choice",
+      "refIds": ["ajidu"],
+      "prompt": "Review: what does 'أجد' mean?",
+      "options": ["I find", "I see", "I give", "I open"],
+      "answer": "I find"
+    },
+    {
+      "id": "l100-ex5",
+      "type": "multiple-choice",
+      "refIds": ["aakhudhu"],
+      "prompt": "Review: what does 'آخذ' mean?",
+      "options": ["I take", "I give", "I close", "I depart"],
+      "answer": "I take"
+    },
+    {
+      "id": "l100-ex6",
+      "type": "multiple-choice",
+      "refIds": ["yasilu"],
+      "prompt": "Review: what does 'يصل' mean?",
+      "options": ["he arrives / it arrives", "he departs / it departs", "he opens", "he closes"],
+      "answer": "he arrives / it arrives"
+    },
+    {
+      "id": "l100-ex7",
+      "type": "multiple-choice",
+      "refIds": ["maasalaama"],
+      "prompt": "Review: what does 'مع السلامة' mean?",
+      "options": [
+        "goodbye (lit. 'with safety')",
+        "hello (lit. 'peace be upon you')",
+        "welcome",
+        "thank you"
+      ],
+      "answer": "goodbye (lit. 'with safety')"
+    },
+    {
+      "id": "l100-ex8",
+      "type": "multiple-choice",
+      "refIds": ["salaam"],
+      "prompt": "One last review, all the way back to level 1: what does 'السلام عليكم' mean?",
+      "options": [
+        "hello (lit. 'peace be upon you')",
+        "goodbye (lit. 'with safety')",
+        "welcome",
+        "thank you"
+      ],
+      "answer": "hello (lit. 'peace be upon you')"
+    },
+    {
+      "id": "l100-ex9",
+      "type": "speaking",
+      "refIds": ["mabrook"],
+      "prompt": "Practice saying 'مبروك' (congratulations) out loud.",
+      "answer": "مبروك"
+    }
+  ]
+}

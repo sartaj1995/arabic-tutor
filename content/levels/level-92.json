@@ -1,0 +1,126 @@
+{
+  "number": 92,
+  "title": "Weeks — Last & Next",
+  "newLetters": [],
+  "newVocab": ["usboo", "maadi", "qaadim"],
+  "newPatterns": ["next-week"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "usboo",
+      "arabic": "أُسْبُوعٌ",
+      "arabicNoDiacritics": "أسبوع",
+      "transliteration": "usbūʿun",
+      "english": "a week",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_usboo", "text": "أُسْبُوعٌ" },
+      "introducedInLevel": 92,
+      "tags": ["core"]
+    },
+    {
+      "id": "maadi",
+      "arabic": "مَاضِي",
+      "arabicNoDiacritics": "ماضي",
+      "transliteration": "māḍī",
+      "english": "past / last",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_maadi", "text": "مَاضِي" },
+      "introducedInLevel": 92,
+      "tags": ["core", "adjective"]
+    },
+    {
+      "id": "qaadim",
+      "arabic": "قَادِم",
+      "arabicNoDiacritics": "قادم",
+      "transliteration": "qādim",
+      "english": "next / coming",
+      "partOfSpeech": "adjective",
+      "audio": { "id": "word_qaadim", "text": "قَادِم" },
+      "introducedInLevel": 92,
+      "tags": ["core", "adjective"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "next-week",
+      "pattern": "الـ[Noun] + الـ[Adjective]",
+      "exampleArabic": "سأذهب الأسبوع القادم",
+      "exampleTransliteration": "sa-adhhabu l-usbūʿa l-qādima",
+      "exampleEnglish": "I will go next week.",
+      "grammarNote": "مَاضِي and قَادِم are ordinary adjectives, following the noun they describe exactly the way level 11 taught: الأُسْبُوعُ الْمَاضِي ('last week', literally 'the week the-past') and الأُسْبُوعُ الْقَادِم ('next week'). This extends the single-day words أَمْسِ/غَدًا (level 22) up to week-level time, reusing the same سَـ-future construction (level 41) to talk about it.",
+      "audio": { "id": "phrase_saadhhab_alusboo_alqaadim", "text": "سأذهب الأسبوع القادم" },
+      "introducedInLevel": 92
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l92-ex1",
+      "type": "multiple-choice",
+      "refIds": ["usboo"],
+      "prompt": "What does 'أسبوع' mean?",
+      "options": ["a week", "a day", "a month", "a year"],
+      "answer": "a week"
+    },
+    {
+      "id": "l92-ex2",
+      "type": "sentence-build",
+      "refIds": ["sa", "adhhabu", "usboo", "qaadim", "next-week"],
+      "prompt": "Arrange the tiles to say 'I will go next week.'",
+      "options": ["سأذهب", "الأسبوع", "القادم"],
+      "answer": "سأذهب الأسبوع القادم"
+    },
+    {
+      "id": "l92-ex3",
+      "type": "multiple-choice",
+      "refIds": ["maadi"],
+      "prompt": "What does 'ماضي' mean?",
+      "options": ["I eat", "I can / I am able to", "past / last", "that (fem.)"],
+      "answer": "past / last"
+    },
+    {
+      "id": "l92-ex4",
+      "type": "multiple-choice",
+      "refIds": ["maadi"],
+      "prompt": "Which word means 'past / last'?",
+      "options": ["جنوب", "وسخ", "ماضي", "تعطين"],
+      "answer": "ماضي"
+    },
+    {
+      "id": "l92-ex5",
+      "type": "multiple-choice",
+      "refIds": ["qaadim"],
+      "prompt": "What does 'قادم' mean?",
+      "options": ["this (masc.)", "next / coming", "a language", "I write"],
+      "answer": "next / coming"
+    },
+    {
+      "id": "l92-ex6",
+      "type": "typing",
+      "refIds": ["qaadim"],
+      "prompt": "Type the Arabic word for 'next / coming'.",
+      "answer": "قادم"
+    },
+    {
+      "id": "l92-ex7",
+      "type": "speaking",
+      "refIds": ["usboo"],
+      "prompt": "Practice saying 'أسبوع' (a week) out loud.",
+      "answer": "أسبوع"
+    },
+    {
+      "id": "l92-ex8",
+      "type": "speaking",
+      "refIds": ["maadi"],
+      "prompt": "Practice saying 'ماضي' (past / last) out loud.",
+      "answer": "ماضي"
+    },
+    {
+      "id": "l92-ex9",
+      "type": "speaking",
+      "refIds": ["qaadim"],
+      "prompt": "Practice saying 'قادم' (next / coming) out loud.",
+      "answer": "قادم"
+    }
+  ]
+}

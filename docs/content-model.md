@@ -96,7 +96,7 @@ TTS-facing form); it's hand-authored exercise/pattern text, and anything
 `scripts/generate-exercises.mjs` generates, that gets stripped down to
 match a "none" level's setting.
 
-## First 90 levels, at a glance
+## All 100 levels, at a glance
 
 | Level | Theme | New letters | New pattern |
 |---|---|---|---|
@@ -190,6 +190,16 @@ match a "none" level's setting.
 | 88 | Sports & hobbies | — | "I love sports." |
 | 89 | Health & illness | — | "I am sick and I want medicine." |
 | 90 | Review — levels 81–90 | — | capstone: عرف + صديق + relative clause |
+| 91 | Verbs — "to see" (irregular) | — | "I see the moon." |
+| 92 | Weeks — last & next | — | "I will go next week." |
+| 93 | Verbs — "to find" (assimilated) | — | "I don't find the key." |
+| 94 | "I want to..." | — | "I want to go home." |
+| 95 | Verbs — "to take" | — | "I take the book." |
+| 96 | Giving directions | — | "Go to the right!" |
+| 97 | Essential expressions | — | "Goodbye (lit. 'with safety')." |
+| 98 | Verbs — "to arrive" (assimilated) | — | "The train arrives." |
+| 99 | Reading passage | — | a 3-sentence passage + comprehension questions |
+| 100 | Review — levels 91–100 | — | capstone: "You know the Arabic language." |
 
 Levels 1–10 were a **pacing proof of concept** validating the schema and
 progression before continuing; levels 11–20 build on that same shape and
@@ -414,6 +424,50 @@ concrete example. 85 (weather), 88 (sports/hobbies), and 89
 (health/illness) are vocabulary-only levels reusing fully established
 structures. 90 of 100 levels now authored — ten to go.
 
+Levels 91–100 close out the curriculum. 91 (رَأَى, "to see") and 93/98
+(وَجَدَ/وَصَلَ, "to find"/"to arrive") complete the tour of weak-verb
+irregularity with the two types not yet covered: رَأَى drops its middle
+hamza entirely in the present tense (يَرَى, not يَرْأَى) — genuinely
+irregular, saved for last as the most essential verb of the bunch; وَجَدَ
+and وَصَلَ are "assimilated" (مِثَال) roots, whose FIRST letter (و) drops
+in the present tense (يَجِدُ/يَصِلُ, not يَوْجِدُ/يَوْصِلُ) — 98 is a
+deliberate reinforcement of 93's pattern, not a new one, the way نَامَ
+(level 66) reinforced hollow verbs. All four weak-verb categories —
+hollow, defective, geminate, assimilated — are now represented. 93 also
+introduces لَا + present tense as the last missing piece of negation
+(alongside لَيْسَ for equational sentences, لَمْ for the past, and لَنْ for
+the future). 94 ("I want to...") and 96 (giving directions) are pure
+grammar combinations minting little or no new vocabulary, showing how far
+the existing toolkit stretches: أُرِيدُ (15) + أَنْ (48) + a verb, and the
+level-42 imperative + level-72 directions. 95 (أَخَذَ, "to take") mirrors
+level 25's أَكَلَ hamza-fusion pattern exactly (آخُذُ, not أَأْخُذُ). 97
+finally teaches a goodbye (مَعَ السَّلَامَةِ) to pair with level 1's hello,
+plus two of the most common fixed expressions in everyday Arabic (إِنْ
+شَاءَ اللَّه, أَهْلًا وَسَهْلًا) — each treated as one phrase-vocabulary
+entry, the same way السَّلَامُ عَلَيْكُمْ was in level 1, not decomposed
+grammatically. 99 is a genuine reading-passage capstone: a real
+three-sentence paragraph built almost entirely from words taught in
+earlier levels (only ثُمَّ, "then", is new), followed by comprehension
+questions rather than the usual vocabulary drills. 100's capstone is
+deliberately simple rather than maximally complex — a true, warm closing
+sentence (أَنْتَ تَعْرِفُ اللُّغَةَ الْعَرَبِيَّةَ, reusing level 81 exactly)
+rather than a forced grammatical showcase, with a grammar note that
+surveys the whole course. 100 of 100 levels now authored — the
+curriculum is complete.
+
+**A bug found and fixed while authoring this batch**: `scripts/generate-exercises.mjs`
+sorted level files by filename string, not by numeric level number. Every
+level from 1–99 uses a zero-padded two-digit filename (`level-01.json` …
+`level-99.json`), so string order and numeric order coincided by
+accident — until `level-100.json`, whose three digits sort it
+immediately after `level-10.json` and before `level-11.json` in a plain
+string comparison. This broke the script's "cumulative pool" ordering
+(distractor quality only, not correctness — see the fix's comment for
+why), so it's now sorted by the numeric level number extracted from each
+filename. `src/lib/content.ts`, which drives the live app, was never
+affected — it already sorts by each level's own `number` field, not the
+filename.
+
 ## Exercises in the JSON files
 
 Each level file has a small hand-authored core set (the flagship
@@ -421,7 +475,7 @@ sentence-build/matching/typing exercises that show off a level's grammar
 point) plus generated coverage exercises ensuring every letter and vocab
 word gets at least one dedicated question — see
 `scripts/generate-exercises.mjs`, an idempotent script safe to re-run after
-authoring new levels. As of level 90: 527 content items, 1268 exercises
-total. The generator is diacritics-aware — it renders Arabic text stripped
+authoring new levels. As of level 100 (the complete curriculum): 567
+content items, 1367 exercises total. The generator is diacritics-aware — it renders Arabic text stripped
 for levels where `diacriticsLevel === "none"` so generated and
 hand-authored exercises never mix styles within the same level.

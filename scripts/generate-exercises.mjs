@@ -144,9 +144,13 @@ function nextExerciseIdFactory(level) {
 }
 
 function main() {
+  // Numeric sort, not string sort — "level-100.json" would otherwise land
+  // right after "level-10.json" (plain string comparison puts "100" before
+  // "11"), breaking the cumulative-pool ordering below the moment the
+  // course passed 99 levels.
   const files = readdirSync(LEVELS_DIR)
     .filter((f) => f.endsWith(".json"))
-    .sort();
+    .sort((a, b) => parseInt(a.match(/\d+/)[0], 10) - parseInt(b.match(/\d+/)[0], 10));
 
   // Cumulative pools: everything introduced at or before the level being
   // processed, so distractors never reference content not yet learned.

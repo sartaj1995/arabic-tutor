@@ -1,0 +1,193 @@
+{
+  "number": 91,
+  "title": "Verbs — \"To See\" (Irregular)",
+  "newLetters": [],
+  "newVocab": ["ara", "tara", "tarayna", "yara", "nara"],
+  "newPatterns": ["i-see-the-moon"],
+  "diacriticsLevel": "none",
+  "letters": [],
+  "vocab": [
+    {
+      "id": "ara",
+      "arabic": "أَرَى",
+      "arabicNoDiacritics": "أرى",
+      "transliteration": "arā",
+      "english": "I see",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_ara", "text": "أَرَى" },
+      "introducedInLevel": 91,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "tara",
+      "arabic": "تَرَى",
+      "arabicNoDiacritics": "ترى",
+      "transliteration": "tarā",
+      "english": "you (masc.) see / she sees",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tara", "text": "تَرَى" },
+      "introducedInLevel": 91,
+      "tags": ["verb"]
+    },
+    {
+      "id": "tarayna",
+      "arabic": "تَرَيْنَ",
+      "arabicNoDiacritics": "ترين",
+      "transliteration": "tarayna",
+      "english": "you (fem.) see",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_tarayna", "text": "تَرَيْنَ" },
+      "introducedInLevel": 91,
+      "tags": ["verb"]
+    },
+    {
+      "id": "yara",
+      "arabic": "يَرَى",
+      "arabicNoDiacritics": "يرى",
+      "transliteration": "yarā",
+      "english": "he sees",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_yara", "text": "يَرَى" },
+      "introducedInLevel": 91,
+      "tags": ["core", "verb"]
+    },
+    {
+      "id": "nara",
+      "arabic": "نَرَى",
+      "arabicNoDiacritics": "نرى",
+      "transliteration": "narā",
+      "english": "we see",
+      "partOfSpeech": "verb (present tense)",
+      "audio": { "id": "word_nara", "text": "نَرَى" },
+      "introducedInLevel": 91,
+      "tags": ["verb"]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "i-see-the-moon",
+      "pattern": "[Verb] + الـ[Noun]",
+      "exampleArabic": "أرى القمر",
+      "exampleTransliteration": "arā l-qamara",
+      "exampleEnglish": "I see the moon.",
+      "grammarNote": "رَأَى ('to see') is one of Arabic's most irregular verbs — the root's middle hamza simply DROPS in the present tense: you'd expect يَرْأَى, but it's actually يَرَى. Once the hamza is gone, what's left behaves like a defective (weak-final) verb, the same family as مَشَى (level 75): أَرَى, تَرَى, تَرَيْنَ, يَرَى, نَرَى. This is the last of the irregular verb patterns in this course — a fitting one to end on, given how essential 'to see' is.",
+      "audio": { "id": "phrase_ara_alqamar", "text": "أرى القمر" },
+      "introducedInLevel": 91
+    }
+  ],
+  "exercises": [
+    {
+      "id": "l91-ex1",
+      "type": "multiple-choice",
+      "refIds": ["ara"],
+      "prompt": "What does 'أرى' mean?",
+      "options": ["I see", "I know", "I find", "I take"],
+      "answer": "I see"
+    },
+    {
+      "id": "l91-ex2",
+      "type": "sentence-build",
+      "refIds": ["ara", "alqamar", "i-see-the-moon"],
+      "prompt": "Arrange the tiles to say 'I see the moon.'",
+      "options": ["أرى", "القمر"],
+      "answer": "أرى القمر"
+    },
+    {
+      "id": "l91-ex3",
+      "type": "multiple-choice",
+      "refIds": ["tara"],
+      "prompt": "What does 'ترى' mean?",
+      "options": ["we drink", "you (masc.) see / she sees", "ten", "I see"],
+      "answer": "you (masc.) see / she sees"
+    },
+    {
+      "id": "l91-ex4",
+      "type": "multiple-choice",
+      "refIds": ["tara"],
+      "prompt": "Which word means 'you (masc.) see / she sees'?",
+      "options": ["تستطيع", "الثالث", "الخامسة", "ترى"],
+      "answer": "ترى"
+    },
+    {
+      "id": "l91-ex5",
+      "type": "multiple-choice",
+      "refIds": ["tarayna"],
+      "prompt": "What does 'ترين' mean?",
+      "options": ["Go! (masc.)", "she wanted", "he teaches", "you (fem.) see"],
+      "answer": "you (fem.) see"
+    },
+    {
+      "id": "l91-ex6",
+      "type": "typing",
+      "refIds": ["tarayna"],
+      "prompt": "Type the Arabic word for 'you (fem.) see'.",
+      "answer": "ترين"
+    },
+    {
+      "id": "l91-ex7",
+      "type": "multiple-choice",
+      "refIds": ["yara"],
+      "prompt": "What does 'يرى' mean?",
+      "options": ["he likes", "nine", "he sees", "a bus"],
+      "answer": "he sees"
+    },
+    {
+      "id": "l91-ex8",
+      "type": "multiple-choice",
+      "refIds": ["yara"],
+      "prompt": "Which word means 'he sees'?",
+      "options": ["ثلاثة", "يرى", "أنت", "حقيبة"],
+      "answer": "يرى"
+    },
+    {
+      "id": "l91-ex9",
+      "type": "multiple-choice",
+      "refIds": ["nara"],
+      "prompt": "What does 'نرى' mean?",
+      "options": ["money", "we drink", "we see", "January"],
+      "answer": "we see"
+    },
+    {
+      "id": "l91-ex10",
+      "type": "typing",
+      "refIds": ["nara"],
+      "prompt": "Type the Arabic word for 'we see'.",
+      "answer": "نرى"
+    },
+    {
+      "id": "l91-ex11",
+      "type": "speaking",
+      "refIds": ["ara"],
+      "prompt": "Practice saying 'أرى' (I see) out loud.",
+      "answer": "أرى"
+    },
+    {
+      "id": "l91-ex12",
+      "type": "speaking",
+      "refIds": ["tara"],
+      "prompt": "Practice saying 'ترى' (you (masc.) see / she sees) out loud.",
+      "answer": "ترى"
+    },
+    {
+      "id": "l91-ex13",
+      "type": "speaking",
+      "refIds": ["tarayna"],
+      "prompt": "Practice saying 'ترين' (you (fem.) see) out loud.",
+      "answer": "ترين"
+    },
+    {
+      "id": "l91-ex14",
+      "type": "speaking",
+      "refIds": ["yara"],
+      "prompt": "Practice saying 'يرى' (he sees) out loud.",
+      "answer": "يرى"
+    },
+    {
+      "id": "l91-ex15",
+      "type": "speaking",
+      "refIds": ["nara"],
+      "prompt": "Practice saying 'نرى' (we see) out loud.",
+      "answer": "نرى"
+    }
+  ]
+}
