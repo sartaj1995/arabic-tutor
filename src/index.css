@@ -895,6 +895,11 @@ a.hero-stat.is-review:hover {
   margin: 0;
   padding: 0;
   display: grid;
+  /* minmax(0, 1fr) rather than the implicit `auto` track: a grid item's
+     automatic minimum size is min-content, so on narrow screens the cards
+     containing the Arabic keyboard refused to shrink and pushed the whole
+     page into horizontal scroll. */
+  grid-template-columns: minmax(0, 1fr);
   gap: 0.75rem;
 }
 
@@ -1144,4 +1149,32 @@ a.hero-stat.is-review:hover {
   margin: 0;
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+/* --- Narrow screens -------------------------------------------------- */
+/* The layout is fluid enough to survive down to phone widths on its own
+   (grids use auto-fill/minmax, the shell is max-width + auto margins), so
+   this block only reclaims horizontal space that fixed padding was eating
+   and restacks the one genuinely fixed-column table. */
+@media (max-width: 600px) {
+  .app-header {
+    padding: 1rem;
+  }
+
+  .app-main {
+    padding: 1.25rem 1rem 2.5rem;
+  }
+
+  .hero {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Three fixed columns leaves ~84px per cell at 375px, which wraps a
+     gloss like "I / you (masc.) / you (fem.) / she went" across five
+     lines. Stacking is both shorter and far easier to read. */
+  .vocab-row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    padding: 0.75rem 1rem;
+  }
 }
