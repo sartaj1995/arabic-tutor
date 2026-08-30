@@ -58,6 +58,34 @@ and `--force`). `PlayAudioButton` would need a small change to prefer a
 static file when one exists, since it currently always calls
 `speak()`.
 
+### Tests
+
+```bash
+npm test          # run once
+npm run test:watch
+```
+
+Vitest, no browser needed. The suite is deliberately weighted toward the
+things that are easy to break silently:
+
+- **Content validation** (`src/lib/content.test.ts`) — id uniqueness across
+  every content type, refIds resolving to something introduced at or before
+  their own level, sentence-build tiles reassembling into their answer,
+  `arabicNoDiacritics` matching what `arabic` actually strips to, and the
+  diacritics fade schedule. This ran as an ad-hoc script during every
+  authoring batch and caught a real bug each time; now that all 100 levels
+  are written the content can only regress.
+- **Undiacritized collisions** — asserts the set of vocabulary that collapses
+  to identical letters is *exactly* the four documented, unavoidable cases,
+  so a new collision fails the build rather than shipping an unanswerable
+  multiple-choice question.
+- **Review generation** — every item at every point in its mode cycle, which
+  is ~3,400 exercises. Guards that review never emits a `speaking` exercise
+  (it reports `unscored`, which the grader would record as a *miss*), that
+  options never contain visual duplicates after diacritics are stripped, and
+  that Arabic is rendered at the diacritic level of the level that taught it.
+- **SRS scheduling, backup round-trip, and glossary search folding.**
+
 ### Generating exercises
 
 ```bash
@@ -514,8 +542,8 @@ levels" — it's validation and polish:
   design, not merely deferred); full numbers 3–19 gender-polarity
   agreement; the dual beyond its light nominative form; أَنْتُنَّ and the
   remaining object-pronoun suffixes (-كِ, -كُمْ, -هُنَّ).
-- **Lower-priority polish**: PWA/offline support, an automated test
-  suite (everything is currently manually/browser-verified per session),
-  a real accessibility audit (screen reader + keyboard-only nav), true
-  pronunciation scoring (today's speaking exercises are reference-audio
-  self-check only).
+- **Lower-priority polish**: PWA/offline support, true pronunciation
+  scoring (today's speaking exercises are reference-audio self-check
+  only), and a fuller accessibility audit — exercise results are now
+  announced and Arabic is tagged `lang="ar"`, but nothing has been tested
+  against a real screen reader end to end.
