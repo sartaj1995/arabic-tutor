@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { levels, scoreableExercises } from "../lib/content";
+import { unitTheme } from "../lib/units";
 import { db, type LevelProgress } from "../lib/db";
 import { useHasArabicVoice } from "../lib/speech";
 import ArabicText from "../components/ArabicText";
@@ -8,22 +9,6 @@ import LevelIcon from "../components/LevelIcon";
 
 const TOTAL_PLANNED_LEVELS = 100;
 
-// Every batch of 10 levels is authored around one theme — naming the group
-// makes the level list read like a curriculum's table of contents instead
-// of a flat checklist. Units beyond what's named here (as more levels get
-// authored) fall back to a generic "Unit N" label rather than crashing.
-const UNIT_THEMES: { title: string; arabic: string }[] = [
-  { title: "Foundations", arabic: "الأساسيات" },
-  { title: "Verbs & Grammar", arabic: "الأفعال" },
-  { title: "Past Tense & Plurals", arabic: "الماضي" },
-  { title: "Everyday Structures", arabic: "الحياة اليومية" },
-  { title: "Real-World Arabic", arabic: "الحياة العملية" },
-  { title: "Complex Sentences", arabic: "الجمل المركبة" },
-  { title: "Daily Life Expanded", arabic: "الحياة اليومية الموسعة" },
-  { title: "Practical Fluency", arabic: "الطلاقة العملية" },
-  { title: "Everyday Fluency", arabic: "الطلاقة اليومية" },
-  { title: "Graduation", arabic: "التخرج" },
-];
 
 function CheckIcon() {
   return (
@@ -198,7 +183,7 @@ export default function LevelList() {
       </p>
 
       {units.map((unitLevels, unitIndex) => {
-        const theme = UNIT_THEMES[unitIndex] ?? { title: `Unit ${unitIndex + 1}`, arabic: "" };
+        const theme = unitTheme(unitIndex);
         const unitCompleted = unitLevels.filter(isComplete).length;
         const unitPercent = Math.round((unitCompleted / unitLevels.length) * 100);
         const unitComplete = unitCompleted === unitLevels.length;

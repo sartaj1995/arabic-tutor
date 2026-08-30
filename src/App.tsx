@@ -4,6 +4,7 @@ import LevelList from "./pages/LevelList";
 import LevelDetail from "./pages/LevelDetail";
 import Review from "./pages/Review";
 import Progress from "./pages/Progress";
+import Glossary from "./pages/Glossary";
 import { computeProgressStats } from "./lib/progress";
 
 function ChartIcon() {
@@ -14,6 +15,19 @@ function ChartIcon() {
         stroke="currentColor"
         strokeWidth="1.8"
         strokeLinecap="round"
+      />
+    </svg>
+  );
+}
+
+function BookIcon() {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path
+        d="M4 4.8c1.5-.8 3.4-1 5-.3 1 .4 1.4.9 1.4 1.4v9.5c0-.5-.4-1-1.4-1.4-1.6-.7-3.5-.5-5 .3V4.8ZM16 4.8c-1.5-.8-3.4-1-5-.3-1 .4-1.4.9-1.4 1.4v9.5c0-.5.4-1 1.4-1.4 1.6-.7 3.5-.5 5 .3V4.8Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -63,6 +77,10 @@ export default function App() {
             </span>
           )}
           <nav className="app-nav">
+            <Link to="/glossary" className="app-nav-link">
+              <BookIcon />
+              Glossary
+            </Link>
             <Link to="/progress" className="app-nav-link">
               <ChartIcon />
               Progress
@@ -75,6 +93,7 @@ export default function App() {
           <Route path="/" element={<LevelList />} />
           <Route path="/review" element={<Review />} />
           <Route path="/progress" element={<Progress />} />
+          <Route path="/glossary" element={<Glossary />} />
           <Route path="/level/:number" element={<LevelDetail />} />
         </Routes>
       </main>
