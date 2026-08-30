@@ -12,3 +12,13 @@ export function stripDiacritics(text: string): string {
 export function normalizeArabic(text: string): string {
   return stripDiacritics(text).trim().replace(/\s+/g, " ");
 }
+
+/**
+ * Whether a string contains Arabic script, used to tag elements with
+ * lang="ar" so screen readers switch to an Arabic voice instead of reading
+ * the letters through an English one. Exercise options and answers are
+ * wholly one language or the other, so a simple presence check is enough.
+ */
+export function containsArabic(text: string): boolean {
+  return /[؀-ۿ]/.test(text);
+}
