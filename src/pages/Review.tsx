@@ -4,10 +4,19 @@ import { db } from "../lib/db";
 import type { Exercise, SRSItemState } from "../types/content";
 import { applyReview } from "../lib/srs";
 import { buildReviewExercise } from "../lib/reviewExercise";
+import { allLetters, allVocab, allPatterns } from "../lib/content";
 import { shuffle } from "../lib/random";
 import ExerciseCard, { type AnswerResult } from "../components/ExerciseCard";
 
 const SESSION_CAP = 20;
+
+// Maps a content item id to the Arabic its audio button should speak. Built
+// across every level (not just one, as LevelDetail does) since a review
+// session can pull an item from anywhere in the curriculum.
+const audioTextIndex: Record<string, string> = {};
+for (const letter of allLetters) audioTextIndex[letter.id] = letter.audio.text;
+for (const word of allVocab) audioTextIndex[word.id] = word.audio.text;
+for (const pattern of allPatterns) audioTextIndex[pattern.id] = pattern.audio.text;
 
 export default function Review() {
   const [loading, setLoading] = useState(true);
@@ -91,6 +100,7 @@ export default function Review() {
           <ExerciseCard
             key={exercise.id}
             exercise={exercise}
+            audioIndex={audioTextIndex}
             onAnswer={(result) => handleAnswer(due, exercise.id, result)}
           />
         ))}
