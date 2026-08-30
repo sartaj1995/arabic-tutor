@@ -1151,6 +1151,195 @@ a.hero-stat.is-review:hover {
   color: var(--text-muted);
 }
 
+/* --- Glossary -------------------------------------------------------- */
+
+.glossary-page h2 {
+  margin: 0.75rem 0 0.5rem;
+}
+
+.glossary-intro {
+  color: var(--text-muted);
+  margin: 0 0 1.25rem;
+  max-width: 62ch;
+  line-height: 1.5;
+}
+
+.glossary-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.glossary-search {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+
+.glossary-search input,
+.glossary-select select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.glossary-search input:focus-visible,
+.glossary-select select:focus-visible,
+.tag-chip:focus-visible,
+.link-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.glossary-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.tag-chip {
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.tag-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tag-chip.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 600;
+}
+
+.glossary-count {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem;
+}
+
+.glossary-empty {
+  color: var(--text-muted);
+}
+
+.link-btn {
+  border: none;
+  background: none;
+  padding: 0;
+  color: var(--accent);
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.glossary-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.glossary-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.6fr) auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.glossary-row:last-child {
+  border-bottom: none;
+}
+
+.glossary-arabic-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.glossary-arabic {
+  font-size: 1.25rem;
+}
+
+.glossary-gloss-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.glossary-english {
+  font-size: 0.92rem;
+}
+
+.glossary-translit {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.glossary-detail {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.glossary-meta-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  white-space: nowrap;
+}
+
+.glossary-kind {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: var(--surface-alt);
+  color: var(--text-muted);
+}
+
+.glossary-kind.kind-letter {
+  background: var(--gold-soft);
+  color: #7a5a15;
+}
+
+.glossary-kind.kind-pattern {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.glossary-level-link {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.glossary-level-link:hover {
+  color: var(--accent);
+}
+
 /* Exercise controls previously fell back to the browser's default focus ring
    while the level cards and unit headers had explicit ones, so keyboard focus
    changed appearance depending on where you were. Matches the accent ring used
@@ -1190,5 +1379,32 @@ a.hero-stat.is-review:hover {
     grid-template-columns: 1fr;
     gap: 0.2rem;
     padding: 0.75rem 1rem;
+  }
+
+  /* Same reasoning as .vocab-row: three columns leaves too little per cell
+     once a gloss or an example sentence has to fit. */
+  .glossary-row {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+
+  /* Wrapped, the 22 tags take six rows and push the results off-screen. One
+     swipeable row keeps them reachable without burying what they filter.
+     Scrolls inside itself, so the page never scrolls sideways. */
+  .glossary-tags {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    scrollbar-width: thin;
+  }
+
+  .tag-chip {
+    flex: 0 0 auto;
+  }
+
+  .glossary-meta-cell {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
   }
 }
