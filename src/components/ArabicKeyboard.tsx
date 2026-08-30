@@ -23,14 +23,26 @@ export default function ArabicKeyboard({ onInsert, onBackspace }: ArabicKeyboard
     <div className="arabic-keyboard">
       <div className="keyboard-row">
         {LETTERS.map((ch) => (
-          <button key={ch} type="button" className="key-btn" onClick={() => onInsert(ch)}>
+          <button
+            key={ch}
+            type="button"
+            lang="ar"
+            className="key-btn"
+            onClick={() => onInsert(ch)}
+          >
             {ch}
           </button>
         ))}
       </div>
       <div className="keyboard-row">
         {EXTRA.map((ch) => (
-          <button key={ch} type="button" className="key-btn" onClick={() => onInsert(ch)}>
+          <button
+            key={ch}
+            type="button"
+            lang="ar"
+            className="key-btn"
+            onClick={() => onInsert(ch)}
+          >
             {ch}
           </button>
         ))}

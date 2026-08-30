@@ -1,10 +1,39 @@
 import { useState } from "react";
 import type { Exercise } from "../types/content";
-import { normalizeArabic } from "../lib/arabic";
+import { containsArabic, normalizeArabic } from "../lib/arabic";
 import PlayAudioButton from "./PlayAudioButton";
 import ArabicKeyboard from "./ArabicKeyboard";
 
 export type AnswerResult = "correct" | "incorrect" | "unscored";
+
+/** Tags Arabic strings so assistive tech reads them with an Arabic voice. */
+function langOf(text: string): "ar" | undefined {
+  return containsArabic(text) ? "ar" : undefined;
+}
+
+/**
+ * Answer feedback, announced to screen readers. role="status" carries an
+ * implicit aria-live="polite", so the result is read out without interrupting
+ * whatever the user is currently hearing.
+ */
+function Feedback({ correct, answer }: { correct: boolean; answer?: string }) {
+  return (
+    <p className={`feedback ${correct ? "correct" : "incorrect"}`} role="status">
+      {correct ? (
+        "Correct!"
+      ) : answer ? (
+        <>
+          Not quite — correct answer:{" "}
+          <span dir="auto" lang={langOf(answer)} className="arabic">
+            {answer}
+          </span>
+        </>
+      ) : (
+        "Not quite."
+      )}
+    </p>
+  );
+}
 
 interface ExerciseCardProps {
   exercise: Exercise;
@@ -57,28 +86,36 @@ function ChoiceExercise({ exercise, onAnswer }: ExerciseCardProps) {
   }
 
   return (
-    <ul className="exercise-options">
-      {exercise.options!.map((option) => {
-        let stateClass = "";
-        if (selected) {
-          if (option === exercise.answer) stateClass = "correct";
-          else if (option === selected) stateClass = "incorrect";
-        }
-        return (
-          <li key={option}>
-            <button
-              type="button"
-              dir="auto"
-              className={`option-btn ${stateClass}`}
-              onClick={() => handleSelect(option)}
-              disabled={!!selected}
-            >
-              {option}
-            </button>
-          </li>
-        );
-      })}
-    </ul>
+    <>
+      <ul className="exercise-options">
+        {exercise.options!.map((option) => {
+          let stateClass = "";
+          if (selected) {
+            if (option === exercise.answer) stateClass = "correct";
+            else if (option === selected) stateClass = "incorrect";
+          }
+          return (
+            <li key={option}>
+              <button
+                type="button"
+                dir="auto"
+                lang={langOf(option)}
+                className={`option-btn ${stateClass}`}
+                onClick={() => handleSelect(option)}
+                disabled={!!selected}
+              >
+                {option}
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+      {/* Until this existed, answering a multiple-choice question changed
+          nothing but a CSS class: the result was conveyed by colour alone, so
+          screen reader users got no signal at all and colour-blind users got
+          only a faint tint. */}
+      {selected && <Feedback correct={selected === exercise.answer} answer={exercise.answer} />}
+    </>
   );
 }
 
@@ -143,13 +180,13 @@ function SentenceBuildExercise({ exercise, onAnswer }: ExerciseCardProps) {
           Check
         </button>
       ) : (
-        <p className={`feedback ${status}`}>
+        <p className={`feedback ${status}`} role="status">
           {status === "correct" ? (
             "Correct!"
           ) : (
             <>
               Not quite — correct order:{" "}
-              <span dir="rtl" className="arabic">
+              <span dir="rtl" lang="ar" className="arabic">
                 {exercise.answer}
               </span>
             </>
@@ -199,18 +236,7 @@ function TypingExercise({ exercise, onAnswer }: ExerciseCardProps) {
         />
       )}
       {status !== "unanswered" && (
-        <p className={`feedback ${status}`}>
-          {status === "correct" ? (
-            "Correct!"
-          ) : (
-            <>
-              Not quite — correct answer:{" "}
-              <span dir="rtl" className="arabic">
-                {exercise.answer}
-              </span>
-            </>
-          )}
-        </p>
+        <Feedback correct={status === "correct"} answer={exercise.answer} />
       )}
     </div>
   );
