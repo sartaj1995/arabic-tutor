@@ -2,7 +2,7 @@
   "number": 45,
   "title": "Body Parts",
   "newLetters": [],
-  "newVocab": ["raas", "yad", "ayn", "udhun", "fam"],
+  "newVocab": ["raas", "yad", "ayn-eye", "udhun", "fam"],
   "newPatterns": ["body-part-agreement"],
   "diacriticsLevel": "none",
   "letters": [],
@@ -30,7 +30,7 @@
       "tags": ["core", "grammar"]
     },
     {
-      "id": "ayn",
+      "id": "ayn-eye",
       "arabic": "عَيْنٌ",
       "arabicNoDiacritics": "عين",
       "transliteration": "ʿaynun",
@@ -100,7 +100,7 @@
     {
       "id": "l45-ex3",
       "type": "matching",
-      "refIds": ["yad", "ayn", "udhun", "fam"],
+      "refIds": ["yad", "ayn-eye", "udhun", "fam"],
       "prompt": "Match the body part to its meaning: عَيْن",
       "options": ["an eye", "a hand", "an ear", "a mouth"],
       "answer": "an eye"
@@ -160,7 +160,7 @@
     {
       "id": "l45-ex11",
       "type": "speaking",
-      "refIds": ["ayn"],
+      "refIds": ["ayn-eye"],
       "prompt": "Practice saying 'عين' (an eye) out loud.",
       "answer": "عين"
     },

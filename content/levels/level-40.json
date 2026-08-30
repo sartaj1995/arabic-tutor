@@ -59,7 +59,7 @@
     {
       "id": "l40-ex4",
       "type": "multiple-choice",
-      "refIds": ["lam"],
+      "refIds": ["lam-particle"],
       "prompt": "Review: what does 'لم' do?",
       "options": [
         "negates a verb in the past ('did not')",

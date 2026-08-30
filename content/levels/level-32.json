@@ -2,16 +2,16 @@
   "number": 32,
   "title": "Negating the Past and Future",
   "newLetters": [],
-  "newVocab": ["lam", "lan"],
+  "newVocab": ["lam-particle", "lan"],
   "newPatterns": ["lam-negation", "lan-negation"],
   "diacriticsLevel": "none",
   "letters": [],
   "vocab": [
     {
-      "id": "lam",
+      "id": "lam-particle",
       "arabic": "لَمْ",
       "arabicNoDiacritics": "لم",
-      "transliteration": "lam",
+      "transliteration": "lam-particle",
       "english": "[negates a verb in the past — 'did not']",
       "partOfSpeech": "particle",
       "audio": { "id": "word_lam", "text": "لَمْ" },
@@ -56,7 +56,7 @@
     {
       "id": "l32-ex1",
       "type": "multiple-choice",
-      "refIds": ["lam"],
+      "refIds": ["lam-particle"],
       "prompt": "What does 'لم' do?",
       "options": [
         "negates a verb in the past ('did not')",
@@ -69,7 +69,7 @@
     {
       "id": "l32-ex2",
       "type": "sentence-build",
-      "refIds": ["lam", "adhhabu", "madrasa", "amsi", "lam-negation"],
+      "refIds": ["lam-particle", "adhhabu", "madrasa", "amsi", "lam-negation"],
       "prompt": "Arrange the tiles to say 'I did not go to school yesterday.'",
       "options": ["لم", "أذهب", "إلى", "المدرسة", "أمس"],
       "answer": "لم أذهب إلى المدرسة أمس"
@@ -103,7 +103,7 @@
     {
       "id": "l32-ex5",
       "type": "multiple-choice",
-      "refIds": ["lam"],
+      "refIds": ["lam-particle"],
       "prompt": "What does 'لم' mean?",
       "options": ["he wants", "he drank", "three", "[negates a verb in the past — 'did not']"],
       "answer": "[negates a verb in the past — 'did not']"
@@ -111,7 +111,7 @@
     {
       "id": "l32-ex6",
       "type": "multiple-choice",
-      "refIds": ["lam"],
+      "refIds": ["lam-particle"],
       "prompt": "Which word means '[negates a verb in the past — 'did not']'?",
       "options": ["أنت", "لم", "ذهبنا", "هي"],
       "answer": "لم"
@@ -134,7 +134,7 @@
     {
       "id": "l32-ex9",
       "type": "speaking",
-      "refIds": ["lam"],
+      "refIds": ["lam-particle"],
       "prompt": "Practice saying 'لم' ([negates a verb in the past — 'did not']) out loud.",
       "answer": "لم"
     },
