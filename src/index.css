@@ -64,35 +64,86 @@ h3 {
   text-decoration: none;
 }
 
+/* The two links previously had no separator of any kind: .app-nav carried no
+   rule, so JSX's collapsed whitespace left them touching and "Glossary" ran
+   straight into the Progress icon. Each is now a bounded pill with its own
+   hit area, well past the 8px minimum gap between adjacent targets. */
+.app-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .app-nav-link {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  min-height: 2.25rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--accent);
   text-decoration: none;
+  transition: background-color 160ms ease-out, border-color 160ms ease-out,
+    color 160ms ease-out;
 }
 
 .app-nav-link svg {
   width: 1.05rem;
   height: 1.05rem;
+  flex-shrink: 0;
 }
 
 .app-nav-link:hover {
+  background: var(--accent-soft);
+  border-color: var(--accent-soft);
   color: var(--accent-dark);
+}
+
+.app-nav-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Without this there was no way to tell which section you were already in. */
+.app-nav-link.is-active {
+  background: var(--accent-soft);
+  border-color: var(--border);
+  color: var(--accent-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-nav-link {
+    transition: none;
+  }
 }
 
 .app-header-right {
   display: flex;
   align-items: center;
-  gap: 1.1rem;
+  gap: 0.9rem;
+}
+
+/* Progress status on one side of a hairline, navigation on the other. */
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding-right: 0.9rem;
+  border-right: 1px solid var(--border);
+}
+
+.header-meta:empty {
+  display: none;
 }
 
 .header-level-indicator {
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .header-streak {
@@ -1196,14 +1247,116 @@ a.hero-stat.is-review:hover {
   outline-offset: 2px;
 }
 
+/* Two filter levels, visually ranked. "Type" answers what an entry *is* and
+   every entry has one, so it gets the heavier segmented treatment and sits
+   first; "Topic" only refines vocabulary, so it reads as a lighter row of
+   chips indented under the same label column. */
+.glossary-facet {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin-bottom: 0.6rem;
+}
+
+.facet-label {
+  flex: 0 0 3.1rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding-top: 0.35rem;
+}
+
+/* The secondary row's label is deliberately quieter than the primary one. */
+.glossary-facet.is-secondary .facet-label {
+  font-weight: 600;
+  opacity: 0.75;
+}
+
+.kind-segment {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-alt);
+}
+
+.kind-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.25rem;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 160ms ease-out, color 160ms ease-out;
+}
+
+.kind-btn:hover {
+  color: var(--accent);
+}
+
+/* Solid accent, so the primary filter is the loudest control on the page.
+   The topic chips below use the soft tint instead — same hue, one rank down,
+   which is how the two levels stay legible as a hierarchy at a glance. */
+.kind-btn.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 1px 2px rgba(36, 27, 20, 0.12);
+}
+
+/* Tabular figures so the counts don't jitter the buttons sideways as the
+   search box narrows the results. */
+.kind-btn-count {
+  font-size: 0.74rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+
+.kind-btn.is-active .kind-btn-count {
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.kind-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kind-btn {
+    transition: none;
+  }
+}
+
+.facet-note {
+  margin: 0 0 0.75rem;
+  padding-left: 3.8rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
 .glossary-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.35rem;
-  margin-bottom: 0.75rem;
 }
 
 .tag-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.9rem;
   padding: 0.25rem 0.7rem;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -1220,9 +1373,9 @@ a.hero-stat.is-review:hover {
 }
 
 .tag-chip.is-active {
-  background: var(--accent);
+  background: var(--accent-soft);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--accent-dark);
   font-weight: 600;
 }
 
@@ -1360,8 +1513,28 @@ a.hero-stat.is-review:hover {
    this block only reclaims horizontal space that fixed padding was eating
    and restacks the one genuinely fixed-column table. */
 @media (max-width: 600px) {
+  /* Title + status + two nav pills is ~415px of content, so below 600px the
+     header wraps to a second row rather than scrolling the page sideways.
+     The right-hand group keeps its right alignment when it drops down. */
   .app-header {
-    padding: 1rem;
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+    gap: 0.4rem 0.75rem;
+  }
+
+  .app-header-right {
+    margin-left: auto;
+    gap: 0.7rem;
+  }
+
+  .header-meta {
+    gap: 0.7rem;
+    padding-right: 0.7rem;
+  }
+
+  /* Full 44px touch target where the pointer is a finger. */
+  .app-nav-link {
+    min-height: 2.75rem;
   }
 
   .app-main {
@@ -1386,6 +1559,35 @@ a.hero-stat.is-review:hover {
   .glossary-row {
     grid-template-columns: 1fr;
     gap: 0.3rem;
+  }
+
+  /* Label above its controls rather than beside them: a 3.1rem label column
+     plus chips leaves too little room per row at phone widths. */
+  .glossary-facet {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.3rem;
+  }
+
+  .facet-label {
+    flex: none;
+    padding-top: 0;
+  }
+
+  .facet-note {
+    padding-left: 0;
+  }
+
+  /* Four type buttons at ~90px each overflow 343px, so this row scrolls
+     inside itself — the page never scrolls sideways. */
+  .kind-segment {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .kind-btn {
+    flex: 0 0 auto;
   }
 
   /* Wrapped, the 22 tags take six rows and push the results off-screen. One

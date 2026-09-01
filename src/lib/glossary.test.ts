@@ -1,5 +1,11 @@
 import { describe, expect, it } from "vitest";
-import { filterGlossary, foldLatin, glossaryEntries, glossaryTags } from "./glossary";
+import {
+  filterGlossary,
+  foldLatin,
+  glossaryEntries,
+  glossaryKindCounts,
+  glossaryTags,
+} from "./glossary";
 import { allLetters, allVocab, allPatterns } from "./content";
 
 describe("foldLatin", () => {
@@ -52,7 +58,7 @@ describe("glossary entries", () => {
 });
 
 describe("filterGlossary", () => {
-  const noFilters = { query: "", unitIndex: null, tag: null };
+  const noFilters = { query: "", kind: null, unitIndex: null, tag: null };
 
   it("returns everything when nothing is set", () => {
     expect(filterGlossary(noFilters)).toHaveLength(glossaryEntries.length);
@@ -104,7 +110,7 @@ describe("filterGlossary", () => {
   });
 
   it("composes filters", () => {
-    const combined = filterGlossary({ query: "", unitIndex: 9, tag: "verb" });
+    const combined = filterGlossary({ query: "", kind: null, unitIndex: 9, tag: "verb" });
     for (const entry of combined) {
       expect(entry.kind).toBe("vocab");
       expect(entry.tags).toContain("verb");
@@ -114,5 +120,33 @@ describe("filterGlossary", () => {
 
   it("returns nothing for a query that matches nothing", () => {
     expect(filterGlossary({ ...noFilters, query: "zzzznomatch" })).toEqual([]);
+  });
+
+  it("narrows to one kind, and the kinds partition the whole glossary", () => {
+    // The primary filter has to be exhaustive: every entry belongs to exactly
+    // one of the three buttons, or "All" would show more than they sum to.
+    let total = 0;
+    for (const kind of ["letter", "vocab", "pattern"] as const) {
+      const only = filterGlossary({ ...noFilters, kind });
+      expect(only.length, kind).toBe(glossaryKindCounts[kind]);
+      for (const entry of only) expect(entry.kind).toBe(kind);
+      total += only.length;
+    }
+    expect(total).toBe(glossaryEntries.length);
+  });
+
+  it("composes the kind filter with the others", () => {
+    const patterns = filterGlossary({ ...noFilters, kind: "pattern", unitIndex: 0 });
+    expect(patterns.length).toBeGreaterThan(0);
+    for (const entry of patterns) {
+      expect(entry.kind).toBe("pattern");
+      expect(entry.level).toBeLessThanOrEqual(10);
+    }
+  });
+
+  it("yields nothing when a tag is combined with a kind that carries no tags", () => {
+    // The page prevents this pairing by clearing the tag when a non-word kind
+    // is chosen; the filter itself still has to answer it honestly.
+    expect(filterGlossary({ ...noFilters, kind: "letter", tag: "food" })).toEqual([]);
   });
 });

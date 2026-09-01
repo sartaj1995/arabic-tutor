@@ -37,7 +37,8 @@ export function foldLatin(text: string): string {
 
 // Letters and patterns carry no tags in the content model — only vocab does —
 // so a tag filter necessarily narrows to vocabulary. That's the honest
-// behaviour rather than inventing tags the content doesn't have.
+// behaviour rather than inventing tags the content doesn't have, and it's why
+// `kind` is the primary filter and `tag` a second level nested under it.
 const entries: GlossaryEntry[] = [
   ...allLetters.map<GlossaryEntry>((l) => ({
     id: l.id,
@@ -93,8 +94,27 @@ export const glossaryTags: string[] = (() => {
   return [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).map(([t]) => t);
 })();
 
+/**
+ * How many entries of each kind exist in total. The glossary's primary filter
+ * shows these so "Patterns" reads as a real slice of the course rather than a
+ * label that might match nothing.
+ */
+export const glossaryKindCounts: Record<GlossaryKind, number> = glossaryEntries.reduce(
+  (counts, entry) => {
+    counts[entry.kind] += 1;
+    return counts;
+  },
+  { letter: 0, vocab: 0, pattern: 0 } as Record<GlossaryKind, number>,
+);
+
 export interface GlossaryFilters {
   query: string;
+  /**
+   * letter / vocab / pattern, or null for every kind. The primary axis: it
+   * splits the course by what a thing *is*, which is the first question a
+   * learner has. `tag` is the secondary axis within it.
+   */
+  kind: GlossaryKind | null;
   /** 0-based unit index, or null for every level. */
   unitIndex: number | null;
   tag: string | null;
@@ -105,6 +125,7 @@ export function filterGlossary(filters: GlossaryFilters): GlossaryEntry[] {
   const terms = needle ? needle.split(/\s+/) : [];
 
   return glossaryEntries.filter((entry) => {
+    if (filters.kind && entry.kind !== filters.kind) return false;
     if (filters.tag && !entry.tags.includes(filters.tag)) return false;
     if (filters.unitIndex !== null) {
       const first = filters.unitIndex * 10 + 1;
