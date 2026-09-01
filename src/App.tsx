@@ -48,6 +48,7 @@ function FlameIcon() {
 
 export default function App() {
   const location = useLocation();
+  const isCurrent = (path: string) => location.pathname === path;
   const [streakDays, setStreakDays] = useState<number | null>(null);
   const [completedCount, setCompletedCount] = useState<number | null>(null);
 
@@ -65,23 +66,37 @@ export default function App() {
           Arabic Tutor
         </Link>
         <div className="app-header-right">
-          {completedCount !== null && (
-            <span className="header-level-indicator">
-              Level {Math.min(completedCount + 1, 100)} of 100
-            </span>
-          )}
-          {streakDays !== null && streakDays > 0 && (
-            <span className="header-streak">
-              <FlameIcon />
-              {streakDays}
-            </span>
-          )}
-          <nav className="app-nav">
-            <Link to="/glossary" className="app-nav-link">
+          {/* Status and navigation are two different kinds of thing, so they
+              read as two groups separated by a rule rather than one run of
+              text the eye has to parse apart. */}
+          <div className="header-meta">
+            {completedCount !== null && (
+              <span className="header-level-indicator">
+                Level {Math.min(completedCount + 1, 100)} of 100
+              </span>
+            )}
+            {streakDays !== null && streakDays > 0 && (
+              <span className="header-streak" title={`${streakDays}-day streak`}>
+                <FlameIcon />
+                <span aria-hidden="true">{streakDays}</span>
+                <span className="visually-hidden">{streakDays}-day streak</span>
+              </span>
+            )}
+          </div>
+          <nav className="app-nav" aria-label="Sections">
+            <Link
+              to="/glossary"
+              className={`app-nav-link${isCurrent("/glossary") ? " is-active" : ""}`}
+              aria-current={isCurrent("/glossary") ? "page" : undefined}
+            >
               <BookIcon />
               Glossary
             </Link>
-            <Link to="/progress" className="app-nav-link">
+            <Link
+              to="/progress"
+              className={`app-nav-link${isCurrent("/progress") ? " is-active" : ""}`}
+              aria-current={isCurrent("/progress") ? "page" : undefined}
+            >
               <ChartIcon />
               Progress
             </Link>

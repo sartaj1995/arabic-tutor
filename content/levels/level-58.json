@@ -1,9 +1,22 @@
 {
   "number": 58,
-  "title": "Food & Restaurant Vocabulary",
+  "title": "Food, Meals & Restaurant",
   "newLetters": [],
-  "newVocab": ["matam", "taam", "lahm", "samak", "aruzz", "jaaia"],
-  "newPatterns": ["hungry-want-food"],
+  "newVocab": [
+    "matam",
+    "taam",
+    "lahm",
+    "samak",
+    "dajaaj",
+    "aruzz",
+    "khudaar",
+    "faakiha",
+    "fatuur",
+    "ghadaa",
+    "ashaa",
+    "jaaia"
+  ],
+  "newPatterns": ["hungry-want-food", "eat-meal"],
   "diacriticsLevel": "none",
   "letters": [],
   "vocab": [
@@ -63,6 +76,72 @@
       "tags": ["food"]
     },
     {
+      "id": "dajaaj",
+      "arabic": "دَجَاجٌ",
+      "arabicNoDiacritics": "دجاج",
+      "transliteration": "dajājun",
+      "english": "chicken",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_dajaaj", "text": "دَجَاجٌ" },
+      "introducedInLevel": 58,
+      "tags": ["food"]
+    },
+    {
+      "id": "khudaar",
+      "arabic": "خُضَارٌ",
+      "arabicNoDiacritics": "خضار",
+      "transliteration": "khuḍārun",
+      "english": "vegetables",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_khudaar", "text": "خُضَارٌ" },
+      "introducedInLevel": 58,
+      "tags": ["food"]
+    },
+    {
+      "id": "faakiha",
+      "arabic": "فَاكِهَةٌ",
+      "arabicNoDiacritics": "فاكهة",
+      "transliteration": "fākihatun",
+      "english": "fruit",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_faakiha", "text": "فَاكِهَةٌ" },
+      "introducedInLevel": 58,
+      "tags": ["food"]
+    },
+    {
+      "id": "fatuur",
+      "arabic": "فَطُورٌ",
+      "arabicNoDiacritics": "فطور",
+      "transliteration": "faṭūrun",
+      "english": "breakfast",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_fatuur", "text": "فَطُورٌ" },
+      "introducedInLevel": 58,
+      "tags": ["core", "food"]
+    },
+    {
+      "id": "ghadaa",
+      "arabic": "غَدَاءٌ",
+      "arabicNoDiacritics": "غداء",
+      "transliteration": "ghadāʾun",
+      "english": "lunch",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_ghadaa", "text": "غَدَاءٌ" },
+      "introducedInLevel": 58,
+      "tags": ["core", "food"]
+    },
+    {
+      "id": "ashaa",
+      "arabic": "عَشَاءٌ",
+      "arabicNoDiacritics": "عشاء",
+      "transliteration": "ʿashāʾun",
+      "english": "dinner",
+      "partOfSpeech": "noun",
+      "audio": { "id": "word_ashaa", "text": "عَشَاءٌ" },
+      "introducedInLevel": 58,
+      "tags": ["core", "food"]
+    },
+    {
       "id": "jaaia",
       "arabic": "جَائِع",
       "arabicNoDiacritics": "جائع",
@@ -83,6 +162,19 @@
       "exampleEnglish": "I am hungry and I want food.",
       "grammarNote": "Nothing new grammatically here — جَائِع ('hungry') is a plain equational sentence like سَعِيد/حَزِين (levels 7 and 49): أَنَا + adjective, no verb 'to be' needed. أُرِيدُ ('I want', level 15) still takes its object directly, no preposition. This level is otherwise vocabulary-only: مَطْعَم ('restaurant'), لَحْم ('meat'), سَمَك ('fish'), and أُرُزّ ('rice') to build your own food sentences with.",
       "audio": { "id": "phrase_ana_jaaia_wa_ureedu_taaman", "text": "أنا جائع وأريد طعاما" },
+      "introducedInLevel": 58
+    },
+    {
+      "id": "eat-meal",
+      "pattern": "آكُلُ + [Meal] + فِي + [Place]",
+      "exampleArabic": "آكل الغداء في المطعم",
+      "exampleTransliteration": "ākulu l-ghadāʾa fī l-maṭʿam",
+      "exampleEnglish": "I eat lunch at the restaurant.",
+      "grammarNote": "The three meals — فَطُور (breakfast), غَدَاء (lunch) and عَشَاء (dinner) — are ordinary nouns, so they need no new grammar: drop one straight into the eating verb from level 25. آكُلُ + [meal] is the whole pattern. Arabic takes the definite article الـ where English uses none, so it is الغداء (literally \"the lunch\") for the meal you actually ate today. فِي (level 5) then says where. Swap in الفطور or العشاء for the other two meals, and دجاجًا or خضارًا for what was on the plate.",
+      "audio": {
+        "id": "phrase_aakulu_alghadaa_fi_almatam",
+        "text": "آكل الغداء في المطعم"
+      },
       "introducedInLevel": 58
     }
   ],
@@ -222,6 +314,134 @@
       "refIds": ["jaaia"],
       "prompt": "Practice saying 'جائع' (hungry) out loud.",
       "answer": "جائع"
+    },
+    {
+      "id": "l58-ex19",
+      "type": "multiple-choice",
+      "refIds": ["dajaaj"],
+      "prompt": "What does 'دجاج' mean?",
+      "options": ["chicken", "meat", "fish", "rice"],
+      "answer": "chicken"
+    },
+    {
+      "id": "l58-ex20",
+      "type": "multiple-choice",
+      "refIds": ["fatuur", "ghadaa", "ashaa"],
+      "prompt": "Which of these is the evening meal?",
+      "options": ["عشاء", "فطور", "غداء", "طعام"],
+      "answer": "عشاء"
+    },
+    {
+      "id": "l58-ex21",
+      "type": "sentence-build",
+      "refIds": ["aakulu", "ghadaa", "fi", "matam", "eat-meal"],
+      "prompt": "Arrange the tiles to say 'I eat lunch at the restaurant.'",
+      "options": ["آكل", "الغداء", "في", "المطعم"],
+      "answer": "آكل الغداء في المطعم"
+    },
+    {
+      "id": "l58-ex22",
+      "type": "multiple-choice",
+      "refIds": ["khudaar"],
+      "prompt": "What does 'خضار' mean?",
+      "options": ["sad", "this (fem.)", "fourteen", "vegetables"],
+      "answer": "vegetables"
+    },
+    {
+      "id": "l58-ex23",
+      "type": "multiple-choice",
+      "refIds": ["khudaar"],
+      "prompt": "Which word means 'vegetables'?",
+      "options": ["خضار", "مدرسة", "تقرئين", "إذا"],
+      "answer": "خضار"
+    },
+    {
+      "id": "l58-ex24",
+      "type": "multiple-choice",
+      "refIds": ["faakiha"],
+      "prompt": "What does 'فاكهة' mean?",
+      "options": ["we write", "fruit", "we drink", "your house (masc.)"],
+      "answer": "fruit"
+    },
+    {
+      "id": "l58-ex25",
+      "type": "typing",
+      "refIds": ["faakiha"],
+      "prompt": "Type the Arabic word for 'fruit'.",
+      "answer": "فاكهة"
+    },
+    {
+      "id": "l58-ex26",
+      "type": "multiple-choice",
+      "refIds": ["fatuur"],
+      "prompt": "What does 'فطور' mean?",
+      "options": ["teachers (fem.)", "you (fem.) study", "we ate", "breakfast"],
+      "answer": "breakfast"
+    },
+    {
+      "id": "l58-ex27",
+      "type": "multiple-choice",
+      "refIds": ["fatuur"],
+      "prompt": "Which word means 'breakfast'?",
+      "options": ["إلى", "فطور", "كتاب", "ذهب"],
+      "answer": "فطور"
+    },
+    {
+      "id": "l58-ex28",
+      "type": "multiple-choice",
+      "refIds": ["ghadaa"],
+      "prompt": "What does 'غداء' mean?",
+      "options": ["boy / son", "how", "lunch", "you (fem.) drink"],
+      "answer": "lunch"
+    },
+    {
+      "id": "l58-ex29",
+      "type": "typing",
+      "refIds": ["ghadaa"],
+      "prompt": "Type the Arabic word for 'lunch'.",
+      "answer": "غداء"
+    },
+    {
+      "id": "l58-ex30",
+      "type": "speaking",
+      "refIds": ["dajaaj"],
+      "prompt": "Practice saying 'دجاج' (chicken) out loud.",
+      "answer": "دجاج"
+    },
+    {
+      "id": "l58-ex31",
+      "type": "speaking",
+      "refIds": ["khudaar"],
+      "prompt": "Practice saying 'خضار' (vegetables) out loud.",
+      "answer": "خضار"
+    },
+    {
+      "id": "l58-ex32",
+      "type": "speaking",
+      "refIds": ["faakiha"],
+      "prompt": "Practice saying 'فاكهة' (fruit) out loud.",
+      "answer": "فاكهة"
+    },
+    {
+      "id": "l58-ex33",
+      "type": "speaking",
+      "refIds": ["fatuur"],
+      "prompt": "Practice saying 'فطور' (breakfast) out loud.",
+      "answer": "فطور"
+    },
+    {
+      "id": "l58-ex34",
+      "type": "speaking",
+      "refIds": ["ghadaa"],
+      "prompt": "Practice saying 'غداء' (lunch) out loud.",
+      "answer": "غداء"
+    },
+    {
+      "id": "l58-ex35",
+      "type": "speaking",
+      "refIds": ["ashaa"],
+      "prompt": "Practice saying 'عشاء' (dinner) out loud.",
+      "answer": "عشاء"
     }
   ]
 }
