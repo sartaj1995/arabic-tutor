@@ -7,7 +7,11 @@
       name="description"
       content="Learn Modern Standard Arabic — script, vocabulary, and sentence-building — across 100 free, self-paced levels in your browser."
     />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- sizes="32x32", not "any": with "any", Chrome downloads the .ico as
+         well as the SVG. The .ico is a fallback for clients without SVG icons. -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <title>Arabic Tutor</title>
   </head>
   <body>
