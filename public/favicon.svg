@@ -4,7 +4,7 @@
        emboldened with a same-colour stroke so it survives 16px. Weight and
        position are tuned for tab sizes; apple-touch-icon.png is a lighter
        cut of the same letter for large display. -->
-  <rect width="64" height="64" rx="14" fill="#a8501f" />
+  <rect width="64" height="64" rx="14" fill="#0f766e" />
   <path
     fill="#fbf5ec"
     fill-rule="evenodd"
