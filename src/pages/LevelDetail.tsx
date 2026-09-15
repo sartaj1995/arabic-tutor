@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { getLevel, scoreableExercises } from "../lib/content";
 import { db } from "../lib/db";
 import { isLevelComplete } from "../lib/completion";
+import { useSettings } from "../lib/settings";
 import { seedLevelSRSItems } from "../lib/srs";
 import ArabicText from "../components/ArabicText";
 import PlayAudioButton from "../components/PlayAudioButton";
@@ -11,6 +12,7 @@ import ExerciseCard, { type AnswerResult } from "../components/ExerciseCard";
 export default function LevelDetail() {
   const { number } = useParams();
   const level = getLevel(Number(number));
+  const { showTransliteration } = useSettings();
 
   const [results, setResults] = useState<Record<string, AnswerResult>>({});
   const [resetCount, setResetCount] = useState(0);
@@ -114,12 +116,17 @@ export default function LevelDetail() {
           <h3>New Vocabulary</h3>
           <ul className="vocab-list">
             {level.vocab.map((word) => (
-              <li key={word.id} className="vocab-row">
+              <li
+                key={word.id}
+                className={`vocab-row${showTransliteration ? "" : " no-translit"}`}
+              >
                 <span className="vocab-arabic-cell">
                   <PlayAudioButton text={word.audio.text} label={`Play ${word.transliteration}`} />
                   <ArabicText className="vocab-arabic">{word.arabic}</ArabicText>
                 </span>
-                <span className="vocab-translit">{word.transliteration}</span>
+                {showTransliteration && (
+                  <span className="vocab-translit">{word.transliteration}</span>
+                )}
                 <span className="vocab-english">{word.english}</span>
               </li>
             ))}
@@ -136,7 +143,9 @@ export default function LevelDetail() {
                 <ArabicText className="pattern-example">{pattern.exampleArabic}</ArabicText>
                 <PlayAudioButton text={pattern.audio.text} label="Play example sentence" />
               </span>
-              <p className="pattern-translit">{pattern.exampleTransliteration}</p>
+              {showTransliteration && (
+                <p className="pattern-translit">{pattern.exampleTransliteration}</p>
+              )}
               <p className="pattern-english">{pattern.exampleEnglish}</p>
               <p className="pattern-note">{pattern.grammarNote}</p>
             </div>

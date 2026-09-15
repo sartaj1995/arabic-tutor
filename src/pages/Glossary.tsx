@@ -9,6 +9,7 @@ import {
   type GlossaryKind,
 } from "../lib/glossary";
 import { UNIT_THEMES, unitLevelRange, unitTheme } from "../lib/units";
+import { useSettings } from "../lib/settings";
 import ArabicText from "../components/ArabicText";
 import PlayAudioButton from "../components/PlayAudioButton";
 
@@ -36,6 +37,7 @@ export default function Glossary() {
   const [kind, setKind] = useState<GlossaryKind | null>(null);
   const [unitIndex, setUnitIndex] = useState<number | null>(null);
   const [tag, setTag] = useState<string | null>(null);
+  const { showTransliteration } = useSettings();
 
   const results = useMemo(
     () => filterGlossary({ query, kind, unitIndex, tag }),
@@ -202,7 +204,11 @@ export default function Glossary() {
               </div>
               <div className="glossary-gloss-cell">
                 <span className="glossary-english">{entry.english}</span>
-                <span className="glossary-translit">{entry.transliteration}</span>
+                {/* A letter's "transliteration" here is its name (Alif, Bāʾ), which
+                    identifies it rather than helping read it, so it always shows. */}
+                {(showTransliteration || entry.kind === "letter") && (
+                  <span className="glossary-translit">{entry.transliteration}</span>
+                )}
                 <span className="glossary-detail">{entry.detail}</span>
               </div>
               <div className="glossary-meta-cell">

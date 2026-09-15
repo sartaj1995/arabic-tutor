@@ -5,6 +5,7 @@ import LevelDetail from "./pages/LevelDetail";
 import Review from "./pages/Review";
 import Progress from "./pages/Progress";
 import Glossary from "./pages/Glossary";
+import Settings from "./pages/Settings";
 import { computeProgressStats } from "./lib/progress";
 
 function ChartIcon() {
@@ -29,6 +30,20 @@ function BookIcon() {
         strokeWidth="1.4"
         strokeLinejoin="round"
       />
+    </svg>
+  );
+}
+
+function GearIcon() {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path
+        d="M15.83 8.22L18.08 8.58L18.08 11.42L15.83 11.78L15.39 12.86L16.72 14.70L14.70 16.72L12.86 15.39L11.78 15.83L11.42 18.08L8.58 18.08L8.22 15.83L7.14 15.39L5.30 16.72L3.28 14.70L4.61 12.86L4.17 11.78L1.92 11.42L1.92 8.58L4.17 8.22L4.61 7.14L3.28 5.30L5.30 3.28L7.14 4.61L8.22 4.17L8.58 1.92L11.42 1.92L11.78 4.17L12.86 4.61L14.70 3.28L16.72 5.30L15.39 7.14Z"
+        stroke="currentColor"
+        strokeWidth="1.4"
+        strokeLinejoin="round"
+      />
+      <circle cx="10" cy="10" r="2.6" stroke="currentColor" strokeWidth="1.4" />
     </svg>
   );
 }
@@ -122,6 +137,17 @@ export default function App() {
             </Link>
           </nav>
         </div>
+        {/* Icon-only, since it's a utility rather than a section of the course.
+            The label is what screen readers announce; the title is a hover hint. */}
+        <Link
+          to="/settings"
+          className={`app-settings-link${isCurrent("/settings") ? " is-active" : ""}`}
+          aria-label="Settings"
+          title="Settings"
+          aria-current={isCurrent("/settings") ? "page" : undefined}
+        >
+          <GearIcon />
+        </Link>
       </header>
       <main className="app-main" ref={mainRef} tabIndex={-1}>
         <Routes>
@@ -129,6 +155,7 @@ export default function App() {
           <Route path="/review" element={<Review />} />
           <Route path="/progress" element={<Progress />} />
           <Route path="/glossary" element={<Glossary />} />
+          <Route path="/settings" element={<Settings />} />
           <Route path="/level/:number" element={<LevelDetail />} />
         </Routes>
       </main>
