@@ -1,5 +1,7 @@
 import { db } from "./db";
 import { levels } from "./content";
+import { indexByLevel, isLevelComplete, nextIncompleteLevel } from "./completion";
+import { dueCutoff } from "./srs";
 
 const TOTAL_PLANNED_LEVELS = 100;
 // Mastery follows repetitions rather than a raw interval cutoff, since it
@@ -10,6 +12,8 @@ const MASTERED_AT_REPETITIONS = 3;
 
 export interface ProgressStats {
   levelsCompletedCount: number;
+  /** The level the learner should do next; null once every level is complete. */
+  nextLevelNumber: number | null;
   levelsAuthoredCount: number;
   totalPlannedLevels: number;
   averageScorePercent: number | null;
@@ -55,7 +59,12 @@ export async function computeProgressStats(): Promise<ProgressStats> {
     db.srsItems.toArray(),
   ]);
 
-  const completedRecords = levelRecords.filter((r) => r.completed);
+  // Completion goes through the same rule the home page and level page use,
+  // so the header, this page and the level list can't disagree about it.
+  const progressByLevel = indexByLevel(levelRecords);
+  const completedRecords = levels
+    .filter((level) => isLevelComplete(progressByLevel[level.number], level))
+    .map((level) => progressByLevel[level.number]!);
 
   const scorePercents = completedRecords
     .filter((r) => r.lastScoreTotal != null && r.lastScoreTotal > 0)
@@ -78,26 +87,31 @@ export async function computeProgressStats(): Promise<ProgressStats> {
 
     if (item.lastReviewed) activityDates.add(dateKey(new Date(item.lastReviewed)));
   }
-  for (const record of completedRecords) {
-    if (record.completedAt) activityDates.add(dateKey(new Date(record.completedAt)));
+  // Every finish counts toward the streak, including levels whose exercises
+  // have changed since: the streak records days the learner studied, which
+  // later content changes don't undo.
+  for (const record of levelRecords) {
+    if (record.completed && record.completedAt) {
+      activityDates.add(dateKey(new Date(record.completedAt)));
+    }
   }
 
+  // "Due today" uses the same cutoff as the review queue, so this page can't
+  // promise reviews that the Review page then won't show.
   const now = new Date();
-  const endOfToday = new Date(now);
-  endOfToday.setHours(23, 59, 59, 999);
-  const endOfWeek = new Date(now);
-  endOfWeek.setDate(endOfWeek.getDate() + 7);
+  const todayCutoff = dueCutoff(now);
+  const weekCutoff = dueCutoff(now, 7);
 
   const reviewForecast = { dueToday: 0, dueThisWeek: 0, dueLater: 0 };
   for (const item of srsItems) {
-    const due = new Date(item.dueDate);
-    if (due <= endOfToday) reviewForecast.dueToday++;
-    else if (due <= endOfWeek) reviewForecast.dueThisWeek++;
+    if (item.dueDate <= todayCutoff) reviewForecast.dueToday++;
+    else if (item.dueDate <= weekCutoff) reviewForecast.dueThisWeek++;
     else reviewForecast.dueLater++;
   }
 
   return {
     levelsCompletedCount: completedRecords.length,
+    nextLevelNumber: nextIncompleteLevel(progressByLevel)?.number ?? null,
     levelsAuthoredCount: levels.length,
     totalPlannedLevels: TOTAL_PLANNED_LEVELS,
     averageScorePercent,

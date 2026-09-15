@@ -192,13 +192,33 @@ function buildPatternExercise(
  * Turns a due SRS item into a synthetic Exercise, reusing the existing
  * ExerciseCard UI rather than building review-only components.
  */
-export function buildReviewExercise(due: SRSItemState): Exercise | null {
+export interface ReviewOptions {
+  /**
+   * Whether this browser can speak Arabic. Defaults to true. Without a voice
+   * the listening question's Listen button does nothing, so it can only be
+   * guessed, and a wrong guess resets the word. Because a word's listening
+   * question is always the one between "learning" and "mastered", that
+   * guess capped mastery for every word on a device without an Arabic voice.
+   */
+  audioAvailable?: boolean;
+}
+
+export function buildReviewExercise(
+  due: SRSItemState,
+  { audioAvailable = true }: ReviewOptions = {},
+): Exercise | null {
   const item = findItem(due.itemId, due.itemType);
   if (!item) return null;
 
   const pick = <T,>(modes: readonly T[]): T => modes[due.repetitions % modes.length];
 
   if (due.itemType === "letter") return buildLetterExercise(item as Letter, pick(LETTER_MODES));
-  if (due.itemType === "vocab") return buildVocabExercise(item as VocabWord, pick(VOCAB_MODES));
+  if (due.itemType === "vocab") {
+    const mode = pick(VOCAB_MODES);
+    // Recall stands in for listening: both ask for the right Arabic word from
+    // the same pool of options, one from its meaning and one from its sound.
+    const playable = mode === "audio" && !audioAvailable ? "recall" : mode;
+    return buildVocabExercise(item as VocabWord, playable);
+  }
   return buildPatternExercise(item as SentencePattern, pick(PATTERN_MODES));
 }

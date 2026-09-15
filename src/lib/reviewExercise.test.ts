@@ -145,3 +145,47 @@ describe("diacritics follow the introducing level", () => {
     }
   });
 });
+
+describe("without an Arabic voice", () => {
+  const silent = { audioAvailable: false };
+
+  it("never asks a listening question", () => {
+    // Listening is the third step of the vocab cycle (repetitions 2); check
+    // every word there and across a full cycle for good measure.
+    for (const word of allVocab) {
+      for (let reps = 0; reps < 4; reps++) {
+        const exercise = buildReviewExercise(due(word.id, "vocab", reps), silent)!;
+        expect(exercise.type, `${word.id} at ${reps}`).not.toBe("audio-recognition");
+      }
+    }
+  });
+
+  it("asks recall in the listening step's place, so words can still reach mastered", () => {
+    const exercise = buildReviewExercise(due("qahwa", "vocab", 2), silent)!;
+    expect(exercise.type).toBe("multiple-choice");
+    expect(exercise.prompt).toContain("Which word means");
+    expect(exercise.options).toContain(exercise.answer);
+  });
+
+  it("leaves the rest of the cycle unchanged", () => {
+    // Compared on what defines the question: distractors are drawn at random
+    // on every build, so two builds never match option-for-option.
+    const shape = (e: ReturnType<typeof buildReviewExercise>) => ({
+      id: e!.id,
+      type: e!.type,
+      prompt: e!.prompt,
+      answer: e!.answer,
+    });
+    for (const reps of [0, 1, 3]) {
+      expect(shape(buildReviewExercise(due("qahwa", "vocab", reps), silent))).toEqual(
+        shape(buildReviewExercise(due("qahwa", "vocab", reps))),
+      );
+    }
+  });
+
+  it("still asks listening questions when a voice is available", () => {
+    const exercise = buildReviewExercise(due("qahwa", "vocab", 2), { audioAvailable: true })!;
+    expect(exercise.type).toBe("audio-recognition");
+  });
+});
+

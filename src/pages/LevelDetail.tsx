@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { getLevel, scoreableExercises } from "../lib/content";
 import { db } from "../lib/db";
+import { isLevelComplete } from "../lib/completion";
 import { seedLevelSRSItems } from "../lib/srs";
 import ArabicText from "../components/ArabicText";
 import PlayAudioButton from "../components/PlayAudioButton";
@@ -26,12 +27,10 @@ export default function LevelDetail() {
       setSavedProgress(null);
       return;
     }
-    const currentTotal = scoreableExercises(level).length;
     db.levelProgress.get(level.number).then((record) => {
-      // A saved score only means anything if it was earned against the same
-      // exercise set that exists now — content passes (like generating more
-      // exercises) can change the count after a record was saved.
-      if (record?.completed && record.lastScoreTotal === currentTotal) {
+      // Shown under the same rule as the home page's check mark, and as the
+      // score was earned: out of the exercise count the level had back then.
+      if (record && isLevelComplete(record, level) && record.lastScoreTotal != null) {
         setSavedProgress({ score: record.lastScore ?? 0, total: record.lastScoreTotal });
       } else {
         setSavedProgress(null);

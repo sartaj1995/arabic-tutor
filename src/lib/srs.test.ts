@@ -1,5 +1,5 @@
-import { describe, expect, it } from "vitest";
-import { applyReview, createSRSItem } from "./srs";
+import { afterEach, describe, expect, it, vi } from "vitest";
+import { applyReview, createSRSItem, daysUntilDue, dueCutoff } from "./srs";
 import type { SRSItemState } from "../types/content";
 
 function item(overrides: Partial<SRSItemState> = {}): SRSItemState {
@@ -76,5 +76,51 @@ describe("applyReview — lapses", () => {
   it("keeps the item's identity intact", () => {
     const state = applyReview(item({ itemId: "alif", itemType: "letter" }), false);
     expect(state).toMatchObject({ itemId: "alif", itemType: "letter" });
+  });
+});
+
+describe("dueCutoff", () => {
+  // Built from local-time parts, since "today" is the learner's own calendar day.
+  const nineAm = new Date(2026, 8, 16, 9, 0);
+
+  afterEach(() => {
+    vi.useRealTimers();
+  });
+
+  it("counts anything due later today as due", () => {
+    expect(new Date(2026, 8, 16, 21, 0).toISOString() <= dueCutoff(nineAm)).toBe(true);
+    expect(new Date(2026, 8, 16, 23, 59).toISOString() <= dueCutoff(nineAm)).toBe(true);
+  });
+
+  it("does not count tomorrow, even just after midnight", () => {
+    expect(new Date(2026, 8, 17, 0, 1).toISOString() <= dueCutoff(nineAm)).toBe(false);
+  });
+
+  it("extends to the end of a later day for forecasts", () => {
+    expect(new Date(2026, 8, 23, 22, 0).toISOString() <= dueCutoff(nineAm, 7)).toBe(true);
+    expect(new Date(2026, 8, 24, 0, 1).toISOString() <= dueCutoff(nineAm, 7)).toBe(false);
+  });
+
+  it("makes a word reviewed last night reviewable the next morning", () => {
+    // The reported bug: reviewed at 9pm with a one-day interval, the word was
+    // locked until 9pm the next day, while Progress listed it as due today.
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date(2026, 8, 15, 21, 0));
+    const reviewed = applyReview(createSRSItem("qahwa", "vocab"), true);
+
+    vi.setSystemTime(nineAm);
+    expect(reviewed.dueDate <= new Date().toISOString()).toBe(false); // the old rule
+    expect(reviewed.dueDate <= dueCutoff()).toBe(true);
+  });
+});
+
+describe("daysUntilDue", () => {
+  const now = new Date(2026, 8, 16, 23, 30);
+
+  it("counts calendar days, not 24-hour periods", () => {
+    // Half an hour away, but tomorrow.
+    expect(daysUntilDue(new Date(2026, 8, 17, 0, 0).toISOString(), now)).toBe(1);
+    expect(daysUntilDue(new Date(2026, 8, 16, 8, 0).toISOString(), now)).toBe(0);
+    expect(daysUntilDue(new Date(2026, 8, 19, 12, 0).toISOString(), now)).toBe(3);
   });
 });

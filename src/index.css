@@ -166,6 +166,13 @@ h3 {
   padding: 1.75rem 1.5rem 3rem;
 }
 
+/* <main> takes focus after each navigation so screen readers announce the
+   new page. It's a landmark, not a control, and isn't in the tab order, so a
+   ring around the entire page would only be noise. */
+.app-main:focus {
+  outline: none;
+}
+
 .hero {
   position: relative;
   overflow: hidden;
