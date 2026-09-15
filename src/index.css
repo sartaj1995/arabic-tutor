@@ -7,13 +7,21 @@
   --surface-alt: #f6e9d8;
   --border: #e7d8be;
   --text: #241b14;
-  --text-muted: #7c6b54;
+  /* Darkened from #7c6b54 and #3f7a4f, which fell under 4.5:1 on tinted
+     backgrounds: the grammar notes on the pattern card, the voice warning and
+     "Correct!" feedback. */
+  --text-muted: #72624d;
   --accent: #a8501f;
   --accent-dark: #823913;
   --accent-soft: #f3e0c7;
+  /* Text or icons drawn on a solid --accent fill. */
+  --on-accent: #ffffff;
+  /* Gold is decoration only: 3.1:1 on white is enough for an icon but not for
+     text. Gold-coloured text and small icons on --gold-soft use --gold-dark. */
   --gold: #b98a2e;
   --gold-soft: #f1e4c4;
-  --correct: #3f7a4f;
+  --gold-dark: #7a5a15;
+  --correct: #3f794f;
   --correct-bg: #e8f3ea;
   --incorrect: #b3432b;
   --incorrect-bg: #fbe9e5;
@@ -24,6 +32,38 @@
   --shadow-card: 0 1px 2px rgba(36, 27, 20, 0.04), 0 4px 14px rgba(36, 27, 20, 0.06);
   --shadow-card-hover: 0 2px 4px rgba(36, 27, 20, 0.06), 0 10px 24px rgba(36, 27, 20, 0.1);
   font-family: var(--font-body);
+  color-scheme: light;
+}
+
+/* Dark theme: the same manuscript palette by lamplight — warm near-black
+   paper, cream ink, and lighter terracotta and gold so they stay readable. It
+   is set by data-theme, which index.html's inline script and settings.ts
+   resolve from the learner's choice or the device setting, so there is one
+   dark block rather than a media-query copy of it. Every text and icon pair
+   below was checked against WCAG AA (4.5:1 text, 3:1 graphics). */
+:root[data-theme="dark"] {
+  --bg: #17120e;
+  --surface: #221b16;
+  --surface-alt: #2c241d;
+  --border: #3d332a;
+  --text: #f2e9dd;
+  --text-muted: #b8a893;
+  --accent: #e3915f;
+  /* Hover and active states brighten on dark instead of darkening. */
+  --accent-dark: #f3b88f;
+  --accent-soft: #3b2619;
+  --on-accent: #1a1009;
+  --gold: #dcae55;
+  --gold-soft: #372b17;
+  --gold-dark: #ecc77a;
+  --correct: #86c796;
+  --correct-bg: #1c2d21;
+  --incorrect: #f08a73;
+  --incorrect-bg: #3b1f19;
+  --learning: #e4a651;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.3), 0 4px 14px rgba(0, 0, 0, 0.25);
+  --shadow-card-hover: 0 2px 4px rgba(0, 0, 0, 0.35), 0 10px 24px rgba(0, 0, 0, 0.4);
+  color-scheme: dark;
 }
 
 * {
@@ -54,9 +94,12 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .app-title {
+  /* Pushes the status, section links and settings gear to the right. */
+  margin-right: auto;
   font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 700;
@@ -114,8 +157,45 @@ h3 {
   color: var(--accent-dark);
 }
 
+/* Styled like the section links, minus the text: a round icon-only target. */
+.app-settings-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--accent);
+  transition: background-color 160ms ease-out, border-color 160ms ease-out,
+    color 160ms ease-out;
+}
+
+.app-settings-link svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.app-settings-link:hover {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+}
+
+.app-settings-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.app-settings-link.is-active {
+  background: var(--accent-soft);
+  border-color: var(--border);
+  color: var(--accent-dark);
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .app-nav-link {
+  .app-nav-link,
+  .app-settings-link {
     transition: none;
   }
 }
@@ -158,6 +238,11 @@ h3 {
 .header-streak svg {
   width: 1.05rem;
   height: 1.05rem;
+}
+
+/* The flame stays gold; the number is text, so it needs the darker gold. */
+.header-streak > span {
+  color: var(--gold-dark);
 }
 
 .app-main {
@@ -269,7 +354,7 @@ h3 {
 
 .hero-stat.is-review .hero-stat-icon {
   background: var(--gold-soft);
-  color: var(--gold);
+  color: var(--gold-dark);
 }
 
 .hero-stat-value {
@@ -847,6 +932,11 @@ a.hero-stat.is-review:hover {
   border-bottom: none;
 }
 
+/* Transliteration turned off in Settings: Arabic and meaning share the row. */
+.vocab-row.no-translit {
+  grid-template-columns: 1.2fr 2fr;
+}
+
 .vocab-arabic-cell {
   display: flex;
   align-items: center;
@@ -1049,7 +1139,7 @@ a.hero-stat.is-review:hover {
   border: none;
   border-radius: 8px;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
@@ -1275,10 +1365,10 @@ a.hero-stat.is-review:hover {
   padding-top: 0.35rem;
 }
 
-/* The secondary row's label is deliberately quieter than the primary one. */
+/* The secondary row's label is quieter than the primary one through weight,
+   not opacity, which took this small text down to 3.1:1. */
 .glossary-facet.is-secondary .facet-label {
   font-weight: 600;
-  opacity: 0.75;
 }
 
 .kind-segment {
@@ -1318,9 +1408,9 @@ a.hero-stat.is-review:hover {
 .kind-btn.is-active {
   background: var(--accent);
   border-color: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   font-weight: 700;
-  box-shadow: 0 1px 2px rgba(36, 27, 20, 0.12);
+  box-shadow: var(--shadow-card);
 }
 
 /* Tabular figures so the counts don't jitter the buttons sideways as the
@@ -1332,8 +1422,10 @@ a.hero-stat.is-review:hover {
   color: var(--text-muted);
 }
 
+/* Full strength: at 82% opacity the small count fell to 4.25:1 on terracotta.
+   Its smaller size already sets it apart from the label. */
 .kind-btn.is-active .kind-btn-count {
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--on-accent);
 }
 
 .kind-btn:focus-visible {
@@ -1483,7 +1575,7 @@ a.hero-stat.is-review:hover {
 
 .glossary-kind.kind-letter {
   background: var(--gold-soft);
-  color: #7a5a15;
+  color: var(--gold-dark);
 }
 
 .glossary-kind.kind-pattern {
@@ -1514,6 +1606,190 @@ a.hero-stat.is-review:hover {
   outline-offset: 2px;
 }
 
+/* --- Settings ---------------------------------------------------------- */
+
+.settings-page h2 {
+  margin: 0.75rem 0 1.25rem;
+}
+
+.settings-card {
+  margin-bottom: 1rem;
+  padding: 1.1rem 1.25rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+.settings-card h3 {
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.settings-field {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.settings-label {
+  display: block;
+  padding: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.settings-help {
+  display: block;
+  margin: 0.2rem 0 0.7rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+/* Real radio inputs drawn as a segmented control, so arrow keys still move
+   the choice and screen readers announce "1 of 3". Matches the glossary's
+   Type filter. */
+.segmented {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-alt);
+}
+
+.segmented-option span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.5rem;
+  padding: 0.35rem 1rem;
+  border-radius: 9px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background-color 160ms ease-out, color 160ms ease-out;
+}
+
+.segmented-option span:hover {
+  color: var(--accent);
+}
+
+.segmented-option input:checked + span {
+  background: var(--accent);
+  color: var(--on-accent);
+  box-shadow: var(--shadow-card);
+}
+
+.segmented-option input:focus-visible + span {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.settings-switch-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem;
+  cursor: pointer;
+}
+
+/* A native checkbox with role="switch", drawn as a toggle. The whole row is
+   its label, so the tap target is far larger than the track. */
+.switch {
+  appearance: none;
+  position: relative;
+  flex-shrink: 0;
+  width: 2.9rem;
+  height: 1.7rem;
+  margin: 0.1rem 0 0;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-alt);
+  cursor: pointer;
+  transition: background-color 160ms ease-out, border-color 160ms ease-out;
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: var(--text-muted);
+  transform: translateY(-50%);
+  transition: transform 160ms ease-out, background-color 160ms ease-out;
+}
+
+.switch:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.switch:checked::before {
+  background: var(--on-accent);
+  transform: translate(1.2rem, -50%);
+}
+
+.switch:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.settings-preview {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1rem;
+  margin-top: 0.9rem;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  background: var(--surface-alt);
+}
+
+.settings-preview-arabic {
+  font-size: 1.35rem;
+}
+
+.settings-preview-translit {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.settings-sample {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.8rem;
+  margin-top: 0.9rem;
+}
+
+.settings-sample .settings-help {
+  margin: 0;
+}
+
+.settings-footnote {
+  margin: 1.25rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .segmented-option span,
+  .switch,
+  .switch::before {
+    transition: none;
+  }
+}
+
 /* --- Narrow screens -------------------------------------------------- */
 /* The layout is fluid enough to survive down to phone widths on its own
    (grids use auto-fill/minmax, the shell is max-width + auto margins), so
@@ -1529,8 +1805,18 @@ a.hero-stat.is-review:hover {
     gap: 0.4rem 0.75rem;
   }
 
+  /* The gear moves up beside the title. The second row, holding the status
+     and both section links, has no room for another target at phone widths. */
+  .app-settings-link {
+    order: 1;
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
   .app-header-right {
-    margin-left: auto;
+    order: 2;
+    flex-basis: 100%;
+    justify-content: flex-end;
     gap: 0.7rem;
   }
 

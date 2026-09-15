@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getSettings } from "./settings";
 
 // Voices load asynchronously — often not yet populated on the very first
 // getVoices() call, especially right after page load. The 'voiceschanged'
@@ -86,7 +87,7 @@ export function speak(text: string): boolean {
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.voice = voice;
   utterance.lang = voice.lang;
-  utterance.rate = 0.9; // slightly slower for a learner
+  utterance.rate = getSettings().speechRate; // Settings → Speech speed; 0.9 by default
   window.speechSynthesis.speak(utterance);
   return true;
 }

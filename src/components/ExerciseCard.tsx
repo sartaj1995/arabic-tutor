@@ -1,10 +1,22 @@
 import { useState } from "react";
-import type { Exercise } from "../types/content";
+import type { Exercise, ExerciseType } from "../types/content";
 import { containsArabic, normalizeArabic } from "../lib/arabic";
 import PlayAudioButton from "./PlayAudioButton";
 import ArabicKeyboard from "./ArabicKeyboard";
 
 export type AnswerResult = "correct" | "incorrect" | "unscored";
+
+/** What each exercise type is called on screen. A Record, so a new type can't ship unlabelled. */
+const TYPE_LABELS: Record<ExerciseType, string> = {
+  "multiple-choice": "Multiple choice",
+  matching: "Matching",
+  "audio-recognition": "Listening",
+  "letter-recognition": "Letter recognition",
+  "letter-writing": "Letter forms",
+  typing: "Typing",
+  speaking: "Speaking",
+  "sentence-build": "Sentence building",
+};
 
 /** Tags Arabic strings so assistive tech reads them with an Arabic voice. */
 function langOf(text: string): "ar" | undefined {
@@ -55,7 +67,7 @@ export default function ExerciseCard({ exercise, onAnswer, audioIndex }: Exercis
 
   return (
     <li className="exercise-card">
-      <p className="exercise-type">{exercise.type}</p>
+      <p className="exercise-type">{TYPE_LABELS[exercise.type]}</p>
       <p className="exercise-prompt" dir="auto">
         {exercise.prompt}
       </p>
