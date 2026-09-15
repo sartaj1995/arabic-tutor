@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { levels, scoreableExercises } from "../lib/content";
+import { levels } from "../lib/content";
 import { unitTheme } from "../lib/units";
 import { db, type LevelProgress } from "../lib/db";
+import { indexByLevel, isLevelComplete, nextIncompleteLevel } from "../lib/completion";
+import { dueCutoff } from "../lib/srs";
 import { useHasArabicVoice } from "../lib/speech";
 import ArabicText from "../components/ArabicText";
 import LevelIcon from "../components/LevelIcon";
@@ -92,30 +94,20 @@ function chunkIntoUnits<T>(items: T[], size: number): T[][] {
 }
 
 export default function LevelList() {
-  const [progress, setProgress] = useState<Record<number, LevelProgress>>({});
+  const [progress, setProgress] = useState<Partial<Record<number, LevelProgress>>>({});
   const [dueCount, setDueCount] = useState<number | null>(null);
   const hasVoice = useHasArabicVoice();
 
   useEffect(() => {
-    db.levelProgress.toArray().then((rows) => {
-      const map: Record<number, LevelProgress> = {};
-      for (const row of rows) map[row.levelNumber] = row;
-      setProgress(map);
-    });
-    db.srsItems
-      .where("dueDate")
-      .belowOrEqual(new Date().toISOString())
-      .count()
-      .then(setDueCount);
+    db.levelProgress.toArray().then((rows) => setProgress(indexByLevel(rows)));
+    db.srsItems.where("dueDate").belowOrEqual(dueCutoff()).count().then(setDueCount);
   }, []);
 
-  function isComplete(level: (typeof levels)[number]) {
-    const record = progress[level.number];
-    return !!record?.completed && record.lastScoreTotal === scoreableExercises(level).length;
-  }
+  const isComplete = (level: (typeof levels)[number]) =>
+    isLevelComplete(progress[level.number], level);
 
   const completedCount = levels.filter(isComplete).length;
-  const nextLevel = levels.find((level) => !isComplete(level));
+  const nextLevel = nextIncompleteLevel(progress);
   const units = chunkIntoUnits(levels, 10);
   const activeUnitIndex = nextLevel ? Math.floor((nextLevel.number - 1) / 10) : -1;
 
@@ -160,7 +152,7 @@ export default function LevelList() {
                 </span>
                 <span>
                   <span className="hero-stat-value">0</span>
-                  <span className="hero-stat-label">reviews due right now</span>
+                  <span className="hero-stat-label">reviews due today</span>
                 </span>
               </div>
             )}
@@ -238,7 +230,9 @@ export default function LevelList() {
                         {complete ? (
                           <span className="level-badge">
                             <CheckIcon />
-                            {record?.lastScore}/{record?.lastScoreTotal}
+                            {record?.lastScore != null && record.lastScoreTotal != null
+                              ? `${record.lastScore}/${record.lastScoreTotal}`
+                              : "Done"}
                           </span>
                         ) : isNext ? (
                           <span className="level-status-current">Continue →</span>

@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { Routes, Route, Link, useLocation } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
+import { Routes, Route, Link, useLocation, useNavigationType } from "react-router-dom";
 import LevelList from "./pages/LevelList";
 import LevelDetail from "./pages/LevelDetail";
 import Review from "./pages/Review";
@@ -48,16 +48,34 @@ function FlameIcon() {
 
 export default function App() {
   const location = useLocation();
+  const navigationType = useNavigationType();
   const isCurrent = (path: string) => location.pathname === path;
   const [streakDays, setStreakDays] = useState<number | null>(null);
-  const [completedCount, setCompletedCount] = useState<number | null>(null);
+  const [nextLevelNumber, setNextLevelNumber] = useState<number | null | undefined>(undefined);
+  const mainRef = useRef<HTMLElement>(null);
+  // The history entry the app first loaded on. Compared by key rather than
+  // with a "first render" flag, because StrictMode runs effects twice on
+  // mount and a flag would mistake the initial load for a navigation.
+  const initialLocationKey = useRef(location.key);
 
   useEffect(() => {
     computeProgressStats().then((stats) => {
       setStreakDays(stats.streakDays);
-      setCompletedCount(stats.levelsCompletedCount);
+      setNextLevelNumber(stats.nextLevelNumber);
     });
   }, [location.pathname]);
+
+  // BrowserRouter leaves the window's scroll position alone, so opening a
+  // level from low down the home page used to land mid-page with the title
+  // off-screen. New pages now open at the top, and focus moves into them so a
+  // screen reader announces the page instead of staying on a link that no
+  // longer exists. Back and forward (POP) are left to the browser, which puts
+  // the learner back where they were.
+  useEffect(() => {
+    if (location.key === initialLocationKey.current || navigationType === "POP") return;
+    window.scrollTo(0, 0);
+    mainRef.current?.focus({ preventScroll: true });
+  }, [location.key, navigationType]);
 
   return (
     <div className="app">
@@ -70,9 +88,11 @@ export default function App() {
               read as two groups separated by a rule rather than one run of
               text the eye has to parse apart. */}
           <div className="header-meta">
-            {completedCount !== null && (
+            {/* The actual next level, not "completed count + 1": those differ as
+                soon as a learner skips ahead and comes back. */}
+            {nextLevelNumber !== undefined && (
               <span className="header-level-indicator">
-                Level {Math.min(completedCount + 1, 100)} of 100
+                {nextLevelNumber === null ? "All 100 levels done" : `Level ${nextLevelNumber} of 100`}
               </span>
             )}
             {streakDays !== null && streakDays > 0 && (
@@ -103,7 +123,7 @@ export default function App() {
           </nav>
         </div>
       </header>
-      <main className="app-main">
+      <main className="app-main" ref={mainRef} tabIndex={-1}>
         <Routes>
           <Route path="/" element={<LevelList />} />
           <Route path="/review" element={<Review />} />

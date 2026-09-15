@@ -54,6 +54,30 @@ export function applyReview(item: SRSItemState, correct: boolean): SRSItemState 
 }
 
 /**
+ * The latest `dueDate` that still counts as due: the end of today, local time.
+ *
+ * Reviews are due by calendar day, not to the minute. applyReview schedules
+ * `now + interval` days, so without this a word reviewed at 9pm stayed locked
+ * until 9pm the next day while the Progress page already listed it as "due
+ * today". The review queue and every due count compare against this one
+ * cutoff, as ISO strings, which is also how Dexie's dueDate index compares
+ * them. `daysAhead` moves it to the end of a later day, for forecasts.
+ */
+export function dueCutoff(now: Date = new Date(), daysAhead = 0): string {
+  const end = new Date(now);
+  end.setDate(end.getDate() + daysAhead);
+  end.setHours(23, 59, 59, 999);
+  return end.toISOString();
+}
+
+/** Calendar days from today until `dueDate`: 0 today, 1 tomorrow. */
+export function daysUntilDue(dueDate: string, now: Date = new Date()): number {
+  const startOfDay = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
+  // Rounded, since a day that crosses a daylight-saving change is 23 or 25 hours.
+  return Math.round((startOfDay(new Date(dueDate)) - startOfDay(now)) / 86_400_000);
+}
+
+/**
  * Called when a level's exercises are all completed. Adds an SRS record for
  * every letter/vocab/pattern the level introduces — but only if one doesn't
  * already exist, so replaying a level never resets review progress.

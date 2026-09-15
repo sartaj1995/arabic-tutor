@@ -43,6 +43,34 @@ export function hasArabicVoice(): boolean {
   return !!pickArabicVoice();
 }
 
+/**
+ * Resolves once the browser has reported its voice list, so that a "no" from
+ * hasArabicVoice() can be trusted rather than meaning "not loaded yet". The
+ * list is often empty for the first few hundred milliseconds; a browser with
+ * no voices at all never fills it, so this stops waiting after `timeoutMs`.
+ */
+export function whenVoicesKnown(timeoutMs = 1500): Promise<void> {
+  if (typeof window === "undefined" || !("speechSynthesis" in window)) return Promise.resolve();
+  if (currentVoices().length > 0) return Promise.resolve();
+
+  return new Promise((resolve) => {
+    const synth = window.speechSynthesis;
+    function check() {
+      if (currentVoices().length > 0) finish();
+    }
+    function finish() {
+      window.clearInterval(pollId);
+      window.clearTimeout(timeoutId);
+      synth.removeEventListener("voiceschanged", check);
+      resolve();
+    }
+    // Polled as well as listened for, since some browsers never fire voiceschanged.
+    const pollId = window.setInterval(check, 100);
+    const timeoutId = window.setTimeout(finish, timeoutMs);
+    synth.addEventListener("voiceschanged", check);
+  });
+}
+
 /** Lists every voice the browser currently reports, for debugging. */
 export function listVoices(): { lang: string; name: string }[] {
   return currentVoices().map((v) => ({ lang: v.lang, name: v.name }));
