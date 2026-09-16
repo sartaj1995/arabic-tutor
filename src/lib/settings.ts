@@ -25,6 +25,16 @@ export const DEFAULT_SETTINGS: Settings = {
 /** Also read by the inline script in index.html, which applies the theme before first paint. */
 export const SETTINGS_STORAGE_KEY = "arabic-tutor:settings";
 
+/**
+ * The browser and installed-app title bar colour per theme, matching --bg.
+ * index.html's inline script sets it for the first paint and repeats these
+ * values; it can't import them.
+ */
+export const THEME_COLORS: Record<"light" | "dark", string> = {
+  light: "#fbf5ec",
+  dark: "#17120e",
+};
+
 export const SPEECH_RATES: readonly SpeechRate[] = [0.7, 0.9, 1];
 const THEME_PREFERENCES: readonly ThemePreference[] = ["system", "light", "dark"];
 
@@ -83,10 +93,11 @@ const deviceDarkQuery =
 
 function applyTheme() {
   if (!hasWindow) return;
-  document.documentElement.dataset.theme = resolveTheme(
-    current.theme,
-    deviceDarkQuery?.matches ?? false,
-  );
+  const theme = resolveTheme(current.theme, deviceDarkQuery?.matches ?? false);
+  document.documentElement.dataset.theme = theme;
+  // Kept in step by hand: a media query on the meta tag would follow the
+  // device and ignore an explicit Light or Dark choice made in Settings.
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", THEME_COLORS[theme]);
 }
 
 function publish(next: Settings) {

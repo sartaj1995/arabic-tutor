@@ -138,6 +138,10 @@ export default function Settings() {
             )}
           </div>
         )}
+        <p className="settings-help">
+          Speech uses the voices installed on this device, so it also works offline. A browser's
+          own network voices need a connection.
+        </p>
       </section>
 
       <p className="settings-footnote">Settings are saved in this browser, on this device.</p>
