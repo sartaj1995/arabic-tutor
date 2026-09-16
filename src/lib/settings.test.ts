@@ -5,6 +5,7 @@ import {
   DEFAULT_SETTINGS,
   SETTINGS_STORAGE_KEY,
   SPEECH_RATES,
+  THEME_COLORS,
   parseSettings,
   resolveTheme,
 } from "./settings";
@@ -68,5 +69,12 @@ describe("index.html's first-paint theme script", () => {
 
   it("sets the data-theme attribute that settings.ts and the stylesheet use", () => {
     expect(indexHtml).toContain("document.documentElement.dataset.theme");
+  });
+
+  it("repeats both theme-colour values, which it also can't import", () => {
+    // Drift here would leave an installed app's title bar the wrong colour
+    // until the first theme change re-synced it.
+    expect(indexHtml).toContain(`"${THEME_COLORS.dark}"`);
+    expect(indexHtml).toContain(`"${THEME_COLORS.light}"`);
   });
 });

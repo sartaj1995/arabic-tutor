@@ -58,6 +58,24 @@ and `--force`). `PlayAudioButton` would need a small change to prefer a
 static file when one exists, since it currently always calls
 `speak()`.
 
+### Install and offline
+
+The app installs from the browser's "Install app" / "Add to Home Screen"
+option and then works with no connection: a service worker
+(`vite-plugin-pwa`, configured in `vite.config.ts`) precaches the build,
+which already contains the whole curriculum, and caches the Google Fonts
+so Arabic keeps rendering in Noto Naskh Arabic rather than falling back to
+a system font. Progress was always local, in IndexedDB.
+
+A new deploy never reloads the page by itself — `UpdatePrompt` offers a
+Reload instead, since a part-finished level lives in component state until
+its last exercise is answered. Manifest fields and icons live in
+`src/lib/pwaManifest.ts`.
+
+Audio is the one thing a connection can still affect: speech uses the
+voices installed on the device, so it works offline with a local Arabic
+voice but not with a browser's network-based voices.
+
 ### Tests
 
 ```bash
@@ -542,8 +560,8 @@ levels" — it's validation and polish:
   design, not merely deferred); full numbers 3–19 gender-polarity
   agreement; the dual beyond its light nominative form; أَنْتُنَّ and the
   remaining object-pronoun suffixes (-كِ, -كُمْ, -هُنَّ).
-- **Lower-priority polish**: PWA/offline support, true pronunciation
-  scoring (today's speaking exercises are reference-audio self-check
-  only), and a fuller accessibility audit — exercise results are now
+- **Lower-priority polish**: true pronunciation scoring (today's speaking
+  exercises are reference-audio self-check only), and a fuller
+  accessibility audit — exercise results are now
   announced and Arabic is tagged `lang="ar"`, but nothing has been tested
   against a real screen reader end to end.

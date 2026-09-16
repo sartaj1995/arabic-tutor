@@ -6,6 +6,7 @@ import Review from "./pages/Review";
 import Progress from "./pages/Progress";
 import Glossary from "./pages/Glossary";
 import Settings from "./pages/Settings";
+import UpdatePrompt from "./components/UpdatePrompt";
 import { computeProgressStats } from "./lib/progress";
 
 function ChartIcon() {
@@ -159,6 +160,7 @@ export default function App() {
           <Route path="/level/:number" element={<LevelDetail />} />
         </Routes>
       </main>
+      <UpdatePrompt />
     </div>
   );
 }

@@ -1790,6 +1790,74 @@ a.hero-stat.is-review:hover {
   }
 }
 
+/* --- Service worker notices -------------------------------------------- */
+
+/* The app's only fixed-position layer, so it needs no z-index scale yet: it
+   sits above a page that has none. */
+.app-toast {
+  position: fixed;
+  left: 50%;
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: calc(100vw - 2rem);
+  padding: 0.7rem 0.8rem 0.7rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow: var(--shadow-card-hover);
+  font-size: 0.9rem;
+  color: var(--text);
+  animation: toast-in 200ms ease-out;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-toast {
+    animation: none;
+  }
+}
+
+.app-toast-dismiss {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  border-radius: 999px;
+  background: none;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.app-toast-dismiss:hover {
+  background: var(--surface-alt);
+  color: var(--text);
+}
+
+.app-toast-dismiss:focus-visible,
+.app-toast .check-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 /* --- Narrow screens -------------------------------------------------- */
 /* The layout is fluid enough to survive down to phone widths on its own
    (grids use auto-fill/minmax, the shell is max-width + auto margins), so
@@ -1832,6 +1900,25 @@ a.hero-stat.is-review:hover {
 
   .app-main {
     padding: 1.25rem 1rem 2.5rem;
+  }
+
+  .app-toast {
+    left: 1rem;
+    right: 1rem;
+    max-width: none;
+    transform: none;
+    border-radius: 14px;
+  }
+
+  @keyframes toast-in {
+    from {
+      opacity: 0;
+      transform: translateY(0.75rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .hero {
